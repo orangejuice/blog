@@ -1,16 +1,6 @@
 import { tint } from "@theme-ui/color"
 
 const code = {
-  "[data-name='live-editor']": {
-    fontSize: 1,
-    "textarea, pre": {
-      padding: (t: any) => `${t.space[3]} !important`,
-    },
-  },
-  "[data-name='live-preview']": {
-    padding: (t: any) => `calc(${t.space[2]} + 10px) !important`,
-    backgroundColor: tint(`primary`, 0.7),
-  },
   ".prism-code": {
     fontSize: 1,
     padding: 3,
@@ -162,22 +152,20 @@ const code = {
     position: `relative`,
   },
   ".code-title": {
-    backgroundColor: tint(`primary`, 0.7),
+    backgroundColor: `rgb(2, 155, 206)`,
     color: `black`,
     fontSize: 0,
+    borderRadius: `4px 4px 0 0`,
     px: 3,
     py: 2,
     fontFamily: `monospace`,
-    mx: [0, 0, 0, -3],
-  },
-  "[data-name='live-preview'], [data-name='live-editor']": {
-    mx: [0, 0, 0, -3],
+    // mx: [0, 0, 0, -3], To make it a bit wider than article
   },
   ".token-line": {
     pr: 3,
   },
   ".highlight-line": {
-    backgroundColor: `rgb(2, 55, 81)`,
+    backgroundColor: `highLight`,
     borderLeft: `4px solid rgb(2, 155, 206)`,
     ".line-number-style": {
       width: `calc(3em - 4px)`,
