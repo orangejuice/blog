@@ -9,7 +9,7 @@ Here will a live code example go:
 
 ```js react-live
 const onClick = () => {
-  alert("You opened me");
+  alert("You opened me")
 };
 render(<button onClick={onClick}>Alohomora!</button>);
 ```
@@ -49,7 +49,7 @@ const Layout = ({ children }) => (
   </Test>
 )
 
-export default Layout
+export defaultLocale Layout
 ```
 
 Code block with code highlighting:
@@ -74,7 +74,7 @@ const Post = ({ data: { post } }) => (
       {post.tags && (
         <React.Fragment>
           {` — `}
-          <ItemTags tags={post.tags} />
+          <Tags tags={post.tags} />
         </React.Fragment>
       )}
     </p>
@@ -90,7 +90,7 @@ const Post = ({ data: { post } }) => (
   </Layout>
 );
 
-export default Post;
+export defaultLocale Post;
 ```
 
 Code block without title:
@@ -162,5 +162,5 @@ const Blog = ({ posts }: PostsProps) => {
   );
 };
 
-export default Blog;
+export defaultLocale Blog;
 ```

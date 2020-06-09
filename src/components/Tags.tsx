@@ -1,7 +1,6 @@
-import React from "react"
-import {Link as TLink} from "theme-ui"
-import {Link} from "gatsby"
+import * as React from "react"
 import * as settings from "../../settings"
+import LocalizedLink from "./LocalizedLink";
 
 type TagsProps = {
   tags: {
@@ -10,21 +9,21 @@ type TagsProps = {
   }[]
 }
 
-const ItemTags = ({ tags }: TagsProps) => {
-  const { tagsPath, basePath } = settings
+const Tags = ({tags}: TagsProps) => {
+  const {tagsPath} = settings
 
   return (
     <React.Fragment>
       {tags.map((tag, i) => (
         <React.Fragment key={tag.slug}>
           {!!i && `, `}
-          <TLink as={Link} to={`${basePath}${tagsPath}/${tag.slug}`}>
+          <LocalizedLink to={`${tagsPath}/${tag.slug}`}>
             {tag.name}
-          </TLink>
+          </LocalizedLink>
         </React.Fragment>
       ))}
     </React.Fragment>
   )
 }
 
-export default ItemTags
+export default Tags

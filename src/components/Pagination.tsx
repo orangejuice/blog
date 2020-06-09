@@ -1,7 +1,8 @@
 /** @jsx jsx */
-import {Link} from "gatsby";
-import React from "react";
-import {jsx} from "theme-ui";
+import * as React from "react"
+import {jsx} from "theme-ui"
+import LocalizedLink from "./LocalizedLink";
+
 
 const Pagination = (props: { first: boolean, prev: string, last: boolean, next: any, current: any, total: any }) => {
   return <ul style={{
@@ -13,17 +14,17 @@ const Pagination = (props: { first: boolean, prev: string, last: boolean, next: 
   }}>
     <li style={{minWidth: "120px", textAlign: "center"}}>
       {!props.first && (
-        <Link sx={{variant: `links.primary`}} to={props.prev} rel="prev">
+        <LocalizedLink sx={{variant: `links.primary`}} to={props.prev} rel="prev">
           ← Previous Page
-        </Link>
+        </LocalizedLink>
       )}
     </li>
     <li style={{minWidth: "120px", textAlign: "center"}}> Page {props.current} / {props.total} </li>
     <li style={{minWidth: "120px", textAlign: "center"}}>
       {!props.last && (
-        <Link sx={{variant: `links.primary`}} to={props.next} rel="next">
+        <LocalizedLink sx={{variant: `links.primary`}} to={props.next} rel="next">
           Next Page →
-        </Link>
+        </LocalizedLink>
       )}
     </li>
   </ul>

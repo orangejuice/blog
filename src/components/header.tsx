@@ -5,17 +5,17 @@ import * as settings from "../../settings"
 // @ts-ignore
 import Banner from "../../static/banner.svg"
 
-import ColorModeToggle from "./colormode-toggle"
-import {Link} from "gatsby";
-import LangToggle from "./LangToggle";
+import ColorModeToggle from "./ColorModeToggle"
+import {Link} from "gatsby"
+import LangToggle from "./LangToggle"
 
 const Header = () => {
+  const {siteTitle, basePath} = settings
   const [colorMode, setColorMode] = useColorMode()
   const isDark = colorMode === `dark`
   const toggleColorMode = () => {
     setColorMode(isDark ? `light` : `dark`)
   }
-  const {siteTitle, basePath} = settings
 
   return (
     <header>

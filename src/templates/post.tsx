@@ -1,47 +1,23 @@
 /** @jsx jsx */
 import {graphql} from "gatsby"
-import React from "react"
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import SectionTitle from "../components/SectionTitle";
-import {Heading, jsx} from "theme-ui";
-import ItemTags from "../components/item-tags";
-import {MDXRenderer} from "gatsby-plugin-mdx";
-import CodeStyles from "../styles/code";
+import * as React from "react"
+import Layout from "../components/Layout"
+import SEO from "../components/seo"
+import SectionTitle from "../components/SectionTitle"
+import {Heading, jsx} from "theme-ui"
+import Tags from "../components/Tags"
+import {MDXRenderer} from "gatsby-plugin-mdx"
+import CodeStyles from "../styles/code"
 
-type PostProps = {
-  data: {
-    post: {
-      slug: string
-      title: string
-      date: string
-      tags?: {
-        name: string
-        slug: string
-      }[]
-      description?: string
-      body: string
-      excerpt: string
-      timeToRead?: number
-      banner?: {
-        childImageSharp: {
-          resize: {
-            src: string
-          }
-        }
-      }
-    }
-  }
-}
 
-const Post = ({data}: PostProps) => {
+const Post = ({data, pageContext}) => {
   const {post} = data
 
   const px = [`32px`, `16px`, `8px`, `4px`]
   const shadow = px.map((v) => `rgba(0, 0, 0, 0.15) 0px ${v} ${v} 0px`)
 
   return (
-    <Layout sx={{ ...CodeStyles }}>
+    <Layout pageContext={pageContext} sx={{...CodeStyles}}>
       <SEO
         title={post.title}
         description={post.description ? post.description : post.excerpt}
@@ -55,7 +31,7 @@ const Post = ({data}: PostProps) => {
         {post.tags && (
           <React.Fragment>
             {` — `}
-            <ItemTags tags={post.tags}/>
+            <Tags tags={post.tags}/>
           </React.Fragment>
         )}
         {post.timeToRead && ` — `}
@@ -71,8 +47,8 @@ const Post = ({data}: PostProps) => {
 export default Post
 
 export const query = graphql`
-  query($slug: String!, $formatString: String!) {
-    post(slug: { eq: $slug }) {
+  query($slug: String!, $formatString: String!, $locale: String!) {
+    post(slug: { eq: $slug }, locale: {eq: $locale}) {
       slug
       title
       date(formatString: $formatString)

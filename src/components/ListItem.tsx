@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import {jsx} from "theme-ui";
-import React from 'react';
-import styled from '@emotion/styled';
-import {Link} from 'gatsby';
+import {jsx} from "theme-ui"
+import * as React from 'react'
+import styled from '@emotion/styled'
+import LocalizedLink from "./LocalizedLink";
 
 
 const Post = styled.article`
@@ -26,14 +26,6 @@ const Title = styled.h1`
   }
 `;
 
-const Description = styled.div`
-  font-size: ${props => props.theme.fontSize};
-  color: ${props => props.theme.colors.secondary};
-  ${props => props.sectionTitle && 'margin-top: -3rem'};
-  ${props => props.sectionTitle && 'margin-bottom: 4rem'};
-  ${props => props.sectionTitle && 'text-align: center'};
-`;
-
 const Initiale = styled.span`
   position: absolute;
   font-size: 7rem;
@@ -49,21 +41,21 @@ const Excerpt = styled.p`
   margin-bottom: 1rem;
 `;
 
-const Article = ({ title, date, excerpt, slug, timeToRead }) => {
+const ListItem = ({ title, date, excerpt, slug, timeToRead }) => {
   const firstChar = title.charAt(0);
 
   return (
     <Post>
       <Title >
         <Initiale>{firstChar}</Initiale>
-        <Link to={slug} sx={{color: `text`}}>{title}</Link>
+        <LocalizedLink to={slug} sx={{color: `text`}}>{title}</LocalizedLink>
       </Title>
-      <Description>
+      <div sx={{color: t => t.colors.secondary}}>
         {date} &mdash; {timeToRead} Min Read
-      </Description>
+      </div>
       <Excerpt>{excerpt}</Excerpt>
     </Post>
   );
 };
 
-export default Article;
+export default ListItem;

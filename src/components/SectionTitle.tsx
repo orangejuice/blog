@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from '@emotion/styled'
 
 const SectionTitle = styled.div`
   font-size: ${props => props.theme.fontSize};

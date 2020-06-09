@@ -1,14 +1,15 @@
 /** @jsx jsx */
-import {graphql, Link} from "gatsby"
-import * as React from "react";
-import styled from "@emotion/styled";
-import Layout from "../components/layout";
-import SectionTitle from "../components/SectionTitle";
-import Article from "../components/Article";
-import Pagination from "../components/Pagination";
-import {Flex} from "@theme-ui/components";
-import {jsx} from "theme-ui";
+import {graphql} from "gatsby"
+import * as React from "react"
+import styled from "@emotion/styled"
+import Layout from "../components/Layout"
+import SectionTitle from "../components/SectionTitle"
+import ListItem from "../components/ListItem"
+import Pagination from "../components/Pagination"
+import {Flex} from "@theme-ui/components"
+import {jsx} from "theme-ui"
 import * as settings from "../../settings"
+import LocalizedLink from "../components/LocalizedLink"
 
 const Content = styled.div`
   //grid-column: 1;
@@ -20,7 +21,7 @@ const Content = styled.div`
 
 const Homepage = ({data, pageContext}) => {
   const posts = data.allPost.nodes
-  const {tagsPath, basePath} = settings
+  const {tagsPath} = settings
   const {currentPage, numPages} = pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
@@ -28,16 +29,16 @@ const Homepage = ({data, pageContext}) => {
   const nextPage = (currentPage + 1).toString()
 
   return (
-    <Layout>
+    <Layout pageContext={pageContext}>
       <Flex sx={{alignItems: `center`, justifyContent: `space-between`, flexFlow: `wrap`}}>
         <SectionTitle>Blog</SectionTitle>
-        <Link sx={{variant: `links.secondary`}} to={basePath + tagsPath}>
+        <LocalizedLink sx={{variant: `links.secondary`}} to={tagsPath}>
           View all tags
-        </Link>
+        </LocalizedLink>
       </Flex>
       <Content>
         {posts.map(post => (
-          <Article
+          <ListItem
             title={post.title}
             date={post.date}
             excerpt={post.excerpt}

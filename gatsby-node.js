@@ -128,7 +128,7 @@ exports.onCreateNode = ({node, actions, getNode, createNodeId, createContentDige
     }
 
     const name = path.basename(node.fileAbsolutePath, `.mdx`)
-    const lang = name === `index` ? i18n.default : name.split(`.`)[1]
+    const lang = name === `index` ? i18n.defaultLocale : name.split(`.`)[1]
 
     const fieldData = {
       slug: fileNode.relativeDirectory,
@@ -160,7 +160,7 @@ exports.onCreateNode = ({node, actions, getNode, createNodeId, createContentDige
   // Check for "pages" and create the "Page" type
   if (node.internal.type === `Mdx` && source === pagesPath) {
     const name = path.basename(node.fileAbsolutePath, `.mdx`)
-    const lang = name === `index` ? i18n.default : name.split(`.`)[1]
+    const lang = name === `index` ? i18n.defaultLocale : name.split(`.`)[1]
 
     const fieldData = {
       title: node.frontmatter.title,
@@ -185,20 +185,12 @@ exports.onCreateNode = ({node, actions, getNode, createNodeId, createContentDige
   }
 }
 
-const pageTemplate = require.resolve(`./src/templates/page.tsx`)
-const tagsTemplate = require.resolve(`./src/templates/tags.tsx`)
-
 exports.createPages = async ({actions, graphql, reporter}, themeOptions) => {
   const {createPage} = actions
 
-  const {basePath, blogPath, tagsPath, formatString} = settings
+  const {basePath, tagsPath} = settings
 
-  createPage({
-    path: `/${basePath}/${tagsPath}`.replace(/\/\/+/g, `/`),
-    component: tagsTemplate,
-  })
-
-  let result = await graphql(`
+  const result = await graphql(`
     query {
       allPost {
         nodes {
@@ -235,7 +227,7 @@ exports.createPages = async ({actions, graphql, reporter}, themeOptions) => {
   const posts = result.data.allPost.nodes
 
   posts.forEach((post) => {
-    const path = post.locale === i18n.default ? post.slug : `/${post.locale}/${post.slug}`
+    const path = post.locale === i18n.defaultLocale ? post.slug : `/${post.locale}/${post.slug}`
 
     createPage({
       path: path.replace(/\/\/+/g, `/`),
@@ -243,7 +235,7 @@ exports.createPages = async ({actions, graphql, reporter}, themeOptions) => {
       context: {
         slug: post.slug,
         locale: post.locale,
-        formatString,
+        formatString: i18n.locales[post.locale].dateFormat,
       },
     })
   })
@@ -252,7 +244,7 @@ exports.createPages = async ({actions, graphql, reporter}, themeOptions) => {
 
   postsPerLocale.forEach(locale => {
     const numPages = Math.ceil(locale.totalCount / settings.postsPerPage)
-    const path = locale.fieldValue === i18n.default ? '/' : `/${locale.fieldValue}`
+    const path = locale.fieldValue === i18n.defaultLocale ? '/' : `/${locale.fieldValue}`
 
     Array.from({length: numPages}).forEach((_, i) => {
       createPage({
@@ -273,30 +265,17 @@ exports.createPages = async ({actions, graphql, reporter}, themeOptions) => {
   const pages = result.data.allPage.nodes
 
   pages.forEach((page) => {
-    const path = page.locale === i18n.default ? page.slug : `/${page.locale}/${page.slug}`
+    const path = page.locale === i18n.defaultLocale ? page.slug : `/${page.locale}/${page.slug}`
 
     createPage({
       path: `${basePath}/${path}`.replace(/\/\/+/g, `/`),
-      component: pageTemplate,
+      component: require.resolve(`./src/templates/page.tsx`),
       context: {
         slug: page.slug,
         locale: page.locale,
       },
     })
   })
-
-  // let query = "query {"
-  // Object.keys(i18n.locales).map(lang => {
-  //   query += `
-  //     ${lang}: allPost(filter: {locale: {eq: "${lang}"}}) {
-  //       group(field: tags___name) {
-  //         fieldValue,
-  //         totalCount
-  //       }
-  //     }`
-  // })
-  // query += "}"
-  // result = await graphql(query)
 
   Object.keys(i18n.locales).map(lang => {
     graphql(`
@@ -308,11 +287,21 @@ exports.createPages = async ({actions, graphql, reporter}, themeOptions) => {
         }
       }
     }`, {locale: lang}).then(result => {
+      const path = `${basePath}/${lang === i18n.defaultLocale ? '' : lang}/${tagsPath}`
+
+      createPage({
+        path: path.replace(/\/\/+/g, `/`),
+        component: require.resolve(`./src/templates/tags.tsx`),
+        context: {
+          locale: lang
+        },
+      })
+
       const tags = result.data.tags.group
 
       tags.forEach((tag) => {
         const PageTotal = Math.ceil(tag.totalCount / settings.postsPerPage);
-        const path = `${basePath}/${lang === i18n.default ? '' : lang}/${tagsPath}/${kebabCase(tag.fieldValue)}`
+        const path = `${basePath}/${lang === i18n.defaultLocale ? '' : lang}/${tagsPath}/${kebabCase(tag.fieldValue)}`
 
         Array.from({length: PageTotal}).forEach((_, i) => {
           createPage({
@@ -326,7 +315,8 @@ exports.createPages = async ({actions, graphql, reporter}, themeOptions) => {
               skip: i * settings.postsPerPage,
               currentPage: i + 1,
               totalPage: PageTotal,
-              totalPost: tag.totalCount
+              totalPost: tag.totalCount,
+              locale: lang
             },
           });
         });
@@ -345,7 +335,7 @@ exports.createPages = async ({actions, graphql, reporter}, themeOptions) => {
 //
 //   console.log(page)
 //   Object.keys(i18n).map(lang => {
-//     const path = lang === i18n.default ? page.path : `/${lang}/${page.path}`
+//     const path = lang === i18n.defaultLocale ? page.path : `/${lang}/${page.path}`
 //
 //     return createPage({
 //       ...page,

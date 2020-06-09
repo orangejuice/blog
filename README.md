@@ -164,7 +164,7 @@ banner: ./defence-against-the-dark-arts.jpg
 ---
 ```
 
-**The fields `description` and `banner` are optional!** If no description is provided, an excerpt of the blog post will be used. If no banner is provided, the default `siteImage` (from `siteMetadata`) is used.
+**The fields `description` and `banner` are optional!** If no description is provided, an excerpt of the blog post will be used. If no banner is provided, the defaultLocale `siteImage` (from `siteMetadata`) is used.
 
 The `date` field has to be written in the format `YYYY-MM-DD`!
 
