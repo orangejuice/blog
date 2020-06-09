@@ -1,11 +1,8 @@
-import { tint } from "@theme-ui/color"
 
 const code = {
   ".prism-code": {
-    fontSize: 1,
     padding: 3,
     webkitOverflowScrolling: `touch`,
-    backgroundColor: `transparent`,
     overflow: `initial`,
     float: `left`,
     minWidth: `100%`,
@@ -20,8 +17,8 @@ const code = {
     display: `inline-block`,
   },
   "p > code, li > code": {
-    bg: `rgb(1, 22, 39)`,
-    color: `rgb(214, 222, 235)`,
+    bg: `highlight`,
+    //color: `rgb(214, 222, 235)`,
     px: 2,
     py: 1,
     borderRadius: `2px`,
@@ -152,21 +149,18 @@ const code = {
     position: `relative`,
   },
   ".code-title": {
-    backgroundColor: `rgb(2, 155, 206)`,
-    color: `black`,
-    fontSize: 0,
-    borderRadius: `4px 4px 0 0`,
+    fontSize: 12,
     px: 3,
     py: 2,
     fontFamily: `monospace`,
-    // mx: [0, 0, 0, -3], To make it a bit wider than article
   },
   ".token-line": {
     pr: 3,
   },
   ".highlight-line": {
-    backgroundColor: `highLight`,
-    borderLeft: `4px solid rgb(2, 155, 206)`,
+    backgroundColor: `highlight`,
+    borderLeft: `4px solid`,
+    borderColor: `highlightWeight`,
     ".line-number-style": {
       width: `calc(3em - 4px)`,
       opacity: 0.5,

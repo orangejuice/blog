@@ -141,7 +141,7 @@ Code block without line numbers but with highlighting, language, and title:
 import React from "react";
 
 const Blog = ({ posts }: PostsProps) => {
-  const { tagsPath, basePath } = useSiteMetadata();
+  const { tagsPath, basePath } = querySiteMetadata();
 
   return (
     <Layout>

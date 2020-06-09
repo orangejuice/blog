@@ -1,16 +1,14 @@
-/* eslint react/destructuring-assignment: 0 */
-// @ts-ignore
+/** @jsx jsx */
 import React from "react"
-import Highlight, { defaultProps } from "prism-react-renderer"
+import Highlight, {defaultProps} from "prism-react-renderer"
 import LightTheme from "prism-react-renderer/themes/nightOwlLight"
 import DarkTheme from "prism-react-renderer/themes/nightOwl"
-import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
-import { Language } from "../types"
-import { useThemeUI } from 'theme-ui'
+import * as settings from "../../settings"
+import {jsx, Styled, useThemeUI} from 'theme-ui'
 
 type CodeProps = {
   codeString: string
-  language: Language
+  language: string
   noLineNumbers?: boolean
   metastring?: string
   [key: string]: any
@@ -55,7 +53,7 @@ const Code = ({
   className: blockClassName,
   metastring = ``
 }: CodeProps) => {
-  const { showLineNumbers } = useMinimalBlogConfig()
+  const { showLineNumbers } = settings
   const { colorMode } = useThemeUI()
 
   const [language, { title = `` }] = getParams(blockClassName)
@@ -63,8 +61,9 @@ const Code = ({
 
   const hasLineNumbers = !noLineNumbers && language !== `noLineNumbers` && showLineNumbers
   const theme = colorMode == 'light' ? LightTheme : DarkTheme
+
   return (
-    <Highlight {...defaultProps} code={codeString} language={language} theme={theme}>
+    <Highlight {...defaultProps} code={codeString} language={language} theme={theme} >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <React.Fragment>
           {title && (
@@ -73,7 +72,7 @@ const Code = ({
             </div>
           )}
           <div className="gatsby-highlight" data-language={language}>
-            <pre className={className} style={style} data-linenumber={hasLineNumbers}>
+            <Styled.pre className={className} style={style} data-linenumber={hasLineNumbers}>
               {tokens.map((line, i) => {
                 const lineProps = getLineProps({ line, key: i })
 
@@ -90,7 +89,7 @@ const Code = ({
                   </div>
                 )
               })}
-            </pre>
+            </Styled.pre>
           </div>
         </React.Fragment>
       )}

@@ -1,9 +1,9 @@
 /** @jsx jsx */
-import { jsx, Link } from "theme-ui"
-import useSiteMetadata from "../hooks/use-site-metadata"
+import {jsx, Link} from "theme-ui"
+import * as settings from "../../settings"
 
 const Footer = () => {
-  const { siteTitle } = useSiteMetadata()
+  const { siteTitle } = settings
 
   return (
     <footer
