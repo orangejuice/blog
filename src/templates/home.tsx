@@ -10,14 +10,15 @@ import {Flex} from "@theme-ui/components"
 import {jsx} from "theme-ui"
 import * as settings from "../../settings"
 import LocalizedLink from "../components/LocalizedLink"
+import {FormattedMessage} from "react-intl";
 
 const Content = styled.div`
   //grid-column: 1;
-  //box-shadow: 0 4px 120px rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
-  padding: 1rem 1rem;
+  // box-shadow: 0 4px 120px rgba(0, 0, 0, 0.1);
+  // border-radius: 1rem;
+  padding: 1rem 2rem;
   //overflow: hidden;
-`;
+`
 
 const Homepage = ({data, pageContext}) => {
   const posts = data.allPost.nodes
@@ -31,21 +32,14 @@ const Homepage = ({data, pageContext}) => {
   return (
     <Layout pageContext={pageContext}>
       <Flex sx={{alignItems: `center`, justifyContent: `space-between`, flexFlow: `wrap`}}>
-        <SectionTitle>Blog</SectionTitle>
+        <SectionTitle><FormattedMessage id={"header.nav.home"}/></SectionTitle>
         <LocalizedLink sx={{variant: `links.secondary`}} to={tagsPath}>
-          View all tags
+          <FormattedMessage id={"header.nav.allTags"}/>
         </LocalizedLink>
       </Flex>
       <Content>
         {posts.map(post => (
-          <ListItem
-            title={post.title}
-            date={post.date}
-            excerpt={post.excerpt}
-            timeToRead={post.timeToRead}
-            slug={post.slug}
-            key={post.slug}
-          />
+          <ListItem post={post}/>
         ))}
       </Content>
       <Pagination first={isFirst} last={isLast} prev={prevPage} next={nextPage}
@@ -57,12 +51,12 @@ const Homepage = ({data, pageContext}) => {
 export default Homepage
 
 export const query = graphql`
-  query($formatString: String!, $skip: Int!, $limit: Int!, $locale: String!) {
+  query($skip: Int!, $limit: Int!, $locale: String!) {
     allPost(sort: { fields: date, order: DESC }, limit: $limit, skip: $skip, filter: {locale: {eq: $locale}}) {
       nodes {
         slug
         title
-        date(formatString: $formatString)
+        date
         excerpt(truncate: true)
         timeToRead
         description

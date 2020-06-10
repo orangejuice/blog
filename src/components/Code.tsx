@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React from "react"
+import * as React from "react"
 import Highlight, {defaultProps} from "prism-react-renderer"
 import LightTheme from "prism-react-renderer/themes/nightOwlLight"
 import DarkTheme from "prism-react-renderer/themes/nightOwl"

@@ -8,6 +8,7 @@ import {Heading, jsx} from "theme-ui"
 import Tags from "../components/Tags"
 import {MDXRenderer} from "gatsby-plugin-mdx"
 import CodeStyles from "../styles/code"
+import {FormattedMessage} from "react-intl";
 
 
 const Post = ({data, pageContext}) => {
@@ -17,16 +18,16 @@ const Post = ({data, pageContext}) => {
   const shadow = px.map((v) => `rgba(0, 0, 0, 0.15) 0px ${v} ${v} 0px`)
 
   return (
-    <Layout pageContext={pageContext} sx={{...CodeStyles}}>
+    <Layout pageContext={pageContext} sx={{minHeight: `600px`}}>
       <SEO
         title={post.title}
         description={post.description ? post.description : post.excerpt}
         image={post.banner ? post.banner.childImageSharp.resize.src : undefined}
         pathname={post.slug}
       />
-      <SectionTitle>Post</SectionTitle>
+      <SectionTitle><FormattedMessage id={"header.nav.post"}/></SectionTitle>
       <Heading variant="styles.h3">{post.title}</Heading>
-      <p sx={{color: `secondary`, mt: 3, a: {color: `secondary`}, fontSize: [1, 1, 1]}}>
+      <p sx={{color: `secondary`, mt: 3, fontSize: 1}}>
         <time>{post.date}</time>
         {post.tags && (
           <React.Fragment>
@@ -37,7 +38,7 @@ const Post = ({data, pageContext}) => {
         {post.timeToRead && ` — `}
         {post.timeToRead && <span>{post.timeToRead} min read</span>}
       </p>
-      <section sx={{my: 5, ".gatsby-resp-image-wrapper": {my: [4, 4, 5], boxShadow: shadow.join(`, `)}}}>
+      <section sx={{...CodeStyles, my: 5, ".gatsby-resp-image-wrapper": {my: [4, 4, 5], boxShadow: shadow.join(`, `)}}}>
         <MDXRenderer>{post.body}</MDXRenderer>
       </section>
     </Layout>
@@ -47,11 +48,11 @@ const Post = ({data, pageContext}) => {
 export default Post
 
 export const query = graphql`
-  query($slug: String!, $formatString: String!, $locale: String!) {
+  query($slug: String!, $locale: String!) {
     post(slug: { eq: $slug }, locale: {eq: $locale}) {
       slug
       title
-      date(formatString: $formatString)
+      date
       tags {
         name
         slug

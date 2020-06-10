@@ -1,25 +1,27 @@
-import styled from '@emotion/styled'
+/** @jsx jsx */
+import {jsx} from "theme-ui"
+import * as React from "react";
 
-const SectionTitle = styled.div`
-  font-size: ${props => props.theme.fontSize};
-  text-transform: uppercase;
-  font-weight: bold;
-  //text-align: center;
-  color: ${props => props.theme.colors.grey};
-  position: relative;
-  padding-bottom: 1rem;
-  margin-top: 2rem;
 
-  &:after {
-    content: '';
-    height: 1px;
-    width: 50px;
-    position: absolute;
-    bottom: 0;
-    left: 0%;
-    //margin-left: -25px;
-    background: ${props => props.theme.colors.secondary};
-  }
-`;
+const SectionTitle = (props) => {
+  return <div sx={{
+    textTransform: `uppercase`,
+    fontWeight: `bold`,
+    //text-align: center;
+    position: `relative`,
+    paddingBottom: `1rem`,
+    marginTop: `2rem`,
+    "&:after": {
+      content: `""`,
+      height: `1px`,
+      width: `50px`,
+      position: `absolute`,
+      bottom: `0`,
+      left: `0%`,
+      //margin-left: -25px,
+      backgroundColor: `secondary`,
+    }
+  }} {...props}/>
+}
 
-export default SectionTitle;
+export default SectionTitle

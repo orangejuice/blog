@@ -1,6 +1,6 @@
 import React from "react"
 import {preToCodeBlock} from "mdx-utils"
-import Code from "../components/code"
+import Code from "../components/Code"
 import LocalizedLink from "../components/LocalizedLink";
 
 const components = {

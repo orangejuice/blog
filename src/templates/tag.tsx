@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import {graphql, Link} from "gatsby"
+import {graphql} from "gatsby"
 import * as React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
@@ -10,6 +10,8 @@ import SectionTitle from "../components/SectionTitle"
 import styled from "@emotion/styled"
 import Pagination from "../components/Pagination"
 import ListItem from "../components/ListItem"
+import LocalizedLink from "../components/LocalizedLink";
+import {FormattedMessage} from "react-intl";
 
 const Content = styled.div`
   //grid-column: 1;
@@ -32,25 +34,18 @@ const Tag = ({data, pageContext}) => {
     <Layout pageContext={pageContext}>
       <SEO title={`Tag: ${pageContext.name}`}/>
       <Flex sx={{alignItems: `center`, justifyContent: `space-between`, flexFlow: `wrap`}}>
-        <SectionTitle>Tag</SectionTitle>
-        <Link sx={{variant: `links.secondary`}} to={`${basePath}${tagsPath}`}>
-          View all tags
-        </Link>
+        <SectionTitle><FormattedMessage id={"header.nav.tag"}/></SectionTitle>
+        <LocalizedLink sx={{variant: `links.secondary`}} to={`${tagsPath}`}>
+          <FormattedMessage id={"header.nav.allTags"}/>
+        </LocalizedLink>
       </Flex>
       <Heading variant="styles.h3">{pageContext.name}</Heading>
       <p sx={{color: `secondary`, mt: 3, a: {color: `secondary`}, fontSize: [1, 1, 1]}}>
-        {totalPost} posts in total
+        <FormattedMessage id={"tag.postsInTotal"} values={{totalPost}}/>
       </p>
-      <div sx={{  borderRadius: `1rem`, padding: `1rem 1rem`}}>
+      <div sx={{borderRadius: `1rem`, padding: `1rem 1rem`}}>
         {posts.map(post => (
-          <ListItem
-            title={post.title}
-            date={post.date}
-            excerpt={post.excerpt}
-            timeToRead={post.timeToRead}
-            slug={post.slug}
-            key={post.slug}
-          />
+          <ListItem post={post}/>
         ))}
       </div>
       <Pagination first={isFirst} last={isLast} prev={prevPage} next={nextPage}
@@ -62,12 +57,12 @@ const Tag = ({data, pageContext}) => {
 export default Tag
 
 export const query = graphql`
-  query($slug: String!, $formatString: String!, $skip: Int!, $limit: Int!, $locale: String!) {
+  query($slug: String!, $skip: Int!, $limit: Int!, $locale: String!) {
     allPost(sort: { fields: date, order: DESC }, limit: $limit, skip: $skip, filter: { tags: { elemMatch: { slug: { eq: $slug } } }, locale: {eq: $locale} }) {
       nodes {
         slug
         title
-        date(formatString: $formatString)
+        date
         excerpt(truncate: true)
         timeToRead
         description

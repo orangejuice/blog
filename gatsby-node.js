@@ -235,7 +235,6 @@ exports.createPages = async ({actions, graphql, reporter}, themeOptions) => {
       context: {
         slug: post.slug,
         locale: post.locale,
-        formatString: i18n.locales[post.locale].dateFormat,
       },
     })
   })
@@ -254,7 +253,6 @@ exports.createPages = async ({actions, graphql, reporter}, themeOptions) => {
           limit: settings.postsPerPage,
           skip: i * settings.postsPerPage,
           numPages,
-          formatString: i18n.locales[locale.fieldValue].dateFormat,
           currentPage: i + 1,
           locale: locale.fieldValue,
         },
@@ -310,7 +308,6 @@ exports.createPages = async ({actions, graphql, reporter}, themeOptions) => {
             context: {
               slug: kebabCase(tag.fieldValue),
               name: tag.fieldValue,
-              formatString: i18n.locales[lang].dateFormat,
               limit: settings.postsPerPage,
               skip: i * settings.postsPerPage,
               currentPage: i + 1,
@@ -343,7 +340,6 @@ exports.createPages = async ({actions, graphql, reporter}, themeOptions) => {
 //       context: {
 //         ...page.context,
 //         locale: lang,
-//         dateFormat: i18n[lang].dateFormat,
 //       },
 //     })
 //   })

@@ -6,8 +6,8 @@ import * as settings from "../../settings"
 import Banner from "../../static/banner.svg"
 
 import ColorModeToggle from "./ColorModeToggle"
-import {Link} from "gatsby"
 import LangToggle from "./LangToggle"
+import LocalizedLink from "./LocalizedLink";
 
 const Header = () => {
   const {siteTitle, basePath} = settings
@@ -20,12 +20,12 @@ const Header = () => {
   return (
     <header>
       <Flex sx={{ alignItems: `center`}}>
-        <Link
-          to={basePath}
+        <LocalizedLink
+          to={"/"}
           aria-label={`${siteTitle} - Back to home`}
           sx={{color: `heading`, textDecoration: `none`, 'svg tspan::selection': {background: `none`}}}>
           <Banner style={{width: `150px`}}/>
-        </Link>
+        </LocalizedLink>
         <div sx={{flex: 1}}/>
         <ColorModeToggle isDark={isDark} toggle={toggleColorMode}/>
         <LangToggle />
