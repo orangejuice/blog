@@ -7,19 +7,12 @@ import {Flex} from "@theme-ui/components"
 import {Heading, jsx} from "theme-ui"
 import * as settings from "../../settings"
 import SectionTitle from "../components/SectionTitle"
-import styled from "@emotion/styled"
 import Pagination from "../components/Pagination"
 import ListItem from "../components/ListItem"
 import LocalizedLink from "../components/LocalizedLink";
 import {FormattedMessage} from "react-intl";
 
-const Content = styled.div`
-  //grid-column: 1;
-  //box-shadow: 0 4px 120px rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
-  padding: 1rem 1rem;
-  //overflow: hidden;
-`;
+
 const Tag = ({data, pageContext}) => {
   const posts = data.allPost.nodes
   const {tagsPath, basePath} = settings

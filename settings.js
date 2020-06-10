@@ -2,7 +2,7 @@ module.exports = {
   basePath: '/',
   tagsPath: '/tags',
   siteTitle: 'Orangejuice',
-  feedTitle: `Minimal Blog - @lekoarts/gatsby-theme-minimal-blog`,
+  feedTitle: `Orangejuice Blog`,
   showLineNumbers: true,
   postsPath: 'content/posts',
   pagesPath: `content/pages`,

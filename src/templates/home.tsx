@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import {graphql} from "gatsby"
 import * as React from "react"
-import styled from "@emotion/styled"
 import Layout from "../components/Layout"
 import SectionTitle from "../components/SectionTitle"
 import ListItem from "../components/ListItem"
@@ -12,13 +11,6 @@ import * as settings from "../../settings"
 import LocalizedLink from "../components/LocalizedLink"
 import {FormattedMessage} from "react-intl";
 
-const Content = styled.div`
-  //grid-column: 1;
-  // box-shadow: 0 4px 120px rgba(0, 0, 0, 0.1);
-  // border-radius: 1rem;
-  padding: 1rem 2rem;
-  //overflow: hidden;
-`
 
 const Homepage = ({data, pageContext}) => {
   const posts = data.allPost.nodes
@@ -37,11 +29,11 @@ const Homepage = ({data, pageContext}) => {
           <FormattedMessage id={"header.nav.allTags"}/>
         </LocalizedLink>
       </Flex>
-      <Content>
+      <div sx={{padding: `1rem 2rem`}}>
         {posts.map(post => (
           <ListItem post={post}/>
         ))}
-      </Content>
+      </div>
       <Pagination first={isFirst} last={isLast} prev={prevPage} next={nextPage}
                   current={currentPage} total={numPages}/>
     </Layout>

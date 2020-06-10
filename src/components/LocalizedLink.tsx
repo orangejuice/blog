@@ -1,25 +1,32 @@
 import * as React from "react"
 import {Link} from "gatsby"
-import {useIntl} from 'react-intl'
 import {defaultLocale} from "../utils/i18n"
 import * as settings from "../../settings"
-
+import {useIntl} from "react-intl";
 
 const LocalizedLink = ({to, ...props}) => {
+  // Workaround
+  // For gatsby build - onPostBuild - Error
+  // Error: [React Intl] Could not find required `intl` object. <IntlProvider> needs to exist in the component ancestry.
+  try{
+    useIntl()
+  } catch (e) {
+    return <React.Fragment/>
+  }
+
   const {locale} = useIntl()
   const {basePath} = settings
 
   const isHash = str => /^#/.test(str)
-  const isInternal = to => /^\/(?!\/)/.test(to)
+  const isFullLink = to => /^(http|https|\/\/)/.test(to)
 
-  if (isHash(to) || !isInternal(to)) {
-    return <Link {...props} to={(basePath + to).replace(/\/\/+/g, `/`)}/>
+  if (isHash(to) || isFullLink(to)) {
+    return <a {...props} href={to}/>
   }
 
-  const isIndex = to === `/`
-  const path = locale === defaultLocale ? to : `${locale}${isIndex ? `` : `${to}`}`
+  const path = basePath + (locale === defaultLocale ? to : `/${locale}${to}`)
 
-  return <Link {...props} to={(basePath + path).replace(/\/\/+/g, `/`)}/>
+  return <Link {...props} to={path.replace(/\/\/+/g, `/`)}/>
 }
 
 export default LocalizedLink

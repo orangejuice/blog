@@ -8,7 +8,7 @@ import {Heading, jsx} from "theme-ui"
 import Tags from "../components/Tags"
 import {MDXRenderer} from "gatsby-plugin-mdx"
 import CodeStyles from "../styles/code"
-import {FormattedMessage} from "react-intl";
+import {FormattedDate, FormattedMessage} from "react-intl";
 
 
 const Post = ({data, pageContext}) => {
@@ -28,7 +28,7 @@ const Post = ({data, pageContext}) => {
       <SectionTitle><FormattedMessage id={"header.nav.post"}/></SectionTitle>
       <Heading variant="styles.h3">{post.title}</Heading>
       <p sx={{color: `secondary`, mt: 3, fontSize: 1}}>
-        <time>{post.date}</time>
+        <FormattedDate month="long" year="numeric" day="numeric" value={post.date}/>
         {post.tags && (
           <React.Fragment>
             {` — `}
@@ -36,7 +36,7 @@ const Post = ({data, pageContext}) => {
           </React.Fragment>
         )}
         {post.timeToRead && ` — `}
-        {post.timeToRead && <span>{post.timeToRead} min read</span>}
+        {post.timeToRead && <FormattedMessage id={"post.timeToRead"} values={{timeToRead: post.timeToRead}}/>}
       </p>
       <section sx={{...CodeStyles, my: 5, ".gatsby-resp-image-wrapper": {my: [4, 4, 5], boxShadow: shadow.join(`, `)}}}>
         <MDXRenderer>{post.body}</MDXRenderer>

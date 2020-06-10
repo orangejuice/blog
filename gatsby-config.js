@@ -77,7 +77,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-feed`,
-      options: require(`./src/utils/queryFeed`)(settings.feedTitle),
+      options: require(`./src/utils/feed`)(settings.feedTitle),
     },
   ],
 }

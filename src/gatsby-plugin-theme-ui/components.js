@@ -11,7 +11,9 @@ const components = {
     }
     return <pre {...preProps} />
   },
-  a: props => <LocalizedLink to={props.href} {...props}/>
+  a: props => {
+    return <LocalizedLink to={props.href} {...props}/>
+  }
 }
 
 export default components

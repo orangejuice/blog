@@ -9,6 +9,7 @@ import Footer from "./footer"
 import {IntlProvider} from 'react-intl'
 import {locales} from "../utils/i18n"
 
+
 const Layout = ({children, className, pageContext: {locale}}: Props) => (
   <IntlProvider locale={locale} messages={locales[locale]}>
     <Fragment>

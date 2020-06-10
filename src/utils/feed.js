@@ -1,6 +1,6 @@
 const options = require('../../settings')
 
-module.exports = (title) => ({
+module.exports = () => ({
   query: `
     {
       site {
@@ -32,7 +32,7 @@ module.exports = (title) => ({
           allPost(sort: { fields: date, order: DESC }) {
             nodes {
               title
-              date(formatString: "${options.formatString}")
+              date(formatString: "MMMM dd, YYYY")
               excerpt
               slug
               html
@@ -40,8 +40,8 @@ module.exports = (title) => ({
           }
         }
       `,
-      output: `rss.xml`,
-      title,
+      output: `/rss.xml`,
+      title: options.feedTitle,
     },
   ],
 })

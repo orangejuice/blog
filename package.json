@@ -21,7 +21,6 @@
     "@theme-ui/color": "^0.3.1",
     "@theme-ui/components": "^0.3.1",
     "@theme-ui/presets": "^0.3.0",
-    "@theme-ui/prism": "^0.3.0",
     "gatsby": "^2.20.36",
     "gatsby-plugin-catch-links": "^2.3.1",
     "gatsby-plugin-feed": "^2.5.1",
@@ -42,14 +41,12 @@
     "prism-react-renderer": "^1.1.0",
     "react-helmet": "^6.0.0",
     "react-intl": "^4.6.9",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "theme-ui": "^0.3.1",
     "typeface-ibm-plex-sans": "^0.0.75"
   },
   "devDependencies": {
-    "@theme-ui/typography": "^0.3.0",
-    "@types/theme-ui": "^0.3.2",
-    "cross-env": "^5.2.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "cross-env": "^5.2.0"
   }
 }
