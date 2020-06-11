@@ -1,16 +1,16 @@
 /** @jsx jsx */
 import {jsx, useColorMode} from "theme-ui"
 import {Flex} from "@theme-ui/components"
-import * as settings from "../../settings"
 // @ts-ignore
 import Banner from "../../static/banner.svg"
 
 import ColorModeToggle from "./ColorModeToggle"
 import LangToggle from "./LangToggle"
 import LocalizedLink from "./LocalizedLink";
+import {useIntl} from "react-intl";
 
 const Header = () => {
-  const {siteTitle, basePath} = settings
+  const {formatMessage} = useIntl()
   const [colorMode, setColorMode] = useColorMode()
   const isDark = colorMode === `dark`
   const toggleColorMode = () => {
@@ -20,9 +20,9 @@ const Header = () => {
   return (
     <header>
       <Flex sx={{ alignItems: `center`}}>
-        <LocalizedLink
-          to={"/"}
-          aria-label={`${siteTitle} - Back to home`}
+        <LocalizedLink to="/"
+          aria-label={formatMessage({id: "header.nav.backHome.title"})}
+          title={formatMessage({id: "header.nav.backHome.title"})}
           sx={{color: `heading`, textDecoration: `none`, 'svg tspan::selection': {background: `none`}}}>
           <Banner style={{width: `150px`}}/>
         </LocalizedLink>
