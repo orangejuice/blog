@@ -22,14 +22,6 @@ const Page = ({data, pageContext}) => {
 
 export default Page
 
-// const PageComponent = props => {
-//     const { page } = props.data
-//
-//     return <Page data={{...props.data, page}} />
-// }
-//
-// export defaultLocale PageComponent
-
 export const query = graphql`
   query($slug: String!, $locale: String!) {
     page(slug: { eq: $slug }, locale: {eq: $locale}) {

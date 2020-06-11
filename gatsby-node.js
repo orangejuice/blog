@@ -8,22 +8,8 @@ const settings = require(`./settings`)
 exports.createSchemaCustomization = ({actions, schema}, themeOptions) => {
   const {createTypes, createFieldExtension} = actions
 
-  const {basePath} = settings
-
   createFieldExtension({
-    name: `slugify`,
-    extend() {
-      return {
-        resolve: (source) => {
-          const slug = source.slug ? source.slug : kebabCase(source.title)
-          return `/${basePath}/${slug}`.replace(/\/\/+/g, `/`)
-        },
-      }
-    },
-  })
-
-  createFieldExtension({
-    name: `mdxpassthrough`,
+    name: `parentValue`,
     args: {
       fieldName: `String!`,
     },
@@ -47,7 +33,7 @@ exports.createSchemaCustomization = ({actions, schema}, themeOptions) => {
   createTypes(`
     interface Post @nodeInterface {
       id: ID!
-      slug: String! @slugify
+      slug: String!
       title: String!
       locale: String!
       date: Date! @dateformat
@@ -75,14 +61,14 @@ exports.createSchemaCustomization = ({actions, schema}, themeOptions) => {
     }
 
     type MdxPost implements Node & Post {
-      slug: String! @slugify
+      slug: String!
       title: String!
       locale: String!
       date: Date! @dateformat
-      excerpt(pruneLength: Int = 140, truncate: Boolean = true): String! @mdxpassthrough(fieldName: "excerpt")
-      body: String! @mdxpassthrough(fieldName: "body")
-      html: String! @mdxpassthrough(fieldName: "html")
-      timeToRead: Int @mdxpassthrough(fieldName: "timeToRead")
+      excerpt(pruneLength: Int = 140, truncate: Boolean = true): String! @parentValue(fieldName: "excerpt")
+      body: String! @parentValue(fieldName: "body")
+      html: String! @parentValue(fieldName: "html")
+      timeToRead: Int @parentValue(fieldName: "timeToRead")
       tags: [PostTag]
       banner: File @fileByRelativePath
       description: String
@@ -92,29 +78,23 @@ exports.createSchemaCustomization = ({actions, schema}, themeOptions) => {
       slug: String!
       title: String!
       locale: String!
-      excerpt(pruneLength: Int = 140, truncate: Boolean = true): String! @mdxpassthrough(fieldName: "excerpt")
-      body: String! @mdxpassthrough(fieldName: "body")
+      excerpt(pruneLength: Int = 140, truncate: Boolean = true): String! @parentValue(fieldName: "excerpt")
+      body: String! @parentValue(fieldName: "body")
     }
   `)
 }
 
 exports.onCreateNode = ({node, actions, getNode, createNodeId, createContentDigest}) => {
   const {createNode, createParentChildLink} = actions
-
   const {postsPath, pagesPath} = settings
 
-  // Make sure that it's an MDX node
   if (node.internal.type !== `Mdx`) {
     return
   }
 
-  // Create a source field
-  // And grab the sourceInstanceName to differentiate the different sources
-  // In this case "postsPath" and "pagesPath"
-  const fileNode = getNode(node.parent)
-  const source = fileNode.sourceInstanceName
+  const file = getNode(node.parent)
+  const source = file.sourceInstanceName
 
-  // Check for "posts" and create the "Post" type
   if (node.internal.type === `Mdx` && source === postsPath) {
     let modifiedTags
 
@@ -131,7 +111,7 @@ exports.onCreateNode = ({node, actions, getNode, createNodeId, createContentDige
     const lang = name === `index` ? i18n.defaultLocale : name.split(`.`)[1]
 
     const fieldData = {
-      slug: fileNode.relativeDirectory,
+      slug: file.relativeDirectory,
       title: node.frontmatter.title,
       date: node.frontmatter.date,
       tags: modifiedTags,
@@ -164,7 +144,7 @@ exports.onCreateNode = ({node, actions, getNode, createNodeId, createContentDige
 
     const fieldData = {
       title: node.frontmatter.title,
-      slug: fileNode.relativeDirectory,
+      slug: file.relativeDirectory,
       locale: lang
     }
 
