@@ -1,9 +1,11 @@
 /** @jsx jsx */
 import {jsx, Link} from "theme-ui"
-import * as settings from "../../settings"
+import {locales} from "../utils/i18n"
+import {useIntl} from "react-intl"
 
 const Footer = () => {
-  const { siteTitle } = settings
+  const {locale} = useIntl()
+  const {siteTitle} = locales[locale]
 
   return (
     <footer
@@ -11,7 +13,7 @@ const Footer = () => {
         boxSizing: `border-box`,
         display: `flex`,
         justifyContent: `space-between`,
-        mt: [6],
+        mt: [5],
         color: `secondary`,
         a: {
           variant: `links.secondary`,
@@ -24,18 +26,11 @@ const Footer = () => {
         &copy; {new Date().getFullYear()} by {siteTitle}. All rights reserved.
       </div>
       <div>
+        Theme
         <Link
           aria-label="Link to the theme's GitHub repository"
           href="https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-minimal-blog"
-        >
-          Theme
-        </Link>
-        {` `}
-        by
-        {` `}
-        <Link aria-label="Link to the theme author's website" href="https://www.lekoarts.de/en">
-          LekoArts
-        </Link>
+        > Juice</Link>
       </div>
     </footer>
   )

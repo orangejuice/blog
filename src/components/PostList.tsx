@@ -43,26 +43,26 @@ const Excerpt = styled.p`
   margin-bottom: 1rem;
 `
 
-const ListItem = ({post}) => {
-
-  const {title, date, excerpt, slug, timeToRead, tags} = post
-  const firstChar = title.charAt(0);
+const PostList = ({posts}) => {
 
   return (
-    <Post>
-      <Title>
-        <Initiale>{firstChar}</Initiale>
-        <LocalizedLink to={slug} sx={{color: `text`}}>{title}</LocalizedLink>
-      </Title>
-      <div sx={{color: t => t.colors.secondary}}>
-        {tags && <Tags tags={tags} sx={{marginRight: `20px`}}/>}
-        <FormattedDate month="long" year="numeric" day="numeric" value={date}/>
-        &nbsp;&mdash;&nbsp;
-        <FormattedMessage id={"post.timeToRead"} values={{timeToRead}}/>
-      </div>
-      <Excerpt>{excerpt}</Excerpt>
-    </Post>
+    <React.Fragment>
+      {posts.map(post => (
+        <Post sx={{padding: `1em 2em`}}>
+          <Title>
+            <Initiale>{post.title.charAt(0)}</Initiale>
+            <LocalizedLink to={post.slug} sx={{color: `text`}}>{post.title}</LocalizedLink>
+          </Title>
+          <div sx={{color: t => t.colors.secondary}}>
+            {post.tags && <Tags tags={post.tags} sx={{marginRight: `20px`}}/>}
+            <FormattedDate month="long" year="numeric" day="numeric" value={post.date}/>
+            &nbsp;&mdash;&nbsp;
+            <FormattedMessage id={"post.timeToRead"} values={{timeToRead: post.timeToRead}}/>
+          </div>
+          <Excerpt>{post.excerpt}</Excerpt>
+        </Post>))}
+    </React.Fragment>
   )
 }
 
-export default ListItem;
+export default PostList;

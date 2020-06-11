@@ -8,7 +8,7 @@ import {Heading, jsx} from "theme-ui"
 import * as settings from "../../settings"
 import SectionTitle from "../components/SectionTitle"
 import Pagination from "../components/Pagination"
-import ListItem from "../components/ListItem"
+import PostList from "../components/PostList"
 import LocalizedLink from "../components/LocalizedLink";
 import {FormattedMessage} from "react-intl";
 
@@ -36,11 +36,7 @@ const Tag = ({data, pageContext}) => {
       <p sx={{color: `secondary`, mt: 3, a: {color: `secondary`}, fontSize: [1, 1, 1]}}>
         <FormattedMessage id={"tag.postsInTotal"} values={{totalPost}}/>
       </p>
-      <div sx={{borderRadius: `1rem`, padding: `1rem 1rem`}}>
-        {posts.map(post => (
-          <ListItem post={post}/>
-        ))}
-      </div>
+      <PostList posts={posts}/>
       <Pagination first={isFirst} last={isLast} prev={prevPage} next={nextPage}
                   current={currentPage} total={totalPage}/>
     </Layout>

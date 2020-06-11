@@ -5,7 +5,7 @@ import {Box, Container, jsx} from "theme-ui"
 import "typeface-ibm-plex-sans"
 import SEO from "./SEO"
 import Header from "./Header"
-import Footer from "./footer"
+import Footer from "./Footer"
 import {IntlProvider} from 'react-intl'
 import {locales} from "../utils/i18n"
 

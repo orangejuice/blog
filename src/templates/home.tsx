@@ -3,7 +3,7 @@ import {graphql} from "gatsby"
 import * as React from "react"
 import Layout from "../components/Layout"
 import SectionTitle from "../components/SectionTitle"
-import ListItem from "../components/ListItem"
+import PostList from "../components/PostList"
 import Pagination from "../components/Pagination"
 import {Flex} from "@theme-ui/components"
 import {jsx} from "theme-ui"
@@ -29,11 +29,7 @@ const Homepage = ({data, pageContext}) => {
           <FormattedMessage id={"header.nav.allTags"}/>
         </LocalizedLink>
       </Flex>
-      <div sx={{padding: `1rem 2rem`}}>
-        {posts.map(post => (
-          <ListItem post={post}/>
-        ))}
-      </div>
+      <PostList posts={posts}/>
       <Pagination first={isFirst} last={isLast} prev={prevPage} next={nextPage}
                   current={currentPage} total={numPages}/>
     </Layout>
