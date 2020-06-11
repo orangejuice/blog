@@ -55,12 +55,7 @@ const ListItem = ({post}) => {
         <LocalizedLink to={slug} sx={{color: `text`}}>{title}</LocalizedLink>
       </Title>
       <div sx={{color: t => t.colors.secondary}}>
-        {tags && (
-          <React.Fragment>
-            <Tags tags={tags}/>
-            {` — `}
-          </React.Fragment>
-        )}
+        {tags && <Tags tags={tags} sx={{marginRight: `20px`}}/>}
         <FormattedDate month="long" year="numeric" day="numeric" value={date}/>
         &nbsp;&mdash;&nbsp;
         <FormattedMessage id={"post.timeToRead"} values={{timeToRead}}/>

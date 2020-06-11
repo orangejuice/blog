@@ -2,7 +2,7 @@
 import {graphql} from "gatsby"
 import * as React from "react"
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import SectionTitle from "../components/SectionTitle"
 import {Heading, jsx} from "theme-ui"
 import Tags from "../components/Tags"
@@ -28,13 +28,8 @@ const Post = ({data, pageContext}) => {
       <SectionTitle><FormattedMessage id={"header.nav.post"}/></SectionTitle>
       <Heading variant="styles.h3">{post.title}</Heading>
       <p sx={{color: `secondary`, mt: 3, fontSize: 1}}>
+        {post.tags && <Tags tags={post.tags} sx={{marginRight: `20px`}}/>}
         <FormattedDate month="long" year="numeric" day="numeric" value={post.date}/>
-        {post.tags && (
-          <React.Fragment>
-            {` — `}
-            <Tags tags={post.tags}/>
-          </React.Fragment>
-        )}
         {post.timeToRead && ` — `}
         {post.timeToRead && <FormattedMessage id={"post.timeToRead"} values={{timeToRead: post.timeToRead}}/>}
       </p>

@@ -4,11 +4,12 @@ import * as React from "react"
 import * as settings from "../../settings"
 import LocalizedLink from "./LocalizedLink";
 
-const Tags = ({tags}: TagsProps) => {
+const Tags = (props) => {
+  const {className, tags} = props
   const {tagsPath} = settings
 
   return (
-    <React.Fragment>
+    <span className={className}>
       {tags.map((tag, i) => (
         <React.Fragment key={tag.slug}>
           {!!i && `, `}
@@ -23,7 +24,7 @@ const Tags = ({tags}: TagsProps) => {
           </LocalizedLink>
         </React.Fragment>
       ))}
-    </React.Fragment>
+    </span>
   )
 }
 

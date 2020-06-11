@@ -2,7 +2,7 @@
 import {graphql} from "gatsby"
 import * as React from "react"
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import {Heading, jsx} from "theme-ui"
 import {MDXRenderer} from "gatsby-plugin-mdx"
 

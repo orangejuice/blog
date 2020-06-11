@@ -79,5 +79,14 @@ module.exports = {
       resolve: `gatsby-plugin-feed`,
       options: require(`./src/utils/feed`)(settings.feedTitle),
     },
+    {
+      resolve: "gatsby-plugin-ackee-tracker",
+      options: {
+        domainId: '86d43cea-bf09-4649-9d45-0ed26b6ea2f2',
+        server: 'https://analytics.orice.me',
+        ignoreLocalhost: true,
+        detailed: true
+      },
+    },
   ],
 }

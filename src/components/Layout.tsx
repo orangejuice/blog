@@ -3,7 +3,7 @@
 import React, {Fragment} from "react"
 import {Box, Container, jsx} from "theme-ui"
 import "typeface-ibm-plex-sans"
-import SEO from "./seo"
+import SEO from "./SEO"
 import Header from "./Header"
 import Footer from "./footer"
 import {IntlProvider} from 'react-intl'

@@ -1,6 +1,8 @@
 exports.locales = {
   en: {
     name: `EN`,
+    siteTitle: `Orangejuice`,
+    siteDescription: `Orange juice is a liquid extract of the orange tree fruit, produced by squeezing or reaming oranges. It comes in several different varieties, including blood orange, navel oranges, valencia orange, clementine, and tangerine.`,
     dateFormat: `MMMM DD, YYYY`,
     "header.colorToggle.dark.title": `Activate Light Mode`,
     "header.colorToggle.light.title": `Activate Dark Mode`,
@@ -9,8 +11,9 @@ exports.locales = {
     "header.nav.home": `Blog`,
     "header.nav.post": `Post`,
     "header.nav.tag": `Tag`,
-    "header.nav.tags": `Tags`,
+    "header.nav.tags": `All Tags`,
     "header.nav.about": `About`,
+    "title.tag": `Tag {tag}`,
     "post.timeToRead": `{timeToRead} minutes read`,
     "tag.postsInTotal": `{totalPost} {totalPost, plural, one {post} other {posts}} in total`,
     "pagination.prev": `Previous Page`,
@@ -21,6 +24,8 @@ exports.locales = {
   },
   zh: {
     name: `中文`,
+    siteTitle: `橘子汽水`,
+    siteDescription: `橙汁是橙树果实的一种液体提取物，通过榨取或蒸煮橙子而产生。它有几个不同的品种，包括血橙、脐橙、瓦伦西亚橙、柠檬和橘子。`,
     dateFormat: `YYYY年MM月DD日`,
     "header.colorToggle.dark.title": `使用明亮主题`,
     "header.colorToggle.light.title": `使用黑暗主题`,
@@ -31,6 +36,7 @@ exports.locales = {
     "header.nav.tag": `标签`,
     "header.nav.tags": `所有标签`,
     "header.nav.about": `关于`,
+    "title.tag": `标签 {tag}`,
     "post.timeToRead": `阅读需要 {timeToRead} 分钟`,
     "tag.postsInTotal": `该标签有 {totalPost} 篇文章 `,
     "pagination.prev": `上一页`,

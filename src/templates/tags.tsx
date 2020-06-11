@@ -2,14 +2,14 @@
 import {graphql} from "gatsby"
 import * as React from "react"
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import {Heading, jsx} from "theme-ui"
 import {Box, Flex} from "@theme-ui/components"
 import * as settings from "../../settings"
 import kebabCase from "lodash.kebabcase"
 import SectionTitle from "../components/SectionTitle"
-import LocalizedLink from "../components/LocalizedLink";
-import {FormattedMessage} from "react-intl";
+import LocalizedLink from "../components/LocalizedLink"
+import {FormattedMessage} from "react-intl"
 
 
 const Tags = ({data, pageContext}) => {
@@ -19,7 +19,7 @@ const Tags = ({data, pageContext}) => {
 
   return (
     <Layout pageContext={pageContext}>
-      <SEO title="Tags"/>
+      <SEO titleId="header.nav.tags"/>
       <SectionTitle><FormattedMessage id={"header.nav.tag"}/></SectionTitle>
       <Heading variant="styles.h3"><FormattedMessage id={"header.nav.tags"}/></Heading>
       <Box mt={[4, 5]} sx={{minHeight: `600px`}}>

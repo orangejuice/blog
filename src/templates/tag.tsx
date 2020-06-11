@@ -2,7 +2,7 @@
 import {graphql} from "gatsby"
 import * as React from "react"
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import {Flex} from "@theme-ui/components"
 import {Heading, jsx} from "theme-ui"
 import * as settings from "../../settings"
@@ -15,7 +15,7 @@ import {FormattedMessage} from "react-intl";
 
 const Tag = ({data, pageContext}) => {
   const posts = data.allPost.nodes
-  const {tagsPath, basePath} = settings
+  const {tagsPath} = settings
   const {currentPage, totalPage, totalPost} = pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === totalPage
@@ -25,7 +25,7 @@ const Tag = ({data, pageContext}) => {
 
   return (
     <Layout pageContext={pageContext}>
-      <SEO title={`Tag: ${pageContext.name}`}/>
+      <SEO titleId="title.tag" titleValue={{tag: pageContext.name}}/>
       <Flex sx={{alignItems: `center`, justifyContent: `space-between`, flexFlow: `wrap`}}>
         <SectionTitle><FormattedMessage id={"header.nav.tag"}/></SectionTitle>
         <LocalizedLink sx={{variant: `links.secondary`}} to={`${tagsPath}`}>
