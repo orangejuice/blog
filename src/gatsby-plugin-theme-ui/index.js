@@ -5,9 +5,7 @@ const theme = merge(tailwind, {
   initialColorModeName: `light`,
   colors: {
     primary: '#ed664c',
-    // secondary: `#5f6c80`,
     toggleIcon: tailwind.colors.gray[8],
-    // heading: tailwind.colors.black,
     divide: tailwind.colors.gray[4],
     highlight: `#e2e8f0`,
     highlightWeight: `#86a1ab`,
@@ -34,11 +32,13 @@ const theme = merge(tailwind, {
     body: `"IBM Plex Sans","Microsoft yahei"`,
     monospace: `Consolas, Menlo, Monaco`,
   },
-  fontSizes: ["0.875rem", "1rem", "1.2rem", "1.5rem", "1.875rem", "2.25rem", "3rem", "4rem", "4.5rem"],
+  fontSizes: ["0.875rem", "1rem", "1.2rem", "1.5rem", "1.75rem", "2rem", "2.25rem", "2.5rem", "2.75rem"],
   styles: {
     pre: {
       fontFamily: `monospace`,
       fontSize: `14px`,
+      padding: 3,
+      borderRadius: `5px`,
     },
     root: {
       transition: `background 0.25s ease-in-out`,
@@ -54,6 +54,24 @@ const theme = merge(tailwind, {
       'a:hover': {
         color: `primary`,
       }
+    },
+    ul: {
+      li: {
+        fontSize: [1, 1, 2],
+        lineHeight: `body`,
+      },
+    },
+    ol: {
+      li: {
+        fontSize: [1, 1, 2],
+        lineHeight: `body`,
+      },
+    },
+    h4: {
+      mt: 3
+    },
+    h5: {
+      mt: 4
     },
     p: {
       fontSize: [1, 1, 2],

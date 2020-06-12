@@ -3,92 +3,50 @@ import * as React from "react"
 import Highlight, {defaultProps} from "prism-react-renderer"
 import LightTheme from "prism-react-renderer/themes/nightOwlLight"
 import DarkTheme from "prism-react-renderer/themes/nightOwl"
-import * as settings from "../../settings"
 import {jsx, Styled, useThemeUI} from 'theme-ui'
 
-type CodeProps = {
-  codeString: string
-  language: string
-  noLineNumbers?: boolean
-  metastring?: string
-  [key: string]: any
-}
-
-function getParams(className = ``) {
-  const [lang = ``, params = ``] = className.split(`:`)
-
-  return [
-    lang.split(`language-`).pop().split(`{`).shift(),
-  ].concat(
-      // @ts-ignore
-      params.split(`&`).reduce((merged, param) => {
-      const [key, value] = param.split(`=`)
-      merged[key] = value
-      return merged
-    }, {})
-  )
-}
-
-const RE = /{([\d,-]+)}/
-
-const calculateLinesToHighlight = (meta: string) => {
-  if (!RE.test(meta)) {
-    return () => false
-  }
-  const lineNumbers = RE.exec(meta)![1]
-    .split(`,`)
-    .map((v) => v.split(`-`).map((x) => parseInt(x, 10)))
-  return (index: number) => {
-    const lineNumber = index + 1
-    const inRange = lineNumbers.some(([start, end]) =>
-      end ? lineNumber >= start && lineNumber <= end : lineNumber === start
-    )
-    return inRange
-  }
-}
-
-const Code = ({
-  codeString,
-  noLineNumbers = false,
-  className: blockClassName,
-  metastring = ``
-}: CodeProps) => {
-  const { showLineNumbers } = settings
-  const { colorMode } = useThemeUI()
-
-  const [language, { title = `` }] = getParams(blockClassName)
-  const shouldHighlightLine = calculateLinesToHighlight(metastring)
-
-  const hasLineNumbers = !noLineNumbers && language !== `noLineNumbers` && showLineNumbers
-  const theme = colorMode == 'light' ? LightTheme : DarkTheme
+const Code = (props) => {
+  const {codeString, language, metastring: title = ""} = props
+  const {colorMode} = useThemeUI()
+  const theme = colorMode == 'light' ? {...LightTheme, ...{plain: {backgroundColor: "#f7f7f7"}}} : DarkTheme
 
   return (
-    <Highlight {...defaultProps} code={codeString} language={language} theme={theme} >
-      {({ className, style, tokens, getLineProps, getTokenProps }) => (
+    <Highlight {...defaultProps} code={codeString} language={language} theme={theme}>
+      {({className, style, tokens, getLineProps, getTokenProps}) => (
         <React.Fragment>
           {title && (
-            <div className="code-title">
+            <div sx={{fontSize: `12px`, paddingX: 3, paddingY: 0, fontFamily: `monospace`,}}>
               <div>{title}</div>
             </div>
           )}
-          <div className="gatsby-highlight" data-language={language}>
-            <Styled.pre className={className} style={style} data-linenumber={hasLineNumbers}>
-              {tokens.map((line, i) => {
-                const lineProps = getLineProps({ line, key: i })
-
-                if (shouldHighlightLine(i)) {
-                  lineProps.className = `${lineProps.className} highlight-line`
-                }
-
-                return (
-                  <div {...lineProps}>
-                    {hasLineNumbers && <span className="line-number-style">{i + 1}</span>}
-                    {line.map((token, key) => (
-                      <span {...getTokenProps({ token, key })} />
-                    ))}
-                  </div>
-                )
-              })}
+          <div sx={{
+            position: `relative`,
+            ".prism-code span": {
+              fontStyle: `normal !important`,
+            },
+            '&:before': {
+              borderRadius: `0 0 0.25rem 0.25rem`,
+              color: `black`,
+              fontSize: `12px`,
+              letterSpacing: `0.025rem`,
+              padding: `0.1rem 0.5rem`,
+              position: `absolute`,
+              right: `2rem`,
+              textAlign: `right`,
+              textTransform: `uppercase`,
+              top: 0,
+              content: `"${language}"`,
+              background: `${mapping[language] || "#fff"}`,
+            },
+          }}>
+            <Styled.pre className={className} style={style} sx={{overflow: `auto`}}>
+              {tokens.map((line, i) => (
+                <div {...getLineProps({line, key: i})}>
+                  {line.map((token, key) => (
+                    <span {...getTokenProps({token, key})} />
+                  ))}
+                </div>
+              ))}
             </Styled.pre>
           </div>
         </React.Fragment>
@@ -98,3 +56,20 @@ const Code = ({
 }
 
 export default Code
+
+const mapping = {
+  'javascript': '#f7df1e',
+  'js': '#f7df1e',
+  'css': '#ff9800',
+  'scss': '#ff9800',
+  'typescript': '#a5dbff',
+  'jsx': '#61dafb',
+  'bash': '#d3d9dd',
+  'shell': '#d3d9dd',
+  'toml': '#b8d394',
+  'json': '#8bc34a',
+  'yaml': '#8bc34a',
+  'diff': '#e6ffed',
+  'graphql': '#e10098',
+  'markdown': '#fff',
+}

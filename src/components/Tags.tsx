@@ -12,7 +12,7 @@ const Tags = (props) => {
     <span className={className}>
       {tags.map((tag, i) => (
         <React.Fragment key={tag.slug}>
-          {!!i && `, `}
+          {!!i && ` , `}
           <LocalizedLink sx={{
             color: `tagColor`,
             backgroundColor: `tagBackground`,

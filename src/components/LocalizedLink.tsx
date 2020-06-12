@@ -24,7 +24,7 @@ const LocalizedLink = ({to, ...props}) => {
     return <a {...props} href={to}/>
   }
 
-  const path = basePath + (locale === defaultLocale ? to : `/${locale}${to}`)
+  const path = basePath + (locale === defaultLocale ? to : `/${locale}/${to}`)
 
   return <Link {...props} to={path.replace(/\/\/+/g, `/`)}/>
 }

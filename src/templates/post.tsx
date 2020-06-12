@@ -7,7 +7,6 @@ import SectionTitle from "../components/SectionTitle"
 import {Heading, jsx} from "theme-ui"
 import Tags from "../components/Tags"
 import {MDXRenderer} from "gatsby-plugin-mdx"
-import CodeStyles from "../styles/code"
 import {FormattedDate, FormattedMessage} from "react-intl";
 
 
@@ -26,14 +25,14 @@ const Post = ({data, pageContext}) => {
         pathname={post.slug}
       />
       <SectionTitle><FormattedMessage id={"header.nav.post"}/></SectionTitle>
-      <Heading variant="styles.h3">{post.title}</Heading>
+      <Heading variant="styles.h1">{post.title}</Heading>
       <p sx={{color: `secondary`, mt: 3, fontSize: 1}}>
-        {post.tags && <Tags tags={post.tags} sx={{marginRight: `20px`}}/>}
+        {post.tags && <Tags tags={post.tags} sx={{marginRight: `12px`}}/>}
         <FormattedDate month="long" year="numeric" day="numeric" value={post.date}/>
         {post.timeToRead && ` — `}
         {post.timeToRead && <FormattedMessage id={"post.timeToRead"} values={{timeToRead: post.timeToRead}}/>}
       </p>
-      <section sx={{...CodeStyles, my: 5, ".gatsby-resp-image-wrapper": {my: [4, 4, 5], boxShadow: shadow.join(`, `)}}}>
+      <section sx={{my: 5, ".gatsby-resp-image-wrapper": {my: [4, 4, 5], boxShadow: shadow.join(`, `)}}}>
         <MDXRenderer>{post.body}</MDXRenderer>
       </section>
     </Layout>

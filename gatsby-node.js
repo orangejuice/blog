@@ -1,11 +1,8 @@
 const i18n = require("./src/utils/i18n")
 const kebabCase = require(`lodash.kebabcase`)
-const path = require(`path`)
 const settings = require(`./settings`)
 
-// Create general interfaces that you could can use to leverage other data sources
-// The core theme sets up MDX as a type for the general interface
-exports.createSchemaCustomization = ({actions, schema}, themeOptions) => {
+exports.createSchemaCustomization = ({actions}) => {
   const {createTypes, createFieldExtension} = actions
 
   createFieldExtension({
@@ -107,8 +104,7 @@ exports.onCreateNode = ({node, actions, getNode, createNodeId, createContentDige
       modifiedTags = null
     }
 
-    const name = path.basename(node.fileAbsolutePath, `.mdx`)
-    const lang = name === `index` ? i18n.defaultLocale : name.split(`.`)[1]
+    const lang = file.name === `index` ? i18n.defaultLocale : file.name.split(`.`)[1]
 
     const fieldData = {
       slug: file.relativeDirectory,
@@ -139,8 +135,7 @@ exports.onCreateNode = ({node, actions, getNode, createNodeId, createContentDige
 
   // Check for "pages" and create the "Page" type
   if (node.internal.type === `Mdx` && source === pagesPath) {
-    const name = path.basename(node.fileAbsolutePath, `.mdx`)
-    const lang = name === `index` ? i18n.defaultLocale : name.split(`.`)[1]
+    const lang = file.name === `index` ? i18n.defaultLocale : file.name.split(`.`)[1]
 
     const fieldData = {
       title: node.frontmatter.title,
