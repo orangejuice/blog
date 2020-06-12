@@ -14,6 +14,7 @@ const Code = (props) => {
     <Highlight {...defaultProps} code={codeString} language={language} theme={theme}>
       {({className, style, tokens, getLineProps, getTokenProps}) => (
         <React.Fragment>
+          {console.log(language, className, title, props)}
           {title && (
             <div sx={{fontSize: `12px`, paddingX: 3, paddingY: 0, fontFamily: `monospace`,}}>
               <div>{title}</div>

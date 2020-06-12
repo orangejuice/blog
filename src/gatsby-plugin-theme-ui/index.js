@@ -42,18 +42,14 @@ const theme = merge(tailwind, {
     },
     root: {
       transition: `background 0.25s ease-in-out`,
-      "::selection": {
-        backgroundColor: `text`,
-        color: `background`,
-      },
+      "::selection": {backgroundColor: `text`, color: `background`},
       a: {
         transition: `all 0.3s ease-in-out`,
         color: `dark`,
         'text-decoration': `none`,
       },
-      'a:hover': {
-        color: `primary`,
-      }
+      'a:hover': {color: `primary`},
+      code: { backgroundColor: `highlight`, padding: `1`, borderRadius: `3px`},
     },
     ul: {
       li: {
