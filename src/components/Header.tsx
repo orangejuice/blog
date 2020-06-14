@@ -3,7 +3,6 @@ import {jsx, useColorMode} from "theme-ui"
 import {Flex} from "@theme-ui/components"
 // @ts-ignore
 import Banner from "../../static/banner.svg"
-
 import ColorModeToggle from "./ColorModeToggle"
 import LangToggle from "./LangToggle"
 import LocalizedLink from "./LocalizedLink";

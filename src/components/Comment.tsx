@@ -1,6 +1,6 @@
-// @ts-ignore
+/** @jsx jsx */
+import {jsx, useColorMode} from "theme-ui"
 import React, {useEffect} from 'react'
-import {useColorMode} from "theme-ui"
 
 
 const src = 'https://utteranc.es/client.js'
@@ -10,7 +10,7 @@ const LIGHT_THEME = 'github-light'
 
 export const Utterances = ({repo, slug}) => {
   const rootElm = React.createRef()
-  const {colorMode} = useColorMode()
+  const [colorMode] = useColorMode()
 
   useEffect(() => {
     const isDarkTheme = colorMode === `dark`
@@ -32,5 +32,5 @@ export const Utterances = ({repo, slug}) => {
     rootElm.current.appendChild(utterances)
   }, [])
 
-  return <div className="utterances" ref={rootElm}/>
+  return <div sx={{ ".utterances":{ maxWidth: `100% !important`}}} ref={rootElm}/>
 }

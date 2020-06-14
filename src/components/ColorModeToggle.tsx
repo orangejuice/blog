@@ -10,7 +10,7 @@ type Props = {
 // Adapted from: https://codepen.io/aaroniker/pen/KGpXZo and https://github.com/narative/gatsby-theme-novela/blob/714b6209c5bd61b220370e8a7ad84c0b1407946a/%40narative/gatsby-theme-novela/src/components/Navigation/Navigation.Header.tsx
 
 const ColorModeToggle = ({isDark, toggle}: Props) => {
-  const {locale, formatMessage} = useIntl()
+  const {formatMessage} = useIntl()
 
   return (
     <button
