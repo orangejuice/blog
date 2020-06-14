@@ -1,17 +1,13 @@
 <p align="center">
   <a href="https://orangejuice.cc/">
-    <img alt="LekoArts" src="https://orangejuice.cc/favicon.png" />
+    <img alt="Orangejuice" src="https://orangejuice.cc/favicon.png" />
   </a>
 </p>
 <h1 align="center">
   Orangejuice Blog
 </h1>
 
-Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting. Using the Gatsby Theme [`@lekoarts/gatsby-theme-minimal-blog`](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-minimal-blog).
-
-[**Demo Website**](https://minimal-blog.lekoarts.de)
-
-Also be sure to checkout other [Free & Open Source Gatsby Themes](https://themes.lekoarts.de)
+Minimal design and customised. Cannot be possible without the amazing open source community,
 
 ## ✨ Features
 
@@ -26,12 +22,12 @@ Also be sure to checkout other [Free & Open Source Gatsby Themes](https://themes
 - Offline Support & WebApp Manifest
 - github issues based blog commenting system powered by utterances
 
-//TODO
+**//TODO**
 
 - Categories support
 - RSS Feed for blog posts
 - TOC
 
-## 🥺 Credits
+## 🎊 Credits
 
 - based on [minimal-blog theme](https://minimal-blog.lekoarts.de) by lekoarts
