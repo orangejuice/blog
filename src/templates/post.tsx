@@ -8,6 +8,7 @@ import {Heading, jsx} from "theme-ui"
 import Tags from "../components/Tags"
 import {MDXRenderer} from "gatsby-plugin-mdx"
 import {FormattedDate, FormattedMessage} from "react-intl";
+import {Utterances} from "../components/Comment";
 
 
 const Post = ({data, pageContext}) => {
@@ -35,6 +36,7 @@ const Post = ({data, pageContext}) => {
       <section sx={{my: 5, ".gatsby-resp-image-wrapper": {my: [4, 4, 5], boxShadow: shadow.join(`, `)}}}>
         <MDXRenderer>{post.body}</MDXRenderer>
       </section>
+      <Utterances repo="orangejuice/blog" slug={post.slug}/>
     </Layout>
   )
 }

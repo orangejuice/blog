@@ -62,11 +62,20 @@ module.exports = {
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-theme-ui`,
     {
+      resolve: "gatsby-plugin-ackee-tracker",
+      options: {
+        domainId: '86d43cea-bf09-4649-9d45-0ed26b6ea2f2',
+        server: 'https://analytics.orice.me',
+        ignoreLocalhost: true,
+        detailed: true
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Orangejuice`,
         short_name: `Orangejuice`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        description: ``,
         start_url: `/`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
@@ -78,15 +87,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-feed`,
       options: require(`./src/utils/feed`)(settings.feedTitle),
-    },
-    {
-      resolve: "gatsby-plugin-ackee-tracker",
-      options: {
-        domainId: '86d43cea-bf09-4649-9d45-0ed26b6ea2f2',
-        server: 'https://analytics.orice.me',
-        ignoreLocalhost: true,
-        detailed: true
-      },
     },
   ],
 }
