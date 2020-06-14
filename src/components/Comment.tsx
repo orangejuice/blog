@@ -1,36 +1,27 @@
 /** @jsx jsx */
 import {jsx, useColorMode} from "theme-ui"
-import React, {useEffect} from 'react'
+import React from 'react'
 
 
-const src = 'https://utteranc.es/client.js'
-const branch = 'master'
-const DARK_THEME = 'photon-dark'
-const LIGHT_THEME = 'github-light'
-
-export const Utterances = ({repo, slug}) => {
-  const rootElm = React.createRef()
+export const Utterances: React.FC = ({repo, slug}) => {
   const [colorMode] = useColorMode()
+  const isDarkTheme = colorMode === `dark`
 
-  useEffect(() => {
-    const isDarkTheme = colorMode === `dark`
-    const utterances = document.createElement('script')
-    const utterancesConfig = {
-      src,
-      repo,
-      branch,
-      theme: isDarkTheme ? DARK_THEME : LIGHT_THEME,
-      label: 'comment',
-      async: true,
-      'issue-term': slug,
-      crossorigin: 'anonymous',
-    }
-
-    Object.keys(utterancesConfig).forEach(configKey => {
-      utterances.setAttribute(configKey, utterancesConfig[configKey])
-    })
-    rootElm.current.appendChild(utterances)
-  }, [])
-
-  return <div sx={{ ".utterances":{ maxWidth: `100% !important`}}} ref={rootElm}/>
+  return (
+    <section sx={{".utterances": {maxWidth: `100% !important`}}}
+      ref={elem => {
+        if (!elem) return
+        elem.firstChild && elem.removeChild(elem.firstChild)
+        const scriptElem = document.createElement("script")
+        scriptElem.src = "https://utteranc.es/client.js"
+        scriptElem.async = true
+        scriptElem.crossOrigin = "anonymous"
+        scriptElem.setAttribute("repo", repo)
+        scriptElem.setAttribute("issue-term", slug)
+        scriptElem.setAttribute("label", "blog-comment")
+        scriptElem.setAttribute("theme", isDarkTheme ? "dark-blue" : "github-light")
+        elem.appendChild(scriptElem)
+      }}
+    />
+  );
 }
