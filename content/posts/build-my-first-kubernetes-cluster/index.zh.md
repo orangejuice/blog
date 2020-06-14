@@ -1,5 +1,5 @@
 ---
-title: Build My First Kubernetes Cluster
+title: 搭建我的第一个 k8s 集群
 date: 2020-04-25
 tags: [技术, kubernetes]
 ---
