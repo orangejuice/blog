@@ -1,9 +1,7 @@
 module.exports = {
   basePath: '/',
   tagsPath: '/tags',
-  siteTitle: 'Orangejuice',
-  feedTitle: `Orangejuice Blog`,
-  showLineNumbers: true,
+  siteUrl: `https://orangejuice.cc/`,
   postsPath: 'content/posts',
   pagesPath: `content/pages`,
   postsPerPage: 5

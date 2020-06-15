@@ -71,6 +71,10 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-feed`,
+      options: require(`./src/utils/feed`)(settings.feedTitle),
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Orangejuice`,
@@ -84,9 +88,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    {
-      resolve: `gatsby-plugin-feed`,
-      options: require(`./src/utils/feed`)(settings.feedTitle),
-    },
   ],
 }

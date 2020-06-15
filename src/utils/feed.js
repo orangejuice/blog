@@ -1,47 +1,47 @@
 const options = require('../../settings')
+const i18n = require('./i18n')
 
-module.exports = () => ({
-  query: `
-    {
-      site {
-        siteMetadata {
-          title: siteTitle
-          description: siteDescription
-          siteUrl
-          site_url: siteUrl
-        }
-      }
-    }
-  `,
-  feeds: [
-    {
-      serialize: ({ query: { site, allPost } }) => {
+const channels = () => {
+  const array = []
+  Object.keys(i18n).forEach((locale) => {
+    const path = locale === i18n.defaultLocale ? '' : `/${locale}`
+    array.push({
+      serialize: ({query: {allPost}}) => {
         return allPost.nodes.map((post) => {
           return {
             title: post.title,
             date: post.date,
-            excerpt: post.excerpt,
-            url: site.siteMetadata.siteUrl + post.slug,
-            guid: site.siteMetadata.siteUrl + post.slug,
-            custom_elements: [{ "content:encoded": post.html }],
+            description: post.excerpt,
+            url: options.siteUrl + post.slug,
+            guid: options.siteUrl + post.slug,
+            custom_elements: [{"content:encoded": post.html}],
           }
         })
       },
       query: `
         {
-          allPost(sort: { fields: date, order: DESC }) {
+          allPost(
+            locale: ${locale},
+            sort: { fields: date, order: DESC }, 
+            limit: 100
+          ) {
             nodes {
               title
-              date(formatString: "MMMM dd, YYYY")
+              date
               excerpt
               slug
               html
             }
           }
-        }
-      `,
-      output: `/rss.xml`,
-      title: options.feedTitle,
-    },
-  ],
+        }`,
+      output: `${path}/rss.xml`,
+      title: i18n.locales[locale].siteTitle,
+      description: i18n.locales[locale].siteDescription,
+    })
+  })
+  return array
+}
+
+module.exports = () => ({
+  feeds: channels(),
 })
