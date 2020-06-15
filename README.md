@@ -7,7 +7,7 @@
   Orangejuice Blog
 </h1>
 
-Minimal design and customised. Cannot be possible without the amazing open source community,
+Minimal design and customised. Cannot be possible without the amazing open source community.
 
 ## ✨ Features
 

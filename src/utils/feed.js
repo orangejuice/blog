@@ -43,7 +43,7 @@ const channels = () => {
   return array
 }
 
-module.exports = () => ({
+module.exports = {
   query: `{ site { id } }`, //deactivate default query
   feeds: channels()
-})
+}
