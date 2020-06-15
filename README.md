@@ -11,16 +11,16 @@ Minimal design and customised. Cannot be possible without the amazing open sourc
 
 ## ✨ Features
 
-- MDX
-- Fully customizable through the usage of Gatsby Themes (and Theme UI)
+- React & MDX
+- Fully customizable (powered by Gatsby/Theme UI/)
 - Light / Dark Mode
-- Tags support
-- Code highlighting with [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer), plus language tabs.
+- Internationalisation
+- Tags
+- Code highlighting ([Prism-React-Renderer](https://github.com/FormidableLabs/prism-react-renderer)) with language tabs.
 - Ackee tracking
 - SEO (Sitemap, OpenGraph tags, Twitter tags)
 - Offline Support & WebApp Manifest
 - Github issues based blog commenting system powered by utterances
-- Internationalisation support
 - RSS Feed for blog posts (localisation enabled)
 
 **//TODO**
