@@ -28,6 +28,10 @@ Minimal design and customised. Cannot be possible without the amazing open sourc
 - RSS Feed for blog posts
 - TOC
 
+**//issues**
+
+- timeToRead for chinese article is wrong, ref [github #22811](https://github.com/gatsbyjs/gatsby/issues/22811)
+
 ## 🎊 Credits
 
 - based on [minimal-blog theme](https://minimal-blog.lekoarts.de) by lekoarts
