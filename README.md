@@ -15,11 +15,12 @@ Minimal design and customised. Cannot be possible without the amazing open sourc
 - Fully customizable through the usage of Gatsby Themes (and Theme UI)
 - Light / Dark Mode
 - Tags support
-- Code highlighting with [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer) and [react-live](https://github.com/FormidableLabs/react-live) support. Plus, language tabs.
-- Ackee tracking Support
+- Code highlighting with [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer), plus language tabs.
+- Ackee tracking
 - SEO (Sitemap, OpenGraph tags, Twitter tags)
 - Offline Support & WebApp Manifest
-- github issues based blog commenting system powered by utterances
+- Github issues based blog commenting system powered by utterances
+- Internationalisation support
 - RSS Feed for blog posts (localisation enabled)
 
 **//TODO**
@@ -33,4 +34,4 @@ Minimal design and customised. Cannot be possible without the amazing open sourc
 
 ## 🎊 Credits
 
-- based on [minimal-blog theme](https://minimal-blog.lekoarts.de) by lekoarts
+- Based on many open source projects, special thanks to [minimal-blog theme](https://minimal-blog.lekoarts.de).

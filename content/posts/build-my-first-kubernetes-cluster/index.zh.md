@@ -606,11 +606,11 @@ kubectl get secret quickstart-es-elastic-user -n elastic-system \
 
 #### Elastic 栈学习参考
 
-- Docs: [Filebeat docs](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html)
-- Docs: [Filebeat input type - container input](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-input-container.html)
-- Docs: [Filebeat - auto discover](https://www.elastic.co/guide/en/beats/filebeat/current/configuration-autodiscover.html)
-- Code: [Filebeat - monitoring kubernetes](https://github.com/elastic/examples/blob/master/MonitoringKubernetes/filebeat-kubernetes.yaml)
-- Code: [Filebeat - monitoring kubernetes with ECK](https://github.com/elastic/examples/blob/master/k8s-observability-with-eck/filebeat-kubernetes.yaml)
+- 文档: [Filebeat docs](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html)
+- 文档: [Filebeat input type - container input](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-input-container.html)
+- 文档: [Filebeat - auto discover](https://www.elastic.co/guide/en/beats/filebeat/current/configuration-autodiscover.html)
+- 文档: [Filebeat - monitoring kubernetes](https://github.com/elastic/examples/blob/master/MonitoringKubernetes/filebeat-kubernetes.yaml)
+- 文档: [Filebeat - monitoring kubernetes with ECK](https://github.com/elastic/examples/blob/master/k8s-observability-with-eck/filebeat-kubernetes.yaml)
 - [Elastic Chinese Blog: 菜鸟上手指南](https://blog.csdn.net/UbuntuTouch/article/details/102728604)
 - [Elastic Chinese Blog: 运用Elastic Stack分析COVID-19数据并进行可视化分析](https://elasticstack.blog.csdn.net/article/details/105092484)
 

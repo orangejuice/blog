@@ -24,8 +24,7 @@ const Footer = () => {
       <div>
         &copy; {new Date().getFullYear()} by {siteTitle}. All rights reserved.
       </div>
-      <div>Theme <Link aria-label="Link to the theme's GitHub repository"
-          href="https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-minimal-blog">Juice</Link>
+      <div>Theme <Link aria-label="Link to GitHub repository" href="https://github.com/orangejuice/blog">Juice</Link>
       </div>
     </footer>
   )
