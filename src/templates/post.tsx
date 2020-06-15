@@ -33,7 +33,11 @@ const Post = ({data, pageContext}) => {
         {post.timeToRead && ` — `}
         {post.timeToRead && <FormattedMessage id={"post.timeToRead"} values={{timeToRead: post.timeToRead}}/>}
       </p>
-      <section sx={{my: 5, ".gatsby-resp-image-wrapper": {my: [4, 4, 5], boxShadow: shadow.join(`, `)}}}>
+      <section sx={{
+        my: 5,
+        ".gatsby-resp-image-wrapper": {my: [4, 4, 5], boxShadow: shadow.join(`, `)},
+        ".gatsby-resp-image-figcaption": {fontSize: 1, textAlign: `center`, mb: `3rem`}
+      }}>
         <MDXRenderer>{post.body}</MDXRenderer>
       </section>
       <Utterances repo="orangejuice/blog" slug={post.slug}/>

@@ -622,11 +622,11 @@ kubectl get secret quickstart-es-elastic-user -n elastic-system \
 
 在安装完上述所有服务后，已经消耗了我一半以上的计算资源--而这些只是甜点。我们可能要部署博客、GitLab、Jenkins、私有存储、开发的应用或者其他私有服务，这些才是集群用来提供服务的主菜。
 
-值得一提的是，我在不久后学到了一件重要的事情--一台运行在云上的机器有比我大得多的魅力。每时每刻都有来自五湖四海的问候，你们真好。从现在开始，安全性问题真的不容小觑。
+值得一提的是，我在不久后学到了一件重要的事情--一台运行在云上的机器有比我大得多的魅力。
 
 ![SSH users of failed login attempts](Snipaste_2020-04-05_21-24-14.png)
 
 ![SSH failed login attempts source locations](Snipaste_2020-04-05_21-24-29.png)
 
-<center><small>一周内收到问候的统计数据</small></center>
 
+每时每刻都有来自五湖四海的问候，安全性问题不容小觑。

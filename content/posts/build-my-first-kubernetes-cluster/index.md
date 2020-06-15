@@ -621,14 +621,12 @@ As we can see, it's not that easy to realize all these things, different layers 
 
 After installing all the services mentioned above, it already consumed more than half of my computing resources - and these ones are just the desserts. We may want to deploy blog, GitLab, Jenkins, private storage, developed apps or any other private services, which are the main courses the cluster is used to serve.
 
-It's also worth mentioning that, I learnt something important not many days after - a machine running on the cloud can attract much more concerns than me. Greetings from all over the world, how sweet you guys are. Tips for me and you, from now on, never use weak username & password combination again.
+It's also worth mentioning that, I learnt something important not many days after - a machine running on the cloud can attract much more concerns than me. 
 
 ![SSH users of failed login attempts](Snipaste_2020-04-05_21-24-14.png)
 
 
-
 ![SSH failed login attempts source locations](Snipaste_2020-04-05_21-24-29.png)
 
-<center>The statistics data of received greetings</center>
 
-That's it.
+Greetings from all over the world, how sweet you guys are. Tips for me and you, from now on, never use a weak username & password combination again.

@@ -37,6 +37,8 @@ module.exports = {
             options: {
               maxWidth: 960,
               quality: 90,
+              tracedSVG: true,
+              showCaptions: true,
               linkImagesToOriginal: false,
             },
           },
@@ -61,7 +63,7 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-feed`,
-      options: require(`./src/utils/feed`)(settings.feedTitle),
+      options: require(`./src/utils/feed`),
     },
     {
       resolve: `gatsby-plugin-manifest`,
