@@ -3,8 +3,8 @@ const i18n = require('./i18n')
 
 const channels = () => {
   const array = []
-  Object.keys(i18n).forEach((locale) => {
-    const path = locale === i18n.defaultLocale ? '' : `/${locale}`
+  Object.keys(i18n.locales).forEach((locale) => {
+    const path = locale === i18n.defaultLocale ? "/" : `/${locale}/`
     array.push({
       serialize: ({query: {allPost}}) => {
         return allPost.nodes.map((post) => {
@@ -12,8 +12,8 @@ const channels = () => {
             title: post.title,
             date: post.date,
             description: post.excerpt,
-            url: options.siteUrl + post.slug,
-            guid: options.siteUrl + post.slug,
+            url: options.siteUrl + `${path}/${post.slug}`.replace(/\/\/+/g, `/`),
+            guid: options.siteUrl + `${path}/${post.slug}`.replace(/\/\/+/g, `/`),
             custom_elements: [{"content:encoded": post.html}],
           }
         })
@@ -21,7 +21,7 @@ const channels = () => {
       query: `
         {
           allPost(
-            locale: ${locale},
+            filter: { locale: {eq: "${locale}"} },
             sort: { fields: date, order: DESC }, 
             limit: 100
           ) {
@@ -34,14 +34,16 @@ const channels = () => {
             }
           }
         }`,
-      output: `${path}/rss.xml`,
+      output: `${path}/rss.xml`.replace(/\/\/+/g, `/`),
       title: i18n.locales[locale].siteTitle,
       description: i18n.locales[locale].siteDescription,
+      site_url: `${options.siteUrl}${path}`,
     })
   })
   return array
 }
 
 module.exports = () => ({
-  feeds: channels(),
+  query: `{ site { id } }`,
+  feeds: channels()
 })

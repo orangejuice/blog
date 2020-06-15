@@ -8,21 +8,15 @@ const LocalizedLink = ({to, ...props}) => {
   // Workaround
   // For gatsby build - onPostBuild - Error
   // Error: [React Intl] Could not find required `intl` object. <IntlProvider> needs to exist in the component ancestry.
+  // locale information is not existed while rss generating
   try{
     useIntl()
   } catch (e) {
-    return <React.Fragment/>
+    return <a {...props} href={to}/>
   }
 
   const {locale} = useIntl()
   const {basePath} = settings
-
-  const isHash = str => /^#/.test(str)
-  const isFullLink = to => /^(http|https|\/\/)/.test(to)
-
-  if (isHash(to) || isFullLink(to)) {
-    return <a {...props} href={to}/>
-  }
 
   const path = basePath + (locale === defaultLocale ? to : `/${locale}/${to}`)
 
