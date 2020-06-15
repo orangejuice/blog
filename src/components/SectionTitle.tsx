@@ -10,7 +10,7 @@ const SectionTitle = (props) => {
     //text-align: center;
     position: `relative`,
     paddingBottom: `1rem`,
-    marginTop: `2rem`,
+    margin: `2rem 0 1rem 0`,
     "&:after": {
       content: `""`,
       height: `1px`,

@@ -29,6 +29,8 @@ const Title = styled.h1`
 `
 
 const Initiale = styled.span`
+  @import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+  font-family: 'Zhi Mang Xing', cursive;
   position: absolute;
   font-size: 7rem;
   transform: translate(-50%, -50%);
