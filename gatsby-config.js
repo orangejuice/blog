@@ -2,7 +2,7 @@ const settings = require(`./settings`)
 
 module.exports = {
   siteMetadata: {
-    siteUrl: settings.siteUrl,
+    siteUrl: settings.siteUrl, // siteMap plugin needs this.
   },
   plugins: [
     {

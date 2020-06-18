@@ -21,17 +21,21 @@ Minimal design and customised. Cannot be possible without the amazing open sourc
 - SEO (Sitemap, OpenGraph tags, Twitter tags)
 - Offline Support & WebApp Manifest
 - Github issues based blog commenting system powered by utterances
-- RSS Feed for blog posts (localisation enabled)
+- RSS Feed for blog posts (i18n)
 
 **//TODO**
 
-- Categories support
+- Categories
 - TOC
+- show/hide immature content
 
 **//issues**
 - timeToRead for chinese article is wrong, ref [github #22811](https://github.com/gatsbyjs/gatsby/issues/22811)
 - locale info does not exist while rss generating (internal link in mdx may not be correct)
 
-## 🎊 Credits
+## 🔖 History
 
-- Based on many open source projects, special thanks to [minimal-blog theme](https://minimal-blog.lekoarts.de).
+- Jun 17, 2020: refurbish everything based on Gatsby blog, embrace the modern frontend framework - React! [Post TO BE UPDATED]()
+- Feb 15, 2020: update to iacrus 2.7.0
+- Feb 14, 2020: remove theme files and replaced with submodule to facilitate better version control
+- Nov 28, 2018: Go online based on Hexo / Git pages! [Post TO BE UPDATED]()

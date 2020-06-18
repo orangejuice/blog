@@ -35,8 +35,8 @@ const Post = ({data, pageContext}) => {
       </p>
       <section sx={{
         my: 5,
-        ".gatsby-resp-image-wrapper": {my: [4, 4, 5], boxShadow: shadow.join(`, `)},
-        ".gatsby-resp-image-figcaption": {fontSize: 1, textAlign: `center`, mb: `3rem`}
+        ".gatsby-resp-image-wrapper": {my: [4, 4, 4], boxShadow: shadow.join(`, `)},
+        ".gatsby-resp-image-figcaption": {fontSize: 1, textAlign: `center`, mb: 3}
       }}>
         <MDXRenderer>{post.body}</MDXRenderer>
       </section>
@@ -59,7 +59,7 @@ export const query = graphql`
       }
       description
       body
-      excerpt(truncate: true)
+      excerpt
       timeToRead
       banner {
         childImageSharp {

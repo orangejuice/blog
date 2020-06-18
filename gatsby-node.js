@@ -34,7 +34,7 @@ exports.createSchemaCustomization = ({actions}) => {
       title: String!
       locale: String!
       date: Date! @dateformat
-      excerpt(pruneLength: Int = 160, truncate: Boolean = true): String!
+      excerpt(pruneLength: Int = 320, truncate: Boolean = true): String!
       body: String!
       html: String
       timeToRead: Int
@@ -53,7 +53,7 @@ exports.createSchemaCustomization = ({actions}) => {
       slug: String!
       title: String!
       locale: String!
-      excerpt(pruneLength: Int = 160, truncate: Boolean = true): String!
+      excerpt(pruneLength: Int = 100, truncate: Boolean = true): String!
       body: String!
     }
 
@@ -62,7 +62,7 @@ exports.createSchemaCustomization = ({actions}) => {
       title: String!
       locale: String!
       date: Date! @dateformat
-      excerpt(pruneLength: Int = 140, truncate: Boolean = true): String! @parentValue(fieldName: "excerpt")
+      excerpt(pruneLength: Int = 200, truncate: Boolean = true): String! @parentValue(fieldName: "excerpt")
       body: String! @parentValue(fieldName: "body")
       html: String! @parentValue(fieldName: "html")
       timeToRead: Int @parentValue(fieldName: "timeToRead")
@@ -75,7 +75,7 @@ exports.createSchemaCustomization = ({actions}) => {
       slug: String!
       title: String!
       locale: String!
-      excerpt(pruneLength: Int = 140, truncate: Boolean = true): String! @parentValue(fieldName: "excerpt")
+      excerpt(pruneLength: Int = 200, truncate: Boolean = true): String! @parentValue(fieldName: "excerpt")
       body: String! @parentValue(fieldName: "body")
     }
   `)

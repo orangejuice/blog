@@ -2,6 +2,7 @@
 import {jsx, Link} from "theme-ui"
 import {locales} from "../utils/i18n"
 import {useIntl} from "react-intl"
+import LocalizedLink from "./LocalizedLink"
 
 const Footer = () => {
   const {locale} = useIntl()
@@ -12,7 +13,6 @@ const Footer = () => {
       sx={{
         boxSizing: `border-box`,
         display: `flex`,
-        justifyContent: `space-between`,
         mt: [5],
         color: `secondary`,
         a: {
@@ -24,7 +24,12 @@ const Footer = () => {
       <div>
         &copy; {new Date().getFullYear()} by {siteTitle}. All rights reserved.
       </div>
-      <div>Theme <Link aria-label="Link to GitHub repository" href="https://github.com/orangejuice/blog">Juice</Link>
+      <div sx={{flex: 1}}/>
+      <div sx={{mr: 3}}>
+        Theme <Link aria-label="Link to GitHub repository" href="https://github.com/orangejuice/blog">Juice</Link>
+      </div>
+      <div>
+        <LocalizedLink aria-label="Subscribe to RSS feed" to="/rss.xml">RSS</LocalizedLink>
       </div>
     </footer>
   )

@@ -1,9 +1,8 @@
 /** @jsx jsx */
 import {jsx, useColorMode} from "theme-ui"
-import React from 'react'
 
 
-export const Utterances: React.FC = ({repo, slug}) => {
+export const Utterances = ({repo, slug}) => {
   const [colorMode] = useColorMode()
   const isDarkTheme = colorMode === `dark`
 
@@ -23,5 +22,5 @@ export const Utterances: React.FC = ({repo, slug}) => {
         elem.appendChild(scriptElem)
       }}
     />
-  );
+  )
 }
