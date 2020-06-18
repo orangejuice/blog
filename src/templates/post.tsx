@@ -5,10 +5,10 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import SectionTitle from "../components/SectionTitle"
 import {Heading, jsx} from "theme-ui"
-import Tags from "../components/Tags"
 import {MDXRenderer} from "gatsby-plugin-mdx"
-import {FormattedDate, FormattedMessage} from "react-intl"
+import {FormattedMessage} from "react-intl"
 import {Utterances} from "../components/Comment"
+import {TitleMeta} from "../components/TitleMeta";
 
 
 const Post = ({data, pageContext}) => {
@@ -27,12 +27,11 @@ const Post = ({data, pageContext}) => {
       />
       <SectionTitle><FormattedMessage id={"header.nav.post"}/></SectionTitle>
       <Heading variant="styles.h1">{post.title}</Heading>
-      <p sx={{color: `secondary`, mt: 3, fontSize: 1}}>
-        {post.tags && <Tags tags={post.tags} sx={{marginRight: `12px`}}/>}
-        <FormattedDate month="long" year="numeric" day="numeric" value={post.date}/>
-        {post.timeToRead && ` — `}
-        {post.timeToRead && <FormattedMessage id={"post.timeToRead"} values={{timeToRead: post.timeToRead}}/>}
-      </p>
+      <TitleMeta post={post} sx={{
+        display: `flex`,
+        flexDirection: [`column`, `row`],
+        lineHeight: [2, 3],
+      }}/>
       <section sx={{
         my: 5,
         ".gatsby-resp-image-wrapper": {my: [4, 4, 4], boxShadow: shadow.join(`, `)},

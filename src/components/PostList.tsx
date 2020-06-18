@@ -3,8 +3,7 @@ import {jsx} from "theme-ui"
 import * as React from 'react'
 import styled from '@emotion/styled'
 import LocalizedLink from "./LocalizedLink";
-import Tags from "./Tags";
-import {FormattedDate, FormattedMessage} from "react-intl";
+import {TitleMeta} from "./TitleMeta";
 
 
 const Post = styled.article`
@@ -55,12 +54,11 @@ const PostList = ({posts}) => {
             <Initiale>{post.title.charAt(0)}</Initiale>
             <LocalizedLink to={post.slug} sx={{color: `text`}}>{post.title}</LocalizedLink>
           </Title>
-          <div sx={{color: t => t.colors.secondary}}>
-            {post.tags && <Tags tags={post.tags} sx={{marginRight: `20px`}}/>}
-            <FormattedDate month="long" year="numeric" day="numeric" value={post.date}/>
-            &nbsp;&mdash;&nbsp;
-            <FormattedMessage id={"post.timeToRead"} values={{timeToRead: post.timeToRead}}/>
-          </div>
+          <TitleMeta post={post} sx={{
+            display: `flex`,
+            flexDirection: [`column`, `row`],
+            lineHeight: [2, 1],
+          }}/>
           <Excerpt>{post.excerpt}</Excerpt>
         </Post>))}
     </React.Fragment>

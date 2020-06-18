@@ -25,6 +25,7 @@ Minimal design and customised. Cannot be possible without the amazing open sourc
 
 **//TODO**
 
+- jump to same post in different language
 - Categories
 - TOC
 - show/hide level2 content (can be used as draft/immature thoughts)
