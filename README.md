@@ -36,7 +36,8 @@ Minimal design and customised. Cannot be possible without the amazing open sourc
 
 ## 🔖 History
 
-- Jun 17, 2020: refurbish everything based on Gatsby blog, embrace the modern frontend framework - React! [Post TO BE UPDATED]()
+- Jun 18, 2020: Imported old posts.
+- Jun 17, 2020: refurbish everything based on Gatsby, embrace the modern frontend framework - React! [Post TO BE UPDATED]()
 - Feb 15, 2020: update to iacrus 2.7.0
 - Feb 14, 2020: remove theme files and replaced with submodule to facilitate better version control
-- Nov 28, 2018: Go online based on Hexo / Git pages! [Post TO BE UPDATED]()
+- Nov 28, 2018: Go online based on Hexo / Git pages! [Post](https://orangejuice.cc/2019-03-04-build-a-hexo-blog)
