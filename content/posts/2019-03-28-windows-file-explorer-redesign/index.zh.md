@@ -1,5 +1,5 @@
 ---
-title: Microsoft Design Intern's File Explorer mock up
+title: 一个微软实习生设计的 Fluent Design 文件管理器原型
 date: 2019-03-28 09:04:32
 updated: 2019-03-28 09:04:32
 categories: [news]

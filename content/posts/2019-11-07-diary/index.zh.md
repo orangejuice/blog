@@ -1,5 +1,5 @@
 ---
-title: 2019年十一月杂记
+title: 日记于2019年11月
 categories:
   - diary
 tags: [生活,哲思]

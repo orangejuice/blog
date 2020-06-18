@@ -1,5 +1,5 @@
 ---
-title: "《在清朝》柏桦"
+title: 读到《在清朝》柏桦
 categories:
   - notes
 tags: [历史,诗词]

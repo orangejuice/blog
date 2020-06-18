@@ -1,10 +1,8 @@
 ---
-title: 十二月杂记
+title: 日记于2019年12月
 categories:
   - diary
 tags: [生活,哲思]
-typora-root-url: ..
-toc: true
 date: 2019-12-11 19:26:49
 updated: 2020-01-01 14:29:49
 
