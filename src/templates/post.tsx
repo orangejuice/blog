@@ -7,8 +7,8 @@ import SectionTitle from "../components/SectionTitle"
 import {Heading, jsx} from "theme-ui"
 import Tags from "../components/Tags"
 import {MDXRenderer} from "gatsby-plugin-mdx"
-import {FormattedDate, FormattedMessage} from "react-intl";
-import {Utterances} from "../components/Comment";
+import {FormattedDate, FormattedMessage} from "react-intl"
+import {Utterances} from "../components/Comment"
 
 
 const Post = ({data, pageContext}) => {

@@ -27,7 +27,7 @@ Minimal design and customised. Cannot be possible without the amazing open sourc
 
 - Categories
 - TOC
-- show/hide immature content
+- show/hide level2 content (can be used as draft/immature thoughts)
 
 **//issues**
 - timeToRead for chinese article is wrong, ref [github #22811](https://github.com/gatsbyjs/gatsby/issues/22811)
