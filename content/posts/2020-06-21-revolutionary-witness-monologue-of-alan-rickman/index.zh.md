@@ -7,7 +7,7 @@ tags: [历史, 文化]
 由剧作家彼得·巴恩斯编写，艾伦·瑞克曼演讲，庆祝法国大革命两百周年，于1989年演出。
 
 
-<center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nXZqq2smuHs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nXZqq2smuHs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 上帝先是创造了富人，然后向当时的人们展示了他们将拥有的世界，当他们来到一片田野，有成千上万的无头尸体，他们的躯干和手都像铁一样，上帝告诉他们，这些无头尸体注定要做穷苦的工人。富人喊道："可是这些英雄们的铁皮肌肉会碾碎我们的。" "不要害怕，"上帝回答说。"我会把很小的头和大脑放在他们的身体上，所以在他们的头脑发育起来之前，你们不用害怕。" 谁仍然是压迫者？富人。谁仍然被压迫？穷人。你的奴役就是他们的自由，你们的贫穷就是他们的繁荣，牧师们说，穷人必须满足于自己的贫穷，他们会在以后找到天堂。
 
