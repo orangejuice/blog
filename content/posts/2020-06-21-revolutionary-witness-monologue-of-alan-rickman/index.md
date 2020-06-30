@@ -1,5 +1,5 @@
 ---
-title: Revolutionary Witness: The Preacher
+title: "Revolutionary Witness: The Preacher"
 date: 2020-06-21
 tags: [History, Culture]
 ---
