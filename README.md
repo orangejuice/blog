@@ -9,7 +9,7 @@
 
 Minimal design and customised. Cannot be possible without the amazing open source community.
 
-## ✨ Features
+## ✨ Features 
 
 - React & MDX
 - Fully customizable (powered by Gatsby/Theme UI/)
