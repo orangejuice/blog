@@ -2,6 +2,8 @@ import type {Metadata} from "next"
 import "./globals.css"
 import {Inter as FontSans, JetBrains_Mono as FontMono} from "next/font/google"
 import {cn} from "@/lib/utils"
+import {Context} from "@/app/context"
+import {Header} from "@/components/header"
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -20,9 +22,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={cn("flex min-h-screen flex-col font-sans antialiased", fontSans.variable, fontMono.variable)}>
-        {children}
+        <Context>
+          <Header/>
+          {children}
+        </Context>
       </body>
     </html>
   )
