@@ -22,11 +22,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={cn("flex min-h-screen flex-col font-sans antialiased", fontSans.variable, fontMono.variable)}>
+    <html suppressHydrationWarning>
+      <body className={cn("flex flex-col font-sans antialiased", fontSans.variable, fontMono.variable)}>
         <Context>
-          <Header/>
-          {children}
+          <div className="flex w-full flex-col max-w-5xl px-4 mx-auto xl:px-0">
+            <Header/>
+            {children}
+          </div>
         </Context>
       </body>
     </html>
