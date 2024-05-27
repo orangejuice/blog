@@ -1,10 +1,11 @@
 import {ComponentProps, ComponentType} from "react"
 import {cn} from "@/lib/utils"
-import {LogIn, LogOut, Monitor, Moon, Sun, User} from "lucide-react"
+import {ArrowRight, LogIn, LogOut, Monitor, Moon, Sun, User} from "lucide-react"
 
 export const Icons = {
   account: {signIn: cns(LogIn), signOut: cns(LogOut)},
   nav: {profile: cns(User)},
+  link: {arrow: cns(ArrowRight)},
   theme: {light: cns(Sun), dark: cns(Moon), system: cns(Monitor)}
 }
 

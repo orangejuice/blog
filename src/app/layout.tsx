@@ -5,15 +5,8 @@ import {cn} from "@/lib/utils"
 import {Context} from "@/app/context"
 import {Header} from "@/components/header"
 
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans"
-})
-
-const fontMono = FontMono({
-  subsets: ["latin"],
-  variable: "--font-mono"
-})
+const fontSans = FontSans({subsets: ["latin"], variable: "--font-sans"})
+const fontMono = FontMono({subsets: ["latin"], variable: "--font-mono"})
 
 export const metadata: Metadata = {
   title: "Create Next App",

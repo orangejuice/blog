@@ -14,7 +14,7 @@ export default function NotFound() {
         </p>
         <p className="mb-8">
           But dont worry, you can find plenty of other things on our
-          <Link href="/" className="hover:underline hover:underline-offset-4 ml-1">homepage</Link>
+          <Link href="/" className="underline underline-offset-4 ml-1">homepage</Link>
           .
         </p>
       </div>
