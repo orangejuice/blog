@@ -1,12 +1,12 @@
-import {allPosts} from "contentlayer/generated"
-import {compareDesc, formatDate, intlFormat} from "date-fns"
 import {Icons} from "@/components/icons"
 import Link from "next/link"
 import {Button} from "@/components/ui/button"
 import {cn} from "@/lib/utils"
+import {getPosts} from "@/lib/fetch"
+import {format} from "@formkit/tempo"
 
 export default function Home() {
-  const latest5 = allPosts.sort((a, b) => compareDesc(a.date, b.date)).slice(0, 5)
+  const latest5 = getPosts().slice(0, 5)
 
   return (
     <div className="grid md:grid-cols-[2fr,1fr] items-start gap-10 min-h-screen">
@@ -42,7 +42,7 @@ export default function Home() {
                 {post.excerpt}
               </div>
               <div className="mt-2.5 text-xs font-medium text-neutral-800 dark:text-neutral-300">
-                Posted on <time dateTime={post.date}>{formatDate(post.date, "yyyy-MM-dd")}</time>
+                Posted on <time dateTime={post.date}>{format(post.date, {date: "medium"})}</time>
               </div>
             </li>
           </>)}

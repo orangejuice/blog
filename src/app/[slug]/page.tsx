@@ -6,6 +6,7 @@ import {allPosts} from "contentlayer/generated"
 import {site} from "@/site"
 import {getPosts} from "@/lib/fetch"
 import {useMDXComponent} from "next-contentlayer2/hooks"
+import {format} from "@formkit/tempo"
 
 export async function generateMetadata({params}: {params: {slug: string}}): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug)
@@ -48,12 +49,27 @@ export default async function Page({params}: {params: {slug: string}}) {
   if (postIndex === -1) return notFound()
 
   const MDXContent = useMDXComponent(posts[postIndex].body.code)
+  const post = posts[postIndex]
   const prev = posts[postIndex - 1]
   const next = posts[postIndex + 1]
 
   return <>
-    <article className="prose max-w-none pb-8 pt-10 dark:prose-invert">
-      <MDXContent/>
-    </article>
+    <div className="grid md:grid-cols-[2fr,1fr] items-start gap-10 min-h-screen">
+      <article>
+        <div className="flex flex-col gap-3">
+          <h1 className="text-2xl font-semibold">{post.title}</h1>
+          <p className="text-secondary">
+            <time dateTime={post.date}>{format(post.date, {date: "medium"})}</time>
+            {post.updated ? ` (Updated ${format(post.updated, {date: "medium"})})` : ""}{" "}
+          </p>
+        </div>
+        <div className="h-8"/>
+        <div className="prose max-w-none dark:prose-invert">
+          <MDXContent/>
+        </div>
+      </article>
+      <aside>
+      </aside>
+    </div>
   </>
 }
