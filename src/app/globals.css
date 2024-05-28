@@ -26,7 +26,7 @@ body {
     transition: opacity 0.15s ease-in-out;
   }
 
-  &:hover::after {
+  &:hover::after, .group:hover &.underline-fade-with-group::after {
     opacity: 1;
   }
 }

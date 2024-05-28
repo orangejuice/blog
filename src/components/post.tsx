@@ -6,9 +6,9 @@ import {Post} from "contentlayer/generated"
 
 export function PostItem({post}: {post: Post}) {
   return (<>
-    <Link href={`/${post.slug}`} className="group flex flex-col group no-underline relative p-4 rounded-xl -mx-4 bg-transparent transition-colors hover:bg-amber-200/40 place-items-stretch gap-1">
+    <Link href={`/${post.slug}`} className="group flex flex-col items-start no-underline relative p-4 rounded-xl -mx-4 bg-transparent transition-colors hover:bg-amber-200/40 gap-1">
       <h2 className={cn("flex items-center gap-2 text-gray-900 dark:text-gray-100 text-xl font-bold tracking-tight",
-        "group-hover:underline underline-offset-4")}>
+        "underline-fade underline-fade-with-group")}>
         {post.title}
         <Icons.link.arrow className="opacity-0 group-hover:opacity-100 group-hover:translate-x-0 shrink-0 -translate-x-1.5 stroke-[4px] transition-all ease-in-out duration-200 transform"/>
       </h2>
