@@ -6,7 +6,10 @@ import rehypePrismAll from "rehype-prism-plus"
 import rehypePresetMinify from "rehype-preset-minify"
 import {defineDocumentType, makeSource} from "contentlayer2/source-files"
 import removeMarkdown from "remove-markdown"
-import readingTime from "reading-time"
+import {HashIcon} from "lucide-react"
+import Server from "react-dom/server"
+import React from "react"
+import {fromHtmlIsomorphic} from "hast-util-from-html-isomorphic"
 
 export const Post = defineDocumentType(() => ({
   name: "Post",
@@ -35,7 +38,10 @@ export default makeSource({
     remarkPlugins: [remarkGfm, remarkFrontmatter],
     rehypePlugins: [
       rehypeSlug,
-      [rehypeAutolinkHeadings, {behavior: "prepend", headingProperties: {className: ["anchor"]}}],
+      [rehypeAutolinkHeadings, {
+        headingProperties: {className: ["heading-anchor"]},
+        content: fromHtmlIsomorphic(Server.renderToStaticMarkup(React.createElement(HashIcon)), {fragment: true})
+      }],
       [rehypePrismAll, {defaultLanguage: "js", ignoreMissing: true}],
       rehypePresetMinify
     ]

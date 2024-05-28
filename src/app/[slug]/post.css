@@ -1,0 +1,26 @@
+.heading-anchor a {
+  margin-left: -1.25rem;
+  padding-right: .25rem;
+  opacity: 0;
+  transition: opacity .15s ease
+}
+
+.heading-anchor:hover a {
+  opacity: 1;
+  transition: opacity .15s ease
+}
+
+.heading-anchor > a:hover .lucide-hash {
+  color: rgb(236 72 153)
+}
+
+.lucide-hash {
+  width: 1rem;
+  height: 1rem;
+  stroke-width: .15rem;
+  display: inline;
+  overflow: hidden;
+  fill: currentColor;
+  vertical-align: middle;
+  color: #424242;
+}

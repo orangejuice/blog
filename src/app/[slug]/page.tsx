@@ -1,12 +1,11 @@
 import "./code-highlight.css"
-
+import "./post.css"
 import {Metadata} from "next"
 import {notFound} from "next/navigation"
 import {allPosts} from "contentlayer/generated"
 import {site} from "@/site"
-import {compareDesc} from "date-fns"
 import {getPosts} from "@/lib/fetch"
-import {MDX} from "@/components/mdx"
+import {useMDXComponent} from "next-contentlayer2/hooks"
 
 export async function generateMetadata({params}: {params: {slug: string}}): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug)
@@ -46,22 +45,15 @@ export default async function Page({params}: {params: {slug: string}}) {
   const slug = decodeURI(params.slug)
   const posts = getPosts()
   const postIndex = posts.findIndex((post) => post.slug === slug)
-  if (postIndex === -1) {
-    return notFound()
-  }
+  if (postIndex === -1) return notFound()
 
+  const MDXContent = useMDXComponent(posts[postIndex].body.code)
   const prev = posts[postIndex - 1]
   const next = posts[postIndex + 1]
-  const post = allPosts.find((post) => post.slug == slug)
 
-  if (!post) return notFound()
-  return (
-    <div className="prose max-w-none pb-8 pt-10 dark:prose-invert">
-
-      <MDX post={post}/>
-      {/*<Layout content={mainContent} authorDetails={authorDetails} next={next} prev={prev}>*/}
-      {/*  <MDXLayoutRenderer code={post.body.code} components={components} toc={post.toc}/>*/}
-      {/*</Layout>*/}
-    </div>
-  )
+  return <>
+    <article className="prose max-w-none pb-8 pt-10 dark:prose-invert">
+      <MDXContent/>
+    </article>
+  </>
 }
