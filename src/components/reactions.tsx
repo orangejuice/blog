@@ -82,16 +82,6 @@ export const Icon = ({path, className, ...props}: IconProps) => {
   )
 }
 
-export const confettiOptions = {
-  particleCount: 50,
-  spread: 60,
-  colors: ["#6085de"],
-  disableForReducedMotion: true,
-  scalar: 0.5,
-  gravity: 0.85,
-  decay: 0.75,
-  ticks: 100
-}
 export const loadingIcon = "M12 4V2A10 10 0 0 0 2 12h2a8 8 0 0 1 8-8Z"
 
 export const reactionsSetup = {

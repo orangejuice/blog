@@ -10,7 +10,7 @@ export function PostItem({post}: {post: Post}) {
       <h2 className={cn("flex items-center gap-2 text-gray-900 dark:text-gray-100 text-xl font-bold tracking-tight",
         "group-hover:underline underline-offset-4")}>
         {post.title}
-        <Icons.link.arrow className="opacity-0 group-hover:opacity-100 group-hover:translate-x-0 shrink-0 -translate-x-1.5 w-4 h-4 stroke-[4px] transition-all ease-in-out duration-200 transform"/>
+        <Icons.link.arrow className="opacity-0 group-hover:opacity-100 group-hover:translate-x-0 shrink-0 -translate-x-1.5 stroke-[4px] transition-all ease-in-out duration-200 transform"/>
       </h2>
       <div className="flex items-center gap-2 flex-wrap">
         {post.tags.map((tag, index) =>

@@ -16,10 +16,11 @@ export const getPostsGroupedByTag = () => {
 }
 
 export const getTags = () => {
-  return Object.entries(getPostsGroupedByTag()).reduce((counter: {[tag: string]: number}, [tag, posts]) => {
+  const tagCount = Object.entries(getPostsGroupedByTag()).reduce((counter: {[tag: string]: number}, [tag, posts]) => {
     counter[tag] = posts.length
     return counter
   }, {})
+  return Object.fromEntries(Object.entries(tagCount).sort(([, n1], [, n2]) => n2 - n1))
 }
 
 export const getPostsGroupedByLocale = () => {
@@ -32,8 +33,9 @@ export const getPostsGroupedByLocale = () => {
 }
 
 export const getLocales = () => {
-  return Object.entries(getPostsGroupedByLocale()).reduce((counter: {[locale: string]: number}, [locale, posts]) => {
+  const localeCount = Object.entries(getPostsGroupedByLocale()).reduce((counter: {[locale: string]: number}, [locale, posts]) => {
     counter[locale] = posts.length
     return counter
   }, {})
+  return Object.fromEntries(Object.entries(localeCount).sort(([, n1], [, n2]) => n2 - n1))
 }

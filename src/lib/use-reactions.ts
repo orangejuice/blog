@@ -2,8 +2,9 @@
 import confetti from "canvas-confetti"
 import {type MouseEvent, useEffect, useState} from "react"
 import {useMounted} from "@/lib/use-mounted"
-import {confettiOptions, Counters, ReactionName, reactionsSetup} from "@/components/reactions"
+import {Counters, ReactionName, reactionsSetup} from "@/components/reactions"
 import {useWindowDimensions} from "@/lib/use-window-dimensions"
+
 
 type ReactedLocalStorage = { [Key in ReactionName]?: boolean };
 
@@ -40,7 +41,11 @@ export const useReactions = (slug: string, initialCounters?: Counters) => {
     const x = event.clientX / windowWidth
     const y = event.clientY / windowHeight
     confetti({
-      ...confettiOptions,
+      spread: 60,
+      scalar: 0.5,
+      gravity: 0.85,
+      decay: 0.75,
+      ticks: 100,
       origin: {x, y},
       colors: [reactionsSetup[reaction].color]
     })

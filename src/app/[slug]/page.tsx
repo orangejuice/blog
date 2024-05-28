@@ -13,12 +13,8 @@ import {formatDate, useCssIndexCounter} from "@/lib/utils"
 
 export async function generateMetadata({params}: {params: {slug: string}}): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug)
-
   const post = allPosts.find((post) => post.slug === slug)
   if (!post) return
-
-  const publishedAt = new Date(post.date).toISOString()
-  const modifiedAt = new Date(post.updated).toISOString()
 
   return {
     title: post.title,
@@ -29,8 +25,8 @@ export async function generateMetadata({params}: {params: {slug: string}}): Prom
       siteName: site.title,
       locale: "en_US",
       type: "article",
-      publishedTime: publishedAt,
-      modifiedTime: modifiedAt,
+      publishedTime: new Date(post.date).toISOString(),
+      modifiedTime: new Date(post.updated).toISOString(),
       url: "./",
       authors: site.author
     },
@@ -61,14 +57,13 @@ export default async function Page({params}: {params: {slug: string}}) {
   return <>
     <div className="grid md:grid-cols-[2fr,1fr] items-start gap-16 min-h-screen">
       <article className="overflow-auto">
-        <div className="flex flex-col gap-3">
+        <section className="flex flex-col gap-3 mb-8">
           <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter()}>{post.title}</h1>
           <p className="text-secondary animate-delay-in" style={cssIndexCounter()}>
             <time dateTime={post.date}>{formatDate(post.date)}</time>
             {post.updated ? ` (Updated ${formatDate(post.updated)})` : ""}{" "}
           </p>
-        </div>
-        <div className="h-8"/>
+        </section>
         <div className="prose toc-content max-w-none dark:prose-invert animate-delay-in" style={cssIndexCounter()}>
           <MDXContent/>
         </div>
@@ -80,7 +75,6 @@ export default async function Page({params}: {params: {slug: string}}) {
         <Toc/>
         <hr/>
         <div className="flex flex-col gap-2 dark:bg-gray-800">
-          {/*<h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">Table of contents</h5>*/}
           <section className="py-2 pl-2 text-slate-700 text-sm leading-6">
             <ReactionsButtons slug={slug} initialCounters={{likes: 2, loves: 5, awards: 1}}/>
           </section>

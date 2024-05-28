@@ -22,7 +22,7 @@ export default function Toc() {
     <div className="flex flex-col gap-2 dark:bg-gray-800">
       <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">Table of contents</h5>
       <section className="toc py-2 pl-2 text-slate-700 text-sm leading-6">
-        <Icons.loading className="mx-auto h-5 w-5 animate-spin"/>
+        <Icons.loading className="mx-auto animate-spin"/>
       </section>
     </div>
   )
