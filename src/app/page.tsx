@@ -1,25 +1,27 @@
 import Link from "next/link"
 import {getPosts} from "@/lib/fetch"
 import {PostItem} from "@/components/post"
+import {useCssIndexCounter} from "@/lib/utils"
 
 export default function Home() {
   const latest5 = getPosts().slice(0, 5)
+  const cssIndexCounter = useCssIndexCounter()
 
   return (
     <div className="grid md:grid-cols-[2fr,1fr] items-start gap-10 min-h-screen">
       <main className="flex flex-col gap-5">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-2xl font-bold">Latest</h1>
-            <p className="text-stone-600">introspection and innovations.</p>
+            <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter()}>Latest</h1>
+            <p className="text-stone-600 animate-delay-in" style={cssIndexCounter()}>
+              introspection and innovations.
+            </p>
           </div>
-          <div>
-            <Link href={""} className="underline underline-offset-4">
-              See all
-            </Link>
-          </div>
+          <Link href={"/all"} className="underline underline-offset-4 animate-delay-in" style={cssIndexCounter()}>
+            See all
+          </Link>
         </div>
-        <ul className="flex flex-col gap-5">
+        <ul className="flex flex-col gap-5 animate-delay-in" style={cssIndexCounter()}>
           {latest5.map(post => <li key={post.slug}><PostItem post={post}/></li>)}
         </ul>
       </main>

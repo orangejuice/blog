@@ -22,11 +22,16 @@ const config: Config = {
       },
       keyframes: {
         hide: {to: {opacity: "0"}},
-        show: {to: {opacity: "100"}}
+        show: {to: {opacity: "100"}},
+        in: {
+          "0%": {transform: "translateY(18px)", opacity: "0"},
+          "100%": {transform: "translateY(0)", opacity: "100"}
+        }
       },
       animation: {
-        daleyHide: "hide 0.2s ease-out 2s forwards",
-        daleyShow: "show 0.2s ease-out 2s forwards"
+        "delay-in": "in .6s calc(var(--index) * 130ms) both",
+        "delay-hide": "hide 0.2s ease-out 2s forwards",
+        "delay-show": "show 0.2s ease-out 2s forwards"
       }
     }
   },

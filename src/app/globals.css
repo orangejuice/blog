@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body {
-  overflow-x: hidden;
   padding-left: calc(100vw - 100%);
   min-height: 100vh;
 }

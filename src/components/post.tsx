@@ -1,8 +1,7 @@
 import Link from "next/link"
 import {Icons} from "@/components/icons"
 import {Button} from "@/components/ui/button"
-import {cn} from "@/lib/utils"
-import {format} from "@formkit/tempo"
+import {cn, formatDate} from "@/lib/utils"
 import {Post} from "contentlayer/generated"
 
 export function PostItem({post}: {post: Post}) {
@@ -24,7 +23,7 @@ export function PostItem({post}: {post: Post}) {
         {post.excerpt}
       </p>
       <p className="mt-2.5 text-xs font-medium text-neutral-800 dark:text-neutral-300">
-        Posted on <time dateTime={post.date}>{format(post.date, {date: "medium"})}</time>
+        Posted on <time dateTime={post.date}>{formatDate(post.date)}</time>
       </p>
     </Link>
   </>)

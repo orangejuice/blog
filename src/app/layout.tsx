@@ -6,6 +6,7 @@ import {Context} from "@/app/context"
 import {Header} from "@/components/header"
 import {ThemeToggle} from "@/components/theme-toggle"
 import {site} from "@/site"
+import React from "react"
 
 const fontSans = FontSans({subsets: ["latin"], variable: "--font-sans"})
 const fontMono = FontMono({subsets: ["latin"], variable: "--font-mono"})

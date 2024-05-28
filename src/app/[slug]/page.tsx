@@ -6,10 +6,10 @@ import {allPosts} from "contentlayer/generated"
 import {site} from "@/site"
 import {getPosts} from "@/lib/fetch"
 import {useMDXComponent} from "next-contentlayer2/hooks"
-import {format} from "@formkit/tempo"
 import Toc from "@/components/toc"
 import {ReactionsButtons} from "@/components/reactions"
 import {Comments} from "@/components/comments"
+import {formatDate} from "@/lib/utils"
 
 export async function generateMetadata({params}: {params: {slug: string}}): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug)
@@ -58,12 +58,12 @@ export default async function Page({params}: {params: {slug: string}}) {
 
   return <>
     <div className="grid md:grid-cols-[2fr,1fr] items-start gap-16 min-h-screen">
-      <article>
+      <article className="overflow-auto">
         <div className="flex flex-col gap-3">
           <h1 className="text-2xl font-bold">{post.title}</h1>
           <p className="text-secondary">
-            <time dateTime={post.date}>{format(post.date, {date: "medium"})}</time>
-            {post.updated ? ` (Updated ${format(post.updated, {date: "medium"})})` : ""}{" "}
+            <time dateTime={post.date}>{formatDate(post.date)}</time>
+            {post.updated ? ` (Updated ${formatDate(post.updated)})` : ""}{" "}
           </p>
         </div>
         <div className="h-8"/>

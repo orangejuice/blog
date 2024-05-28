@@ -22,9 +22,9 @@ export function ThemeToggle() {
           {theme === "light" && <Icons.theme.light className="transition-all"/>}
           {theme === "system" &&
             <div className="relative h-5 w-5">
-              <Icons.theme.system className="absolute animate-daleyHide transition-all group-hover:animate-none"/>
-              {resolvedTheme === "dark" && <Icons.theme.dark className="absolute animate-daleyShow opacity-0 transition-all group-hover:hidden"/>}
-              {resolvedTheme === "light" && <Icons.theme.light className="absolute animate-daleyShow opacity-0 transition-all group-hover:hidden"/>}
+              <Icons.theme.system className="absolute animate-delay-hide transition-all group-hover:animate-none"/>
+              {resolvedTheme === "dark" && <Icons.theme.dark className="absolute animate-delay-show opacity-0 transition-all group-hover:hidden"/>}
+              {resolvedTheme === "light" && <Icons.theme.light className="absolute animate-delay-show opacity-0 transition-all group-hover:hidden"/>}
             </div>
           }
           <span className="sr-only">Toggle theme</span>
