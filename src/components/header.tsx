@@ -1,6 +1,5 @@
 "use client"
 import Link from "next/link"
-import {ThemeToggle} from "@/components/theme-toggle"
 import {useSelectedLayoutSegment} from "next/navigation"
 import Image from "next/image"
 import {buttonVariants} from "@/components/ui/button"
@@ -28,7 +27,6 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <ThemeToggle/>
       </div>
     </header>
   )

@@ -11,6 +11,14 @@ const config: Config = {
         sans: ["var(--font-sans)", ...defaults.fontFamily.sans],
         mono: ["var(--font-mono)", ...defaults.fontFamily.mono]
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            "blockquote p:first-of-type::before": false,
+            "blockquote p:first-of-type::after": false
+          }
+        }
+      },
       keyframes: {
         hide: {to: {opacity: "0"}},
         show: {to: {opacity: "100"}}
