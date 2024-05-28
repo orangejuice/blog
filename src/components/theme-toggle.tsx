@@ -1,17 +1,14 @@
 "use client"
-
-import {useEffect, useState} from "react"
 import {useTheme} from "next-themes"
 import {Button} from "@/components/ui/button"
 import {Icons} from "@/components/icons"
 import {cn} from "@/lib/utils"
 import {Tooltip, TooltipContent, TooltipTrigger} from "@/components/ui/tooltip"
+import {useMounted} from "@/lib/use-mounted"
 
 export function ThemeToggle() {
-  const [mounted, setMounted] = useState(false)
+  const mounted = useMounted()
   const {theme, resolvedTheme, setTheme} = useTheme()
-
-  useEffect(() => setMounted(true), [])
 
   if (!mounted) return <Button variant="ghost" size="icon" className="h-4 w-4 px-2 py-1.5"/>
 

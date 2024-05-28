@@ -8,6 +8,7 @@ import {getPosts} from "@/lib/fetch"
 import {useMDXComponent} from "next-contentlayer2/hooks"
 import {format} from "@formkit/tempo"
 import Toc from "@/components/toc"
+import {ReactionsButtons} from "@/components/reactions"
 
 export async function generateMetadata({params}: {params: {slug: string}}): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug)
@@ -69,8 +70,17 @@ export default async function Page({params}: {params: {slug: string}}) {
           <MDXContent/>
         </div>
       </article>
-      <aside className="sticky top-8">
+      <aside className="flex flex-col sticky top-8 gap-4">
         <Toc/>
+        <hr/>
+        <div className="flex flex-col gap-2 dark:bg-gray-800">
+          <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">Table of contents</h5>
+          <section className="py-2 pl-2 text-slate-700 text-sm leading-6">
+            <ReactionsButtons slug={slug} initialCounters={{
+              "likes": 2, "loves": 5, awards: 1
+            }} />
+          </section>
+        </div>
       </aside>
     </div>
   </>
