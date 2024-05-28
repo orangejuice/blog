@@ -37,4 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Credits
 - https://github.com/timlrx/tailwind-nextjs-starter-blog
-- 
+- https://webtech-note.com/posts/tocbot-contentlayer

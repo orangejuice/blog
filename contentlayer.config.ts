@@ -23,11 +23,10 @@ export const Post = defineDocumentType(() => ({
     tags: {type: "list", of: {type: "string"}, default: []}
   },
   computedFields: {
-    text: {type: "string", resolve: post => removeMarkdown(post.body.raw)},
     excerpt: {type: "string", resolve: post => extractExcerpt(post.body.raw, 200)},
     updated: {type: "date", resolve: (post) => post.updated ?? post.date},
     slug: {type: "string", resolve: (post) => post._raw.sourceFileDir},
-    locale: {type: "string", resolve: (post) => post._raw.sourceFileName.split(".")[1]}
+    locale: {type: "string", resolve: (post) => post._raw.sourceFileName.split(".")[1]},
   }
 }))
 
@@ -51,5 +50,5 @@ export default makeSource({
 export function extractExcerpt(markdown: string, wordLimit: number) {
   const str = removeMarkdown(markdown)
   const arr = [...str]
-  return arr.slice(0, wordLimit).concat(arr.length > wordLimit ? "..." : "")
+  return arr.slice(0, wordLimit).concat(arr.length > wordLimit ? "..." : "").join("")
 }

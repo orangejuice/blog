@@ -20,10 +20,10 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
     <html suppressHydrationWarning>
       <body className={cn("flex flex-col font-sans antialiased", fontSans.variable, fontMono.variable)}>
         <Context>
-          <div className="flex w-full flex-col max-w-5xl px-4 mx-auto xl:px-0">
+          <div className="flex w-full flex-col max-w-5xl px-4 mx-auto xl:px-0 my-8">
             <Header/>
             {children}
-            <footer className="flex mb-4 mt-16 items-center justify-between">
+            <footer className="flex mt-16 items-center justify-between">
               <ThemeToggle/>
               <div className="flex gap-2 text-sm text-gray-500 dark:text-gray-400">
                 <div>{`Copyright © ${new Date().getFullYear()}`}</div>

@@ -19,7 +19,8 @@
     "next": "15.0.0-rc.0",
     "next-themes": "^0.3.0",
     "react": "19.0.0-rc-f994737d14-20240522",
-    "react-dom": "19.0.0-rc-f994737d14-20240522"
+    "react-dom": "19.0.0-rc-f994737d14-20240522",
+    "tocbot": "^4.28.2"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.13",

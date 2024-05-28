@@ -7,6 +7,7 @@ import {site} from "@/site"
 import {getPosts} from "@/lib/fetch"
 import {useMDXComponent} from "next-contentlayer2/hooks"
 import {format} from "@formkit/tempo"
+import Toc from "@/components/toc"
 
 export async function generateMetadata({params}: {params: {slug: string}}): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug)
@@ -54,7 +55,7 @@ export default async function Page({params}: {params: {slug: string}}) {
   const next = posts[postIndex + 1]
 
   return <>
-    <div className="grid md:grid-cols-[2fr,1fr] items-start gap-10 min-h-screen">
+    <div className="grid md:grid-cols-[2fr,1fr] items-start gap-16 min-h-screen">
       <article>
         <div className="flex flex-col gap-3">
           <h1 className="text-2xl font-bold">{post.title}</h1>
@@ -64,11 +65,12 @@ export default async function Page({params}: {params: {slug: string}}) {
           </p>
         </div>
         <div className="h-8"/>
-        <div className="prose max-w-none dark:prose-invert">
+        <div className="prose toc-content max-w-none dark:prose-invert">
           <MDXContent/>
         </div>
       </article>
-      <aside>
+      <aside className="sticky top-8">
+        <Toc/>
       </aside>
     </div>
   </>
