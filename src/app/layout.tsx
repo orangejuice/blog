@@ -4,6 +4,8 @@ import {Inter as FontSans, JetBrains_Mono as FontMono} from "next/font/google"
 import {cn} from "@/lib/utils"
 import {Context} from "@/app/context"
 import {Header} from "@/components/header"
+import {ThemeToggle} from "@/components/theme-toggle"
+import {site} from "@/site"
 
 const fontSans = FontSans({subsets: ["latin"], variable: "--font-sans"})
 const fontMono = FontMono({subsets: ["latin"], variable: "--font-mono"})
@@ -21,6 +23,14 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
           <div className="flex w-full flex-col max-w-5xl px-4 mx-auto xl:px-0">
             <Header/>
             {children}
+            <footer className="flex mb-4 mt-16 items-center justify-between">
+              <ThemeToggle/>
+              <div className="flex gap-2 text-sm text-gray-500 dark:text-gray-400">
+                <div>{`Copyright © ${new Date().getFullYear()}`}</div>
+                <span>{` • `}</span>
+                <span>{site.title}</span>
+              </div>
+            </footer>
           </div>
         </Context>
       </body>

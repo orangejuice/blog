@@ -1,5 +1,5 @@
 import "./code-highlight.css"
-import "./post.css"
+import "./page.css"
 import {Metadata} from "next"
 import {notFound} from "next/navigation"
 import {allPosts} from "contentlayer/generated"
@@ -57,7 +57,7 @@ export default async function Page({params}: {params: {slug: string}}) {
     <div className="grid md:grid-cols-[2fr,1fr] items-start gap-10 min-h-screen">
       <article>
         <div className="flex flex-col gap-3">
-          <h1 className="text-2xl font-semibold">{post.title}</h1>
+          <h1 className="text-2xl font-bold">{post.title}</h1>
           <p className="text-secondary">
             <time dateTime={post.date}>{format(post.date, {date: "medium"})}</time>
             {post.updated ? ` (Updated ${format(post.updated, {date: "medium"})})` : ""}{" "}
