@@ -26,7 +26,7 @@ export const Post = defineDocumentType(() => ({
     excerpt: {type: "string", resolve: post => extractExcerpt(post.body.raw, 200)},
     updated: {type: "date", resolve: (post) => post.updated ?? post.date},
     slug: {type: "string", resolve: (post) => post._raw.sourceFileDir},
-    locale: {type: "string", resolve: (post) => post._raw.sourceFileName.split(".")[1]},
+    locale: {type: "string", resolve: (post) => post._raw.sourceFileName.split(".")[1]}
   }
 }))
 

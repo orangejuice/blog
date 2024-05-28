@@ -1,6 +1,6 @@
 import React from "react"
 import {cn, formatDate, useCssIndexCounter} from "@/lib/utils"
-import {getPosts} from "@/lib/fetch"
+import {getLocales, getPosts, getTags} from "@/lib/fetch"
 import Link from "next/link"
 
 export default function AllPost() {
@@ -8,17 +8,29 @@ export default function AllPost() {
   const cssIndexCounter = useCssIndexCounter()
 
   return (<>
-    <div className="flex flex-col gap-20">
-      <div className="flex flex-col gap-3.5">
-        <div className="flex flex-col gap-2">
-          <h1 className="animate-delay-in" style={cssIndexCounter()}>Blog</h1>
-          <p className="text-secondary animate-delay-in" style={cssIndexCounter()}>
-            I write about CSS, animation techniques, design systems and more.
+    <div className="grid md:grid-cols-[1fr,3fr] items-start gap-10 min-h-screen">
+      <div className="flex flex-col gap-5">
+        <div>
+          <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter()}>All posts</h1>
+          <p className="text-stone-600 animate-delay-in" style={cssIndexCounter()}>
+            from 2019 - {new Date().getFullYear()}
           </p>
+        </div>
+        <div className="flex flex-col gap-2">
+          <h1 className="animate-delay-in" style={cssIndexCounter()}>
+            {Object.entries(getLocales()).map(([locale, num]) => (
+              <p>{locale}({num})</p>
+            ))}
+          </h1>
+          <div className="text-secondary animate-delay-in" style={cssIndexCounter()}>
+            {Object.entries(getTags()).map(([tag, num]) => (
+              <p>{tag}({num})</p>
+            ))}
+          </div>
         </div>
       </div>
       <div className="animate-delay-in" style={cssIndexCounter()}>
-        <ul className="flex flex-col animated-delay-in" style={cssIndexCounter()}>
+        <ul className="flex flex-col pt-[1.5rem] animated-delay-in" style={cssIndexCounter()}>
           {posts.length == 0 && <p>No posts found</p>}
           {posts.map((post) => (
             <li className="py-2.5 group flex flex-col md:flex-row gap-1 md:gap-9">
