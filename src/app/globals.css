@@ -7,3 +7,7 @@ body {
   padding-left: calc(100vw - 100%);
   min-height: 100vh;
 }
+
+body {
+  @apply bg-white dark:bg-black transition-colors duration-200;
+}
