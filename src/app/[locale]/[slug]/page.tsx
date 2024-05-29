@@ -3,7 +3,7 @@ import "./page.css"
 import {Metadata} from "next"
 import {notFound} from "next/navigation"
 import {allPosts} from "contentlayer/generated"
-import {site} from "@/site"
+import {site, SiteLocale} from "@/site"
 import {getPosts} from "@/lib/fetch"
 import {useMDXComponent} from "next-contentlayer2/hooks"
 import Toc from "@/components/toc"
@@ -45,10 +45,10 @@ export const generateStaticParams = async () => {
   return allPosts.map((post) => ({slug: post.slug}))
 }
 
-export default async function Page({params}: {params: {slug: string, locale: string}}) {
+export default async function Page({params}: {params: {slug: string, locale: SiteLocale}}) {
   unstable_setRequestLocale(params.locale)
   const slug = decodeURI(params.slug)
-  const posts = getPosts()
+  const posts = getPosts({locale: params.locale})
   const postIndex = posts.findIndex((post) => post.slug === slug)
   if (postIndex === -1) return notFound()
 

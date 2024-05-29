@@ -3,9 +3,12 @@ import {getPosts} from "@/lib/fetch"
 import {PostItem} from "@/components/post"
 import {useCssIndexCounter} from "@/lib/utils"
 import {Icons} from "@/components/icons"
+import {unstable_setRequestLocale} from "next-intl/server"
+import {SiteLocale} from "@/site"
 
-export default function Home() {
-  const latest5 = getPosts().slice(0, 5)
+export default function Home({params: {locale}}: {params: {locale: SiteLocale}}) {
+  unstable_setRequestLocale(locale)
+  const latest5 = getPosts({locale}).slice(0, 5)
   const cssIndexCounter = useCssIndexCounter()
 
   return (
@@ -17,6 +20,12 @@ export default function Home() {
             <p className="text-stone-600 animate-delay-in" style={cssIndexCounter()}>
               intriguing trifles and introspections
             </p>
+          </div>
+          <div className="flex items-center gap-1">
+            <Link href="" className="flex items-center underline underline-offset-4 animate-delay-in" style={cssIndexCounter()}>
+              En
+            </Link>
+            / All
           </div>
         </div>
         <ul className="flex flex-col gap-5 animate-delay-in" style={cssIndexCounter()}>

@@ -1,5 +1,10 @@
 {
   "Index": {
     "title": "Hello world!"
+  },
+  "lang": {
+    "en": "英语",
+    "zh": "中文",
+    "all-lang": "所有语言"
   }
 }

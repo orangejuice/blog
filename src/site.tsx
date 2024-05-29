@@ -4,8 +4,11 @@ export const site = {
   title: "Orangejuice blog",
   description: "This is a description",
   author: "orangejuice",
-  locales: ["en", "zh"]
+  locales: ["en", "zh"] as const
 }
+
+export type SiteLocale = typeof site.locales[number]
+export type LangOption = SiteLocale | "all-lang"
 
 export const menu = {
   home: {name: "Home", path: "/"},

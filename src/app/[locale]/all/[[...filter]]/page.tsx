@@ -1,11 +1,16 @@
 import React from "react"
 import {cn, formatDate, useCssIndexCounter} from "@/lib/utils"
 import {getLocales, getPosts, getTags} from "@/lib/fetch"
-import Link from "next/link"
-import {Icons} from "@/components/icons"
+import {Link} from "@/i18n"
+import {SiteLocale} from "@/site"
+import {unstable_setRequestLocale} from "next-intl/server"
+import {FilterOption, PostFilter} from "@/components/post-filter"
 
-export default function AllPost() {
-  const posts = getPosts()
+export default function AllPost({params: {locale, filter}}: {params: {locale: SiteLocale, filter: FilterOption}}) {
+  unstable_setRequestLocale(locale)
+  const posts = getPosts({locale, accept: filter?.[0] ?? "all-lang"})
+  const locals = getLocales({locale, accept: "all-lang"})
+  const tags = getTags({locale, accept: filter?.[0] ?? locale})
   const cssIndexCounter = useCssIndexCounter()
 
   return (<>
@@ -30,26 +35,7 @@ export default function AllPost() {
           </div>
         </div>
         <aside className="flex flex-col gap-6">
-          <section className="animate-delay-in" style={cssIndexCounter()}>
-            <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">Languages</h5>
-            <div className="flex flex-wrap text-stone-600">
-              {Object.entries(getLocales()).map(([locale, num], index) => (
-                <Link key={index} href={"/all"} className="flex items-center group m-2 text-sm font-medium underline-fade">
-                  <Icons.hash/>{{zh: "Chinese", en: "English"}[locale]} ({num})
-                </Link>
-              ))}
-            </div>
-          </section>
-          <section className="animate-delay-in" style={cssIndexCounter()}>
-            <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">Tags</h5>
-            <div className="flex flex-wrap text-stone-600">
-              {Object.entries(getTags()).map(([tag, num], index) => (
-                <Link key={index} href={"/all"} className="flex items-center group m-2 text-sm font-medium underline-fade">
-                  <Icons.hash/>{tag} ({num})
-                </Link>
-              ))}
-            </div>
-          </section>
+          <PostFilter locales={locals} tags={tags} filter={filter}/>
         </aside>
       </div>
     </>
