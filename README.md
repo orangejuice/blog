@@ -42,3 +42,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - TOC number with decimal https://stackoverflow.com/questions/4098195/
 - list item card style https://jahir.dev/
 - reactions with canvas-confetti https://github.com/jahirfiquitiva/jahir.dev/
+- i18n
+  - https://next-intl-docs.vercel.app/docs/
+  - https://www.reddit.com/r/nextjs/comments/1buni9a/how_to_use_next_intl_default_locale_without_en_tr/
+

@@ -1,8 +1,9 @@
 "use client"
 import {TooltipProvider} from "@/components/ui/tooltip"
 import {ThemeProvider} from "next-themes"
+import React from "react"
 
-export function Context({children}: {children: React.ReactNode}) {
+export async function Context({children}: {children: React.ReactNode}) {
   return (
     <ThemeProvider attribute="class" enableSystem={true} defaultTheme="system">
       <TooltipProvider>

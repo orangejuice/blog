@@ -20,8 +20,8 @@ export default function AllPost() {
           <div className="animate-delay-in" style={cssIndexCounter()}>
             <ul className="flex flex-col animated-delay-in" style={cssIndexCounter()}>
               {posts.length == 0 && <p>No posts found</p>}
-              {posts.map((post) => (
-                <li className="py-2.5 group flex items-baseline flex-col md:flex-row gap-1 md:gap-9">
+              {posts.map((post, index) => (
+                <li key={index} className="py-2.5 group flex items-baseline flex-col md:flex-row gap-1 md:gap-9">
                   <h2 className={cn("md:w-28 text-secondary text-sm shrink-0")}>{formatDate(post.date)}</h2>
                   <Link href={`/${post.slug}`} className="font-medium">{post.title}</Link>
                 </li>
@@ -33,8 +33,8 @@ export default function AllPost() {
           <section className="animate-delay-in" style={cssIndexCounter()}>
             <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">Languages</h5>
             <div className="flex flex-wrap text-stone-600">
-              {Object.entries(getLocales()).map(([locale, num]) => (
-                <Link href={"/all"} className="flex items-center group m-2 text-sm font-medium underline-fade">
+              {Object.entries(getLocales()).map(([locale, num], index) => (
+                <Link key={index} href={"/all"} className="flex items-center group m-2 text-sm font-medium underline-fade">
                   <Icons.hash/>{{zh: "Chinese", en: "English"}[locale]} ({num})
                 </Link>
               ))}
@@ -43,8 +43,8 @@ export default function AllPost() {
           <section className="animate-delay-in" style={cssIndexCounter()}>
             <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">Tags</h5>
             <div className="flex flex-wrap text-stone-600">
-              {Object.entries(getTags()).map(([tag, num]) => (
-                <Link href={"/all"} className="flex items-center group m-2 text-sm font-medium underline-fade">
+              {Object.entries(getTags()).map(([tag, num], index) => (
+                <Link key={index} href={"/all"} className="flex items-center group m-2 text-sm font-medium underline-fade">
                   <Icons.hash/>{tag} ({num})
                 </Link>
               ))}

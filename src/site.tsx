@@ -2,7 +2,9 @@ import {GiscusProps} from "@giscus/react"
 
 export const site = {
   title: "Orangejuice blog",
-  author: "orangejuice"
+  description: "This is a description",
+  author: "orangejuice",
+  locales: ["en", "zh"]
 }
 
 export const menu = {
