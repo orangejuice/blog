@@ -3,8 +3,10 @@
     "title": "Hello world!"
   },
   "lang": {
+    "lang": "语言",
     "en": "英语",
     "zh": "中文",
+    "all": "全部",
     "all-lang": "所有语言"
   }
 }

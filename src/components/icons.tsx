@@ -1,10 +1,11 @@
 import {ComponentProps, ComponentType} from "react"
 import {cn} from "@/lib/utils"
-import {ArrowRight, ChevronRight, Hash, Loader2, LogIn, LogOut, Monitor, Moon, Sun, User} from "lucide-react"
+import {ArrowRight, ChevronRight, Filter, Hash, Loader2, LogIn, LogOut, Monitor, Moon, Slash, Sun, User} from "lucide-react"
 
 export const Icons = {
   account: {signIn: cns(LogIn), signOut: cns(LogOut)},
-  hash: cns(Hash),
+  symbol: {hash: cns(Hash), slash: cns(Slash)},
+  view: cns(Filter),
   link: {arrow: cns(ArrowRight), chevron: cns(ChevronRight)},
   loading: cns(Loader2),
   nav: {profile: cns(User)},

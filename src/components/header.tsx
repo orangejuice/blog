@@ -4,14 +4,14 @@ import Image from "next/image"
 import {buttonVariants} from "@/components/ui/button"
 import {cn} from "@/lib/utils"
 import {menu} from "@/site"
-import {useLocalStorage} from "@/lib/hooks"
+import {useLocalStorage} from "@/lib/use-local-storage"
 import {FilterOption} from "@/components/post-filter"
 import {useSelectedLayoutSegment} from "next/navigation"
 import {LocaleSwitcher} from "@/components/locale-switcher"
 
 export function Header() {
   const pathname = useSelectedLayoutSegment()
-  const [filter] = useLocalStorage<FilterOption | undefined>("post-filter", undefined)
+  const [filter] = useLocalStorage<FilterOption | null>("post-filter", null)
 
   return (
     <header className="flex mb-8 w-full shrink-0 items-center justify-between">

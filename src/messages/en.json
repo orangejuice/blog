@@ -3,8 +3,10 @@
     "title": "Hello world!"
   },
   "lang": {
+    "lang": "Languages",
     "en": "English",
     "zh": "Chinese",
+    "all": "All",
     "all-lang": "All languages"
   }
 }

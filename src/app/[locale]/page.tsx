@@ -1,39 +1,29 @@
-import Link from "next/link"
 import {getPosts} from "@/lib/fetch"
-import {PostItem} from "@/components/post"
 import {useCssIndexCounter} from "@/lib/utils"
-import {Icons} from "@/components/icons"
 import {unstable_setRequestLocale} from "next-intl/server"
 import {SiteLocale} from "@/site"
+import {LangSelect, PostList, ViewMore} from "@/app/[locale]/page-client"
 
 export default function Home({params: {locale}}: {params: {locale: SiteLocale}}) {
   unstable_setRequestLocale(locale)
-  const latest5 = getPosts({locale}).slice(0, 5)
+  const postsOneLang = getPosts({locale}).slice(0, 5)
+  const postsAllLang = getPosts({locale, accept: "all-lang"}).slice(0, 5)
   const cssIndexCounter = useCssIndexCounter()
 
   return (
     <div className="grid md:grid-cols-[2fr,1fr] items-start gap-10 min-h-screen">
       <main className="flex flex-col gap-5">
         <div className="flex items-center justify-between">
-          <div>
+          <section>
             <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter()}>Latest</h1>
             <p className="text-stone-600 animate-delay-in" style={cssIndexCounter()}>
               intriguing trifles and introspections
             </p>
-          </div>
-          <div className="flex items-center gap-1">
-            <Link href="" className="flex items-center underline underline-offset-4 animate-delay-in" style={cssIndexCounter()}>
-              En
-            </Link>
-            / All
-          </div>
+          </section>
+          <LangSelect/>
         </div>
-        <ul className="flex flex-col gap-5 animate-delay-in" style={cssIndexCounter()}>
-          {latest5.map(post => <li key={post.slug}><PostItem post={post}/></li>)}
-        </ul>
-        <Link href={"/all"} className="w-fit mx-auto flex items-center px-4 py-2 mt-5 text-xs font-semibold duration-300 ease-out border rounded-full bg-neutral-900 dark:bg-white dark:text-neutral-900 text-neutral-100 hover:border-neutral-700 border-neutral-900 dark:hover:border-neutral-300 hover:bg-white dark:hover:bg-black dark:hover:text-white hover:text-neutral-900 animate-delay-in" style={cssIndexCounter()}>
-          View more <Icons.link.chevron className="stroke-[.15rem]"/>
-        </Link>
+        <PostList postsOneLang={postsOneLang} postsAllLang={postsAllLang} style={cssIndexCounter()}/>
+        <ViewMore/>
       </main>
       <aside className="sticky top-8">
         <div className="relative border border-transparent border-dashed p-7 group rounded-2xl">
