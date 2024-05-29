@@ -1,14 +1,16 @@
 "use client"
-import {Link, usePathname} from "@/i18n"
+import {Link} from "@/i18n"
 import Image from "next/image"
 import {buttonVariants} from "@/components/ui/button"
 import {cn} from "@/lib/utils"
 import {menu} from "@/site"
 import {useLocalStorage} from "@/lib/hooks"
 import {FilterOption} from "@/components/post-filter"
+import {useSelectedLayoutSegment} from "next/navigation"
+import {LocaleSwitcher} from "@/components/locale-switcher"
 
 export function Header() {
-  const pathname = usePathname()
+  const pathname = useSelectedLayoutSegment()
   const [filter] = useLocalStorage<FilterOption | undefined>("post-filter", undefined)
 
   return (
@@ -29,6 +31,7 @@ export function Header() {
               <span className="text-sm font-medium">{name}</span>
             </Link>
           ))}
+          <LocaleSwitcher/>
         </nav>
       </div>
     </header>
