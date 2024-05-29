@@ -24,7 +24,7 @@ export function PostFilter({locales, tags, filter: appliedFilter}: {locales: Get
         {Object.entries(locales).map(([lang, num], index) => (
           <Link key={index} href={`/all/${lang}`}
             className={cn("flex items-center group m-2 text-sm font-medium underline-fade",
-              lang == (appliedFilter?.[0] ?? locale) && "underline-fade-selected")}>
+              lang == (appliedFilter?.[0] ?? locale) && "underline-fade-selected font-bold")}>
             <Icons.hash/>{t(lang)} ({num})
           </Link>
         ))}
@@ -36,7 +36,7 @@ export function PostFilter({locales, tags, filter: appliedFilter}: {locales: Get
         {Object.entries(tags).map(([tag, num], index) => (
           <Link key={index} href={`/all/${appliedFilter?.[0] ?? locale}/${tag}`}
             className={cn("flex items-center group m-2 text-sm font-medium underline-fade",
-              tag == (appliedFilter?.[1] ? decodeURI(appliedFilter?.[1]) : undefined) && "underline-fade-selected")}>
+              tag == (appliedFilter?.[1] ? decodeURI(appliedFilter?.[1]) : undefined) && "underline-fade-selected font-bold")}>
             <Icons.hash/>{tag} ({num})
           </Link>
         ))}
