@@ -2,7 +2,7 @@
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {Link} from "@/i18n"
 import {cn} from "@/lib/utils"
-import {LangOption, menu, SiteLocale} from "@/site"
+import {menu} from "@/site"
 import {Icons} from "@/components/icons"
 import {FilterOption} from "@/components/post-filter"
 import React, {ComponentPropsWithoutRef} from "react"
@@ -10,28 +10,28 @@ import {useLocale, useTranslations} from "next-intl"
 import {Post} from "contentlayer/generated"
 import {PostItem} from "@/components/post"
 
-
 export function LangSelect() {
-  const locale = useLocale() as SiteLocale
-  const [lang, setLang] = useLocalStorage<LangOption>("latest-lang", locale)
+  const locale = useLocale()
+  const [lang, setLang] = useLocalStorage<"one" | "all">("latest-lang", "one")
   const t = useTranslations("lang")
+
   return (<>
     <ul className="flex h-14 items-center p-4 gap-1">
       <Icons.view/>
       <li className="relative">
-        <Link href="" onClick={() => setLang("en")}
+        <Link href="" onClick={() => setLang("one")}
           className={cn("tracking-tight text-sm transition-all text-stone-600 underline-fade",
             "dark:text-stone-400 dark:hover:text-stone-300 dark:active:text-stone-200",
-            lang != "all-lang" ? "font-bold" : "text-xs")}>
+            lang != "all" ? "font-bold" : "text-xs")}>
           {t(locale)}
         </Link>
       </li>
       <Icons.symbol.slash className="-rotate-[30deg] w-3 h-3 -mx-1 stroke-2"/>
       <li className="relative">
-        <Link href="" onClick={() => setLang("all-lang")}
+        <Link href="" onClick={() => setLang("all")}
           className={cn("tracking-tight text-sm transition-all text-stone-600 underline-fade",
             "dark:text-stone-400 dark:hover:text-stone-300 dark:active:text-stone-200",
-            lang == "all-lang" ? "font-bold" : "text-xs")}>
+            lang == "all" ? "font-bold" : "text-xs")}>
           {t("all")}
         </Link></li>
     </ul>
@@ -40,7 +40,7 @@ export function LangSelect() {
 
 
 export function ViewMore() {
-  const [filter] = useLocalStorage<FilterOption | null>("post-filter", null)
+  const [filter] = useLocalStorage<FilterOption | "">("post-filter", "")
 
   return (<>
     <Link href={filter ? `/${menu.posts.path}/${filter.join("/")}` : `/${menu.posts.path}`}
@@ -54,9 +54,9 @@ export function ViewMore() {
 
 export function PostList({postsOneLang, postsAllLang, ...props}:
   ComponentPropsWithoutRef<"ul"> & {postsOneLang: Post[], postsAllLang: Post[]}) {
-  const [lang] = useLocalStorage<LangOption | null>("latest-lang", null)
+  const [lang] = useLocalStorage<"one" | "all">("latest-lang", "one")
 
-  return lang == "all-lang" ? (
+  return lang == "all" ? (
     <ul className="flex flex-col gap-5 animate-delay-in" {...props}>
       {postsAllLang.map(post => <li key={post.slug}><PostItem post={post}/></li>)}
     </ul>

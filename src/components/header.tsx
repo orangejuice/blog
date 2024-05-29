@@ -11,7 +11,7 @@ import {LocaleSwitcher} from "@/components/locale-switcher"
 
 export function Header() {
   const pathname = useSelectedLayoutSegment()
-  const [filter] = useLocalStorage<FilterOption | null>("post-filter", null)
+  const [filter] = useLocalStorage<FilterOption | "">("post-filter", "")
 
   return (
     <header className="flex mb-8 w-full shrink-0 items-center justify-between">
