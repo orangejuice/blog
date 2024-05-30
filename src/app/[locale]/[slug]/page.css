@@ -7,14 +7,13 @@
 
 .heading-anchor:hover a {
   opacity: 1;
-  transition: opacity .15s ease
 }
 
 .heading-anchor > a:hover .lucide-hash {
   color: rgb(236 72 153)
 }
 
-.lucide-hash {
+.heading-anchor .lucide-hash {
   width: 1rem;
   height: 1rem;
   stroke-width: .15rem;

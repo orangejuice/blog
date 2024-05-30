@@ -58,8 +58,8 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
   const {t} = await initTranslations(params.locale)
 
   return <>
-    <div className="grid md:grid-cols-[2fr,1fr] items-start gap-16 min-h-screen">
-      <article className="overflow-auto">
+    <div className="grid md:grid-cols-[minmax(0,2fr),1fr] items-start gap-16 min-h-screen">
+      <article>
         <section className="flex flex-col gap-3 mb-8">
           <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter()}>{post.title}</h1>
           <div className="flex items-center gap-1 text-slate-500 font-medium text-sm animate-delay-in" style={cssIndexCounter()}>
