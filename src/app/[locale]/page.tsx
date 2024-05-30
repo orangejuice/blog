@@ -20,10 +20,10 @@ export default function Home({params: {locale}}: {params: {locale: SiteLocale}})
               intriguing trifles and introspections
             </p>
           </section>
-          <LangSelect/>
+          <LangSelect style={cssIndexCounter()}/>
         </div>
         <PostList postsOneLang={postsOneLang} postsAllLang={postsAllLang} style={cssIndexCounter()}/>
-        <ViewMore/>
+        <ViewMore style={cssIndexCounter()}/>
       </main>
       <aside className="sticky top-8">
         <div className="relative border border-transparent border-dashed p-7 group rounded-2xl">

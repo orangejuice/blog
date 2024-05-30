@@ -15,7 +15,7 @@ export const useLocalStorage = <T>(key: string, initialValue: T): [T, (value: T)
 
   const setValue = (value: T | ((val: T) => T)) => {
     setStoredValue(prevValue => {
-      const valueToStore = value instanceof Function ? value(storedValue) : value
+      const valueToStore = value instanceof Function ? value(prevValue) : value
       if (typeof window !== "undefined") {
         try {
           window.localStorage.setItem(key, JSON.stringify(valueToStore))
@@ -31,7 +31,9 @@ export const useLocalStorage = <T>(key: string, initialValue: T): [T, (value: T)
   useEffect(() => {
     const handleStorageChange = (event: CustomEvent) => {
       if (event.detail.key === key) {
-        setStoredValue(event.detail.value)
+        // Addressing next.js warning, as suggested by ChatGPT
+        // Cannot update a component (`PostList`) while rendering a different component (`LangSelect`).
+        setTimeout(() => setStoredValue(event.detail.value), 0)
       }
     }
     window.addEventListener("localStorageChange", handleStorageChange as EventListener)
