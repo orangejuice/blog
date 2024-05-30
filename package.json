@@ -17,12 +17,14 @@
     "canvas-confetti": "^1.9.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "i18next": "^23.11.5",
     "lucide-react": "^0.379.0",
-    "next": "latest",
-    "next-intl": "^3.14.1",
+    "next": "^14.2.3",
+    "next-i18n-router": "^5.5.0",
     "next-themes": "^0.3.0",
-    "react": "latest",
-    "react-dom": "latest",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^14.1.2",
     "tocbot": "^4.28.2"
   },
   "devDependencies": {

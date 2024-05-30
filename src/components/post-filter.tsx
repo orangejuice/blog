@@ -1,19 +1,18 @@
 "use client"
 import {GetLocalesResponse, GetTagsResponse} from "@/lib/fetch"
-import {Link} from "@/i18n"
 import {cn, useCssIndexCounter} from "@/lib/utils"
 import {Icons} from "@/components/icons"
 import React, {useEffect} from "react"
-import {useLocale, useTranslations} from "next-intl"
-import {LangOption, SiteLocale} from "@/site"
+import {LangOption} from "@/site"
 import {useLocalStorage} from "@/lib/use-local-storage"
+import {useTranslation} from "react-i18next"
+import Link from "next/link"
 
 export type FilterOption = [LangOption, string]
 
 export function PostFilter({locales, tags, filter: appliedFilter}: {locales: GetLocalesResponse, tags: GetTagsResponse, filter: FilterOption}) {
   const cssIndexCounter = useCssIndexCounter()
-  const t = useTranslations("lang")
-  const locale = useLocale() as SiteLocale
+  const {t, i18n: {language: locale}} = useTranslation("lang")
   const [, setFilter] = useLocalStorage<FilterOption | "">("post-filter", appliedFilter ?? "")
   useEffect(() => {appliedFilter && setFilter(appliedFilter) }, [appliedFilter])
 

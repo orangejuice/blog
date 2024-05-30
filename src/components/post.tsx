@@ -1,4 +1,4 @@
-import {Link} from "@/i18n"
+import Link from "next/link"
 import {Icons} from "@/components/icons"
 import {Button} from "@/components/ui/button"
 import {cn, formatDate} from "@/lib/utils"

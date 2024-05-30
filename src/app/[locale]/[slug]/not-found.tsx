@@ -1,9 +1,9 @@
-import {Link} from "@/i18n"
-import {useTranslations} from "next-intl"
+import Link from "next/link"
+import {useTranslation} from "react-i18next"
 
 export default function NotFound() {
-  const t = useTranslations()
-  console.error("404 not found")
+  const {t}= useTranslation()
+
   return (
     <div className="flex flex-col items-start justify-start md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6">
       <div className="space-x-2 pb-8 pt-6 md:space-y-5">

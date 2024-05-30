@@ -6,9 +6,8 @@ import {Context} from "@/app/[locale]/context"
 import {Header} from "@/components/header"
 import {site} from "@/site"
 import React from "react"
-import {getMessages, unstable_setRequestLocale} from "next-intl/server"
-import {NextIntlClientProvider} from "next-intl"
 import {Footer} from "@/components/footer"
+import initTranslations from "@/i18n"
 
 const fontSans = FontSans({subsets: ["latin"], variable: "--font-sans"})
 const fontMono = FontMono({subsets: ["latin"], variable: "--font-mono"})
@@ -20,21 +19,18 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({children, params: {locale}}:
   Readonly<{children: React.ReactNode, params: {locale: string}}>) {
-  unstable_setRequestLocale(locale)
-  const messages = await getMessages()
+  const {resources} = await initTranslations(locale || site.locales[0])
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={cn("flex flex-col font-sans antialiased", fontSans.variable, fontMono.variable)}>
-        <NextIntlClientProvider messages={messages}>
-          <Context>
-            <div className="flex w-full flex-col max-w-5xl px-4 mx-auto xl:px-0 my-8">
-              <Header/>
-              {children}
-              <Footer/>
-            </div>
-          </Context>
-        </NextIntlClientProvider>
+        <Context locale={locale} resources={resources}>
+          <div className="flex w-full flex-col max-w-5xl px-4 mx-auto xl:px-0 my-8">
+            <Header/>
+            {children}
+            <Footer/>
+          </div>
+        </Context>
       </body>
     </html>
   )
