@@ -1,7 +1,8 @@
-import Link from "next/link"
+"use client"
+import Link from "@/components/link"
 import {SiteLocale} from "@/site"
 
-export default async function NotFound(props: {params: {locale: SiteLocale}}) {
+export default function NotFound(props: {params: {locale: SiteLocale}}) {
 
   return (
     <div className="flex flex-col items-start justify-start md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6">
@@ -16,7 +17,7 @@ export default async function NotFound(props: {params: {locale: SiteLocale}}) {
         </p>
         <p className="mb-8">
           But dont worry, you can find plenty of other things on our
-          <Link href="/public" className="underline underline-offset-4 ml-1">homepage</Link>
+          <Link href="/" className="underline underline-offset-4 ml-1">homepage</Link>
           .
         </p>
       </div>

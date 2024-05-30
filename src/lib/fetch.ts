@@ -3,43 +3,45 @@ import {LangOption, site, SiteLocale} from "@/site"
 
 type Options = {
   locale: SiteLocale
-  accept?: LangOption
+  filterLocale?: LangOption
+  filterTag?: string
 }
 
-export const getPosts = ({locale, accept}: Options) => {
-  accept ??= locale
+export const getPosts = ({locale, filterLocale, filterTag}: Options) => {
+  filterLocale ??= locale
   const slugLangPost: {[slug: string]: {[locale: string]: Post}} = {}
   allPosts.forEach((cur) => {
     if (!slugLangPost[cur.slug]) slugLangPost[cur.slug] = {[cur.locale]: cur}
     else slugLangPost[cur.slug][cur.locale] = cur
   })
+  const tagCheck = (post: Post) => filterTag ? post.tags.includes(filterTag) : true
 
   const postList: Post[] = []
   loop: for (const langPost of Object.values(slugLangPost)) {
-    if (langPost[accept]) {
-      postList.push(langPost[accept])
+    if (langPost[filterLocale]) {
+      tagCheck(langPost[filterLocale]) && postList.push(langPost[filterLocale])
       continue
     }
-    if (accept !== "all-lang") continue
+    if (filterLocale !== "all-lang") continue
     if (langPost[locale]) {
-      postList.push(langPost[locale])
+      tagCheck(langPost[locale]) && postList.push(langPost[locale])
       continue
     }
     for (const siteLocale of site.locales) {
       if (langPost[siteLocale]) {
-        postList.push(langPost[siteLocale])
+        tagCheck(langPost[siteLocale]) && postList.push(langPost[siteLocale])
         continue loop
       }
     }
-    postList.push(Object.values(langPost)[0])
+    tagCheck(Object.values(langPost)[0]) && postList.push(Object.values(langPost)[0])
   }
 
   return postList.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
 }
 
-export const getPostsGroupedByTag = ({locale, accept}: Options) => {
+export const getPostsGroupedByTag = (params: Options) => {
   const group: {[tag: string]: Post[]} = {}
-  getPosts({locale, accept}).forEach(post => {
+  getPosts(params).forEach(post => {
     post.tags.forEach(tag => {
       if (!group[tag]) group[tag] = []
       group[tag].push(post)
@@ -48,8 +50,8 @@ export const getPostsGroupedByTag = ({locale, accept}: Options) => {
   return group
 }
 
-export const getTags = ({locale, accept}: Options) => {
-  const tagCount = Object.entries(getPostsGroupedByTag({locale, accept}))
+export const getTags = (params: Options) => {
+  const tagCount = Object.entries(getPostsGroupedByTag(params))
     .reduce((counter: {[tag: string]: number}, [tag, posts]) => {
       counter[tag] = posts.length
       return counter
@@ -59,20 +61,20 @@ export const getTags = ({locale, accept}: Options) => {
 
 export type GetTagsResponse = ReturnType<typeof getTags>
 
-export const getPostsGroupedByLocale = ({locale, accept}: Options) => {
-  const group: {[locale: string]: Post[]} = {"all-lang": []}
-  getPosts({locale, accept}).forEach(post => {
-    if (!group[post.locale]) group[post.locale] = []
-    group[post.locale].push(post)
-    group["all-lang"].push(post)
+export const getSlugsGroupedByLocale = (params: Options) => {
+  const group: {[locale: string]: Set<string>} = {"all-lang": new Set()}
+  allPosts.forEach(post => {
+    if (!group[post.locale]) group[post.locale] = new Set()
+    group[post.locale].add(post.slug)
+    group["all-lang"].add(post.slug)
   })
   return group
 }
 
-export const getLocales = ({locale, accept}: Options) => {
-  const localeCount = Object.entries(getPostsGroupedByLocale({locale, accept}))
+export const getLocales = (params: Options) => {
+  const localeCount = Object.entries(getSlugsGroupedByLocale(params))
     .reduce((counter: {[locale: string]: number}, [locale, posts]) => {
-      counter[locale] = posts.length
+      counter[locale] = posts.size
       return counter
     }, {})
   return Object.fromEntries(Object.entries(localeCount).sort(([, n1], [, n2]) => n2 - n1))

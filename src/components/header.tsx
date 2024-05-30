@@ -1,5 +1,4 @@
 "use client"
-import Link from "next/link"
 import Image from "next/image"
 import {buttonVariants} from "@/components/ui/button"
 import {cn} from "@/lib/utils"
@@ -9,6 +8,7 @@ import {FilterOption} from "@/components/post-filter"
 import {useSelectedLayoutSegment} from "next/navigation"
 import {LocaleSwitcher} from "@/components/locale-switcher"
 import {useMounted} from "@/lib/use-mounted"
+import Link from "@/components/link"
 
 export function Header() {
   const pathname = useSelectedLayoutSegment()

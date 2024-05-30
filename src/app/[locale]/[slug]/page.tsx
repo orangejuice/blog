@@ -45,7 +45,7 @@ export const generateStaticParams = async () => {
 
 export default async function Page({params}: {params: {slug: string, locale: SiteLocale}}) {
   const slug = decodeURI(params.slug)
-  const posts = getPosts({locale: params.locale, accept: "all-lang"})
+  const posts = getPosts({locale: params.locale, filterLocale: "all-lang"})
   const postIndex = posts.findIndex((post) => post.slug === slug)
   if (postIndex === -1) return notFound()
 

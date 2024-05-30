@@ -1,14 +1,14 @@
 import React from "react"
 import {cn, formatDate, useCssIndexCounter} from "@/lib/utils"
 import {getLocales, getPosts, getTags} from "@/lib/fetch"
-import Link from "next/link"
+import Link from "@/components/link"
 import {SiteLocale} from "@/site"
 import {FilterOption, PostFilter} from "@/components/post-filter"
 
 export default function AllPost({params: {locale, filter}}: {params: {locale: SiteLocale, filter: FilterOption}}) {
-  const posts = getPosts({locale, accept: filter?.[0] ?? "all-lang"})
-  const locals = getLocales({locale, accept: "all-lang"})
-  const tags = getTags({locale, accept: filter?.[0] ?? locale})
+  const posts = getPosts({locale, filterLocale: filter?.[0] ?? "all-lang", filterTag: filter?.[1] ? decodeURI(filter[1]) : filter?.[1]})
+  const locals = getLocales({locale, filterLocale: "all-lang"})
+  const tags = getTags({locale, filterLocale: filter?.[0] ?? locale})
   const cssIndexCounter = useCssIndexCounter()
 
   return (<>

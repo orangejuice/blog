@@ -4,6 +4,8 @@ import {site} from "@/site"
 import {cn} from "@/lib/utils"
 import {usePathname, useRouter} from "next/navigation"
 import {useTranslation} from "react-i18next"
+import {Icons} from "@/components/icons"
+import {buttonVariants} from "@/components/ui/button"
 
 export function LocaleSwitcher() {
   const {t, i18n} = useTranslation("lang")
@@ -15,20 +17,22 @@ export function LocaleSwitcher() {
     const nextLocale = event.target.value
 
     pathname = i18n.language == site.locales[0] ? pathname : pathname.replace(`/${i18n.language}`, "")
-    startTransition(async () => {
-      await i18n.changeLanguage(nextLocale)
-      router.replace(`/${nextLocale}${pathname}`)
-    })
+    startTransition(() => router.replace(`/${nextLocale}${pathname}`))
   }
 
   return (
-    <label className={cn("relative", isPending && "transition-opacity [&:disabled]:opacity-30")}>
+    <label className={cn("relative flex items-center", isPending && "transition-opacity [&:disabled]:opacity-30")}>
       <p className="sr-only">{t(i18n.language)}</p>
-      <select className="inline-flex appearance-none bg-transparent py-3 pl-2 pr-6"
+      <Icons.nav.lang className="z-10 pointer-events-none"/>
+      <select className={cn(buttonVariants({variant: "ghost", size: "icon"}),
+        "appearance-none pl-8 pr-2 -ml-7 cursor-pointer",
+        "h-fit w-fit gap-2 whitespace-nowrap rounded-lg py-1.5 transition-all",
+        "hover:bg-stone-200 active:bg-stone-300 dark:text-white dark:hover:bg-stone-700 dark:active:bg-stone-800"
+      )}
         value={i18n.language} disabled={isPending} onChange={onSelectChange}>
         {site.locales.map((cur) => <option key={cur} value={cur}>{t(cur)}</option>)}
       </select>
-      <span className="pointer-events-none absolute right-2 top-[8px]">⌄</span>
+      {/*<span className="pointer-events-none absolute right-2 top-[8px]">⌄</span>*/}
     </label>
   )
 }
