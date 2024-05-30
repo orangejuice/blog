@@ -12,8 +12,8 @@ export function randomInRange(min: number, max: number) {
   return Math.random() * (max - min) + min
 }
 
-export function formatDate(date: string) {
-  return format(date, {date: "medium"})
+export function formatDate(date: string, locale?: string) {
+  return format(date, {date: "medium"}, locale)
 }
 
 export function useCssIndexCounter() {

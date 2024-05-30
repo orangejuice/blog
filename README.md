@@ -40,7 +40,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - scaffold https://github.com/timlrx/tailwind-nextjs-starter-blog
 - TOC https://webtech-note.com/posts/tocbot-contentlayer
 - TOC number with decimal https://stackoverflow.com/questions/4098195/
-- list item card style https://jahir.dev/
+- list compact style https://samuelkraft.com/blog
+- list item card style https://github.com/jahirfiquitiva/jahir.dev/
+- dotted line animated card style https://github.com/ccbikai/astro-aria
+- component css animation https://github.com/jahirfiquitiva/jahir.dev/
 - reactions with canvas-confetti https://github.com/jahirfiquitiva/jahir.dev/
 - i18n
   - next-intl

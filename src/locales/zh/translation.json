@@ -1,0 +1,4 @@
+{
+  "post.publish": "{{date}}发布",
+  "post.update": "{{date}}更新"
+}

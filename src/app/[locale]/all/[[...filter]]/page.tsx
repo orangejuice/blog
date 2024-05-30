@@ -26,7 +26,7 @@ export default function AllPost({params: {locale, filter}}: {params: {locale: Si
               {posts.map((post, index) => (
                 <li key={index} className="py-2.5 group flex items-baseline flex-col md:flex-row gap-1 md:gap-9">
                   <h2 className={cn("md:w-28 text-secondary text-sm shrink-0")}>{formatDate(post.date)}</h2>
-                  <Link href={`/${post.slug}`} className="font-medium">{post.title}</Link>
+                  <Link href={`/${post.slug}`} className="font-medium underline-fade">{post.title}</Link>
                 </li>
               ))}
             </ul>

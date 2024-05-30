@@ -30,14 +30,14 @@ export default function Home({params: {locale}}: {params: {locale: SiteLocale}})
           <div className="relative z-30 duration-300 ease-out group-hover:-translate-x-1 group-hover:-translate-y-1">
             <h2 className="flex items-center mb-3 gap-2">
               <a href="" className="text-xl font-bold leading-tight tracking-tight sm:text-2xl dark:text-neutral-100">
-                Profile
+
               </a>
             </h2>
             <p className="text-sm text-neutral-600 dark:text-neutral-400">
-              <span>{"a"}</span>
+              <span>building</span>
             </p>
             <div className="mt-2.5 text-xs font-medium text-neutral-800 dark:text-neutral-300">
-              b
+              ...
             </div>
           </div>
         </div>

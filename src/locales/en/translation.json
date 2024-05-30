@@ -1,0 +1,4 @@
+{
+  "post.publish": "Publish on {{date}}",
+  "post.update": "Updated {{date}}"
+}
