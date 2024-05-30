@@ -1,11 +1,9 @@
 import {getPosts} from "@/lib/fetch"
 import {useCssIndexCounter} from "@/lib/utils"
-import {unstable_setRequestLocale} from "next-intl/server"
 import {SiteLocale} from "@/site"
 import {LangSelect, PostList, ViewMore} from "@/app/[locale]/page-client"
 
 export default function Home({params: {locale}}: {params: {locale: SiteLocale}}) {
-  unstable_setRequestLocale(locale)
   const postsOneLang = getPosts({locale}).slice(0, 5)
   const postsAllLang = getPosts({locale, accept: "all-lang"}).slice(0, 5)
   const cssIndexCounter = useCssIndexCounter()

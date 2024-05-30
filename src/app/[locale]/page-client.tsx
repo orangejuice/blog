@@ -46,7 +46,7 @@ export function ViewMore(props: ComponentPropsWithoutRef<"a">) {
   if (!mounted) return null
   return (<>
     <Link {...props} href={filter ? `/${menu.posts.path}/${filter.join("/")}` : `/${menu.posts.path}`}
-      className={cn("w-fit mx-auto flex items-center px-4 py-2 mt-5 text-xs font-semibold duration-300 ease-out border rounded-full bg-neutral-900",
+      className={cn("w-fit mx-auto flex items-center px-4 py-2 text-xs font-semibold duration-300 ease-out border rounded-full bg-neutral-900",
         "text-neutral-100 hover:border-neutral-700 border-neutral-900 hover:bg-white hover:text-neutral-900 animate-delay-in",
         "dark:bg-white dark:text-neutral-900 dark:hover:border-neutral-300 dark:hover:bg-black dark:hover:text-white")}>
       View more <Icons.link.chevron className="stroke-[.15rem]"/>

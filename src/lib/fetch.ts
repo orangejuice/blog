@@ -21,6 +21,10 @@ export const getPosts = ({locale, accept}: Options) => {
       continue
     }
     if (accept !== "all-lang") continue
+    if (langPost[locale]) {
+      postList.push(langPost[locale])
+      continue
+    }
     for (const siteLocale of site.locales) {
       if (langPost[siteLocale]) {
         postList.push(langPost[siteLocale])

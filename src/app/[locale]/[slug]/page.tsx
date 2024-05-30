@@ -10,10 +10,8 @@ import Toc from "@/components/toc"
 import {ReactionsButtons} from "@/components/reactions"
 import {Comments} from "@/components/comments"
 import {formatDate, useCssIndexCounter} from "@/lib/utils"
-import {unstable_setRequestLocale} from "next-intl/server"
 
 export async function generateMetadata({params}: {params: {slug: string, locale: string}}): Promise<Metadata | undefined> {
-  unstable_setRequestLocale(params.locale)
   const slug = decodeURI(params.slug)
 
   const post = allPosts.find((post) => post.slug === slug)
@@ -46,9 +44,8 @@ export const generateStaticParams = async () => {
 }
 
 export default async function Page({params}: {params: {slug: string, locale: SiteLocale}}) {
-  unstable_setRequestLocale(params.locale)
   const slug = decodeURI(params.slug)
-  const posts = getPosts({locale: params.locale})
+  const posts = getPosts({locale: params.locale, accept: "all-lang"})
   const postIndex = posts.findIndex((post) => post.slug === slug)
   if (postIndex === -1) return notFound()
 

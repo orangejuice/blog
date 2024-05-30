@@ -18,7 +18,7 @@ export function Header() {
   return (
     <header className="flex mb-8 w-full shrink-0 items-center justify-between">
       <div className="flex items-center gap-20">
-        <Link href="/" rel="nofollow" className="flex items-center">
+        <Link href="/" rel="nofollow" className="flex items-center shrink-0">
           <Image src="/logo.svg" width={140} height={30} alt="Logo"/>
         </Link>
       </div>

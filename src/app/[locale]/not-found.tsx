@@ -1,8 +1,7 @@
 import Link from "next/link"
-import {useTranslation} from "react-i18next"
+import {SiteLocale} from "@/site"
 
-export default function NotFound() {
-  const {t}= useTranslation()
+export default async function NotFound(props: {params: {locale: SiteLocale}}) {
 
   return (
     <div className="flex flex-col items-start justify-start md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6">

@@ -3,11 +3,9 @@ import {cn, formatDate, useCssIndexCounter} from "@/lib/utils"
 import {getLocales, getPosts, getTags} from "@/lib/fetch"
 import Link from "next/link"
 import {SiteLocale} from "@/site"
-import {unstable_setRequestLocale} from "next-intl/server"
 import {FilterOption, PostFilter} from "@/components/post-filter"
 
 export default function AllPost({params: {locale, filter}}: {params: {locale: SiteLocale, filter: FilterOption}}) {
-  unstable_setRequestLocale(locale)
   const posts = getPosts({locale, accept: filter?.[0] ?? "all-lang"})
   const locals = getLocales({locale, accept: "all-lang"})
   const tags = getTags({locale, accept: filter?.[0] ?? locale})
