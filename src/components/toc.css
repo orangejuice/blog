@@ -28,7 +28,7 @@
   content: counters(item, ".") ". ";
   display: table-cell;
   font:.8rem var(--font-mono);
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   padding-right: 0.4em;
 }
 

@@ -1,11 +1,9 @@
-import "./code-highlight.css"
 import "./page.css"
 import {Metadata} from "next"
 import {notFound} from "next/navigation"
 import {allPosts} from "contentlayer/generated"
 import {site, SiteLocale} from "@/site"
 import {getPosts} from "@/lib/fetch"
-import {useMDXComponent} from "next-contentlayer2/hooks"
 import Toc from "@/components/toc"
 import {ReactionsButtons} from "@/components/reactions"
 import {Comments} from "@/components/comments"
@@ -13,6 +11,7 @@ import {cn, formatDate, useCssIndexCounter} from "@/lib/utils"
 import {Icons} from "@/components/icons"
 import initTranslations from "@/i18n"
 import Link from "@/components/link"
+import {MDX} from "@/components/mdx"
 
 export async function generateMetadata({params}: {params: {slug: string, locale: string}}): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug)
@@ -52,7 +51,6 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
   const post = posts.find((post) => post.slug === slug)
   if (!post) return notFound()
 
-  const MDXContent = useMDXComponent(post.body.code)
   const isPostUpdated = post.updated && post.updated != post.date
   const cssIndexCounter = useCssIndexCounter()
   const {t} = await initTranslations(params.locale)
@@ -74,18 +72,15 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
               <Icons.symbol.dot className="stroke-[4px] opacity-70"/>
               <div className="flex items-center gap-2 flex-wrap">
                 {post.tags.map((tag, index) =>
-                  <Link href={`/all/${params.locale}/${tag}`} key={index} className={cn("flex items-center rounded-md transition px-1 py-0.5 text-xs -mx-1",
+                  <Link href={`/all/${params.locale}/${tag}`} key={index} className={cn("flex items-center rounded-md transition px-1 py-0.5 text-sm -mx-1",
                     "hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-400 dark:hover:bg-stone-700")}>
                     <Icons.symbol.hash className="!w-3 !h-3 !text-inherit"/> {tag}
                   </Link>)}
               </div>
             </>)}
-
           </div>
         </section>
-        <div className="prose toc-content max-w-none dark:prose-invert animate-delay-in" style={cssIndexCounter()}>
-          <MDXContent/>
-        </div>
+        <MDX code={post.body.code} style={cssIndexCounter()}/>
         <div className="pb-6 pt-6 text-center text-gray-700 dark:text-gray-300" id="comment">
           <Comments/>
         </div>

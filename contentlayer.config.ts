@@ -2,14 +2,16 @@ import remarkGfm from "remark-gfm"
 import rehypeAutolinkHeadings from "rehype-autolink-headings"
 import remarkFrontmatter from "remark-frontmatter"
 import rehypeSlug from "rehype-slug"
-import rehypePrismAll from "rehype-prism-plus"
 import rehypePresetMinify from "rehype-preset-minify"
 import {defineDocumentType, makeSource} from "contentlayer2/source-files"
 import removeMarkdown from "remove-markdown"
 import {HashIcon} from "lucide-react"
-import Server from "react-dom/server"
-import React from "react"
+import {renderToStaticMarkup} from "react-dom/server"
+import {createElement} from "react"
 import {fromHtmlIsomorphic} from "hast-util-from-html-isomorphic"
+import rehypeMdxImages from "./src/lib/rehype-mdx-images"
+import * as path from "node:path"
+import rehypePrismAll from "rehype-prism-plus"
 
 export const Post = defineDocumentType(() => ({
   name: "Post",
@@ -18,7 +20,7 @@ export const Post = defineDocumentType(() => ({
   fields: {
     title: {type: "string", required: true},
     date: {type: "date", required: true},
-    // @ts-ignore
+    // @ts-ignore suppress type error
     updated: {type: "date", default: null},
     tags: {type: "list", of: {type: "string"}, default: []}
   },
@@ -33,13 +35,15 @@ export const Post = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: "content",
   documentTypes: [Post],
+  onExtraFieldData: "ignore",
   mdx: {
     remarkPlugins: [remarkGfm, remarkFrontmatter],
     rehypePlugins: [
       rehypeSlug,
+      [rehypeMdxImages, {publicDir: path.join(process.cwd(), "public", "assets")}],
       [rehypeAutolinkHeadings, {
         headingProperties: {className: ["heading-anchor"]},
-        content: fromHtmlIsomorphic(Server.renderToStaticMarkup(React.createElement(HashIcon)), {fragment: true})
+        content: fromHtmlIsomorphic(renderToStaticMarkup(createElement(HashIcon)), {fragment: true})
       }],
       [rehypePrismAll, {defaultLanguage: "js", ignoreMissing: true}],
       rehypePresetMinify

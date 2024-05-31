@@ -7,7 +7,7 @@ import {Icons} from "@/components/icons"
 import {FilterOption} from "@/components/post-filter"
 import React, {ComponentPropsWithoutRef} from "react"
 import {Post} from "contentlayer/generated"
-import {PostItem} from "@/components/post"
+import {PostItem} from "@/components/post-list-item"
 import {useTranslation} from "react-i18next"
 import {useMounted} from "@/lib/use-mounted"
 
