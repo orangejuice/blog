@@ -24,10 +24,9 @@ export const giscusConfig: GiscusProps & {darkTheme: GiscusProps["theme"]} = {
   mapping: "pathname",
   strict: "0",
   reactionsEnabled: "1",
-  emitMetadata: "0",
+  emitMetadata: "1",
   inputPosition: "top",
   theme: "light",
   darkTheme: "transparent_dark",
-  loading: "eager",
-  lang: "en"
+  loading: "lazy"
 }

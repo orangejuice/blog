@@ -6,12 +6,12 @@ import {site, SiteLocale} from "@/site"
 import {getPosts} from "@/lib/fetch"
 import Toc from "@/components/toc"
 import {ReactionsButtons} from "@/components/reactions"
-import {Comments} from "@/components/comments"
 import {cn, formatDate, useCssIndexCounter} from "@/lib/utils"
 import {Icons} from "@/components/icons"
 import initTranslations from "@/i18n"
 import Link from "@/components/link"
 import {MDX} from "@/components/mdx"
+import {Comments} from "@/components/comments"
 
 export async function generateMetadata({params}: {params: {slug: string, locale: string}}): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug)
@@ -47,12 +47,12 @@ export const generateStaticParams = async () => {
 
 export default async function Page({params}: {params: {slug: string, locale: SiteLocale}}) {
   const slug = decodeURI(params.slug)
+  const cssIndexCounter = useCssIndexCounter()
   const posts = getPosts({locale: params.locale, filterLocale: "all-lang"})
   const post = posts.find((post) => post.slug === slug)
   if (!post) return notFound()
 
   const isPostUpdated = post.updated && post.updated != post.date
-  const cssIndexCounter = useCssIndexCounter()
   const {t} = await initTranslations(params.locale)
 
   return <>
@@ -81,7 +81,7 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
           </div>
         </section>
         <MDX code={post.body.code} style={cssIndexCounter()}/>
-        <div className="pb-6 pt-6 text-center text-gray-700 dark:text-gray-300" id="comment">
+        <div className="pb-6 pt-6 text-center text-gray-700 dark:text-gray-300 animate-delay-in" id="comment">
           <Comments/>
         </div>
       </article>

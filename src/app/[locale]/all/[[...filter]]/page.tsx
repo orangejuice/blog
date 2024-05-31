@@ -7,7 +7,7 @@ import {FilterOption, PostFilter} from "@/components/post-filter"
 
 export default function AllPost({params: {locale, filter}}: {params: {locale: SiteLocale, filter: FilterOption}}) {
   const posts = getPosts({locale, filterLocale: filter?.[0] ?? "all-lang", filterTag: filter?.[1] ? decodeURI(filter[1]) : filter?.[1]})
-  const locals = getLocales({locale, filterLocale: "all-lang"})
+  const locals = getLocales()
   const tags = getTags({locale, filterLocale: filter?.[0] ?? locale})
   const cssIndexCounter = useCssIndexCounter()
 
@@ -25,7 +25,7 @@ export default function AllPost({params: {locale, filter}}: {params: {locale: Si
               {posts.length == 0 && <p>No posts found</p>}
               {posts.map((post, index) => (
                 <li key={index} className="py-2.5 group flex items-baseline flex-col md:flex-row gap-1 md:gap-9">
-                  <h2 className={cn("md:w-28 text-secondary text-sm shrink-0")}>{formatDate(post.date)}</h2>
+                  <time className={cn("md:w-28 text-secondary text-sm shrink-0")}>{formatDate(post.date)}</time>
                   <Link href={`/${post.slug}`} className="font-medium underline-fade">{post.title}</Link>
                 </li>
               ))}

@@ -61,7 +61,7 @@ export const getTags = (params: Options) => {
 
 export type GetTagsResponse = ReturnType<typeof getTags>
 
-export const getSlugsGroupedByLocale = (params: Options) => {
+export const getSlugsGroupedByLocale = () => {
   const group: {[locale: string]: Set<string>} = {"all-lang": new Set()}
   allPosts.forEach(post => {
     if (!group[post.locale]) group[post.locale] = new Set()
@@ -71,8 +71,8 @@ export const getSlugsGroupedByLocale = (params: Options) => {
   return group
 }
 
-export const getLocales = (params: Options) => {
-  const localeCount = Object.entries(getSlugsGroupedByLocale(params))
+export const getLocales = () => {
+  const localeCount = Object.entries(getSlugsGroupedByLocale())
     .reduce((counter: {[locale: string]: number}, [locale, posts]) => {
       counter[locale] = posts.size
       return counter
