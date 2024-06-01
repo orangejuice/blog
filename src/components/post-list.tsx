@@ -2,10 +2,10 @@ import Link from "next/link"
 import {Icons} from "@/components/icons"
 import {Button} from "@/components/ui/button"
 import {cn, formatDate} from "@/lib/utils"
-import {Post} from "contentlayer/generated"
 import React, {ComponentPropsWithoutRef} from "react"
+import {PostWithDiscussion} from "@/lib/fetch"
 
-export function PostItem({post}: {post: Post}) {
+export function PostItem({post}: {post: PostWithDiscussion}) {
   return (<>
     <li>
       <Link href={`/${post.slug}`} className="group flex flex-col items-start no-underline relative p-4 rounded-xl -mx-4 bg-transparent transition-colors hover:bg-amber-200/40 gap-1">
@@ -26,23 +26,32 @@ export function PostItem({post}: {post: Post}) {
         </p>
         <div className="flex w-full mt-2.5 text-xs justify-between font-medium text-neutral-800 dark:text-neutral-300">
           <p>Posted on <time dateTime={post.date}>{formatDate(post.date)}</time></p>
-          <p>RIght</p>
+          <div className="flex items-center gap-4">
+            <span className="flex items-center gap-1"><Icons.post.reaction/> {post.discussion.reactions.totalCount}</span>
+            <span className="flex items-center gap-1"><Icons.post.comment/> {post.discussion.comments.totalCount}</span>
+          </div>
         </div>
       </Link>
     </li>
   </>)
 }
 
-export function PostItemCompact({post}: {post: Post}) {
+export function PostItemCompact({post}: {post: PostWithDiscussion}) {
   return (<>
     <li className="py-2.5 group flex items-baseline flex-col md:flex-row gap-1 md:gap-9">
       <time className={cn("md:w-28 text-secondary text-sm shrink-0")}>{formatDate(post.date)}</time>
-      <Link href={`/${post.slug}`} className="font-medium underline-fade">{post.title}</Link>
+      <div className="flex w-full justify-between gap-4">
+        <Link href={`/${post.slug}`} className="font-medium line-clamp-1 underline-fade">{post.title}</Link>
+        <div className="flex gap-4 text-neutral-800 text-xs">
+          <span className="flex items-center gap-1"><Icons.post.reaction/> {post.discussion.reactions.totalCount}</span>
+          <span className="flex items-center gap-1"><Icons.post.comment/> {post.discussion.comments.totalCount}</span>
+        </div>
+      </div>
     </li>
   </>)
 }
 
-export function PostCardList({posts, ...props}: {posts: Post[]} & ComponentPropsWithoutRef<"ul">) {
+export function PostCardList({posts, ...props}: {posts: PostWithDiscussion[]} & ComponentPropsWithoutRef<"ul">) {
   return (<>
     <ul className="flex flex-col gap-5 animate-delay-in" {...props}>
       {posts.map(post => <PostItem post={post} key={post.slug}/>)}
@@ -50,7 +59,7 @@ export function PostCardList({posts, ...props}: {posts: Post[]} & ComponentProps
   </>)
 }
 
-export function PostCompactList({posts, ...props}: {posts: Post[]} & ComponentPropsWithoutRef<"ul">) {
+export function PostCompactList({posts, ...props}: {posts: PostWithDiscussion[]} & ComponentPropsWithoutRef<"ul">) {
   return (<>
     <ul className="flex flex-col animate-delay-in" {...props}>
       {posts.length == 0 && <p>No posts found</p>}

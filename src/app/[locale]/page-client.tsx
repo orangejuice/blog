@@ -5,10 +5,10 @@ import {cn} from "@/lib/utils"
 import {menu} from "@/site"
 import {Icons} from "@/components/icons"
 import React, {ComponentPropsWithoutRef} from "react"
-import {Post} from "contentlayer/generated"
 import {PostCardList} from "@/components/post-list"
 import {useTranslation} from "react-i18next"
 import {useMounted} from "@/lib/use-mounted"
+import {GetPostResponse} from "@/lib/fetch"
 
 export function LangSelect(props: ComponentPropsWithoutRef<"ul">) {
   const [lang, setLang] = useLocalStorage<"one" | "all">("latest-lang", "one")
@@ -19,7 +19,7 @@ export function LangSelect(props: ComponentPropsWithoutRef<"ul">) {
 
   return (<>
     <ul {...props} className="flex h-14 items-center p-4 gap-1 animate-delay-in">
-      <Icons.view/>
+      <Icons.filter/>
       <li className="relative">
         <Link href="" onClick={() => setLang("one")}
           className={cn("tracking-tight text-sm transition-all text-stone-600 underline-fade",
@@ -59,7 +59,7 @@ export function ViewMore(props: ComponentPropsWithoutRef<"a">) {
 }
 
 export function PostList({postsOneLang, postsAllLang, ...props}:
-  ComponentPropsWithoutRef<"ul"> & {postsOneLang: Post[], postsAllLang: Post[]}) {
+  ComponentPropsWithoutRef<"ul"> & {postsOneLang: GetPostResponse, postsAllLang: GetPostResponse}) {
   const [lang] = useLocalStorage<"one" | "all">("latest-lang", "one")
 
   const mounted = useMounted()

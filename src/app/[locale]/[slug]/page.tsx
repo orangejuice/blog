@@ -48,7 +48,7 @@ export const generateStaticParams = async () => {
 export default async function Page({params}: {params: {slug: string, locale: SiteLocale}}) {
   const slug = decodeURI(params.slug)
   const cssIndexCounter = useCssIndexCounter()
-  const posts = getPosts({locale: params.locale, filterLang: "all-lang"})
+  const posts = await getPosts({locale: params.locale, filterLang: "all-lang"})
   const post = posts.find((post) => post.slug === slug)
   if (!post) return notFound()
 
@@ -64,7 +64,7 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
             <time dateTime={post.date}>
               {t("post.publish", {date: formatDate(post.date, params.locale)})}
             </time>
-            {!isPostUpdated && (<>
+            {isPostUpdated && (<>
               <Icons.symbol.dot className="stroke-[4px] opacity-70"/>
               {t("post.update", {date: formatDate(post.updated, params.locale)})}
             </>)}

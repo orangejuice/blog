@@ -28,5 +28,5 @@ export const giscusConfig: GiscusProps & {darkTheme: GiscusProps["theme"]} = {
   inputPosition: "top",
   theme: "light",
   darkTheme: "transparent_dark",
-  loading: "lazy"
+  loading: "eager"
 }

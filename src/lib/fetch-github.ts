@@ -2,6 +2,7 @@ import jwt from "jsonwebtoken"
 import {graphql} from "@octokit/graphql"
 import {giscusConfig} from "@/site"
 import {createAppAuth} from "@octokit/auth-app"
+import {unstable_cache as cache} from "next/cache"
 
 export const getInstallationId = async (repo: string): Promise<string> => {
   const now = Math.floor(Date.now() / 1000)
@@ -27,7 +28,7 @@ const auth = createAppAuth({
 })
 const graphqlWithAuth = graphql.defaults({request: {hook: auth.hook}})
 
-interface Discussion {
+interface DiscussionNode {
   number: number
   title: string
   comments: {
@@ -44,8 +45,8 @@ interface FetchDiscussionsByCategoryArgs {
   titles: string[]
 }
 
-export const fetchDiscussions = async ({repo, category, titles}: FetchDiscussionsByCategoryArgs): Promise<{[slug: string]: Discussion}> => {
-
+export const fetchDiscussions = cache(async ({repo, category, titles}: FetchDiscussionsByCategoryArgs): Promise<{[slug: string]: DiscussionNode}> => {
+  console.log("firing a new github call")
   const buildQueryWithAliases = () =>
     titles.map((title, index) => {
       const query = `repo:${repo} category:${category} in:title ${title}`
@@ -73,8 +74,8 @@ export const fetchDiscussions = async ({repo, category, titles}: FetchDiscussion
    }`
 
   try {
-    const data: {[queryNo: string]: {[nodes: string]: Discussion[]}} = await graphqlWithAuth(query)
-    const result: {[slug: string]: Discussion} = {}
+    const data: {[queryNo: string]: {[nodes: string]: DiscussionNode[]}} = await graphqlWithAuth(query)
+    const result: {[slug: string]: DiscussionNode} = {}
 
     Object.values(data).map(nodes => nodes["nodes"]).flatMap((queryResult, index) => {
       if (queryResult[0]) result[titles[index]] = queryResult[0]
@@ -84,9 +85,10 @@ export const fetchDiscussions = async ({repo, category, titles}: FetchDiscussion
     console.error("Error fetching discussion details:", error)
     throw new Error("Failed to fetch discussion details")
   }
-}
+})
 
-export type DiscussionData = Awaited<ReturnType<typeof fetchDiscussions>>
+export type Discussion = PartialBy<DiscussionNode, "number" | "title">
+// export type DiscussionData = Awaited<ReturnType<typeof fetchDiscussions>>
 
 // console.log(await fetchDiscussions({
 //   repo: giscusConfig.repo,

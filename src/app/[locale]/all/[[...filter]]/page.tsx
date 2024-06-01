@@ -5,8 +5,8 @@ import {SiteLocale} from "@/site"
 import {FilterOption, PostFilter} from "@/components/post-filter"
 import {PostCompactList} from "@/components/post-list"
 
-export default function AllPost({params: {locale, filter}}: {params: {locale: SiteLocale, filter: FilterOption}}) {
-  const posts = getPosts({locale, filterLang: filter?.[0] ?? "all-lang", filterTag: filter?.[1] ? decodeURI(filter[1]) : filter?.[1]})
+export default async function AllPost({params: {locale, filter}}: {params: {locale: SiteLocale, filter: FilterOption}}) {
+  const posts = await getPosts({locale, filterLang: filter?.[0] ?? "all-lang", filterTag: filter?.[1] ? decodeURI(filter[1]) : filter?.[1]})
   const locales = getLocales()
   const tags = getTags({locale, filterLang: filter?.[0] ?? locale})
   const cssIndexCounter = useCssIndexCounter()

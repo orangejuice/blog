@@ -3,9 +3,9 @@ import {useCssIndexCounter} from "@/lib/utils"
 import {SiteLocale} from "@/site"
 import {LangSelect, PostList, ViewMore} from "@/app/[locale]/page-client"
 
-export default function Home({params: {locale}}: {params: {locale: SiteLocale}}) {
-  const postsOneLang = getPosts({locale}).slice(0, 5)
-  const postsAllLang = getPosts({locale, filterLang: "all-lang"}).slice(0, 5)
+export default async function Home({params: {locale}}: {params: {locale: SiteLocale}}) {
+  const postsOneLang = (await getPosts({locale})).slice(0, 5)
+  const postsAllLang = (await getPosts({locale, filterLang: "all-lang"})).slice(0, 5)
   const cssIndexCounter = useCssIndexCounter()
 
   return (

@@ -1,5 +1,6 @@
 import {allPosts, Post} from "contentlayer/generated"
-import {LangOption, site, SiteLocale} from "@/site"
+import {giscusConfig, LangOption, site, SiteLocale} from "@/site"
+import {Discussion, fetchDiscussions} from "@/lib/fetch-github"
 
 type Options = {
   locale: SiteLocale
@@ -7,7 +8,7 @@ type Options = {
   filterTag?: string
 }
 
-export const getPosts = ({locale, filterLang, filterTag}: Options) => {
+export const getPosts = async ({locale, filterLang, filterTag}: Options) => {
   filterLang ??= locale
 
   const slugLangPost: {[slug: string]: {[locale: string]: Post}} = {}
@@ -35,8 +36,24 @@ export const getPosts = ({locale, filterLang, filterTag}: Options) => {
     }
   }
 
-  return postList.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
+  const discussions = await fetchDiscussions({
+    repo: giscusConfig.repo,
+    category: giscusConfig.category!,
+    titles: postList.map(post => post.slug)
+  })
+
+  const postWithDiscussionList = postList.map((post) => {
+    const discussion: Discussion = {comments: {totalCount: 0}, reactions: {totalCount: 0}}
+    if (discussions[post.slug]) (post as PostWithDiscussion).discussion = discussions[post.slug]
+    else (post as PostWithDiscussion).discussion = discussion
+    return (post as unknown as PostWithDiscussion)
+  })
+
+  return postWithDiscussionList.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
 }
+
+export type PostWithDiscussion = Post & {discussion: Discussion}
+export type GetPostResponse = Awaited<ReturnType<typeof getPosts>>
 
 export const getTags = ({filterLang}: Options) => {
   const tagCount: {[tag: string]: number} = {}
