@@ -3,10 +3,9 @@ import {Icons} from "@/components/icons"
 import {Button} from "@/components/ui/button"
 import {cn, formatDate} from "@/lib/utils"
 import {Post} from "contentlayer/generated"
-import React from "react"
-import {DiscussionData} from "@/lib/fetch-github"
+import React, {ComponentPropsWithoutRef} from "react"
 
-export function PostItem({post, discussion}: {post: Post, discussion: DiscussionData}) {
+export function PostItem({post}: {post: Post}) {
   return (<>
     <li>
       <Link href={`/${post.slug}`} className="group flex flex-col items-start no-underline relative p-4 rounded-xl -mx-4 bg-transparent transition-colors hover:bg-amber-200/40 gap-1">
@@ -40,5 +39,22 @@ export function PostItemCompact({post}: {post: Post}) {
       <time className={cn("md:w-28 text-secondary text-sm shrink-0")}>{formatDate(post.date)}</time>
       <Link href={`/${post.slug}`} className="font-medium underline-fade">{post.title}</Link>
     </li>
+  </>)
+}
+
+export function PostCardList({posts, ...props}: {posts: Post[]} & ComponentPropsWithoutRef<"ul">) {
+  return (<>
+    <ul className="flex flex-col gap-5 animate-delay-in" {...props}>
+      {posts.map(post => <PostItem post={post} key={post.slug}/>)}
+    </ul>
+  </>)
+}
+
+export function PostCompactList({posts, ...props}: {posts: Post[]} & ComponentPropsWithoutRef<"ul">) {
+  return (<>
+    <ul className="flex flex-col animate-delay-in" {...props}>
+      {posts.length == 0 && <p>No posts found</p>}
+      {posts.map((post, index) => <PostItemCompact post={post} key={index}/>)}
+    </ul>
   </>)
 }

@@ -1,13 +1,12 @@
 import jwt from "jsonwebtoken"
 import {graphql} from "@octokit/graphql"
 import {giscusConfig} from "@/site"
-
+import {createAppAuth} from "@octokit/auth-app"
 
 export const getInstallationId = async (repo: string): Promise<string> => {
   const now = Math.floor(Date.now() / 1000)
   const payload = {iat: now, exp: now + 600, iss: process.env.GITHUB_APP_ID!}
   const token = jwt.sign(payload, process.env.GITHUB_PRIVATE_KEY!, {algorithm: "RS256"})
-
   const url = `https://api.github.com/repos/${repo}/installation`
 
   const response = await fetch(url, {
@@ -18,22 +17,17 @@ export const getInstallationId = async (repo: string): Promise<string> => {
     }
   })
 
-  return String((await response.json() as {id: number}).id)
+  return (await response.json() as {id: number}).id.toString()
 }
 
-const {createAppAuth} = await import("@octokit/auth-app")
 const auth = createAppAuth({
   appId: process.env.GITHUB_APP_ID!,
   privateKey: process.env.GITHUB_PRIVATE_KEY!,
   installationId: await getInstallationId(giscusConfig.repo)
 })
-const graphqlWithAuth = graphql.defaults({
-  request: {
-    hook: auth.hook
-  }
-})
+const graphqlWithAuth = graphql.defaults({request: {hook: auth.hook}})
 
-interface DiscussionNode {
+interface Discussion {
   number: number
   title: string
   comments: {
@@ -50,7 +44,7 @@ interface FetchDiscussionsByCategoryArgs {
   titles: string[]
 }
 
-export const fetchDiscussions = async ({repo, category, titles}: FetchDiscussionsByCategoryArgs): Promise<{[slug: string]: DiscussionNode}> => {
+export const fetchDiscussions = async ({repo, category, titles}: FetchDiscussionsByCategoryArgs): Promise<{[slug: string]: Discussion}> => {
 
   const buildQueryWithAliases = () =>
     titles.map((title, index) => {
@@ -79,11 +73,11 @@ export const fetchDiscussions = async ({repo, category, titles}: FetchDiscussion
    }`
 
   try {
-    const data = await graphqlWithAuth(query)
-    const result: {[slug: string]: DiscussionNode} = {}
+    const data: {[queryNo: string]: {[nodes: string]: Discussion[]}} = await graphqlWithAuth(query)
+    const result: {[slug: string]: Discussion} = {}
 
-    Object.values(data as {[queryWithIndex: string]: {[nodes: string]: DiscussionNode[]}}).map(nodes => nodes["nodes"]).flatMap((queryResult, index) => {
-      if (queryResult.length == 1) result[titles[index]] = queryResult[0]
+    Object.values(data).map(nodes => nodes["nodes"]).flatMap((queryResult, index) => {
+      if (queryResult[0]) result[titles[index]] = queryResult[0]
     })
     return result
   } catch (error) {
@@ -92,8 +86,10 @@ export const fetchDiscussions = async ({repo, category, titles}: FetchDiscussion
   }
 }
 
-console.log(await fetchDiscussions({
-  repo: giscusConfig.repo,
-  category: giscusConfig.category!,
-  titles: ["title", "2020-06-21-revolutionary-witness-monologue-of-alan-rickman", "zh/2020-06-21-revolutionary-witness-monologue-of-alan-rickman"]
-}))
+export type DiscussionData = Awaited<ReturnType<typeof fetchDiscussions>>
+
+// console.log(await fetchDiscussions({
+//   repo: giscusConfig.repo,
+//   category: giscusConfig.category!,
+//   titles: ["title", "2020-06-21-revolutionary-witness-monologue-of-alan-rickman", "zh/2020-06-21-revolutionary-witness-monologue-of-alan-rickman"]
+// }))

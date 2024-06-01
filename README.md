@@ -55,9 +55,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
     - https://github.com/i18nexus/next-i18n-router
     - https://github.com/lifinance/jumper.exchange
 - rehype plugin for mdx image compatibility https://sdorra.dev/posts/2022-12-11-contentlayer-next-image
-- fetch data by using github graphql https://github.com/octokit/graphql.js
+- fetch GitHub data 
+  - use GitHub graphql https://github.com/octokit/graphql.js
+  - bulk query by using 'search' https://github.com/typeofweb/typeofweb.com/blob/main/generateCommentsCount.ts
 - cloudflare worker for updating the new comment
   - cloudflare worker development
   - GitHub GraphQL API
   - PKCS#1 / PKCS#8 ? https://github.com/gr2m/universal-github-app-jwt?tab=readme-ov-file#about-private-key-formats
-- 
+ 
