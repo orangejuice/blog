@@ -8,7 +8,7 @@ import {FilterOption} from "@/components/post-filter"
 import {useSelectedLayoutSegment} from "next/navigation"
 import {LocaleSwitcher} from "@/components/locale-switcher"
 import {useMounted} from "@/lib/use-mounted"
-import Link from "@/components/link"
+import Link from "next/link"
 
 export function Header() {
   const pathname = useSelectedLayoutSegment()

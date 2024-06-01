@@ -9,7 +9,7 @@ import {ReactionsButtons} from "@/components/reactions"
 import {cn, formatDate, useCssIndexCounter} from "@/lib/utils"
 import {Icons} from "@/components/icons"
 import initTranslation from "@/i18n"
-import Link from "@/components/link"
+import Link from "next/link"
 import {MDX} from "@/components/mdx"
 import {Comments} from "@/components/comments"
 

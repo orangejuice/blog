@@ -1,7 +1,7 @@
 import React from "react"
 import {cn, formatDate, useCssIndexCounter} from "@/lib/utils"
 import {getLocales, getPosts, getTags} from "@/lib/fetch"
-import Link from "@/components/link"
+import Link from "next/link"
 import {SiteLocale} from "@/site"
 import {FilterOption, PostFilter} from "@/components/post-filter"
 

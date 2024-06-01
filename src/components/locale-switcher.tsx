@@ -17,7 +17,10 @@ export function LocaleSwitcher() {
     const nextLocale = event.target.value
 
     pathname = i18n.language == site.locales[0] ? pathname : pathname.replace(`/${i18n.language}`, "")
-    startTransition(() => router.replace(`/${nextLocale}${pathname}`))
+    startTransition(() => {
+      router.replace(`/${nextLocale}${pathname}`)
+      router.refresh()
+    })
   }
 
   return (

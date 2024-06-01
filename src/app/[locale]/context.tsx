@@ -12,7 +12,7 @@ import initTranslation from "@/i18n"
 
 export function Context({children, locale, resources}: {children: ReactNode; locale?: string; resources: Resource}) {
   const i18n = createInstance()
-  initTranslation(locale || site.locales[0], i18n, resources)
+  void initTranslation(locale || site.locales[0], i18n, resources)
 
   return (
     <I18nextProvider i18n={i18n}>

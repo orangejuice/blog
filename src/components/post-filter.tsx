@@ -6,7 +6,7 @@ import React, {useEffect} from "react"
 import {LangOption} from "@/site"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {useTranslation} from "react-i18next"
-import Link from "@/components/link"
+import Link from "next/link"
 
 export type FilterOption = [LangOption, string]
 

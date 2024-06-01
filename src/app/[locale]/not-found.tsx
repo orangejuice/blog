@@ -1,5 +1,5 @@
 "use client"
-import Link from "@/components/link"
+import Link from "next/link"
 import {SiteLocale} from "@/site"
 
 export default function NotFound(props: {params: {locale: SiteLocale}}) {

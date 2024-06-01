@@ -1,6 +1,6 @@
 "use client"
 import {useLocalStorage} from "@/lib/use-local-storage"
-import Link from "@/components/link"
+import Link from "next/link"
 import {cn} from "@/lib/utils"
 import {menu} from "@/site"
 import {Icons} from "@/components/icons"
