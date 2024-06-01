@@ -8,6 +8,8 @@ type Options = {
   filterTag?: string
 }
 
+export const revalidate = 60
+
 export const getPosts = async ({locale, filterLang, filterTag}: Options) => {
   filterLang ??= locale
 

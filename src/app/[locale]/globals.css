@@ -2,13 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  padding-left: calc(100vw - 100%);
-  min-height: 100vh;
-}
+@layer base {
+  body {
+    padding-left: calc(100vw - 100%);
+    min-height: 100vh;
+    @apply bg-white dark:bg-black transition-colors duration-200 overflow-y-scroll
+  }
 
-body {
-  @apply bg-white dark:bg-black transition-colors duration-200;
+  * {
+    @apply border-stone-200 dark:border-stone-600
+  }
 }
 
 .underline-fade {

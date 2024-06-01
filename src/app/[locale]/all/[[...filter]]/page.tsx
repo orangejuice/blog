@@ -20,7 +20,7 @@ export default async function AllPost({params: {locale, filter}}: {params: {loca
             from 2019 - {new Date().getFullYear()}
           </p>
         </section>
-        <PostCompactList posts={posts} style={cssIndexCounter()} key={filter.join()}/>
+        <PostCompactList posts={posts} style={cssIndexCounter()}/>
       </div>
       <aside className="flex flex-col gap-6">
         <PostFilter locales={locales} tags={tags} filter={filter}/>
