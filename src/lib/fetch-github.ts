@@ -34,53 +34,58 @@ const graphqlWithAuth = graphql.defaults({
 })
 
 interface DiscussionNode {
-  number: number;
-  title: string;
+  number: number
+  title: string
   comments: {
-    totalCount: number;
-  };
+    totalCount: number
+  }
   reactions: {
-    totalCount: number;
-  };
+    totalCount: number
+  }
 }
 
 interface FetchDiscussionsByCategoryArgs {
-  repo: string;
-  categoryId: string;
-  first?: number; // Number of discussions to fetch, default to 100
+  repo: string
+  category: string
+  titles: string[]
 }
 
-interface DiscussionsByCategoryResponse {
-  discussions: DiscussionNode[];
-}
+export const fetchDiscussions = async ({repo, category, titles}: FetchDiscussionsByCategoryArgs): Promise<{[slug: string]: DiscussionNode}> => {
 
-export const fetchDiscussions = async ({repo, categoryId, first = 100}: FetchDiscussionsByCategoryArgs): Promise<DiscussionsByCategoryResponse> => {
-  try {
-    const data = await graphqlWithAuth(`
-query GetDiscussionsByCategory($repositoryOwner: String!, $repositoryName: String!, $categoryId: ID!, $first: Int!) {
-  repository(owner: $repositoryOwner, name: $repositoryName) {
-    discussions(first: $first, categoryId: $categoryId) {
-      nodes {
-        number
-        title
-        comments {
-          totalCount
-        }
-        reactions {
-          totalCount
-        }
-      }
+  const buildQueryWithAliases = () =>
+    titles.map((title, index) => {
+      const query = `repo:${repo} category:${category} in:title ${title}`
+      return `
+        discussion${index}: search(type: DISCUSSION, first: 1, query: "${query}") {
+          nodes {
+            ...DiscussionDetails
+          }
+        }`
+    }).join("\n")
+
+  const query = `
+    query {
+      ${buildQueryWithAliases()}
     }
-  }
-}`, {
-      repositoryOwner: repo.split("/")[0],
-      repositoryName: repo.split("/")[1],
-      categoryId,
-      first
+    fragment DiscussionDetails on Discussion {
+      title
+      number
+      comments {
+        totalCount
+      }
+      reactions {
+        totalCount
+      }
+   }`
+
+  try {
+    const data = await graphqlWithAuth(query)
+    const result: {[slug: string]: DiscussionNode} = {}
+
+    Object.values(data as {[queryWithIndex: string]: {[nodes: string]: DiscussionNode[]}}).map(nodes => nodes["nodes"]).flatMap((queryResult, index) => {
+      if (queryResult.length == 1) result[titles[index]] = queryResult[0]
     })
-
-    return {discussions: (data as any).repository.discussions.nodes}
-
+    return result
   } catch (error) {
     console.error("Error fetching discussion details:", error)
     throw new Error("Failed to fetch discussion details")
@@ -89,28 +94,6 @@ query GetDiscussionsByCategory($repositoryOwner: String!, $repositoryName: Strin
 
 console.log(await fetchDiscussions({
   repo: giscusConfig.repo,
-  categoryId: giscusConfig.categoryId!,
-  first: 1
+  category: giscusConfig.category!,
+  titles: ["title", "2020-06-21-revolutionary-witness-monologue-of-alan-rickman", "zh/2020-06-21-revolutionary-witness-monologue-of-alan-rickman"]
 }))
-
-// console.log((await graphqlWithAuth(`
-// query GetDiscussionCategories($repositoryOwner: String!, $repositoryName: String!) {
-//   repository(owner: $repositoryOwner, name: $repositoryName) {
-//     discussionCategories(first: 100) {
-//       nodes {
-//         id
-//         name
-//         slug
-//       }
-//     }
-//   }
-// }
-// `, {repositoryOwner: giscusConfig.repo.split("/")[0], repositoryName: giscusConfig.repo.split("/")[1]}))
-// .repository.discussionCategories.nodes)
-
-// console.log(await graphqlWithAuth(`
-// query {
-//   viewer {
-//     login
-//   }
-// }`))
