@@ -7,7 +7,7 @@ import {Header} from "@/components/header"
 import {site} from "@/site"
 import React from "react"
 import {Footer} from "@/components/footer"
-import initTranslations from "@/i18n"
+import initTranslation from "@/i18n"
 
 const fontSans = FontSans({subsets: ["latin"], variable: "--font-sans"})
 const fontMono = FontMono({subsets: ["latin"], variable: "--font-mono"})
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({children, params: {locale}}:
   Readonly<{children: React.ReactNode, params: {locale: string}}>) {
-  const {resources} = await initTranslations(locale || site.locales[0])
+  const {resources} = await initTranslation(locale || site.locales[0])
 
   return (
     <html lang={locale} suppressHydrationWarning>

@@ -4,7 +4,7 @@ import resourcesToBackend from "i18next-resources-to-backend"
 import {initReactI18next} from "react-i18next/initReactI18next"
 import {site} from "@/site"
 
-export default async function initTranslations(locale: string, i18nInstance?: i18n, resources?: Resource) {
+export default async function initTranslation(locale: string, i18nInstance?: i18n, resources?: Resource) {
   i18nInstance ??= createInstance()
   i18nInstance.use(initReactI18next)
 

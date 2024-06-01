@@ -8,7 +8,7 @@ import Toc from "@/components/toc"
 import {ReactionsButtons} from "@/components/reactions"
 import {cn, formatDate, useCssIndexCounter} from "@/lib/utils"
 import {Icons} from "@/components/icons"
-import initTranslations from "@/i18n"
+import initTranslation from "@/i18n"
 import Link from "@/components/link"
 import {MDX} from "@/components/mdx"
 import {Comments} from "@/components/comments"
@@ -53,7 +53,7 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
   if (!post) return notFound()
 
   const isPostUpdated = post.updated && post.updated != post.date
-  const {t} = await initTranslations(params.locale)
+  const {t} = await initTranslation(params.locale)
 
   return <>
     <div className="grid md:grid-cols-[minmax(0,2fr),1fr] items-start gap-16 min-h-screen">
