@@ -6,9 +6,9 @@ import {SiteLocale} from "@/site"
 import {FilterOption, PostFilter} from "@/components/post-filter"
 
 export default function AllPost({params: {locale, filter}}: {params: {locale: SiteLocale, filter: FilterOption}}) {
-  const posts = getPosts({locale, filterLocale: filter?.[0] ?? "all-lang", filterTag: filter?.[1] ? decodeURI(filter[1]) : filter?.[1]})
+  const posts = getPosts({locale, filterLang: filter?.[0] ?? "all-lang", filterTag: filter?.[1] ? decodeURI(filter[1]) : filter?.[1]})
   const locals = getLocales()
-  const tags = getTags({locale, filterLocale: filter?.[0] ?? locale})
+  const tags = getTags({locale, filterLang: filter?.[0] ?? locale})
   const cssIndexCounter = useCssIndexCounter()
 
   return (<>

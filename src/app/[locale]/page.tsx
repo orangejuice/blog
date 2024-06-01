@@ -5,7 +5,7 @@ import {LangSelect, PostList, ViewMore} from "@/app/[locale]/page-client"
 
 export default function Home({params: {locale}}: {params: {locale: SiteLocale}}) {
   const postsOneLang = getPosts({locale}).slice(0, 5)
-  const postsAllLang = getPosts({locale, filterLocale: "all-lang"}).slice(0, 5)
+  const postsAllLang = getPosts({locale, filterLang: "all-lang"}).slice(0, 5)
   const cssIndexCounter = useCssIndexCounter()
 
   return (
