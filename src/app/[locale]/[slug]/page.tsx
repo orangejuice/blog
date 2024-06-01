@@ -87,8 +87,8 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
       </article>
       <aside className="flex flex-col sticky top-8 gap-4 animate-delay-in" style={cssIndexCounter()}>
         <Toc/>
-        <hr/>
-        <div className="flex flex-col gap-2 dark:bg-gray-800">
+        <hr className="dark:border-stone-700"/>
+        <div className="flex flex-col gap-2">
           <section className="py-2 pl-2 text-slate-700 text-sm leading-6">
             <ReactionsButtons slug={slug} initialCounters={{likes: 2, loves: 5, awards: 1}}/>
           </section>

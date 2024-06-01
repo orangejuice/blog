@@ -3,10 +3,13 @@ import {useMDXComponent} from "next-contentlayer2/hooks"
 import Image from "next/image"
 import {ComponentPropsWithoutRef} from "react"
 import {useTheme} from "next-themes"
+import {useMounted} from "@/lib/use-mounted"
 
 export function MDX({code, ...props}: ComponentPropsWithoutRef<"div"> & {code: string}) {
   const MDXContent = useMDXComponent(code)
   const {resolvedTheme} = useTheme()
+  const mounted = useMounted()
+  if (!mounted) return null
 
   return (<>
     <div className="prose toc-content max-w-none dark:prose-invert animate-delay-in" {...props}>
