@@ -62,4 +62,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
   - cloudflare worker development
   - GitHub GraphQL API
   - PKCS#1 / PKCS#8 ? https://github.com/gr2m/universal-github-app-jwt?tab=readme-ov-file#about-private-key-formats
- 
+- post page 3d background https://github.com/stone-skipper/ambient-reader
