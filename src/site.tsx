@@ -18,9 +18,9 @@ export const menu = {
 
 export const giscusConfig: GiscusProps & {darkTheme: GiscusProps["theme"]} = {
   repo: "orangejuice/blog",
-  repoId: "MDEwOlJlcG9zaXRvcnkyNzIyNTQ0MDA=",
+  repoId: "R_kgDOMEBKRA",
   category: "Announcements",
-  categoryId: "DIC_kwDOEDpFwM4CfqkE",
+  categoryId: "DIC_kwDOMEBKRM4CfzhI",
   mapping: "pathname",
   strict: "0",
   reactionsEnabled: "1",
