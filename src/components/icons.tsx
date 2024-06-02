@@ -1,13 +1,13 @@
 import * as React from "react"
 import {ComponentProps, ComponentType} from "react"
 import {cn} from "@/lib/utils"
-import {ArrowRight, ChevronRight, Dot, Filter, Globe, Hash, Loader2, LogIn, LogOut, Menu, MessageCircleMore, Monitor, Moon, Slash, Smile, Sun, User} from "lucide-react"
+import {ArrowRight, ChevronRight, Dot, Filter, Globe, Hash, Loader2, LogIn, LogOut, Menu, MessageCircleMore, Monitor, Moon, Pickaxe, Slash, Smile, Sun, User} from "lucide-react"
 import Image, {ImageProps} from "next/image"
 
 export const Icons = {
   logo: (props: Partial<ImageProps>) => <Image src="/logo.svg" width={140} height={30} alt="Logo" priority {...props}/>,
   account: {signIn: cns(LogIn), signOut: cns(LogOut)},
-  symbol: {hash: cns(Hash), slash: cns(Slash), dot: cns(Dot)},
+  symbol: {hash: cns(Hash), slash: cns(Slash), dot: cns(Dot), building: cns(Pickaxe)},
   filter: cns(Filter),
   post: {reaction: cns(Smile), comment: cns(MessageCircleMore)},
   link: {arrow: cns(ArrowRight), chevron: cns(ChevronRight)},

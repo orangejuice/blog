@@ -2,6 +2,7 @@ import {getPosts} from "@/lib/fetch"
 import {useCssIndexCounter} from "@/lib/utils"
 import {SiteLocale} from "@/site"
 import {LangSelect, PostList, ViewMore} from "@/app/[locale]/page-client"
+import {Icons} from "@/components/icons"
 
 export default async function Home({params: {locale}}: {params: {locale: SiteLocale}}) {
   const postsOneLang = (await getPosts({locale})).slice(0, 4)
@@ -29,15 +30,15 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
           <div className="absolute inset-0 z-10 w-full h-full duration-300 ease-out border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-600 group-hover:translate-x-1 group-hover:translate-y-1"/>
           <div className="relative z-30 duration-300 ease-out group-hover:-translate-x-1 group-hover:-translate-y-1">
             <h2 className="flex items-center mb-3 gap-2">
+              <Icons.symbol.building/> building
               <a href="" className="text-xl font-bold leading-tight tracking-tight sm:text-2xl dark:text-neutral-100">
-
               </a>
             </h2>
             <p className="text-sm text-neutral-600 dark:text-neutral-400">
-              <span>building</span>
+              <span></span>
             </p>
             <div className="mt-2.5 text-xs font-medium text-neutral-800 dark:text-neutral-300">
-              ...
+
             </div>
           </div>
         </div>
