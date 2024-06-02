@@ -39,13 +39,7 @@ interface DiscussionNode {
   }
 }
 
-interface FetchDiscussionsByCategoryArgs {
-  repo: string
-  category: string
-  titles: string[]
-}
-
-export const fetchDiscussions = cache(async ({repo, category, titles}: FetchDiscussionsByCategoryArgs): Promise<{[slug: string]: DiscussionNode}> => {
+export const fetchDiscussions = cache(async ({repo, category, titles}: {repo: string, category: string, titles: string[]}): Promise<{[slug: string]: DiscussionNode}> => {
   console.log("firing a new github call")
   const buildQueryWithAliases = () =>
     titles.map((title, index) => {
@@ -83,7 +77,59 @@ export const fetchDiscussions = cache(async ({repo, category, titles}: FetchDisc
     return result
   } catch (error) {
     console.error("Error fetching discussion details:", error)
-    throw new Error("Failed to fetch discussion details")
+    throw error
+  }
+})
+
+export const fetchLatestActivities = cache(async ({repo, category, count}: {repo: string, category: string, count: number}): Promise<{[slug: string]: DiscussionNode}> => {
+  console.log("firing a new github call")
+  const query = `
+    query {
+      discussion: search(type: DISCUSSION, first: ${count}, query: "repo:${repo} category:${category}") {
+        nodes {
+          ...DiscussionDetails
+        }
+      }
+    }
+    fragment DiscussionDetails on Discussion {
+      title
+      number
+      comments(first: 1) {
+        totalCount
+        nodes {
+          author {
+            login
+            avatarUrl
+          }
+          body
+          bodyText
+          createdAt
+        }
+      }
+      reactions(first: 1) {
+        totalCount
+        nodes {
+          content
+          user {
+            login
+            avatarUrl
+          }
+          createdAt
+        }
+      }
+    }`
+
+  try {
+    const data: {discussion: {nodes: DiscussionNode[]}} = await graphqlWithAuth(query)
+    const result: {[slug: string]: DiscussionNode} = {}
+
+    data.discussion.nodes.map((queryResult, index) => {
+      if (queryResult) result[queryResult.title.slice(3)] = queryResult  //remove 'zh/' locale part
+    })
+    return result
+  } catch (error) {
+    console.error("Error fetching latest discussions:", error)
+    throw error
   }
 })
 

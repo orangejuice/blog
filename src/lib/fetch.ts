@@ -1,16 +1,18 @@
 import {allPosts, Post} from "contentlayer/generated"
 import {giscusConfig, LangOption, site, SiteLocale} from "@/site"
-import {Discussion, fetchDiscussions} from "@/lib/fetch-github"
+import {Discussion, fetchDiscussions, fetchLatestActivities} from "@/lib/fetch-github"
 
 type Options = {
   locale: SiteLocale
   filterLang?: LangOption
   filterTag?: string
+  count?: number
+  getDiscussion?: boolean
 }
 
-export const revalidate = 60
+export const revalidate = 5
 
-export const getPosts = async ({locale, filterLang, filterTag}: Options) => {
+export const getPosts = async ({locale, filterLang, filterTag, count, getDiscussion = true}: Options) => {
   filterLang ??= locale
 
   const slugLangPost: {[slug: string]: {[locale: string]: Post}} = {}
@@ -21,7 +23,7 @@ export const getPosts = async ({locale, filterLang, filterTag}: Options) => {
 
   const tagCheck = (post: Post) => filterTag ? post.tags.includes(filterTag) : true
 
-  const postList: Post[] = []
+  let postList: Post[] = []
   loop: for (const langPost of Object.values(slugLangPost)) {
     if (langPost[filterLang]) {
       tagCheck(langPost[filterLang]) && postList.push(langPost[filterLang])
@@ -38,24 +40,47 @@ export const getPosts = async ({locale, filterLang, filterTag}: Options) => {
     }
   }
 
-  const discussions = await fetchDiscussions({
+  const discussions = getDiscussion ? await fetchDiscussions({
     repo: giscusConfig.repo,
     category: giscusConfig.category!,
     titles: postList.map(post => post.slug)
-  })
+  }) : {}
 
-  const postWithDiscussionList = postList.map((post) => {
+  postList.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
+  if (count) postList = postList.slice(0, count)
+
+  return postList.map((post) => {
     const discussion: Discussion = {comments: {totalCount: 0}, reactions: {totalCount: 0}}
     if (discussions[post.slug]) (post as PostWithDiscussion).discussion = discussions[post.slug]
     else (post as PostWithDiscussion).discussion = discussion
     return (post as unknown as PostWithDiscussion)
   })
-
-  return postWithDiscussionList.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
 }
 
 export type PostWithDiscussion = Post & {discussion: Discussion}
 export type GetPostResponse = Awaited<ReturnType<typeof getPosts>>
+
+export const getLatestActivitiesPost = async ({locale, count}: {locale: SiteLocale, count: number}) => {
+  const latestDiscussions = await fetchLatestActivities({
+    repo: giscusConfig.repo,
+    category: giscusConfig.category!,
+    count: count
+  })
+  const postsWithDiscussion: PostWithDiscussion[] = []
+
+  const posts = (await getPosts({locale, filterLang: "all-lang", getDiscussion: false}))
+  const slugPosts: {[slug: string]: PostWithDiscussion} = {}
+  posts.forEach(post => slugPosts[post.slug] = post)
+
+  Object.keys(latestDiscussions).forEach(slug => {
+    if (slugPosts.hasOwnProperty(slug)) {
+      slugPosts[slug].discussion = latestDiscussions[slug]
+      postsWithDiscussion.push(slugPosts[slug] as PostWithDiscussion)
+    }
+  })
+  return postsWithDiscussion
+}
+
 
 export const getTags = ({filterLang}: Options) => {
   const tagCount: {[tag: string]: number} = {}
