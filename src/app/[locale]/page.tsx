@@ -8,7 +8,7 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
   const postsAllLang = (await getPosts({locale, filterLang: "all-lang"})).slice(0, 5)
   const cssIndexCounter = useCssIndexCounter()
 
-  return (
+  return (<>
     <div className="grid md:grid-cols-[2fr,1fr] items-start gap-10 min-h-screen">
       <main className="flex flex-col gap-5">
         <div className="flex items-center justify-between">
@@ -43,5 +43,5 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
         </div>
       </aside>
     </div>
-  )
+  </>)
 }

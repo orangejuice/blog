@@ -17,6 +17,8 @@
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tooltip": "^1.0.7",
+    "@react-three/drei": "^9.106.0",
+    "@react-three/fiber": "^8.16.7",
     "canvas-confetti": "^1.9.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -30,6 +32,7 @@
     "react-dom": "^18.3.1",
     "react-i18next": "^14.1.2",
     "sharp": "^0.33.4",
+    "three": "^0.165.0",
     "tocbot": "^4.28.2"
   },
   "devDependencies": {
@@ -40,6 +43,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/remove-markdown": "^0.3.4",
+    "@types/three": "^0.165.0",
     "babel-plugin-react-compiler": "latest",
     "contentlayer2": "^0.4.6",
     "eslint": "^8.57.0",

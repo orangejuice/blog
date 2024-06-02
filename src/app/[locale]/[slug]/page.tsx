@@ -12,6 +12,7 @@ import initTranslation from "@/i18n"
 import Link from "next/link"
 import {MDX} from "@/components/mdx"
 import {Comments} from "@/components/comments"
+import {AmbientCanvas} from "@/components/ambient-canvas"
 
 export async function generateMetadata({params}: {params: {slug: string, locale: string}}): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug)
@@ -95,5 +96,6 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
         </div>
       </aside>
     </div>
+    <AmbientCanvas/>
   </>
 }

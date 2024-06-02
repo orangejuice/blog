@@ -6,7 +6,7 @@
   body {
     padding-left: calc(100vw - 100%);
     min-height: 100vh;
-    @apply bg-white dark:bg-black transition-colors duration-200 overflow-y-scroll
+    @apply bg-white dark:bg-black transition-colors duration-700 overflow-y-scroll
   }
 
   * {
