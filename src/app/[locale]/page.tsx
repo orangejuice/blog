@@ -38,7 +38,7 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
             </div>
           </div>
           <section className="animate-delay-in" style={cssIndexCounter()}>
-            <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">Latest activities</h5>
+            <h5 className="text-slate-900 font-semibold mb-2 text-sm leading-6 dark:text-slate-100">Latest activities</h5>
             <LatestActivityList posts={latestActivities}/>
           </section>
         </aside>

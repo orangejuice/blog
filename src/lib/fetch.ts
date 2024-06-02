@@ -10,8 +10,6 @@ type Options = {
   getDiscussion?: boolean
 }
 
-export const revalidate = 5
-
 /**
  * The function to get the list of post
  * @param locale user's language preference

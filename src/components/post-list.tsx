@@ -75,7 +75,7 @@ export function ActivityCard({post}: {post: PostWithActivity}) {
 
   return (<>
     <li>
-      <Link href={`/${post.slug}`} className={cn("flex flex-col items-start px-4 py-2 rounded-md -mx-4 transition-colors gap-1",
+      <Link href={`/${post.slug}`} className={cn("flex flex-col items-start px-4 py-2 rounded-md -mx-4 transition-colors gap-2",
         "hover:bg-stone-100 group dark:hover:bg-stone-800")}>
         {update}
         <p className={cn("w-full px-3 py-1 text-sm rounded-md font-medium text-stone-700 tracking-tight line-clamp-1",
