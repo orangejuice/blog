@@ -13,6 +13,7 @@ import Link from "next/link"
 import {MDX} from "@/components/mdx"
 import {Comments} from "@/components/comments"
 import {PostCanvas} from "@/components/post-canvas"
+import React from "react"
 
 export async function generateMetadata({params}: {params: {slug: string, locale: string}}): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug)
@@ -79,6 +80,17 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
                   </Link>)}
               </div>
             </>)}
+            <Icons.symbol.dot className="stroke-[4px] opacity-70"/>
+            <div className="flex items-center gap-4">
+              <Link href={"#comments"} className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-sm -mx-1",
+                "hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-400 dark:hover:bg-stone-700")}>
+                <Icons.post.reaction/> {post.discussion.reactions.totalCount}
+              </Link>
+              <Link href={"#comments"} className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-sm -mx-1",
+                "hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-400 dark:hover:bg-stone-700")}>
+                <Icons.post.comment/> {post.discussion.comments.totalCount}
+              </Link>
+            </div>
           </div>
         </section>
         <MDX code={post.body.code} style={cssIndexCounter()}/>

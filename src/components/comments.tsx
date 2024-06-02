@@ -12,7 +12,7 @@ export const Comments = () => {
   const commentsTheme = resolvedTheme === "dark" ? darkTheme : lightTheme
 
   return (
-    <GiscusComponent id={"comments-container"} {...props} theme={commentsTheme} lang={{
+    <GiscusComponent id={"comments"} {...props} theme={commentsTheme} lang={{
       en: "en",
       zh: "zh-CN"
     }[locale]}/>
