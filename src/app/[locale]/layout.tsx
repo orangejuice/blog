@@ -8,6 +8,7 @@ import {site} from "@/site"
 import React from "react"
 import {Footer} from "@/components/footer"
 import initTranslation from "@/i18n"
+import {Analytics} from "@vercel/analytics/react"
 
 const fontSans = FontSans({subsets: ["latin"], variable: "--font-sans"})
 const fontMono = FontMono({subsets: ["latin"], variable: "--font-mono"})
@@ -31,6 +32,7 @@ export default async function RootLayout({children, params: {locale}}:
             <Footer/>
           </div>
         </Context>
+        <Analytics/>
       </body>
     </html>
   )
