@@ -1,6 +1,6 @@
 import {allPosts, Post} from "contentlayer/generated"
 import {giscusConfig, LangOption, site, SiteLocale} from "@/site"
-import {Discussion, fetchDiscussions, fetchLatestActivities} from "@/lib/fetch-github"
+import {Activity, Discussion, fetchDiscussions, fetchLatestActivities} from "@/lib/fetch-github"
 
 type Options = {
   locale: SiteLocale
@@ -12,6 +12,14 @@ type Options = {
 
 export const revalidate = 5
 
+/**
+ * The function to get the list of post
+ * @param locale user's language preference
+ * @param filterLang filtering results by including the specified lang only
+ * @param filterTag filtering results by a tag
+ * @param count how many posts needed
+ * @param getDiscussion do we want to fetch discussion data for this post list
+ */
 export const getPosts = async ({locale, filterLang, filterTag, count, getDiscussion = true}: Options) => {
   filterLang ??= locale
 
@@ -53,32 +61,35 @@ export const getPosts = async ({locale, filterLang, filterTag, count, getDiscuss
     const discussion: Discussion = {comments: {totalCount: 0}, reactions: {totalCount: 0}}
     if (discussions[post.slug]) (post as PostWithDiscussion).discussion = discussions[post.slug]
     else (post as PostWithDiscussion).discussion = discussion
+    post.body.raw= ""
+
     return (post as unknown as PostWithDiscussion)
   })
 }
 
 export type PostWithDiscussion = Post & {discussion: Discussion}
+export type PostWithActivity = Post & {discussion: Activity}
 export type GetPostResponse = Awaited<ReturnType<typeof getPosts>>
 
 export const getLatestActivitiesPost = async ({locale, count}: {locale: SiteLocale, count: number}) => {
-  const latestDiscussions = await fetchLatestActivities({
+  const latestActivities = await fetchLatestActivities({
     repo: giscusConfig.repo,
     category: giscusConfig.category!,
     count: count
   })
-  const postsWithDiscussion: PostWithDiscussion[] = []
+  const postsWithActivity: PostWithActivity[] = []
 
   const posts = (await getPosts({locale, filterLang: "all-lang", getDiscussion: false}))
   const slugPosts: {[slug: string]: PostWithDiscussion} = {}
   posts.forEach(post => slugPosts[post.slug] = post)
 
-  Object.keys(latestDiscussions).forEach(slug => {
+  Object.keys(latestActivities).forEach(slug => {
     if (slugPosts.hasOwnProperty(slug)) {
-      slugPosts[slug].discussion = latestDiscussions[slug]
-      postsWithDiscussion.push(slugPosts[slug] as PostWithDiscussion)
+      slugPosts[slug].discussion = latestActivities[slug]
+      postsWithActivity.push(slugPosts[slug] as PostWithActivity)
     }
   })
-  return postsWithDiscussion
+  return postsWithActivity
 }
 
 

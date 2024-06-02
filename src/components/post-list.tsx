@@ -3,7 +3,12 @@ import {Icons} from "@/components/icons"
 import {Button} from "@/components/ui/button"
 import {cn, formatDate} from "@/lib/utils"
 import React, {ComponentPropsWithoutRef} from "react"
-import {PostWithDiscussion} from "@/lib/fetch"
+import {PostWithActivity, PostWithDiscussion} from "@/lib/fetch"
+import Image from "next/image"
+import dayjs from "dayjs"
+import relativeTime from "dayjs/plugin/relativeTime"
+
+dayjs.extend(relativeTime)
 
 export function PostCard({post}: {post: PostWithDiscussion}) {
   return (<>
@@ -36,6 +41,48 @@ export function PostCard({post}: {post: PostWithDiscussion}) {
   </>)
 }
 
+
+export function ActivityCard({post}: {post: PostWithActivity}) {
+  const activities = [...post.discussion.comments.nodes, ...post.discussion.reactions.nodes]
+  activities.sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt))
+  const activity = activities[0]
+
+  const update = "author" in activity ? (<>
+    <div className="flex items-center gap-2">
+      <Image src={activity.author.avatarUrl} alt="" width={20} height={20} className="h-8 w-8 rounded-full"/>
+      <div className="flex flex-col items-start text-stone-600">
+        <span className="font-medium text-sm">{activity.author.login}</span>
+        <time className="text-xs line-clamp-1">{dayjs().to(dayjs(activity.createdAt))}</time>
+      </div>
+    </div>
+    <span className="flex gap-1 line-clamp-1 text-sm">
+      <span>Replied:</span>
+      <span className="font-medium">{activity.bodyText}</span>
+    </span>
+  </>) : (<>
+    <div className="flex items-center gap-2 ">
+      <Image src={activity.user.avatarUrl} alt="" width={20} height={20} className="h-8 w-8 rounded-full"/>
+      <div className="flex flex-col items-start text-stone-600">
+        <span className="font-medium text-sm">{activity.user.login}</span>
+        <time className="text-xs line-clamp-1">{dayjs().to(dayjs(activity.createdAt))}</time>
+      </div>
+    </div>
+    <span className="flex gap-2 line-clamp-1 text-sm">
+      <span>Reacted:</span>
+      {{"+1": "👍", "-1": "👎", "LAUGH": "😀", "HOORAY": "🎉", "CONFUSED": "🤔", "LOVE": "❤️", "ROCKET": "🚀", "EYE": "👀"}[activity.content]}
+    </span>
+  </>)
+
+  return (<>
+    <li>
+      <Link href={`/${post.slug}`} className="group flex flex-col items-start no-underline relative p-4 rounded-xl -mx-4 bg-transparent transition-colors gap-1">
+        {update}
+        <p className="w-full px-3 py-1 text-sm bg-stone-100 rounded-md font-medium text-stone-700 tracking-tight line-clamp-1">{post.title}</p>
+      </Link>
+    </li>
+  </>)
+}
+
 export function PostItemCompact({post}: {post: PostWithDiscussion}) {
   return (<>
     <li className="py-2.5 group flex items-baseline flex-col md:flex-row gap-1 md:gap-9">
@@ -55,6 +102,14 @@ export function PostCardList({posts, ...props}: {posts: PostWithDiscussion[]} & 
   return (<>
     <ul className="flex flex-col gap-5 animate-delay-in" {...props}>
       {posts.map(post => <PostCard post={post} key={post.slug}/>)}
+    </ul>
+  </>)
+}
+
+export function LatestActivityList({posts, ...props}: {posts: PostWithActivity[]} & ComponentPropsWithoutRef<"ul">) {
+  return (<>
+    <ul className="flex flex-col" {...props}>
+      {posts.map(post => <ActivityCard post={post} key={post.slug}/>)}
     </ul>
   </>)
 }

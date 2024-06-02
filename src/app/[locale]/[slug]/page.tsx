@@ -54,7 +54,7 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
   const post = posts.find((post) => post.slug === slug)
   if (!post) return notFound()
 
-  const isPostUpdated = post.updated && post.updated != post.date
+  const isPostUpdated = post.updated && (post.updated != post.date)
   const {t} = await initTranslation(params.locale)
 
   return <>

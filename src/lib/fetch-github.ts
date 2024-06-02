@@ -3,6 +3,7 @@ import {graphql} from "@octokit/graphql"
 import {giscusConfig} from "@/site"
 import {createAppAuth} from "@octokit/auth-app"
 import {unstable_cache as cache} from "next/cache"
+import {format} from "@formkit/tempo"
 
 export const getInstallationId = async (repo: string): Promise<string> => {
   const now = Math.floor(Date.now() / 1000)
@@ -40,7 +41,7 @@ interface DiscussionNode {
 }
 
 export const fetchDiscussions = cache(async ({repo, category, titles}: {repo: string, category: string, titles: string[]}): Promise<{[slug: string]: DiscussionNode}> => {
-  console.log("firing a new github call")
+  console.log(format(new Date(), "YYYY-MM-DD HH:mm:ss"), "[github]fetchDiscussions")
   const buildQueryWithAliases = () =>
     titles.map((title, index) => {
       const query = `repo:${repo} category:${category} in:title ${title}`
@@ -81,8 +82,36 @@ export const fetchDiscussions = cache(async ({repo, category, titles}: {repo: st
   }
 })
 
-export const fetchLatestActivities = cache(async ({repo, category, count}: {repo: string, category: string, count: number}): Promise<{[slug: string]: DiscussionNode}> => {
-  console.log("firing a new github call")
+interface ActivityNode {
+  number: number;
+  title: string;
+  comments: {
+    totalCount: number;
+    nodes: Array<{
+      author: {
+        login: string;
+        avatarUrl: string;
+      };
+      body: string;
+      bodyText: string;
+      createdAt: string;
+    }>;
+  };
+  reactions: {
+    totalCount: number;
+    nodes: Array<{
+      content: string;
+      user: {
+        login: string;
+        avatarUrl: string;
+      };
+      createdAt: string;
+    }>;
+  };
+}
+
+export const fetchLatestActivities = cache(async ({repo, category, count}: {repo: string, category: string, count: number}) => {
+  console.log(format(new Date(), "YYYY-MM-DD HH:mm:ss"), "[github]fetchLatestActivities")
   const query = `
     query {
       discussion: search(type: DISCUSSION, first: ${count}, query: "repo:${repo} category:${category}") {
@@ -120,13 +149,13 @@ export const fetchLatestActivities = cache(async ({repo, category, count}: {repo
     }`
 
   try {
-    const data: {discussion: {nodes: DiscussionNode[]}} = await graphqlWithAuth(query)
-    const result: {[slug: string]: DiscussionNode} = {}
+    const data: {discussion: {nodes: ActivityNode[]}} = await graphqlWithAuth(query)
+    const slugActivity: {[slug: string]: ActivityNode} = {}
 
-    data.discussion.nodes.map((queryResult, index) => {
-      if (queryResult) result[queryResult.title.slice(3)] = queryResult  //remove 'zh/' locale part
+    data.discussion.nodes.forEach((queryResult) => {
+      if (queryResult) slugActivity[queryResult.title.slice(3)] = queryResult  //remove 'zh/' locale part
     })
-    return result
+    return slugActivity
   } catch (error) {
     console.error("Error fetching latest discussions:", error)
     throw error
@@ -134,6 +163,8 @@ export const fetchLatestActivities = cache(async ({repo, category, count}: {repo
 })
 
 export type Discussion = PartialBy<DiscussionNode, "number" | "title">
+export type Activity = ActivityNode
+
 // export type DiscussionData = Awaited<ReturnType<typeof fetchDiscussions>>
 
 // console.log(await fetchDiscussions({
