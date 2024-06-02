@@ -75,9 +75,13 @@ export function ActivityCard({post}: {post: PostWithActivity}) {
 
   return (<>
     <li>
-      <Link href={`/${post.slug}`} className="group flex flex-col items-start no-underline relative p-4 rounded-xl -mx-4 bg-transparent transition-colors gap-1">
+      <Link href={`/${post.slug}`} className={cn("flex flex-col items-start px-4 py-2 rounded-md -mx-4 transition-colors gap-1",
+        "hover:bg-stone-100 group dark:hover:bg-stone-800")}>
         {update}
-        <p className="w-full px-3 py-1 text-sm bg-stone-100 rounded-md font-medium text-stone-700 tracking-tight line-clamp-1">{post.title}</p>
+        <p className={cn("w-full px-3 py-1 text-sm rounded-md font-medium text-stone-700 tracking-tight line-clamp-1",
+          "group-hover:bg-stone-200 bg-stone-100 dark:bg-stone-800 dark:group-hover:bg-stone-700 dark:text-stone-400 transition-colors")}>
+          {post.title}
+        </p>
       </Link>
     </li>
   </>)
@@ -108,7 +112,7 @@ export function PostCardList({posts, ...props}: {posts: PostWithDiscussion[]} & 
 
 export function LatestActivityList({posts, ...props}: {posts: PostWithActivity[]} & ComponentPropsWithoutRef<"ul">) {
   return (<>
-    <ul className="flex flex-col" {...props}>
+    <ul className="flex flex-col gap-2" {...props}>
       {posts.map(post => <ActivityCard post={post} key={post.slug}/>)}
     </ul>
   </>)
