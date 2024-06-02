@@ -12,7 +12,7 @@ import initTranslation from "@/i18n"
 import Link from "next/link"
 import {MDX} from "@/components/mdx"
 import {Comments} from "@/components/comments"
-import {AmbientCanvas} from "@/components/ambient-canvas"
+import {PostCanvas} from "@/components/post-canvas"
 
 export async function generateMetadata({params}: {params: {slug: string, locale: string}}): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug)
@@ -75,7 +75,7 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
                 {post.tags.map((tag, index) =>
                   <Link href={`/all/${params.locale}/${tag}`} key={index} className={cn("flex items-center rounded-md transition px-1 py-0.5 text-sm -mx-1",
                     "hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-400 dark:hover:bg-stone-700")}>
-                    <Icons.symbol.hash className="!w-3 !h-3 !text-inherit"/> {tag}
+                    <Icons.symbol.hash className="w-3 h-3 text-inherit"/> {tag}
                   </Link>)}
               </div>
             </>)}
@@ -96,6 +96,6 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
         </div>
       </aside>
     </div>
-    <AmbientCanvas/>
+    <PostCanvas/>
   </>
 }

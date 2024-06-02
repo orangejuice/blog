@@ -7,6 +7,7 @@ import {a} from "@react-spring/three"
 import {motion} from "framer-motion"
 import {Group, Mesh} from "three"
 import {useTheme} from "next-themes"
+import {useMounted} from "@/lib/use-mounted"
 
 const easeInOutCubic = (t: number) => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1
 
@@ -70,9 +71,9 @@ function Plants({number, position}: GroupProps & {number: number}) {
   )
 }
 
-export function AmbientCanvas({ambience = true}) {
+export function PostCanvas() {
   const {resolvedTheme} = useTheme()
-  const [threeLoading, setThreeLoading] = useState(false)
+  const [threeLoaded, setThreeLoaded] = useState(false)
   const cameraControlRef = useRef<CameraControls>(null)
   const {spring} = useSpring({
     spring: resolvedTheme == "dark" ? 1 : 0,
@@ -86,16 +87,17 @@ export function AmbientCanvas({ambience = true}) {
     cameraControlRef.current?.rotatePolarTo(0)
     cameraControlRef.current?.rotateAzimuthTo(0)
     cameraControlRef.current?.setLookAt(-20, 20, -30, -8, -10, -28)
-  }, [threeLoading])
+  }, [threeLoaded])
 
+  const mounted = useMounted()
+  if (!mounted) return null
   if (resolvedTheme === "dark") return null
 
   return (
     <motion.div style={{width: "100vw", height: "100vh", position: "fixed", top: 0, left: 0, zIndex: 2, mixBlendMode: "multiply", pointerEvents: "none"}}
-      animate={{opacity: (ambience && threeLoading) ? 1 : 0}}>
-      <Canvas shadows camera={{fov: 45, position: [-20, 20, -30]}}
-        style={{pointerEvents: "none", width: "100vw", height: "100vh", position: "fixed", top: 0, left: 0, zIndex: 2}}
-        onCreated={() => {setThreeLoading(true)}}>
+      animate={{opacity: threeLoaded ? 1 : 0}}>
+      <Canvas shadows camera={{fov: 45}} onCreated={() => {setThreeLoaded(true)}}
+        style={{pointerEvents: "none", width: "100vw", height: "100vh", position: "fixed", top: 0, left: 0, zIndex: 2}}>
         <CameraControls ref={cameraControlRef} makeDefault={true}/>
         <SoftShadows size={25} focus={0.53} samples={10}/>
         <fog attach="fog" args={["black", 0, 40]}/>
@@ -121,3 +123,27 @@ export function AmbientCanvas({ambience = true}) {
     </motion.div>
   )
 }
+
+
+// export function SkyScene() {
+//
+//   return (<>
+//     <motion.div style={{width: "100vw", height: "100vh", position: "fixed", top: 0, left: 0, zIndex: 2, mixBlendMode: "multiply", pointerEvents: "none"}}
+//     animate={{opacity: 1}}>
+//       <Canvas style={{width: "100vw", height: "100vh", position: "fixed", top: 0, left: 0, zIndex: 2, pointerEvents: "none"}}
+//         camera={{fov: 75, position: [-40, 25, 7], rotation: [-1.3, -1, -1.27]}}>
+//         <Sky distance={3000} turbidity={8} rayleigh={6} mieCoefficient={0.005} mieDirectionalG={0.8} sunPosition={[1, 0, 0]}/>
+//         <axesHelper/>
+//         <OrbitControls enableZoom={true} enablePan={true} enableRotate={true} zoomSpeed={0.6} panSpeed={0.5} rotateSpeed={0.4}/>
+//         <Stats/>
+//         <PositionInfo/>
+//       </Canvas>
+//     </motion.div>
+//   </>)
+// }
+
+// function PositionInfo() {
+//   const camera = useThree(state => state.camera)
+//   console.log(camera.position, camera.rotation)
+//   return <></>
+// }

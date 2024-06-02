@@ -1,5 +1,4 @@
 
-
 export default function Page() {
-  return 1
+  return (<></>)
 }
