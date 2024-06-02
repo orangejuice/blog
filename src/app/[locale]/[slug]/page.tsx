@@ -5,7 +5,6 @@ import {allPosts} from "contentlayer/generated"
 import {site, SiteLocale} from "@/site"
 import {getPosts} from "@/lib/fetch"
 import Toc from "@/components/toc"
-import {ReactionsButtons} from "@/components/reactions"
 import {cn, formatDate, useCssIndexCounter} from "@/lib/utils"
 import {Icons} from "@/components/icons"
 import initTranslation from "@/i18n"
@@ -101,11 +100,11 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
       <aside className="flex flex-col sticky top-8 gap-4 animate-delay-in" style={cssIndexCounter()}>
         <Toc/>
         <hr className="dark:border-stone-700"/>
-        <div className="flex flex-col gap-2">
-          <section className="py-2 pl-2 text-slate-700 text-sm leading-6">
-            <ReactionsButtons slug={slug} initialCounters={{likes: 2, loves: 5, awards: 1}}/>
-          </section>
-        </div>
+        {/*<div className="flex flex-col gap-2">*/}
+        {/*  <section className="py-2 pl-2 text-slate-700 text-sm leading-6">*/}
+        {/*    <ReactionsButtons slug={slug} initialCounters={{likes: 2, loves: 5, awards: 1}}/>*/}
+        {/*  </section>*/}
+        {/*</div>*/}
       </aside>
     </div>
     <PostCanvas/>
