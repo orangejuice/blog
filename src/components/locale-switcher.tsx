@@ -27,11 +27,11 @@ export function LocaleSwitcher(props: ButtonProps) {
   return (<>
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" className={cn(
+        <Button variant="ghost" size="icon" disabled={isPending} className={cn(
           "h-fit w-fit gap-2 whitespace-nowrap rounded-lg px-3 py-1.5 transition-all", props.className,
           "hover:bg-stone-200 active:bg-stone-300 dark:text-white dark:hover:bg-stone-700 dark:active:bg-stone-800"
         )}>
-          <Icons.nav.lang className="z-0 pointer-events-none"/>
+          <Icons.nav.lang/>
           {t(i18n.language, {lng: i18n.language})}
         </Button>
       </DropdownMenuTrigger>
