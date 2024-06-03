@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth
+  }
+
   body {
     padding-left: calc(100vw - 100%);
     min-height: 100vh;

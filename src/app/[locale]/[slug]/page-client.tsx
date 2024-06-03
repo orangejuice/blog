@@ -11,7 +11,7 @@ export const Interactions = ({slug}: {slug: string}) => {
 
   return (<>
     <Link href={"#comments"} className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-sm -mx-1",
-      "hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-400 dark:hover:bg-stone-700")}>
+      "hover:bg-stone-200 dark:hover:bg-stone-700")}>
       <Icons.post.reaction/>
       <AnimatePresence mode="popLayout">
         {interactions[slug]?.reaction &&
@@ -21,9 +21,8 @@ export const Interactions = ({slug}: {slug: string}) => {
       </AnimatePresence>
     </Link>
     <Link href={"#comments"} className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-sm -mx-1",
-      "hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-400 dark:hover:bg-stone-700")}>
+      "hover:bg-stone-200 dark:hover:bg-stone-700")}>
       <Icons.post.comment/>
-      {/*{interactions[slug]?.comment ?? <Icons.grid/>}*/}
       <AnimatePresence mode="popLayout">
         {interactions[slug]?.comment &&
           <motion.span key="num" animate={{opacity: 1}} exit={{opacity: 0}}>{interactions[slug]?.comment}</motion.span>}

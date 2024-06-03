@@ -8,6 +8,10 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
+export function randomInRange(min: number, max: number) {
+  return Math.random() * (max - min) + min
+}
+
 export function formatDate(date: string, locale?: string) {
   return format(date, {date: "medium"}, locale)
 }
