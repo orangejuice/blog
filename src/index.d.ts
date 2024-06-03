@@ -1,7 +1,7 @@
 type PartialBy<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>
 
 // https://github.com/giscus/giscus/blob/main/lib/types/giscus.ts
-export interface IDiscussionData {
+type IDiscussionData = {
   id: string
   url: string
   locked: boolean

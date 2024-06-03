@@ -4,7 +4,6 @@ import {useTheme} from "next-themes"
 import {giscusConfig} from "@/site"
 import {useTranslation} from "react-i18next"
 import {useEffect} from "react"
-import {IDiscussionData} from "@/index"
 import {useGlobalState} from "@/lib/hooks"
 
 export const Comments = ({slug}: {slug: string}) => {
