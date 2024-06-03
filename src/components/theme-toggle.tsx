@@ -4,7 +4,7 @@ import {Button} from "@/components/ui/button"
 import {Icons} from "@/components/icons"
 import {cn} from "@/lib/utils"
 import {Tooltip, TooltipContent, TooltipTrigger} from "@/components/ui/tooltip"
-import {useMounted} from "@/lib/use-mounted"
+import {useMounted} from "@/lib/hooks"
 
 export function ThemeToggle() {
   const mounted = useMounted()

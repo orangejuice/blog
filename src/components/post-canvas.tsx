@@ -7,7 +7,7 @@ import {a} from "@react-spring/three"
 import {motion} from "framer-motion"
 import {Group, Mesh} from "three"
 import {useTheme} from "next-themes"
-import {useMounted} from "@/lib/use-mounted"
+import {useMounted} from "@/lib/hooks"
 
 const easeInOutCubic = (t: number) => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1
 

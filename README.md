@@ -66,4 +66,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - React / Next.js
   - `use` https://react.dev/reference/react/use
   - `cache`&`revalidate` https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config
-  - `revalidate` has to be in `layout.tsx | page.tsx | route.ts` and cached functions has to be imported in them
+  - `revalidate` I failed to control the behavior of `export const revalidate` :(, use on-demand data revalidation instead.
+    implemented `api/revalidate` to work with `orangejuice/on-new-giscus-comment`
+- TailwindCSS spinner animation lib https://play.tailwindcss.com/OPAsySKNCd

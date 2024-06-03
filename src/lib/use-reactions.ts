@@ -1,7 +1,7 @@
 "use client"
 import confetti from "canvas-confetti"
 import {type MouseEvent, useEffect, useState} from "react"
-import {useMounted} from "@/lib/use-mounted"
+import {useMounted} from "@/lib/hooks"
 import {Counters, ReactionName, reactionsSetup} from "@/components/reactions"
 import {useWindowDimensions} from "@/lib/use-window-dimensions"
 

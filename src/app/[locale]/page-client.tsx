@@ -6,7 +6,7 @@ import {menu} from "@/site"
 import {Icons} from "@/components/icons"
 import React, {ComponentPropsWithoutRef} from "react"
 import {useTranslation} from "react-i18next"
-import {useMounted} from "@/lib/use-mounted"
+import {useMounted} from "@/lib/hooks"
 
 export function LangSelect(props: ComponentPropsWithoutRef<"div">) {
   const [lang, setLang] = useLocalStorage<"one" | "all">("latest-lang", "one")

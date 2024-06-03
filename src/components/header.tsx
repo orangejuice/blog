@@ -6,7 +6,7 @@ import {useLocalStorage} from "@/lib/use-local-storage"
 import {FilterOption} from "@/components/post-filter"
 import {useSelectedLayoutSegment} from "next/navigation"
 import {LocaleSwitcher} from "@/components/locale-switcher"
-import {useMounted} from "@/lib/use-mounted"
+import {useMounted} from "@/lib/hooks"
 import Link from "next/link"
 import * as React from "react"
 import {Icons} from "@/components/icons"
@@ -17,7 +17,7 @@ export function Header() {
   const mounted = useMounted()
   const [filter] = useLocalStorage<FilterOption | "">("post-filter", "")
 
-  return (
+  return (<>
     <header className="flex mb-8 w-full shrink-0 items-center justify-between">
       <div className="flex items-center gap-20">
         <Link href="/" rel="nofollow" className="flex items-center shrink-0">
@@ -40,13 +40,8 @@ export function Header() {
         </nav>
         <MobileNav/>
       </div>
-      {/*<div className="fixed bottom-0 left-0 right-0 z-50 h-16 w-full border-t bg-white md:hidden">*/}
-      {/*  <div className="grid h-full max-w-lg grid-cols-3 gap-6">*/}
-      {/*    */}
-      {/*  </div>*/}
-      {/*</div>*/}
     </header>
-  )
+  </>)
 }
 
 
@@ -75,16 +70,3 @@ export function MobileNav() {
     </Popover>
   </>)
 }
-
-//
-// const NavItemMobile = (url: string, icon: MobilePage["icon"], name: MobilePage["name"], isActive: boolean) => (
-//
-// <button type="button" key={url} className={["inline-flex flex-col text-xs items-center justify-center rounded-full px-5 hover:bg-gray-100"
-
-//     isActive ? "font-semibold" : ""
-//   ].join(" ")}
-//     onClick={() => router.push(url)}>
-//     {icon[isActive ? 1 : 0]}
-//     <span className="">{name}</span>
-//   </button>
-// )

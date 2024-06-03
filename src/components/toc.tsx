@@ -3,7 +3,7 @@ import {useEffect} from "react"
 import tocbot from "tocbot"
 import "./toc.css"
 import {Icons} from "@/components/icons"
-import {useMounted} from "@/lib/use-mounted"
+import {useMounted} from "@/lib/hooks"
 import {useTheme} from "next-themes"
 
 export default function Toc() {

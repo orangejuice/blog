@@ -13,6 +13,7 @@ import {MDX} from "@/components/mdx"
 import {Comments} from "@/components/comments"
 import {PostCanvas} from "@/components/post-canvas"
 import React from "react"
+import {Interactions} from "@/app/[locale]/[slug]/page-client"
 
 export async function generateMetadata({params}: {params: {slug: string, locale: string}}): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug)
@@ -49,7 +50,7 @@ export const generateStaticParams = async () => {
 export default async function Page({params}: {params: {slug: string, locale: SiteLocale}}) {
   const slug = decodeURI(params.slug)
   const cssIndexCounter = useCssIndexCounter()
-  const posts = await getPosts({locale: params.locale, filterLang: "all-lang"})
+  const posts = await getPosts({locale: params.locale, filterLang: "all-lang", getDiscussion: false})
   const post = posts.find((post) => post.slug === slug)
   if (!post) return notFound()
 
@@ -81,20 +82,13 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
             </>)}
             <Icons.symbol.dot className="stroke-[4px] opacity-70"/>
             <div className="flex items-center gap-2">
-              <Link href={"#comments"} className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-sm -mx-1",
-                "hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-400 dark:hover:bg-stone-700")}>
-                <Icons.post.reaction/> {post.discussion.reactions.totalCount}
-              </Link>
-              <Link href={"#comments"} className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-sm -mx-1",
-                "hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-400 dark:hover:bg-stone-700")}>
-                <Icons.post.comment/> {post.discussion.comments.totalCount}
-              </Link>
+              <Interactions slug={slug}/>
             </div>
           </div>
         </section>
         <MDX code={post.body.code} style={cssIndexCounter()}/>
         <div className="pb-6 pt-6 text-center text-gray-700 dark:text-gray-300 animate-delay-in" id="comment">
-          <Comments/>
+          <Comments slug={slug}/>
         </div>
       </article>
       <aside className="flex flex-col sticky top-8 gap-4 animate-delay-in" style={cssIndexCounter()}>
