@@ -10,7 +10,7 @@ import {useMounted} from "@/lib/use-mounted"
 import Link from "next/link"
 import * as React from "react"
 import {Icons} from "@/components/icons"
-import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet"
+import {Popover, PopoverContent, PopoverTrigger} from "@/components/ui/popover"
 
 export function Header() {
   const pathname = useSelectedLayoutSegment()
@@ -54,30 +54,33 @@ export function MobileNav() {
   const [open, setOpen] = React.useState(false)
 
   return (<>
-    <Sheet open={open} onOpenChange={setOpen}>
-      <SheetTrigger asChild>
+    <Popover open={open} onOpenChange={setOpen}>
+      <PopoverTrigger asChild>
         <Button variant="ghost" className="px-2 hover:bg-transparent md:hidden">
           <Icons.nav.menu className="h-7 w-7"/>
           <span className="sr-only">Toggle Menu</span>
         </Button>
-      </SheetTrigger>
-      <SheetContent side="bottom">
-        <div className="flex flex-col gap-10 my-4 h-[calc(75vh-6rem)] overflow-scroll pl-6">
+      </PopoverTrigger>
+      <PopoverContent align="end" className="w-fit shadow-xl">
+        <div className="flex flex-col gap-6 p-2">
           {Object.values(menu).map(({name, path}) => (
-            <Link href={path} onClick={() => setOpen(false)} key={path} className="text-3xl">
+            <Link href={path} onClick={() => setOpen(false)} key={path} className="text-2xl">
               {name}
             </Link>
           ))}
-          <LocaleSwitcher/>
+          <span className="-mx-1 -my-2 h-px bg-stone-200 dark:bg-stone-600"></span>
+          <LocaleSwitcher className="-mx-3"/>
         </div>
-      </SheetContent>
-    </Sheet>
+      </PopoverContent>
+    </Popover>
   </>)
 }
 
 //
 // const NavItemMobile = (url: string, icon: MobilePage["icon"], name: MobilePage["name"], isActive: boolean) => (
-//   <button type="button" key={url} className={["inline-flex flex-col text-xs items-center justify-center rounded-full px-5 hover:bg-gray-100",
+//
+// <button type="button" key={url} className={["inline-flex flex-col text-xs items-center justify-center rounded-full px-5 hover:bg-gray-100"
+
 //     isActive ? "font-semibold" : ""
 //   ].join(" ")}
 //     onClick={() => router.push(url)}>
