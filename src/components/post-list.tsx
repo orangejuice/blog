@@ -56,21 +56,21 @@ function ActivityCard({post}: {post: PostWithActivity}) {
         <time className="text-xs line-clamp-1">{dayjs().to(dayjs(activity.createdAt))}</time>
       </div>
     </div>
-    <span className="flex gap-1 line-clamp-1 text-sm">
+    <span className="flex gap-1 text-sm">
       <span>Replied:</span>
-      <span className="font-medium">{activity.bodyText}</span>
+      <span className="font-medium line-clamp-1">{activity.bodyText}</span>
     </span>
   </>) : (<>
-    <div className="flex items-center gap-2 ">
+    <div className="flex items-center gap-2">
       <Image src={activity.user.avatarUrl} alt="" width={20} height={20} className="h-8 w-8 rounded-full"/>
       <div className="flex flex-col items-start text-stone-600">
         <span className="font-medium text-sm">{activity.user.login}</span>
         <time className="text-xs line-clamp-1">{dayjs().to(dayjs(activity.createdAt))}</time>
       </div>
     </div>
-    <span className="flex gap-2 line-clamp-1 text-sm">
+    <span className="flex gap-2 text-sm">
       <span>Reacted:</span>
-      {{"+1": "👍", "-1": "👎", "LAUGH": "😀", "HOORAY": "🎉", "CONFUSED": "🤔", "HEART": "❤️", "ROCKET": "🚀", "EYES": "👀"}[activity.content]}
+      <span className="line-clamp-1">{{"+1": "👍", "-1": "👎", "LAUGH": "😀", "HOORAY": "🎉", "CONFUSED": "🤔", "HEART": "❤️", "ROCKET": "🚀", "EYES": "👀"}[activity.content]}</span>
     </span>
   </>)
 

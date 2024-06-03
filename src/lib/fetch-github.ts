@@ -122,7 +122,7 @@ export const fetchLatestActivities = async ({repo, category, count}: {repo: stri
     fragment DiscussionDetails on Discussion {
       title
       number
-      comments(first: 1) {
+      comments(last: 1) {
         totalCount
         nodes {
           author {
@@ -134,7 +134,7 @@ export const fetchLatestActivities = async ({repo, category, count}: {repo: stri
           createdAt
         }
       }
-      reactions(first: 1) {
+      reactions(last: 1) {
         totalCount
         nodes {
           content

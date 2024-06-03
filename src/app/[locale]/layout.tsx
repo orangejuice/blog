@@ -38,7 +38,3 @@ export default async function RootLayout({children, params: {locale}}:
   )
 }
 
-export function generateStaticParams() {
-  return site.locales.map((locale) => ({locale}))
-}
-
