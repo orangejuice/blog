@@ -9,7 +9,6 @@ const nextConfig = {
   },
   experimental: {
     reactCompiler: true,
-    staleTimes: {dynamic: 1}
   }
 }
 

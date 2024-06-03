@@ -63,3 +63,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
   - GitHub GraphQL API
   - PKCS#1 / PKCS#8 ? https://github.com/gr2m/universal-github-app-jwt?tab=readme-ov-file#about-private-key-formats
 - post page 3d background https://github.com/stone-skipper/ambient-reader
+- React / Next.js
+  - `use` https://react.dev/reference/react/use
+  - `cache`&`revalidate` https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config
+  - `revalidate` has to be in `layout.tsx | page.tsx | route.ts` and cached functions has to be imported in them

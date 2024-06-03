@@ -1,8 +1,7 @@
 import {allPosts, Post} from "contentlayer/generated"
 import {giscusConfig, LangOption, site, SiteLocale} from "@/site"
 import {Activity, Discussion, fetchDiscussions, fetchLatestActivities} from "@/lib/fetch-github"
-
-export const revalidate = 5
+import {unstable_cache as cache} from "next/cache"
 
 /**
  * The function to get the list of post
@@ -12,7 +11,7 @@ export const revalidate = 5
  * @param count how many posts needed
  * @param getDiscussion do we want to fetch discussion data for this post list
  */
-export const getPosts = async ({locale, filterLang, filterTag, count, getDiscussion = true}: Options) => {
+export const getPosts = cache(async ({locale, filterLang, filterTag, count, getDiscussion = true}: Options) => {
   filterLang ??= locale
 
   const slugLangPost: {[slug: string]: {[locale: string]: Post}} = {}
@@ -57,11 +56,11 @@ export const getPosts = async ({locale, filterLang, filterTag, count, getDiscuss
 
     return (post as unknown as PostWithDiscussion)
   })
-}
+})
 export type PostWithDiscussion = Post & {discussion: Discussion}
 export type GetPostsResponse = ReturnType<typeof getPosts>
 
-export const getLatestActivitiesPost = async ({locale, count}: {locale: SiteLocale, count: number}) => {
+export const getLatestActivitiesPost = cache(async ({locale, count}: {locale: SiteLocale, count: number}) => {
   const latestActivities = await fetchLatestActivities({
     repo: giscusConfig.repo,
     category: giscusConfig.category!,
@@ -80,7 +79,7 @@ export const getLatestActivitiesPost = async ({locale, count}: {locale: SiteLoca
     }
   })
   return postsWithActivity
-}
+})
 export type PostWithActivity = Post & {discussion: Activity}
 export type GetLatestActivitiesResponse = ReturnType<typeof getLatestActivitiesPost>
 

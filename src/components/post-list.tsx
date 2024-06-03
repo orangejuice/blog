@@ -70,7 +70,7 @@ function ActivityCard({post}: {post: PostWithActivity}) {
     </div>
     <span className="flex gap-2 line-clamp-1 text-sm">
       <span>Reacted:</span>
-      {{"+1": "👍", "-1": "👎", "LAUGH": "😀", "HOORAY": "🎉", "CONFUSED": "🤔", "LOVE": "❤️", "ROCKET": "🚀", "EYE": "👀"}[activity.content]}
+      {{"+1": "👍", "-1": "👎", "LAUGH": "😀", "HOORAY": "🎉", "CONFUSED": "🤔", "HEART": "❤️", "ROCKET": "🚀", "EYES": "👀"}[activity.content]}
     </span>
   </>)
 

@@ -43,7 +43,8 @@ export async function generateMetadata({params}: {params: {slug: string, locale:
 }
 
 export const generateStaticParams = async () => {
-  return allPosts.map((post) => ({slug: post.slug}))
+  return (site.locales.map(locale => allPosts.map((post) =>
+    ({slug: post.slug, locale: locale}))))
 }
 
 export default async function Page({params}: {params: {slug: string, locale: SiteLocale}}) {
