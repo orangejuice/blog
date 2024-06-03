@@ -54,6 +54,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
     - https://github.com/i18next/next-app-dir-i18next-example-ts
     - https://github.com/i18nexus/next-i18n-router
     - https://github.com/lifinance/jumper.exchange
+    - `i18next.getFixedT(lng, ns, keyPrefix)` https://www.i18next.com/overview/api#getfixedt
 - rehype plugin for mdx image compatibility https://sdorra.dev/posts/2022-12-11-contentlayer-next-image
 - fetch GitHub data 
   - use GitHub graphql https://github.com/octokit/graphql.js

@@ -1,4 +1,13 @@
 {
-  "post.publish": "Publish on {{date}}",
-  "post.update": "Updated {{date}}"
+  "nav": {
+    "home": "Home",
+    "posts": "All posts",
+    "guestbook": "Guestbook"
+  },
+  "post": {
+    "publish": "Publish on {{date}}",
+    "update": "Updated {{date}}",
+    "latest": "Latest",
+    "latest-sub": "intriguing trifles and introspections"
+  }
 }

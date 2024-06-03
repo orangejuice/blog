@@ -5,21 +5,23 @@ import {LangSelect, ViewMore} from "@/app/[locale]/page-client"
 import {Icons} from "@/components/icons"
 import React, {Suspense} from "react"
 import {LatestActivityList, PostMainList} from "@/components/post-list"
+import initTranslation from "@/i18n"
 
-export default function Home({params: {locale}}: {params: {locale: SiteLocale}}) {
+export default async function Home({params: {locale}}: {params: {locale: SiteLocale}}) {
   const postsOneLang = getPosts({locale, count: 4})
   const postsAllLang = getPosts({locale, count: 4, filterLang: "all-lang"})
   const latestActivities = getLatestActivitiesPost({locale, count: 4})
   const cssIndexCounter = useCssIndexCounter()
+  const {t} = await initTranslation(locale)
 
   return (<>
     <div className="grid md:grid-cols-[2fr,1fr] items-start gap-10 min-h-screen">
       <main className="flex flex-col gap-5">
         <div className="flex items-center justify-between">
           <section>
-            <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter()}>Latest</h1>
+            <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter()}>{t("post.latest")}</h1>
             <p className="text-stone-600 animate-delay-in" style={cssIndexCounter()}>
-              intriguing trifles and introspections
+              {t("post.latest-sub")}
             </p>
           </section>
           <LangSelect style={cssIndexCounter()}/>

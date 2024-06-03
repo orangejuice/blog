@@ -9,10 +9,13 @@ import Image from "next/image"
 import dayjs from "dayjs"
 import relativeTime from "dayjs/plugin/relativeTime"
 import {useLocalStorage} from "@/lib/use-local-storage"
+import {useTranslation} from "react-i18next"
 
 dayjs.extend(relativeTime)
 
 function PostCard({post}: {post: PostWithDiscussion}) {
+  const {t, i18n: {language: locale}} = useTranslation()
+
   return (<>
     <li>
       <Link href={`/${post.slug}`} className="group flex flex-col items-start no-underline relative p-4 rounded-xl -mx-4 bg-transparent transition-colors hover:bg-amber-100/80 dark:hover:bg-white/10 gap-1">
@@ -32,7 +35,7 @@ function PostCard({post}: {post: PostWithDiscussion}) {
           {post.excerpt}
         </p>
         <div className="flex w-full mt-2.5 text-xs justify-between font-medium text-neutral-800 dark:text-neutral-300">
-          <p>Posted on <time dateTime={post.date}>{formatDate(post.date)}</time></p>
+          <p>{t("post.publish", {date: formatDate(post.date, locale)})}</p>
           <div className="flex items-center gap-4 text-stone-600">
             <span className="flex items-center gap-1"><Icons.post.reaction/> {post.discussion.reactions.totalCount}</span>
             <span className="flex items-center gap-1"><Icons.post.comment/> {post.discussion.comments.totalCount}</span>

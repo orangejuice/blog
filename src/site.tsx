@@ -11,9 +11,9 @@ export type SiteLocale = typeof site.locales[number]
 export type LangOption = SiteLocale | "all-lang"
 
 export const menu = {
-  home: {name: "Home", path: "/"},
-  posts: {name: "All posts", path: "all"},
-  guestbook: {name: "Guestbook", path: "guestbook"}
+  home: "/",
+  posts: "all",
+  guestbook: "guestbook"
 }
 
 export const giscusConfig: GiscusProps & {darkTheme: GiscusProps["theme"]} = {
