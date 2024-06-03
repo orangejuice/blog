@@ -11,6 +11,7 @@ import initTranslation from "@/i18n"
 import {AppProgressBar as ProgressBar} from "next-nprogress-bar"
 import {SpeedInsights} from "@vercel/speed-insights/next"
 import {Analytics} from "@vercel/analytics/next"
+import Script from "next/script"
 
 
 export function Context({children, locale, resources}: {children: ReactNode; locale?: string; resources: Resource}) {
@@ -28,5 +29,13 @@ export function Context({children, locale, resources}: {children: ReactNode; loc
     </I18nextProvider>
     <SpeedInsights/>
     <Analytics/>
+    <Script strategy="lazyOnload" id="charity">
+      {`(function (c, l, a, r, i, t, y){
+        c[a] = c[a] || function () {(c[a].q = c[a].q || []).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "mmar157og7")`
+      }
+    </Script>
   </>)
 }
