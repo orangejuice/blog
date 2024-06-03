@@ -43,8 +43,7 @@ export async function generateMetadata({params}: {params: {slug: string, locale:
 }
 
 export const generateStaticParams = async () => {
-  return (site.locales.map(locale => allPosts.map((post) =>
-    ({slug: post.slug, locale: locale}))))
+  return (site.locales.map(locale => allPosts.map((post) => ({slug: post.slug, locale: locale}))))
 }
 
 export default async function Page({params}: {params: {slug: string, locale: SiteLocale}}) {
@@ -62,7 +61,7 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
       <article>
         <section className="flex flex-col gap-3 mb-8">
           <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter()}>{post.title}</h1>
-          <div className="flex items-center gap-1 text-slate-500 font-medium text-sm animate-delay-in" style={cssIndexCounter()}>
+          <div className="flex flex-wrap items-center gap-1 text-slate-500 font-medium text-sm animate-delay-in" style={cssIndexCounter()}>
             <time dateTime={post.date}>
               {t("post.publish", {date: formatDate(post.date, params.locale)})}
             </time>
@@ -81,7 +80,7 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
               </div>
             </>)}
             <Icons.symbol.dot className="stroke-[4px] opacity-70"/>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
               <Link href={"#comments"} className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-sm -mx-1",
                 "hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-400 dark:hover:bg-stone-700")}>
                 <Icons.post.reaction/> {post.discussion.reactions.totalCount}

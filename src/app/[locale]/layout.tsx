@@ -25,7 +25,7 @@ export default async function RootLayout({children, params: {locale}}:
     <html lang={locale} suppressHydrationWarning>
       <body className={cn("flex flex-col font-sans antialiased", fontSans.variable, fontMono.variable)}>
         <Context locale={locale} resources={resources}>
-          <div className="flex w-full flex-col max-w-5xl px-4 mx-auto xl:px-0 my-8">
+          <div className="flex w-full flex-col max-w-5xl px-6 mx-auto xl:px-0 my-8">
             <Header/>
             {children}
             <Footer/>
