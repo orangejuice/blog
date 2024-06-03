@@ -1,16 +1,18 @@
+"use client"
 import Link from "next/link"
 import {Icons} from "@/components/icons"
 import {Button} from "@/components/ui/button"
 import {cn, formatDate} from "@/lib/utils"
-import React, {ComponentPropsWithoutRef} from "react"
-import {PostWithActivity, PostWithDiscussion} from "@/lib/fetch"
+import React, {ComponentPropsWithoutRef, use} from "react"
+import type {GetLatestActivitiesResponse, GetPostsResponse, PostWithActivity, PostWithDiscussion} from "@/lib/fetch"
 import Image from "next/image"
 import dayjs from "dayjs"
 import relativeTime from "dayjs/plugin/relativeTime"
+import {useLocalStorage} from "@/lib/use-local-storage"
 
 dayjs.extend(relativeTime)
 
-export function PostCard({post}: {post: PostWithDiscussion}) {
+function PostCard({post}: {post: PostWithDiscussion}) {
   return (<>
     <li>
       <Link href={`/${post.slug}`} className="group flex flex-col items-start no-underline relative p-4 rounded-xl -mx-4 bg-transparent transition-colors hover:bg-amber-100/80 dark:hover:bg-white/10 gap-1">
@@ -41,8 +43,7 @@ export function PostCard({post}: {post: PostWithDiscussion}) {
   </>)
 }
 
-
-export function ActivityCard({post}: {post: PostWithActivity}) {
+function ActivityCard({post}: {post: PostWithActivity}) {
   const activities = [...post.discussion.comments.nodes, ...post.discussion.reactions.nodes]
   activities.sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt))
   const activity = activities[0]
@@ -87,7 +88,7 @@ export function ActivityCard({post}: {post: PostWithActivity}) {
   </>)
 }
 
-export function PostItemCompact({post}: {post: PostWithDiscussion}) {
+function PostItemCompact({post}: {post: PostWithDiscussion}) {
   return (<>
     <li className="py-2.5 group flex items-baseline flex-col md:flex-row gap-1 md:gap-9">
       <time className={cn("md:w-28 text-secondary text-sm shrink-0")}>{formatDate(post.date)}</time>
@@ -102,7 +103,8 @@ export function PostItemCompact({post}: {post: PostWithDiscussion}) {
   </>)
 }
 
-export function PostCardList({posts, ...props}: {posts: PostWithDiscussion[]} & ComponentPropsWithoutRef<"ul">) {
+export function PostCardList({posts: data, ...props}: {posts: GetPostsResponse} & ComponentPropsWithoutRef<"ul">) {
+  const posts = use(data)
   return (<>
     <ul className="flex flex-col gap-5 animate-delay-in" {...props}>
       {posts.map(post => <PostCard post={post} key={post.slug}/>)}
@@ -110,19 +112,34 @@ export function PostCardList({posts, ...props}: {posts: PostWithDiscussion[]} & 
   </>)
 }
 
-export function LatestActivityList({posts, ...props}: {posts: PostWithActivity[]} & ComponentPropsWithoutRef<"ul">) {
-  return (<>
-    <ul className="flex flex-col gap-2" {...props}>
-      {posts.map(post => <ActivityCard post={post} key={post.slug}/>)}
-    </ul>
-  </>)
-}
+export function PostCompactList({posts: data, ...props}: {posts: GetPostsResponse} & ComponentPropsWithoutRef<"ul">) {
+  const posts = use(data)
 
-export function PostCompactList({posts, ...props}: {posts: PostWithDiscussion[]} & ComponentPropsWithoutRef<"ul">) {
   return (<>
     <ul className="flex flex-col animate-delay-in" {...props}>
       {posts.length == 0 && <p>No posts found</p>}
       {posts.map((post, index) => <PostItemCompact post={post} key={index}/>)}
+    </ul>
+  </>)
+}
+
+export function PostMainList({postsOneLang, postsAllLang, ...props}:
+  ComponentPropsWithoutRef<"ul"> & {postsOneLang: GetPostsResponse, postsAllLang: GetPostsResponse}) {
+
+  const [lang] = useLocalStorage<"one" | "all">("latest-lang", "one")
+  const posts = lang == "all" ? postsAllLang : postsOneLang
+
+  return <PostCardList posts={posts} {...props} key={lang}></PostCardList>
+}
+
+export function LatestActivityList({posts: data, ...props}:
+  {posts: GetLatestActivitiesResponse} & ComponentPropsWithoutRef<"ul">) {
+
+  const posts = use(data)
+
+  return (<>
+    <ul className="flex flex-col gap-2" {...props}>
+      {posts.map(post => <ActivityCard post={post} key={post.slug}/>)}
     </ul>
   </>)
 }

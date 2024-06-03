@@ -5,10 +5,8 @@ import {cn} from "@/lib/utils"
 import {menu} from "@/site"
 import {Icons} from "@/components/icons"
 import React, {ComponentPropsWithoutRef} from "react"
-import {PostCardList} from "@/components/post-list"
 import {useTranslation} from "react-i18next"
 import {useMounted} from "@/lib/use-mounted"
-import {GetPostResponse} from "@/lib/fetch"
 
 export function LangSelect(props: ComponentPropsWithoutRef<"div">) {
   const [lang, setLang] = useLocalStorage<"one" | "all">("latest-lang", "one")
@@ -37,7 +35,6 @@ export function LangSelect(props: ComponentPropsWithoutRef<"div">) {
   </>)
 }
 
-
 export function ViewMore(props: ComponentPropsWithoutRef<"a">) {
   const {t, i18n: {language: locale}} = useTranslation("lang")
   const [lang] = useLocalStorage<"one" | "all">("latest-lang", "one")
@@ -53,16 +50,4 @@ export function ViewMore(props: ComponentPropsWithoutRef<"a">) {
       View more <Icons.link.chevron className="stroke-[.15rem]"/>
     </Link>
   </>)
-}
-
-export function PostList({postsOneLang, postsAllLang, ...props}:
-  ComponentPropsWithoutRef<"ul"> & {postsOneLang: GetPostResponse, postsAllLang: GetPostResponse}) {
-  const [lang] = useLocalStorage<"one" | "all">("latest-lang", "one")
-
-  const mounted = useMounted()
-  if (!mounted) return null
-
-  return lang == "all"
-    ? <PostCardList posts={postsAllLang} {...props} key={lang}></PostCardList>
-    : <PostCardList posts={postsOneLang} {...props} key={lang}></PostCardList>
 }

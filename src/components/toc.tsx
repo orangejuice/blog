@@ -30,7 +30,7 @@ export default function Toc() {
       <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">Table of contents</h5>
       <div className="hidden text-sm text-slate-600">Nothing found</div>
       <section className="toc py-2 pl-2 text-slate-700 text-sm leading-6">
-        <Icons.loading className="mx-auto animate-spin"/>
+        <Icons.loading/>
       </section>
     </div>
   )

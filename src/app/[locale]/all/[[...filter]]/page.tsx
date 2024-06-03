@@ -1,12 +1,13 @@
-import React from "react"
+import React, {Suspense} from "react"
 import {useCssIndexCounter} from "@/lib/utils"
 import {getLocales, getPosts, getTags} from "@/lib/fetch"
 import {SiteLocale} from "@/site"
 import {FilterOption, PostFilter} from "@/components/post-filter"
+import {Icons} from "@/components/icons"
 import {PostCompactList} from "@/components/post-list"
 
-export default async function AllPost({params: {locale, filter}}: {params: {locale: SiteLocale, filter: FilterOption}}) {
-  const posts = await getPosts({locale, filterLang: filter?.[0] ?? "all-lang", filterTag: filter?.[1] ? decodeURI(filter[1]) : filter?.[1]})
+export default function AllPost({params: {locale, filter}}: {params: {locale: SiteLocale, filter: FilterOption}}) {
+  const posts = getPosts({locale, filterLang: filter?.[0] ?? "all-lang", filterTag: filter?.[1] ? decodeURI(filter[1]) : filter?.[1]})
   const locales = getLocales()
   const tags = getTags({locale, filterLang: filter?.[0] ?? locale})
   const cssIndexCounter = useCssIndexCounter()
@@ -20,7 +21,9 @@ export default async function AllPost({params: {locale, filter}}: {params: {loca
             from 2019 - {new Date().getFullYear()}
           </p>
         </section>
-        <PostCompactList posts={posts} style={cssIndexCounter()}/>
+        <Suspense fallback={<Icons.loading/>}>
+          <PostCompactList posts={posts} style={cssIndexCounter()}/>
+        </Suspense>
       </div>
       <aside className="flex flex-col gap-6">
         <PostFilter locales={locales} tags={tags} filter={filter}/>

@@ -12,7 +12,7 @@ export const Icons = {
   emojis: {thumbUp: cns(ThumbsUp), thumbDown: cns(ThumbsDown), laugh: cns(Laugh), hooray: cns(PartyPopper), confused: cns(Meh), love: cns(Heart), rocket: cns(Rocket), eye: cns(Eye)},
   post: {reaction: cns(Smile), comment: cns(MessageCircleMore)},
   link: {arrow: cns(ArrowRight), chevron: cns(ChevronRight)},
-  loading: cns(Loader2),
+  loading: cns(Loader2, "mx-auto animate-spin"),
   nav: {profile: cns(User), lang: cns(Globe), menu: cns(Menu)},
   theme: {light: cns(Sun), dark: cns(Moon), system: cns(Monitor)}
 }
