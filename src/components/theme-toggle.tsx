@@ -5,10 +5,12 @@ import {Icons} from "@/components/icons"
 import {cn} from "@/lib/utils"
 import {Tooltip, TooltipContent, TooltipTrigger} from "@/components/ui/tooltip"
 import {useMounted} from "@/lib/hooks"
+import {useTranslation} from "react-i18next"
 
 export function ThemeToggle() {
   const mounted = useMounted()
   const {theme, resolvedTheme, setTheme} = useTheme()
+  const {t} = useTranslation()
 
   if (!mounted) return <Button variant="ghost" size="icon" className="h-4 w-4 px-2 py-1.5"/>
 
@@ -22,13 +24,15 @@ export function ThemeToggle() {
           {theme === "light" && <Icons.theme.light className="w-5 h-5 transition-all"/>}
           {theme === "system" && <div className="relative h-5 w-5">
             <Icons.theme.system className="absolute w-5 h-5 animate-delay-hide transition-all group-hover:animate-none"/>
-            {resolvedTheme === "dark" && <Icons.theme.dark className="absolute w-5 h-5 animate-delay-show opacity-0 transition-all group-hover:hidden"/>}
-            {resolvedTheme === "light" && <Icons.theme.light className="absolute w-5 h-5 animate-delay-show opacity-0 transition-all group-hover:hidden"/>}
+            {resolvedTheme === "dark" &&
+              <Icons.theme.dark className="absolute w-5 h-5 animate-delay-show opacity-0 transition-all group-hover:hidden"/>}
+            {resolvedTheme === "light" &&
+              <Icons.theme.light className="absolute w-5 h-5 animate-delay-show opacity-0 transition-all group-hover:hidden"/>}
           </div>}
           <span className="sr-only">Toggle theme</span>
         </Button>
       </TooltipTrigger>
-      <TooltipContent className="capitalize">{theme}</TooltipContent>
+      <TooltipContent className="capitalize">{t(`theme.${theme}`)}</TooltipContent>
     </Tooltip>
   )
 }

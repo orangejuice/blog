@@ -5,7 +5,7 @@ import {allPosts} from "contentlayer/generated"
 import {site, SiteLocale} from "@/site"
 import {getPosts} from "@/lib/fetch"
 import Toc from "@/components/toc"
-import {cn, formatDate, useCssIndexCounter} from "@/lib/utils"
+import {cn, format, useCssIndexCounter} from "@/lib/utils"
 import {Icons} from "@/components/icons"
 import initTranslation from "@/i18n"
 import Link from "next/link"
@@ -62,11 +62,11 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
           <h1 className="text-4xl font-extrabold animate-delay-in" style={cssIndexCounter()}>{post.title}</h1>
           <div className="flex flex-wrap items-center gap-1 text-stone-500 dark:text-stone-400 font-medium text-sm animate-delay-in" style={cssIndexCounter()}>
             <time dateTime={post.date}>
-              {t("post.publish", {date: formatDate(post.date, params.locale)})}
+              {t("post.publish", {date: format(post.date, params.locale)})}
             </time>
             {isPostUpdated && (<>
               <Icons.symbol.dot className="stroke-[4px] opacity-70"/>
-              {t("post.update", {date: formatDate(post.updated, params.locale)})}
+              {t("post.update", {date: format(post.updated, params.locale)})}
             </>)}
             {post.tags?.length > 0 && (<>
               <Icons.symbol.dot className="stroke-[4px] opacity-70"/>

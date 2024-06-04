@@ -14,11 +14,11 @@ export function PostFilter({locales, tags, filter: appliedFilter}: {locales: Get
   const cssIndexCounter = useCssIndexCounter()
   const {t, i18n: {language: locale}} = useTranslation("lang")
   const [, setFilter] = useLocalStorage<FilterOption | "">("post-filter", appliedFilter ?? "")
-  useEffect(() => {appliedFilter && setFilter(appliedFilter) }, [appliedFilter])
+  useEffect(() => {appliedFilter && setFilter(appliedFilter) }, [appliedFilter, setFilter])
 
   return (<>
     <section className="animate-delay-in" style={cssIndexCounter()}>
-      <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">Languages</h5>
+      <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">{t("post.filter.languages")}</h5>
       <div className="flex flex-wrap text-stone-600">
         {Object.entries(locales).map(([lang, num], index) => (
           <Link key={index} href={`/all/${lang}`}
@@ -30,7 +30,7 @@ export function PostFilter({locales, tags, filter: appliedFilter}: {locales: Get
       </div>
     </section>
     <section className="animate-delay-in" style={cssIndexCounter()}>
-      <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">Tags</h5>
+      <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">{t("post.filter.tags")}</h5>
       <div className="flex flex-wrap text-stone-600">
         {Object.entries(tags).map(([tag, num], index) => (
           <Link key={index} href={`/all/${appliedFilter?.[0] ?? locale}/${tag}`}

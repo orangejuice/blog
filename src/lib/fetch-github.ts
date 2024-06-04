@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken"
 import {graphql} from "@octokit/graphql"
 import {giscusConfig} from "@/site"
 import {createAppAuth} from "@octokit/auth-app"
-import {format} from "@formkit/tempo"
+import {format} from "@/lib/utils"
 
 export const getInstallationId = async (repo: string): Promise<string> => {
   const now = Math.floor(Date.now() / 1000)
@@ -40,7 +40,7 @@ interface DiscussionNode {
 }
 
 export const fetchDiscussions = async ({repo, category, titles}: {repo: string, category: string, titles: string[]}): Promise<{[slug: string]: DiscussionNode}> => {
-  console.log(format(new Date(), "YYYY-MM-DD HH:mm:ss"), "[github]fetchDiscussions")
+  console.log(format(new Date()), "[github]fetchDiscussions")
   const buildQueryWithAliases = () =>
     titles.map((title, index) => {
       const query = `repo:${repo} category:${category} in:title ${title}`
@@ -110,7 +110,7 @@ interface ActivityNode {
 }
 
 export const fetchLatestActivities = async ({repo, category, count}: {repo: string, category: string, count: number}) => {
-  console.log(format(new Date(), "YYYY-MM-DD HH:mm:ss"), "[github]fetchLatestActivities")
+  console.log(format(new Date()), "[github]fetchLatestActivities")
   const query = `
     query {
       discussion: search(type: DISCUSSION, first: ${count}, query: "repo:${repo} category:${category}") {

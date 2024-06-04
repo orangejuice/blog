@@ -52,7 +52,6 @@ export function MobileNav() {
       <PopoverTrigger asChild>
         <Button variant="ghost" className="block w-fit h-fit p-0 hover:bg-transparent md:hidden">
           <Icons.nav.menu className="h-7 w-7"/>
-          <span className="sr-only">Toggle Menu</span>
         </Button>
       </PopoverTrigger>
       <PopoverContent align="end" className="w-fit shadow-xl">

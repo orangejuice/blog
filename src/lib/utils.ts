@@ -2,7 +2,13 @@ import {type ClassValue, clsx} from "clsx"
 import {twMerge} from "tailwind-merge"
 import {slug} from "github-slugger"
 import React from "react"
-import {format} from "@formkit/tempo"
+import dayjs from "dayjs"
+import localisedFormat from "dayjs/plugin/localizedFormat"
+import "dayjs/locale/zh"
+import relativeTime from "dayjs/plugin/relativeTime"
+
+dayjs.extend(relativeTime)
+dayjs.extend(localisedFormat)
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -12,8 +18,10 @@ export function randomInRange(min: number, max: number) {
   return Math.random() * (max - min) + min
 }
 
-export function formatDate(date: string, locale?: string) {
-  return format(date, {date: "medium"}, locale)
+export function format(date: string | Date, locale = "en", options?: {fromNow: boolean, full: boolean} | undefined) {
+  if (options?.full) return dayjs().locale(locale).format("YYYY-MM-DD HH:mm:ss")
+  if (options?.fromNow) return dayjs().locale(locale).to(dayjs(date))
+  return dayjs(date).locale(locale).format("LL")
 }
 
 export function useCssIndexCounter() {

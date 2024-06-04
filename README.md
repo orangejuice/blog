@@ -64,3 +64,4 @@
   - `revalidate` I failed to control the behavior of `export const revalidate` :(, use on-demand data revalidation instead.
     implemented `api/revalidate` to work with `orangejuice/on-new-giscus-comment`
 - TailwindCSS spinner animation lib https://play.tailwindcss.com/OPAsySKNCd
+- day.js for date formating https://day.js.org/docs/en/display/format

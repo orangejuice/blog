@@ -2,16 +2,13 @@
 import Link from "next/link"
 import {Icons} from "@/components/icons"
 import {Button} from "@/components/ui/button"
-import {cn, formatDate} from "@/lib/utils"
+import {cn, format} from "@/lib/utils"
 import React, {ComponentPropsWithoutRef, use} from "react"
 import type {GetLatestActivitiesResponse, GetPostsResponse, PostWithActivity, PostWithDiscussion} from "@/lib/fetch"
 import Image from "next/image"
-import dayjs from "dayjs"
-import relativeTime from "dayjs/plugin/relativeTime"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {useTranslation} from "react-i18next"
 
-dayjs.extend(relativeTime)
 
 function PostCard({post}: {post: PostWithDiscussion}) {
   const {t, i18n: {language: locale}} = useTranslation()
@@ -35,7 +32,7 @@ function PostCard({post}: {post: PostWithDiscussion}) {
           {post.excerpt}
         </p>
         <div className="flex w-full mt-2.5 text-xs justify-between font-medium text-neutral-800 dark:text-neutral-300">
-          <p>{t("post.publish", {date: formatDate(post.date, locale)})}</p>
+          <p>{t("post.publish", {date: format(post.date, locale)})}</p>
           <div className="flex items-center gap-4 text-stone-600">
             <span className="flex items-center gap-1"><Icons.post.reaction/> {post.discussion.reactions.totalCount}</span>
             <span className="flex items-center gap-1"><Icons.post.comment/> {post.discussion.comments.totalCount}</span>
@@ -50,17 +47,18 @@ function ActivityCard({post}: {post: PostWithActivity}) {
   const activities = [...post.discussion.comments.nodes, ...post.discussion.reactions.nodes]
   activities.sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt))
   const activity = activities[0]
+  const {t, i18n: {language: locale}} = useTranslation()
 
   const update = "author" in activity ? (<>
     <div className="flex items-center gap-2">
       <Image src={activity.author.avatarUrl} alt="" width={20} height={20} className="h-8 w-8 rounded-full"/>
       <div className="flex flex-col items-start text-stone-600">
         <span className="font-medium text-sm">{activity.author.login}</span>
-        <time className="text-xs line-clamp-1">{dayjs().to(dayjs(activity.createdAt))}</time>
+        <time className="text-xs line-clamp-1">{format(activity.createdAt, locale, true)}</time>
       </div>
     </div>
     <span className="flex gap-1 text-sm">
-      <span>Replied:</span>
+      <span>{t("post.replied")}</span>
       <span className="font-medium line-clamp-1">{activity.bodyText}</span>
     </span>
   </>) : (<>
@@ -68,11 +66,11 @@ function ActivityCard({post}: {post: PostWithActivity}) {
       <Image src={activity.user.avatarUrl} alt="" width={20} height={20} className="h-8 w-8 rounded-full"/>
       <div className="flex flex-col items-start text-stone-600">
         <span className="font-medium text-sm">{activity.user.login}</span>
-        <time className="text-xs line-clamp-1">{dayjs().to(dayjs(activity.createdAt))}</time>
+        <time className="text-xs line-clamp-1">{format(activity.createdAt, locale, true)}</time>
       </div>
     </div>
     <span className="flex gap-2 text-sm">
-      <span>Reacted:</span>
+      <span>{t("post.reacted")}</span>
       <span className="line-clamp-1">{{"+1": "👍", "-1": "👎", "LAUGH": "😀", "HOORAY": "🎉", "CONFUSED": "🤔", "HEART": "❤️", "ROCKET": "🚀", "EYES": "👀"}[activity.content]}</span>
     </span>
   </>)
@@ -97,7 +95,7 @@ function PostItemCompact({post}: {post: PostWithDiscussion}) {
   return (<>
     <li className="py-2.5 group flex items-baseline flex-col md:flex-row gap-1 md:gap-9">
       <div className="flex w-full md:w-fit items-center justify-between">
-        <time className={cn("md:w-28 text-secondary text-sm shrink-0")}>{formatDate(post.date, locale)}</time>
+        <time className={cn("md:w-28 text-secondary text-sm shrink-0")}>{format(post.date, locale)}</time>
         <div className="gap-4 text-xs w-fit text-stone-600 flex md:hidden">
           <span className="flex items-center gap-1"><Icons.post.reaction/> {post.discussion.reactions.totalCount}</span>
           <span className="flex items-center gap-1"><Icons.post.comment/> {post.discussion.comments.totalCount}</span>
@@ -125,10 +123,11 @@ export function PostCardList({posts: data, ...props}: {posts: GetPostsResponse} 
 
 export function PostCompactList({posts: data, ...props}: {posts: GetPostsResponse} & ComponentPropsWithoutRef<"ul">) {
   const posts = use(data)
+  const {t, i18n: {language: locale}} = useTranslation()
 
   return (<>
     <ul className="flex flex-col animate-delay-in" {...props}>
-      {posts.length == 0 && <p>No posts found</p>}
+      {posts.length == 0 && <p>{t("post.no-post")}</p>}
       {posts.map((post, index) => <PostItemCompact post={post} key={index}/>)}
     </ul>
   </>)

@@ -4,10 +4,23 @@
     "posts": "所有文章",
     "guestbook": "留言板"
   },
+  "theme": {
+    "light": "明亮模式",
+    "dark": "黑暗模式",
+    "system": "跟随系统"
+  },
   "post": {
+    "all": "所有文章",
+    "all-sub": "从2019到{{year}}",
     "publish": "{{date}}发布",
     "update": "{{date}}更新",
     "latest": "最近更新",
-    "latest-sub": "耐人寻味的小事和一些反思"
+    "latest-sub": "耐人寻味的小事和一些反思",
+    "replied": "回复了",
+    "reacted": "回应了",
+    "no-post": "这里还没有文章。",
+    "view-more": "查看更多",
+    "filter.languages": "语言",
+    "filter.tags": "标签"
   }
 }

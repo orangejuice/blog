@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@emotion/is-prop-valid": "^1.2.2",
-    "@formkit/tempo": "^0.1.1",
     "@giscus/react": "^3.0.0",
     "@octokit/auth-app": "^7.1.0",
     "@octokit/graphql": "^8.1.1",

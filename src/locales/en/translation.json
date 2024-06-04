@@ -4,10 +4,23 @@
     "posts": "All posts",
     "guestbook": "Guestbook"
   },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "Follow system"
+  },
   "post": {
+    "all": "All posts",
+    "all-sub": "from 2019 - {{year}}",
     "publish": "Publish on {{date}}",
     "update": "Updated {{date}}",
     "latest": "Latest",
-    "latest-sub": "intriguing trifles and introspections"
+    "latest-sub": "intriguing trifles and introspections",
+    "replied": "Replied: ",
+    "reacted": "Reacted: ",
+    "no-post": "No posts yet.",
+    "view-more": "View more",
+    "filter.languages": "Languages",
+    "filter.tags": "Tags"
   }
 }
