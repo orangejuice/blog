@@ -54,7 +54,7 @@ function ActivityCard({post}: {post: PostWithActivity}) {
       <Image src={activity.author.avatarUrl} alt="" width={20} height={20} className="h-8 w-8 rounded-full"/>
       <div className="flex flex-col items-start text-stone-600">
         <span className="font-medium text-sm">{activity.author.login}</span>
-        <time className="text-xs line-clamp-1">{format(activity.createdAt, locale, true)}</time>
+        <time className="text-xs line-clamp-1">{format(activity.createdAt, locale, {fromNow: true})}</time>
       </div>
     </div>
     <span className="flex gap-1 text-sm">
@@ -66,7 +66,7 @@ function ActivityCard({post}: {post: PostWithActivity}) {
       <Image src={activity.user.avatarUrl} alt="" width={20} height={20} className="h-8 w-8 rounded-full"/>
       <div className="flex flex-col items-start text-stone-600">
         <span className="font-medium text-sm">{activity.user.login}</span>
-        <time className="text-xs line-clamp-1">{format(activity.createdAt, locale, true)}</time>
+        <time className="text-xs line-clamp-1">{format(activity.createdAt, locale, {fromNow: true})}</time>
       </div>
     </div>
     <span className="flex gap-2 text-sm">
