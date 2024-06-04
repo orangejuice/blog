@@ -38,7 +38,11 @@ async function processImage(node: ImageNode, filePath: string, publicDir: string
   try {
     const originalSrc = node.properties.src
     const fileDir = path.dirname(filePath)
-    const originalPath = path.resolve(fileDir, originalSrc)
+
+    // Check if the source is an online image
+    const isOnlineImage = originalSrc.startsWith("http://") || originalSrc.startsWith("https://")
+    let originalPath = isOnlineImage ? await downloadImage(originalSrc, fileDir) : path.resolve(fileDir, originalSrc)
+
     const fileExt = path.extname(originalPath)
     const fileNameHash = generateFileHash(originalPath)
     const newFileName = `${fileNameHash}${fileExt}`
@@ -84,6 +88,26 @@ async function processImage(node: ImageNode, filePath: string, publicDir: string
   } catch (error) {
     console.error("Error processing image:", error)
   }
+}
+
+async function downloadImage(url: string, destDir: string): Promise<string> {
+  const urlPath = new URL(url).pathname
+  const filename = path.basename(urlPath)
+  const destPath = path.join(destDir, filename)
+
+  // Check if the file already exists
+  if (fs.existsSync(destPath)) {
+    return destPath
+  }
+
+  const response = await fetch(url).then(((response) => {
+    if (!response.ok) {
+      throw new Error(`HTTP error, status = ${response.status}`)
+    }
+    return response.arrayBuffer()
+  }))
+  fs.writeFileSync(destPath, Buffer.from(response))
+  return destPath
 }
 
 function generateFileHash(filePath: string) {
