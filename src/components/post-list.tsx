@@ -92,12 +92,20 @@ function ActivityCard({post}: {post: PostWithActivity}) {
 }
 
 function PostItemCompact({post}: {post: PostWithDiscussion}) {
+  const {t, i18n: {language: locale}} = useTranslation()
+
   return (<>
     <li className="py-2.5 group flex items-baseline flex-col md:flex-row gap-1 md:gap-9">
-      <time className={cn("md:w-28 text-secondary text-sm shrink-0")}>{formatDate(post.date)}</time>
+      <div className="flex w-full md:w-fit items-center justify-between">
+        <time className={cn("md:w-28 text-secondary text-sm shrink-0")}>{formatDate(post.date, locale)}</time>
+        <div className="gap-4 text-xs w-fit text-stone-600 flex md:hidden">
+          <span className="flex items-center gap-1"><Icons.post.reaction/> {post.discussion.reactions.totalCount}</span>
+          <span className="flex items-center gap-1"><Icons.post.comment/> {post.discussion.comments.totalCount}</span>
+        </div>
+      </div>
       <div className="flex w-full justify-between gap-4">
         <Link href={`/${post.slug}`} className="font-medium line-clamp-1 underline-fade">{post.title}</Link>
-        <div className="flex gap-4 text-xs text-stone-600">
+        <div className="gap-4 text-xs text-stone-600 hidden md:flex">
           <span className="flex items-center gap-1"><Icons.post.reaction/> {post.discussion.reactions.totalCount}</span>
           <span className="flex items-center gap-1"><Icons.post.comment/> {post.discussion.comments.totalCount}</span>
         </div>

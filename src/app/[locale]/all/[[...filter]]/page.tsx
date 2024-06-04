@@ -25,7 +25,7 @@ export default function AllPost({params: {locale, filter}}: {params: {locale: Si
           <PostCompactList posts={posts} style={cssIndexCounter()}/>
         </Suspense>
       </div>
-      <aside className="flex flex-col gap-6">
+      <aside className="flex flex-col gap-6 row-start-1 md:col-start-2">
         <PostFilter locales={locales} tags={tags} filter={filter}/>
       </aside>
     </div>

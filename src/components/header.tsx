@@ -58,11 +58,11 @@ export function MobileNav() {
       <PopoverContent align="end" className="w-fit shadow-xl">
         <div className="flex flex-col gap-6 p-2">
           {Object.entries(menu).map(([key, path]) => (
-            <Link href={path} onClick={() => setOpen(false)} key={key} className="text-2xl">
+            <Link href={path} onClick={() => setOpen(false)} key={key} className="font-medium">
               {t(key)}
             </Link>
           ))}
-          <span className="-mx-1 -my-2 h-px bg-stone-200 dark:bg-stone-600"></span>
+          <span className="-my-2 h-px bg-stone-200 dark:bg-stone-600"></span>
           <LocaleSwitcher className="-mx-3"/>
         </div>
       </PopoverContent>
