@@ -10,10 +10,9 @@ import {Icons} from "@/components/icons"
 import initTranslation from "@/i18n"
 import Link from "next/link"
 import {MDX} from "@/components/mdx"
-import {Comments} from "@/components/comments"
 import {PostCanvas} from "@/components/post-canvas"
 import React from "react"
-import {Interactions} from "@/app/[locale]/[slug]/page-client"
+import {Comments, Interactions} from "@/app/[locale]/[slug]/page-client"
 
 export async function generateMetadata({params}: {params: {slug: string, locale: string}}): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug)
