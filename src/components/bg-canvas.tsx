@@ -7,8 +7,8 @@ import {a} from "@react-spring/three"
 import {motion} from "framer-motion"
 import {Group, Mesh, Vector3} from "three"
 import {useTheme} from "next-themes"
-import {useMounted} from "@/lib/hooks"
-import {randomInRange} from "@/lib/utils"
+import {useDeviceType, useMounted} from "@/lib/hooks"
+import {cn, randomInRange} from "@/lib/utils"
 
 const easeInOutCubic = (t: number) => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1
 
@@ -79,6 +79,7 @@ function AmbientRead() {
     spring: 0,
     config: {mass: 5, tension: 400, friction: 200, precision: 0.0001}
   })
+  const {isMobile} = useDeviceType()
 
   const rotation_x = spring.to([0, 1], [0, Math.PI])
   const rotation_y = spring.to([0, 1], [Math.PI * 0.1, Math.PI * 0.14])
@@ -90,7 +91,9 @@ function AmbientRead() {
   }, [threeLoaded])
 
   return (<>
-    <motion.div animate={{opacity: threeLoaded ? 1 : 0}} className="w-[1200px] h-[700px] fixed top-0 right-0 pointer-events-none">
+    <motion.div animate={{opacity: threeLoaded ? 1 : 0}} className={cn(
+      "w-[1200px] h-[700px] fixed top-0 right-0 pointer-events-none",
+      isMobile && "w-[700px] h-[500px]")}>
       <Canvas shadows camera={{fov: 45}} style={{pointerEvents: "none"}} onCreated={() => {setThreeLoaded(true)}}>
         <CameraControls ref={cameraControlRef} makeDefault={true}/>
         <SoftShadows size={25} focus={0.53} samples={10}/>
@@ -118,7 +121,7 @@ function AmbientRead() {
   </>)
 }
 
-export function ThreeCanvas() {
+export function BgCanvas() {
   const {resolvedTheme} = useTheme()
   const mounted = useMounted()
   if (!mounted) return null
