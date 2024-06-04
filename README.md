@@ -8,15 +8,15 @@
 
 ## ✨ Features
 
-- Next.js, React, TailwindCSS, Mdx, shadcn/ui, framer motion
+- Next.js, React, TailwindCSS, Mdx, shadcn/ui, framer motion, contentlayer
 - Responsive UI covering PC and mobile devices
 - Modern tech stack and minimum design language
 - Light/Dark Mode
-- Internationalisation (i18n) with i18next
-- Immersive reading background provided by React Three Fiber (Three.js)
-- Reference to local/online image files fulfilled by a handcrafted rehype plugin
-- Graphql call fetching GitHub discussion(the place our interaction data lies in) data 
-- Tags filtering
+- fully Internationalisation(i18n) with i18next
+- Immersive reading background powered by React Three Fiber(Three.js)
+- Support local/online image files fulfilled by a handcrafted rehype plugin
+- Graphql call fetching GitHub discussion data(the place interaction data lies in) 
+- Powerful Languages/Tags filtering
 - Comment/Reaction system based on Giscus (work with [On New Giscus Comment](https://github.com/orangejuice/on-new-giscus-comment))
 - more to come
 
