@@ -118,7 +118,7 @@ function AmbientRead() {
   </>)
 }
 
-export function PostCanvas() {
+export function ThreeCanvas() {
   const {resolvedTheme} = useTheme()
   const mounted = useMounted()
   if (!mounted) return null

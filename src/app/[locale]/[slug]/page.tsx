@@ -10,7 +10,6 @@ import {Icons} from "@/components/icons"
 import initTranslation from "@/i18n"
 import Link from "next/link"
 import {MDX} from "@/components/mdx"
-import {PostCanvas} from "@/components/post-canvas"
 import React from "react"
 import {Comments, Interactions} from "@/app/[locale]/[slug]/page-client"
 
@@ -101,6 +100,5 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
         {/*</div>*/}
       </aside>
     </div>
-    <PostCanvas/>
   </>
 }
