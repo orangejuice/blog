@@ -60,7 +60,7 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
     <div className="grid md:grid-cols-[minmax(0,2fr),1fr] items-start gap-16 min-h-screen">
       <article>
         <section className="flex flex-col gap-3 mb-8">
-          <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter()}>{post.title}</h1>
+          <h1 className="text-4xl font-extrabold animate-delay-in" style={cssIndexCounter()}>{post.title}</h1>
           <div className="flex flex-wrap items-center gap-1 text-stone-500 dark:text-stone-400 font-medium text-sm animate-delay-in" style={cssIndexCounter()}>
             <time dateTime={post.date}>
               {t("post.publish", {date: formatDate(post.date, params.locale)})}

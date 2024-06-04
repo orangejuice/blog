@@ -1,7 +1,7 @@
 import * as React from "react"
 import {ComponentProps, ComponentType} from "react"
 import {cn} from "@/lib/utils"
-import {ArrowRight, ChevronRight, Dot, Filter, Globe, Hash, Loader2, LogIn, LogOut, Menu, MessageCircleMore, Monitor, Moon, Pickaxe, Slash, Smile, Sun, User} from "lucide-react"
+import {ArrowRight, ChevronRight, Dot, Filter, Globe, Hash, Loader2, LogIn, LogOut, Menu, MessageCircleMore, Monitor, Moon, Pickaxe, Slash, Smile, Sun, Undo2, User} from "lucide-react"
 import Image, {ImageProps} from "next/image"
 
 export const Icons = {
@@ -9,7 +9,7 @@ export const Icons = {
   account: {signIn: cns(LogIn), signOut: cns(LogOut)},
   symbol: {hash: cns(Hash), slash: cns(Slash), dot: cns(Dot), building: cns(Pickaxe)},
   filter: cns(Filter),
-  post: {reaction: cns(Smile), comment: cns(MessageCircleMore)},
+  post: {reaction: cns(Smile), comment: cns(MessageCircleMore), goBack: cns(Undo2)},
   link: {arrow: cns(ArrowRight), chevron: cns(ChevronRight)},
   loading: cns(Loader2, "w-5 h-5 mx-auto animate-spin"),
   nav: {profile: cns(User), lang: cns(Globe), menu: cns(Menu)},

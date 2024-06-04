@@ -23,3 +23,19 @@
   vertical-align: middle;
   color: #424242;
 }
+
+.prose sup a[href$=b] {
+  @apply bg-blue-200 dark:bg-blue-800 px-1 py-0.5 rounded-md no-underline mx-1
+}
+
+.prose sup a[href$=g] {
+  @apply bg-stone-200 dark:bg-stone-800 px-1 py-0.5 rounded-md no-underline
+}
+
+.prose .footnotes h2 {
+  @apply leading-tight m-0 -mt-10
+}
+
+.prose .footnotes {
+  @apply text-xs
+}

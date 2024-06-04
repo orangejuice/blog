@@ -14,7 +14,14 @@ const config: Config = {
         mono: ["var(--font-mono)", ...defaults.fontFamily.mono]
       },
       typography: {
-        DEFAULT: {css: {"blockquote p:first-of-type::before": false, "blockquote p:first-of-type::after": false}}
+        DEFAULT: {
+          css: {
+            "blockquote p:first-of-type::before": false,
+            "blockquote p:first-of-type::after": false,
+            "blockquote p": {"margin": 0},
+            "ol li p": {"margin": 0},
+          }
+        }
       },
       keyframes: {
         hide: {to: {opacity: "0"}},
