@@ -6,6 +6,7 @@ import {useTheme} from "next-themes"
 import {useMounted} from "@/lib/hooks"
 import Link from "next/link"
 import {Icons} from "@/components/icons"
+import {useTranslation} from "react-i18next"
 
 export function MDX({code, ...props}: ComponentPropsWithoutRef<"div"> & {code: string}) {
   const MDXContent = useMDXComponent(code)
@@ -22,6 +23,7 @@ export function MDX({code, ...props}: ComponentPropsWithoutRef<"div"> & {code: s
       <MDXContent components={{
         // @ts-ignore
         img: Image,
+        h2: H2,
         // @ts-ignore
         a: MdxLink
       }}/>
@@ -30,10 +32,22 @@ export function MDX({code, ...props}: ComponentPropsWithoutRef<"div"> & {code: s
 }
 
 function MdxLink({className, ...props}: ComponentPropsWithoutRef<"a"> & {href: string}) {
-  if (props.children == "↩") return (<>
-    <Link {...props} className={className}>
-      <Icons.post.goBack className="inline w-3 h-3 mb-0.5"/></Link>
-  </>)
-
+  if (props.hasOwnProperty("data-footnote-backref")) {
+    return (<>
+      <Link {...props} className={className}>
+        <Icons.post.goBack className="inline w-3 h-3 mb-0.5"/>
+      </Link>
+    </>)
+  }
   return <Link {...props}/>
+}
+
+function H2({className, ...props}: ComponentPropsWithoutRef<"h2">) {
+  const {t} = useTranslation()
+
+  if (props.id == "footnote-label" && Array.isArray(props.children) && props.children[1] == "Footnotes") {
+    props.children = [props.children[0], t("post.footnotes")]
+  }
+
+  return <h2 {...props} className={className}>{props.children}</h2>
 }

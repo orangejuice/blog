@@ -21,6 +21,7 @@
     "no-post": "这里还没有文章。",
     "view-more": "查看更多",
     "filter.languages": "语言",
-    "filter.tags": "标签"
+    "filter.tags": "标签",
+    "footnotes": "脚注"
   }
 }
