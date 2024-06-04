@@ -1,19 +1,22 @@
 <p align="center">
   <a href="https://orangejuice.cc/">
-    <img alt="Orangejuice" src="https://orangejuice.cc/favicon.png" />
+    <img alt="Orangejuice" width="200px" src="https://orangejuice.cc/logo.svg" />
   </a>
 </p>
-<h1 align="center">
-  Orangejuice Blog
-</h1>
+
+![ts](https://badgen.net/badge/-/TypeScript/blue?icon=typescript&label)
 
 ## ✨ Features
 
-- Next.js, React, TailwindCSS, Mdx
-- Fully customizable (powered by Gatsby/Theme UI/)
+- Next.js, React, TailwindCSS, Mdx, shadcn/ui, framer motion
+- Responsive UI covering PC and mobile devices
+- Modern tech stack and minimum design language
 - Light/Dark Mode
 - Internationalisation (i18n) with i18next
-- Tags
+- Immersive reading background provided by React Three Fiber (Three.js)
+- Reference to local/online image files fulfilled by a handcrafted rehype plugin
+- Graphql call fetching GitHub discussion(the place our interaction data lies in) data 
+- Tags filtering
 - Comment/Reaction system based on Giscus (work with [On New Giscus Comment](https://github.com/orangejuice/on-new-giscus-comment))
 - more to come
 
@@ -26,7 +29,7 @@
 - Feb 14, 2020: remove theme files and replaced with submodule to facilitate better version control
 - Nov 28, 2018: Go online based on Hexo / Git pages! [Post](https://orangejuice.cc/2019-03-04-build-a-hexo-blog)
 
-## Credits
+## ❤️ Credits
 
 - scaffold https://github.com/timlrx/tailwind-nextjs-starter-blog
 - TOC https://webtech-note.com/posts/tocbot-contentlayer
