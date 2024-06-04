@@ -22,6 +22,8 @@
     "view-more": "View more",
     "filter.languages": "Languages",
     "filter.tags": "Tags",
-    "footnotes": "Footnotes"
+    "footnotes": "Footnotes",
+    "toc": "Table of contents",
+    "toc-empty": "Nothing found"
   }
 }

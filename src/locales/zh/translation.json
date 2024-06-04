@@ -22,6 +22,8 @@
     "view-more": "查看更多",
     "filter.languages": "语言",
     "filter.tags": "标签",
-    "footnotes": "脚注"
+    "footnotes": "脚注",
+    "toc": "目录",
+    "toc-empty": "没有找到"
   }
 }
