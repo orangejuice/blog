@@ -6,6 +6,8 @@ tags: [AI]
 
 > Reposted from [Wait but why](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-2.html) by Tim Urban, January 27, 2015
 
+(This is Part 2, read [Part 1 of this post](2024-06-04-the-ai-revolution-the-road-to-superintelligence))
+
 _We have what may be an extremely difficult problem with an unknown time to solve it, on which quite possibly the entire future of humanity depends. —_ Nick Bostrom
 
 Welcome to Part 2 of the “Wait how is this possibly what I’m reading I don’t get why everyone isn’t talking about this” series.
