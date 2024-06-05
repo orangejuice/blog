@@ -49,6 +49,7 @@ function ActivityCard({post}: {post: PostWithActivity}) {
   const activity = activities[0]
   const {t, i18n: {language: locale}} = useTranslation()
 
+  console.log(activity)
   const update = "author" in activity ? (<>
     <div className="flex items-center gap-2">
       <Image src={activity.author.avatarUrl} alt="" width={20} height={20} className="h-8 w-8 rounded-full"/>
@@ -71,7 +72,7 @@ function ActivityCard({post}: {post: PostWithActivity}) {
     </div>
     <span className="flex gap-2 text-sm">
       <span>{t("post.reacted")}</span>
-      <span className="line-clamp-1">{{"+1": "👍", "-1": "👎", "LAUGH": "😀", "HOORAY": "🎉", "CONFUSED": "🤔", "HEART": "❤️", "ROCKET": "🚀", "EYES": "👀"}[activity.content]}</span>
+      <span className="line-clamp-1">{{"THUMBS_UP": "👍", "THUMBS_DOWN": "👎", "LAUGH": "😀", "HOORAY": "🎉", "CONFUSED": "🤔", "HEART": "❤️", "ROCKET": "🚀", "EYES": "👀"}[activity.content]}</span>
     </span>
   </>)
 
