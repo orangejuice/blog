@@ -49,7 +49,6 @@ function ActivityCard({post}: {post: PostWithActivity}) {
   const activity = activities[0]
   const {t, i18n: {language: locale}} = useTranslation()
 
-  console.log(activity)
   const update = "author" in activity ? (<>
     <div className="flex items-center gap-2">
       <Image src={activity.author.avatarUrl} alt="" width={20} height={20} className="h-8 w-8 rounded-full"/>
