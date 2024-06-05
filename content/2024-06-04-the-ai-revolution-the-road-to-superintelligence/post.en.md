@@ -146,8 +146,6 @@ Tied so far. But if you pick up the black and reveal the whole image…
 
 ![article-2053686-0E8BC15900000578-845_634x330](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/article-2053686-0E8BC15900000578-845_634x330.jpg)
 
-Credit: Matthew Lloyd
-
 And everything we just mentioned is still only taking in stagnant information and processing it. To be human-level intelligent, a computer would have to understand things like the difference between subtle facial expressions, the distinction between being pleased, relieved, content, satisfied, and glad, and why _Braveheart_ was great but _The Patriot_ was terrible.
 
 Daunting.
