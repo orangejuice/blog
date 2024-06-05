@@ -1,4 +1,4 @@
-<p align="center">
+<div align="center">
   <a href="https://orangejuice.cc/">
     <img alt="Orangejuice" width="200px" src="https://orangejuice.cc/logo.svg" />
   </a>
