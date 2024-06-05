@@ -12,12 +12,12 @@
 - Responsive UI for seamless experience across PC and mobile devices
 - Employs a modern tech stack with a minimalist design language
 - Offers Full Light/Dark Mode compatibility (including with `Giscus`, `rehype-prism-plus`, and `Tocbot`)
-- Internationalisation(i18n) support with i18next (works with both server components and client components)
-- Provides an immersive reading background powered by React Three Fiber (Three.js)
+- Internationalisation(i18n) based on `react-i18next` (works with both server components and client components)
+- Provides an immersive reading background powered by `React Three Fiber` (Three.js)
 - Supports local/online image files through a custom rehype plugin, `rehype-mdx-images`
-- Utilizes GraphQL to fetch GitHub discussion data for interaction
+- Utilizes `GraphQL` to fetch GitHub discussion data for interaction
 - Features robust Languages/Tags filtering capabilities
-- Includes a Comment/Reaction system based on Giscus (work together with [On New Giscus Comment](https://github.com/orangejuice/on-new-giscus-comment))
+- Includes a Comment/Reaction system based on `Giscus` (work together with [On New Giscus Comment](https://github.com/orangejuice/on-new-giscus-comment))
 - Stay tuned for more updates!
 
 ## 🔖 History
