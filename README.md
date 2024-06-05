@@ -8,26 +8,26 @@
 
 ## ✨ Features
 
-- Next.js, React, TailwindCSS, Mdx, shadcn/ui, framer motion, contentlayer
-- Responsive UI covering PC and mobile devices
-- Modern tech stack and minimum design language
-- Full Light/Dark Mode (also on `Giscus` / `rehype-prism-plus` / `Tocbot` )
-- Internationalisation(i18n) with i18next (work with `server component` and `client component`)
-- Immersive reading background powered by React Three Fiber(Three.js)
-- Support local/online image files fulfilled by a handcrafted rehype plugin `rehype-mdx-images`
-- Graphql call fetching GitHub discussion data(the place interaction data lies in) 
-- Powerful Languages/Tags filtering
-- Comment/Reaction system based on Giscus (work with [On New Giscus Comment](https://github.com/orangejuice/on-new-giscus-comment))
-- more to come
+- Utilizes Next.js (App.dir), React, TailwindCSS, Mdx, shadcn/ui, framer motion, and contentlayer
+- Responsive UI for seamless experience across PC and mobile devices
+- Employs a modern tech stack with a minimalist design language
+- Offers Full Light/Dark Mode compatibility (including with `Giscus`, `rehype-prism-plus`, and `Tocbot`)
+- Internationalisation(i18n) support with i18next (works with both server components and client components)
+- Provides an immersive reading background powered by React Three Fiber (Three.js)
+- Supports local/online image files through a custom rehype plugin, `rehype-mdx-images`
+- Utilizes GraphQL to fetch GitHub discussion data for interaction
+- Features robust Languages/Tags filtering capabilities
+- Includes a Comment/Reaction system based on Giscus (work together with [On New Giscus Comment](https://github.com/orangejuice/on-new-giscus-comment))
+- Stay tuned for more updates!
 
 ## 🔖 History
 
-- Jun 03, 2024: The release of brand-new blog system based on Next.js (App dir).
-- Jun 18, 2020: Imported old posts.
-- Jun 17, 2020: refurbish everything based on Gatsby, embrace the modern frontend framework - React! (repo: [blog-gatsby](https://github.com/orangejuice/blog-gatsby))
-- Feb 15, 2020: update to iacrus 2.7.0
-- Feb 14, 2020: remove theme files and replaced with submodule to facilitate better version control
-- Nov 28, 2018: Go online based on Hexo / Git pages! [Post](https://orangejuice.cc/2019-03-04-build-a-hexo-blog) (repo: [blog-hexo](https://github.com/orangejuice/blog-hexo))
+- Jun 03, 2024: Launch of the new blog system based on Next.js (App dir).
+- Jun 18, 2020: Imported legacy posts.
+- Jun 17, 2020: Revamped the entire system with Gatsby, embracing the modern frontend framework - React! (repo: [blog-gatsby](https://github.com/orangejuice/blog-gatsby))
+- Feb 15, 2020: Updated to iacrus 2.7.0.
+- Feb 14, 2020: Removed theme files and replaced them with a submodule for better version control.
+- Nov 28, 2018: Initial deployment based on Hexo / Git pages! [Post](https://orangejuice.cc/2019-03-04-build-a-hexo-blog) (repo: [blog-hexo](https://github.com/orangejuice/blog-hexo))
 
 ## ❤️ Credits
 
