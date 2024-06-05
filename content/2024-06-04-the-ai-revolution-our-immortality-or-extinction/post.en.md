@@ -102,16 +102,18 @@ So what do you get when you put all of these opinions together?
 
 In 2013, Vincent C. Müller and Nick Bostrom conducted a survey that asked hundreds of AI experts at a series of conferences the following question: “For the purposes of this question, assume that human scientific activity continues without major negative disruption. By what year would you see a (10% / 50% / 90%) probability for such HLMI[^4b] to exist?” It asked them to name an optimistic year (one in which they believe there’s a 10% chance we’ll have AGI), a realistic guess (a year they believe there’s a 50% chance of AGI—i.e. after that year they think it’s more likely than not that we’ll have AGI), and a safe guess (the earliest year by which they can say with 90% certainty we’ll have AGI). Gathered together as one data set, here were the results:[^2g]
 
-Median optimistic year (10% likelihood): **2022**Median realistic year (50% likelihood): ****2040****Median pessimistic year (90% likelihood): ****2075****
+Median optimistic year (10% likelihood): **2022**  
+Median realistic year (50% likelihood): **2040**  
+Median pessimistic year (90% likelihood): **2075**  
 
 So the median participant thinks it’s more likely than not that we’ll have AGI 25 years from now. The 90% median answer of 2075 means that if you’re a teenager right now, the median respondent, along with over half of the group of AI experts, is almost certain AGI will happen within your lifetime.
 
 A separate study, conducted recently by author James Barrat at Ben Goertzel’s annual AGI Conference, did away with percentages and simply asked when participants thought AGI would be achieved—by 2030, by 2050, by 2100, after 2100, or never. The results:[^3g]
 
-By 2030: **42% of respondents  
-**By 2050: **25%**  
-By 2100: **20%  
-**After 2100: **10%**  
+By 2030: **42% of respondents**  
+By 2050: **25%**  
+By 2100: **20%**  
+After 2100: **10%**  
 Never: **2%**
 
 Pretty similar to Müller and Bostrom’s outcomes. In Barrat’s survey, over two thirds of participants believe AGI will be here by 2050 and a little less than half predict AGI within the next 15 years. Also striking is that only 2% of those surveyed don’t think AGI is part of our future.

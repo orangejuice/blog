@@ -102,7 +102,7 @@ function PostItemCompact({post}: {post: PostWithDiscussion}) {
         </div>
       </div>
       <div className="flex w-full justify-between gap-4">
-        <Link href={`/${post.slug}`} className="font-medium line-clamp-1 underline-fade">{post.title}</Link>
+        <Link href={`/${post.slug}`} className="font-medium line-clamp-2 underline-fade">{post.title}</Link>
         <div className="gap-4 text-xs text-stone-600 hidden md:flex">
           <span className="flex items-center gap-1"><Icons.post.reaction/> {post.discussion.reactions.totalCount}</span>
           <span className="flex items-center gap-1"><Icons.post.comment/> {post.discussion.comments.totalCount}</span>

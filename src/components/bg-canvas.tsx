@@ -87,7 +87,7 @@ function AmbientRead() {
   useEffect(() => {
     cameraControlRef.current?.rotatePolarTo(0)
     cameraControlRef.current?.rotateAzimuthTo(0)
-    cameraControlRef.current?.setLookAt(-20, 20, -30, -8, -10, -28)
+    cameraControlRef.current?.setLookAt(-20, 20, -30, -8, -15, -28)
   }, [threeLoaded])
 
   return (<>
