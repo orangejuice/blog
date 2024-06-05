@@ -2,7 +2,7 @@
 title: 突然想起去年遇到的小女孩
 categories:
   - diary
-tags: [生活,回忆]
+tags: [人生]
 date: 2019-09-16 20:05:57
 updated: 2019-09-17 22:36:57
 ---

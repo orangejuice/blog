@@ -2,7 +2,7 @@
 title: 日记于2019年5月27日
 categories:
   - diary
-tags: [生活,哲思,人生]
+tags: [生活]
 date: 2019-05-27 13:03:01
 updated: 2019-05-27 13:03:01
 ---

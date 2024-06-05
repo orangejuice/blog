@@ -3,7 +3,7 @@ title: Build My First Hexo Blog
 date: 2019-03-04 21:26:39
 updated: 2019-03-04 21:26:39
 categories: [notes]
-tags: [Blog, Hexo]
+tags: [Blog, Tech]
 ---
 
 ## Deploy Hexo site files & Install theme Next

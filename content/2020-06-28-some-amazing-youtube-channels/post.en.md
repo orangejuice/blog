@@ -1,7 +1,7 @@
 ---
 title: Youtube Channels that I like
 date: 2020-06-28
-tags: [Youtube, Culture]
+tags: [Curiosity, Culture]
 ---
 
 I was very ignorant about YouTube before - Although I often see it in the daily life, for example, some videos were being transported to Chinese websites and the transporters will tell the original Youtube video link, so occasionally I will visit the YouTube's website to see what is happening there. But the threshold for understanding English popular content on the Youtube homepage is too high and, thanks to its recommendation algorithm, an impression once went something like this: YouTube is full of poorly produced Falun Gong videos (e.g. machine-composed voice-over narration, nineties style videos).

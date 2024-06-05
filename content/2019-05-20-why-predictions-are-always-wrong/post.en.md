@@ -2,7 +2,7 @@
 title: "Why Do Historical Predictions Always Get It Wrong? (Forward)"
 categories:
   - why
-tags: [Philosophy, Why]
+tags: [History]
 date: 2019-05-20 13:06:00
 updated: 2019-05-20 13:06:00
 ---

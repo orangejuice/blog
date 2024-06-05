@@ -2,7 +2,7 @@
 title: 日记于2019年9月29日
 categories:
   - diary
-tags: [生活,哲思]
+tags: [生活]
 date: 2019-09-29 10:38:38
 updated: 2019-09-29 23:16:18
 ---

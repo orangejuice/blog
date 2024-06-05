@@ -2,7 +2,7 @@
 title: "Netflix Show: Our Planet Season 01"
 categories:
   - notes
-tags: [TV Shows, Environment]
+tags: [Entertainment]
 date: 2019-04-19 23:25:17
 updated: 2019-04-19 23:25:17
 ---

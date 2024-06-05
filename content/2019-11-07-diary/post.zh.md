@@ -2,7 +2,7 @@
 title: 日记于2019年11月
 categories:
   - diary
-tags: [生活,哲思]
+tags: [生活]
 date: 2019-11-07 19:05:23
 updated: 2019-12-10 21:01:23
 ---

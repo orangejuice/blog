@@ -2,7 +2,7 @@
 title: 今天收到了一张意料之中的罚单
 categories:
   - diary
-tags: [生活]
+tags: [人生]
 date: 2020-03-06 18:44:16
 updated: 2020-03-06 18:44:16
 ---

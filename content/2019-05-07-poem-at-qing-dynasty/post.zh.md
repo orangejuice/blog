@@ -2,7 +2,7 @@
 title: 读到《在清朝》柏桦
 categories:
   - notes
-tags: [历史,诗词]
+tags: [阅读]
 date: 2019-05-07 23:13:12
 updated: 2019-05-07 23:13:12
 ---

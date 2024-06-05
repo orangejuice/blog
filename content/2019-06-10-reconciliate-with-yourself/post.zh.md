@@ -2,9 +2,7 @@
 title: "与自己和解太难"
 categories:
   - diary
-tags: [生活,哲思,人生]
-typora-root-url: ..
-toc: true
+tags: [存在]
 date: 2019-06-10 15:50:23
 updated: 2019-06-10 15:50:23
 ---
