@@ -1,10 +1,10 @@
 ---
-title: "The AI Revolution: Our Immortality or Extinction"
+title: "人工智能革命：我们永生还是灭绝"
 date: 2024-06-04 11:25
 tags: [AI]
 ---
 
-> 本文转载自 [Wait but why](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-2.html)，作者为 Tim Urban，日期为2015年1月27日
+> 本文转载自 [Wait but why](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-2.html)，作者 Tim Urban 于2015年1月27日发表
 
 （这是第二部分，阅读[本文的第一部分](2024-06-04-the-ai-revolution-the-road-to-superintelligence)）
 
