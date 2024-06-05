@@ -21,7 +21,7 @@ export function randomInRange(min: number, max: number) {
 export function format(date: string | Date, locale = "en", options?: {fromNow?: boolean, full?: boolean} | undefined) {
   if (options?.full) return dayjs().locale(locale).format("YYYY-MM-DD HH:mm:ss")
   if (options?.fromNow) return dayjs().locale(locale).to(dayjs(date))
-  return dayjs(date).locale(locale).format("LL")
+  return dayjs(date).locale(locale).format("ll")
 }
 
 export function useCssIndexCounter() {
