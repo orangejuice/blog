@@ -16,8 +16,8 @@ export const Comments = ({slug}: {slug: string}) => {
   const {resolvedTheme} = useTheme()
   const {i18n: {language: locale}} = useTranslation()
   const [_, setInteractions] = useGlobalState("interactions")
-
   const commentsTheme = resolvedTheme === "dark" ? darkTheme : lightTheme
+
   useEffect(() => {
     function handleMessage(event: MessageEvent) {
       if (event.origin !== "https://giscus.app") return

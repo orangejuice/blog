@@ -1,12 +1,13 @@
 "use client"
 import {useMDXComponent} from "next-contentlayer2/hooks"
-import Image from "next/image"
+import {default as NextImage, ImageProps} from "next/image"
 import {ComponentPropsWithoutRef} from "react"
 import {useTheme} from "next-themes"
 import {useMounted} from "@/lib/hooks"
 import Link from "next/link"
 import {Icons} from "@/components/icons"
 import {useTranslation} from "react-i18next"
+import {cn} from "@/lib/utils"
 
 export function MDX({code, ...props}: ComponentPropsWithoutRef<"div"> & {code: string}) {
   const MDXContent = useMDXComponent(code)
@@ -29,6 +30,10 @@ export function MDX({code, ...props}: ComponentPropsWithoutRef<"div"> & {code: s
       }}/>
     </div>
   </>)
+}
+
+function Image({className, ...props}: ImageProps) {
+  return <NextImage className={cn(className, "w-4/5 md:w-3/5 mx-auto")} {...props} />
 }
 
 function MdxLink({className, ...props}: ComponentPropsWithoutRef<"a"> & {href: string}) {

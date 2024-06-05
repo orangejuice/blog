@@ -20,8 +20,7 @@ export const Post = defineDocumentType(() => ({
   fields: {
     title: {type: "string", required: true},
     date: {type: "date", required: true},
-    // @ts-ignore suppress type error
-    updated: {type: "date", default: null},
+    updated: {type: "date"},
     tags: {type: "list", of: {type: "string"}, default: []}
   },
   computedFields: {
