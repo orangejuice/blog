@@ -2,7 +2,7 @@
   <a href="https://orangejuice.cc/">
     <img alt="Orangejuice" width="200px" src="https://orangejuice.cc/logo.svg" />
   </a>
-</p>
+</div>
 
 ![ts](https://badgen.net/badge/-/TypeScript/blue?icon=typescript&label)
 
