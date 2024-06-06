@@ -4,7 +4,8 @@ date: 2024-06-04 11:15
 tags: [AI]
 ---
 
-> 本文转载自 [Wait but why](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html)，作者 Tim Urban 于2015年1月22日发表
+> 本文转载自 [Wait but why](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html)，作者 Tim Urban 于2015年1月22日发表。  
+> GPT-4o 和 GPT-3.5-Turbo 翻译
 
 *我们正处在一个变化的边缘，这个变化可与地球上人类生命的兴起相媲美。* — Vernor Vinge
 

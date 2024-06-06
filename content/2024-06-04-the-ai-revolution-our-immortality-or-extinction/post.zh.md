@@ -4,7 +4,8 @@ date: 2024-06-04 11:25
 tags: [AI]
 ---
 
-> 本文转载自 [Wait but why](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-2.html)，作者 Tim Urban 于2015年1月27日发表
+> 本文转载自 [Wait but why](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-2.html)，作者 Tim Urban 于2015年1月27日发表。  
+> GPT-4o 和 GPT-3.5-Turbo 翻译
 
 （这是第二部分，阅读[本文的第一部分](2024-06-04-the-ai-revolution-the-road-to-superintelligence)）
 
