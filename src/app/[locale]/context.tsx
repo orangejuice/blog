@@ -1,8 +1,7 @@
 "use client"
 import {TooltipProvider} from "@/components/ui/tooltip"
 import {ThemeProvider} from "next-themes"
-import type {ReactNode} from "react"
-import React from "react"
+import React, {ReactNode, useEffect} from "react"
 import type {Resource} from "i18next"
 import {createInstance} from "i18next"
 import {I18nextProvider} from "react-i18next"
@@ -16,6 +15,13 @@ import Script from "next/script"
 export function Context({children, locale, resources}: {children: ReactNode; locale: string; resources: Resource}) {
   const i18n = createInstance()
   void initTranslation(locale, i18n, resources)
+
+  // migrate from legacy gatsby code, unregister old service worker which is causing problem
+  useEffect(() => {
+    navigator.serviceWorker.getRegistrations().then(registrations => {
+      registrations.forEach(registration => registration.unregister())
+    })
+  })
 
   return (<>
     <I18nextProvider i18n={i18n}>
