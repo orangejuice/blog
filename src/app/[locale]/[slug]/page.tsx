@@ -58,8 +58,8 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
 
   return <>
     <div className="grid md:grid-cols-[minmax(0,2fr),1fr] items-start gap-16 min-h-screen">
-      <article>
-        <section className="flex flex-col gap-3 mb-8">
+      <article className="flex flex-col gap-6">
+        <section className="flex flex-col gap-3">
           <h1 className="text-4xl font-extrabold animate-delay-in" style={cssIndexCounter()}>{post.title}</h1>
           <div className="flex flex-wrap items-center gap-1 text-stone-500 dark:text-stone-400 font-medium text-sm animate-delay-in" style={cssIndexCounter()}>
             <time dateTime={post.date}>
@@ -87,9 +87,7 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
           </div>
         </section>
         <MDX code={post.body.code} style={cssIndexCounter()}/>
-        <div className="pb-6 pt-6 text-center text-gray-700 dark:text-gray-300 animate-delay-in" id="comment">
-          <Comment slug={slug}/>
-        </div>
+        <Comment slug={slug}/>
       </article>
       <aside className="flex flex-col sticky top-8 gap-4 animate-delay-in" style={cssIndexCounter()}>
         <Toc/>
