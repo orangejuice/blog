@@ -46,6 +46,8 @@ export function Header() {
 export function MobileNav() {
   const [open, setOpen] = React.useState(false)
   const {t} = useTranslation(undefined, {keyPrefix: "nav"})
+  const [filter] = useLocalStorage<FilterOption | "">("post-filter", "")
+  const mounted = useMounted()
 
   return (<>
     <Popover open={open} onOpenChange={setOpen}>
@@ -57,7 +59,8 @@ export function MobileNav() {
       <PopoverContent align="end" className="w-fit shadow-xl">
         <div className="flex flex-col gap-6 p-2">
           {Object.entries(menu).map(([key, path]) => (
-            <Link href={path} onClick={() => setOpen(false)} key={key} className="font-medium">
+            <Link onClick={() => setOpen(false)} key={key} className="font-medium"
+              href={mounted ? ((path == menu.posts && filter) ? `/${path}/${filter.join("/")}` : `/${path}`) : ""}>
               {t(key)}
             </Link>
           ))}

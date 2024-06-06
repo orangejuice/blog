@@ -43,7 +43,14 @@ export async function generateMetadata({params}: {params: {slug: string, locale:
 }
 
 export const generateStaticParams = async () => {
-  return (site.locales.map(locale => allPosts.map((post) => ({slug: post.slug, locale: locale}))))
+  const posts = await getPosts({locale: site.locales[0], filterLang: "all-lang", getDiscussion: false})
+
+  const params: {[key: string]: string}[] = []
+  posts.forEach(post => {
+    params.push(...site.locales.map(locale => ({locale, slug: post.slug})))
+  })
+
+  return params
 }
 
 export default async function Page({params}: {params: {slug: string, locale: SiteLocale}}) {
@@ -53,7 +60,6 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
   const post = posts.find((post) => post.slug === slug)
   if (!post) return notFound()
 
-  const isPostUpdated = post.updated && (post.updated != post.date)
   const {t} = await initTranslation(params.locale)
 
   return <>
@@ -65,7 +71,7 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
             <time dateTime={post.date}>
               {t("post.publish", {date: format(post.date, params.locale)})}
             </time>
-            {isPostUpdated && (<>
+            {post.updated != post.date && (<>
               <Icons.symbol.dot className="stroke-[4px] opacity-70"/>
               {t("post.update", {date: format(post.updated, params.locale)})}
             </>)}

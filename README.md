@@ -18,6 +18,7 @@
 - Utilizes `GraphQL` to fetch GitHub discussion data for interaction
 - Features robust Languages/Tags filtering capabilities
 - Includes a Comment/Reaction system based on `Giscus` (work together with [On New Giscus Comment](https://github.com/orangejuice/on-new-giscus-comment))
+- Generated sitemap with links to alternate languages
 - Stay tuned for more updates!
 
 ## 🔖 History

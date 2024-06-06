@@ -4,6 +4,7 @@ export const site = {
   title: "Orangejuice blog",
   description: "This is a description",
   author: "orangejuice",
+  url: "https://orangejuice.cc",
   locales: ["en", "zh"] as const
 }
 
@@ -11,10 +12,10 @@ export type SiteLocale = typeof site.locales[number]
 export type LangOption = SiteLocale | "all-lang"
 
 export const menu = {
-  home: "/",
+  home: "",
   posts: "all",
   guestbook: "guestbook"
-}
+} as const
 
 export const giscusConfig: GiscusProps & {darkTheme: GiscusProps["theme"]} = {
   repo: "orangejuice/blog",
