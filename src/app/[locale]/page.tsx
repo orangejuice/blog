@@ -1,17 +1,19 @@
 import {getLatestActivitiesPost, getPosts} from "@/lib/fetch"
 import {useCssIndexCounter} from "@/lib/utils"
-import {SiteLocale} from "@/site"
+import {site, SiteLocale} from "@/site"
 import {LangSelect, ViewMore} from "@/app/[locale]/page.client"
 import {Icons} from "@/components/icons"
 import React, {Suspense} from "react"
 import {LatestActivityList, PostMainList} from "@/components/post-list"
 import initTranslation from "@/i18n"
+import {notFound} from "next/navigation"
 
 export default async function Home({params: {locale}}: {params: {locale: SiteLocale}}) {
+  const cssIndexCounter = useCssIndexCounter()
+  if (!site.locales.includes(locale)) return notFound()
   const postsOneLang = getPosts({locale, count: 4})
   const postsAllLang = getPosts({locale, count: 4, filterLang: "all-lang"})
   const latestActivities = getLatestActivitiesPost({locale, count: 4})
-  const cssIndexCounter = useCssIndexCounter()
   const {t} = await initTranslation(locale)
 
   return (<>
