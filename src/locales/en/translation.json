@@ -12,18 +12,23 @@
   "post": {
     "all": "All posts",
     "all-sub": "from 2019 - {{year}}",
-    "publish": "Publish on {{date}}",
-    "update": "Updated {{date}}",
-    "latest": "Latest",
-    "latest-sub": "intriguing trifles and introspections",
-    "replied": "Replied: ",
-    "reacted": "Reacted: ",
-    "no-post": "No posts yet.",
-    "view-more": "View more",
     "filter.languages": "Languages",
     "filter.tags": "Tags",
     "footnotes": "Footnotes",
+    "latest": "Latest",
+    "latest-sub": "intriguing trifles and introspections",
+    "no-post": "No posts yet.",
+    "publish": "Publish on {{date}}",
+    "reacted": "Reacted: ",
+    "replied": "Replied: ",
     "toc": "Table of contents",
-    "toc-empty": "Nothing found"
+    "toc-empty": "Nothing found",
+    "update": "Updated {{date}}",
+    "latest-activities": "Latest activities",
+    "view-more": "View more"
+  },
+  "guestbook": {
+    "title": "Guestbook",
+    "title-sub": "Imprint yourself upon this place"
   }
 }

@@ -11,7 +11,8 @@ import initTranslation from "@/i18n"
 import Link from "next/link"
 import {MDX} from "@/components/mdx"
 import React from "react"
-import {Comments, Interactions} from "@/app/[locale]/[slug]/page-client"
+import {Comment} from "@/components/comment"
+import {InteractionBar} from "@/app/[locale]/[slug]/page.client"
 
 export async function generateMetadata({params}: {params: {slug: string, locale: string}}): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug)
@@ -81,13 +82,13 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
             </>)}
             <Icons.symbol.dot className="stroke-[4px] opacity-70"/>
             <div className="flex items-center gap-2">
-              <Interactions slug={slug}/>
+              <InteractionBar slug={slug}/>
             </div>
           </div>
         </section>
         <MDX code={post.body.code} style={cssIndexCounter()}/>
         <div className="pb-6 pt-6 text-center text-gray-700 dark:text-gray-300 animate-delay-in" id="comment">
-          <Comments slug={slug}/>
+          <Comment slug={slug}/>
         </div>
       </article>
       <aside className="flex flex-col sticky top-8 gap-4 animate-delay-in" style={cssIndexCounter()}>

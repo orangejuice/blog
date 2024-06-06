@@ -1,7 +1,7 @@
 import {getLatestActivitiesPost, getPosts} from "@/lib/fetch"
 import {useCssIndexCounter} from "@/lib/utils"
 import {SiteLocale} from "@/site"
-import {LangSelect, ViewMore} from "@/app/[locale]/page-client"
+import {LangSelect, ViewMore} from "@/app/[locale]/page.client"
 import {Icons} from "@/components/icons"
 import React, {Suspense} from "react"
 import {LatestActivityList, PostMainList} from "@/components/post-list"
@@ -42,7 +42,7 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
           </div>
         </div>
         <section className="animate-delay-in" style={cssIndexCounter()}>
-          <h5 className="text-slate-900 font-semibold mb-2 text-sm leading-6 dark:text-slate-100">Latest activities</h5>
+          <h5 className="text-slate-900 font-semibold mb-2 text-sm leading-6 dark:text-slate-100">{t("post.latest-activities")}</h5>
           <Suspense fallback={<Icons.loading/>}>
             <LatestActivityList posts={latestActivities}/>
           </Suspense>
