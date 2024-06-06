@@ -8,7 +8,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const getAllLang = (slug: string) => {
     const langUrl: {[lang: string]: string} = {}
     site.locales.forEach(locale => {
-      langUrl[locale] = `${site.url}${locale == site.locales[0] ? "/" : `/${locale}/`}${slug}`
+      langUrl[locale] = site.url.concat(locale == site.locales[0] ? "" : `/${locale}`)
+        .concat(!!slug ? "/" : "")
+        .concat(slug)
     })
 
     return langUrl
@@ -19,7 +21,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: new Date(),
     alternates: {languages: getAllLang(post.slug)}
   })).concat(Object.values(menu).map(nav => ({
-    url: `${site.url}/${nav}`,
+    url: site.url.concat(!!nav ? `/${nav}` : ""),
     lastModified: new Date(),
     alternates: {languages: getAllLang(nav)}
   })))

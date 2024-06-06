@@ -8,8 +8,9 @@ const nextConfig = {
     ]
   },
   experimental: {
-    reactCompiler: true,
-  }
+    reactCompiler: true
+  },
+  redirects: () => ([{source: "/:path*/)", destination: "/:path", permanent: true}])
 }
 
 module.exports = withContentlayer(nextConfig)
