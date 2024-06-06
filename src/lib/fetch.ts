@@ -73,7 +73,7 @@ export const getLatestActivitiesPost = cache(async ({locale, count}: {locale: Si
   posts.forEach(post => slugPosts[post.slug] = post)
 
   Object.keys(latestActivities).forEach(slug => {
-    if (slugPosts.hasOwnProperty(slug)) {
+    if (slugPosts.hasOwnProperty(slug) && (latestActivities[slug].comments.nodes.length > 0 || latestActivities[slug].reactions.nodes.length > 0)) {
       slugPosts[slug].discussion = latestActivities[slug]
       postsWithActivity.push(slugPosts[slug] as PostWithActivity)
     }
