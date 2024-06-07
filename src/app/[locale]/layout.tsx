@@ -13,9 +13,12 @@ import {BgCanvas} from "@/components/bg-canvas"
 const fontSans = FontSans({subsets: ["latin"], variable: "--font-sans"})
 const fontMono = FontMono({subsets: ["latin"], variable: "--font-mono"})
 
-export const metadata: Metadata = {
-  title: site.title,
-  description: site.description
+export async function generateMetadata({params: {locale}}: {params: {locale: string}}): Promise<Metadata> {
+  return {
+    title: site.title,
+    description: site.description,
+    alternates: {types: {"application/rss+xml": site.url.concat("/", locale, "/feed.xml")}}
+  }
 }
 
 export default async function RootLayout({children, params: {locale}}:
@@ -37,4 +40,3 @@ export default async function RootLayout({children, params: {locale}}:
     </html>
   )
 }
-

@@ -18,7 +18,7 @@
 - Utilizes `GraphQL` to fetch GitHub discussion data for interaction
 - Features robust Languages/Tags filtering capabilities
 - Includes a Comment/Reaction system based on `Giscus` (work together with [On New Giscus Comment](https://github.com/orangejuice/on-new-giscus-comment))
-- Generated sitemap with links to alternate languages
+- Generated `sitemap` & `RSS Feed` (i18n ready)
 - Stay tuned for more updates!
 
 ## 🔖 History
@@ -66,3 +66,4 @@
     implemented `api/revalidate` to work with `orangejuice/on-new-giscus-comment`
 - TailwindCSS spinner animation lib https://play.tailwindcss.com/OPAsySKNCd
 - day.js for date formating https://day.js.org/docs/en/display/format
+- RSS feed generation https://spacejelly.dev/posts/how-to-add-a-sitemap-rss-feed-in-next-js-app-router
