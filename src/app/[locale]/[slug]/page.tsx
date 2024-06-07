@@ -44,13 +44,7 @@ export async function generateMetadata({params}: {params: {slug: string, locale:
 
 export const generateStaticParams = async () => {
   const posts = await getPosts({locale: site.locales[0], filterLang: "all-lang", getDiscussion: false})
-
-  const params: {[key: string]: string}[] = []
-  posts.forEach(post => {
-    params.push(...site.locales.map(locale => ({locale, slug: post.slug})))
-  })
-
-  return params
+  return posts.map(post => ({slug: post.slug}))
 }
 
 export default async function Page({params}: {params: {slug: string, locale: SiteLocale}}) {

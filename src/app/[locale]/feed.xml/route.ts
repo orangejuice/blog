@@ -20,6 +20,7 @@ export async function GET(req: NextRequest, {params: {locale}}: {params: {locale
       title: post.title,
       url: site.url.concat("/", locale, "/").concat(post.slug),
       date: post.date,
+      author: site.author,
       description: post.excerpt
     })
   })
