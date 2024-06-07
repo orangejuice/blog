@@ -30,5 +30,9 @@
   "guestbook": {
     "title": "Guestbook",
     "title-sub": "Imprint yourself upon this place"
+  },
+  "not-found": {
+    "message": "Sorry we couldn't find this page.",
+    "redirect": "But don't worry, you can find plenty of other things on our <a>homepage</a>."
   }
 }

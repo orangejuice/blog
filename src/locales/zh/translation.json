@@ -30,5 +30,9 @@
   "guestbook": {
     "title": "留言板",
     "title-sub": "在这里留下你的印记"
+  },
+  "not-found": {
+    "message": "抱歉，我们找不到这个页面",
+    "redirect": "不过别担心，您可以在我们的<a>首页</a>找到很多其他内容。"
   }
 }
