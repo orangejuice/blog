@@ -5,7 +5,7 @@ import {menu} from "@/site"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {FilterOption} from "@/components/post-filter"
 import {useSelectedLayoutSegment} from "next/navigation"
-import {LocaleSwitcher} from "@/components/locale-switcher"
+import {LocaleSwitch} from "@/components/locale-switch"
 import {useMounted} from "@/lib/hooks"
 import Link from "next/link"
 import * as React from "react"
@@ -34,7 +34,7 @@ export function Header() {
               <span className="text-sm font-medium">{t(key)}</span>
             </Link>
           ))}
-          <LocaleSwitcher/>
+          <LocaleSwitch/>
         </nav>
         <MobileNav/>
       </div>
@@ -65,7 +65,7 @@ export function MobileNav() {
             </Link>
           ))}
           <span className="-my-2 h-px bg-stone-200 dark:bg-stone-600"></span>
-          <LocaleSwitcher className="-mx-3"/>
+          <LocaleSwitch className="-mx-3"/>
         </div>
       </PopoverContent>
     </Popover>

@@ -5,8 +5,8 @@ export const site = {
   description: "This is a description",
   author: "orangejuice",
   url: "https://orangejuice.cc",
-  locales: ["en", "zh"] as const
-}
+  locales: ["en", "zh"]
+} as const
 
 export type SiteLocale = typeof site.locales[number]
 export type LangOption = SiteLocale | "all-lang"

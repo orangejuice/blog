@@ -7,10 +7,9 @@ import {usePathname, useRouter} from "next/navigation"
 import {useTranslation} from "react-i18next"
 import {Icons} from "@/components/icons"
 import {Button, ButtonProps} from "@/components/ui/button"
-import {DropdownMenuCheckboxItemProps} from "@radix-ui/react-dropdown-menu"
 import {DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger} from "@/components/ui/dropdown-menu"
 
-export function LocaleSwitcher(props: ButtonProps) {
+export function LocaleSwitch(props: ButtonProps) {
   const {t, i18n} = useTranslation("lang")
   const router = useRouter()
   const [isPending, startTransition] = useTransition()
@@ -39,7 +38,7 @@ export function LocaleSwitcher(props: ButtonProps) {
         <DropdownMenuRadioGroup value={i18n.language} onValueChange={onSelectChange}>
           {site.locales.map((cur) =>
             <DropdownMenuRadioItem key={cur} value={cur} disabled={i18n.language == cur}
-              className="cursor-pointer hover:bg-stone-200">
+              className="cursor-pointer hover:bg-stone-200 dark:hover:bg-stone-800">
               {t(cur, {lng: cur})}
             </DropdownMenuRadioItem>
           )}
@@ -48,6 +47,3 @@ export function LocaleSwitcher(props: ButtonProps) {
     </DropdownMenu>
   </>)
 }
-
-
-type Checked = DropdownMenuCheckboxItemProps["checked"]
