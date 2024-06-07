@@ -8,6 +8,7 @@ import {useTranslation} from "react-i18next"
 import {Icons} from "@/components/icons"
 import {Button, ButtonProps} from "@/components/ui/button"
 import {DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger} from "@/components/ui/dropdown-menu"
+import {AnimatePresence, motion} from "framer-motion"
 
 export function LocaleSwitch(props: ButtonProps) {
   const {t, i18n} = useTranslation("lang")
@@ -30,16 +31,19 @@ export function LocaleSwitch(props: ButtonProps) {
           "h-fit w-fit gap-2 whitespace-nowrap rounded-lg px-3 py-1.5 transition-all", props.className,
           "hover:bg-stone-200 active:bg-stone-300 dark:text-white dark:hover:bg-stone-700 dark:active:bg-stone-800"
         )}>
-          <Icons.nav.lang/>
+          <AnimatePresence mode="popLayout">
+            {isPending && <motion.span key="p" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.loading className="w-4 h-4"/></motion.span>}
+            {!isPending && <motion.span key="c" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.nav.lang/></motion.span>}
+          </AnimatePresence>
           {t(i18n.language, {lng: i18n.language})}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-fit">
         <DropdownMenuRadioGroup value={i18n.language} onValueChange={onSelectChange}>
-          {site.locales.map((cur) =>
-            <DropdownMenuRadioItem key={cur} value={cur} disabled={i18n.language == cur}
+          {site.locales.map((locale) =>
+            <DropdownMenuRadioItem key={locale} value={locale} disabled={i18n.language == locale}
               className="cursor-pointer hover:bg-stone-200 dark:hover:bg-stone-800">
-              {t(cur, {lng: cur})}
+              {t(locale, {lng: locale})}
             </DropdownMenuRadioItem>
           )}
         </DropdownMenuRadioGroup>
