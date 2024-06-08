@@ -1,7 +1,7 @@
 "use client"
 import * as React from "react"
 import {useTransition} from "react"
-import {site, SiteLocale} from "@/site"
+import {site} from "@/site"
 import {cn} from "@/lib/utils"
 import {usePathname, useRouter} from "next/navigation"
 import {useTranslation} from "react-i18next"
@@ -11,16 +11,14 @@ import {DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuR
 import {AnimatePresence, motion} from "framer-motion"
 
 export function LocaleSwitch(props: ButtonProps) {
-  const {t, i18n} = useTranslation("lang")
+  const {t, i18n: {language: resolved}} = useTranslation("lang")
   const router = useRouter()
   const [isPending, startTransition] = useTransition()
-  let pathname = usePathname()
-  const applied = site.locales.includes(i18n.language as SiteLocale) ? i18n.language : site.locales[0]
+  const pathname = usePathname()
 
   function onSelectChange(nextLocale: string) {
-    pathname = applied == site.locales[0] ? pathname : pathname.replace(`/${applied}`, "")
     startTransition(() => {
-      router.replace(`/${nextLocale}${pathname}`)
+      router.replace("/".concat(nextLocale, pathname.replace(`/${resolved}`, "")))
       router.refresh()
     })
   }
@@ -39,13 +37,13 @@ export function LocaleSwitch(props: ButtonProps) {
             {!isPending &&
               <motion.span key="c" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.nav.lang/></motion.span>}
           </AnimatePresence>
-          {t(applied, {lng: applied})}
+          {t(resolved, {lng: resolved})}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-fit">
-        <DropdownMenuRadioGroup value={applied} onValueChange={onSelectChange}>
+        <DropdownMenuRadioGroup value={resolved} onValueChange={onSelectChange}>
           {site.locales.map((locale) =>
-            <DropdownMenuRadioItem key={locale} value={locale} disabled={applied == locale}
+            <DropdownMenuRadioItem key={locale} value={locale} disabled={resolved == locale}
               className="cursor-pointer hover:bg-stone-200 dark:hover:bg-stone-800">
               {t(locale, {lng: locale})}
             </DropdownMenuRadioItem>

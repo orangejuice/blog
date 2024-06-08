@@ -3,6 +3,12 @@ import {menu, SiteLocale} from "@/site"
 import React from "react"
 import initTranslation from "@/i18n"
 import {Comment} from "@/components/comment"
+import {Metadata} from "next"
+
+export async function generateMetadata({params: {locale}}: {params: {locale: string}}): Promise<Metadata> {
+  const {t} = await initTranslation(locale)
+  return {title: t("guestbook.title")}
+}
 
 export default async function Page({params: {locale}}: {params: {locale: SiteLocale}}) {
   const cssIndexCounter = useCssIndexCounter()

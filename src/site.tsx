@@ -2,7 +2,7 @@ import {GiscusProps} from "@giscus/react"
 
 export const site = {
   title: "Orangejuice blog",
-  description: "This is a description",
+  description: "Orange juice is a liquid extract of the orange tree fruit, it comes in several different varieties. (wiki)",
   author: "orangejuice",
   url: "https://orangejuice.cc",
   locales: ["en", "zh"]

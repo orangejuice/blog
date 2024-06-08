@@ -14,21 +14,52 @@ const fontSans = FontSans({subsets: ["latin"], variable: "--font-sans"})
 const fontMono = FontMono({subsets: ["latin"], variable: "--font-mono"})
 
 export async function generateMetadata({params: {locale}}: {params: {locale: string}}): Promise<Metadata> {
+  const {i18n: {resolvedLanguage}} = await initTranslation(locale)
+
   return {
-    title: site.title,
+    metadataBase: new URL(site.url),
+    title: {
+      default: site.title,
+      template: `%s | ${site.title}`
+    },
     description: site.description,
-    alternates: {types: {"application/rss+xml": site.url.concat("/", locale, "/feed.xml")}}
+    openGraph: {
+      title: site.title,
+      description: site.description,
+      url: "./",
+      siteName: site.title,
+      images: ["/logo.svg"],
+      locale: resolvedLanguage,
+      type: "website"
+    },
+    alternates: {types: {"application/rss+xml": site.url.concat("/", resolvedLanguage!, "/feed.xml")}},
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        "index": true,
+        "follow": true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1
+      }
+    },
+    twitter: {
+      title: site.title,
+      card: "summary_large_image",
+      images: ["/logo.svg"]
+    }
   }
 }
 
 export default async function RootLayout({children, params: {locale}}:
   Readonly<{children: React.ReactNode, params: {locale: string}}>) {
-  const {resources} = await initTranslation(locale || site.locales[0])
+  const {resources,i18n:{resolvedLanguage: resolved}} = await initTranslation(locale || site.locales[0])
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={resolved} suppressHydrationWarning>
       <body className={cn("flex flex-col font-sans antialiased", fontSans.variable, fontMono.variable)}>
-        <Context locale={locale} resources={resources}>
+        <Context locale={resolved!} resources={resources}>
           <div className="flex w-full flex-col max-w-5xl px-6 mx-auto xl:px-0 my-8">
             <Header/>
             {children}

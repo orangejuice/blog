@@ -1,7 +1,6 @@
 import "./page.css"
 import {Metadata} from "next"
 import {notFound} from "next/navigation"
-import {allPosts} from "contentlayer/generated"
 import {site, SiteLocale} from "@/site"
 import {getPosts} from "@/lib/fetch"
 import Toc from "@/components/toc"
@@ -14,10 +13,10 @@ import React from "react"
 import {Comment} from "@/components/comment"
 import {InteractionBar} from "@/app/[locale]/[slug]/page.client"
 
-export async function generateMetadata({params}: {params: {slug: string, locale: string}}): Promise<Metadata | undefined> {
+export async function generateMetadata({params}: {params: {slug: string, locale: SiteLocale}}): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug)
 
-  const post = allPosts.find((post) => post.slug === slug)
+  const post = (await getPosts({locale: params.locale, filterLang: "all-lang", getDiscussion: false})).find((post) => post.slug === slug)
   if (!post) return
 
   return {
@@ -27,10 +26,9 @@ export async function generateMetadata({params}: {params: {slug: string, locale:
       title: post.title,
       description: post.excerpt,
       siteName: site.title,
-      locale: "en_US",
+      locale: params.locale,
       type: "article",
       publishedTime: new Date(post.date).toISOString(),
-      modifiedTime: new Date(post.updated).toISOString(),
       url: "./",
       authors: site.author
     },

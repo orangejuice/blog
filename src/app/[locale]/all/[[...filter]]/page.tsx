@@ -6,6 +6,12 @@ import {FilterOption, PostFilter} from "@/components/post-filter"
 import {Icons} from "@/components/icons"
 import {PostCompactList} from "@/components/post-list"
 import initTranslation from "@/i18n"
+import {Metadata} from "next"
+
+export async function generateMetadata({params: {locale}}: {params: {locale: string}}): Promise<Metadata> {
+  const {t} = await initTranslation(locale)
+  return {title: t("post.all")}
+}
 
 export default async function AllPost({params: {locale, filter}}: {params: {locale: SiteLocale, filter: FilterOption}}) {
   const posts = getPosts({locale, filterLang: filter?.[0] ?? "all-lang", filterTag: filter?.[1] ? decodeURI(filter[1]) : filter?.[1]})
