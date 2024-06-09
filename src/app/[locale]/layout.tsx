@@ -33,17 +33,6 @@ export async function generateMetadata({params: {locale}}: {params: {locale: str
       type: "website"
     },
     alternates: {types: {"application/rss+xml": site.url.concat("/", resolvedLanguage!, "/feed.xml")}},
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        "index": true,
-        "follow": true,
-        "max-video-preview": -1,
-        "max-image-preview": "large",
-        "max-snippet": -1
-      }
-    },
     twitter: {
       title: site.title,
       card: "summary_large_image",
