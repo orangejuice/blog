@@ -3,11 +3,12 @@ import Link from "next/link"
 import {Icons} from "@/components/icons"
 import {Button} from "@/components/ui/button"
 import {cn, format} from "@/lib/utils"
-import React, {ComponentPropsWithoutRef, use} from "react"
+import React, {ComponentPropsWithoutRef, use, useEffect} from "react"
 import type {GetLatestActivitiesResponse, GetPostsResponse, PostWithActivity, PostWithDiscussion} from "@/lib/fetch"
 import Image from "next/image"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {useTranslation} from "react-i18next"
+import {Interactions, useGlobalState} from "@/lib/hooks"
 
 
 function PostCard({post}: {post: PostWithDiscussion}) {
@@ -90,7 +91,7 @@ function ActivityCard({post}: {post: PostWithActivity}) {
 }
 
 function PostItemCompact({post}: {post: PostWithDiscussion}) {
-  const {t, i18n: {language: locale}} = useTranslation()
+  const {i18n: {language: locale}} = useTranslation()
 
   return (<>
     <li className="py-2.5 group flex items-baseline flex-col md:flex-row gap-1 md:gap-9">
@@ -112,8 +113,20 @@ function PostItemCompact({post}: {post: PostWithDiscussion}) {
   </>)
 }
 
-export function PostCardList({posts: data, ...props}: {posts: GetPostsResponse} & ComponentPropsWithoutRef<"ul">) {
+function useUpdateInteractionsData(posts: PostWithDiscussion[]) {
+  const [_, setInteractions] = useGlobalState("interactions")
+  const interactions = posts.reduce((prev, post) => {
+    prev[post.slug] = {comment: post.discussion.comments.totalCount, reaction: post.discussion.reactions.totalCount}
+    return prev
+  }, {} as Interactions)
+  // eslint-disable-next-line
+  useEffect(() => setInteractions(prev => ({...prev, ...interactions})), [setInteractions])
+}
+
+function PostCardList({posts: data, ...props}: {posts: GetPostsResponse} & ComponentPropsWithoutRef<"ul">) {
   const posts = use(data)
+  useUpdateInteractionsData(posts)
+
   return (<>
     <ul className="flex flex-col gap-5 animate-delay-in" {...props}>
       {posts.map(post => <PostCard post={post} key={post.slug}/>)}
@@ -123,7 +136,8 @@ export function PostCardList({posts: data, ...props}: {posts: GetPostsResponse} 
 
 export function PostCompactList({posts: data, ...props}: {posts: GetPostsResponse} & ComponentPropsWithoutRef<"ul">) {
   const posts = use(data)
-  const {t, i18n: {language: locale}} = useTranslation()
+  const {t} = useTranslation()
+  useUpdateInteractionsData(posts)
 
   return (<>
     <ul className="flex flex-col animate-delay-in" {...props}>
@@ -146,6 +160,7 @@ export function LatestActivityList({posts: data, ...props}:
   {posts: GetLatestActivitiesResponse} & ComponentPropsWithoutRef<"ul">) {
 
   const posts = use(data)
+  useUpdateInteractionsData(posts)
 
   return (<>
     <ul className="flex flex-col gap-2" {...props}>
