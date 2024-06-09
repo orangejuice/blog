@@ -28,7 +28,7 @@ export async function generateMetadata({params: {locale}}: {params: {locale: str
       description: site.description,
       url: "./",
       siteName: site.title,
-      images: ["/logo.svg"],
+      images: ["/favicon@2x.png"],
       locale: resolvedLanguage,
       type: "website"
     },
@@ -36,14 +36,14 @@ export async function generateMetadata({params: {locale}}: {params: {locale: str
     twitter: {
       title: site.title,
       card: "summary_large_image",
-      images: ["/logo.svg"]
+      images: ["/favicon@2x.png"]
     }
   }
 }
 
 export default async function RootLayout({children, params: {locale}}:
   Readonly<{children: React.ReactNode, params: {locale: string}}>) {
-  const {resources,i18n:{resolvedLanguage: resolved}} = await initTranslation(locale || site.locales[0])
+  const {resources, i18n: {resolvedLanguage: resolved}} = await initTranslation(locale || site.locales[0])
 
   return (
     <html lang={resolved} suppressHydrationWarning>
