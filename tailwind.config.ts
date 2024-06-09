@@ -27,7 +27,7 @@ const config: Config = {
         hide: {to: {opacity: "0"}},
         show: {to: {opacity: "100"}},
         in: {"0%": {transform: "translateY(18px)", opacity: "0"}, "100%": {transform: "translateY(0)", opacity: "100"}},
-        fade: {"0%, 100%": {opacity: "1"}, "50%": {opacity: " 0.3"}}
+        fade: {"0%, 100%": {opacity: "1"}, "50%": {opacity: "0.3"}}
       },
       animation: {
         "delay-in": "in .6s calc(var(--index) * 130ms) both",
