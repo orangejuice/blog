@@ -28,7 +28,7 @@ export async function generateMetadata({params: {locale}}: {params: {locale: str
       description: site.description,
       url: "./",
       siteName: site.title,
-      images: ["/favicon.png"],
+      images: ["/open-graph.png"],
       locale: resolvedLanguage,
       type: "website"
     },
@@ -36,7 +36,7 @@ export async function generateMetadata({params: {locale}}: {params: {locale: str
     twitter: {
       title: site.title,
       card: "summary_large_image",
-      images: ["/favicon.png"]
+      images: ["/open-graph.png"]
     }
   }
 }
