@@ -113,7 +113,7 @@ function PostItemCompact({post}: {post: PostWithDiscussion}) {
   </>)
 }
 
-function useUpdateInteractionsData(posts: PostWithDiscussion[]) {
+function useUpdateInteractionState(posts: PostWithDiscussion[]) {
   const [_, setInteractions] = useGlobalState("interactions")
   const interactions = posts.reduce((prev, post) => {
     prev[post.slug] = {comment: post.discussion.comments.totalCount, reaction: post.discussion.reactions.totalCount}
@@ -125,7 +125,7 @@ function useUpdateInteractionsData(posts: PostWithDiscussion[]) {
 
 function PostCardList({posts: data, ...props}: {posts: GetPostsResponse} & ComponentPropsWithoutRef<"ul">) {
   const posts = use(data)
-  useUpdateInteractionsData(posts)
+  useUpdateInteractionState(posts)
 
   return (<>
     <ul className="flex flex-col gap-5 animate-delay-in" {...props}>
@@ -137,12 +137,25 @@ function PostCardList({posts: data, ...props}: {posts: GetPostsResponse} & Compo
 export function PostCompactList({posts: data, ...props}: {posts: GetPostsResponse} & ComponentPropsWithoutRef<"ul">) {
   const posts = use(data)
   const {t} = useTranslation()
-  useUpdateInteractionsData(posts)
+  useUpdateInteractionState(posts)
 
   return (<>
     <ul className="flex flex-col animate-delay-in" {...props}>
       {posts.length == 0 && <p>{t("post.no-post")}</p>}
       {posts.map((post, index) => <PostItemCompact post={post} key={index}/>)}
+    </ul>
+  </>)
+}
+
+export function LatestActivityList({posts: data, ...props}:
+  {posts: GetLatestActivitiesResponse} & ComponentPropsWithoutRef<"ul">) {
+
+  const posts = use(data)
+  useUpdateInteractionState(posts)
+
+  return (<>
+    <ul className="flex flex-col gap-2" {...props}>
+      {posts.map(post => <ActivityCard post={post} key={post.slug}/>)}
     </ul>
   </>)
 }
@@ -154,17 +167,4 @@ export function PostMainList({postsOneLang, postsAllLang, ...props}:
   const posts = lang == "all" ? postsAllLang : postsOneLang
 
   return <PostCardList posts={posts} {...props} key={lang}></PostCardList>
-}
-
-export function LatestActivityList({posts: data, ...props}:
-  {posts: GetLatestActivitiesResponse} & ComponentPropsWithoutRef<"ul">) {
-
-  const posts = use(data)
-  useUpdateInteractionsData(posts)
-
-  return (<>
-    <ul className="flex flex-col gap-2" {...props}>
-      {posts.map(post => <ActivityCard post={post} key={post.slug}/>)}
-    </ul>
-  </>)
 }
