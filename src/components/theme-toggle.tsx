@@ -18,7 +18,7 @@ export function ThemeToggle() {
     <Tooltip delayDuration={0}>
       <TooltipTrigger asChild>
         <Button variant="ghost" size="icon" className={cn("group h-fit w-fit gap-2 px-2 py-1.5 -mx-2 hover:bg-stone-200 active:bg-stone-300",
-          "dark:text-white dark:hover:bg-stone-700 dark:active:bg-stone-800")}
+          "dark:hover:bg-stone-700 dark:active:bg-stone-800")}
           onClick={() => setTheme(theme === "light" ? "dark" : theme === "dark" ? "system" : "light")}>
           {theme === "dark" && <Icons.theme.dark className="w-5 h-5 transition-all"/>}
           {theme === "light" && <Icons.theme.light className="w-5 h-5 transition-all"/>}
@@ -29,10 +29,10 @@ export function ThemeToggle() {
             {resolvedTheme === "light" &&
               <Icons.theme.light className="absolute w-5 h-5 animate-delay-show opacity-0 transition-all group-hover:hidden"/>}
           </div>}
-          <span className="sr-only">Toggle theme</span>
+          <span>{t(`theme.${resolvedTheme}`)}</span>
         </Button>
       </TooltipTrigger>
-      <TooltipContent className="capitalize">{t(`theme.${theme}`)}</TooltipContent>
+      <TooltipContent>{t(`theme.${theme}`)}</TooltipContent>
     </Tooltip>
   )
 }

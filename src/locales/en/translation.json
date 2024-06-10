@@ -7,7 +7,8 @@
   "theme": {
     "light": "Light",
     "dark": "Dark",
-    "system": "Follow system"
+    "system": "Follow system",
+    "white-noise": "White noise"
   },
   "post": {
     "all": "All posts",

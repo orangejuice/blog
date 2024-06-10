@@ -1,7 +1,7 @@
 import * as React from "react"
 import {ComponentProps, ComponentType} from "react"
 import {cn} from "@/lib/utils"
-import {ArrowRight, ChevronRight, Dot, Filter, Globe, Hash, Loader2, LogIn, LogOut, Menu, MessageCircleMore, Monitor, Moon, Pickaxe, Slash, Smile, Sun, Undo2, User} from "lucide-react"
+import {ArrowRight, AudioLines, ChevronRight, Dot, Filter, Globe, Hash, Loader2, LogIn, LogOut, LucideProps, Menu, MessageCircleMore, Monitor, Moon, Pickaxe, Slash, Smile, Sun, Undo2, User} from "lucide-react"
 import Image, {ImageProps} from "next/image"
 
 export const Icons = {
@@ -17,9 +17,11 @@ export const Icons = {
   grid: () => (<>
     <span className="grid grid-cols-1 grid-rows-2 gap-px">
       <span className="animate-fade mx-px h-1 w-1 rounded-full bg-current"></span>
-      <span className="animate-fade animation-delay-300 mx-px h-1 w-1 rounded-full bg-current"></span>
+      <span className="animate-fade animate-delay-300 mx-px h-1 w-1 rounded-full bg-current"></span>
     </span>
-  </>)
+  </>),
+  audio: ({className, ...props}: LucideProps) =>
+    <AudioLines className={cn("[&_path]:animate-wave [&_path:nth-child(odd)]:animate-delay-300", className)} {...props}/>
 }
 
 function cns<T extends ComponentType<any>>(Icon: T, predefined?: string) {

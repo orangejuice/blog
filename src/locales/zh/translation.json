@@ -5,9 +5,10 @@
     "guestbook": "留言板"
   },
   "theme": {
-    "light": "明亮模式",
-    "dark": "黑暗模式",
-    "system": "跟随系统"
+    "light": "明亮",
+    "dark": "黑暗",
+    "system": "跟随系统",
+    "white-noise": "白噪声"
   },
   "post": {
     "all": "所有文章",
