@@ -15,7 +15,7 @@ export function BackgroundMusicToggle() {
 
   useEffect(() => {
     if (!audioRef.current) return
-    audioRef.current.src = resolvedTheme == "light" ? "white-noise-day.mp3" : "white-noise-night.mp3"
+    audioRef.current.src = resolvedTheme == "light" ? "/white-noise-day.mp3" : "/white-noise-night.mp3"
     isWhiteNoiseOn ? void audioRef.current.play().catch(console.log) : audioRef.current.pause()
   }, [isWhiteNoiseOn, resolvedTheme])
 
