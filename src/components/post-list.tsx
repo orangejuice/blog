@@ -53,7 +53,7 @@ function ActivityCard({post}: {post: PostWithActivity}) {
   const update = "author" in activity ? (<>
     <div className="flex items-center gap-2">
       <Image src={activity.author.avatarUrl} alt="" width={20} height={20} className="h-8 w-8 rounded-full"/>
-      <div className="flex flex-col items-start text-stone-600">
+      <div className="flex flex-col items-start text-stone-600 dark:text-stone-400">
         <span className="font-medium text-sm">{activity.author.login}</span>
         <time className="text-xs line-clamp-1">{format(activity.createdAt, locale, {fromNow: true})}</time>
       </div>
@@ -65,7 +65,7 @@ function ActivityCard({post}: {post: PostWithActivity}) {
   </>) : (<>
     <div className="flex items-center gap-2">
       <Image src={activity.user.avatarUrl} alt="" width={20} height={20} className="h-8 w-8 rounded-full"/>
-      <div className="flex flex-col items-start text-stone-600">
+      <div className="flex flex-col items-start text-stone-600 dark:text-stone-400">
         <span className="font-medium text-sm">{activity.user.login}</span>
         <time className="text-xs line-clamp-1">{format(activity.createdAt, locale, {fromNow: true})}</time>
       </div>
