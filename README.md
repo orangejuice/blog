@@ -13,7 +13,7 @@
 - Employs a modern tech stack with a minimalist design language
 - Offers Full Light/Dark Mode compatibility (including `Giscus`, `rehype-prism-plus`, and `Tocbot`)
 - Internationalisation(i18n) based on `react-i18next` (works with both server components and client components)
-- Provides an immersive reading background powered by `React Three Fiber` (Three.js)
+- Provides an immersive reading experience powered by `React Three Fiber` (Three.js) and `white noise`
 - Supports local/online image files through a custom rehype plugin, `rehype-mdx-images`
 - Utilizes `GraphQL` to fetch GitHub discussion data for interaction
 - Features robust Languages/Tags filtering capabilities
