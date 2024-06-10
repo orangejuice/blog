@@ -30,7 +30,7 @@ export function Header() {
               className={cn(buttonVariants({variant: "ghost", size: "icon"}),
                 "h-fit w-fit gap-2 whitespace-nowrap rounded-lg px-3 py-1.5 transition-all",
                 "hover:bg-stone-200 active:bg-stone-300 dark:text-white dark:hover:bg-stone-700 dark:active:bg-stone-800",
-                (pathname ?? "/") === path && "bg-stone-200 dark:bg-stone-700")}>
+                (pathname ?? "") === path && "bg-stone-200 dark:bg-stone-700")}>
               <span className="text-sm font-medium">{t(key)}</span>
             </Link>
           ))}
