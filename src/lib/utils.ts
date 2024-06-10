@@ -24,9 +24,9 @@ export function format(date: string | Date, locale = "en", options?: {fromNow?: 
   return dayjs(date).locale(locale).format("ll")
 }
 
-export function useCssIndexCounter() {
+export function useCssIndexCounter(style?: React.CSSProperties) {
   const cssIndexCounter: {(): React.CSSProperties, n?: number} = () => {
-    cssIndexCounter.n = cssIndexCounter.n || 0
+    cssIndexCounter.n = cssIndexCounter.n || ((style as {"--index": number})?.["--index"] ?? 0)
     return {"--index": cssIndexCounter.n++} as React.CSSProperties
   }
   return cssIndexCounter

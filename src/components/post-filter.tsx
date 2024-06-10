@@ -10,8 +10,8 @@ import Link from "next/link"
 
 export type FilterOption = [LangOption, string]
 
-export function PostFilter({locales, tags, filter: appliedFilter}: {locales: GetLocalesResponse, tags: GetTagsResponse, filter: FilterOption}) {
-  const cssIndexCounter = useCssIndexCounter()
+export function PostFilter({locales, tags, filter: appliedFilter, style}: {locales: GetLocalesResponse, tags: GetTagsResponse, filter: FilterOption, style?: React.CSSProperties}) {
+  const cssIndexCounter = useCssIndexCounter(style)
   const {t, i18n: {language: locale}} = useTranslation("lang")
   const [, setFilter] = useLocalStorage<FilterOption | "">("post-filter", appliedFilter ?? "")
   useEffect(() => {appliedFilter && setFilter(appliedFilter) }, [appliedFilter, setFilter])
