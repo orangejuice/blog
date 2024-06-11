@@ -5,7 +5,7 @@ import {BackgroundMusicToggle} from "@/components/noise-toggle"
 
 export function Footer() {
   return (<>
-    <footer className="flex mt-16 items-center justify-between text-gray-500 dark:text-gray-400">
+    <footer className="flex mt-16 flex-col md:flex-row md:items-center gap-4 justify-between text-gray-500 dark:text-gray-400">
       <div className="flex items-center gap-8">
         <ThemeToggle/>
         <BackgroundMusicToggle/>
