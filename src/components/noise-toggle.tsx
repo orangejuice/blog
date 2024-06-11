@@ -31,8 +31,8 @@ export function BackgroundMusicToggle() {
       <AnimatePresence>
         {!isWhiteNoiseOn && (<>
           <motion.span initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} className={cn(
-            "absolute w-6 h-1 rotate-45 top-4 left-2 bg-red-500 rounded border border-white",
-            "dark:border-black group-hover:border-stone-200 dark:group-hover:border-stone-700 transition-colors duration-700")}/>
+            "absolute w-6 h-1 rotate-45 top-4 left-1.5 bg-red-500 rounded border border-white",
+            "dark:border-black group-hover:border-stone-200 dark:group-hover:border-stone-700 transition-colors")}/>
         </>)}
       </AnimatePresence>
       <span>{t("theme.white-noise")}</span>
