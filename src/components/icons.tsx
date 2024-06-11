@@ -1,7 +1,7 @@
 import * as React from "react"
 import {ComponentProps, ComponentType, forwardRef} from "react"
 import {cn} from "@/lib/utils"
-import {ArrowRight, AudioLines, ChevronRight, Dot, Filter, Globe, Hash, Loader2, LogIn, LogOut, Menu, MessageCircleMore, Monitor, Moon, Pickaxe, Slash, Smile, Sun, Undo2, User} from "lucide-react"
+import {ArrowRight, AudioLines, ChevronRight, Dot, Filter, Globe, Hash, Loader2, LogIn, LogOut, Menu, MessageCircleMore, Moon, Pickaxe, Slash, Smile, Sun, SunMoon, Undo2, User} from "lucide-react"
 import Image, {ImageProps} from "next/image"
 
 export const Icons = {
@@ -13,7 +13,7 @@ export const Icons = {
   link: {arrow: cns(ArrowRight), chevron: cns(ChevronRight)},
   loading: cns(Loader2, "w-5 h-5 mx-auto animate-spin"),
   nav: {profile: cns(User), lang: cns(Globe), menu: cns(Menu)},
-  theme: {light: cns(Sun, "w-5 h-5"), dark: cns(Moon, "w-5 h-5"), system: cns(Monitor, "w-5 h-5")},
+  theme: {light: cns(Sun, "w-5 h-5"), dark: cns(Moon, "w-5 h-5"), system: cns(SunMoon, "w-5 h-5")},
   grid: () => (<>
     <span className="grid grid-cols-1 grid-rows-2 gap-px">
       <span className="animate-fade mx-px h-1 w-1 rounded-full bg-current"></span>
