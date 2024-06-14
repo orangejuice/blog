@@ -8,19 +8,18 @@
 
 ## ✨ Features
 
-- Utilizes `Next.js` (App.dir), `React`, `TailwindCSS`, `Mdx`, `shadcn/ui`, `framer motion`, and `contentlayer`
+- Utilizes `Next.js` (App dir+ISR+SSR+CSR), `React`, `TailwindCSS`, `Mdx`, `shadcn/ui`, `framer motion`, and `contentlayer`
 - Responsive UI for seamless experience across PC and mobile devices
 - Employs a modern tech stack with a minimalist design language
 - Internationalisation(i18n) based on `react-i18next` (works with both server components and client components)
-- Offers Full Light/Dark Mode compatibility (including `Giscus`, `rehype-prism-plus`, and `Tocbot`)
+- Offers full Light/Dark Mode compatibility (including `Giscus`, `rehype-prism-plus`, and `Tocbot`)
 - Provides an immersive reading experience powered by `React Three Fiber` (Three.js) and `white noise`
-- Creative (and also minimalist) `Light/Dark` and `White noise On/Off` button UX and UI
+- Creative (and also minimalist) `Light/Dark` and `White noise On/Off` toggle UX and UI
 - Supports local/online image files through a custom rehype plugin, `rehype-mdx-images`
 - Utilizes `GraphQL` to fetch GitHub discussion data for interaction
 - Features robust Languages/Tags filtering capabilities
 - Includes a Comment/Reaction system based on `Giscus` (work together with [On New Giscus Comment](https://github.com/orangejuice/on-new-giscus-comment))
 - SEO with generated `sitemap.xml`, `robots.txt`, `Open Graph` & `RSS feed` (i18n ready)
-- Stay tuned for more updates!
 
 ## 🔖 History
 
