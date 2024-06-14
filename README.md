@@ -5,6 +5,8 @@
 </div>
 
 ![ts](https://badgen.net/badge/-/TypeScript/blue?icon=typescript&label)
+![Vercel](https://vercelbadge.vercel.app/api/orangejuice/blog)
+
 
 ## ✨ Features
 
