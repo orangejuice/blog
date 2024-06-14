@@ -8,7 +8,7 @@
 
 ## ✨ Features
 
-- Utilizes `Next.js` (App dir+ISR+SSR+CSR), `React`, `TailwindCSS`, `Mdx`, `shadcn/ui`, `framer motion`, and `contentlayer`
+- Utilizes `Next.js` (App dir/ISR/SSR/CSR), `React`, `TailwindCSS`, `Mdx`, `shadcn/ui`, `framer motion`, and `contentlayer`
 - Responsive UI for seamless experience across PC and mobile devices
 - Employs a modern tech stack with a minimalist design language
 - Internationalisation(i18n) based on `react-i18next` (works with both server components and client components)
