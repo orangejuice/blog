@@ -3,10 +3,10 @@
     <img alt="Orangejuice" width="200px" src="https://orangejuice.cc/logo.svg" />
   </a>
 
-![star](https://img.shields.io/github/stars/orangejuice/blog.svg?style=flat&logo=github&colorB=red&label=Star)
+![star](https://img.shields.io/github/stars/orangejuice/blog.svg?style=flat&logo=github&colorB=50c62a&label=Star)
 ![Vercel](https://vercelbadge.vercel.app/api/orangejuice/blog)
 
-![nextjs](https://img.shields.io/github/package-json/dependency-version/orangejuice/blog/next?label=Next.js&logo=next.js&color=444)
+![nextjs](https://img.shields.io/github/package-json/dependency-version/orangejuice/blog/next?label=Next.js&logo=next.js&color=333)
 ![typescript](https://img.shields.io/github/package-json/dependency-version/orangejuice/blog/dev/typescript?label=Typescript&logo=typescript&logoColor=fff&color=3178c6)
 ![react](https://img.shields.io/github/package-json/dependency-version/orangejuice/blog/react?label=React&color=61dafb&logo=react&logoColor=fff)
 ![node](https://img.shields.io/badge/Node.js-^20.2.0-success?color=5fa04e&logo=node.js&logoColor=fff)
