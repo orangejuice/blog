@@ -1,7 +1,5 @@
 <div align="center">
-  <a href="https://orangejuice.cc/">
-    <img alt="Orangejuice" width="200px" src="https://orangejuice.cc/logo.svg" />
-  </a>
+  <p><a href="https://orangejuice.cc/"><img alt="Orangejuice" width="200px" src="https://orangejuice.cc/logo.svg" /></a></p>
 
 ![deploy](https://img.shields.io/github/deployments/orangejuice/blog/production?logo=vercel&label=Vercel)
 
