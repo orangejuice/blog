@@ -40,3 +40,13 @@ export function getTableOfContents(md: string) {
     id: slug(groups?.content ?? "", false)
   }))
 }
+
+export function shortenNumber(num: number): string {
+  if (num < 1000) return num.toString()
+  const units = ["", "K", "M", "B", "T"]
+  const order = Math.floor(Math.log10(num) / 3)
+  const unitName = units[order]
+  const numShort = num / Math.pow(10, order * 3)
+
+  return `${numShort.toFixed(1)}${unitName}`
+}

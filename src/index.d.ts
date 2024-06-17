@@ -13,3 +13,11 @@ type IDiscussionData = {
   totalReplyCount: number
   reactions: IReactionGroups
 }
+
+type Interactions = {
+  [slug: string]: {
+    view: number
+    viewed: boolean
+    discussion: { [key in "comment" | "reaction"]: number }
+  }
+}

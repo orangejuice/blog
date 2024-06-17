@@ -1,8 +1,11 @@
+"use server"
 import jwt from "jsonwebtoken"
 import {graphql} from "@octokit/graphql"
 import {giscusConfig} from "@/site"
 import {createAppAuth} from "@octokit/auth-app"
 import {format} from "@/lib/utils"
+import {unstable_cache as cache} from "next/cache"
+import axios from "axios"
 
 export const getInstallationId = async (repo: string): Promise<string> => {
   const now = Math.floor(Date.now() / 1000)
@@ -10,15 +13,14 @@ export const getInstallationId = async (repo: string): Promise<string> => {
   const token = jwt.sign(payload, process.env.GITHUB_PRIVATE_KEY!, {algorithm: "RS256"})
   const url = `https://api.github.com/repos/${repo}/installation`
 
-  const response = await fetch(url, {
-    method: "GET",
+  const response = await axios.get(url, {
     headers: {
       Authorization: `Bearer ${token}`,
-      Accept: "application/vnd.github.v3+json"
+      Accept: "application/json"
     }
   })
 
-  return (await response.json() as {id: number}).id.toString()
+  return (await response.data as {id: number}).id.toString()
 }
 
 const auth = createAppAuth({
@@ -39,7 +41,7 @@ interface DiscussionNode {
   }
 }
 
-export const fetchDiscussions = async ({repo, category, titles}: {repo: string, category: string, titles: string[]}): Promise<{[slug: string]: DiscussionNode}> => {
+export const fetchDiscussions = cache(async ({repo, category, titles}: {repo: string, category: string, titles: string[]}): Promise<{[slug: string]: DiscussionNode}> => {
   console.log(format(new Date()), "[github]fetchDiscussions")
   const buildQueryWithAliases = () =>
     titles.map((title, index) => {
@@ -79,7 +81,7 @@ export const fetchDiscussions = async ({repo, category, titles}: {repo: string, 
     console.error("Error fetching discussion details:", error)
     throw error
   }
-}
+})
 
 interface ActivityNode {
   number: number;
@@ -109,7 +111,7 @@ interface ActivityNode {
   };
 }
 
-export const fetchLatestActivities = async ({repo, category, count}: {repo: string, category: string, count: number}) => {
+export const fetchLatestActivities = cache(async ({repo, category, count}: {repo: string, category: string, count: number}) => {
   console.log(format(new Date()), "[github]fetchLatestActivities")
   const query = `
     query {
@@ -159,7 +161,7 @@ export const fetchLatestActivities = async ({repo, category, count}: {repo: stri
     console.error("Error fetching latest discussions:", error)
     throw error
   }
-}
+})
 
 export type Discussion = PartialBy<DiscussionNode, "number" | "title">
 export type Activity = ActivityNode

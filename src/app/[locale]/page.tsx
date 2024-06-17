@@ -4,7 +4,7 @@ import {site, SiteLocale} from "@/site"
 import {LangSelect, ViewMore} from "@/app/[locale]/page.client"
 import {Icons} from "@/components/icons"
 import React, {Suspense} from "react"
-import {LatestActivityList, PostMainList} from "@/components/post-list"
+import {LatestActivityList, PostMainList, PostMainListPlaceholder} from "@/components/post-list"
 import initTranslation from "@/i18n"
 import {notFound} from "next/navigation"
 
@@ -28,10 +28,10 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
           </section>
           <LangSelect style={cssIndexCounter()}/>
         </div>
-        <Suspense fallback={<Icons.loading/>}>
+        <Suspense fallback={<PostMainListPlaceholder/>}>
           <PostMainList postsOneLang={postsOneLang} postsAllLang={postsAllLang} style={cssIndexCounter()}/>
+          <ViewMore style={cssIndexCounter()}/>
         </Suspense>
-        <ViewMore style={cssIndexCounter()}/>
       </main>
       <aside className="sticky top-8 flex flex-col gap-8">
         <div className="relative border border-transparent border-dashed p-7 group rounded-2xl animate-delay-in" style={cssIndexCounter()}>

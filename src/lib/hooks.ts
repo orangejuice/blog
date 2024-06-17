@@ -1,10 +1,4 @@
-import {createGlobalState} from "react-hooks-global-state"
 import {useEffect, useState} from "react"
-
-export const {useGlobalState} = createGlobalState({
-  interactions: {} as Interactions
-})
-export type Interactions = {[slug: string]: { [key in "comment" | "reaction"]: number }}
 
 export const useMounted = () => {
   const [mounted, setMounted] = useState(false)

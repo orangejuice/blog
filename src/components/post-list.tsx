@@ -2,16 +2,16 @@
 import Link from "next/link"
 import {Icons} from "@/components/icons"
 import {Button} from "@/components/ui/button"
-import {cn, format} from "@/lib/utils"
+import {cn, format, shortenNumber} from "@/lib/utils"
 import React, {ComponentPropsWithoutRef, use, useEffect} from "react"
-import type {GetLatestActivitiesResponse, GetPostsResponse, PostWithActivity, PostWithDiscussion} from "@/lib/fetch"
+import type {GetLatestActivitiesResponse, GetPostsResponse, PostWithActivity, PostWithMetadata} from "@/lib/fetch"
 import Image from "next/image"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {useTranslation} from "react-i18next"
-import {Interactions, useGlobalState} from "@/lib/hooks"
+import {useMounted} from "@/lib/hooks"
 
 
-function PostCard({post}: {post: PostWithDiscussion}) {
+function PostCard({post}: {post: PostWithMetadata}) {
   const {t, i18n: {language: locale}} = useTranslation()
 
   return (<>
@@ -35,6 +35,7 @@ function PostCard({post}: {post: PostWithDiscussion}) {
         <div className="flex w-full mt-2.5 text-xs justify-between font-medium text-neutral-800 dark:text-neutral-300">
           <p>{t("post.publish", {date: format(post.date, locale)})}</p>
           <div className="flex items-center gap-4 text-stone-600">
+            <span className="flex items-center gap-1"><Icons.post.view/> {post.view}</span>
             <span className="flex items-center gap-1"><Icons.post.reaction/> {post.discussion.reactions.totalCount}</span>
             <span className="flex items-center gap-1"><Icons.post.comment/> {post.discussion.comments.totalCount}</span>
           </div>
@@ -90,7 +91,7 @@ function ActivityCard({post}: {post: PostWithActivity}) {
   </>)
 }
 
-function PostItemCompact({post}: {post: PostWithDiscussion}) {
+function PostItemCompact({post}: {post: PostWithMetadata}) {
   const {i18n: {language: locale}} = useTranslation()
 
   return (<>
@@ -98,29 +99,37 @@ function PostItemCompact({post}: {post: PostWithDiscussion}) {
       <div className="flex w-full md:w-fit items-center justify-between">
         <time className={cn("md:w-28 text-secondary text-sm shrink-0")}>{format(post.date, locale)}</time>
         <div className="gap-4 text-xs w-fit text-stone-600 flex md:hidden">
-          <span className="flex items-center gap-1"><Icons.post.reaction/> {post.discussion.reactions.totalCount}</span>
-          <span className="flex items-center gap-1"><Icons.post.comment/> {post.discussion.comments.totalCount}</span>
+          <span className="flex items-center gap-1"><Icons.post.view/>{shortenNumber(post.view)}</span>
+          <span className="flex items-center gap-1"><Icons.post.reactComment/>{shortenNumber(post.discussion.reactions.totalCount + post.discussion.comments.totalCount)}</span>
         </div>
       </div>
       <div className="flex w-full justify-between gap-4">
-        <Link href={`/${post.slug}`} className="font-medium line-clamp-2 md:line-clamp-1 underline-fade">{post.title}</Link>
+        <Link href={`/${post.slug}`} className="font-medium w-full md:w-fit line-clamp-2 md:line-clamp-1 underline-fade">{post.title}</Link>
         <div className="gap-4 text-xs text-stone-600 hidden md:flex">
-          <span className="flex items-center gap-1"><Icons.post.reaction/> {post.discussion.reactions.totalCount}</span>
-          <span className="flex items-center gap-1"><Icons.post.comment/> {post.discussion.comments.totalCount}</span>
+          <span className="flex items-center gap-1 cursor-default"><Icons.post.view/>{shortenNumber(post.view)}</span>
+          <span className="flex items-center gap-1 cursor-default"><Icons.post.reactComment/>{shortenNumber(post.discussion.reactions.totalCount + post.discussion.comments.totalCount)}</span>
         </div>
       </div>
     </li>
   </>)
 }
 
-function useUpdateInteractionState(posts: PostWithDiscussion[]) {
-  const [_, setInteractions] = useGlobalState("interactions")
-  const interactions = posts.reduce((prev, post) => {
-    prev[post.slug] = {comment: post.discussion.comments.totalCount, reaction: post.discussion.reactions.totalCount}
-    return prev
-  }, {} as Interactions)
-  // eslint-disable-next-line
-  useEffect(() => setInteractions(prev => ({...prev, ...interactions})), [setInteractions])
+function useUpdateInteractionState(posts: (PostWithMetadata | PostWithActivity)[]) {
+  const [interactions, setInteractions] = useLocalStorage<Interactions>("interaction", {})
+  const mounted = useMounted()
+
+  useEffect(() => {
+    if (!mounted) return
+    const newInteractions = posts.reduce((prev, post) => {
+      prev[post.slug] = {
+        ...prev[post.slug],
+        discussion: {comment: post.discussion.comments.totalCount, reaction: post.discussion.reactions.totalCount}
+      }
+      "view" in post && (prev[post.slug].view = post.view)
+      return prev
+    }, interactions)
+    setInteractions(prev => ({...prev, ...newInteractions}))
+  }, [mounted])
 }
 
 function PostCardList({posts: data, ...props}: {posts: GetPostsResponse} & ComponentPropsWithoutRef<"ul">) {
@@ -167,4 +176,56 @@ export function PostMainList({postsOneLang, postsAllLang, ...props}:
   const posts = lang == "all" ? postsAllLang : postsOneLang
 
   return <PostCardList posts={posts} {...props} key={lang}></PostCardList>
+}
+
+export function PostMainListPlaceholder() {
+  return (<>
+    <ul className="animate-pulse">
+      {Array.from({length: 4}, (_, index) =>
+        <li key={index}>
+          <div className="group flex flex-col items-start no-underline relative p-4 rounded-xl -mx-4 bg-transparent gap-1">
+            <div className="flex items-center gap-2 w-full h-6 bg-stone-100 dark:bg-stone-900 rounded"></div>
+            <div className="flex items-center gap-1 flex-wrap">
+              <div className="h-6 w-12 bg-stone-100 dark:bg-stone-900 rounded"></div>
+              <div className="h-6 w-12 bg-stone-100 dark:bg-stone-900 rounded"></div>
+            </div>
+            <div className="w-full h-4 bg-stone-100 dark:bg-stone-900 rounded mt-2"></div>
+            <div className="w-full h-4 bg-stone-100 dark:bg-stone-900 rounded mt-1"></div>
+            <div className="flex w-full mt-2.5 text-xs justify-between font-medium">
+              <div className="w-1/4 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+              <div className="flex items-center gap-4 text-stone-600">
+                <div className="w-8 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+                <div className="w-8 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+                <div className="w-8 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+      )}
+    </ul>
+  </>)
+}
+
+export function PostCompactListPlaceholder() {
+  return (<>
+    <ul className="animate-pulse">
+      {Array.from({length: 10}, (_, index) =>
+        <li key={index} className="py-2.5 group flex items-baseline flex-col md:flex-row gap-1 md:gap-9">
+          <div className="flex w-full md:w-fit items-center justify-between">
+            <div className="md:w-28 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+            <div className="gap-4 text-xs w-fit flex md:hidden">
+              <div className="w-8 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+              <div className="w-8 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+            </div>
+          </div>
+          <div className="flex w-full justify-between gap-4">
+            <div className="w-full md:w-1/2 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+            <div className="gap-4 text-xs hidden md:flex">
+              <div className="w-8 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+              <div className="w-8 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+            </div>
+          </div>
+        </li>)}
+    </ul>
+  </>)
 }

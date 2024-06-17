@@ -3,8 +3,7 @@ import {useCssIndexCounter} from "@/lib/utils"
 import {getLocales, getPosts, getTags} from "@/lib/fetch"
 import {SiteLocale} from "@/site"
 import {FilterOption, PostFilter} from "@/components/post-filter"
-import {Icons} from "@/components/icons"
-import {PostCompactList} from "@/components/post-list"
+import {PostCompactList, PostCompactListPlaceholder} from "@/components/post-list"
 import initTranslation from "@/i18n"
 import {Metadata} from "next"
 
@@ -29,7 +28,7 @@ export default async function AllPost({params: {locale, filter}}: {params: {loca
             {t("post.all-sub", {year: new Date().getFullYear()})}
           </p>
         </section>
-        <Suspense fallback={<Icons.loading/>}>
+        <Suspense fallback={<PostCompactListPlaceholder/>}>
           <PostCompactList posts={posts} style={cssIndexCounter()}/>
         </Suspense>
       </div>
