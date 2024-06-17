@@ -20,7 +20,7 @@ Which probably feels pretty normal…
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-## The Far Future—Coming Soon**
+## The Far Future—Coming Soon
 
 Imagine taking a time machine back to 1750—a time when the world was in a permanent power outage, long-distance communication meant either yelling loudly or firing a cannon in the air, and all transportation ran on hay. When you get there, you retrieve a dude, bring him to 2015, and then walk him around and watch him react to everything. It’s impossible for us to understand what it would be like for him to see shiny capsules racing by on a highway, talk to people who had been on the other side of the ocean earlier in the day, watch sports that were being played 1,000 miles away, hear a musical performance that happened 50 years ago, and play with my magical wizard rectangle that he could use to capture a real-life image or record a living moment, generate a map with a paranormal moving blue dot that shows him where he is, look at someone’s face and chat with them even though they’re on the other side of the country, and worlds of other inconceivable sorcery. This is all before you show him the internet or explain things like the International Space Station, the Large Hadron Collider, nuclear weapons, or general relativity.
 
@@ -302,5 +302,3 @@ If our meager brains were able to invent wifi, then something 100 or 1,000 or 1 
 [^11g]: This term was first used by one of history’s great AI thinkers, Irving John Good, in 1965.
     
 [^12g]: Nick Bostrom, [_Superintelligence: Paths, Dangers, Strategies_](https://www.amazon.com/gp/product/0199678111/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0199678111&linkCode=as2&tag=wabuwh00-20&linkId=LBOTX2G2R72P5EUA), loc. 660
-    
-
