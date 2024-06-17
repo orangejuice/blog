@@ -2,12 +2,14 @@
   <p><a href="https://orangejuice.cc/"><img alt="Orangejuice" width="200px" src="https://orangejuice.cc/logo.svg" /></a></p>
 
 ![deploy](https://img.shields.io/github/deployments/orangejuice/blog/production?logo=vercel&label=Vercel)
+![deploy](https://img.shields.io/github/deployments/orangejuice/on-new-giscus-comment/production?logo=cloudflare-workers&label=Cloudflare%20Worker)
 
 <!--
 ![star](https://img.shields.io/github/stars/orangejuice/blog.svg?style=flat&logo=github&color=48bf1f&label=Star)
 ![react](https://img.shields.io/github/package-json/dependency-version/orangejuice/blog/react?label=React&color=61dafb&logo=react&logoColor=fff)
 ![typescript](https://img.shields.io/github/package-json/dependency-version/orangejuice/blog/dev/typescript?label=Typescript&logo=typescript&logoColor=fff&color=3178c6)
 ![node](https://img.shields.io/badge/Node.js-^20.2.0-5fa04e?logo=node.js&logoColor=fff)-->
+<sub>✅ Comment ✅ Reaction ✅ View Count ✅ Light/Dark ✅ PC/Mobile</sub>
 
 ![nextjs](https://img.shields.io/github/package-json/dependency-version/orangejuice/blog/next?label=Next.js&logo=next.js&color=222)
 ![react](https://img.shields.io/badge/React-05a3cd?logo=react&logoColor=fff)
@@ -16,18 +18,20 @@
 ![shadcn](https://img.shields.io/badge/shadcn%2Fui-000?logo=shadcnui&logoColor=fff)
 ![tailwind](https://img.shields.io/badge/Tailwind%20CSS-06b6d4?logo=tailwindcss&logoColor=fff)
 ![rss](https://shields.io/badge/RSS-f88900?logo=rss&logoColor=fff)
+
+
 </div>
 
 ## ✨ Features
 
-- Utilizes `Next.js(App dir/ISR/SSR/CSR)`, `React`, `TailwindCSS`, `Mdx`, `shadcn/ui`, `framer motion`, and `contentlayer`
+- `Next.js(App dir/ISR/SSR/CSR)`, `React`, `TailwindCSS`, `Mdx`, `shadcn/ui`, `framer motion`, `contentlayer`
 - Responsive UI for seamless experience across PC and mobile devices
 - Employs a modern tech stack with a minimalist design language
 - Internationalisation(i18n) based on `react-i18next` (works with both server components and client components)
 - Offers full Light/Dark Mode compatibility (including `Giscus`, `rehype-prism-plus`, and `Tocbot`)
-- Provides an immersive reading experience powered by `React Three Fiber` (Three.js) and `white noise`
-- Creative (and also minimalist) `Light/Dark` and `White noise On/Off` toggle UX and UI
-- Supports local/online image files through a custom rehype plugin, `rehype-mdx-images`
+- Immersive reading experience powered by `Three.js` and `white noise`
+- On-demand revalidation for dynamic data fetching
+- Supports local/online image files through a custom rehype plugin `rehype-mdx-images`
 - Utilizes `GraphQL` to fetch GitHub discussion data for interaction
 - Features robust Languages/Tags filtering capabilities
 - Includes a Comment/Reaction system based on `Giscus` (work together with [On New Giscus Comment](https://github.com/orangejuice/on-new-giscus-comment))
@@ -35,6 +39,7 @@
 
 ## 🔖 History
 
+- Jun 17, 2024: Add Article view count display (powered by Cloudflare D1)
 - Jun 03, 2024: Launch of the new blog system based on Next.js (App dir).
 - Jun 18, 2020: Imported legacy posts.
 - Jun 17, 2020: Revamped the entire system with Gatsby, embracing the modern frontend framework - React! (repo: [blog-gatsby](https://github.com/orangejuice/blog-gatsby))
