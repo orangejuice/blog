@@ -54,7 +54,6 @@
     "@types/remove-markdown": "^0.3.4",
     "@types/rss": "^0.0.32",
     "@types/three": "^0.165.0",
-    "babel-plugin-react-compiler": "latest",
     "contentlayer2": "^0.4.6",
     "eslint": "^8.57.0",
     "eslint-config-next": "15.0.0-rc.0",

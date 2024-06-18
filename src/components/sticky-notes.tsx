@@ -1,5 +1,5 @@
 "use client"
-import React, {ComponentProps, RefObject, use, useEffect, useRef, useState} from "react"
+import React, {ComponentProps, memo, RefObject, use, useEffect, useRef, useState} from "react"
 import {cn, format, getRandomLightHexColor, invertColor, randomInRange} from "@/lib/utils"
 import {Comment, fetchGuestbookCommentsResponse} from "@/lib/fetch-github"
 import {useTranslation} from "react-i18next"
@@ -8,7 +8,7 @@ import {useMounted} from "@/lib/hooks"
 import {motion, useMotionValue} from "framer-motion"
 import {useTheme} from "next-themes"
 
-function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {note: Comment, constraintRef: RefObject<HTMLDivElement>, handleDragStart: () => void, handleDragEnd: () => void, delay: number}) {
+const Note = memo(function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {note: Comment, constraintRef: RefObject<HTMLDivElement>, handleDragStart: () => void, handleDragEnd: () => void, delay: number}) {
   const ref = useRef<HTMLDivElement>(null)
   const {i18n: {language: locale}} = useTranslation()
   const x = useMotionValue<number | undefined>(undefined)
@@ -25,14 +25,13 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
     handleDragEnd()
   }
   const onDragTransitionEnd = () => {
-    // setLocalNotes(localNotes => ({
-    //   ...localNotes,
-    //   [note.id]: {...localNotes[note.id], position: {x: x.get(), y: y.get()}}
-    // }))
-    //todo will cause the sudden position change of rendered sticky notes
+    setLocalNotes(localNotes => ({
+      ...localNotes,
+      [note.id]: {...localNotes[note.id], position: {x: x.get(), y: y.get()}}
+    }))
   }
   const {resolvedTheme} = useTheme()
-  const [localNotes, setLocalNotes] = useLocalStorage<StickyNotes>("sticky-notes", {})
+  const [localNotes, setLocalNotes] = useLocalStorage<StickyNotes>("sticky-notes", {}, {event: false})
   const mounted = useMounted()
 
   useEffect(() => {
@@ -77,7 +76,7 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
       </div>
     </motion.div>
   </>)
-}
+}, (prevProps, nextProps) => prevProps.note.bodyText == nextProps.note.bodyText)
 
 export function Notes({data, className, ...props}: {data: fetchGuestbookCommentsResponse} & ComponentProps<"div">) {
   const notes = use(data)

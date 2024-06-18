@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react"
 
-export const useLocalStorage = <T>(key: string, initialValue: T): [T, (value: T | ((val: T) => T)) => void] => {
+export const useLocalStorage = <T>(key: string, initialValue: T, options = {event: true}): [T, (value: T | ((val: T) => T)) => void] => {
   const [storedValue, setStoredValue] = useState<T>(() => {
     if (typeof window !== "undefined") {
       try {
@@ -19,7 +19,7 @@ export const useLocalStorage = <T>(key: string, initialValue: T): [T, (value: T 
       if (typeof window !== "undefined") {
         try {
           window.localStorage.setItem(key, JSON.stringify(valueToStore))
-          window.dispatchEvent(new CustomEvent("localStorageChange", {detail: {key, value: valueToStore}}))
+          if (options.event) window.dispatchEvent(new CustomEvent("localStorageChange", {detail: {key, value: valueToStore}}))
         } catch (error) {
           console.log(error)
         }
@@ -36,8 +36,8 @@ export const useLocalStorage = <T>(key: string, initialValue: T): [T, (value: T 
         setTimeout(() => setStoredValue(event.detail.value), 0)
       }
     }
-    window.addEventListener("localStorageChange", handleStorageChange as EventListener)
-    return () => window.removeEventListener("localStorageChange", handleStorageChange as EventListener)
+    if (options.event) window.addEventListener("localStorageChange", handleStorageChange as EventListener)
+    if (options.event) return () => window.removeEventListener("localStorageChange", handleStorageChange as EventListener)
   }, [key])
 
   return [storedValue, setValue]
