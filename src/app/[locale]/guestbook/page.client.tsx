@@ -8,7 +8,7 @@ import {useMounted} from "@/lib/hooks"
 import {motion, useMotionValue} from "framer-motion"
 import {useTheme} from "next-themes"
 
-function Note({note, constraintRef, handleDragStart, handleDragEnd}: {note: Comment, constraintRef: RefObject<HTMLDivElement>, handleDragStart: () => void, handleDragEnd: () => void}) {
+function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {note: Comment, constraintRef: RefObject<HTMLDivElement>, handleDragStart: () => void, handleDragEnd: () => void, delay: number}) {
   const ref = useRef<HTMLDivElement>(null)
   const {i18n: {language: locale}} = useTranslation()
   const x = useMotionValue<number | undefined>(undefined)
@@ -61,8 +61,8 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd}: {note: Comm
   if (!backgroundColor) return null
   return (<>
     <motion.div style={{x, y, rotate, backgroundColor: resolvedTheme == "dark" ? invertColor(backgroundColor.get()) : backgroundColor}}
-      ref={ref} whileDrag={{scale: 1.05, rotateZ: -10}}
-      initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}
+      ref={ref} whileDrag={{scale: 1.05, rotateZ: -10}} transition={{delay, type: "just"}}
+      initial={{opacity: 0, translateY: 18}} animate={{opacity: 1, translateY: 0}} exit={{opacity: 0}}
       className={cn("absolute cursor-move flex w-52 h-52 flex-col shadow-md transition-[box-shadow,color,background-color]", isDragging && "shadow-xl")}
       onDragStart={onDragStart} onDragEnd={onDragEnd}
       drag dragConstraints={constraintRef} onDragTransitionEnd={onDragTransitionEnd} dragMomentum={false}>
@@ -85,7 +85,7 @@ export function Notes({data, className, ...props}: {data: fetchGuestbookComments
   return (<>
     <div className={cn("w-full relative aspect-square md:aspect-[3/1] z-10 border-dashed border-4 rounded notes",
       "transition-colors duration-500", className, !isDragging && "border-transparent")} ref={ref} {...props}>
-      {notes.map((note, i) => <Note key={i} note={note} constraintRef={ref}
+      {notes.map((note, i) => <Note key={i} note={note} constraintRef={ref} delay={0.5 + 0.1 * i}
         handleDragStart={() => setIsDragging(true)} handleDragEnd={() => setIsDragging(false)}/>
       )}
     </div>
@@ -96,6 +96,8 @@ export function NotesPlaceholder() {
   return (<>
     <div className="w-full flex flex-row items-center justify-center aspect-square md:aspect-[3/1] z-10 animate-pulse">
       <div className="flex w-52 h-52 flex-col bg-stone-100 -rotate-6 dark:bg-stone-900 shadow">
+      </div>
+      <div className="flex w-52 h-52 flex-col bg-stone-100 rotate-6 dark:bg-stone-900 shadow">
       </div>
     </div>
   </>)
