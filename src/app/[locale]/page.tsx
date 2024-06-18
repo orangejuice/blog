@@ -1,12 +1,15 @@
 import {getLatestActivitiesPost, getPosts} from "@/lib/fetch"
 import {useCssIndexCounter} from "@/lib/utils"
 import {site, SiteLocale} from "@/site"
-import {LangSelect, ViewMore} from "@/app/[locale]/page.client"
+import {LangSelect} from "@/components/lang-select"
 import {Icons} from "@/components/icons"
 import React, {Suspense} from "react"
-import {LatestActivityList, PostMainList, PostMainListPlaceholder} from "@/components/post-list"
+import {LatestActivityList, PostMainList} from "@/components/post-list"
 import initTranslation from "@/i18n"
 import {notFound} from "next/navigation"
+import {ViewMore} from "@/components/view-more"
+import {util} from "protobufjs"
+import Array = util.Array
 
 export default async function Home({params: {locale}}: {params: {locale: SiteLocale}}) {
   const cssIndexCounter = useCssIndexCounter()
@@ -43,13 +46,67 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
             </p>
           </div>
         </div>
-        <section className="animate-delay-in" style={cssIndexCounter()}>
-          <h5 className="text-slate-900 font-semibold mb-2 text-sm leading-6 dark:text-slate-100">{t("post.latest-activities")}</h5>
-          <Suspense fallback={<Icons.loading/>}>
-            <LatestActivityList posts={latestActivities}/>
+        <section>
+          <h5 className="text-slate-900 font-semibold mb-2 text-sm leading-6 dark:text-slate-100 animate-delay-in" style={cssIndexCounter()}>
+            {t("post.latest-activities")}
+          </h5>
+          <Suspense fallback={<LatestActivityListPlaceholder/>}>
+            <LatestActivityList posts={latestActivities} className="animate-delay-in" style={cssIndexCounter()}/>
           </Suspense>
+          <LatestActivityListPlaceholder/>
         </section>
       </aside>
     </div>
+  </>)
+}
+
+
+export function PostMainListPlaceholder() {
+  return (<>
+    <ul className="animate-pulse">
+      {[...new Array(4)].map((_, index) =>
+        <li key={index}>
+          <div className="group flex flex-col items-start no-underline relative p-4 rounded-xl -mx-4 bg-transparent gap-1">
+            <div className="flex items-center gap-2 w-full h-6 bg-stone-100 dark:bg-stone-900 rounded"></div>
+            <div className="flex items-center gap-1 flex-wrap">
+              <div className="h-6 w-12 bg-stone-100 dark:bg-stone-900 rounded"></div>
+              <div className="h-6 w-12 bg-stone-100 dark:bg-stone-900 rounded"></div>
+            </div>
+            <div className="w-full h-4 bg-stone-100 dark:bg-stone-900 rounded mt-2"></div>
+            <div className="w-full h-4 bg-stone-100 dark:bg-stone-900 rounded mt-1"></div>
+            <div className="flex w-full mt-2.5 text-xs justify-between font-medium">
+              <div className="w-1/4 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+              <div className="flex items-center gap-4 text-stone-600">
+                <div className="w-8 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+                <div className="w-8 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+                <div className="w-8 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+      )}
+    </ul>
+  </>)
+}
+
+export function LatestActivityListPlaceholder() {
+  return (<>
+    <ul className="animate-pulse">
+      {[...new Array(4)].map((_, index) =>
+        <li key={index}>
+          <div className="flex flex-col items-start px-4 py-2 rounded-md -mx-4 transition-colors gap-2">
+            <div className="flex items-center gap-2">
+              <div className="h-8 w-8 bg-stone-100 dark:bg-stone-900 rounded-full"></div>
+              <div className="flex flex-col items-start">
+                <div className="h-4 w-24 bg-stone-100 dark:bg-stone-900 rounded"></div>
+                <div className="h-3 w-16 bg-stone-100 dark:bg-stone-900 rounded mt-1"></div>
+              </div>
+            </div>
+            <div className="h-4 w-1/2 bg-stone-100 dark:bg-stone-900 rounded"></div>
+            <div className="w-full px-3 py-1 h-6 bg-stone-100 dark:bg-stone-900 rounded-md mt-2"></div>
+          </div>
+        </li>
+      )}
+    </ul>
   </>)
 }
