@@ -39,14 +39,14 @@
 
 ## 🔖 History
 
-- Jun 18, 2024: Add Sticky Notes display on Guestbook page.
-- Jun 17, 2024: Add Article view count display (powered by Cloudflare D1).
-- Jun 03, 2024: Launch of the new blog system based on Next.js (App dir).
-- Jun 18, 2020: Imported legacy posts.
-- Jun 17, 2020: Revamped the entire system with Gatsby, embracing the modern frontend framework - React! (repo: [blog-gatsby](https://github.com/orangejuice/blog-gatsby))
-- Feb 15, 2020: Updated to iacrus 2.7.0.
-- Feb 14, 2020: Removed theme files and replaced them with a submodule for better version control.
-- Nov 28, 2018: Initial deployment based on Hexo / Git pages! [Post](https://orangejuice.cc/2019-03-04-build-a-hexo-blog) (repo: [blog-hexo](https://github.com/orangejuice/blog-hexo))
+- `Jun 18, 2024`  Add Sticky Notes display on Guestbook page.
+- `Jun 17, 2024`  Add Article view count display (powered by Cloudflare D1).
+- `Jun 03, 2024`  Launch of the new blog system based on Next.js (App dir).
+- `Jun 18, 2020`  Imported legacy posts.
+- `Jun 17, 2020`  Revamped the entire system with Gatsby, embracing the modern frontend framework - React! (repo: [blog-gatsby](https://github.com/orangejuice/blog-gatsby))
+- `Feb 15, 2020`  Updated to iacrus 2.7.0.
+- `Feb 14, 2020`  Removed theme files and replaced them with a submodule for better version control.
+- `Nov 28, 2018`  Initial deployment based on Hexo / Git pages! [Post](https://orangejuice.cc/2019-03-04-build-a-hexo-blog) (repo: [blog-hexo](https://github.com/orangejuice/blog-hexo))
 
 ## ❤️ Credits
 
