@@ -66,8 +66,8 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
       className={cn("absolute cursor-move flex w-52 h-52 flex-col shadow-md transition-[box-shadow,color,background-color]", isDragging && "shadow-xl")}
       onDragStart={onDragStart} onDragEnd={onDragEnd}
       drag dragConstraints={constraintRef} onDragTransitionEnd={onDragTransitionEnd} dragMomentum={false}>
-      <div className="grow overflow-hidden px-4 py-3">
-        <p className="scrollbar-0 h-full overflow-x-hidden overflow-y-scroll text-ellipsis select-text cursor-text" onPointerDownCapture={e => e.stopPropagation()}>
+      <div className="grow flex overflow-hidden px-4 py-3">
+        <p className="scrollbar-0 h-fit max-h-full overflow-auto text-ellipsis select-text cursor-text" onPointerDownCapture={e => e.stopPropagation()}>
           {note.bodyText}
         </p>
       </div>
