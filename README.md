@@ -39,7 +39,8 @@
 
 ## 🔖 History
 
-- Jun 17, 2024: Add Article view count display (powered by Cloudflare D1)
+- Jun 18, 2024: Add Sticky Notes display on Guestbook page.
+- Jun 17, 2024: Add Article view count display (powered by Cloudflare D1).
 - Jun 03, 2024: Launch of the new blog system based on Next.js (App dir).
 - Jun 18, 2020: Imported legacy posts.
 - Jun 17, 2020: Revamped the entire system with Gatsby, embracing the modern frontend framework - React! (repo: [blog-gatsby](https://github.com/orangejuice/blog-gatsby))

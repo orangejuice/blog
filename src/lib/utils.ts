@@ -50,3 +50,26 @@ export function shortenNumber(num: number): string {
 
   return `${numShort.toFixed(1)}${unitName}`
 }
+
+export function getRandomLightHexColor() {
+  const getLightColorValue = () => Math.floor(randomInRange(208, 256))
+  const r = getLightColorValue()
+  const g = getLightColorValue()
+  const b = getLightColorValue()
+  return `#${r.toString(16).padStart(2, "0")}${g.toString(16).padStart(2, "0")}${b.toString(16).padStart(2, "0")}`
+}
+
+export function invertColor(hex: string): string {
+  if (!hex) return ""
+  if (hex.startsWith("#")) hex = hex.slice(1)
+
+  const r = parseInt(hex.slice(0, 2), 16)
+  const g = parseInt(hex.slice(2, 4), 16)
+  const b = parseInt(hex.slice(4, 6), 16)
+
+  const invertedR = 255 - r
+  const invertedG = 255 - g
+  const invertedB = 255 - b
+
+  return `#${invertedR.toString(16).padStart(2, "0")}${invertedG.toString(16).padStart(2, "0")}${invertedB.toString(16).padStart(2, "0")}`
+}

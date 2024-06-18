@@ -1,9 +1,11 @@
 import {useCssIndexCounter} from "@/lib/utils"
-import {menu, SiteLocale} from "@/site"
-import React from "react"
+import {giscusConfig, menu, SiteLocale} from "@/site"
+import React, {Suspense} from "react"
 import initTranslation from "@/i18n"
 import {Comment} from "@/components/comment"
 import {Metadata} from "next"
+import {Notes, NotesPlaceholder} from "@/app/[locale]/guestbook/page.client"
+import {fetchGuestbookComments} from "@/lib/fetch-github"
 
 export async function generateMetadata({params: {locale}}: {params: {locale: string}}): Promise<Metadata> {
   const {t} = await initTranslation(locale)
@@ -13,7 +15,11 @@ export async function generateMetadata({params: {locale}}: {params: {locale: str
 export default async function Page({params: {locale}}: {params: {locale: SiteLocale}}) {
   const cssIndexCounter = useCssIndexCounter()
   const {t} = await initTranslation(locale)
-
+  const stickyNotes = fetchGuestbookComments({
+    repo: giscusConfig.repo,
+    category: giscusConfig.category!,
+    title: menu.guestbook
+  })
   return (<>
     <div className="flex flex-col w-full gap-6">
       <section>
@@ -22,6 +28,9 @@ export default async function Page({params: {locale}}: {params: {locale: SiteLoc
           {t("guestbook.title-sub")}
         </p>
       </section>
+      <Suspense fallback={<NotesPlaceholder/>}>
+        <Notes data={stickyNotes}/>
+      </Suspense>
       <Comment slug={menu.guestbook}/>
     </div>
   </>)

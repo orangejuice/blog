@@ -166,6 +166,63 @@ export const fetchLatestActivities = cache(async ({repo, category, count}: {repo
 export type Discussion = PartialBy<DiscussionNode, "number" | "title">
 export type Activity = ActivityNode
 
+
+interface CommentNode {
+  number: number;
+  title: string;
+  comments: {
+    totalCount: number;
+    nodes: Array<{
+      id: string
+      author: {
+        login: string;
+        avatarUrl: string;
+      };
+      body: string;
+      bodyText: string;
+      createdAt: string;
+    }>;
+  }
+}
+
+export const fetchGuestbookComments = cache(async ({repo, category, title}: {repo: string, category: string, title: string}) => {
+  console.log(format(new Date()), "[github]fetchGuestbookComments")
+  const query = `
+    query {
+      discussion: search(type: DISCUSSION, first: 1, query: "repo:${repo} category:${category} in:title ${title}") {
+        nodes {
+          ...DiscussionDetails
+        }
+      }
+    }
+    fragment DiscussionDetails on Discussion {
+      title
+      number
+      comments(last: 50) {
+        totalCount
+        nodes {
+          id
+          author {
+            login
+            avatarUrl
+          }
+          body
+          bodyText
+          createdAt
+        }
+      }
+    }`
+  try {
+    const data: {discussion: {nodes: CommentNode[]}} = await graphqlWithAuth(query)
+    return data.discussion.nodes.flatMap(discuss => discuss.comments.nodes)
+  } catch (error) {
+    console.error("Error fetching latest discussions:", error)
+    throw error
+  }
+})
+export type Comment = CommentNode["comments"]["nodes"][number]
+export type fetchGuestbookCommentsResponse = ReturnType<typeof fetchGuestbookComments>
+
 // export type DiscussionData = Awaited<ReturnType<typeof fetchDiscussions>>
 
 // console.log(await fetchDiscussions({

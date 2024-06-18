@@ -21,3 +21,12 @@ type Interactions = {
     discussion: { [key in "comment" | "reaction"]: number }
   }
 }
+
+type StickyNotes = {
+  [id: string]: {
+    position: { [key in "x" | "y"]: number }
+    color: string
+    rotate: string
+  }
+}
+// import("framer-motion").MotionValue<number | undefined>

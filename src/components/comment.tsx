@@ -20,7 +20,11 @@ export const Comment = ({slug}: {slug: string}) => {
       if (event.origin !== "https://giscus.app") return
       if (!(typeof event.data === "object" && event.data.giscus)) return
       const discussion: IDiscussionData = event.data.giscus.discussion
-      if (!discussion || slug == menu.guestbook) return
+      if (!discussion) return
+      if (slug == menu.guestbook) {
+        void revalidator()
+        return
+      }
 
       if ((discussion.totalCommentCount != 0 && discussion.totalCommentCount != interactions[slug].discussion.comment)
         || (discussion.reactionCount != 0 && discussion.reactionCount != interactions[slug].discussion.reaction)) {
