@@ -9,7 +9,7 @@
 ![react](https://img.shields.io/github/package-json/dependency-version/orangejuice/blog/react?label=React&color=61dafb&logo=react&logoColor=fff)
 ![typescript](https://img.shields.io/github/package-json/dependency-version/orangejuice/blog/dev/typescript?label=Typescript&logo=typescript&logoColor=fff&color=3178c6)
 ![node](https://img.shields.io/badge/Node.js-^20.2.0-5fa04e?logo=node.js&logoColor=fff)-->
-<sub>✅ Comment ✅ Reaction ✅ View Count ✅ Light/Dark ✅ PC/Mobile</sub>
+<sub>✅ Comment ✅ Reaction ✅ View Count ✅ Post-it wall ✅ Light/Dark ✅ PC/Mobile</sub>
 
 ![nextjs](https://img.shields.io/github/package-json/dependency-version/orangejuice/blog/next?label=Next.js&logo=next.js&color=222)
 ![react](https://img.shields.io/badge/React-05a3cd?logo=react&logoColor=fff)
