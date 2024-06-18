@@ -8,8 +8,6 @@ import {LatestActivityList, PostMainList} from "@/components/post-list"
 import initTranslation from "@/i18n"
 import {notFound} from "next/navigation"
 import {ViewMore} from "@/components/view-more"
-import {util} from "protobufjs"
-import Array = util.Array
 
 export default async function Home({params: {locale}}: {params: {locale: SiteLocale}}) {
   const cssIndexCounter = useCssIndexCounter()
@@ -53,7 +51,6 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
           <Suspense fallback={<LatestActivityListPlaceholder/>}>
             <LatestActivityList posts={latestActivities} className="animate-delay-in" style={cssIndexCounter()}/>
           </Suspense>
-          <LatestActivityListPlaceholder/>
         </section>
       </aside>
     </div>
@@ -64,7 +61,7 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
 export function PostMainListPlaceholder() {
   return (<>
     <ul className="animate-pulse">
-      {[...new Array(4)].map((_, index) =>
+      {Array.from({length: 4}, (_, index) =>
         <li key={index}>
           <div className="group flex flex-col items-start no-underline relative p-4 rounded-xl -mx-4 bg-transparent gap-1">
             <div className="flex items-center gap-2 w-full h-6 bg-stone-100 dark:bg-stone-900 rounded"></div>
@@ -92,7 +89,7 @@ export function PostMainListPlaceholder() {
 export function LatestActivityListPlaceholder() {
   return (<>
     <ul className="animate-pulse">
-      {[...new Array(4)].map((_, index) =>
+      {Array.from({length: 3}, (_, index) =>
         <li key={index}>
           <div className="flex flex-col items-start px-4 py-2 rounded-md -mx-4 transition-colors gap-2">
             <div className="flex items-center gap-2">

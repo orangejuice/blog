@@ -11,7 +11,7 @@ import Link from "next/link"
 import {MDX} from "@/components/mdx"
 import React from "react"
 import {Comment} from "@/components/comment"
-import {InteractionBar} from "@/app/[locale]/[slug]/page.client"
+import {InteractionBar} from "@/components/post-metadata"
 
 export async function generateMetadata({params}: {params: {slug: string, locale: SiteLocale}}): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug)

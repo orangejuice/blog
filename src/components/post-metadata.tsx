@@ -4,7 +4,7 @@ import {cn} from "@/lib/utils"
 import {Icons} from "@/components/icons"
 import {AnimatePresence, motion} from "framer-motion"
 import React, {useEffect} from "react"
-import {incrementViews} from "@/app/[locale]/[slug]/page.action"
+import {incrementViews} from "@/app/[locale]/[slug]/action"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {useMounted} from "@/lib/hooks"
 

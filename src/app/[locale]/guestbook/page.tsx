@@ -4,7 +4,7 @@ import React, {Suspense} from "react"
 import initTranslation from "@/i18n"
 import {Comment} from "@/components/comment"
 import {Metadata} from "next"
-import {Notes, NotesPlaceholder} from "@/app/[locale]/guestbook/page.client"
+import {Notes} from "@/components/sticky-notes"
 import {fetchGuestbookComments} from "@/lib/fetch-github"
 
 export async function generateMetadata({params: {locale}}: {params: {locale: string}}): Promise<Metadata> {
@@ -32,6 +32,17 @@ export default async function Page({params: {locale}}: {params: {locale: SiteLoc
         <Notes data={stickyNotes}/>
       </Suspense>
       <Comment slug={menu.guestbook}/>
+    </div>
+  </>)
+}
+
+export function NotesPlaceholder() {
+  return (<>
+    <div className="w-full flex flex-row items-center justify-center aspect-square md:aspect-[3/1] z-10 animate-pulse">
+      <div className="flex w-52 h-52 flex-col bg-stone-100 -rotate-6 dark:bg-stone-900 shadow">
+      </div>
+      <div className="flex w-52 h-52 flex-col bg-stone-100 rotate-6 dark:bg-stone-900 shadow">
+      </div>
     </div>
   </>)
 }
