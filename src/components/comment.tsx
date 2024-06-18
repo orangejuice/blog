@@ -21,13 +21,10 @@ export const Comment = ({slug}: {slug: string}) => {
       if (!(typeof event.data === "object" && event.data.giscus)) return
       const discussion: IDiscussionData = event.data.giscus.discussion
       if (!discussion) return
-      if (slug == menu.guestbook) {
-        void revalidator()
-        return
-      }
 
-      if ((discussion.totalCommentCount != 0 && discussion.totalCommentCount != interactions[slug].discussion.comment)
-        || (discussion.reactionCount != 0 && discussion.reactionCount != interactions[slug].discussion.reaction)) {
+      if (!(slug == menu.guestbook && !interactions.hasOwnProperty(slug)) && (
+        (discussion.totalCommentCount != 0 && discussion.totalCommentCount != interactions[slug].discussion.comment)
+        || (discussion.reactionCount != 0 && discussion.reactionCount != interactions[slug].discussion.reaction))) {
         void revalidator()
       }
       setInteractions(interact => ({
