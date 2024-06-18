@@ -61,7 +61,7 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
   if (!backgroundColor) return null
   return (<>
     <motion.div style={{x, y, rotate, backgroundColor: resolvedTheme == "dark" ? invertColor(backgroundColor.get()) : backgroundColor}}
-      ref={ref} whileDrag={{scale: 1.05, rotateZ: -10}} transition={{delay, type: "just"}}
+      ref={ref} whileDrag={{scale: 1.05, rotateZ: -10}} transition={{opacity: {delay, type: "just"}, translateY: {delay, type: "just"}}}
       initial={{opacity: 0, translateY: 18}} animate={{opacity: 1, translateY: 0}} exit={{opacity: 0}}
       className={cn("absolute cursor-move flex w-52 h-52 flex-col shadow-md transition-[box-shadow,color,background-color]", isDragging && "shadow-xl")}
       onDragStart={onDragStart} onDragEnd={onDragEnd}
