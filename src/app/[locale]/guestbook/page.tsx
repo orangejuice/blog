@@ -36,7 +36,7 @@ export default async function Page({params: {locale}}: {params: {locale: SiteLoc
   </>)
 }
 
-export function NotesPlaceholder() {
+function NotesPlaceholder() {
   return (<>
     <div className="w-full flex flex-row items-center justify-center aspect-square md:aspect-[3/1] z-10 animate-pulse">
       <div className="flex w-52 h-52 flex-col bg-stone-100 -rotate-6 dark:bg-stone-900 shadow">

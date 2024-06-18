@@ -58,7 +58,7 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
 }
 
 
-export function PostMainListPlaceholder() {
+function PostMainListPlaceholder() {
   return (<>
     <ul className="animate-pulse">
       {Array.from({length: 4}, (_, index) =>
@@ -86,7 +86,7 @@ export function PostMainListPlaceholder() {
   </>)
 }
 
-export function LatestActivityListPlaceholder() {
+function LatestActivityListPlaceholder() {
   return (<>
     <ul className="animate-pulse">
       {Array.from({length: 3}, (_, index) =>

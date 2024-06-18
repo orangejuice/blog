@@ -40,7 +40,7 @@ export default async function AllPost({params: {locale, filter}}: {params: {loca
 }
 
 
-export function PostCompactListPlaceholder() {
+function PostCompactListPlaceholder() {
   return (<>
     <ul className="animate-pulse">
       {Array.from({length: 10}, (_, index) =>
