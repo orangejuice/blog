@@ -15,6 +15,7 @@
 ![react](https://img.shields.io/badge/React-05a3cd?logo=react&logoColor=fff)
 ![typescript](https://img.shields.io/badge/Typescript-3178c6?logo=typescript&logoColor=fff)
 ![node](https://img.shields.io/badge/Node.js-5fa04e?logo=node.js&logoColor=fff)
+![node](https://img.shields.io/badge/GraphQL-e10098?logo=graphql&logoColor=fff)
 ![shadcn](https://img.shields.io/badge/shadcn%2Fui-000?logo=shadcnui&logoColor=fff)
 ![tailwind](https://img.shields.io/badge/Tailwind%20CSS-06b6d4?logo=tailwindcss&logoColor=fff)
 ![rss](https://shields.io/badge/RSS-f88900?logo=rss&logoColor=fff)
@@ -29,12 +30,11 @@
 - Employs a modern tech stack with a minimalist design language
 - Internationalisation(i18n) based on `react-i18next` (works with both server components and client components)
 - Offers full Light/Dark Mode compatibility (including `Giscus`, `rehype-prism-plus`, and `Tocbot`)
-- Immersive reading experience powered by `Three.js` and `white noise`
-- On-demand revalidation for dynamic data fetching
+- Immersive reading experience powered by `Three.js` and `White noise`
+- Cached dynamic data and On-demand revalidation
 - Supports local/online image files through a custom rehype plugin `rehype-mdx-images`
-- Utilizes `GraphQL` to fetch GitHub discussion data for interaction
 - Features robust Languages/Tags filtering capabilities
-- Includes a Comment/Reaction system based on `Giscus` (work together with [On New Giscus Comment](https://github.com/orangejuice/on-new-giscus-comment))
+- Comment/Reaction system based on `Giscus` (work together with [On New Giscus Comment](https://github.com/orangejuice/on-new-giscus-comment))
 - SEO with generated `sitemap.xml`, `robots.txt`, `Open Graph` & `RSS feed` (i18n ready)
 
 ## 🔖 History
