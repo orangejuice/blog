@@ -66,7 +66,11 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
       className={cn("absolute cursor-move flex w-52 h-52 flex-col shadow-md transition-[box-shadow,color,background-color]", isDragging && "shadow-xl")}
       onDragStart={onDragStart} onDragEnd={onDragEnd}
       drag dragConstraints={constraintRef} onDragTransitionEnd={onDragTransitionEnd} dragMomentum={false}>
-      <p className="flex-1 px-4 py-3 scrollbar-0 overflow-auto">{note.bodyText}</p>
+      <div className="grow overflow-hidden px-4 py-3">
+        <p className="scrollbar-0 h-full overflow-x-hidden overflow-y-scroll text-ellipsis select-text cursor-text" onPointerDownCapture={e => e.stopPropagation()}>
+          {note.bodyText}
+        </p>
+      </div>
       <div className="bottom-1 flex w-full gap-2 justify-between px-4 pb-2 text-xs text-stone-500">
         <div className="line-clamp-1">@{note.author.login}</div>
         <div className="line-clamp-1">{format(note.createdAt, locale, {fromNow: true})}</div>
