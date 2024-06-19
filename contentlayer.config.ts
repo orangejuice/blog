@@ -3,7 +3,7 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings"
 import remarkFrontmatter from "remark-frontmatter"
 import rehypeSlug from "rehype-slug"
 import rehypePresetMinify from "rehype-preset-minify"
-import {defineDocumentType, makeSource} from "contentlayer2/source-files"
+import {defineDocumentType, defineNestedType, makeSource} from "contentlayer2/source-files"
 import removeMarkdown from "remove-markdown"
 import {HashIcon} from "lucide-react"
 import {renderToStaticMarkup} from "react-dom/server"
@@ -15,7 +15,7 @@ import rehypePrismAll from "rehype-prism-plus"
 
 export const Post = defineDocumentType(() => ({
   name: "Post",
-  filePathPattern: "**/post*.md",
+  filePathPattern: "blog/**/post*.md",
   contentType: "mdx",
   fields: {
     title: {type: "string", required: true},
@@ -32,9 +32,31 @@ export const Post = defineDocumentType(() => ({
   }
 }))
 
+export const Activity = defineDocumentType(() => ({
+  name: "Activity",
+  filePathPattern: "activity/**.md",
+  contentType: "mdx",
+  fields: {
+    title: {type: "string", required: true},
+    category: {type: "string", required: true},
+    status: {type: "string", required: true},
+    rating: {type: "number"},
+    date: {type: "date", required: true},
+    douban: {
+      type: "nested", of: defineNestedType(() => ({
+        name: "Douban",
+        fields: {intro: {type: "string"}, rating: {type: "number"}, link: {type: "string"}, id: {type: "string"}}
+      }))
+    }
+  },
+  computedFields: {
+    slug: {type: "string", resolve: (post) => post._raw.sourceFileDir}
+  }
+}))
+
 export default makeSource({
-  contentDirPath: "content",
-  documentTypes: [Post],
+  contentDirPath: "data",
+  documentTypes: [Post, Activity],
   onExtraFieldData: "ignore",
   mdx: {
     remarkPlugins: [remarkGfm, remarkFrontmatter],
