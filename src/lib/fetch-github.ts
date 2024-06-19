@@ -42,7 +42,7 @@ interface DiscussionNode {
 }
 
 export const fetchDiscussions = cache(async ({repo, category, titles}: {repo: string, category: string, titles: string[]}): Promise<{[slug: string]: DiscussionNode}> => {
-  console.log(format(new Date()), "[github]fetchDiscussions")
+  console.log(format(new Date(),{datetime:true}), "[github]fetchDiscussions")
   const buildQueryWithAliases = () =>
     titles.map((title, index) => {
       const query = `repo:${repo} category:${category} in:title ${title}`
@@ -112,7 +112,7 @@ interface ActivityNode {
 }
 
 export const fetchLatestActivities = cache(async ({repo, category, count}: {repo: string, category: string, count: number}) => {
-  console.log(format(new Date()), "[github]fetchLatestActivities")
+  console.log(format(new Date(),{datetime:true}), "[github]fetchLatestActivities")
   const query = `
     query {
       discussion: search(type: DISCUSSION, first: ${count}, query: "repo:${repo} category:${category}") {
@@ -186,7 +186,7 @@ interface CommentNode {
 }
 
 export const fetchGuestbookComments = cache(async ({repo, category, title}: {repo: string, category: string, title: string}) => {
-  console.log(format(new Date()), "[github]fetchGuestbookComments")
+  console.log(format(new Date(),{datetime:true}), "[github]fetchGuestbookComments")
   const query = `
     query {
       discussion: search(type: DISCUSSION, first: 1, query: "repo:${repo} category:${category} in:title ${title}") {

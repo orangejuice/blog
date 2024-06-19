@@ -33,7 +33,7 @@ function PostCard({post}: {post: PostWithMetadata}) {
           {post.excerpt}
         </p>
         <div className="flex w-full mt-2.5 text-xs justify-between font-medium text-neutral-800 dark:text-neutral-300">
-          <p>{t("post.publish", {date: format(post.date, locale)})}</p>
+          <p>{t("post.publish", {date: format(post.date, {locale})})}</p>
           <div className="flex items-center gap-4 text-stone-600">
             <span className="flex items-center gap-1"><Icons.post.view/> {post.view}</span>
             <span className="flex items-center gap-1"><Icons.post.reaction/> {post.discussion.reactions.totalCount}</span>
@@ -56,7 +56,7 @@ function ActivityCard({post}: {post: PostWithActivity}) {
       <Image src={activity.author.avatarUrl} alt="" width={20} height={20} className="h-8 w-8 rounded-full"/>
       <div className="flex flex-col items-start text-stone-600 dark:text-stone-400">
         <span className="font-medium text-sm">{activity.author.login}</span>
-        <time className="text-xs line-clamp-1">{format(activity.createdAt, locale, {fromNow: true})}</time>
+        <time className="text-xs line-clamp-1">{format(activity.createdAt,  {locale,fromNow: true})}</time>
       </div>
     </div>
     <span className="flex gap-1 text-sm">
@@ -68,7 +68,7 @@ function ActivityCard({post}: {post: PostWithActivity}) {
       <Image src={activity.user.avatarUrl} alt="" width={20} height={20} className="h-8 w-8 rounded-full"/>
       <div className="flex flex-col items-start text-stone-600 dark:text-stone-400">
         <span className="font-medium text-sm">{activity.user.login}</span>
-        <time className="text-xs line-clamp-1">{format(activity.createdAt, locale, {fromNow: true})}</time>
+        <time className="text-xs line-clamp-1">{format(activity.createdAt,  {locale,fromNow: true})}</time>
       </div>
     </div>
     <span className="flex gap-2 text-sm">
@@ -97,7 +97,7 @@ function PostItemCompact({post}: {post: PostWithMetadata}) {
   return (<>
     <li className="py-2.5 group flex items-baseline flex-col md:flex-row gap-1 md:gap-9">
       <div className="flex w-full md:w-fit items-center justify-between">
-        <time className={cn("md:w-28 text-secondary text-sm shrink-0")}>{format(post.date, locale)}</time>
+        <time className={cn("md:w-28 text-secondary text-sm shrink-0")}>{format(post.date, {locale})}</time>
         <div className="gap-4 text-xs w-fit text-stone-600 flex md:hidden">
           <span className="flex items-center gap-1"><Icons.post.view/>{shortenNumber(post.view)}</span>
           <span className="flex items-center gap-1"><Icons.post.reactComment/>{shortenNumber(post.discussion.reactions.totalCount + post.discussion.comments.totalCount)}</span>

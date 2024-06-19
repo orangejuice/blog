@@ -18,8 +18,10 @@ export function randomInRange(min: number, max: number) {
   return Math.random() * (max - min) + min
 }
 
-export function format(date: string | Date, locale = "en", options?: {fromNow?: boolean, full?: boolean} | undefined) {
-  if (options?.full) return dayjs().locale(locale).format("YYYY-MM-DD HH:mm:ss")
+export function format(date: string | Date, options?: {locale?: string, fromNow?: boolean, date?: boolean, datetime?: boolean}) {
+  const locale = options?.locale ?? "en"
+  if (options?.datetime) return dayjs(date).locale(locale).format("YYYY-MM-DD HH:mm:ss")
+  if (options?.date) return dayjs(date).locale(locale).format("YYYY-MM-DD")
   if (options?.fromNow) return dayjs().locale(locale).to(dayjs(date))
   return dayjs(date).locale(locale).format("ll")
 }

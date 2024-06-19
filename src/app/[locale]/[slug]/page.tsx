@@ -61,11 +61,11 @@ export default async function Page({params}: {params: {slug: string, locale: Sit
           <h1 className="text-4xl font-extrabold animate-delay-in" style={cssIndexCounter()}>{post.title}</h1>
           <div className="flex flex-wrap items-center gap-1 text-stone-500 dark:text-stone-400 font-medium text-sm animate-delay-in" style={cssIndexCounter()}>
             <time dateTime={post.date}>
-              {t("post.publish", {date: format(post.date, params.locale)})}
+              {t("post.publish", {date: format(post.date, {locale:params.locale})})}
             </time>
             {post.updated != post.date && (<>
               <Icons.symbol.dot className="stroke-[4px] opacity-70"/>
-              {t("post.update", {date: format(post.updated, params.locale)})}
+              {t("post.update", {date: format(post.updated, {locale:params.locale})})}
             </>)}
             {post.tags?.length > 0 && (<>
               <Icons.symbol.dot className="stroke-[4px] opacity-70"/>

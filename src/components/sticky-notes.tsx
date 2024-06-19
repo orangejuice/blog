@@ -72,7 +72,7 @@ const Note = memo(function Note({note, constraintRef, handleDragStart, handleDra
       </div>
       <div className="bottom-1 flex w-full gap-2 justify-between px-4 pb-2 text-xs text-stone-500">
         <div className="line-clamp-1">@{note.author.login}</div>
-        <div className="line-clamp-1">{format(note.createdAt, locale, {fromNow: true})}</div>
+        <div className="line-clamp-1">{format(note.createdAt,  {locale,fromNow: true})}</div>
       </div>
     </motion.div>
   </>)
