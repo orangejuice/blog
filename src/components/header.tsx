@@ -21,7 +21,7 @@ export function Header() {
 
   return (<>
     <header className="flex mb-8 w-full shrink-0 items-center justify-between">
-      <Link href="/" rel="nofollow" className="flex items-center shrink-0"><Icons.logo/></Link>
+      <Link href="/" className="flex items-center shrink-0"><Icons.logo/></Link>
       <div className="flex items-center gap-2">
         <nav className="hidden md:flex items-center gap-4 text-sm font-medium">
           {Object.entries(menu).map(([key, path]) => (

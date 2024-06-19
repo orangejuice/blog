@@ -9,6 +9,7 @@ import React from "react"
 import {Footer} from "@/components/footer"
 import initTranslation from "@/i18n"
 import {BgCanvas} from "@/components/bg-canvas"
+import Head from "next/head"
 
 const fontSans = FontSans({subsets: ["latin"], variable: "--font-sans"})
 const fontMono = FontMono({subsets: ["latin"], variable: "--font-mono"})
@@ -47,6 +48,12 @@ export default async function RootLayout({children, params: {locale}}:
 
   return (
     <html lang={resolved} suppressHydrationWarning>
+      <Head>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+        <link rel="manifest" href="/site.webmanifest"/>
+      </Head>
       <body className={cn("flex flex-col font-sans antialiased", fontSans.variable, fontMono.variable)}>
         <Context locale={resolved!} resources={resources}>
           <div className="flex w-full flex-col max-w-5xl px-6 mx-auto xl:px-0 my-8">
