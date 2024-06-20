@@ -9,7 +9,6 @@ import React from "react"
 import {Footer} from "@/components/footer"
 import initTranslation from "@/i18n"
 import {BgCanvas} from "@/components/bg-canvas"
-import Head from "next/head"
 
 const fontSans = FontSans({subsets: ["latin"], variable: "--font-sans"})
 const fontMono = FontMono({subsets: ["latin"], variable: "--font-mono"})
@@ -33,6 +32,11 @@ export async function generateMetadata({params: {locale}}: {params: {locale: str
       locale: resolvedLanguage,
       type: "website"
     },
+    icons: {
+      icon: [{url: "/favicon-16x16.png", sizes: "16x16"}, {url: "/favicon-32x32.png", sizes: "32x32"}],
+      apple: "/apple-touch-icon.png"
+    },
+    manifest: "/site.webmanifest",
     alternates: {types: {"application/rss+xml": site.url.concat("/", resolvedLanguage!, "/feed.xml")}},
     twitter: {
       title: site.title,
@@ -46,17 +50,11 @@ export default async function RootLayout({children, params: {locale}}:
   Readonly<{children: React.ReactNode, params: {locale: string}}>) {
   const {resources, i18n: {resolvedLanguage: resolved}} = await initTranslation(locale || site.locales[0])
 
-  return (
+  return (<>
     <html lang={resolved} suppressHydrationWarning>
-      <Head>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-        <link rel="manifest" href="/site.webmanifest"/>
-      </Head>
-      <body className={cn("flex flex-col font-sans antialiased", fontSans.variable, fontMono.variable)}>
+      <body className={cn("flex flex-col font-sans", fontSans.variable, fontMono.variable)}>
         <Context locale={resolved!} resources={resources}>
-          <div className="flex w-full flex-col max-w-5xl px-6 mx-auto xl:px-0 my-8">
+          <div className="flex w-full flex-col max-w-5xl px-6 mx-auto xl:px-0 py-6 min-h-screen">
             <Header/>
             {children}
             <Footer/>
@@ -65,7 +63,7 @@ export default async function RootLayout({children, params: {locale}}:
         </Context>
       </body>
     </html>
-  )
+  </>)
 }
 
 export const generateStaticParams = () => {
