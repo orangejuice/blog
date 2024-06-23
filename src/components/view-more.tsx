@@ -16,7 +16,7 @@ export function ViewMore(props: ComponentPropsWithoutRef<"a">) {
   if (!mounted) return null
 
   return (<>
-    <Link {...props} href={lang == "all" ? `/${menu.posts}/all-lang` : `/${menu.posts}/${locale}`}
+    <Link {...props} href={lang == "all" ? `/${menu.post}/all-lang` : `/${menu.post}/${locale}`}
       className={cn("w-fit mx-auto flex items-center px-4 py-2 text-xs font-semibold duration-300 ease-out border rounded-full bg-neutral-900",
         "text-neutral-100 hover:border-neutral-700 border-neutral-900 hover:bg-white hover:text-neutral-900 animate-delay-in",
         "dark:bg-white dark:text-neutral-900 dark:hover:border-neutral-300 dark:hover:bg-black dark:hover:text-white")}>

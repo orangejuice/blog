@@ -3,12 +3,12 @@ import {GetLocalesResponse, GetTagsResponse} from "@/lib/fetch"
 import {cn, useCssIndexCounter} from "@/lib/utils"
 import {Icons} from "@/components/icons"
 import React, {useEffect} from "react"
-import {LangOption} from "@/site"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {useTranslation} from "react-i18next"
 import Link from "next/link"
+import {SiteLocale} from "@/site"
 
-export type FilterOption = [LangOption, string]
+export type FilterOption = [SiteLocale | "all-lang", string]
 
 export function PostFilter({locales, tags, filter: appliedFilter, style}: {locales: GetLocalesResponse, tags: GetTagsResponse, filter: FilterOption, style?: React.CSSProperties}) {
   const cssIndexCounter = useCssIndexCounter(style)

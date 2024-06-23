@@ -17,12 +17,9 @@ export default async function initTranslation(locale: string, i18nInstance?: i18
     lng: locale,
     resources,
     fallbackLng: site.locales[0],
-    react: {useSuspense: false},
     supportedLngs: site.locales,
     returnEmptyString: false,
     partialBundledLanguages: true,
-    defaultNS: "translation",
-    fallbackNS: "translation",
     ns: ["translation", "lang"],
     preload: resources ? [] : site.locales
   })

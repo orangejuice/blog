@@ -1,5 +1,5 @@
 import {allPosts, Post} from "contentlayer/generated"
-import {giscusConfig, LangOption, site, SiteLocale} from "@/site"
+import {giscusConfig, site, SiteLocale} from "@/site"
 import {Activity, Discussion, fetchDiscussions, fetchLatestActivities} from "@/lib/fetch-github"
 import {getPostMetadata, GetPostMetadataResponse} from "@/lib/fetch-db"
 
@@ -123,7 +123,7 @@ export type GetLocalesResponse = ReturnType<typeof getLocales>
 
 type Options = {
   locale: SiteLocale
-  filterLang?: LangOption
+  filterLang?: SiteLocale | "all-lang"
   filterTag?: string
   count?: number
   getDiscussion?: boolean

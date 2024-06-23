@@ -7,14 +7,13 @@ export const site = {
   url: "https://orangejuice.cc",
   locales: ["en", "zh"]
 } as const
-
 export type SiteLocale = typeof site.locales[number]
-export type LangOption = SiteLocale | "all-lang"
 
 export const menu = {
   home: "",
-  posts: "all",
-  guestbook: "guestbook"
+  post: "all",
+  guestbook: "guestbook",
+  bookshelf: "bookshelf"
 } as const
 
 export const giscusConfig: GiscusProps & {darkTheme: GiscusProps["theme"]} = {

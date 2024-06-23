@@ -26,7 +26,7 @@ export function Header() {
         <nav className="hidden md:flex items-center gap-4 text-sm font-medium">
           {Object.entries(menu).map(([key, path]) => (
             <Link key={key}
-              href={mounted ? ((path == menu.posts && filter) ? `/${path}/${filter.join("/")}` : `/${path}`) : ""}
+              href={mounted ? ((path == menu.post && filter) ? `/${path}/${filter.join("/")}` : `/${path}`) : ""}
               className={cn(buttonVariants({variant: "ghost", size: "icon"}),
                 "h-fit w-fit gap-2 whitespace-nowrap rounded-lg px-3 py-1.5 transition-all",
                 "hover:bg-stone-200 active:bg-stone-300 dark:text-white dark:hover:bg-stone-700 dark:active:bg-stone-800",
@@ -60,7 +60,7 @@ export function MobileNav() {
         <div className="flex flex-col gap-6 p-2">
           {Object.entries(menu).map(([key, path]) => (
             <Link onClick={() => setOpen(false)} key={key} className="font-medium"
-              href={mounted ? ((path == menu.posts && filter) ? `/${path}/${filter.join("/")}` : `/${path}`) : ""}>
+              href={mounted ? ((path == menu.post && filter) ? `/${path}/${filter.join("/")}` : `/${path}`) : ""}>
               {t(key)}
             </Link>
           ))}

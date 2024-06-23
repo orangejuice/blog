@@ -15,7 +15,7 @@ import rehypePrismAll from "rehype-prism-plus"
 
 export const Post = defineDocumentType(() => ({
   name: "Post",
-  filePathPattern: "blog/**/post*.md",
+  filePathPattern: "blog/*/post*.md",
   contentType: "mdx",
   fields: {
     title: {type: "string", required: true},
@@ -27,7 +27,7 @@ export const Post = defineDocumentType(() => ({
   computedFields: {
     excerpt: {type: "string", resolve: post => extractExcerpt(post.body.raw, 200)},
     updated: {type: "date", resolve: (post) => post.updated ?? post.date},
-    slug: {type: "string", resolve: (post) => post._raw.sourceFileDir},
+    slug: {type: "string", resolve: (post) => post._raw.sourceFileDir.split("/").pop()},
     locale: {type: "string", resolve: (post) => post._raw.sourceFileName.split(".")[1]}
   }
 }))
@@ -50,7 +50,7 @@ export const Activity = defineDocumentType(() => ({
     }
   },
   computedFields: {
-    slug: {type: "string", resolve: (post) => post._raw.sourceFileDir}
+    slug: {type: "string", resolve: (post) => post._raw.sourceFileName}
   }
 }))
 

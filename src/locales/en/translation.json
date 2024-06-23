@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "posts": "All posts",
+    "post": "All posts",
     "guestbook": "Guestbook"
   },
   "theme": {

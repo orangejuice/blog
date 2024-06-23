@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "首页",
-    "posts": "所有文章",
+    "post": "所有文章",
     "guestbook": "留言板"
   },
   "theme": {
