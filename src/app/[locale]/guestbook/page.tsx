@@ -1,7 +1,7 @@
 import {useCssIndexCounter} from "@/lib/utils"
 import {giscusConfig, menu, SiteLocale} from "@/site"
 import React, {Suspense} from "react"
-import initTranslation from "@/i18n"
+import initTranslation from "@/lib/i18n"
 import {Comment} from "@/components/comment"
 import {Metadata} from "next"
 import {Notes} from "@/components/sticky-notes"

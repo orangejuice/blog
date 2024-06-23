@@ -4,7 +4,7 @@ import {getLocales, getPosts, getTags} from "@/lib/fetch"
 import {SiteLocale} from "@/site"
 import {FilterOption, PostFilter} from "@/components/post-filter"
 import {PostCompactList} from "@/components/post-list"
-import initTranslation from "@/i18n"
+import initTranslation from "@/lib/i18n"
 import {Metadata} from "next"
 import {Icons} from "@/components/icons"
 

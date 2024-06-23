@@ -5,7 +5,7 @@ import {LangSelect} from "@/components/lang-select"
 import {Icons} from "@/components/icons"
 import React, {Suspense} from "react"
 import {LatestActivityList, PostMainList} from "@/components/post-list"
-import initTranslation from "@/i18n"
+import initTranslation from "@/lib/i18n"
 import {notFound} from "next/navigation"
 import {ViewMore} from "@/components/view-more"
 

@@ -5,7 +5,7 @@ import {useTheme} from "next-themes"
 import {giscusConfig, menu} from "@/site"
 import {useTranslation} from "react-i18next"
 import {useLocalStorage} from "@/lib/use-local-storage"
-import {revalidator} from "@/app/actions"
+import {revalidator} from "@/lib/actions"
 
 
 export const Comment = ({slug}: {slug: string}) => {
