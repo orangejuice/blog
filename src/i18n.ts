@@ -21,6 +21,7 @@ export default async function initTranslation(locale: string, i18nInstance?: i18
     returnEmptyString: false,
     partialBundledLanguages: true,
     ns: ["translation", "lang"],
+    fallbackNS: "translation",
     preload: resources ? [] : site.locales
   })
 
