@@ -27,7 +27,9 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
               {t("post.latest-sub")}
             </p>
           </section>
-          <LangSelect style={cssIndexCounter()}/>
+          <Suspense fallback={<Icons.loading/>}>
+            <LangSelect style={cssIndexCounter()}/>
+          </Suspense>
         </div>
         <Suspense fallback={<PostMainListPlaceholder/>}>
           <PostMainList postsOneLang={postsOneLang} postsAllLang={postsAllLang} style={cssIndexCounter()}/>

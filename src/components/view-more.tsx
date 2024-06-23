@@ -2,7 +2,6 @@
 import React, {ComponentPropsWithoutRef} from "react"
 import {useTranslation} from "react-i18next"
 import {useLocalStorage} from "@/lib/use-local-storage"
-import {useMounted} from "@/lib/hooks"
 import Link from "next/link"
 import {menu} from "@/site"
 import {cn} from "@/lib/utils"
@@ -11,9 +10,6 @@ import {Icons} from "@/components/icons"
 export function ViewMore(props: ComponentPropsWithoutRef<"a">) {
   const {t, i18n: {language: locale}} = useTranslation()
   const [lang] = useLocalStorage<"one" | "all">("latest-lang", "one")
-
-  const mounted = useMounted()
-  if (!mounted) return null
 
   return (<>
     <Link {...props} href={lang == "all" ? `/${menu.post}/all-lang` : `/${menu.post}/${locale}`}

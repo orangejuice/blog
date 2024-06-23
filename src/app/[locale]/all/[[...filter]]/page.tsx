@@ -6,6 +6,7 @@ import {FilterOption, PostFilter} from "@/components/post-filter"
 import {PostCompactList} from "@/components/post-list"
 import initTranslation from "@/i18n"
 import {Metadata} from "next"
+import {Icons} from "@/components/icons"
 
 export async function generateMetadata({params: {locale}}: {params: {locale: string}}): Promise<Metadata> {
   const {t} = await initTranslation(locale)
@@ -33,7 +34,9 @@ export default async function AllPost({params: {locale, filter}}: {params: {loca
         </Suspense>
       </div>
       <aside className="flex flex-col gap-6 row-start-1 md:col-start-2">
-        <PostFilter locales={locales} tags={tags} filter={filter} style={cssIndexCounter()}/>
+        <Suspense fallback={<Icons.loading/>}>
+          <PostFilter locales={locales} tags={tags} filter={filter} style={cssIndexCounter()}/>
+        </Suspense>
       </aside>
     </div>
   </>)

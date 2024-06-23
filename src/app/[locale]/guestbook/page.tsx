@@ -6,6 +6,7 @@ import {Comment} from "@/components/comment"
 import {Metadata} from "next"
 import {Notes} from "@/components/sticky-notes"
 import {fetchGuestbookComments} from "@/lib/fetch-github"
+import {Icons} from "@/components/icons"
 
 export async function generateMetadata({params: {locale}}: {params: {locale: string}}): Promise<Metadata> {
   const {t} = await initTranslation(locale)
@@ -31,7 +32,9 @@ export default async function Page({params: {locale}}: {params: {locale: SiteLoc
       <Suspense fallback={<NotesPlaceholder/>}>
         <Notes data={stickyNotes}/>
       </Suspense>
-      <Comment slug={menu.guestbook}/>
+      <Suspense fallback={<Icons.loading/>}>
+        <Comment slug={menu.guestbook}/>
+      </Suspense>
     </div>
   </>)
 }
