@@ -7,7 +7,7 @@ import {format} from "@/lib/utils"
 import {unstable_cache as cache} from "next/cache"
 import axios from "axios"
 
-export const getInstallationId = async (repo: string): Promise<string> => {
+export const getInstallationId = cache(async (repo: string): Promise<string> => {
   const now = Math.floor(Date.now() / 1000)
   const payload = {iat: now, exp: now + 600, iss: process.env.GITHUB_APP_ID!}
   const token = jwt.sign(payload, process.env.GITHUB_PRIVATE_KEY!, {algorithm: "RS256"})
@@ -21,7 +21,7 @@ export const getInstallationId = async (repo: string): Promise<string> => {
   })
 
   return (await response.data as {id: number}).id.toString()
-}
+})
 
 const auth = createAppAuth({
   appId: process.env.GITHUB_APP_ID!,
@@ -42,7 +42,7 @@ interface DiscussionNode {
 }
 
 export const fetchDiscussions = cache(async ({repo, category, titles}: {repo: string, category: string, titles: string[]}): Promise<{[slug: string]: DiscussionNode}> => {
-  console.log(format(new Date(),{datetime:true}), "[github]fetchDiscussions")
+  console.log(format(new Date(), {datetime: true}), "[github]fetchDiscussions")
   const buildQueryWithAliases = () =>
     titles.map((title, index) => {
       const query = `repo:${repo} category:${category} in:title ${title}`
@@ -112,7 +112,7 @@ interface ActivityNode {
 }
 
 export const fetchLatestActivities = cache(async ({repo, category, count}: {repo: string, category: string, count: number}) => {
-  console.log(format(new Date(),{datetime:true}), "[github]fetchLatestActivities")
+  console.log(format(new Date(), {datetime: true}), "[github]fetchLatestActivities")
   const query = `
     query {
       discussion: search(type: DISCUSSION, first: ${count}, query: "repo:${repo} category:${category}") {
@@ -186,7 +186,7 @@ interface CommentNode {
 }
 
 export const fetchGuestbookComments = cache(async ({repo, category, title}: {repo: string, category: string, title: string}) => {
-  console.log(format(new Date(),{datetime:true}), "[github]fetchGuestbookComments")
+  console.log(format(new Date(), {datetime: true}), "[github]fetchGuestbookComments")
   const query = `
     query {
       discussion: search(type: DISCUSSION, first: 1, query: "repo:${repo} category:${category} in:title ${title}") {
