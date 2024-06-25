@@ -7,7 +7,7 @@ import {format} from "@/lib/utils"
 import {unstable_cache as cache} from "next/cache"
 import axios from "axios"
 
-export const getInstallationId = cache(async (repo: string): Promise<string> => {
+export const getInstallationId = async (repo: string): Promise<string> => {
   const now = Math.floor(Date.now() / 1000)
   const payload = {iat: now, exp: now + 600, iss: process.env.GITHUB_APP_ID!}
   const token = jwt.sign(payload, process.env.GITHUB_PRIVATE_KEY!, {algorithm: "RS256"})
@@ -21,7 +21,7 @@ export const getInstallationId = cache(async (repo: string): Promise<string> => 
   })
 
   return (await response.data as {id: number}).id.toString()
-})
+}
 
 const auth = createAppAuth({
   appId: process.env.GITHUB_APP_ID!,
