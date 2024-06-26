@@ -31,7 +31,7 @@ const Note = memo(function Note({note, constraintRef, handleDragStart, handleDra
     }))
   }
   const {resolvedTheme} = useTheme()
-  const [localNotes, setLocalNotes] = useLocalStorage<StickyNotes>("sticky-notes", {}, {event: false})
+  const [localNotes, setLocalNotes] = useLocalStorage<StickyNotes>("sticky-notes", {})
   const mounted = useMounted()
 
   useEffect(() => {

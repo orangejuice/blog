@@ -1,44 +1,28 @@
-import {useEffect, useState} from "react"
+"use client"
+import create from "zustand"
+import {persist} from "zustand/middleware"
 
-export const useLocalStorage = <T>(key: string, initialValue: T, options = {event: true}): [T, (value: T | ((val: T) => T)) => void] => {
-  const [storedValue, setStoredValue] = useState<T>(() => {
-    if (typeof window !== "undefined") {
-      try {
-        const item = window.localStorage.getItem(key)
-        return item ? (JSON.parse(item) as T) : initialValue
-      } catch (error) {
-        console.log(error)
-      }
+type StorageState<T> = {
+  value: T
+  setValue: (update: T | ((val: T) => T)) => void
+}
+
+const storeDict = new Map<string, any>()
+
+const getLocalStorageStore = <T>(key: string, initialValue: T) => {
+  !storeDict.has(key) && storeDict.set(key, create(persist<StorageState<T>>((set, get) => ({
+    value: initialValue,
+    setValue: (update) => {
+      const newValue = typeof update === "function" ? (update as (prev: T) => T)(get().value) : update
+      set({value: newValue})
     }
-    return initialValue
-  })
+  }), {name: key})))
 
-  const setValue = (value: T | ((val: T) => T)) => {
-    setStoredValue(prevValue => {
-      const valueToStore = value instanceof Function ? value(prevValue) : value
-      if (typeof window !== "undefined") {
-        try {
-          window.localStorage.setItem(key, JSON.stringify(valueToStore))
-          if (options.event) window.dispatchEvent(new CustomEvent("localStorageChange", {detail: {key, value: valueToStore}}))
-        } catch (error) {
-          console.log(error)
-        }
-      }
-      return valueToStore
-    })
-  }
+  return storeDict.get(key)
+}
 
-  useEffect(() => {
-    const handleStorageChange = (event: CustomEvent) => {
-      if (event.detail.key === key) {
-        // Addressing next.js warning, as suggested by ChatGPT
-        // Cannot update a component (`PostList`) while rendering a different component (`LangSelect`).
-        setTimeout(() => setStoredValue(event.detail.value), 0)
-      }
-    }
-    if (options.event) window.addEventListener("localStorageChange", handleStorageChange as EventListener)
-    if (options.event) return () => window.removeEventListener("localStorageChange", handleStorageChange as EventListener)
-  }, [key])
-
-  return [storedValue, setValue]
+export const useLocalStorage = <T>(key: string, initialValue: T): [T, (value: T | ((val: T) => T)) => void] => {
+  const store = getLocalStorageStore(key, initialValue)
+  const {value, setValue} = store()
+  return [value, setValue]
 }
