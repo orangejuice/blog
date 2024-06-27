@@ -88,5 +88,6 @@ export function Notes({data, className, ...props}: {data: fetchGuestbookComments
         handleDragStart={() => setIsDragging(true)} handleDragEnd={() => setIsDragging(false)}/>
       )}
     </div>
+    {isDragging && <div className="absolute top-0 bottom-0 left-0 right-0 cursor-move"/>}
   </>)
 }
