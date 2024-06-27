@@ -18,6 +18,7 @@
 ![graphql](https://img.shields.io/badge/GraphQL-e10098?logo=graphql&logoColor=fff)
 ![shadcn](https://img.shields.io/badge/shadcn%2Fui-000?logo=shadcnui&logoColor=fff)
 ![tailwind](https://img.shields.io/badge/Tailwind%20CSS-06b6d4?logo=tailwindcss&logoColor=fff)
+![zustand](https://img.shields.io/badge/🐻-Zustand-222?colorA=222)
 ![rss](https://shields.io/badge/RSS-f88900?logo=rss&logoColor=fff)
 
 
@@ -28,14 +29,25 @@
 - `Next.js(App dir/ISR/SSR/CSR)`, `React`, `TailwindCSS`, `Mdx`, `shadcn/ui`, `framer motion`, `contentlayer`
 - Responsive UI for seamless experience across PC and mobile devices
 - Employs a modern tech stack with a minimalist design language
-- Internationalisation(i18n) based on `react-i18next` (works with both server components and client components)
-- Offers full Light/Dark Mode compatibility (including `Giscus`, `rehype-prism-plus`, and `Tocbot`)
-- Immersive reading experience powered by `Three.js` and `White noise`
+- In-depth integration with i18n content support
 - Cached dynamic data and On-demand revalidation
 - Supports local/online image files through a custom rehype plugin `rehype-mdx-images`
 - Features robust Languages/Tags filtering capabilities
 - Comment/Reaction system based on `Giscus` (work together with [On New Giscus Comment](https://github.com/orangejuice/on-new-giscus-comment))
 - SEO with generated `sitemap.xml`, `robots.txt`, `Open Graph` & `RSS feed` (i18n ready)
+
+## 🙌 Highlight
+
+* **🎨 Immersive 3D Background**(`src/components/background.tsx`): A dynamic, peaceful three-dimensional backdrop.
+* **🔊 White Noise Toggle**(`src/components/white-noise-toggle.tsx`): Creative ambient sound control turn on the white
+  noise that enhance focus.
+* **💡 Theme Toggle**(`src/components/theme-toggle.tsx`): A simple and creative theme preference control.
+* **💾 Cross-Tab State Sync**(`src/lib/use-local-storage.ts`): A well encapsulated react hook that maintains consistent
+  state across multiple browser tabs, use it right out of the box just like `useState`.
+* **📝 Skeuomorphic Sticky Notes**(`src/components/sticky-notes.tsx`): A sleek implementation of skeuomorphic sticky
+  notes, drag enabled.
+
+<sup>more to come...</sup>
 
 ## 🔖 History
 
@@ -85,3 +97,4 @@
 - TailwindCSS spinner animation lib https://play.tailwindcss.com/OPAsySKNCd
 - day.js for date formating https://day.js.org/docs/en/display/format
 - RSS feed generation https://spacejelly.dev/posts/how-to-add-a-sitemap-rss-feed-in-next-js-app-router
+- Zustand cross tab sync https://github.com/pmndrs/zustand/discussions/1614
