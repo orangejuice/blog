@@ -1,6 +1,5 @@
 import {type ClassValue, clsx} from "clsx"
 import {twMerge} from "tailwind-merge"
-import {slug} from "github-slugger"
 import React from "react"
 import dayjs from "dayjs"
 import localisedFormat from "dayjs/plugin/localizedFormat"
@@ -32,15 +31,6 @@ export function useCssIndexCounter(style?: React.CSSProperties) {
     return {"--index": cssIndexCounter.n++} as React.CSSProperties
   }
   return cssIndexCounter
-}
-
-export function getTableOfContents(md: string) {
-  const headings = [...md.matchAll(/\n(?<hash>#{1,3})\s+(?<content>.+)/g)]
-  return headings.map(({groups}) => ({
-    level: groups?.hash.length,
-    text: groups?.content,
-    id: slug(groups?.content ?? "", false)
-  }))
 }
 
 export function shortenNumber(num: number): string {

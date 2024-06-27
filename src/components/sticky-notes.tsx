@@ -8,7 +8,7 @@ import {useMounted} from "@/lib/hooks"
 import {motion, useMotionValue} from "framer-motion"
 import {useTheme} from "next-themes"
 
-const Note = function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {note: Comment, constraintRef: RefObject<HTMLDivElement>, handleDragStart: () => void, handleDragEnd: () => void, delay: number}) {
+function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {note: Comment, constraintRef: RefObject<HTMLDivElement>, handleDragStart: () => void, handleDragEnd: () => void, delay: number}) {
   const ref = useRef<HTMLDivElement>(null)
   const {i18n: {language: locale}} = useTranslation()
   const x = useMotionValue<number | undefined>(undefined)
