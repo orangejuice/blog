@@ -17,7 +17,7 @@ interface CalendarData {
   countMovie: number
 }
 
-export function getActivityCalendarData(startDate: Dayjs, endDate: Dayjs): CalendarData[] {
+export async function getActivityCalendarData(startDate: Dayjs, endDate: Dayjs) {
   const activityMap = new Map<string, {total: number, book: number, movie: number}>()
 
   eachDayInRange(startDate, endDate).forEach(date => {
@@ -44,8 +44,9 @@ export function getActivityCalendarData(startDate: Dayjs, endDate: Dayjs): Calen
       level,
       countBook: counts.book,
       countMovie: counts.movie
-    }
+    } as CalendarData
   })
 }
 
 export type CalendarActivity = CalendarData
+export type GetActivityCalendarDataResponse = ReturnType<typeof getActivityCalendarData>
