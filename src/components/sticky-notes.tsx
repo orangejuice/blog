@@ -1,5 +1,5 @@
 "use client"
-import React, {ComponentProps, memo, RefObject, use, useEffect, useRef, useState} from "react"
+import React, {ComponentProps, RefObject, use, useEffect, useRef, useState} from "react"
 import {cn, format, getRandomLightHexColor, invertColor, randomInRange} from "@/lib/utils"
 import {Comment, fetchGuestbookCommentsResponse} from "@/lib/fetch-github"
 import {useTranslation} from "react-i18next"
@@ -8,7 +8,7 @@ import {useMounted} from "@/lib/hooks"
 import {motion, useMotionValue} from "framer-motion"
 import {useTheme} from "next-themes"
 
-const Note = memo(function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {note: Comment, constraintRef: RefObject<HTMLDivElement>, handleDragStart: () => void, handleDragEnd: () => void, delay: number}) {
+const Note = function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {note: Comment, constraintRef: RefObject<HTMLDivElement>, handleDragStart: () => void, handleDragEnd: () => void, delay: number}) {
   const ref = useRef<HTMLDivElement>(null)
   const {i18n: {language: locale}} = useTranslation()
   const x = useMotionValue<number | undefined>(undefined)
@@ -55,15 +55,14 @@ const Note = memo(function Note({note, constraintRef, handleDragStart, handleDra
         }
       }))
     }
-  }, [mounted])
+  }, [mounted, localNotes])
 
   return (<>
     <motion.div style={{x, y, rotate, backgroundColor: resolvedTheme == "dark" ? invertColor(backgroundColor.get()) : backgroundColor}}
       ref={ref} whileDrag={{scale: 1.05, rotateZ: -10}} transition={{opacity: {delay, type: "just"}, translateY: {delay, type: "just"}}}
       initial={{opacity: 0, translateY: 18}} animate={{opacity: 1, translateY: 0}} exit={{opacity: 0}}
       className={cn("absolute cursor-move flex w-52 h-52 flex-col shadow-md transition-[box-shadow,color,background-color]", isDragging && "shadow-xl")}
-      onDragStart={onDragStart} onDragEnd={onDragEnd}
-      drag dragConstraints={constraintRef} onDragTransitionEnd={onDragTransitionEnd} dragMomentum={false}>
+      onDragStart={onDragStart} onDragEnd={onDragEnd} drag dragConstraints={constraintRef} onDragTransitionEnd={onDragTransitionEnd} dragMomentum={false}>
       <div className="grow flex overflow-hidden px-4 py-3">
         <p className="scrollbar-0 h-fit max-h-full overflow-auto text-ellipsis select-text cursor-text" onPointerDownCapture={e => e.stopPropagation()}>
           {note.bodyText}
@@ -75,7 +74,7 @@ const Note = memo(function Note({note, constraintRef, handleDragStart, handleDra
       </div>
     </motion.div>
   </>)
-}, (prevProps, nextProps) => prevProps.note.bodyText == nextProps.note.bodyText)
+}
 
 export function Notes({data, className, ...props}: {data: fetchGuestbookCommentsResponse} & ComponentProps<"div">) {
   const notes = use(data)

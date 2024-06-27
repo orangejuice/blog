@@ -8,7 +8,7 @@ import {site} from "@/site"
 import React from "react"
 import {Footer} from "@/components/footer"
 import initTranslation from "@/lib/i18n"
-import {BgCanvas} from "@/components/bg-canvas"
+import {Background} from "@/components/background"
 
 const fontSans = FontSans({subsets: ["latin"], variable: "--font-sans"})
 const fontMono = FontMono({subsets: ["latin"], variable: "--font-mono"})
@@ -59,7 +59,7 @@ export default async function RootLayout({children, params: {locale}}:
             {children}
             <Footer/>
           </div>
-          <BgCanvas/>
+          <Background/>
         </Context>
       </body>
     </html>

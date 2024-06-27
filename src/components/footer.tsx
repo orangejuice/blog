@@ -1,7 +1,7 @@
 import {ThemeToggle} from "@/components/theme-toggle"
 import {site} from "@/site"
 import React from "react"
-import {BackgroundMusicToggle} from "@/components/noise-toggle"
+import {BackgroundMusicToggle} from "@/components/white-noise-toggle"
 
 export function Footer() {
   return (<>

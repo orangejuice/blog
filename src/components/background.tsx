@@ -121,7 +121,7 @@ function AmbientRead() {
   </>)
 }
 
-export function BgCanvas() {
+export function Background() {
   const {resolvedTheme} = useTheme()
   const mounted = useMounted()
   if (!mounted) return null
