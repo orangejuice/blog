@@ -38,14 +38,21 @@
 
 ## 🙌 Highlight
 
-* **🎨 Immersive 3D Background**(`src/components/background.tsx`): A dynamic, peaceful three-dimensional backdrop.
-* **🔊 White Noise Toggle**(`src/components/white-noise-toggle.tsx`): Creative ambient sound control turn on the white
+* **🎨 Immersive 3D Background** `src/components/background.tsx`  
+  A dynamic, peaceful three-dimensional backdrop.
+
+* **🔊 White Noise Toggle** `src/components/white-noise-toggle.tsx`  
+  Creative ambient sound control turn on the white
   noise that enhance focus.
-* **💡 Theme Toggle**(`src/components/theme-toggle.tsx`): A simple and creative theme preference control.
-* **💾 Cross-Tab State Sync**(`src/lib/use-local-storage.ts`): A well encapsulated react hook that maintains consistent
-  state across multiple browser tabs, use it right out of the box just like `useState`.
-* **📝 Skeuomorphic Sticky Notes**(`src/components/sticky-notes.tsx`): A sleek implementation of skeuomorphic sticky
-  notes, drag enabled.
+
+* **💡 Theme Toggle** `src/components/theme-toggle.tsx`  
+  A simple and creative theme preference control.
+
+* **💾 Cross-Tab State Sync** `src/lib/use-local-storage.ts`  
+  A well encapsulated react hook that maintains state across tabs, use it right out of the box just like `useState`.
+
+* **📝 Skeuomorphic Sticky Notes** `src/components/sticky-notes.tsx`  
+  A sleek implementation of skeuomorphic sticky notes, drag enabled.
 
 <sup>more to come...</sup>
 
