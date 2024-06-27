@@ -1,6 +1,7 @@
 "use client"
 import create from "zustand"
 import {persist} from "zustand/middleware"
+import {useEffect} from "react"
 
 type StorageState<T> = {
   value: T
@@ -24,5 +25,12 @@ const getLocalStorageStore = <T>(key: string, initialValue: T) => {
 export const useLocalStorage = <T>(key: string, initialValue: T): [T, (value: T | ((val: T) => T)) => void] => {
   const store = getLocalStorageStore(key, initialValue)
   const {value, setValue} = store()
+
+  useEffect(() => {
+    const handleStorageChange = () => store.persist.rehydrate()
+    window.addEventListener("storage", handleStorageChange)
+    return () => window.removeEventListener("storage", handleStorageChange)
+  }, [])
+
   return [value, setValue]
 }
