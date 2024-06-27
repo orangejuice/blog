@@ -1,0 +1,20 @@
+
+:root {
+  --color-book-1: #a6e4cd;
+  --color-book-2: #7ac7c4;
+  --color-book-3: #317471;
+  --color-movie-1: theme("colors.sky.300");
+  --color-movie-2: theme("colors.sky.500");
+  --color-movie-3: theme("colors.sky.700");
+  --color-book-movie-sep: #ebebeb;
+}
+
+:root.dark {
+  --color-book-1: #206b4f;
+  --color-book-2: #429d99;
+  --color-book-3: #6dc2be;
+  --color-movie-1: theme("colors.sky.800");
+  --color-movie-2: theme("colors.sky.600");
+  --color-movie-3: theme("colors.sky.500");
+  --color-book-movie-sep: #333;
+}

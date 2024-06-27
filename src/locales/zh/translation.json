@@ -2,7 +2,8 @@
   "nav": {
     "home": "首页",
     "post": "所有文章",
-    "guestbook": "留言板"
+    "guestbook": "留言板",
+    "bookshelf": "书架"
   },
   "theme": {
     "light": "明亮",

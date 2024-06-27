@@ -1,6 +1,7 @@
 import {type ClassValue, clsx} from "clsx"
 import {twMerge} from "tailwind-merge"
 import React from "react"
+import type {Dayjs} from "dayjs"
 import dayjs from "dayjs"
 import localisedFormat from "dayjs/plugin/localizedFormat"
 import "dayjs/locale/zh"
@@ -13,16 +14,37 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export function randomInRange(min: number, max: number) {
-  return Math.random() * (max - min) + min
+export function randomInRange(min: number, max: number, int = false) {
+  const rand = Math.random() * (max - min) + min
+  return int ? Math.floor(rand) : rand
 }
 
-export function format(date: string | Date, options?: {locale?: string, fromNow?: boolean, date?: boolean, datetime?: boolean}) {
+export function format(date: string | Date | Dayjs, options?: {locale?: string, relative?: boolean, date?: boolean, datetime?: boolean}) {
   const locale = options?.locale ?? "en"
   if (options?.datetime) return dayjs(date).locale(locale).format("YYYY-MM-DD HH:mm:ss")
   if (options?.date) return dayjs(date).locale(locale).format("YYYY-MM-DD")
-  if (options?.fromNow) return dayjs().locale(locale).to(dayjs(date))
+  if (options?.relative) return dayjs().locale(locale).to(dayjs(date))
   return dayjs(date).locale(locale).format("ll")
+}
+
+/**
+ * Create a range of Day.js dates between a start and end date.
+ * [Credits](https://github.com/iamkun/dayjs/issues/1162#issuecomment-1694654608)
+ * ```js
+ * getDaysBetween(dayjs('2021-04-03'), dayjs('2021-04-05'));
+ * // => [dayjs('2021-04-03'), dayjs('2021-04-04'), dayjs('2021-04-05')]
+ * ```
+ */
+export function eachDayInRange(start: string | Date | Dayjs, end?: string | Date | Dayjs) {
+  const range = []
+  start = dayjs(start)
+  end ??= dayjs()
+  let current = start
+  while (!current.isAfter(end)) {
+    range.push(current)
+    current = current.add(1, "days")
+  }
+  return range
 }
 
 export function useCssIndexCounter(style?: React.CSSProperties) {

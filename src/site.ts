@@ -12,8 +12,8 @@ export type SiteLocale = typeof site.locales[number]
 export const menu = {
   home: "",
   post: "all",
-  guestbook: "guestbook",
-  bookshelf: "bookshelf"
+  bookshelf: "bookshelf",
+  guestbook: "guestbook"
 } as const
 
 export const giscusConfig: GiscusProps & {darkTheme: GiscusProps["theme"]} = {

@@ -2,7 +2,8 @@
   "nav": {
     "home": "Home",
     "post": "All posts",
-    "guestbook": "Guestbook"
+    "guestbook": "Guestbook",
+    "bookshelf": "Bookshelf"
   },
   "theme": {
     "light": "Light",
