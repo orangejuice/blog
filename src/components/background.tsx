@@ -92,8 +92,7 @@ function AmbientRead() {
 
   return (<>
     <motion.div animate={{opacity: threeLoaded ? 1 : 0}} className={cn(
-      "w-[1200px] h-[700px] fixed top-0 right-0 pointer-events-none",
-      isMobile && "w-[700px] h-[500px]")}>
+      "w-[1200px] h-[700px] fixed top-0 right-0 pointer-events-none -z-10", isMobile && "w-[700px] h-[500px]")}>
       <Canvas shadows camera={{fov: 45}} style={{pointerEvents: "none"}} onCreated={() => {setThreeLoaded(true)}}>
         <CameraControls ref={cameraControlRef} makeDefault={true}/>
         <SoftShadows size={25} focus={0.53} samples={10}/>
@@ -163,7 +162,7 @@ const StarrySky = () => {
   }
 
   return (<>
-    <motion.div className="w-[1200px] h-[700px] fixed top-0 right-0 pointer-events-none" animate={{opacity: 1}}>
+    <motion.div className="w-[1200px] h-[700px] fixed top-0 right-0 pointer-events-none -z-10" animate={{opacity: 1}}>
       <Canvas camera={{fov: 75, position: [900, 570, 200], rotation: [-1.5, 1, 1.5]}} style={{pointerEvents: "none"}}>
         {/*<OrbitControls/>*/}
         {/*<axesHelper/>*/}
