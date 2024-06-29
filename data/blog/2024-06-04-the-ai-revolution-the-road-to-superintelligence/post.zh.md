@@ -11,11 +11,11 @@ tags: [AI]
 
 站在这里感觉如何？
 
-![Edge1](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Edge1.png)
+![Edge1](Edge1.png)
 
 看起来像是站在一个非常刺激的地方——但你必须记住，站在时间图上是看不到右边的。所以实际上站在这里是这样的：
 
-![Edge](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Edge.jpg)
+![Edge](Edge.jpg)
 
 这里可能感觉很正常……
 
@@ -53,11 +53,11 @@ Kurzweil 认为整个 20 世纪的进步在 2000 年的进步速度下只需要 
 
 **1) 在谈到历史时，我们以直线思考。** 当我们想象未来 30 年的进步时，我们回顾前 30 年的进步作为可能发生的事情的指标。当我们考虑 21 世纪世界将发生的变化程度时，我们只是将 20 世纪的进步加到 2000 年。这是我们的 1750 年的人在带 1500 年的人并期望让他像自己那样震惊时犯的同样错误。我们最直观的是以线性思维思考，而我们应该以指数思维思考。如果有人更聪明一些，他们可能不会通过查看前 30 年来预测未来 30 年的进步，而是通过考虑当前的进步速度并基于此做出判断。他们会更准确，但仍然远远不够。为了正确地思考未来，你需要想象事情以比现在快得多的速度前进。
 
-[![Projections](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Projections.png)](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Projections.png)
+[![Projections](Projections.png)](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Projections.png)
 
 **2) 最近历史的轨迹往往讲述了一个扭曲的故事。** 首先，即使是一个陡峭的指数曲线，当你只看一小段时，它也看起来像一条直线，就像你近距离看一个大圆的一个小段，它看起来几乎像一条直线。其次，指数增长并不完全平滑和均匀。Kurzweil 解释说，进步发生在“S 曲线”中：
 
-[![S-Curves](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/S-Curves2.png)](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/S-Curves2.png)
+[![S-Curves](S-Curves2.png)](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/S-Curves2.png)
 
 一个 S 由当一个新的范式席卷世界时的进步波浪所形成的曲线。曲线经过三个阶段：
 
@@ -135,15 +135,15 @@ Kurzweil 认为整个 20 世纪的进步在 2000 年的进步速度下只需要 
 
 一个有趣的例子——当你看到这个时，你和计算机都能确定这是一个具有两种不同阴影、交替排列的矩形：
 
-![Screen Shot 2015-01-21 at 12.59.21 AM](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Screen-Shot-2015-01-21-at-12.59.21-AM.png)
+![Screen Shot 2015-01-21 at 12.59.21 AM](Screen-Shot-2015-01-21-at-12.59.21-AM.png)
 
 打成平手。但是，如果你拿起黑色并揭示整个图像……
 
-![Screen Shot 2015-01-21 at 12.59.54 AM](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Screen-Shot-2015-01-21-at-12.59.54-AM.png)
+![Screen Shot 2015-01-21 at 12.59.54 AM](Screen-Shot-2015-01-21-at-12.59.54-AM.png)
 
 ……你可以毫无问题地完整描述各种不透明和半透明的圆柱体、条板和三维角，而计算机会惨败。它会描述它看到的东西——各种不同颜色的二维形状——这实际上就是那里的东西。你的大脑在做大量的复杂工作来解释图像所试图表现的隐含深度、阴影混合和房间照明。[^8g] 而看着下面的图片，计算机看到的是二维的白色、黑色和灰色拼贴画，而你轻松看出它实际上是什么——一张完全黑色的三维岩石照片：
 
-![article-2053686-0E8BC15900000578-845_634x330](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/article-2053686-0E8BC15900000578-845_634x330.jpg)
+![article-2053686-0E8BC15900000578-845_634x330](article-2053686-0E8BC15900000578-845_634x330.jpg)
 
 我们刚才提到的所有这些还仅仅是接收静态信息并处理它。要达到人类水平的智能，计算机还需要理解诸如微妙面部表情之间的区别、满意、欣慰、满足、满足和高兴之间的区别，以及为什么《勇敢的心》很棒但《爱国者》很糟糕。
 
@@ -165,7 +165,7 @@ Kurzweil 认为整个 20 世纪的进步在 2000 年的进步速度下只需要 
 
 摩尔定律是一个历史可靠的规则，世界上的最大计算能力每两年大约翻一番，这意味着计算机硬件的进步，就像人类历史上的普遍进步一样，呈指数增长。看看这与库兹韦尔的 cps/$1000 指标的关系，我们目前大约是 10 万亿 cps/$1000，与此图表预测的轨迹完全一致：[^9g]
 
-![PPTExponentialGrowthof_Computing-1](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/PPTExponentialGrowthof_Computing-1.jpg)
+![PPTExponentialGrowthof_Computing-1](PPTExponentialGrowthof_Computing-1.jpg)
 
 所以现在的 1000 美元计算机已经超过了老鼠的大脑，它们大约是人类水平的一千分之一。这听起来似乎并不多，直到你想起我们在 1985 年大约是人类水平的万亿分之一，在 1995 年是十亿分之一，在 2005 年是百万分之一：在 2015 年达到千分之一，使我们正好处于赶上 2025 年一个价格合理的计算机能够与大脑媲美的水平。
 
@@ -238,11 +238,11 @@ Kurzweil 认为整个 20 世纪的进步在 2000 年的进步速度下只需要 
 
 这可能会在发生时让我们大吃一惊。原因是从*我们*的角度来看，A) 虽然各种动物的智力差异很大，但我们了解的任何动物智力的主要特征都是它远远低于我们的，而 B) 我们将最聪明的人类视为比最愚蠢的人类*聪明得多*。有点像这样：
 
-![Intelligence](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Intelligence.jpg)
+![Intelligence](Intelligence.jpg)
 
 因此，当人工智能朝着我们迈进时，我们会认为它简单地变得更聪明，*对于一种动物而言*。然后，当它达到人类的最低水平——Nick Bostrom 使用了“村傻瓜”这个术语——我们会说：“哦，哇，它就像一个愚蠢的人类。可爱！”唯一的问题是，在智力的大范围内，*所有*人类，从村傻瓜到爱因斯坦，都在一个非常小的范围内——所以在*刚刚*达到村傻瓜水平并被宣称为AGI之后，它将突然比爱因斯坦聪明，而我们将不知所措：
 
-![Intelligence2](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Intelligence2.png)
+![Intelligence2](Intelligence2.png)
 
 之后会发生什么？
 

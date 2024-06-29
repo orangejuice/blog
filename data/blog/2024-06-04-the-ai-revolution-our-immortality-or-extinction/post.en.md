@@ -14,13 +14,13 @@ Welcome to Part 2 of the “Wait how is this possibly what I’m reading I don�
 
 Part 1 started innocently enough, as we discussed Artificial Narrow Intelligence, or ANI (AI that specializes in one narrow task like coming up with driving routes or playing chess), and how it’s all around us in the world today. We then examined why it was such a huge challenge to get from ANI to Artificial General Intelligence, or AGI (AI that’s at least as intellectually capable as a human, across the board), and we discussed why the exponential rate of technological advancement we’ve seen in the past suggests that AGI might not be as far away as it seems. Part 1 ended with me assaulting you with the fact that once our machines reach human-level intelligence, they might immediately do this:
 
-![Train1](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Train1.png)
+![Train1](Train1.png)
 
-![Train2](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Train2.png)
+![Train2](Train2.png)
 
-![Train3](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Train3.png)
+![Train3](Train3.png)
 
-![Train4](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Train4.png)
+![Train4](Train4.png)
 
 This left us staring at the screen, confronting the intense concept of potentially-in-our-lifetime Artificial Superintelligence, or ASI (AI that’s _way_ smarter than any human, across the board), and trying to figure out which emotion we were supposed to have on as we thought about that.[^1b] [^1g] <sup>← open these</sup>
 
@@ -34,19 +34,19 @@ But it’s not just that a chimp can’t do what we do, it’s that his brain is
 
 And in the scheme of the intelligence range we’re talking about today, or even the much smaller range among biological creatures, the chimp-to-human quality intelligence gap is _tiny_. In an earlier [post](https://waitbutwhy.com/2014/10/religion-for-the-nonreligious.html), I depicted the range of biological cognitive capacity using a staircase:[^3b]
 
-![staircase](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/staircase1.png)
+![staircase](staircase1.png)
 
 To absorb how big a deal a superintelligent machine would be, imagine one on the dark green step two steps above humans on that staircase. This machine would be only _slightly_ superintelligent, but its increased cognitive ability over us would be as vast as the chimp-human gap we just described. And like the chimp’s incapacity to ever absorb that skyscrapers can be built, we will never be able to even comprehend the things a machine on the dark green step can do, even if the machine tried to explain it to us—let alone do it ourselves. And that’s only two steps above us. A machine on the second-to-highest step on that staircase would be to us as we are to ants—it could try for years to teach us the simplest inkling of what it knows and the endeavor would be hopeless.
 
 But the kind of superintelligence we’re talking about today is something far beyond anything on this staircase. In an intelligence explosion—where the smarter a machine gets, the quicker it’s able to increase its own intelligence, until it begins to _soar_ upwards—a machine might take years to rise from the chimp step to the one above it, but perhaps only hours to jump up a step once it’s on the dark green step two above us, and by the time it’s ten steps above us, it might be jumping up in four-step leaps every second that goes by. Which is why we need to realize that it’s distinctly possible that very shortly after the big news story about the first machine reaching human-level AGI, we might be facing the reality of coexisting on the Earth with something that’s here on the staircase (or maybe a million times higher):
 
-![staircase2](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/staircase2.png)
+![staircase2](staircase2.png)
 
 And since we just established that it’s a hopeless activity to try to understand the power of a machine only two steps above us, let’s very concretely state once and for all that **there is no way to know what ASI will do or what the consequences will be for us.** Anyone who pretends otherwise doesn’t understand what superintelligence means.
 
 Evolution has advanced the biological brain slowly and gradually over hundreds of millions of years, and in that sense, if humans birth an ASI machine, we’ll be dramatically stomping on evolution. Or maybe this is _part_ of evolution—maybe the way evolution works is that intelligence creeps up more and more until it hits the level where it’s capable of creating machine superintelligence, and that level is like a tripwire that triggers a worldwide game-changing explosion that determines a new future for all living things:
 
-![Tripwire](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Tripwire.png)
+![Tripwire](Tripwire.png)
 
 And for reasons we’ll discuss later, a huge part of the scientific community believes that it’s not a matter of whether we’ll hit that tripwire, but when. Kind of a crazy piece of information.
 
@@ -56,13 +56,13 @@ Well no one in the world, especially not I, can tell you what will happen when w
 
 First, looking at history, we can see that life works like this: species pop up, exist for a while, and after some time, inevitably, they fall off the existence balance beam and land on extinction—
 
-![beam1](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/beam1.png)
+![beam1](beam1.png)
 
 “All species eventually go extinct” has been almost as reliable a rule through history as “All humans eventually die” has been. So far, 99.9% of species have fallen off the balance beam, and it seems pretty clear that if a species keeps wobbling along down the beam, it’s only a matter of time before some other species, some gust of nature’s wind, or a sudden beam-shaking asteroid knocks it off. Bostrom calls extinction an _attractor state_—a place species are all teetering on falling into and from which no species ever returns.
 
 And while most scientists I’ve come across acknowledge that ASI would have the ability to send humans to extinction, many also believe that used beneficially, ASI’s abilities could be used to bring individual humans, and the species as a whole, to a _second_ attractor state—species immortality. Bostrom believes species immortality is just as much of an attractor state as species extinction, i.e. if we manage to get there, we’ll be impervious to extinction forever—we’ll have conquered mortality and conquered chance. So even though all species _so far_ have fallen off the balance beam and landed on extinction, Bostrom believes there are two sides to the beam and it’s just that nothing on Earth has been intelligent enough yet to figure out how to fall off on the other side.
 
-![beam2](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/beam2.jpg)
+![beam2](beam2.jpg)
 
 If Bostrom and others are right, and from everything I’ve read, it seems like they really might be, we have two pretty shocking facts to absorb:
 
@@ -84,7 +84,7 @@ i.e. How long until the first machine reaches superintelligence?
 
 Not shockingly, opinions vary wildly and this is a heated debate among scientists and thinkers. Many, like professor [Vernor Vinge](https://www-rohan.sdsu.edu/faculty/vinge/misc/singularity.html), scientist [Ben Goertzel](http://goertzel.org/TenYearsToTheSingularity.pdf), Sun Microsystems co-founder [Bill Joy](http://archive.wired.com/wired/archive/8.04/joy.html), or, most famously, inventor and futurist [Ray Kurzweil](https://en.wikipedia.org/wiki/Predictions_made_by_Ray_Kurzweil), agree with machine learning expert Jeremy Howard when he puts up this graph during a [TED Talk](http://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn?language=en):
 
-![Howard Graph](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Howard-Graph.png)
+![Howard Graph](Howard-Graph.png)
 
 Those people subscribe to the belief that this is happening _soon—_that exponential growth is at work and machine learning, though only slowly creeping up on us now, will blow right past us within the next few decades.
 
@@ -126,7 +126,7 @@ The median answer put a rapid (2 year) AGI → ASI transition at only a **10%** 
 
 We don’t know from this data the length of this transition the median participant would have put at a 50% likelihood, but for ballpark purposes, based on the two answers above, let’s estimate that they’d have said 20 years. So the median opinion—the one right in the center of the world of AI experts—believes the most realistic guess for when we’ll hit the ASI tripwire is \[the 2040 prediction for AGI + our estimated prediction of a 20-year transition from AGI to ASI\] **\= 2060**.
 
-![Timeline](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Timeline.png)
+![Timeline](Timeline.png)
 
 Of course, all of the above statistics are speculative, and they’re only representative of the center opinion of the AI expert community, but it tells us that a large portion of the people who know the most about this topic would agree that 2060 is a very reasonable estimate for the arrival of potentially world-altering ASI. Only 45 years from now.
 
@@ -142,7 +142,7 @@ Of course, the expert community is again all over the board and in a heated deba
 
 Before we dive much further into this good vs. bad outcome part of the question, let’s combine both the “when will it happen?” and the “will it be good or bad?” parts of this question into a chart that encompasses the views of most of the relevant experts:
 
-![Square1](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Square11.jpg)
+![Square1](Square11.jpg)
 
 We’ll talk more about the Main Camp in a minute, but first—what’s your deal? Actually I know what your deal is, because it was my deal too before I started researching this topic. Some reasons most people aren’t really thinking about this topic:
 
@@ -154,7 +154,7 @@ One of the goals of these two posts is to get you out of the I Like to Think Abo
 
 During my research, I came across dozens of varying opinions on this topic, but I quickly noticed that most people’s opinions fell somewhere in what I labeled the Main Camp, and in particular, over three quarters of the experts fell into two Subcamps inside the Main Camp:
 
-![Square2](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Square21.jpg)
+![Square2](Square21.jpg)
 
 We’re gonna take a thorough dive into both of these camps. Let’s start with the fun one—
 
@@ -163,7 +163,7 @@ Why the Future Might Be Our Greatest Dream
 
 As I learned about the world of AI, I found a surprisingly large number of people standing here:
 
-![Square3](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Square32.jpg)
+![Square3](Square32.jpg)
 
 The people on Confident Corner are buzzing with excitement. They have their sights set on the fun side of the balance beam and they’re convinced that’s where all of us are headed. For them, the future is everything they ever could have hoped for, just in time.
 
@@ -231,7 +231,7 @@ Just considering the possibilities if a superintelligent computer had access to 
 
 **What AI Could Do For Us**
 
-![only-humans-cartoon](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/only-humans-cartoon.jpg)
+![only-humans-cartoon](only-humans-cartoon.jpg)
 
 [Source](https://www.amazon.com/gp/product/0143037889/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0143037889&linkCode=as2&tag=wabuwh00-20&linkId=54Q62R5PYJBEENTP)
 
@@ -280,17 +280,17 @@ One of the reasons I wanted to learn about AI is that the topic of “bad robots
 
 Those people tended to be somewhere in here:
 
-![Square4](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Square42.jpg)
+![Square4](Square42.jpg)
 
 The people on Anxious Avenue aren’t in Panicked Prairie or Hopeless Hills—both of which are regions on the _far_ left of the chart—but they’re nervous and they’re tense. Being in the middle of the chart doesn’t mean that you think the arrival of ASI will be _neutral—_the neutrals were given a camp of their own—it means you think _both_ the extremely good and extremely bad outcomes are plausible but that you’re not sure yet which one of them it’ll be.
 
 A part of all of these people is brimming with excitement over what Artificial Superintelligence could do for us—it’s just they’re a little worried that it might be the beginning of _Raiders of the Lost Ark_ and the human race is this guy:
 
-![raiders](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/raiders1.jpg)
+![raiders](raiders1.jpg)
 
 And he’s standing there all pleased with his whip and his idol, thinking he’s figured it all out, and he’s so thrilled with himself when he says his “Adios Señor” line, and then he’s less thrilled suddenly cause this happens.
 
-![500px-Satipo_death](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/500px-Satipo_death.jpg)
+![500px-Satipo_death](500px-Satipo_death.jpg)
 
 (Sorry)
 
@@ -306,7 +306,7 @@ _Existential risk._
 
 An existential risk is something that can have a permanent devastating effect on humanity. Typically, existential risk means extinction. Check out this chart from a [Google talk](https://www.youtube.com/watch?v=pywF6ZzsghI) by Bostrom:[^13b]
 
-![Existential Risk Chart](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Existential-Risk-Chart.jpg)
+![Existential Risk Chart](Existential-Risk-Chart.jpg)
 
 You can see that the label “existential risk” is reserved for something that spans the species, spans generations (i.e. it’s permanent) and it’s devastating or death-inducing in its consequences.[^14b] It technically includes a situation in which all humans are permanently in a state of suffering or torture, but again, we’re usually talking about extinction. There are three things that can cause humans an existential catastrophe:
 
@@ -372,7 +372,7 @@ _Meanwhile, at the Robotica office, Turry is busy at work. Over the next few mon
 
 _Turry then starts work on a new phase of her mission—she begins constructing probes that head out from Earth to begin landing on asteroids and other planets. When they get there, they’ll begin constructing nanoassemblers to convert the materials on the planet into Turry replicas, paper, and pens. Then they’ll get to work, writing notes…_
 
-![You](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/You1.png)
+![You](You1.png)
 
 It seems weird that a story about a handwriting machine turning on humans, somehow killing everyone, and then for some reason filling the galaxy with friendly notes is the exact kind of scenario Hawking, Musk, Gates, and Bostrom are terrified of. But it’s true. And the only thing that scares everyone on Anxious Avenue more than ASI is the fact that you’re _not_ scared of ASI. Remember what happened when the Adios Señor guy wasn’t scared of the cave?
 
@@ -517,7 +517,7 @@ I have some weird mixed feelings going on inside of me right now.
 
 On one hand, thinking about our species, it seems like we’ll have one and only one shot to get this right. The first ASI we birth will also probably be the last—and given how buggy most 1.0 products are, that’s pretty terrifying. On the other hand, Nick Bostrom points out the big advantage in our corner: we get to make the first move here. It’s in our power to do this with enough caution and foresight that we give ourselves a strong chance of success. And how high are the stakes?
 
-![Outcome Spectrum](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Outcome-Spectrum.jpg)
+![Outcome Spectrum](Outcome-Spectrum.jpg)
 
 If ASI really does happen this century, and if the outcome of that is really as extreme—and permanent—as most experts think it will be, we have an _enormous_ responsibility on our shoulders. The next million+ years of human lives are all quietly looking at us, hoping as hard as they can hope that we don’t mess this up. We have a chance to be the humans that gave all future humans the gift of life, and maybe even the gift of painless, everlasting life. Or we’ll be the people responsible for blowing it—for letting this incredibly special species, with its music and its art, its curiosity and its laughter, its endless discoveries and inventions, come to a sad and unceremonious end.
 
@@ -531,7 +531,7 @@ _Not. Dying._
 
 And the spectrum starts to look kind of like this:
 
-![Outcome Spectrum 2](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Outcome-Spectrum-2.png)
+![Outcome Spectrum 2](Outcome-Spectrum-2.png)
 
 And then I might consider that humanity’s music and art is good, but it’s not _that_ good, and a lot of it is actually just bad. And a lot of people’s laughter is annoying, and those millions of future people aren’t actually hoping for anything because they don’t exist. And maybe we don’t need to be _over-the-top_ cautious, since who really wants to do that?
 
@@ -683,5 +683,3 @@ Jeremy Howard TED Talk – [The wonderful and terrifying implications of compute
 [^20g]:  Yudkowsky, [_Coherent_](https://intelligence.org/files/CEV.pdf) _[Extrapolated Volition](https://intelligence.org/files/CEV.pdf)._
     
 [^21g]:  Bostrom, [_Superintelligence: Paths, Dangers, Strategies_](https://www.amazon.com/gp/product/0199678111/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0199678111&linkCode=as2&tag=wabuwh00-20&linkId=LBOTX2G2R72P5EUA), loc. 6026.
-    
-

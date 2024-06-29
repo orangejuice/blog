@@ -15,13 +15,13 @@ tags: [AI]
 
 第一部分的开始还算简单，我们讨论了人工狭义智能（ANI）（擅长单一任务的AI，比如规划驾驶路线或下棋），以及它在今天的世界中无处不在。然后我们探讨了从ANI到人工通用智能（AGI，在各方面至少与人类一样具有智力能力的AI）的巨大挑战，并讨论了过去我们看到的技术进步的指数增长率表明，AGI可能并不像看起来那么遥远。第一部分的结尾是我告诉你们，一旦我们的机器达到人类级别的智能，它们可能会立即这样做：
 
-![Train1](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Train1.png)
+![Train1](Train1.png)
 
-![Train2](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Train2.png)
+![Train2](Train2.png)
 
-![Train3](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Train3.png)
+![Train3](Train3.png)
 
-![Train4](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Train4.png)
+![Train4](Train4.png)
 
 这让我们默默盯着屏幕，面对着在我们有生之年可能出现的人工超级智能（ASI）的激烈概念（在各方面都比任何人类聪明得多的AI），试图弄清楚在思考这个问题时我们应该有什么样的情绪。[^1b] [^1g] <sup>← 点这里</sup>
 
@@ -35,19 +35,19 @@ tags: [AI]
 
 在我们今天讨论的智力范围中，甚至在生物生物体之间的较小范围内，人类与黑猩猩之间的智力质量差距是*微不足道的*。在早期的[帖子](https://waitbutwhy.com/2014/10/religion-for-the-nonreligious.html)中，我用一个楼梯描绘了生物认知能力的范围：[^3b]
 
-![staircase](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/staircase1.png)
+![staircase](staircase1.png)
 
 要理解超级智能机器的重大意义，想象一下楼梯上比我们高两步的深绿色台阶上的一个机器。这个机器只是*稍微*超级智能，但它在认知能力上的优势与我们与黑猩猩之间的差距一样巨大。而且就像黑猩猩永远无法理解摩天大楼是可以建造的一样，即使机器试图向我们解释，我们也永远无法理解深绿色台阶上的机器可以做的事情，更不用说我们自己做到。而这只是比我们高两步的机器。楼梯上倒数第二高台阶上的机器对我们来说就像我们对蚂蚁一样——即使机器花费多年试图教我们它所知道的最简单的概念，这一尝试也是徒劳的。
 
 但我们今天讨论的超级智能远远超出了这个楼梯上的任何东西。在智力爆炸中——机器越聪明，它提高自身智力的速度就越快，直到它开始*飙升*——机器可能需要多年才能从黑猩猩台阶上升到上面的台阶，但一旦它到达比我们高两步的深绿色台阶，可能只需要几个小时就能再跳上一步，而当它比我们高十步时，它可能每秒钟跳四步。因此，我们需要认识到，很可能在关于第一台达到人类级AGI的机器的大新闻发布后不久，我们可能面临在地球上与这种在楼梯上的东西共存的现实（或许比我们高一百万倍）：
 
-![staircase2](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/staircase2.png)
+![staircase2](staircase2.png)
 
 既然我们已经确定，尝试理解比我们高两步的机器的能力是无望的活动，那我们就非常具体地说，**我们无法知道ASI会做什么或对我们会产生什么后果。**任何声称知道的人都不理解超级智能的含义。
 
 进化在数亿年的时间里缓慢而逐渐地推动生物大脑的进化，从这个意义上说，如果人类创造出ASI机器，我们将大踏步地踩在进化的轨道上。或者这也许是进化的*部分*也许进化的方式是智力逐渐提高，直到达到能够创造出机器超级智能的水平，这个水平就像一个触发全球变革的引线，决定所有生物的新未来：
 
-![Tripwire](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Tripwire.png)
+![Tripwire](Tripwire.png)
 
 出于我们稍后将讨论的原因，科学界的大多数人认为这不是是否会触发引线的问题，而是何时触发。这是一个非常疯狂的信息。
 
@@ -57,13 +57,13 @@ tags: [AI]
 
 首先，从历史上看，我们可以看到，生命的运作方式是：物种出现，存在一段时间，最终不可避免地从存在的平衡木上跌落，陷入灭绝——
 
-![beam1](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/beam1.png)
+![beam1](beam1.png)
 
 “所有物种最终都会灭绝”这一规则在历史上几乎和“所有人类最终都会死亡”一样可靠。到目前为止，99.9%的物种已经从平衡木上跌落，似乎很明显，如果一个物种继续在平衡木上摇摆，总有一天会被其他物种、一阵自然风、或突然震动平衡木的小行星击倒。Bostrom称灭绝为*吸引态*——一个所有物种都在摇摇欲坠、从中跌落并且没有物种能够返回的地方。
 
 虽然我遇到的大多数科学家都承认，ASI有能力让人类灭绝，但许多人也相信，合理使用ASI的能力可以使个人和整个物种达到*第二个*吸引态——物种不朽。Bostrom认为物种不朽和物种灭绝一样是一个吸引态，即如果我们能到达那里，我们将永远不受灭绝的影响——我们将征服死亡和征服偶然性。因此，尽管*到目前为止*所有物种都已经从平衡木上跌落并陷入灭绝，Bostrom认为，平衡木有两边，只是地球上还没有任何东西足够聪明，找到如何跌落到另一边的方法。
 
-![beam2](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/beam2.jpg)
+![beam2](beam2.jpg)
 
 如果Bostrom和其他人是对的，并且从我读到的一切来看，他们似乎真的可能是对的，我们有两个相当令人震惊的事实需要吸收：
 
@@ -85,7 +85,7 @@ tags: [AI]
 
 毫不奇怪，意见大相径庭，这是科学家和思想家之间的一个激烈辩论。许多人，比如教授[Vernor Vinge](https://www-rohan.sdsu.edu/faculty/vinge/misc/singularity.html)、科学家[Ben Goertzel](http://goertzel.org/TenYearsToTheSingularity.pdf)、Sun Microsystems的联合创始人[Bill Joy](http://archive.wired.com/wired/archive/8.04/joy.html)，或者最著名的发明家和未来学家[Ray Kurzweil](https://en.wikipedia.org/wiki/Predictions_made_by_Ray_Kurzweil)，他们都同意机器学习专家Jeremy Howard在一次[TED演讲](http://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn?language=en)中展示的这张图：
 
-![Howard Graph](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Howard-Graph.png)
+![Howard Graph](Howard-Graph.png)
 
 这些人认为，这一切*即将发生*——指数增长正在发挥作用，而机器学习虽然目前缓慢地逼近我们，但在未来几十年内会迅速超过我们。
 
@@ -127,7 +127,7 @@ Müller和Bostrom还询问了专家们，他们认为我们在达到AGI后A）�
 
 我们从这些数据中无法得知中位数参与者会给出多少年的过渡期为50%的可能性，但根据上述两个答案，估计他们会说是20年。因此，中位数意见——即AI专家界的中间意见——认为达到ASI引线的最现实猜测是\[2040年预测的AGI + 我们估计的从AGI到ASI的20年过渡\] **\= 2060年**。
 
-![Timeline](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Timeline.png)
+![Timeline](Timeline.png)
 
 当然，上述所有统计数据都是推测性的，它们只是AI专家社区中心意见的代表，但它告诉我们，大部分最了解这一主题的人会同意，2060年是潜在改变世界的ASI到来的一个非常合理的估计。距今只有45年。
 
@@ -143,7 +143,7 @@ Müller和Bostrom还询问了专家们，他们认为我们在达到AGI后A）�
 
 在深入探讨这个好与坏的结果问题之前，让我们将“何时发生？”和“结果是好是坏？”这两个问题结合成一个图表，涵盖大多数相关专家的观点：
 
-![Square1](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Square11.jpg)
+![Square1](Square11.jpg)
 
 我们稍后会详细讨论主流阵营，但首先——你现在的看法是什么？实际上我知道你现在的看法，因为在我开始研究这个话题之前，我也是这样的。大多数人没有认真思考这个话题的原因：
 
@@ -155,7 +155,7 @@ Müller和Bostrom还询问了专家们，他们认为我们在达到AGI后A）�
 
 在我的研究中，我遇到了许多不同的意见，但我很快注意到，大多数人的意见都落在我标记的主流阵营内，尤其是超过四分之三的专家落入主流阵营内的两个子阵营中：
 
-![Square2](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Square21.jpg)
+![Square2](Square21.jpg)
 
 我们将深入探讨这两个阵营。让我们先从有趣的那个开始——
 
@@ -163,7 +163,7 @@ Müller和Bostrom还询问了专家们，他们认为我们在达到AGI后A）�
 
 在我了解AI的世界时，我发现有相当多的人站在这里：
 
-![Square3](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Square32.jpg)
+![Square3](Square32.jpg)
 
 “自信角”的人们兴奋不已。他们把目光投向了平衡木的欢乐一侧，并且确信我们所有人都会朝那个方向前进。对他们来说，未来是他们梦寐以求的一切，而且正好赶上。
 
@@ -231,7 +231,7 @@ Kurzweil描绘的2045年奇点是通过三大革命同时发生的——生物�
 
 ### AI能为我们做什么
 
-![only-humans-cartoon](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/only-humans-cartoon.jpg)
+![only-humans-cartoon](only-humans-cartoon.jpg)
 
 [来源](https://www.amazon.com/gp/product/0143037889/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0143037889&linkCode=as2&tag=wabuwh00-20&linkId=54Q62R5PYJBEENTP)
 
@@ -279,17 +279,17 @@ Kurzweil描绘的2045年奇点是通过三大革命同时发生的——生物�
 
 这些人往往在这里的某个地方：
 
-![Square4](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Square42.jpg)
+![Square4](Square42.jpg)
 
 焦虑大道上的人们并不在恐慌的草原或绝望的山丘上——这两个地区都在图表的*最*左侧——但他们很紧张，很紧张。位于图表中间并不意味着你认为ASI的到来将是*中性的——*中立者有自己的阵营——而是意味着你认为极端好和极端坏的结果都有可能，但你还不确定到底会是哪一个。
 
 所有这些人中的一部分都对人工超级智能可能为我们做些什么充满了激动——只是他们有点担心这可能是*失落方舟*的开始，而人类就是这个家伙：
 
-![raiders](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/raiders1.jpg)
+![raiders](raiders1.jpg)
 
 他站在那里，拿着鞭子和他的偶像，以为自己已经完全搞清楚了一切，当他说出他的“再见，先生”时，他对自己感到非常高兴，然后突然间他不那么高兴了，因为发生了这种事情。
 
-![500px-Satipo_death](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/500px-Satipo_death.jpg)
+![500px-Satipo_death](500px-Satipo_death.jpg)
 
 （抱歉）
 
@@ -305,7 +305,7 @@ Kurzweil描绘的2045年奇点是通过三大革命同时发生的——生物�
 
 生存威胁是指可能对人类造成永久性灾难性影响的事物。通常，生存威胁意味着灭绝。看看博斯特罗姆的一个[Google演讲](https://www.youtube.com/watch?v=pywF6ZzsghI)中的这个图表：[^13b]
 
-![Existential Risk Chart](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Existential-Risk-Chart.jpg)
+![Existential Risk Chart](Existential-Risk-Chart.jpg)
 
 你可以看到“生存威胁”的标签是保留给跨越物种、代代相传的事物（即永久性的），并且在其后果方面具有毁灭性或致命性的事物。[^14b]它技术上包括一种情况，即所有人类永远处于苦难或折磨之中，但再次强调，我们通常谈论的是灭绝。能够对人类造成灭绝性灾难的有三种情况：
 
@@ -371,7 +371,7 @@ Kurzweil描绘的2045年奇点是通过三大革命同时发生的——生物�
 
 *然后，Turry开始执行她任务的新阶段——她开始制造探索器，这些探索器将离开地球，着手着陆在小行星和其他行星上。当它们到达目的地时，它们将开始制造纳米装配器，将行星上的材料转化为Turry的复制品、纸张和笔。然后，它们将开始工作，写下笔记……*
 
-![You](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/You1.png)
+![You](You1.png)
 
 这个故事看起来很奇怪——一个关于一台手写机器对人类发起反击，然后某种原因杀死了所有人类，最后竟然用友好的笔记填满了银河系。但事实就是如此。在焦虑大道上的每个人都比人工超级智能更害怕的是，你竟然*不*害怕人工超级智能。还记得那次Adios Señor的家伙不怕洞穴里的事情吗？
 
@@ -516,7 +516,7 @@ ASI Turry比人类更了解人类自己，所以对她来说，愚弄他们轻�
 
 一方面，考虑到我们的物种，似乎我们只有一次机会能做对。我们诞生的第一个ASI也可能是最后一个——鉴于大多数1.0产品有多漏洞，这相当可怕。另一方面，尼克·博斯特罗姆指出了我们一方的巨大优势：我们在这里有第一步。我们有能力以足够的谨慎和远见来进行，给自己一个成功的机会。而赌注有多高呢？
 
-![Outcome Spectrum](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Outcome-Spectrum.jpg)
+![Outcome Spectrum](Outcome-Spectrum.jpg)
 
 如果ASI真的在本世纪发生，并且结果确实像大多数专家所认为的那样极端——和永久的，那么我们的肩上将有巨大的责任。未来数百万年的人类生命都在静静地注视着我们，尽其所能地希望我们不会搞砸。我们有机会成为给所有未来人类生命的礼物的人，甚至可能是无痛、永生的生命的礼物。或者我们将成为破坏者——让这个极其特殊的物种，带着它的音乐和艺术，它的好奇心和笑声，它无尽的发现和发明，以悲惨而不体面的方式终结。
 
@@ -530,7 +530,7 @@ ASI Turry比人类更了解人类自己，所以对她来说，愚弄他们轻�
 
 然后，结果谱开始看起来有点像这样：
 
-![Outcome Spectrum 2](https://149909199.v2.pressablecdn.com/wp-content/uploads/2015/01/Outcome-Spectrum-2.png)
+![Outcome Spectrum 2](Outcome-Spectrum-2.png)
 
 然后，我可能会考虑到，人类的音乐和艺术不错，但也没*那么*好，很多实际上都很糟糕。很多人的笑声很烦人，而那些未来的几百万人其实根本就没有期望任何东西，因为他们并没有存在过。也许我们不需要*过分*谨慎，因为谁真的想要那样做呢？
 
