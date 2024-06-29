@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -62,7 +62,7 @@
     "hast-util-from-html-isomorphic": "^2.0.0",
     "next-contentlayer2": "^0.4.6",
     "p-queue": "^8.0.1",
-    "postcss": "^8.4.38",
+    "postcss": "^8.4.39",
     "proper-lockfile": "^4.1.2",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-preset-minify": "^7.0.0",
