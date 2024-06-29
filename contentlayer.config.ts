@@ -34,18 +34,26 @@ export const Post = defineDocumentType(() => ({
 
 export const Activity = defineDocumentType(() => ({
   name: "Activity",
-  filePathPattern: "activity/**.md",
+  filePathPattern: "activity/**/record.md",
   contentType: "mdx",
   fields: {
     title: {type: "string", required: true},
-    category: {type: "string", required: true},
-    status: {type: "string", required: true},
+    type: {type: "enum", options: ["book", "movie"], required: true},
+    status: {type: "enum", options: ["todo", "doing", "done"], required: true},
     rating: {type: "number"},
     date: {type: "date", required: true},
     douban: {
       type: "nested", of: defineNestedType(() => ({
         name: "Douban",
-        fields: {intro: {type: "string"}, rating: {type: "number"}, link: {type: "string"}, id: {type: "string"}}
+        fields: {
+          id: {type: "string"},
+          title: {type: "string"},
+          subtitle: {type: "string"},
+          intro: {type: "string"},
+          rating: {type: "number"},
+          cover: {type: "string"},
+          link: {type: "string"}
+        }
       }))
     }
   },

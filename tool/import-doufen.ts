@@ -1,16 +1,14 @@
-import * as xlsx from "xlsx"
+import tofu from "./tofu.json"
 import * as fs from "fs"
 import * as path from "path"
 import {format} from "@/lib/utils"
+import PQueue from "p-queue"
 
-const EXCEL_FILE_PATH = "tool/data.xlsx"
 const OUTPUT_DIR = "data/activity"
 
 if (!fs.existsSync(OUTPUT_DIR)) {
   fs.mkdirSync(OUTPUT_DIR)
 }
-
-const workbook = xlsx.readFile(EXCEL_FILE_PATH)
 
 const sanitizeFilename = (title: string): string => {
   return title.replace(/[\/\\?%*:|' "<>]/g, "-")
@@ -20,55 +18,76 @@ const sanitizeContent = (content: string): string => {
   return content.replace(/</g, "&lt;").replace(/>/g, "&gt;")
 }
 
-for (const sheetName of workbook.SheetNames) {
-  const sheet = workbook.Sheets[sheetName]
-  const rows = xlsx.utils.sheet_to_json(sheet)
-  const categoryMap = {
-    "看过": "movie", "在看": "movie", "想看": "movie",
-    "读过": "book", "在读": "book", "想读": "book"
-  }
-  const statusMap = {
-    "看过": "done", "在看": "doing", "想看": "todo",
-    "读过": "done", "在读": "doing", "想读": "todo"
-  }
+const queue = new PQueue({concurrency: 10})
 
-  if (!(sheetName in categoryMap)) continue
+for (const interest of (tofu as Record<any, any>).interest) {
+  try {
+    const type = interest.type
+    const status = interest.status == "mark" ? "todo" : interest.status
+    if (!["movie", "book"].includes(type)) continue
 
-  rows.forEach((row: any) => {
-    const title = row["标题"]
-    const doubanIntro = row["简介"]
-    const doubanRating = row["豆瓣评分"]
-    const doubanLink = row["链接"]
-    const doubanID = row["链接"].split("/").slice(-2)[0]
-    const createdDate = row["创建时间"]
-    const rating = row["我的评分"]
-    const comment = row["评论"]
-    // @ts-ignore
-    const category = categoryMap[sheetName]
-    // @ts-ignore
-    const status = statusMap[sheetName]
+    const title = interest.interest.subject.title
+    const doubanSubtitle = interest.interest.subject.card_subtitle
+    const doubanIntro = interest.interest.subject.intro
+    const doubanRating = interest.interest.subject.rating.value
+    const doubanLink = interest.interest.subject.url
+    const doubanID = interest.interest.subject.id
+    const createdDate = interest.interest.create_time
+    const rating = interest.interest.rating?.value
+    const comment = interest.interest.comment
+    const cover = interest.interest.subject.cover_url
 
     const formattedDate = format(createdDate, {date: true})
-    const fileName = `${formattedDate}-${sanitizeFilename(title)}.md`
-    const filePath = path.join(OUTPUT_DIR, fileName)
+    const dict = `${formattedDate}-${sanitizeFilename(title)}`
+    if (!fs.existsSync(path.join(OUTPUT_DIR, dict))) {
+      fs.mkdirSync(path.join(OUTPUT_DIR, dict))
+    }
+    const filePath = path.join(OUTPUT_DIR, dict, "record.md")
+
+    cover && queue.add(() => downloadImage(cover, path.join(OUTPUT_DIR, dict)))
 
     const content = `---
 title: "${title}"
-category: "${category}"
+type: "${type}"
 status: "${status}"
 rating: ${rating ?? ""}
 date: "${createdDate}"
 douban:
+  id: "${doubanID ?? ""}"
+  title: "${doubanSubtitle ?? ""}"
+  subtitle: "${doubanSubtitle ?? ""}"
   intro: "${doubanIntro ?? ""}"
   rating: ${doubanRating ?? ""}
+  cover: "${cover}"
   link: "${doubanLink ?? ""}"
-  id: "${doubanID ?? ""}"
 ---
 
 ${sanitizeContent(comment ?? "")}
 `
     fs.writeFileSync(filePath, content, "utf8")
-  })
+
+  } catch (err) {
+    console.log(interest)
+    throw err
+  }
 }
 
-console.log("done")
+queue.on("completed", result => {
+  console.log(result.join(" | "))
+})
+
+async function downloadImage(url: string, destDir: string) {
+  const urlPath = new URL(url).pathname
+  const fileExt = path.extname(urlPath)
+  const destPath = path.join(destDir, `cover.zh${fileExt}`)
+  const destPathWebP = path.join(destDir, `cover.zh.webp`)
+
+  if (fs.existsSync(destPath) || fs.existsSync(destPathWebP)) return [destPath]
+
+  return await fetch(url).then((async (response) => {
+    if (response.ok) {
+      fs.writeFileSync(destPath, Buffer.from(await response.arrayBuffer()))
+      return [destPath, "downloaded"]
+    } else return [destPath, `HTTP error ${response.status}`]
+  }))
+}
