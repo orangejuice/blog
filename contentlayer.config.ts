@@ -9,8 +9,7 @@ import {HashIcon} from "lucide-react"
 import {renderToStaticMarkup} from "react-dom/server"
 import {createElement} from "react"
 import {fromHtmlIsomorphic} from "hast-util-from-html-isomorphic"
-import rehypeMdxImages from "./src/lib/rehype-mdx-images"
-import * as path from "node:path"
+import remarkImagesProcessor from "./src/lib/remark-image-processor"
 import rehypePrismAll from "rehype-prism-plus"
 
 export const Post = defineDocumentType(() => ({
@@ -38,7 +37,7 @@ export const Activity = defineDocumentType(() => ({
   contentType: "mdx",
   fields: {
     title: {type: "string", required: true},
-    type: {type: "enum", options: ["book", "movie"], required: true},
+    category: {type: "enum", options: ["book", "movie"], required: true},
     status: {type: "enum", options: ["todo", "doing", "done"], required: true},
     rating: {type: "number"},
     date: {type: "date", required: true},
@@ -58,7 +57,7 @@ export const Activity = defineDocumentType(() => ({
     }
   },
   computedFields: {
-    slug: {type: "string", resolve: (post) => post._raw.sourceFileName}
+    slug: {type: "string", resolve: (post) => post._raw.sourceFileDir.split("/").pop()}
   }
 }))
 
@@ -67,10 +66,9 @@ export default makeSource({
   documentTypes: [Post, Activity],
   onExtraFieldData: "ignore",
   mdx: {
-    remarkPlugins: [remarkGfm, remarkFrontmatter],
+    remarkPlugins: [remarkGfm, remarkFrontmatter, [remarkImagesProcessor, {publicDir: "./public/assets"}]],
     rehypePlugins: [
       rehypeSlug,
-      [rehypeMdxImages, {publicDir: path.join(process.cwd(), "public", "assets")}],
       [rehypeAutolinkHeadings, {
         headingProperties: {className: ["heading-anchor"]},
         content: fromHtmlIsomorphic(renderToStaticMarkup(createElement(HashIcon)), {fragment: true})

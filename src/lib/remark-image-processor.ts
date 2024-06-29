@@ -4,39 +4,93 @@ import sharp from "sharp"
 import path from "path"
 import crypto from "crypto"
 import * as fs from "node:fs"
+import yaml from "yaml"
+import lockfile from "proper-lockfile"
 
 interface ImageNode extends Node {
-  tagName: string;
-  properties: {
-    src: string;
-    width?: number;
-    height?: number;
-    blurDataURL?: string;
-  };
+  type: string;
+  url: string;
+  alt?: string;
+  title?: string;
+  width?: number;
+  height?: number;
+  blurDataURL?: string;
 }
 
 interface Options {
   publicDir: string;
 }
 
-export default function rehypeImageProcessor(options: Options) {
+interface ImageUpdate {
+  original: string;
+  newText: string;
+}
+
+export default function remarkImageProcessor(options: Options) {
   return async function transformer(tree: Node, file: any) {
-    const promises: Promise<void>[] = []
+    try {
+      const promises: Promise<ImageUpdate | null>[] = []
+      const imageUpdates: ImageUpdate[] = []
+      const docFilePath = path.join(path.dirname(file.history[0]), file.data.rawDocumentData.sourceFileName)
+      const release = lockfile.lockSync(docFilePath)
 
-    visit(tree, "element", (node: ImageNode) => {
-      if (node.tagName === "img" && node.properties && node.properties.src) {
-        const promise = processImage(node, file.path, options.publicDir)
-        promises.push(promise)
+      visit(tree, "image", (node: ImageNode) => {
+        if (node.url) {
+          const promise = processImage(node, file.path, options.publicDir)
+            .then(update => {
+              if (update) imageUpdates.push(update)
+              return update
+            })
+          promises.push(promise)
+        }
+      })
+
+      if (path.dirname(file.history[0]).includes("/activity/")) {
+        promises.push(serveCoverImages(path.dirname(file.history[0]), docFilePath, options.publicDir))
       }
-    })
 
-    await Promise.all(promises)
+      await Promise.all(promises)
+
+      if (imageUpdates.length > 0) {
+        updateMarkdownFile(docFilePath, imageUpdates)
+      }
+
+      // transform markdown image nodes to Jsx nodes to retain the custom attributes
+      visit(tree, "image", (node: ImageNode, index, parent: any) => {
+        if (node.width && node.height && node.blurDataURL) {
+          const mdxNode = {
+            type: "mdxJsxFlowElement",
+            name: "img",
+            attributes: [
+              {type: "mdxJsxAttribute", name: "src", value: node.url},
+              {type: "mdxJsxAttribute", name: "alt", value: node.alt || ""},
+              {type: "mdxJsxAttribute", name: "width", value: node.width},
+              {type: "mdxJsxAttribute", name: "height", value: node.height},
+              {type: "mdxJsxAttribute", name: "placeholder", value: "blur"},
+              {type: "mdxJsxAttribute", name: "blurDataURL", value: node.blurDataURL}
+            ],
+            children: [],
+            data: {_mdxExplicitJsx: false} // true will not be captured by custom React Component
+          }
+          if (node.title) {
+            mdxNode.attributes.push({type: "mdxJsxAttribute", name: "title", value: node.title})
+          }
+          parent.children.splice(index, 1, mdxNode)
+        }
+      })
+      release()
+    } catch (e: any) {
+      if ("code" in e && e.code != "ELOCKED") {
+        console.error(e)
+        throw e
+      }
+    }
   }
 }
 
-async function processImage(node: ImageNode, filePath: string, publicDir: string) {
+async function processImage(node: ImageNode, filePath: string, publicDir: string): Promise<ImageUpdate | null> {
   try {
-    const originalSrc = node.properties.src
+    const originalSrc = node.url
     const fileDir = path.dirname(filePath)
 
     // Check if the source is an online image
@@ -52,7 +106,7 @@ async function processImage(node: ImageNode, filePath: string, publicDir: string
     const image = sharp(originalPath)
     const metadata = await image.metadata()
     const {width, height} = metadata
-    if (width == undefined || height == undefined) return
+    if (width == undefined || height == undefined) return null
 
     // Ensure the public directory exists
     if (!fs.existsSync(publicDir)) {
@@ -81,12 +135,23 @@ async function processImage(node: ImageNode, filePath: string, publicDir: string
     const resizedMetadata = await resizedImage.metadata()
     const {width: resizedWidth, height: resizedHeight} = resizedMetadata
 
-    node.properties.src = "/" + path.relative(path.join(process.cwd(), "public"), newPath)
-    node.properties.width = resizedWidth
-    node.properties.height = resizedHeight
-    node.properties.blurDataURL = blurDataURL
+    node.url = "/" + path.relative(path.join(process.cwd(), "public"), newPath)
+    node.width = resizedWidth
+    node.height = resizedHeight
+    node.blurDataURL = blurDataURL
+
+    // Return update info if it was an online image
+    if (isOnlineImage) {
+      console.log(node)
+      return {
+        original: `![${node.alt}](${originalSrc})`,
+        newText: `![${node.alt}](${path.relative(fileDir, originalPath)})`
+      }
+    }
+    return null
   } catch (error) {
     console.error("Error processing image:", error)
+    return null
   }
 }
 
@@ -115,4 +180,47 @@ function generateFileHash(filePath: string) {
   const hashSum = crypto.createHash("sha256")
   hashSum.update(fileBuffer)
   return hashSum.digest("hex")
+}
+
+function updateMarkdownFile(filePath: string, updates: ImageUpdate[]) {
+  let content = fs.readFileSync(filePath, "utf8")
+  updates.forEach(update => content = content.replace(update.original, update.newText))
+  fs.writeFileSync(filePath, content)
+}
+
+async function serveCoverImages(dir: string, docFilePath: string, publicDir: string) {
+  for (const file of fs.readdirSync(dir)) {
+    if (!file.startsWith("cover.")) continue
+
+    const originalPath = path.join(dir, file)
+    const fileExt = path.extname(originalPath)
+    const fileNameHash = generateFileHash(originalPath)
+    const newFileName = `${fileNameHash}${fileExt}`
+    const newPath = path.join(publicDir, newFileName)
+    if (!fs.existsSync(newPath)) {
+      await sharp(originalPath).resize({width: 500}).jpeg({quality: 80}).toFile(newPath)
+    }
+    const frontmatter = getFrontmatter(docFilePath)
+    const lang = originalPath.split(".").slice(-2)[0]
+    if (!frontmatter.cover?.[lang]) {
+      frontmatter.cover = {...frontmatter.cover, [lang]: "/" + path.relative(path.join(process.cwd(), "public"), newPath)}
+      saveFrontmatter(docFilePath, frontmatter)
+    }
+  }
+  return null
+}
+
+
+function getFrontmatter(filePath: string) {
+  const content = fs.readFileSync(filePath, "utf-8")
+  const match = content.match(/^---\n([\s\S]*?)\n---/)
+  if (match && match[1]) return yaml.parse(match[1])
+  return {}
+}
+
+function saveFrontmatter(filePath: string, frontmatter: {[key: string]: any}): void {
+  const content = fs.readFileSync(filePath, "utf-8")
+  const newFrontmatterString = yaml.stringify(frontmatter)
+  const updatedContent = content.replace(/^---\n[\s\S]*?\n---/, `---\n${newFrontmatterString}---`)
+  fs.writeFileSync(filePath, updatedContent, "utf-8")
 }
