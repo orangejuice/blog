@@ -1,16 +1,21 @@
 "use server"
-import jwt from "jsonwebtoken"
 import {graphql} from "@octokit/graphql"
 import {giscusConfig} from "@/site"
 import {createAppAuth} from "@octokit/auth-app"
 import {format} from "@/lib/utils"
 import {unstable_cache as cache} from "next/cache"
 import axios from "axios"
+import {importPKCS8, SignJWT} from "jose"
 
 export const getInstallationId = async (repo: string): Promise<string> => {
   const now = Math.floor(Date.now() / 1000)
-  const payload = {iat: now, exp: now + 600, iss: process.env.GITHUB_APP_ID!}
-  const token = jwt.sign(payload, process.env.GITHUB_PRIVATE_KEY!, {algorithm: "RS256"})
+  const token = await new SignJWT()
+    .setProtectedHeader({alg: "RS256"})
+    .setIssuedAt(now)
+    .setIssuer(process.env.GITHUB_APP_ID!)
+    .setExpirationTime(now + 600)
+    .sign(await importPKCS8(process.env.GITHUB_PRIVATE_KEY!.replaceAll("\\n", "\n"), "RS256"))
+
   const url = `https://api.github.com/repos/${repo}/installation`
 
   const response = await axios.get(url, {

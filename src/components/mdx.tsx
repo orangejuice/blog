@@ -1,9 +1,8 @@
 "use client"
 import {useMDXComponent} from "next-contentlayer2/hooks"
 import {default as NextImage, ImageProps} from "next/image"
-import {ComponentPropsWithoutRef} from "react"
+import {ComponentPropsWithoutRef, useEffect} from "react"
 import {useTheme} from "next-themes"
-import {useMounted} from "@/lib/hooks"
 import Link from "next/link"
 import {Icons} from "@/components/icons"
 import {useTranslation} from "react-i18next"
@@ -12,15 +11,20 @@ import {cn} from "@/lib/utils"
 export function MDX({code, ...props}: ComponentPropsWithoutRef<"div"> & {code: string}) {
   const MDXContent = useMDXComponent(code)
   const {resolvedTheme} = useTheme()
-  const mounted = useMounted()
-  if (!mounted) return null
+  useEffect(() => {
+    const link = document.createElement("link")
+    link.rel = "stylesheet"
+    if (resolvedTheme == "dark") {
+      link.href = "https://unpkg.com/prism-theme-night-owl@1.4.0/build/no-italics.css"
+    } else {
+      link.href = "https://unpkg.com/prism-theme-night-owl@1.4.0/build/light-no-italics.css"
+    }
+    document.head.appendChild(link)
+    return () => {document.head.removeChild(link)}
+  }, [resolvedTheme])
 
   return (<>
     <div className="prose toc-content max-w-none dark:prose-invert animate-delay-in" {...props}>
-      {resolvedTheme == "light" &&
-        <link href="https://unpkg.com/prism-theme-night-owl@1.4.0/build/light-no-italics.css" rel="stylesheet"/>}
-      {resolvedTheme == "dark" &&
-        <link href="https://unpkg.com/prism-theme-night-owl@1.4.0/build/no-italics.css" rel="stylesheet"/>}
       <MDXContent components={{
         // @ts-ignore
         img: Image,

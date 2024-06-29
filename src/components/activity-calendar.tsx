@@ -6,23 +6,23 @@ import {Tooltip, TooltipContent, TooltipTrigger} from "@/components/ui/tooltip"
 import {format} from "@/lib/utils"
 import {useTheme} from "next-themes"
 import {useTranslation} from "react-i18next"
-import {useMounted} from "@/lib/hooks"
 import "@/components/activity-calendar.css"
 
 export function ActivityCalendar({calendarData}: {calendarData: GetActivityCalendarDataResponse}) {
   const data = use(calendarData)
   const {resolvedTheme} = useTheme()
   const {t, i18n: {language: locale}} = useTranslation()
-  const mounted = useMounted()
-  if (!mounted) return null
 
   return (<>
     <RawActivityCalendar data={data} showWeekdayLabels hideTotalCount hideColorLegend maxLevel={3}
-      colorScheme={resolvedTheme as "light" | "dark"}
+      colorScheme={resolvedTheme as "light" | "dark"} style={{marginLeft: "auto", marginRight: "auto"}}
       renderBlock={(block, activity) => (
         <Tooltip delayDuration={300} disableHoverableContent>
           <TooltipTrigger asChild><DrawRect block={block} activity={activity as unknown as CalendarActivity}/></TooltipTrigger>
-          <TooltipContent>{format(activity.date, {locale})} <p>{JSON.stringify(activity)}</p></TooltipContent>
+          <TooltipContent>
+            {format(activity.date, {locale})} <p>{JSON.stringify(activity)}</p>
+            {/*<TooltipArrow className="fill-white"/>*/}
+          </TooltipContent>
         </Tooltip>
       )}/>
   </>)
@@ -36,10 +36,10 @@ const DrawRect = forwardRef(function DrawRect({block, activity, ...props}: {bloc
     return (<>
       <defs>
         <linearGradient id={id} x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="49%" stopColor={`var(--color-book-${bookLevel})`}/>
-          <stop offset="49%" stopColor={`var(--color-book-movie-sep)`}/>
-          <stop offset="51%" stopColor={`var(--color-book-movie-sep)`}/>
-          <stop offset="51%" stopColor={`var(--color-movie-${movieLevel})`}/>
+          <stop offset="46%" stopColor={`var(--color-book-${bookLevel})`}/>
+          <stop offset="46%" stopColor={`var(--color-book-movie-sep)`}/>
+          <stop offset="54%" stopColor={`var(--color-book-movie-sep)`}/>
+          <stop offset="54%" stopColor={`var(--color-movie-${movieLevel})`}/>
         </linearGradient>
       </defs>
       {/* @ts-ignore*/}

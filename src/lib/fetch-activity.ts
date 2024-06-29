@@ -1,13 +1,18 @@
+"use server"
 import {allActivities} from "contentlayer/generated"
 import {eachDayInRange, format} from "@/lib/utils"
 import dayjs, {Dayjs} from "dayjs"
 import isBetween from "dayjs/plugin/isBetween"
+import {unstable_cache as cache} from "next/cache"
 
 dayjs.extend(isBetween)
 
-export const getActivities = () => {
-  return allActivities.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
-}
+export const getActivities = cache(async (page: number) => {
+  const sortedActivities = allActivities.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
+  const start = (page - 1) * 10
+  const end = start + 10
+  return sortedActivities.slice(start, end)
+})
 
 interface CalendarData {
   date: string
@@ -17,21 +22,17 @@ interface CalendarData {
   countMovie: number
 }
 
-export async function getActivityCalendarData(startDate: Dayjs, endDate: Dayjs) {
+export const getActivityCalendarData = cache(async (startDate: Dayjs, endDate: Dayjs) => {
   const activityMap = new Map<string, {total: number, book: number, movie: number}>()
+  eachDayInRange(startDate, endDate).forEach(date => activityMap.set(format(date, {date: true}), {total: 0, book: 0, movie: 0}))
 
-  eachDayInRange(startDate, endDate).forEach(date => {
-    const dateString = format(date, {date: true})
-    activityMap.set(dateString, {total: 0, book: 0, movie: 0})
-  })
-
-  allActivities.filter(act => ["book", "movie"].includes(act.category) && act.status == "done").forEach(activity => {
+  allActivities.filter(act => act.status == "done").forEach(activity => {
     const activityDate = dayjs(activity.date)
     if (activityDate.isBetween(startDate, endDate, "day", "[]")) {
-      const dateString = activityDate.format("YYYY-MM-DD")
+      const dateString = format(activityDate, {date: true})
       const currentCount = activityMap.get(dateString)!
       currentCount.total += 1
-      currentCount[activity.category as "book" | "movie"] += 1
+      currentCount[activity.category] += 1
       activityMap.set(dateString, currentCount)
     }
   })
@@ -46,7 +47,7 @@ export async function getActivityCalendarData(startDate: Dayjs, endDate: Dayjs) 
       countMovie: counts.movie
     } as CalendarData
   })
-}
+})
 
 export type CalendarActivity = CalendarData
 export type GetActivityCalendarDataResponse = ReturnType<typeof getActivityCalendarData>

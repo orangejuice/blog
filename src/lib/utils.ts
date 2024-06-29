@@ -19,11 +19,20 @@ export function randomInRange(min: number, max: number, int = false) {
   return int ? Math.floor(rand) : rand
 }
 
-export function format(date: string | Date | Dayjs, options?: {locale?: string, relative?: boolean, date?: boolean, datetime?: boolean, localizeDate?: boolean}) {
+export function format(date: string | Date | Dayjs, options?: {locale?: string, relative?: boolean, date?: boolean, datetime?: boolean, localizeDate?: boolean, relativeWithDate?: boolean}) {
   const locale = options?.locale ?? "en"
   if (options?.datetime) return dayjs(date).locale(locale).format("YYYY-MM-DD HH:mm:ss")
   if (options?.date) return dayjs(date).locale(locale).format("YYYY-MM-DD")
-  if (options?.relative) return dayjs().locale(locale).to(dayjs(date))
+  if (options?.relative) return dayjs(date).locale(locale).fromNow()
+  if (options?.relativeWithDate) {
+    const now = dayjs()
+    const then = dayjs(date)
+    if (now.diff(then, "hours") < 24) {
+      return then.locale(locale).fromNow()
+    } else {
+      return then.locale(locale).format("ll")
+    }
+  }
   if (options?.localizeDate) return dayjs(date).locale(locale).format("ll")
   return dayjs(date).locale(locale).format("lll")
 }
