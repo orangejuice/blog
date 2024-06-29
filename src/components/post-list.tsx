@@ -97,7 +97,7 @@ function PostItemCompact({post}: {post: PostWithMetadata}) {
   return (<>
     <li className="py-2.5 group flex items-baseline flex-col md:flex-row gap-1 md:gap-9">
       <div className="flex w-full md:w-fit items-center justify-between">
-        <time className={cn("md:w-28 text-secondary text-sm shrink-0")}>{format(post.date, {locale})}</time>
+        <time className={cn("md:w-28 text-secondary text-sm shrink-0")}>{format(post.date, {locale, localizeDate: true})}</time>
         <div className="gap-4 text-xs w-fit text-stone-600 flex md:hidden">
           <span className="flex items-center gap-1"><Icons.post.view/>{shortenNumber(post.view)}</span>
           <span className="flex items-center gap-1"><Icons.post.reactComment/>{shortenNumber(post.discussion.reactions.totalCount + post.discussion.comments.totalCount)}</span>
