@@ -4,7 +4,6 @@ import sharp from "sharp"
 import path from "path"
 import crypto from "crypto"
 import * as fs from "node:fs"
-import yaml from "yaml"
 import lockfile from "proper-lockfile"
 
 interface ImageNode extends Node {
@@ -175,7 +174,7 @@ async function downloadImage(url: string, destDir: string): Promise<string> {
   return destPath
 }
 
-function generateFileHash(filePath: string) {
+export function generateFileHash(filePath: string) {
   const fileBuffer = fs.readFileSync(filePath)
   const hashSum = crypto.createHash("sha256")
   hashSum.update(fileBuffer)
@@ -200,27 +199,6 @@ async function serveCoverImages(dir: string, docFilePath: string, publicDir: str
     if (!fs.existsSync(newPath)) {
       await sharp(originalPath).resize({width: 500}).jpeg({quality: 80}).toFile(newPath)
     }
-    const frontmatter = getFrontmatter(docFilePath)
-    const lang = originalPath.split(".").slice(-2)[0]
-    if (!frontmatter.cover?.[lang]) {
-      frontmatter.cover = {...frontmatter.cover, [lang]: "/" + path.relative(path.join(process.cwd(), "public"), newPath)}
-      saveFrontmatter(docFilePath, frontmatter)
-    }
   }
   return null
-}
-
-
-function getFrontmatter(filePath: string) {
-  const content = fs.readFileSync(filePath, "utf-8")
-  const match = content.match(/^---\n([\s\S]*?)\n---/)
-  if (match && match[1]) return yaml.parse(match[1])
-  return {}
-}
-
-function saveFrontmatter(filePath: string, frontmatter: {[key: string]: any}): void {
-  const content = fs.readFileSync(filePath, "utf-8")
-  const newFrontmatterString = yaml.stringify(frontmatter)
-  const updatedContent = content.replace(/^---\n[\s\S]*?\n---/, `---\n${newFrontmatterString}---`)
-  fs.writeFileSync(filePath, updatedContent, "utf-8")
 }

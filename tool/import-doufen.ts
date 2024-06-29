@@ -69,8 +69,8 @@ queue.on("completed", result => {
 async function downloadImage(url: string, destDir: string) {
   const urlPath = new URL(url).pathname
   const fileExt = path.extname(urlPath)
-  const destPath = path.join(destDir, `cover.zh${fileExt}`)
-  const destPathWebP = path.join(destDir, `cover.zh.webp`)
+  const destPath = path.join(destDir, `cover${fileExt}`)
+  const destPathWebP = path.join(destDir, `cover.webp`)
 
   if (fs.existsSync(destPath) || fs.existsSync(destPathWebP)) return [destPath]
 

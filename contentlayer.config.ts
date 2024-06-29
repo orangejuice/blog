@@ -9,8 +9,12 @@ import {HashIcon} from "lucide-react"
 import {renderToStaticMarkup} from "react-dom/server"
 import {createElement} from "react"
 import {fromHtmlIsomorphic} from "hast-util-from-html-isomorphic"
-import remarkImagesProcessor from "./src/lib/remark-image-processor"
+import remarkImagesProcessor, {generateFileHash} from "./src/lib/remark-image-processor"
 import rehypePrismAll from "rehype-prism-plus"
+import path from "path"
+import fs from "node:fs"
+
+const ASSETS_DIR = "./public/assets"
 
 export const Post = defineDocumentType(() => ({
   name: "Post",
@@ -57,7 +61,22 @@ export const Activity = defineDocumentType(() => ({
     }
   },
   computedFields: {
-    slug: {type: "string", resolve: (post) => post._raw.sourceFileDir.split("/").pop()}
+    slug: {type: "string", resolve: (act) => act._raw.sourceFileDir.split("/").pop()},
+    cover: {
+      type: "string", resolve: (act) => {
+        const dir = path.join("data", act._raw.sourceFileDir)
+        for (const file of fs.readdirSync(dir)) {
+          if (file.startsWith("cover.")) {
+            const originalPath = path.join(dir, file)
+            const fileExt = path.extname(originalPath)
+            const fileNameHash = generateFileHash(originalPath)
+            const newFileName = `${fileNameHash}${fileExt}`
+            const newPath = path.join(ASSETS_DIR, newFileName)
+            return "/" + path.relative(path.join(process.cwd(), "public"), newPath)
+          }
+        }
+      }
+    }
   }
 }))
 
@@ -66,7 +85,7 @@ export default makeSource({
   documentTypes: [Post, Activity],
   onExtraFieldData: "ignore",
   mdx: {
-    remarkPlugins: [remarkGfm, remarkFrontmatter, [remarkImagesProcessor, {publicDir: "./public/assets"}]],
+    remarkPlugins: [remarkGfm, remarkFrontmatter, [remarkImagesProcessor, {publicDir: ASSETS_DIR}]],
     rehypePlugins: [
       rehypeSlug,
       [rehypeAutolinkHeadings, {
