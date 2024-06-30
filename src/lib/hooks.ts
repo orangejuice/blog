@@ -9,13 +9,10 @@ export const useMounted = () => {
 export const useDeviceType = () => {
   const [width, setWidth] = useState(window.innerWidth)
 
-  const handleWindowSizeChange = () => {
-    setWidth(window.innerWidth)
-  }
-
   useEffect(() => {
+    if (!window) return
+    const handleWindowSizeChange = () => setWidth(window.innerWidth)
     window.addEventListener("resize", handleWindowSizeChange)
-
     return () => window.removeEventListener("resize", handleWindowSizeChange)
   }, [])
 
