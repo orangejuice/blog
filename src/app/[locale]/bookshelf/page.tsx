@@ -28,7 +28,7 @@ export default async function Page({params: {locale}}: {params: {locale: SiteLoc
             {t("bookshelf.description")}
           </p>
           <Suspense fallback={<Icons.loading/>}>
-            <ActivityList data={activityData}/>
+            <ActivityList data={activityData} style={cssIndexCounter()}/>
           </Suspense>
         </section>
       </div>

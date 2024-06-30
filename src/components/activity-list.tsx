@@ -9,13 +9,13 @@ import {fetchActivities} from "@/lib/actions"
 import {MDX} from "@/components/mdx"
 
 
-export default function ActivityList({data}: {data: Promise<Activity[]>}) {
+export default function ActivityList({data, style}: {data: Promise<Activity[]>} & ComponentPropsWithoutRef<"div">) {
   const [pages, setPages] = useState([1])
   const [activities, setActivities] = useState(use(data))
   const [hasMore, setHasMore] = useState(true)
   const bottomRef = useRef(null)
   const [isPending, startTransition] = useTransition()
-  const cssIndexCounter = useCssIndexCounter()
+  const cssIndexCounter = useCssIndexCounter(style)
 
   useEffect(() => {
     const bottom = bottomRef.current
@@ -34,38 +34,37 @@ export default function ActivityList({data}: {data: Promise<Activity[]>}) {
   }, [isPending])
 
   return (<>
-    <Activities activities={activities}/>
+    <Activities activities={activities} style={cssIndexCounter()}/>
     <div ref={bottomRef} className="h-10 flex items-center justify-center">
       {isPending ? (<Loader2 className="animate-spin mr-2"/>) : (!hasMore && "No more activities")}
     </div>
   </>)
 }
 
-const Activities = ({activities}: {activities: Activity[]}) => {
+const Activities = ({activities, style, className}: {activities: Activity[]} & ComponentPropsWithoutRef<"div">) => {
+  const cssIndexCounter = useCssIndexCounter(style)
 
   return (<>
-    <div className="py-8">
-      <ul className="space-y-6">
-        {activities.map((activity, index) => (
-          <li key={index} className="flex flex-col gap-2 rounded-lg">
-            <div className="flex flex-row items-start">
-              <div className="relative w-28 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
-                <Image src={activity.cover} alt="cover"/>
-              </div>
-              <div className="flex flex-col text-stone-600 text-sm px-4 md:px-6">
-                <h2 className="text-xl font-bold text-stone-800">{activity.title}</h2>
-                <StarRating rating={activity.douban?.rating}>
-                  <span className="ml-1 font-medium text-yellow-600 font-mono tracking-[-0.15em] text-xs">{activity.douban?.rating?.toFixed(1)} </span>
-                </StarRating>
-                <p className="text-xs mt-0.5 mb-2">{activity.douban?.subtitle}</p>
-                <MyComment activity={activity} className="hidden md:block"/>
-              </div>
+    <ul className={cn("space-y-6 py-8 animate-delay-in", className)} style={cssIndexCounter()}>
+      {activities.map((activity, index) => (
+        <li key={index} className="flex flex-col gap-2 rounded-lg">
+          <div className="flex flex-row items-start">
+            <div className="relative w-28 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
+              <Image src={activity.cover} alt="cover"/>
             </div>
-            <MyComment activity={activity} className="block md:hidden"/>
-          </li>
-        ))}
-      </ul>
-    </div>
+            <div className="flex flex-col text-stone-600 text-sm px-4 md:px-6">
+              <h2 className="text-xl font-bold text-stone-800">{activity.title}</h2>
+              <StarRating rating={activity.douban?.rating}>
+                <span className="ml-1 font-medium text-yellow-600 font-mono tracking-[-0.15em] text-xs">{activity.douban?.rating?.toFixed(1)} </span>
+              </StarRating>
+              <p className="text-xs mt-0.5 mb-2">{activity.douban?.subtitle}</p>
+              <MyComment activity={activity} className="hidden md:block"/>
+            </div>
+          </div>
+          <MyComment activity={activity} className="block md:hidden"/>
+        </li>
+      ))}
+    </ul>
   </>)
 }
 
