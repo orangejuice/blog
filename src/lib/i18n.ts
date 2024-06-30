@@ -23,9 +23,7 @@ export default async function initTranslation(locale: string, i18nInstance?: i18
   }
 
   await i18nInstance.init({
-    lng: locale,
-    resources,
-    fallbackLng: site.locales[0],
+    lng: locale, resources,
     supportedLngs: site.locales,
     returnEmptyString: false,
     partialBundledLanguages: true,
