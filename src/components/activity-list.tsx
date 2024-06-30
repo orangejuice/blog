@@ -1,8 +1,8 @@
 "use client"
-import React, {use, useEffect, useRef, useState, useTransition} from "react"
+import React, {ComponentPropsWithoutRef, use, useEffect, useRef, useState, useTransition} from "react"
 import {Loader2} from "lucide-react"
 import type {Activity} from "contentlayer/generated"
-import {format, useCssIndexCounter} from "@/lib/utils"
+import {cn, format, useCssIndexCounter} from "@/lib/utils"
 import {useTranslation} from "react-i18next"
 import {Image} from "@/components/ui/image"
 import {fetchActivities} from "@/lib/actions"
@@ -42,30 +42,26 @@ export default function ActivityList({data}: {data: Promise<Activity[]>}) {
 }
 
 const Activities = ({activities}: {activities: Activity[]}) => {
-  const {t, i18n: {language: locale}} = useTranslation()
+
   return (<>
     <div className="py-8">
-      <ul className="space-y-4 md:space-y-6">
+      <ul className="space-y-6">
         {activities.map((activity, index) => (
-          <li key={index} className="rounded-lg overflow-hidden">
+          <li key={index} className="flex flex-col gap-2 rounded-lg">
             <div className="flex flex-row items-start">
               <div className="relative w-28 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
                 <Image src={activity.cover} alt="cover"/>
               </div>
-              <div className="flex flex-col w-full text-stone-600 text-sm px-4 md:px-6">
+              <div className="flex flex-col text-stone-600 text-sm px-4 md:px-6">
                 <h2 className="text-xl font-bold text-stone-800">{activity.title}</h2>
-                <StarRating rating={activity.douban?.rating} value/>
-                <p>{activity.douban?.subtitle}</p>
-                <div className="bg-stone-50 rounded-lg mt-2 p-3">
-                  <MDX code={activity.body.code} className="prose-sm prose-p:mt-0"/>
-                  <div className="flex items-center text-xs justify-end mt-2 gap-2">
-                    <span>{format(activity.date, {locale, relativeWithDate: true})}</span>
-                    <span className="text-stone-200">|</span>
-                    <StarRating rating={activity.rating} description/>
-                  </div>
-                </div>
+                <StarRating rating={activity.douban?.rating}>
+                  <span className="ml-1 font-medium text-yellow-600 font-mono tracking-[-0.15em] text-xs">{activity.douban?.rating?.toFixed(1)} </span>
+                </StarRating>
+                <p className="text-xs mt-0.5 mb-2">{activity.douban?.subtitle}</p>
+                <MyComment activity={activity} className="hidden md:block"/>
               </div>
             </div>
+            <MyComment activity={activity} className="block md:hidden"/>
           </li>
         ))}
       </ul>
@@ -73,17 +69,35 @@ const Activities = ({activities}: {activities: Activity[]}) => {
   </>)
 }
 
-const StarRating = ({rating, value = false, description = false}: {rating: number | undefined, value?: boolean, description?: boolean}) => {
+const MyComment = ({activity, className}: {activity: Activity} & ComponentPropsWithoutRef<"div">) => {
   const {t, i18n: {language: locale}} = useTranslation()
+
+  return (<>
+    <div className={cn("bg-stone-50 rounded-lg p-3 [&:has(.prose-sm:not(:empty))_>_div:first-child]:mb-2", className)}>
+      <div className="flex items-center text-xs gap-2 text-stone-500">
+        <span>{t(`bookshelf.${activity.category}.${activity.status}`, {date: format(activity.date, {locale, relativeWithDate: true})})}</span>
+        {!!activity.rating && (<>
+          <span className="text-stone-200 select-none">|</span>
+          <StarRating rating={activity.rating} max={5} description/>
+        </>)}
+      </div>
+      <MDX code={activity.body.code} className="prose-sm prose-p:mt-0 text-stone-800"/>
+    </div>
+  </>)
+}
+
+const StarRating = ({rating, max = 10, description = false, children}: {rating: number | undefined, max?: number, description?: boolean} & ComponentPropsWithoutRef<"div">) => {
+  const {t} = useTranslation()
   rating ??= 0
-  const fullStars = Math.floor(rating / 2)
-  const hasHalfStar = rating % 2 >= 0.5
+  const ratingVal = rating * 10 / max
+  const fullStars = Math.floor(ratingVal / 2)
+  const hasHalfStar = ratingVal % 2 >= 0.5
   const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0)
-  const percentage = (rating % 2) * 50
+  const percentage = (ratingVal % 2) * 50
 
   return (
-    <div className="flex items-center">
-      {description && <span className="mr-2">{t(`rating.${rating}`)}</span>}
+    <div className="flex items-center select-none">
+      {description && <span className="mr-2 font-medium">{t(`bookshelf.rating.${rating}`)}</span>}
       {[...Array(fullStars)].map((_, i) => (
         <span key={`full-${i}`} className="text-yellow-500">★</span>
       ))}
@@ -98,7 +112,7 @@ const StarRating = ({rating, value = false, description = false}: {rating: numbe
       {[...Array(emptyStars)].map((_, i) => (
         <span key={`empty-${i}`} className="text-stone-300">★</span>
       ))}
-      {value && <span className="ml-2">{rating.toFixed(1)}</span>}
+      {children}
     </div>
   )
 }

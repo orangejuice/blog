@@ -29,6 +29,19 @@
     "latest-activities": "最新动态",
     "view-more": "查看更多"
   },
+  "bookshelf": {
+    "book": {
+      "todo": "{{date}}想读",
+      "doing": "{{date}}在读",
+      "done": "{{date}}读过"
+    },
+    "movie": {
+      "todo": "{{date}}想看",
+      "doing": "{{date}}在看",
+      "done": "{{date}}看过"
+    },
+    "rating": {"0": "暂无评分", "1": "很差", "2": "较差", "3": "还行", "4": "推荐", "5": "力荐"}
+  },
   "guestbook": {
     "title": "留言板",
     "title-sub": "在这里留下你的印记"

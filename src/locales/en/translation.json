@@ -29,6 +29,19 @@
     "latest-activities": "Latest activities",
     "view-more": "View more"
   },
+  "bookshelf": {
+    "book": {
+      "todo": "Want to read on {{date}}",
+      "doing": "Reading on {{date}}",
+      "done": "Read on {{date}}"
+    },
+    "movie": {
+      "todo": "Want to watch on {{date}}",
+      "doing": "Watching on {{date}}",
+      "done": "Watched on {{date}}"
+    },
+    "rating": {"0": "Not available yet", "1": "Poor", "2": "Below Average", "3": "Average", "4": "Good", "5": "Excellent"}
+  },
   "guestbook": {
     "title": "Guestbook",
     "title-sub": "Imprint yourself upon this place"
