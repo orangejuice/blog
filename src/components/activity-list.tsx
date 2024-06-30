@@ -60,7 +60,7 @@ const Activities = ({activities, style, className}: {activities: Activity[]} & C
                 <div className="flex justify-between">
                   <h2 className="text-xl font-bold text-stone-800">{activity.title}</h2>
                   <div className="relative flex items-center gap-1 text-xs rounded-full font-medium text-stone-500">
-                    <Icon/><span>{t(`bookshelf.${activity.category}`)}</span>
+                    <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
                   </div>
                 </div>
                 <StarRating rating={activity.douban?.rating}>

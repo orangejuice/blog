@@ -30,12 +30,14 @@
     "view-more": "View more"
   },
   "bookshelf": {
+    "category": {
+      "book": "Book",
+      "movie": "Movie",
+      "all": "All"
+    },
     "filter": {
       "year": "Year",
       "category": "Type",
-      "category.book": "Book",
-      "category.movie": "Movie",
-      "category.all": "All",
       "status": "Status",
       "status.todo": "Want to",
       "status.doing": "Currently on",
