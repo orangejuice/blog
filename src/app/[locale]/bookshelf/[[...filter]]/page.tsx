@@ -12,7 +12,7 @@ import {ActivityFilter, FilterOption} from "@/components/activity-filter"
 export default async function Page({params: {locale, filter}}: {params: {locale: SiteLocale, filter: string[]}}) {
   const calendarData = getActivityCalendarData(dayjs().subtract(1, "y").startOf("w"), dayjs())
   const appliedFilter = parseCatchAll(filter) as FilterOption
-  const activityData = getActivities(1)
+  const activityData = getActivities(1, appliedFilter)
   const filterData = getActivitiesFilter(appliedFilter)
   const cssIndexCounter = useCssIndexCounter()
   const {t} = await initTranslation(locale)

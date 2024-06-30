@@ -8,15 +8,18 @@ import {Image} from "@/components/ui/image"
 import {fetchActivities} from "@/lib/actions"
 import {MDX} from "@/components/mdx"
 import {Icons} from "@/components/icons"
+import {useLocalStorage} from "@/lib/use-local-storage"
+import {FilterOption} from "@/components/activity-filter"
 
 
 export default function ActivityList({data, style}: {data: Promise<Activity[]>} & ComponentPropsWithoutRef<"div">) {
   const [pages, setPages] = useState([1])
   const [activities, setActivities] = useState(use(data))
-  const [hasMore, setHasMore] = useState(true)
+  const [hasMore, setHasMore] = useState(use(data).length == 10)
   const bottomRef = useRef(null)
   const [isPending, startTransition] = useTransition()
   const cssIndexCounter = useCssIndexCounter(style)
+  const [filter] = useLocalStorage<FilterOption>("activity-filter", {})
 
   useEffect(() => {
     const bottom = bottomRef.current
@@ -24,7 +27,7 @@ export default function ActivityList({data, style}: {data: Promise<Activity[]>} 
     const observer = new IntersectionObserver((entries) => {
       entries[0].isIntersecting && hasMore && !isPending && startTransition(async () => {
         const newPages = pages.concat(pages.slice(-1)[0] + 1)
-        const newActivities = await fetchActivities(newPages)
+        const newActivities = await fetchActivities(newPages, filter)
         setActivities(newActivities)
         setHasMore(newActivities.length === newPages.length * 10)
         setPages(newPages)
@@ -32,11 +35,11 @@ export default function ActivityList({data, style}: {data: Promise<Activity[]>} 
     }, option)
     if (bottom) observer.observe(bottom)
     return () => {if (bottom) observer.unobserve(bottom)}
-  }, [isPending])
+  }, [isPending, filter])
 
   return (<>
     <Activities activities={activities} style={cssIndexCounter()}/>
-    <div ref={bottomRef} className="h-10 flex items-center justify-center">
+    <div ref={bottomRef} className="h-10 flex items-center justify-center animate-delay-in" style={cssIndexCounter()}>
       {isPending ? (<Loader2 className="animate-spin mr-2"/>) : (!hasMore && "No more activities")}
     </div>
   </>)

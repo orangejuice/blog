@@ -116,7 +116,7 @@ export function parseCatchAll(filter: string[] | undefined): Record<string, stri
 
 export function objectToUrlPart(obj: Record<string, any>): string {
   return Object.entries(obj)
-    .filter(([_, value]) => value !== undefined && value !== null)
+    .filter(([_, value]) => value != "all" && value !== undefined && value !== null)
     .map(([key, value]) => `${encodeURIComponent(key)}/${encodeURIComponent(value)}`)
     .join("/")
 }

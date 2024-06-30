@@ -4,11 +4,21 @@ import {eachDayInRange, format} from "@/lib/utils"
 import dayjs, {Dayjs} from "dayjs"
 import isBetween from "dayjs/plugin/isBetween"
 import {unstable_cache as cache} from "next/cache"
+import {FilterOption} from "@/components/activity-filter"
 
 dayjs.extend(isBetween)
 
-export const getActivities = cache(async (page: number) => {
-  const sortedActivities = allActivities.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
+export const getActivities = cache(async (page: number, filter: FilterOption) => {
+  let activities = allActivities
+  if (Object.keys(filter).length > 0) {
+    activities = activities.filter(act =>
+      (!filter.status || act.status == filter.status) &&
+      (!filter.category || act.category == filter.category) &&
+      (!filter.year || dayjs(act.date).year() == +filter.year)
+    )
+  }
+  const sortedActivities = activities.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
+
   const start = (page - 1) * 10
   const end = start + 10
   return sortedActivities.slice(start, end)

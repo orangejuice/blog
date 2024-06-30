@@ -2,6 +2,7 @@
 import {revalidatePath} from "next/cache"
 import axios from "axios"
 import {getActivities} from "@/lib/fetch-activity"
+import {FilterOption} from "@/components/activity-filter"
 
 export async function revalidator() {
   revalidatePath("/", "layout")
@@ -14,6 +15,7 @@ export async function incrementViews(slug: string) {
   return data[0] as {slug: string, view: number}
 }
 
-export async function fetchActivities(pages: number[]) {
-  return await Promise.all(pages.map(page => getActivities(page))).then(pages => pages.flat())
+export async function fetchActivities(pages: number[], filter: FilterOption) {
+  return await Promise.all(pages.map(page => getActivities(page, filter)))
+    .then(pages => pages.flat())
 }
