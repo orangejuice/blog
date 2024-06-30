@@ -12,6 +12,7 @@
     "@giscus/react": "^3.0.0",
     "@octokit/auth-app": "^7.1.0",
     "@octokit/graphql": "^8.1.1",
+    "@phosphor-icons/react": "^2.1.7",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-dropdown-menu": "^2.1.1",
     "@radix-ui/react-popover": "^1.1.1",

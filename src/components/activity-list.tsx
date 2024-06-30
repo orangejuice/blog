@@ -7,6 +7,8 @@ import {useTranslation} from "react-i18next"
 import {Image} from "@/components/ui/image"
 import {fetchActivities} from "@/lib/actions"
 import {MDX} from "@/components/mdx"
+import {Icons} from "@/components/icons"
+import {BookmarkSimple} from "@phosphor-icons/react"
 
 
 export default function ActivityList({data, style}: {data: Promise<Activity[]>} & ComponentPropsWithoutRef<"div">) {
@@ -43,27 +45,38 @@ export default function ActivityList({data, style}: {data: Promise<Activity[]>} 
 
 const Activities = ({activities, style, className}: {activities: Activity[]} & ComponentPropsWithoutRef<"div">) => {
   const cssIndexCounter = useCssIndexCounter(style)
+  const {t, i18n: {language: locale}} = useTranslation()
 
   return (<>
     <ul className={cn("space-y-6 py-8 animate-delay-in", className)} style={cssIndexCounter()}>
-      {activities.map((activity, index) => (
-        <li key={index} className="flex flex-col gap-2 rounded-lg">
-          <div className="flex flex-row items-start">
-            <div className="relative w-28 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
-              <Image src={activity.cover} alt="cover"/>
+      {activities.map((activity, index) => {
+        const Icon = Icons.type[activity.category]
+        return (<>
+          <li key={index} className="flex flex-col gap-2 rounded-lg">
+            <div className="flex flex-row items-start">
+              <div className="relative w-28 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
+                <Image src={activity.cover} alt="cover"/>
+              </div>
+              <div className="flex flex-col grow text-stone-600 text-sm px-4 md:px-6">
+                <div className="flex justify-between">
+                  <h2 className="text-xl font-bold text-stone-800">{activity.title}</h2>
+                  <div className="relative flex items-center justify-center gap-1 text-xs rounded-full font-medium text-stone-500">
+                    <BookmarkSimple weight="fill" style={{color: `var(--color-${activity.category}-3)`}}
+                      className="absolute w-8 h-8 top-0 right-0"/>
+                    <Icon className="absolute top-1.5 right-2 text-white"/>
+                  </div>
+                </div>
+                <StarRating rating={activity.douban?.rating}>
+                  <span className="ml-1 font-medium text-yellow-600 font-mono tracking-[-0.15em]">{activity.douban?.rating?.toFixed(1)} </span>
+                </StarRating>
+                <p className="text-xs mt-0.5 mb-2">{activity.douban?.subtitle}</p>
+                <MyComment activity={activity} className="hidden md:block"/>
+              </div>
             </div>
-            <div className="flex flex-col text-stone-600 text-sm px-4 md:px-6">
-              <h2 className="text-xl font-bold text-stone-800">{activity.title}</h2>
-              <StarRating rating={activity.douban?.rating}>
-                <span className="ml-1 font-medium text-yellow-600 font-mono tracking-[-0.15em] text-xs">{activity.douban?.rating?.toFixed(1)} </span>
-              </StarRating>
-              <p className="text-xs mt-0.5 mb-2">{activity.douban?.subtitle}</p>
-              <MyComment activity={activity} className="hidden md:block"/>
-            </div>
-          </div>
-          <MyComment activity={activity} className="block md:hidden"/>
-        </li>
-      ))}
+            <MyComment activity={activity} className="block md:hidden"/>
+          </li>
+        </>)
+      })}
     </ul>
   </>)
 }
