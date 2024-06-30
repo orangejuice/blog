@@ -30,14 +30,27 @@
     "view-more": "View more"
   },
   "bookshelf": {
-    "book": "Book",
-    "book.todo": "Want to read on {{date}}",
-    "book.doing": "Reading on {{date}}",
-    "book.done": "Read on {{date}}",
-    "movie": "Movie",
-    "movie.todo": "Want to watch on {{date}}",
-    "movie.doing": "Watching on {{date}}",
-    "movie.done": "Watched on {{date}}",
+    "filter": {
+      "year": "Year",
+      "category": "Type",
+      "category.book": "Book",
+      "category.movie": "Movie",
+      "category.all": "All",
+      "status": "Status",
+      "status.todo": "Want to",
+      "status.doing": "Currently on",
+      "status.done": "Finished"
+    },
+    "book.status": {
+      "todo": "Want to read on {{date}}",
+      "doing": "Reading on {{date}}",
+      "done": "Read on {{date}}"
+    },
+    "movie.status": {
+      "todo": "Want to watch on {{date}}",
+      "doing": "Watching on {{date}}",
+      "done": "Watched on {{date}}"
+    },
     "rating": {"0": "Not available yet", "1": "Poor", "2": "Below Average", "3": "Average", "4": "Good", "5": "Excellent"}
   },
   "guestbook": {

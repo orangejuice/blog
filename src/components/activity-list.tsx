@@ -48,10 +48,10 @@ const Activities = ({activities, style, className}: {activities: Activity[]} & C
 
   return (<>
     <ul className={cn("space-y-6 py-8 animate-delay-in", className)} style={cssIndexCounter()}>
-      {activities.map((activity, index) => {
+      {activities.map((activity) => {
         const Icon = Icons.type[`${activity.category}`]
         return (<>
-          <li key={index} className="flex flex-col gap-2 rounded-lg">
+          <li key={activity._id} className="flex flex-col gap-2 rounded-lg">
             <div className="flex flex-row items-start">
               <div className="relative w-28 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
                 <Image src={activity.cover} alt="cover"/>
@@ -84,7 +84,7 @@ const MyComment = ({activity, className}: {activity: Activity} & ComponentPropsW
   return (<>
     <div className={cn("bg-stone-50 rounded-lg p-3 [&:has(.prose-sm:not(:empty))_>_div:first-child]:mb-2", className)}>
       <div className="flex items-center text-xs gap-2 text-stone-500">
-        <span>{t(`bookshelf.${activity.category}.${activity.status}`, {date: format(activity.date, {locale, relativeWithDate: true})})}</span>
+        <span>{t(`bookshelf.${activity.category}.status.${activity.status}`, {date: format(activity.date, {locale, relativeWithDate: true})})}</span>
         {!!activity.rating && (<>
           <span className="text-stone-200 select-none">|</span>
           <StarRating rating={activity.rating} max={5} description/>

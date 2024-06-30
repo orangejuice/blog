@@ -102,3 +102,21 @@ export function invertColor(hex: string): string {
 
   return `#${invertedR.toString(16).padStart(2, "0")}${invertedG.toString(16).padStart(2, "0")}${invertedB.toString(16).padStart(2, "0")}`
 }
+
+export function parseCatchAll(filter: string[] | undefined): Record<string, string> {
+  if (!filter || filter.length === 0) return {}
+  const result: Record<string, string> = {}
+  for (let i = 0; i < filter.length; i += 2) {
+    const key = filter[i]
+    const value = filter[i + 1]
+    if (key && value) result[key] = value
+  }
+  return result
+}
+
+export function objectToUrlPart(obj: Record<string, string | number>): string {
+  return Object.entries(obj)
+    .filter(([_, value]) => value !== undefined && value !== null)
+    .map(([key, value]) => `${encodeURIComponent(key)}/${encodeURIComponent(value)}`)
+    .join("/")
+}

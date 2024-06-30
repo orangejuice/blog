@@ -30,14 +30,27 @@
     "view-more": "查看更多"
   },
   "bookshelf": {
-    "book": "图书",
-    "book.todo": "{{date}}想读",
-    "book.doing": "{{date}}在读",
-    "book.done": "{{date}}读过",
-    "movie": "影视",
-    "movie.todo": "{{date}}想看",
-    "movie.doing": "{{date}}在看",
-    "movie.done": "{{date}}看过",
+    "filter": {
+      "year": "年份",
+      "category": "分类",
+      "category.book": "图书",
+      "category.movie": "影视",
+      "category.all": "全部",
+      "status": "状态",
+      "status.todo": "想看（读）",
+      "status.doing": "在看（读）",
+      "status.done": "看（读）过"
+    },
+    "book.status": {
+      "todo": "{{date}}想读",
+      "doing": "{{date}}在读",
+      "done": "{{date}}读过"
+    },
+    "movie.status": {
+      "todo": "{{date}}想看",
+      "doing": "{{date}}在看",
+      "done": "{{date}}看过"
+    },
     "rating": {"0": "暂无评分", "1": "很差", "2": "较差", "3": "还行", "4": "推荐", "5": "力荐"}
   },
   "guestbook": {

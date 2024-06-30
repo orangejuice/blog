@@ -20,7 +20,8 @@ export function ActivityCalendar({calendarData}: {calendarData: GetActivityCalen
         <Tooltip delayDuration={300} disableHoverableContent>
           <TooltipTrigger asChild><DrawRect block={block} activity={activity as unknown as CalendarActivity}/></TooltipTrigger>
           <TooltipContent>
-            {format(activity.date, {locale})} <p>{JSON.stringify(activity)}</p>
+            {format(activity.date, {locale, localizeDate: true})}
+            <p>{JSON.stringify(activity)}</p>
             {/*<TooltipArrow className="fill-white"/>*/}
           </TooltipContent>
         </Tooltip>

@@ -1,5 +1,5 @@
 "use server"
-import {allActivities} from "contentlayer/generated"
+import {Activity, allActivities} from "contentlayer/generated"
 import {eachDayInRange, format} from "@/lib/utils"
 import dayjs, {Dayjs} from "dayjs"
 import isBetween from "dayjs/plugin/isBetween"
@@ -14,13 +14,28 @@ export const getActivities = cache(async (page: number) => {
   return sortedActivities.slice(start, end)
 })
 
-interface CalendarData {
-  date: string
-  count: number
-  level: number
-  countBook: number
-  countMovie: number
-}
+export const getActivitiesFilter = cache(async ({category, date, year}: {category?: Activity["category"], date?: string, year?: number} | undefined = {}) => {
+  const counter = {
+    book: {status: {todo: 0, doing: 0, done: 0}, total: 0},
+    movie: {status: {todo: 0, doing: 0, done: 0}, total: 0},
+    all: {status: {todo: 0, doing: 0, done: 0}, total: 0, year: {all: 0} as { [year in number | "all"]: number }}
+  }
+  allActivities.forEach(activity => {
+    const year = dayjs(activity.date).year()
+    counter[activity.category].status[activity.status] += 1
+    counter[activity.category].total += 1
+    counter.all.status[activity.status] += 1
+    counter.all.total += 1
+    if (!counter.all.year.hasOwnProperty(year)) counter.all.year[year] = 1
+    else counter.all.year[year] += 1
+    counter.all.year.all += 1
+  })
+
+  return counter
+})
+
+export type GetActivitiesFilterResponse = ReturnType<typeof getActivitiesFilter>
+
 
 export const getActivityCalendarData = cache(async (startDate: Dayjs, endDate: Dayjs) => {
   const activityMap = new Map<string, {total: number, book: number, movie: number}>()
@@ -51,3 +66,11 @@ export const getActivityCalendarData = cache(async (startDate: Dayjs, endDate: D
 
 export type CalendarActivity = CalendarData
 export type GetActivityCalendarDataResponse = ReturnType<typeof getActivityCalendarData>
+
+interface CalendarData {
+  date: string
+  count: number
+  level: number
+  countBook: number
+  countMovie: number
+}

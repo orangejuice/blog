@@ -1,19 +1,20 @@
 import React, {Suspense} from "react"
 import dayjs from "dayjs"
-import {getActivities, getActivityCalendarData} from "@/lib/fetch-activity"
+import {getActivities, getActivitiesFilter, getActivityCalendarData} from "@/lib/fetch-activity"
 import {ActivityCalendar} from "@/components/activity-calendar"
 import {Icons} from "@/components/icons"
-import {useCssIndexCounter} from "@/lib/utils"
+import {parseCatchAll, useCssIndexCounter} from "@/lib/utils"
 import initTranslation from "@/lib/i18n"
 import {SiteLocale} from "@/site"
 import ActivityList from "@/components/activity-list"
+import {ActivityFilter, FilterOption} from "@/components/activity-filter"
 
-export default async function Page({params: {locale}}: {params: {locale: SiteLocale}}) {
+export default async function Page({params: {locale, filter}}: {params: {locale: SiteLocale, filter: string[]}}) {
   const calendarData = getActivityCalendarData(dayjs().subtract(1, "y").startOf("w"), dayjs())
   const activityData = getActivities(1)
+  const filterData = getActivitiesFilter()
   const cssIndexCounter = useCssIndexCounter()
   const {t} = await initTranslation(locale)
-
   return (<>
     <div className="min-h-40">
       <Suspense fallback={<Icons.loading/>}>
@@ -33,7 +34,9 @@ export default async function Page({params: {locale}}: {params: {locale: SiteLoc
         </section>
       </div>
       <aside className="flex flex-col gap-6 row-start-1 md:col-start-2">
-        right
+        <Suspense fallback={<Icons.loading/>}>
+          <ActivityFilter filter={parseCatchAll(filter) as FilterOption} filterData={filterData} style={cssIndexCounter()}/>
+        </Suspense>
       </aside>
     </div>
   </>)
