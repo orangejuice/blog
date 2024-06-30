@@ -49,7 +49,7 @@ const Activities = ({activities, style, className}: {activities: Activity[]} & C
   return (<>
     <ul className={cn("space-y-6 py-8 animate-delay-in", className)} style={cssIndexCounter()}>
       {activities.map((activity, index) => {
-        const Icon = Icons.type[`${activity.category}Flag`]
+        const Icon = Icons.type[`${activity.category}`]
         return (<>
           <li key={index} className="flex flex-col gap-2 rounded-lg">
             <div className="flex flex-row items-start">
@@ -59,8 +59,8 @@ const Activities = ({activities, style, className}: {activities: Activity[]} & C
               <div className="flex flex-col grow text-stone-600 text-sm px-4 md:px-6">
                 <div className="flex justify-between">
                   <h2 className="text-xl font-bold text-stone-800">{activity.title}</h2>
-                  <div className="relative flex items-center justify-center text-xs rounded-full font-medium text-stone-500">
-                    <span>{t(`bookshelf.${activity.category}`)}</span><Icon/>
+                  <div className="relative flex items-center gap-1 text-xs rounded-full font-medium text-stone-500">
+                    <Icon/><span>{t(`bookshelf.${activity.category}`)}</span>
                   </div>
                 </div>
                 <StarRating rating={activity.douban?.rating}>
