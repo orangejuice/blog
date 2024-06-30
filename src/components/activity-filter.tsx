@@ -10,7 +10,7 @@ import {Activity} from "contentlayer/generated"
 import {GetActivitiesFilterResponse} from "@/lib/fetch-activity"
 
 
-export type FilterOption = {category: Activity["category"], status: Activity["status"], year: string}
+export type FilterOption = {category?: Activity["category"], status?: Activity["status"], year?: string}
 
 export function ActivityFilter({filter: applied, style, filterData}: {filter: FilterOption, style?: React.CSSProperties, filterData: GetActivitiesFilterResponse}) {
   const cssIndexCounter = useCssIndexCounter(style)

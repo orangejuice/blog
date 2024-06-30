@@ -1,9 +1,10 @@
 "use client"
 import {Button, buttonVariants} from "@/components/ui/button"
-import {cn} from "@/lib/utils"
+import {cn, objectToUrlPart} from "@/lib/utils"
 import {menu} from "@/site"
 import {useLocalStorage} from "@/lib/use-local-storage"
-import {FilterOption} from "@/components/post-filter"
+import {FilterOption as PostFilterOption} from "@/components/post-filter"
+import {FilterOption as ActivityFilterOption} from "@/components/activity-filter"
 import {useSelectedLayoutSegment} from "next/navigation"
 import {LocaleSwitch} from "@/components/locale-switch"
 import {useMounted} from "@/lib/hooks"
@@ -16,7 +17,8 @@ import {useTranslation} from "react-i18next"
 export function Header() {
   const pathname = useSelectedLayoutSegment()
   const mounted = useMounted()
-  const [filter] = useLocalStorage<FilterOption | "">("post-filter", "")
+  const [postFilter] = useLocalStorage<PostFilterOption | "">("post-filter", "")
+  const [activityFilter] = useLocalStorage<ActivityFilterOption>("activity-filter", {})
   const {t} = useTranslation(undefined, {keyPrefix: "nav"})
 
   return (<>
@@ -25,8 +27,8 @@ export function Header() {
       <div className="flex items-center gap-2">
         <nav className="hidden md:flex items-center gap-4 text-sm font-medium">
           {Object.entries(menu).map(([key, path]) => (
-            <Link key={key}
-              href={mounted ? ((path == menu.post && filter) ? `/${path}/${filter.join("/")}` : `/${path}`) : ""}
+            <Link key={key} href={mounted ? ((path == menu.post && postFilter) ? `/${path}/${postFilter.join("/")}` :
+              path == menu.bookshelf ? `/${path}/${objectToUrlPart(activityFilter)}` : `/${path}`) : ""}
               className={cn(buttonVariants({variant: "ghost", size: "icon"}),
                 "h-fit w-fit gap-2 whitespace-nowrap rounded-lg px-3 py-1.5 transition-all",
                 "hover:bg-stone-200 active:bg-stone-300 dark:text-white dark:hover:bg-stone-700 dark:active:bg-stone-800",
@@ -46,7 +48,8 @@ export function Header() {
 export function MobileNav() {
   const [open, setOpen] = React.useState(false)
   const {t} = useTranslation(undefined, {keyPrefix: "nav"})
-  const [filter] = useLocalStorage<FilterOption | "">("post-filter", "")
+  const [postFilter] = useLocalStorage<PostFilterOption | "">("post-filter", "")
+  const [activityFilter] = useLocalStorage<ActivityFilterOption>("activity-filter", {})
   const mounted = useMounted()
 
   return (<>
@@ -59,8 +62,9 @@ export function MobileNav() {
       <PopoverContent align="end" className="w-fit shadow-xl">
         <div className="flex flex-col gap-6 p-2">
           {Object.entries(menu).map(([key, path]) => (
-            <Link onClick={() => setOpen(false)} key={key} className="font-medium"
-              href={mounted ? ((path == menu.post && filter) ? `/${path}/${filter.join("/")}` : `/${path}`) : ""}>
+            <Link key={key} href={mounted ? ((path == menu.post && postFilter) ? `/${path}/${postFilter.join("/")}` :
+              path == menu.bookshelf ? `/${path}/${objectToUrlPart(activityFilter)}` : `/${path}`) : ""}
+              className="font-medium">
               {t(key)}
             </Link>
           ))}
