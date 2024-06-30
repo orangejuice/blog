@@ -3,6 +3,8 @@ import * as path from "path"
 import {format} from "@/lib/utils"
 import PQueue from "p-queue"
 import yaml from "yaml"
+// @ts-ignore
+import tofu from "./tofu.json"
 
 const OUTPUT_DIR = "data/activity"
 
@@ -20,7 +22,7 @@ const sanitizeContent = (content: string): string => {
 
 const queue = new PQueue({concurrency: 10})
 
-for (const interest of (await import("./tofu.json") as Record<any, any>).interest) {
+for (const interest of (tofu as Record<any, any>).interest) {
   try {
     const category = interest.type
     const status = interest.status == "mark" ? "todo" : interest.status
