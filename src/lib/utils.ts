@@ -25,12 +25,17 @@ export function format(date: string | Date | Dayjs, options?: {locale?: string, 
   if (options?.date) return dayjs(date).locale(locale).format("YYYY-MM-DD")
   if (options?.relative) return dayjs(date).locale(locale).fromNow()
   if (options?.relativeWithDate) {
-    const now = dayjs()
-    const then = dayjs(date)
+    const now = dayjs().locale(locale)
+    const then = dayjs(date).locale(locale)
     if (now.diff(then, "hours") < 24) {
-      return then.locale(locale).fromNow()
+      return then.fromNow()
+    } else if (now.year() === then.year()) {
+      let date = then.format("ll")
+      if (locale == "en") date = date.replace(`, ${then.year()}`, "")
+      if (locale == "zh") date = date.replace(`${then.year()}年`, "")
+      return date
     } else {
-      return then.locale(locale).format("ll")
+      return then.format("ll")
     }
   }
   if (options?.localizeDate) return dayjs(date).locale(locale).format("ll")
