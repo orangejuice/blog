@@ -1,5 +1,5 @@
 "use server"
-import {Activity, allActivities} from "contentlayer/generated"
+import {allActivities} from "contentlayer/generated"
 import {eachDayInRange, format} from "@/lib/utils"
 import dayjs, {Dayjs} from "dayjs"
 import isBetween from "dayjs/plugin/isBetween"
@@ -14,20 +14,22 @@ export const getActivities = cache(async (page: number) => {
   return sortedActivities.slice(start, end)
 })
 
-export const getActivitiesFilter = cache(async ({category, date, year}: {category?: Activity["category"], date?: string, year?: number} | undefined = {}) => {
+export const getActivitiesFilter = cache(async ({date, year}: {date?: string, year?: string} | undefined = {}) => {
   const counter = {
     book: {status: {todo: 0, doing: 0, done: 0}, total: 0},
     movie: {status: {todo: 0, doing: 0, done: 0}, total: 0},
     all: {status: {todo: 0, doing: 0, done: 0}, total: 0, year: {all: 0} as { [year in number | "all"]: number }}
   }
   allActivities.forEach(activity => {
-    const year = dayjs(activity.date).year()
-    counter[activity.category].status[activity.status] += 1
-    counter[activity.category].total += 1
-    counter.all.status[activity.status] += 1
-    counter.all.total += 1
-    if (!counter.all.year.hasOwnProperty(year)) counter.all.year[year] = 1
-    else counter.all.year[year] += 1
+    const curYear = dayjs(activity.date).year()
+    if (!year || year == "all" || +year == curYear) {
+      counter[activity.category].status[activity.status] += 1
+      counter[activity.category].total += 1
+      counter.all.status[activity.status] += 1
+      counter.all.total += 1
+    }
+    if (!counter.all.year.hasOwnProperty(curYear)) counter.all.year[curYear] = 1
+    else counter.all.year[curYear] += 1
     counter.all.year.all += 1
   })
 

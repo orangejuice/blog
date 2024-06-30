@@ -11,8 +11,9 @@ import {ActivityFilter, FilterOption} from "@/components/activity-filter"
 
 export default async function Page({params: {locale, filter}}: {params: {locale: SiteLocale, filter: string[]}}) {
   const calendarData = getActivityCalendarData(dayjs().subtract(1, "y").startOf("w"), dayjs())
+  const appliedFilter = parseCatchAll(filter) as FilterOption
   const activityData = getActivities(1)
-  const filterData = getActivitiesFilter()
+  const filterData = getActivitiesFilter(appliedFilter)
   const cssIndexCounter = useCssIndexCounter()
   const {t} = await initTranslation(locale)
   return (<>
@@ -35,7 +36,7 @@ export default async function Page({params: {locale, filter}}: {params: {locale:
       </div>
       <aside className="flex flex-col gap-6 row-start-1 md:col-start-2">
         <Suspense fallback={<Icons.loading/>}>
-          <ActivityFilter filter={parseCatchAll(filter) as FilterOption} filterData={filterData} style={cssIndexCounter()}/>
+          <ActivityFilter filter={appliedFilter} filterData={filterData} style={cssIndexCounter()}/>
         </Suspense>
       </aside>
     </div>
