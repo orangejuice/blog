@@ -1,9 +1,9 @@
 import * as React from "react"
 import {ComponentProps, ComponentType, forwardRef} from "react"
 import {cn} from "@/lib/utils"
-import {ArrowRight, AudioLines, ChevronRight, Dot, Eye, Filter, Globe, Hash, Loader2, LogIn, LogOut, Menu, MessageCircleHeart, MessageCircleMore, Moon, Pickaxe, Slash, Smile, Sun, SunMoon, Undo2, User} from "lucide-react"
+import {ArrowRight, AudioLines, ChevronRight, Dot, Eye, Filter, Globe, Hash, LibraryBig, Loader2, LogIn, LogOut, Menu, MessageCircleHeart, MessageCircleMore, Moon, Pickaxe, Slash, Smile, Sun, SunMoon, Undo2, User} from "lucide-react"
 import Image, {ImageProps} from "next/image"
-import {Book, FilmReel} from "@phosphor-icons/react/dist/ssr"
+import {BookmarkSimple, FilmReel} from "@phosphor-icons/react/dist/ssr"
 
 export const Icons = {
   logo: (props: Partial<ImageProps>) => <Image src="/logo.svg" width={140} height={30} alt="Logo" priority {...props}/>,
@@ -15,8 +15,10 @@ export const Icons = {
   loading: cns(Loader2, "w-5 h-5 mx-auto animate-spin"),
   nav: {profile: cns(User), lang: cns(Globe), menu: cns(Menu)},
   type: {
-    book: cns((props) => <Book weight="fill" {...props}/>),
-    movie: cns((props) => <FilmReel weight="fill" {...props}/>)
+    book: cns(({className, ...props}) => <LibraryBig className={cn("fill-current", className)} {...props}/>),
+    movie: cns((props) => <FilmReel weight="fill" {...props}/>),
+    bookFlag: cns(() => <BookmarkSimple weight="fill" style={{color: `var(--color-book-3)`}} className="w-5 h-5 top-0 right-0"/>),
+    movieFlag: cns(() =>  <BookmarkSimple weight="fill" style={{color: `var(--color-movie-3)`}} className="w-5 h-5 top-0 right-0"/>)
   },
   theme: {light: cns(Sun, "w-5 h-5"), dark: cns(Moon, "w-5 h-5"), system: cns(SunMoon, "w-5 h-5")},
   grid: () => (<>

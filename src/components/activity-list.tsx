@@ -8,7 +8,6 @@ import {Image} from "@/components/ui/image"
 import {fetchActivities} from "@/lib/actions"
 import {MDX} from "@/components/mdx"
 import {Icons} from "@/components/icons"
-import {BookmarkSimple} from "@phosphor-icons/react"
 
 
 export default function ActivityList({data, style}: {data: Promise<Activity[]>} & ComponentPropsWithoutRef<"div">) {
@@ -50,7 +49,7 @@ const Activities = ({activities, style, className}: {activities: Activity[]} & C
   return (<>
     <ul className={cn("space-y-6 py-8 animate-delay-in", className)} style={cssIndexCounter()}>
       {activities.map((activity, index) => {
-        const Icon = Icons.type[activity.category]
+        const Icon = Icons.type[`${activity.category}Flag`]
         return (<>
           <li key={index} className="flex flex-col gap-2 rounded-lg">
             <div className="flex flex-row items-start">
@@ -60,10 +59,8 @@ const Activities = ({activities, style, className}: {activities: Activity[]} & C
               <div className="flex flex-col grow text-stone-600 text-sm px-4 md:px-6">
                 <div className="flex justify-between">
                   <h2 className="text-xl font-bold text-stone-800">{activity.title}</h2>
-                  <div className="relative flex items-center justify-center gap-1 text-xs rounded-full font-medium text-stone-500">
-                    <BookmarkSimple weight="fill" style={{color: `var(--color-${activity.category}-3)`}}
-                      className="absolute w-8 h-8 top-0 right-0"/>
-                    <Icon className="absolute top-1.5 right-2 text-white"/>
+                  <div className="relative flex items-center justify-center text-xs rounded-full font-medium text-stone-500">
+                    <span>{t(`bookshelf.${activity.category}`)}</span><Icon/>
                   </div>
                 </div>
                 <StarRating rating={activity.douban?.rating}>
