@@ -1,4 +1,3 @@
-import tofu from "./tofu.json"
 import * as fs from "fs"
 import * as path from "path"
 import {format} from "@/lib/utils"
@@ -21,7 +20,7 @@ const sanitizeContent = (content: string): string => {
 
 const queue = new PQueue({concurrency: 10})
 
-for (const interest of (tofu as Record<any, any>).interest) {
+for (const interest of (await import("./tofu.json") as Record<any, any>).interest) {
   try {
     const category = interest.type
     const status = interest.status == "mark" ? "todo" : interest.status
