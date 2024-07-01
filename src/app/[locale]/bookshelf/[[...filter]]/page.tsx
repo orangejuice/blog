@@ -8,6 +8,12 @@ import initTranslation from "@/lib/i18n"
 import {SiteLocale} from "@/site"
 import ActivityInfiniteScrollList from "@/components/activity-list"
 import {ActivityFilter, FilterOption} from "@/components/activity-filter"
+import {Metadata} from "next"
+
+export async function generateMetadata({params: {locale}}: {params: {locale: string}}): Promise<Metadata> {
+  const {t} = await initTranslation(locale)
+  return {title: t("bookshelf.title")}
+}
 
 export default async function Page({params: {locale, filter}}: {params: {locale: SiteLocale, filter: string[]}}) {
   const appliedFilter = parseCatchAll(filter) as FilterOption
