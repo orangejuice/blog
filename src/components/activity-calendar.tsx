@@ -9,13 +9,13 @@ import {useTranslation} from "react-i18next"
 import "@/components/activity-calendar.css"
 import {FilterOption} from "@/components/activity-filter"
 import {Dayjs} from "dayjs"
+import {CalendarPlaceholder} from "@/components/loading"
 
 export function ActivityCalendar({calendarData, style, filter}: {calendarData: GetActivityCalendarDataResponse, filter: FilterOption & {start: Dayjs, end: Dayjs}} & ComponentPropsWithoutRef<"section">) {
   const data = use(calendarData)
   const {resolvedTheme} = useTheme()
   const {t, i18n: {language: locale}} = useTranslation()
   const cssIndexCounter = useCssIndexCounter(style)
-
   return (<>
     <section className="flex flex-col gap-2 min-h-52 animate-delay-in" style={cssIndexCounter()}>
       <h5 className="text-center text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">
@@ -24,10 +24,11 @@ export function ActivityCalendar({calendarData, style, filter}: {calendarData: G
           end: format(filter.end, {locale, localizeDate: true})
         })}
       </h5>
+      <CalendarPlaceholder className="[&:has(~_article)]:hidden"/>
       <RawActivityCalendar data={data} showWeekdayLabels hideTotalCount hideColorLegend maxLevel={3}
         colorScheme={resolvedTheme as "light" | "dark"} style={{marginLeft: "auto", marginRight: "auto"}}
         // @ts-ignore
-        renderBlock={(block, activity: CalendarActivity) => (
+        renderBlock={(block, activity: CalendarActivity) => (<>
           <Tooltip delayDuration={300} disableHoverableContent>
             <TooltipTrigger asChild><DrawRect block={block} activity={activity}/></TooltipTrigger>
             <TooltipContent>
@@ -37,7 +38,7 @@ export function ActivityCalendar({calendarData, style, filter}: {calendarData: G
               {/*<TooltipArrow className="fill-white"/>*/}
             </TooltipContent>
           </Tooltip>
-        )}/>
+        </>)}/>
     </section>
   </>)
 }

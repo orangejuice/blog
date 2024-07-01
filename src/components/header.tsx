@@ -19,7 +19,7 @@ export function Header() {
   const mounted = useMounted()
   const [postFilter] = useLocalStorage<PostFilterOption | "">("post-filter", "")
   const [activityFilter] = useLocalStorage<ActivityFilterOption>("activity-filter", {})
-  const {t} = useTranslation(undefined, {keyPrefix: "nav"})
+  const {t} = useTranslation()
 
   return (<>
     <header className="flex mb-8 w-full shrink-0 items-center justify-between">
@@ -33,7 +33,7 @@ export function Header() {
                 "h-fit w-fit gap-2 whitespace-nowrap rounded-lg px-3 py-1.5 transition-all",
                 "hover:bg-stone-200 active:bg-stone-300 dark:text-white dark:hover:bg-stone-700 dark:active:bg-stone-800",
                 (pathname ?? "") === path && "bg-stone-200 dark:bg-stone-700")}>
-              <span className="text-sm font-medium">{t(key)}</span>
+              <span className="text-sm font-medium">{t(`nav.${key}`)}</span>
             </Link>
           ))}
           <LocaleSwitch/>
@@ -65,7 +65,7 @@ export function MobileNav() {
             <Link key={key} href={mounted ? ((path == menu.post && postFilter) ? `/${path}/${postFilter.join("/")}` :
               path == menu.bookshelf ? `/${path}/${objectToUrlPart(activityFilter)}` : `/${path}`) : ""}
               className="font-medium">
-              {t(key)}
+              {t(`nav.${key}`)}
             </Link>
           ))}
           <span className="-my-2 h-px bg-stone-200 dark:bg-stone-600"></span>
