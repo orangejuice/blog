@@ -134,6 +134,7 @@ async function processImage(node: ImageNode, filePath: string, publicDir: string
     const resizedMetadata = await resizedImage.metadata()
     const {width: resizedWidth, height: resizedHeight} = resizedMetadata
 
+    console.log("Markdown Image", originalPath, newPath)
     node.url = "/" + path.relative(path.join(process.cwd(), "public"), newPath)
     node.width = resizedWidth
     node.height = resizedHeight
@@ -197,6 +198,7 @@ async function serveCoverImages(dir: string, publicDir: string) {
     const newFileName = `${fileNameHash}${fileExt}`
     const newPath = path.join(publicDir, newFileName)
     if (!fs.existsSync(newPath)) {
+      console.log("Activity Cover", originalPath, newPath)
       await sharp(originalPath).resize({width: 500}).jpeg({quality: 80}).toFile(newPath)
     }
   }
