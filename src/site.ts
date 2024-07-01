@@ -4,6 +4,7 @@ export const site = {
   title: "Orangejuice blog",
   description: "Orange juice is a liquid extract of the orange tree fruit, it comes in several different varieties. (wiki)",
   author: "orangejuice",
+  avatar: "/avatar.jpeg",
   url: "https://orangejuice.cc",
   locales: ["en", "zh"]
 } as const

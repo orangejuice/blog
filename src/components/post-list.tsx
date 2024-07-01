@@ -156,7 +156,7 @@ export function PostCompactList({posts: data, ...props}: {posts: GetPostsRespons
   </>)
 }
 
-export function LatestActivityList({posts: data, ...props}:
+export function LatestPostActivityList({posts: data, ...props}:
   {posts: GetLatestActivitiesResponse} & ComponentPropsWithoutRef<"ul">) {
 
   const posts = use(data)

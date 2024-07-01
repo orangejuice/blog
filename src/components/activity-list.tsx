@@ -1,6 +1,5 @@
 "use client"
 import React, {ComponentPropsWithoutRef, use, useEffect, useRef, useState, useTransition} from "react"
-import {Loader2} from "lucide-react"
 import type {Activity} from "contentlayer/generated"
 import {cn, format, useCssIndexCounter} from "@/lib/utils"
 import {useTranslation} from "react-i18next"
@@ -10,9 +9,11 @@ import {MDX} from "@/components/mdx"
 import {Icons} from "@/components/icons"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {FilterOption} from "@/components/activity-filter"
+import {menu, site} from "@/site"
+import Link from "next/link"
 
 
-export default function ActivityList({data, style}: {data: Promise<Activity[]>} & ComponentPropsWithoutRef<"div">) {
+export default function ActivityInfiniteScrollList({data, style}: {data: Promise<Activity[]>} & ComponentPropsWithoutRef<"div">) {
   const [pages, setPages] = useState([1])
   const [activities, setActivities] = useState(use(data))
   const [hasMore, setHasMore] = useState(use(data).length == 10)
@@ -40,7 +41,7 @@ export default function ActivityList({data, style}: {data: Promise<Activity[]>} 
   return (<>
     <Activities activities={activities} style={cssIndexCounter()}/>
     <div ref={bottomRef} className="h-10 flex items-center justify-center animate-delay-in" style={cssIndexCounter()}>
-      {isPending ? (<Loader2 className="animate-spin mr-2"/>) : (!hasMore && "No more activities")}
+      {isPending ? <Icons.loading/> : (!hasMore && "No more activities")}
     </div>
   </>)
 }
@@ -131,4 +132,59 @@ const StarRating = ({rating, max = 10, description = false, children}: {rating: 
       {children}
     </div>
   )
+}
+
+
+export const LatestActivityList = ({data, style, className}: {data: Promise<Activity[]>} & ComponentPropsWithoutRef<"div">) => {
+  const cssIndexCounter = useCssIndexCounter(style)
+  const {t, i18n: {language: locale}} = useTranslation()
+  const activities = use(data).slice(0, 2)
+
+  return (<>
+    <ul className={cn("space-y-6 animate-delay-in", className)} style={cssIndexCounter()}>
+      {activities.map((activity) => (
+        <li key={activity._id}>
+          <Link href={`/${menu.bookshelf}`} className={cn("flex flex-col items-start px-4 py-2 rounded-md -mx-4 transition-colors gap-2",
+            "hover:bg-stone-100 group dark:hover:bg-stone-800")}>
+            <div className="flex items-center gap-2">
+              <div className="relative h-8 w-8 rounded-full overflow-hidden">
+                <Image src={site.avatar} alt="Avatar"/>
+              </div>
+              <div className="flex flex-col items-start text-stone-600 dark:text-stone-400">
+                <span className="font-medium text-sm">{site.author}</span>
+                <div className="flex items-center text-xs gap-2 line-clamp-1">
+                  {t(`bookshelf.${activity.category}.status.${activity.status}`, {date: format(activity.date, {locale, relativeWithDate: true})})}
+                  {!!activity.rating && (<>
+                    <span className="text-stone-200 select-none">|</span>
+                    <StarRating rating={activity.rating} max={5} description/>
+                  </>)}
+                </div>
+              </div>
+            </div>
+            <span className="flex gap-1 text-sm">
+              <MDX code={activity.body.code} className="prose-sm line-clamp-5 prose-p:mt-0 text-stone-800"/>
+            </span>
+            <div className="flex w-full bg-stone-50 rounded-lg p-3">
+              <div className="relative w-14 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
+                <Image src={activity.cover} alt="cover"/>
+              </div>
+              <div className="flex flex-col grow text-stone-600 text-sm px-4">
+                <h2 className="font-bold text-stone-800">{activity.title}</h2>
+                <StarRating rating={activity.douban?.rating}>
+                  {!!activity.douban?.rating ? <>
+                    <span className="ml-1 font-medium text-xs text-yellow-600 font-mono tracking-[-0.15em]">
+                      {activity.douban?.rating?.toFixed(1)}
+                    </span></> :
+                    <span className="ml-1 font-mono text-xxs">
+                      {t("bookshelf.rating.0")}
+                    </span>}
+                </StarRating>
+                <p className="text-xxs mt-0.5 mb-2 line-clamp-2">{activity.douban?.subtitle}</p>
+              </div>
+            </div>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </>)
 }

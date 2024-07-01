@@ -26,12 +26,13 @@
     "toc": "Table of contents",
     "toc-empty": "Nothing found",
     "update": "Updated {{date}}",
-    "latest-activities": "Latest activities",
+    "latest-comments": "Latest comments",
     "view-more": "View more"
   },
   "bookshelf": {
     "title": "My bookshelf",
     "description": "Join me to seek flowers within ruins",
+    "latest": "Latest activities",
     "calendar": "Activity Calendar ({{start}} - {{end}})",
     "category": {
       "book": "Book",

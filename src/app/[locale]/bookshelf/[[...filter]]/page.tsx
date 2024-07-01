@@ -6,7 +6,7 @@ import {Icons} from "@/components/icons"
 import {parseCatchAll, useCssIndexCounter} from "@/lib/utils"
 import initTranslation from "@/lib/i18n"
 import {SiteLocale} from "@/site"
-import ActivityList from "@/components/activity-list"
+import ActivityInfiniteScrollList from "@/components/activity-list"
 import {ActivityFilter, FilterOption} from "@/components/activity-filter"
 
 export default async function Page({params: {locale, filter}}: {params: {locale: SiteLocale, filter: string[]}}) {
@@ -31,7 +31,7 @@ export default async function Page({params: {locale, filter}}: {params: {locale:
             {t("bookshelf.description")}
           </p>
           <Suspense fallback={<Icons.loading/>}>
-            <ActivityList data={activityData} style={cssIndexCounter()}/>
+            <ActivityInfiniteScrollList data={activityData} style={cssIndexCounter()}/>
           </Suspense>
         </section>
       </div>
