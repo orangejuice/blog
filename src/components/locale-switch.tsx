@@ -44,7 +44,7 @@ export function LocaleSwitch(props: ButtonProps) {
         <DropdownMenuRadioGroup value={resolved} onValueChange={onSelectChange}>
           {site.locales.map((locale) =>
             <DropdownMenuRadioItem key={locale} value={locale} disabled={resolved == locale}
-              className="cursor-pointer hover:bg-stone-200 dark:hover:bg-stone-800">
+              className="cursor-pointer font-medium hover:bg-stone-200 dark:hover:bg-stone-800">
               {t(locale, {lng: locale})}
             </DropdownMenuRadioItem>
           )}

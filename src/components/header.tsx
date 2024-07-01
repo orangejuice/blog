@@ -11,10 +11,11 @@ import {useMounted} from "@/lib/hooks"
 import Link from "next/link"
 import * as React from "react"
 import {Icons} from "@/components/icons"
-import {Popover, PopoverContent, PopoverTrigger} from "@/components/ui/popover"
 import {useTranslation} from "react-i18next"
 import {ThemeToggle} from "@/components/theme-toggle"
 import {BackgroundCanvasToggle, BackgroundMusicToggle} from "@/components/background-toggle"
+import {DropdownMenu, DropdownMenuContent, DropdownMenuTrigger} from "@/components/ui/dropdown-menu"
+import {AnimatePresence, motion} from "framer-motion"
 
 export function Header() {
   const pathname = useSelectedLayoutSegment()
@@ -55,13 +56,17 @@ export function MobileNav() {
   const mounted = useMounted()
 
   return (<>
-    <Popover open={open} onOpenChange={setOpen}>
-      <PopoverTrigger asChild>
+    <AnimatePresence>
+      {open && <motion.div initial={{opacity: 0}} animate={{opacity: 0.1}} exit={{opacity: 0}}
+        className="fixed inset-0 bg-black z-20"/>}
+    </AnimatePresence>
+    <DropdownMenu open={open} onOpenChange={setOpen}>
+      <DropdownMenuTrigger asChild>
         <Button variant="ghost" className="block w-fit h-fit p-0 hover:bg-transparent md:hidden">
           <Icons.nav.menu className="h-7 w-7"/>
         </Button>
-      </PopoverTrigger>
-      <PopoverContent align="end" className="w-fit shadow-xl">
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="w-fit shadow-xl p-4 min-w-40">
         <div className="flex flex-col gap-6 p-2">
           {Object.entries(menu).map(([key, path]) => (
             <Link key={key} onClick={() => setOpen(false)}
@@ -77,7 +82,7 @@ export function MobileNav() {
           <BackgroundMusicToggle className="-my-1.5" small/>
           <BackgroundCanvasToggle className="-my-1.5" small/>
         </div>
-      </PopoverContent>
-    </Popover>
+      </DropdownMenuContent>
+    </DropdownMenu>
   </>)
 }
