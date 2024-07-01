@@ -26,9 +26,10 @@ export function ActivityFilter({filter: applied, style, filterData}: {filter: Fi
       <div className="flex flex-wrap text-stone-600">
         {Object.entries(filter.all.year).map(([year, num], index) => (
           <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({year})}`}
-            className={cn("flex items-center group m-2 text-sm font-medium underline-fade",
-              year == selectedYear && "underline-fade-selected font-bold")}>
-            <Icons.symbol.hash/>{year == "all" ? t(`bookshelf.category.all`) : year} ({num})
+            className={cn("flex items-center gap-1 group m-2 text-sm font-medium underline-fade",
+              year == selectedYear && "font-bold")}>
+            {year == selectedYear ? <Icons.symbol.squareChecked/> : <Icons.symbol.square/>}
+            {year == "all" ? t(`bookshelf.category.all`) : year} ({num})
           </Link>
         ))}
       </div>
@@ -38,9 +39,10 @@ export function ActivityFilter({filter: applied, style, filterData}: {filter: Fi
       <div className="flex flex-wrap text-stone-600">
         {Object.entries(filter).map(([category, {total}], index) => (
           <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({year: applied.year, category})}`}
-            className={cn("flex items-center group m-2 text-sm font-medium underline-fade",
-              (category == selectedCate) && "underline-fade-selected font-bold")}>
-            <Icons.symbol.hash/>{t(`bookshelf.category.${category}`)} ({total})
+            className={cn("flex items-center gap-1 group m-2 text-sm font-medium underline-fade",
+              category == selectedCate && "font-bold")}>
+            {category == selectedCate ? <Icons.symbol.squareChecked/> : <Icons.symbol.square/>}
+            {t(`bookshelf.category.${category}`)} ({total})
           </Link>
         ))}
       </div>
@@ -50,9 +52,10 @@ export function ActivityFilter({filter: applied, style, filterData}: {filter: Fi
       <div className="flex flex-wrap text-stone-600">
         {Object.entries(filter[selectedCate].status).map(([status, num], index) => (
           <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({...applied, status})}`}
-            className={cn("flex items-center group m-2 text-sm font-medium underline-fade",
+            className={cn("flex items-center gap-1 group m-2 text-sm font-medium underline-fade",
               status == applied.status && "underline-fade-selected font-bold")}>
-            <Icons.symbol.hash/>{t(`bookshelf.filter.status.${status}`)} ({num})
+            {status == applied.status ? <Icons.symbol.squareChecked/> : <Icons.symbol.square/>}
+            {t(`bookshelf.filter.status.${status}`)} ({num})
           </Link>
         ))}
       </div>
