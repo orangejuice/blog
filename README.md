@@ -9,7 +9,7 @@
 ![react](https://img.shields.io/github/package-json/dependency-version/orangejuice/blog/react?label=React&color=61dafb&logo=react&logoColor=fff)
 ![typescript](https://img.shields.io/github/package-json/dependency-version/orangejuice/blog/dev/typescript?label=Typescript&logo=typescript&logoColor=fff&color=3178c6)
 ![node](https://img.shields.io/badge/Node.js-^20.2.0-5fa04e?logo=node.js&logoColor=fff)-->
-<sub>✅ i18n ✅ Comment ✅ Reaction ✅ View count ✅ Post-it wall ✅ Light/Dark ✅ PC/Mobile</sub>
+<sub>✅ i18n ✅ Comment ✅ Reaction ✅ View count ✅ Post-it wall ✅ Book/TV/Show tracking ✅ Light/Dark ✅ PC/Mobile</sub>
 
 ![nextjs](https://img.shields.io/github/package-json/dependency-version/orangejuice/blog/next?label=Next.js&logo=next.js&color=222)
 ![react](https://img.shields.io/badge/React-05a3cd?logo=react&logoColor=fff)
@@ -20,21 +20,20 @@
 ![tailwind](https://img.shields.io/badge/Tailwind%20CSS-06b6d4?logo=tailwindcss&logoColor=fff)
 ![zustand](https://img.shields.io/badge/🐻-Zustand-222?colorA=222)
 ![rss](https://shields.io/badge/RSS-f88900?logo=rss&logoColor=fff)
-
+![douban](https://shields.io/badge/豆瓣-2D963D?logo=douban&logoColor=fff)
 
 </div>
 
 ## ✨ Features
 
 - `Next.js(App dir/ISR/SSR/CSR)`, `React`, `TailwindCSS`, `Mdx`, `shadcn/ui`, `framer motion`, `contentlayer`
-- Responsive UI for seamless experience across PC and mobile devices
-- Employs a modern tech stack with a minimalist design language
-- In-depth integration with i18n content support
-- Cached dynamic data and On-demand revalidation
-- Supports local/online image files through a custom rehype plugin `rehype-mdx-images`
-- Features robust Languages/Tags filtering capabilities
+- Post-it wall available on `https://orangejuice.cc/guestbook`
+- Book/TV/Show tracking available on `https://orangejuice.cc/guestbook`
 - Comment/Reaction system based on `Giscus` (work together with [On New Giscus Comment](https://github.com/orangejuice/on-new-giscus-comment))
-- SEO with generated `sitemap.xml`, `robots.txt`, `Open Graph` & `RSS feed` (i18n ready)
+- Responsive UI, minimalist design language with a bit of move elements
+- Cached dynamic data and On-demand revalidation
+- In-depth customized for Markdown + i18n writing workflow
+- SEO with generated `sitemap.xml`, `robots.txt`, `Open Graph` & `RSS feed`
 
 ## 🙌 Highlight
 
@@ -42,8 +41,7 @@
   A dynamic, peaceful three-dimensional backdrop.
 
 * **🔊 White Noise Toggle** `src/components/white-noise-toggle.tsx`  
-  Creative ambient sound control turn on the white
-  noise that enhance focus.
+  Creative ambient sound control turn on the white noise that enhance focus.
 
 * **💡 Theme Toggle** `src/components/theme-toggle.tsx`  
   A simple and creative theme preference control.
@@ -54,10 +52,14 @@
 * **📝 Skeuomorphic Sticky Notes** `src/components/sticky-notes.tsx`  
   A sleek implementation of skeuomorphic sticky notes, drag enabled.
 
+* **📄 Markdown Image Support** `src/lib/remark-image-rocessor.ts`  
+  Add support for local/online images through a custom remark plugin
+
 <sup>more to come...</sup>
 
 ## 🔖 History
 
+- `Jul 01, 2024`  Introducing a new feature: Book/TV/Show tracking.
 - `Jun 18, 2024`  Add Sticky Notes display on Guestbook page.
 - `Jun 17, 2024`  Add Article view count display (powered by Cloudflare D1).
 - `Jun 03, 2024`  Launch of the new blog system based on Next.js (App dir).
