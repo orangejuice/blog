@@ -37,10 +37,13 @@
 
 ## 🙌 Highlight
 
+* **🎨 Activity Calendar** `src/components/activity-calendar.tsx`  
+  An elegant calendar component intuitively displays yearly reading and watching activities.
+
 * **🎨 Immersive 3D Background** `src/components/background.tsx`  
   A dynamic, peaceful three-dimensional backdrop.
 
-* **🔊 White Noise Toggle** `src/components/white-noise-toggle.tsx`  
+* **🔊 White Noise Toggle** `src/components/background-toggle.tsx`  
   Creative ambient sound control turn on the white noise that enhance focus.
 
 * **💡 Theme Toggle** `src/components/theme-toggle.tsx`  
@@ -52,14 +55,14 @@
 * **📝 Skeuomorphic Sticky Notes** `src/components/sticky-notes.tsx`  
   A sleek implementation of skeuomorphic sticky notes, drag enabled.
 
-* **📄 Markdown Image Support** `src/lib/remark-image-rocessor.ts`  
+* **📄 Markdown Image Support** `src/lib/remark-image-processor.ts`  
   Add support for local/online images through a custom remark plugin
 
 <sup>more to come...</sup>
 
 ## 🔖 History
 
-- `Jul 01, 2024`  Introducing a new feature: Book/TV/Show tracking.
+- `Jul 01, 2024`  Introducing a new feature - Book/TV/Show tracking.
 - `Jun 18, 2024`  Add Sticky Notes display on Guestbook page.
 - `Jun 17, 2024`  Add Article view count display (powered by Cloudflare D1).
 - `Jun 03, 2024`  Launch of the new blog system based on Next.js (App dir).
