@@ -67,7 +67,11 @@ const Activities = ({activities, style, className}: {activities: Activity[]} & C
                   </div>
                 </div>
                 <StarRating rating={activity.douban?.rating}>
-                  <span className="ml-1 font-medium text-yellow-600 font-mono tracking-[-0.15em]">{activity.douban?.rating?.toFixed(1)} </span>
+                  {!!activity.douban?.rating ? <>
+                    <span className="ml-1 font-medium text-yellow-600 font-mono tracking-[-0.15em]">
+                      {activity.douban?.rating?.toFixed(1)}
+                    </span>
+                  </> : <span className="ml-1 font-mono text-xs">{t("bookshelf.rating.0")}</span>}
                 </StarRating>
                 <p className="text-xs mt-0.5 mb-2">{activity.douban?.subtitle}</p>
                 <MyComment activity={activity} className="hidden md:block"/>
