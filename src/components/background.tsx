@@ -4,11 +4,12 @@ import {Canvas, GroupProps, MeshProps, useFrame} from "@react-three/fiber"
 import {CameraControls, SoftShadows} from "@react-three/drei"
 import {useSpring} from "@react-spring/core"
 import {a} from "@react-spring/three"
-import {motion} from "framer-motion"
+import {AnimatePresence, motion} from "framer-motion"
 import {Group, Mesh, Vector3} from "three"
 import {useTheme} from "next-themes"
 import {useDeviceType, useMounted} from "@/lib/hooks"
 import {cn, randomInRange} from "@/lib/utils"
+import {useLocalStorage} from "@/lib/use-local-storage"
 
 const easeInOutCubic = (t: number) => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1
 
@@ -91,7 +92,7 @@ function AmbientRead() {
   }, [threeLoaded])
 
   return (<>
-    <motion.div animate={{opacity: threeLoaded ? 1 : 0}} className={cn(
+    <motion.div animate={{opacity: threeLoaded ? 1 : 0}} exit={{opacity: 0}} className={cn(
       "w-[1200px] h-[700px] fixed top-0 right-0 pointer-events-none -z-10", isMobile && "w-[700px] h-[500px]")}>
       <Canvas shadows camera={{fov: 45}} style={{pointerEvents: "none"}} onCreated={() => {setThreeLoaded(true)}}>
         <CameraControls ref={cameraControlRef} makeDefault={true}/>
@@ -123,11 +124,15 @@ function AmbientRead() {
 export function Background() {
   const {resolvedTheme} = useTheme()
   const mounted = useMounted()
-  if (!mounted) return null
+  const [isBackgroundOn] = useLocalStorage("background-canvas", true)
 
-  return resolvedTheme == "dark" ? <StarrySky/> : <AmbientRead/>
+  return (<>
+    <AnimatePresence>
+      {mounted && isBackgroundOn && resolvedTheme == "light" && <AmbientRead/>}
+      {mounted && isBackgroundOn && resolvedTheme == "dark" && <StarrySky/>}
+    </AnimatePresence>
+  </>)
 }
-
 
 function TwinklingStar({position}: {position: Vector3}) {
   const mesh = useRef<Mesh>(null)
@@ -162,7 +167,8 @@ const StarrySky = () => {
   }
 
   return (<>
-    <motion.div className="w-[1200px] h-[700px] fixed top-0 right-0 pointer-events-none -z-10" animate={{opacity: 1}}>
+    <motion.div animate={{opacity: 1}} exit={{opacity: 0}}
+      className="w-[1200px] h-[700px] fixed top-0 right-0 pointer-events-none -z-10">
       <Canvas camera={{fov: 75, position: [900, 570, 200], rotation: [-1.5, 1, 1.5]}} style={{pointerEvents: "none"}}>
         {/*<OrbitControls/>*/}
         {/*<axesHelper/>*/}

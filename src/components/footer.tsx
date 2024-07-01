@@ -1,7 +1,7 @@
 import {ThemeToggle} from "@/components/theme-toggle"
 import {site} from "@/site"
 import React from "react"
-import {BackgroundMusicToggle} from "@/components/white-noise-toggle"
+import {BackgroundCanvasToggle, BackgroundMusicToggle} from "@/components/background-toggle"
 
 export function Footer() {
   return (<>
@@ -9,6 +9,7 @@ export function Footer() {
       <div className="flex items-center gap-8">
         <ThemeToggle/>
         <BackgroundMusicToggle/>
+        <BackgroundCanvasToggle/>
       </div>
       <div className="flex gap-2 text-sm">
         <div>{`Copyright © ${new Date().getFullYear()}`}</div>

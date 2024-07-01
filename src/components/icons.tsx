@@ -3,7 +3,7 @@ import {ComponentProps, ComponentType, forwardRef} from "react"
 import {cn} from "@/lib/utils"
 import {ArrowRight, AudioLines, ChevronRight, Dot, Eye, Filter, Globe, Hash, Loader2, LogIn, LogOut, Menu, MessageCircleHeart, MessageCircleMore, Moon, Pickaxe, Slash, Smile, Square, SquareCheckBig, Sun, SunMoon, Undo2, User} from "lucide-react"
 import Image, {ImageProps} from "next/image"
-import {Book, BookmarkSimple, FilmReel} from "@phosphor-icons/react/dist/ssr"
+import {Book, BookmarkSimple, FilmReel, SelectionBackground} from "@phosphor-icons/react/dist/ssr"
 
 export const Icons = {
   logo: (props: Partial<ImageProps>) => <Image src="/logo.svg" width={140} height={30} alt="Logo" priority {...props}/>,
@@ -33,7 +33,8 @@ export const Icons = {
       <span className="animate-fade animate-delay-300 mx-px h-1 w-1 rounded-full bg-current"></span>
     </span>
   </>),
-  audio: cns(AudioLines, "w-5 h-5 [&_path]:animate-wave [&_path:nth-child(odd)]:animate-delay-300")
+  audio: cns(AudioLines, "w-5 h-5 [&_path]:animate-wave [&_path:nth-child(odd)]:animate-delay-300"),
+  background: cns((props)=> <SelectionBackground className="w-5 h-5" weight="duotone"/>)
 }
 
 function cns<T extends ComponentType<any>>(Component: T, predefined?: string) {

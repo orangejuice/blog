@@ -9,7 +9,8 @@
     "light": "Light",
     "dark": "Dark",
     "system": "Follow system",
-    "white-noise": "White noise"
+    "white-noise": "White noise",
+    "background": "Live background"
   },
   "post": {
     "all": "All posts",

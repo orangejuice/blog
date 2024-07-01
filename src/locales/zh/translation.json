@@ -9,7 +9,8 @@
     "light": "明亮",
     "dark": "黑暗",
     "system": "跟随系统",
-    "white-noise": "白噪声"
+    "white-noise": "白噪声",
+    "background": "动态背景"
   },
   "post": {
     "all": "所有文章",
