@@ -9,6 +9,7 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      fontSize: {"xxs": ["0.625rem", {lineHeight: "1rem"}]},
       fontFamily: {
         sans: ["var(--font-sans)", ...defaults.fontFamily.sans],
         mono: ["var(--font-mono)", ...defaults.fontFamily.mono]
