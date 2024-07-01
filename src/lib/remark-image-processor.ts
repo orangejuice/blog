@@ -45,7 +45,7 @@ export default function remarkImageProcessor(options: Options) {
       })
 
       if (path.dirname(file.history[0]).includes("/activity/")) {
-        promises.push(serveCoverImages(path.dirname(file.history[0]), docFilePath, options.publicDir))
+        promises.push(serveCoverImages(path.dirname(file.history[0]), options.publicDir))
       }
 
       await Promise.all(promises)
@@ -187,7 +187,7 @@ function updateMarkdownFile(filePath: string, updates: ImageUpdate[]) {
   fs.writeFileSync(filePath, content)
 }
 
-async function serveCoverImages(dir: string, docFilePath: string, publicDir: string) {
+async function serveCoverImages(dir: string, publicDir: string) {
   for (const file of fs.readdirSync(dir)) {
     if (!file.startsWith("cover.")) continue
 
