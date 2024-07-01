@@ -46,6 +46,11 @@ for (const interest of (tofu as Record<any, any>).interest) {
     }
     const filePath = path.join(OUTPUT_DIR, dict, "record.md")
 
+    if (title == "未知电影") {
+      console.log(dict)
+      continue
+    }
+
     cover && queue.add(() => downloadImage(cover, path.join(OUTPUT_DIR, dict)))
 
     const frontmatter = {
