@@ -37,7 +37,7 @@
 
 ## 🙌 Highlight
 
-* **🎨 Activity Calendar** `src/components/activity-calendar.tsx`  
+* **🕰️ Activity Calendar** `src/components/activity-calendar.tsx`  
   An elegant calendar component intuitively displays yearly reading and watching activities.
 
 * **🎨 Immersive 3D Background** `src/components/background.tsx`  
