@@ -13,8 +13,9 @@ import remarkImagesProcessor, {generateFileHash} from "./src/lib/remark-image-pr
 import rehypePrismAll from "rehype-prism-plus"
 import path from "path"
 import fs from "node:fs"
+import * as process from "node:process"
 
-const ASSETS_DIR = "./public/assets"
+const ASSETS_DIR = path.join(process.cwd(), "public", "assets")
 
 export const Post = defineDocumentType(() => ({
   name: "Post",
