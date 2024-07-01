@@ -31,8 +31,8 @@
   },
   "bookshelf": {
     "title": "My bookshelf",
-    "description": "Join me to seek flowers within ruins.",
-    "calendar": "Activity Calendar",
+    "description": "Join me to seek flowers within ruins",
+    "calendar": "Activity Calendar ({{start}} - {{end}})",
     "category": {
       "book": "Book",
       "movie": "Movie",

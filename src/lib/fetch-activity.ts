@@ -49,12 +49,15 @@ export const getActivitiesFilter = cache(async ({date, year}: {date?: string, ye
 export type GetActivitiesFilterResponse = ReturnType<typeof getActivitiesFilter>
 
 
-export const getActivityCalendarData = cache(async (startDate: Dayjs, endDate: Dayjs) => {
+export const getActivityCalendarData = cache(async (startDate: Dayjs, endDate: Dayjs, filter: FilterOption) => {
   const activityMap = new Map<string, {total: number, book: number, movie: number}>()
   eachDayInRange(startDate, endDate).forEach(date => activityMap.set(format(date, {date: true}), {total: 0, book: 0, movie: 0}))
 
-  allActivities.filter(act => act.status == "done").forEach(activity => {
+  for (const activity of allActivities.filter(act => act.status == "done")) {
     const activityDate = dayjs(activity.date)
+    if (filter.category && activity.category != filter.category) continue
+    if (filter.status && activity.status != filter.status) continue
+
     if (activityDate.isBetween(startDate, endDate, "day", "[]")) {
       const dateString = format(activityDate, {date: true})
       const currentCount = activityMap.get(dateString)!
@@ -62,7 +65,7 @@ export const getActivityCalendarData = cache(async (startDate: Dayjs, endDate: D
       currentCount[activity.category] += 1
       activityMap.set(dateString, currentCount)
     }
-  })
+  }
 
   return Array.from(activityMap.entries()).map(([date, counts]) => {
     const level = Math.min(Math.ceil(counts.total), 3)
@@ -75,7 +78,6 @@ export const getActivityCalendarData = cache(async (startDate: Dayjs, endDate: D
     } as CalendarData
   })
 })
-
 export type CalendarActivity = CalendarData
 export type GetActivityCalendarDataResponse = ReturnType<typeof getActivityCalendarData>
 

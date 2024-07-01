@@ -31,8 +31,8 @@
   },
   "bookshelf": {
     "title": "我的书架",
-    "description": "与我一起在废墟中寻找鲜花。",
-    "calendar": "活动日历",
+    "description": "与我一起在废墟中寻找鲜花",
+    "calendar": "活动日历 ({{start}} - {{end}})",
     "category": {
       "book": "图书",
       "movie": "影视",

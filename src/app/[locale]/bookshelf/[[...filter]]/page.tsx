@@ -11,9 +11,9 @@ import {ActivityFilter, FilterOption} from "@/components/activity-filter"
 
 export default async function Page({params: {locale, filter}}: {params: {locale: SiteLocale, filter: string[]}}) {
   const appliedFilter = parseCatchAll(filter) as FilterOption
-  const calendarData = getActivityCalendarData(
-    appliedFilter.year ? dayjs().year(+appliedFilter.year).startOf("y") : dayjs().subtract(1, "y").startOf("w"),
-    appliedFilter.year ? dayjs().year(+appliedFilter.year).endOf("y") : dayjs())
+  const start = appliedFilter.year ? dayjs().year(+appliedFilter.year).startOf("y") : dayjs().subtract(1, "y").startOf("w")
+  const end = appliedFilter.year ? dayjs().year(+appliedFilter.year).endOf("y") : dayjs()
+  const calendarData = getActivityCalendarData(start, end, appliedFilter)
   const activityData = getActivities(1, appliedFilter)
   const filterData = getActivitiesFilter(appliedFilter)
   const cssIndexCounter = useCssIndexCounter()
@@ -21,7 +21,7 @@ export default async function Page({params: {locale, filter}}: {params: {locale:
 
   return (<>
     <Suspense fallback={<Icons.loading/>}>
-      <ActivityCalendar calendarData={calendarData}/>
+      <ActivityCalendar calendarData={calendarData} filter={{start, end, ...appliedFilter}}/>
     </Suspense>
     <div className="grid md:grid-cols-[2fr,1fr] items-start gap-10 min-h-screen">
       <div className="flex flex-col gap-5">

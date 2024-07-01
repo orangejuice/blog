@@ -7,8 +7,10 @@ import {format, useCssIndexCounter} from "@/lib/utils"
 import {useTheme} from "next-themes"
 import {useTranslation} from "react-i18next"
 import "@/components/activity-calendar.css"
+import {FilterOption} from "@/components/activity-filter"
+import {Dayjs} from "dayjs"
 
-export function ActivityCalendar({calendarData, style}: {calendarData: GetActivityCalendarDataResponse} & ComponentPropsWithoutRef<"section">) {
+export function ActivityCalendar({calendarData, style, filter}: {calendarData: GetActivityCalendarDataResponse, filter: FilterOption & {start: Dayjs, end: Dayjs}} & ComponentPropsWithoutRef<"section">) {
   const data = use(calendarData)
   const {resolvedTheme} = useTheme()
   const {t, i18n: {language: locale}} = useTranslation()
@@ -16,15 +18,22 @@ export function ActivityCalendar({calendarData, style}: {calendarData: GetActivi
 
   return (<>
     <section className="flex flex-col gap-2 min-h-52 animate-delay-in" style={cssIndexCounter()}>
-      <h5 className="text-center text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">{t("bookshelf.calendar")}</h5>
+      <h5 className="text-center text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">
+        {t("bookshelf.calendar", {
+          start: format(filter.start, {locale, localizeDate: true}),
+          end: format(filter.end, {locale, localizeDate: true})
+        })}
+      </h5>
       <RawActivityCalendar data={data} showWeekdayLabels hideTotalCount hideColorLegend maxLevel={3}
         colorScheme={resolvedTheme as "light" | "dark"} style={{marginLeft: "auto", marginRight: "auto"}}
-        renderBlock={(block, activity) => (
+        // @ts-ignore
+        renderBlock={(block, activity: CalendarActivity) => (
           <Tooltip delayDuration={300} disableHoverableContent>
-            <TooltipTrigger asChild><DrawRect block={block} activity={activity as unknown as CalendarActivity}/></TooltipTrigger>
+            <TooltipTrigger asChild><DrawRect block={block} activity={activity}/></TooltipTrigger>
             <TooltipContent>
               {format(activity.date, {locale, localizeDate: true})}
-              <p>{JSON.stringify(activity)}</p>
+              {!!activity.countBook && <p>{t("bookshelf.category.book")}: {activity.countBook}</p>}
+              {!!activity.countMovie && <p>{t("bookshelf.category.movie")}: {activity.countMovie}</p>}
               {/*<TooltipArrow className="fill-white"/>*/}
             </TooltipContent>
           </Tooltip>
