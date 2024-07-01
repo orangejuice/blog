@@ -47,7 +47,7 @@ export function Header() {
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false)
-  const {t} = useTranslation(undefined, {keyPrefix: "nav"})
+  const {t} = useTranslation()
   const [postFilter] = useLocalStorage<PostFilterOption | "">("post-filter", "")
   const [activityFilter] = useLocalStorage<ActivityFilterOption>("activity-filter", {})
   const mounted = useMounted()
