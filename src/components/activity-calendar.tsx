@@ -1,31 +1,35 @@
 "use client"
-import React, {cloneElement, forwardRef, use} from "react"
+import React, {cloneElement, ComponentPropsWithoutRef, forwardRef, use} from "react"
 import {BlockElement, default as RawActivityCalendar} from "react-activity-calendar"
 import {CalendarActivity, GetActivityCalendarDataResponse} from "@/lib/fetch-activity"
 import {Tooltip, TooltipContent, TooltipTrigger} from "@/components/ui/tooltip"
-import {format} from "@/lib/utils"
+import {format, useCssIndexCounter} from "@/lib/utils"
 import {useTheme} from "next-themes"
 import {useTranslation} from "react-i18next"
 import "@/components/activity-calendar.css"
 
-export function ActivityCalendar({calendarData}: {calendarData: GetActivityCalendarDataResponse}) {
+export function ActivityCalendar({calendarData, style}: {calendarData: GetActivityCalendarDataResponse} & ComponentPropsWithoutRef<"section">) {
   const data = use(calendarData)
   const {resolvedTheme} = useTheme()
   const {t, i18n: {language: locale}} = useTranslation()
+  const cssIndexCounter = useCssIndexCounter(style)
 
   return (<>
-    <RawActivityCalendar data={data} showWeekdayLabels hideTotalCount hideColorLegend maxLevel={3}
-      colorScheme={resolvedTheme as "light" | "dark"} style={{marginLeft: "auto", marginRight: "auto"}}
-      renderBlock={(block, activity) => (
-        <Tooltip delayDuration={300} disableHoverableContent>
-          <TooltipTrigger asChild><DrawRect block={block} activity={activity as unknown as CalendarActivity}/></TooltipTrigger>
-          <TooltipContent>
-            {format(activity.date, {locale, localizeDate: true})}
-            <p>{JSON.stringify(activity)}</p>
-            {/*<TooltipArrow className="fill-white"/>*/}
-          </TooltipContent>
-        </Tooltip>
-      )}/>
+    <section className="flex flex-col gap-2 min-h-52 animate-delay-in" style={cssIndexCounter()}>
+      <h5 className="text-center text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">{t("bookshelf.calendar")}</h5>
+      <RawActivityCalendar data={data} showWeekdayLabels hideTotalCount hideColorLegend maxLevel={3}
+        colorScheme={resolvedTheme as "light" | "dark"} style={{marginLeft: "auto", marginRight: "auto"}}
+        renderBlock={(block, activity) => (
+          <Tooltip delayDuration={300} disableHoverableContent>
+            <TooltipTrigger asChild><DrawRect block={block} activity={activity as unknown as CalendarActivity}/></TooltipTrigger>
+            <TooltipContent>
+              {format(activity.date, {locale, localizeDate: true})}
+              <p>{JSON.stringify(activity)}</p>
+              {/*<TooltipArrow className="fill-white"/>*/}
+            </TooltipContent>
+          </Tooltip>
+        )}/>
+    </section>
   </>)
 }
 

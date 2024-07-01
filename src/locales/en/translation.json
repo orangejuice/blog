@@ -30,6 +30,9 @@
     "view-more": "View more"
   },
   "bookshelf": {
+    "title": "My bookshelf",
+    "description": "Join me to seek flowers within ruins.",
+    "calendar": "Activity Calendar",
     "category": {
       "book": "Book",
       "movie": "Movie",

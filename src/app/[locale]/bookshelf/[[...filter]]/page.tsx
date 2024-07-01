@@ -10,18 +10,19 @@ import ActivityList from "@/components/activity-list"
 import {ActivityFilter, FilterOption} from "@/components/activity-filter"
 
 export default async function Page({params: {locale, filter}}: {params: {locale: SiteLocale, filter: string[]}}) {
-  const calendarData = getActivityCalendarData(dayjs().subtract(1, "y").startOf("w"), dayjs())
   const appliedFilter = parseCatchAll(filter) as FilterOption
+  const calendarData = getActivityCalendarData(
+    appliedFilter.year ? dayjs().year(+appliedFilter.year).startOf("y") : dayjs().subtract(1, "y").startOf("w"),
+    appliedFilter.year ? dayjs().year(+appliedFilter.year).endOf("y") : dayjs())
   const activityData = getActivities(1, appliedFilter)
   const filterData = getActivitiesFilter(appliedFilter)
   const cssIndexCounter = useCssIndexCounter()
   const {t} = await initTranslation(locale)
+
   return (<>
-    <div className="min-h-40">
-      <Suspense fallback={<Icons.loading/>}>
-        <ActivityCalendar calendarData={calendarData}/>
-      </Suspense>
-    </div>
+    <Suspense fallback={<Icons.loading/>}>
+      <ActivityCalendar calendarData={calendarData}/>
+    </Suspense>
     <div className="grid md:grid-cols-[2fr,1fr] items-start gap-10 min-h-screen">
       <div className="flex flex-col gap-5">
         <section>
