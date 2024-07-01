@@ -26,8 +26,8 @@ export function LocaleSwitch(props: ButtonProps) {
   return (<>
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" disabled={isPending} className={cn(
-          "h-fit w-fit gap-2 whitespace-nowrap rounded-lg px-3 py-1.5 transition-all", props.className,
+        <Button variant="noStyle" disabled={isPending} className={cn(
+          "h-fit w-fit gap-2 whitespace-nowrap rounded-lg px-3 py-1.5", props.className,
           "hover:bg-stone-200 active:bg-stone-300 dark:text-white dark:hover:bg-stone-700 dark:active:bg-stone-800"
         )}>
           <AnimatePresence mode="popLayout">

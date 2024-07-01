@@ -13,6 +13,8 @@ import * as React from "react"
 import {Icons} from "@/components/icons"
 import {Popover, PopoverContent, PopoverTrigger} from "@/components/ui/popover"
 import {useTranslation} from "react-i18next"
+import {ThemeToggle} from "@/components/theme-toggle"
+import {BackgroundCanvasToggle, BackgroundMusicToggle} from "@/components/background-toggle"
 
 export function Header() {
   const pathname = useSelectedLayoutSegment()
@@ -62,14 +64,18 @@ export function MobileNav() {
       <PopoverContent align="end" className="w-fit shadow-xl">
         <div className="flex flex-col gap-6 p-2">
           {Object.entries(menu).map(([key, path]) => (
-            <Link key={key} href={mounted ? ((path == menu.post && postFilter) ? `/${path}/${postFilter.join("/")}` :
-              path == menu.bookshelf ? `/${path}/${objectToUrlPart(activityFilter)}` : `/${path}`) : ""}
+            <Link key={key} onClick={() => setOpen(false)}
+              href={mounted ? ((path == menu.post && postFilter) ? `/${path}/${postFilter.join("/")}` :
+                path == menu.bookshelf ? `/${path}/${objectToUrlPart(activityFilter)}` : `/${path}`) : ""}
               className="font-medium">
               {t(`nav.${key}`)}
             </Link>
           ))}
           <span className="-my-2 h-px bg-stone-200 dark:bg-stone-600"></span>
-          <LocaleSwitch className="-mx-3"/>
+          <LocaleSwitch className="-mx-3 -my-1.5"/>
+          <ThemeToggle className="-mx-2 -my-1.5" small/>
+          <BackgroundMusicToggle className="-my-1.5" small/>
+          <BackgroundCanvasToggle className="-my-1.5" small/>
         </div>
       </PopoverContent>
     </Popover>

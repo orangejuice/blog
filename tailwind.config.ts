@@ -7,8 +7,10 @@ import plugin from "tailwindcss/plugin"
 const config: Config = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   darkMode: "class",
+  future: {hoverOnlyWhenSupported: true},
   theme: {
     extend: {
+      // transitionDuration: {DEFAULT: "700ms"},
       fontSize: {"xxs": ["0.625rem", {lineHeight: "1rem"}]},
       fontFamily: {
         sans: ["var(--font-sans)", ...defaults.fontFamily.sans],

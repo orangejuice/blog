@@ -10,8 +10,7 @@ export const Icons = {
   account: {signIn: cns(LogIn), signOut: cns(LogOut)},
   symbol: {
     hash: cns(Hash), slash: cns(Slash), dot: cns(Dot), building: cns(Pickaxe),
-    square: cns(Square), squareChecked: cns(({className, ...props}) =>
-      <SquareCheckBig className={cn("[&_path:first-child]:stroke-[3px]", className)} {...props}/>)
+    square: cns(Square), squareChecked: cns(SquareCheckBig, "[&_path:first-child]:stroke-[3px]")
   },
   filter: cns(Filter),
   post: {view: cns(Eye), reaction: cns(Smile), comment: cns(MessageCircleMore), goBack: cns(Undo2), reactComment: cns(MessageCircleHeart)},
@@ -26,7 +25,7 @@ export const Icons = {
     movieFlag: cns(() =>
       <BookmarkSimple weight="fill" style={{color: `var(--color-movie-3)`}} className="w-5 h-5 top-0 right-0"/>)
   },
-  theme: {light: cns(Sun, "w-5 h-5"), dark: cns(Moon, "w-5 h-5"), system: cns(SunMoon, "w-5 h-5")},
+  theme: {light: cns(Sun), dark: cns(Moon), system: cns(SunMoon)},
   grid: () => (<>
     <span className="grid grid-cols-1 grid-rows-2 gap-px">
       <span className="animate-fade mx-px h-1 w-1 rounded-full bg-current"></span>
@@ -34,7 +33,7 @@ export const Icons = {
     </span>
   </>),
   audio: cns(AudioLines, "w-5 h-5 [&_path]:animate-wave [&_path:nth-child(odd)]:animate-delay-300"),
-  background: cns((props)=> <SelectionBackground className="w-5 h-5" weight="duotone"/>)
+  background: cns((props) => <SelectionBackground weight="duotone" {...props}/>)
 }
 
 function cns<T extends ComponentType<any>>(Component: T, predefined?: string) {
