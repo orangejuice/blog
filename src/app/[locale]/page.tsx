@@ -2,7 +2,6 @@ import {getLatestActivitiesPost, getPosts} from "@/lib/fetch"
 import {useCssIndexCounter} from "@/lib/utils"
 import {site, SiteLocale} from "@/site"
 import {LangSelect} from "@/components/lang-select"
-import {Icons} from "@/components/icons"
 import React, {Suspense} from "react"
 import {LatestPostActivityList, PostMainList} from "@/components/post-list"
 import initTranslation from "@/lib/i18n"
@@ -31,7 +30,7 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
               {t("post.latest-sub")}
             </p>
           </section>
-          <Suspense fallback={<Icons.loading/>}>
+          <Suspense fallback={<></>}>
             <LangSelect style={cssIndexCounter()}/>
           </Suspense>
         </div>

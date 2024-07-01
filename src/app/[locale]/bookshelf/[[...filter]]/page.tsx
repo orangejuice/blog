@@ -2,13 +2,13 @@ import React, {Suspense} from "react"
 import dayjs from "dayjs"
 import {getActivities, getActivitiesFilter, getActivityCalendarData} from "@/lib/fetch-activity"
 import {ActivityCalendar} from "@/components/activity-calendar"
-import {Icons} from "@/components/icons"
 import {parseCatchAll, useCssIndexCounter} from "@/lib/utils"
 import initTranslation from "@/lib/i18n"
 import {SiteLocale} from "@/site"
 import ActivityInfiniteScrollList from "@/components/activity-list"
 import {ActivityFilter, FilterOption} from "@/components/activity-filter"
 import {Metadata} from "next"
+import {ActivitiesPlaceholder, CalendarPlaceholder} from "@/components/loading"
 
 export async function generateMetadata({params: {locale}}: {params: {locale: string}}): Promise<Metadata> {
   const {t} = await initTranslation(locale)
@@ -26,7 +26,7 @@ export default async function Page({params: {locale, filter}}: {params: {locale:
   const {t} = await initTranslation(locale)
 
   return (<>
-    <Suspense fallback={<Icons.loading/>}>
+    <Suspense fallback={<CalendarPlaceholder/>}>
       <ActivityCalendar calendarData={calendarData} filter={{start, end, ...appliedFilter}}/>
     </Suspense>
     <div className="grid md:grid-cols-[2fr,1fr] items-start gap-10 min-h-screen">
@@ -36,15 +36,13 @@ export default async function Page({params: {locale, filter}}: {params: {locale:
           <p className="text-stone-600 animate-delay-in" style={cssIndexCounter()}>
             {t("bookshelf.description")}
           </p>
-          <Suspense fallback={<Icons.loading/>}>
+          <Suspense fallback={<ActivitiesPlaceholder/>}>
             <ActivityInfiniteScrollList data={activityData} style={cssIndexCounter()}/>
           </Suspense>
         </section>
       </div>
       <aside className="flex flex-col gap-6 row-start-1 md:col-start-2">
-        <Suspense fallback={<Icons.loading/>}>
-          <ActivityFilter filter={appliedFilter} filterData={filterData} style={cssIndexCounter()}/>
-        </Suspense>
+        <ActivityFilter filter={appliedFilter} filterData={filterData} style={cssIndexCounter()}/>
       </aside>
     </div>
   </>)

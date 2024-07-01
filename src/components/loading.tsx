@@ -79,3 +79,27 @@ export function CalendarPlaceholder({className}: ComponentPropsWithoutRef<"div">
     </div>
   </>)
 }
+
+export const ActivitiesPlaceholder = () => {
+  return (
+    <ul className="space-y-6 py-8">
+      {[...Array(3)].map((_, index) => (
+        <li key={index} className="flex flex-col gap-2 rounded-lg animate-pulse">
+          <div className="flex flex-row items-start">
+            <div className="relative w-28 shrink-0 aspect-[0.7] rounded-lg bg-gray-200 dark:bg-gray-700"/>
+            <div className="flex flex-col grow px-4 md:px-6 w-full">
+              <div className="flex justify-between items-center">
+                <div className="h-6 bg-gray-200 dark:bg-gray-700 rounded w-3/4"/>
+                <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded w-1/4"/>
+              </div>
+              <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded w-1/2 mt-2"/>
+              <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded w-full mt-2"/>
+              <div className="h-16 bg-gray-200 dark:bg-gray-700 rounded w-full mt-2 hidden md:block"/>
+            </div>
+          </div>
+          <div className="h-16 bg-gray-200 dark:bg-gray-700 rounded w-full mt-2 md:hidden"/>
+        </li>
+      ))}
+    </ul>
+  );
+};
