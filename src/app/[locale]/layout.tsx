@@ -52,7 +52,7 @@ export default async function RootLayout({children, params: {locale}}:
 
   return (<>
     <html lang={resolved} suppressHydrationWarning>
-      <body className={cn("flex flex-col font-sans", fontSans.variable, fontMono.variable)}>
+      <body className={cn("flex flex-col font-sans no-transition", fontSans.variable, fontMono.variable)}>
         <Context locale={resolved!} resources={resources}>
           <div className="flex w-full flex-col max-w-5xl px-6 mx-auto xl:px-0 py-6 min-h-screen">
             <Header/>
