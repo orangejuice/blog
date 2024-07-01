@@ -27,8 +27,8 @@
 ## ✨ Features
 
 - `Next.js(App dir/ISR/SSR/CSR)`, `React`, `TailwindCSS`, `Mdx`, `shadcn/ui`, `framer motion`, `contentlayer`
-- Post-it wall available on `https://orangejuice.cc/guestbook`
-- Book/TV/Show tracking available on `https://orangejuice.cc/guestbook`
+- Post-it wall available on [Guessbook](https://orangejuice.cc/guestbook)
+- Book/TV/Show tracking available on [Bookshelf](https://orangejuice.cc/bookshelf)
 - Comment/Reaction system based on `Giscus` (work together with [On New Giscus Comment](https://github.com/orangejuice/on-new-giscus-comment))
 - Responsive UI, minimalist design language with a bit of move elements
 - Cached dynamic data and On-demand revalidation
