@@ -41,15 +41,6 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
         </Suspense>
       </main>
       <aside className="sticky top-8 flex flex-col gap-8">
-        <div className="relative border border-transparent border-dashed p-7 group rounded-2xl animate-delay-in" style={cssIndexCounter()}>
-          <div className="absolute inset-0 z-20 w-full h-full duration-300 ease-out group-hover:bg-white border border-dashed group-hover:dark:bg-neutral-950 rounded-2xl border-neutral-300 dark:border-neutral-600 group-hover:-translate-x-1 group-hover:-translate-y-1"/>
-          <div className="absolute inset-0 z-10 w-full h-full duration-300 ease-out border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-600 group-hover:translate-x-1 group-hover:translate-y-1"/>
-          <div className="relative z-30 duration-300 ease-out group-hover:-translate-x-1 group-hover:-translate-y-1">
-            <p className="flex items-center mb-3 gap-2">
-              <Icons.symbol.building/> building
-            </p>
-          </div>
-        </div>
         <section>
           <h5 className="text-slate-900 font-semibold mb-2 text-sm leading-6 dark:text-slate-100 animate-delay-in" style={cssIndexCounter()}>
             {t("bookshelf.latest")}
