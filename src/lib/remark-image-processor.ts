@@ -188,9 +188,7 @@ function updateMarkdownFile(filePath: string, updates: ImageUpdate[]) {
 }
 
 async function serveCoverImages(dir: string, publicDir: string) {
-  console.log(dir)
   for (const file of fs.readdirSync(dir)) {
-    console.log(file)
     if (!file.startsWith("cover.")) continue
 
     const originalPath = path.join(dir, file)
@@ -198,7 +196,6 @@ async function serveCoverImages(dir: string, publicDir: string) {
     const fileNameHash = generateFileHash(originalPath)
     const newFileName = `${fileNameHash}${fileExt}`
     const newPath = path.join(publicDir, newFileName)
-    console.log(newPath)
     if (!fs.existsSync(newPath)) {
       await sharp(originalPath).resize({width: 500}).jpeg({quality: 80}).toFile(newPath)
     }
