@@ -66,16 +66,16 @@ export function NotesPlaceholder() {
 export function CalendarPlaceholder({className}: ComponentPropsWithoutRef<"div">) {
   return (<>
     <div className={cn("w-full h-full flex flex-row items-center gap-2 justify-center animate-pulse", className)}>
-      {Array(5).fill(
-        <div className="flex w-10 h-10 flex-col bg-stone-100 border rounded-md border-stone-200 dark:bg-stone-900">
+      {Array.from({length: 5}, (_, index) => (
+        <div key={index} className="flex w-10 h-10 flex-col bg-stone-100 border rounded-md border-stone-200 dark:border-stone-800 dark:bg-stone-900">
         </div>
-      )}
+      ))}
     </div>
     <div className={cn("w-full h-full flex flex-row items-center gap-2 justify-center animate-pulse", className)}>
-      {Array(5).fill(
-        <div className="flex w-10 h-10 flex-col bg-stone-100 border rounded-md border-stone-200 dark:bg-stone-900">
+      {Array.from({length: 5}, (_, index) => (
+        <div key={index} className="flex w-10 h-10 flex-col bg-stone-100 border rounded-md border-stone-200 dark:border-stone-800 dark:bg-stone-900">
         </div>
-      )}
+      ))}
     </div>
   </>)
 }

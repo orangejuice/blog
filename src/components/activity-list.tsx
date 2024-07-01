@@ -54,7 +54,7 @@ const Activities = ({activities, style, className}: {activities: Activity[]} & C
     <ul className={cn("space-y-6 py-8 animate-delay-in", className)} style={cssIndexCounter()}>
       {activities.map((activity) => {
         const Icon = Icons.type[`${activity.category}`]
-        return (<>
+        return (
           <li key={activity._id} className="flex flex-col gap-2 rounded-lg">
             <div className="flex flex-row items-start">
               <div className="relative w-28 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
@@ -62,7 +62,7 @@ const Activities = ({activities, style, className}: {activities: Activity[]} & C
               </div>
               <div className="flex flex-col grow text-stone-600 text-sm px-4 md:px-6">
                 <div className="flex justify-between">
-                  <h2 className="text-xl font-bold text-stone-800">{activity.title}</h2>
+                  <h2 className="text-xl font-bold text-stone-800 dark:text-stone-200">{activity.title}</h2>
                   <div className="relative flex items-center gap-1 text-xs rounded-full font-medium text-stone-500">
                     <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
                   </div>
@@ -80,7 +80,7 @@ const Activities = ({activities, style, className}: {activities: Activity[]} & C
             </div>
             <MyComment activity={activity} className="block md:hidden"/>
           </li>
-        </>)
+        )
       })}
     </ul>
   </>)
@@ -90,15 +90,15 @@ const MyComment = ({activity, className}: {activity: Activity} & ComponentPropsW
   const {t, i18n: {language: locale}} = useTranslation()
 
   return (<>
-    <div className={cn("bg-stone-50 rounded-lg p-3 [&:has(.prose-sm:not(:empty))_>_div:first-child]:mb-2", className)}>
+    <div className={cn("bg-stone-50 dark:bg-stone-900 rounded-lg p-3 [&:has(.prose-sm:not(:empty))_>_div:first-child]:mb-2", className)}>
       <div className="flex items-center text-xs gap-2 text-stone-500">
         <span>{t(`bookshelf.${activity.category}.status.${activity.status}`, {date: format(activity.date, {locale, relativeWithDate: true})})}</span>
         {!!activity.rating && (<>
-          <span className="text-stone-200 select-none">|</span>
+          <span className="text-stone-200 dark:text-stone-800 select-none">|</span>
           <StarRating rating={activity.rating} max={5} description/>
         </>)}
       </div>
-      <MDX code={activity.body.code} className="prose-sm prose-p:mt-0 text-stone-800"/>
+      <MDX code={activity.body.code} className="prose-sm prose-p:mt-0 text-stone-800 dark:text-stone-400"/>
     </div>
   </>)
 }
@@ -155,7 +155,7 @@ export const LatestActivityList = ({data, style, className}: {data: Promise<Acti
                 <div className="flex items-center text-xs gap-2 line-clamp-1">
                   {t(`bookshelf.${activity.category}.status.${activity.status}`, {date: format(activity.date, {locale, relativeWithDate: true})})}
                   {!!activity.rating && (<>
-                    <span className="text-stone-200 select-none">|</span>
+                    <span className="text-stone-200 dark:text-stone-800 select-none">|</span>
                     <StarRating rating={activity.rating} max={5} description/>
                   </>)}
                 </div>
