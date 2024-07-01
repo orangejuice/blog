@@ -24,7 +24,7 @@ export function LocaleSwitch(props: ButtonProps) {
   }
 
   return (<>
-    <DropdownMenu modal={false}>
+    <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="noStyle" disabled={isPending} className={cn(
           "h-fit w-fit gap-2 whitespace-nowrap rounded-lg px-3 py-1.5", props.className,
