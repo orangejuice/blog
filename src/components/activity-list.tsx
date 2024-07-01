@@ -116,18 +116,18 @@ const StarRating = ({rating, max = 10, description = false, children}: {rating: 
     <div className="flex items-center select-none">
       {description && <span className="mr-2 font-medium">{t(`bookshelf.rating.${rating}`)}</span>}
       {[...Array(fullStars)].map((_, i) => (
-        <span key={`full-${i}`} className="text-yellow-500">★</span>
+        <span key={`full-${i}`} className="text-yellow-500 dark:text-yellow-600">★</span>
       ))}
       {hasHalfStar && (
         <span className="relative">
-          <span className="text-stone-300">★</span>
-          <span className="absolute top-0 left-0 text-yellow-500 overflow-hidden" style={{width: `${percentage}%`}}>
+          <span className="text-stone-300 dark:text-stone-600">★</span>
+          <span className="absolute top-0 left-0 text-yellow-500 dark:text-yellow-600 overflow-hidden" style={{width: `${percentage}%`}}>
             ★
           </span>
         </span>
       )}
       {[...Array(emptyStars)].map((_, i) => (
-        <span key={`empty-${i}`} className="text-stone-300">★</span>
+        <span key={`empty-${i}`} className="text-stone-300 dark:text-stone-600">★</span>
       ))}
       {children}
     </div>
@@ -162,14 +162,14 @@ export const LatestActivityList = ({data, style, className}: {data: Promise<Acti
               </div>
             </div>
             <span className="flex gap-1 text-sm">
-              <MDX code={activity.body.code} className="prose-sm line-clamp-5 prose-p:mt-0 text-stone-800"/>
+              <MDX code={activity.body.code} className="prose-sm line-clamp-5 prose-p:mt-0 text-stone-800 dark:text-stone-400"/>
             </span>
-            <div className="flex w-full bg-stone-50 rounded-lg p-3">
+            <div className="flex w-full rounded-lg p-3 group-hover:bg-stone-200 bg-stone-100 dark:bg-stone-800 dark:group-hover:bg-stone-700 dark:text-stone-400 transition-colors">
               <div className="relative w-14 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
                 <Image src={activity.cover} alt="cover"/>
               </div>
               <div className="flex flex-col grow text-stone-600 text-sm px-4">
-                <h2 className="font-bold text-stone-800">{activity.title}</h2>
+                <h2 className="font-bold text-stone-800 dark:text-stone-400">{activity.title}</h2>
                 <StarRating rating={activity.douban?.rating}>
                   {!!activity.douban?.rating ? <>
                     <span className="ml-1 font-medium text-xs text-yellow-600 font-mono tracking-[-0.15em]">
