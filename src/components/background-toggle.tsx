@@ -6,7 +6,7 @@ import {cn} from "@/lib/utils"
 import {useTranslation} from "react-i18next"
 import React, {ComponentPropsWithoutRef, useEffect, useRef, useState} from "react"
 import {AnimatePresence, motion} from "framer-motion"
-import {useMounted} from "@/lib/hooks"
+import {useMounted} from "@/lib/use-mounted"
 import {useLocalStorage} from "@/lib/use-local-storage"
 
 export function BackgroundMusicToggle({className, small, ...props}: ComponentPropsWithoutRef<"button"> & {small?: boolean}) {

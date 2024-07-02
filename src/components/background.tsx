@@ -7,7 +7,7 @@ import {a} from "@react-spring/three"
 import {AnimatePresence, motion} from "framer-motion"
 import {Group, Mesh, Vector3} from "three"
 import {useTheme} from "next-themes"
-import {useDeviceType, useMounted} from "@/lib/hooks"
+import {useMounted} from "@/lib/use-mounted"
 import {cn, randomInRange} from "@/lib/utils"
 import {useLocalStorage} from "@/lib/use-local-storage"
 
@@ -80,7 +80,6 @@ function AmbientRead() {
     spring: 0,
     config: {mass: 5, tension: 400, friction: 200, precision: 0.0001}
   })
-  const {isMobile} = useDeviceType()
 
   const rotation_x = spring.to([0, 1], [0, Math.PI])
   const rotation_y = spring.to([0, 1], [Math.PI * 0.1, Math.PI * 0.14])
@@ -92,8 +91,8 @@ function AmbientRead() {
   }, [threeLoaded])
 
   return (<>
-    <motion.div animate={{opacity: threeLoaded ? 1 : 0}} exit={{opacity: 0}} className={cn(
-      "w-[1200px] h-[700px] fixed top-0 left-[calc(100vw-1200px)] pointer-events-none -z-10", isMobile && "w-[700px] left-[calc(100vw-700px)] h-[500px]")}>
+    <motion.div animate={{opacity: threeLoaded ? 1 : 0}} exit={{opacity: 0}} className={cn("fixed top-0 pointer-events-none -z-10",
+      "w-[700px] left-[calc(100vw-700px)] h-[500px] md:w-[1200px] md:h-[700px] md:left-[calc(100vw-1200px)]")}>
       <Canvas shadows camera={{fov: 45}} style={{pointerEvents: "none"}} onCreated={() => {setThreeLoaded(true)}}>
         <CameraControls ref={cameraControlRef} makeDefault={true}/>
         <SoftShadows size={25} focus={0.53} samples={10}/>

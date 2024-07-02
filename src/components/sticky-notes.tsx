@@ -4,7 +4,7 @@ import {cn, format, getRandomLightHexColor, invertColor, randomInRange} from "@/
 import type {Comment, fetchGuestbookCommentsResponse} from "@/lib/fetch-github"
 import {useTranslation} from "react-i18next"
 import {useLocalStorage} from "@/lib/use-local-storage"
-import {useMounted} from "@/lib/hooks"
+import {useMounted} from "@/lib/use-mounted"
 import {motion, useMotionValue} from "framer-motion"
 import {useTheme} from "next-themes"
 

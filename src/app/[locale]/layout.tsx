@@ -54,12 +54,12 @@ export default async function RootLayout({children, params: {locale}}:
     <html lang={resolved} suppressHydrationWarning>
       <body className={cn("no-transition", fontSans.variable, fontMono.variable)}>
         <Context locale={resolved} resources={resources}>
-          <Background/>
-          <div className="flex w-full flex-col max-w-5xl mix-blend-overlay p-6 mx-auto xl:px-0 min-h-screen">
+          <div className="flex w-full flex-col max-w-5xl p-6 mx-auto mix-blend-overlay xl:px-0 min-h-screen">
             <Header/>
             {children}
             <Footer/>
           </div>
+          <Background/>
         </Context>
       </body>
     </html>

@@ -1,5 +1,5 @@
 import {useCallback, useEffect, useState} from "react"
-import {useMounted} from "@/lib/hooks"
+import {useMounted} from "@/lib/use-mounted"
 
 interface WindowDimensions {
   width: number;

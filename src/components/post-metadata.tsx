@@ -5,7 +5,7 @@ import {Icons} from "@/components/icons"
 import {AnimatePresence, motion} from "framer-motion"
 import React, {useEffect} from "react"
 import {useLocalStorage} from "@/lib/use-local-storage"
-import {useMounted} from "@/lib/hooks"
+import {useMounted} from "@/lib/use-mounted"
 import {incrementViews} from "@/lib/actions"
 
 export const InteractionBar = ({slug}: {slug: string}) => {

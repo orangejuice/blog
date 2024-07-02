@@ -8,7 +8,7 @@ import type {GetLatestActivitiesResponse, GetPostsResponse, PostWithActivity, Po
 import Image from "next/image"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {useTranslation} from "react-i18next"
-import {useMounted} from "@/lib/hooks"
+import {useMounted} from "@/lib/use-mounted"
 
 
 function PostCard({post}: {post: PostWithMetadata}) {

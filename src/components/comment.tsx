@@ -2,7 +2,7 @@
 import React, {useEffect} from "react"
 import GiscusComponent from "@giscus/react"
 import {useTheme} from "next-themes"
-import {giscusConfig, menu} from "@/site"
+import {giscusConfig} from "@/site"
 import {useTranslation} from "react-i18next"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {revalidator} from "@/lib/actions"
@@ -22,7 +22,7 @@ export const Comment = ({slug}: {slug: string}) => {
       const discussion: IDiscussionData = event.data.giscus.discussion
       if (!discussion) return
 
-      if (!(slug == menu.guestbook && !interactions.hasOwnProperty(slug)) && (
+      if (interactions.hasOwnProperty(slug) && interactions[slug] && (
         (discussion.totalCommentCount != 0 && discussion.totalCommentCount != interactions[slug].discussion.comment)
         || (discussion.reactionCount != 0 && discussion.reactionCount != interactions[slug].discussion.reaction))) {
         void revalidator()
@@ -38,7 +38,7 @@ export const Comment = ({slug}: {slug: string}) => {
 
     window.addEventListener("message", handleMessage)
     return () => window.removeEventListener("message", handleMessage)
-  }, [setInteractions, slug])
+  }, [interactions])
 
   return (<>
     <GiscusComponent id={"comments"} {...props} theme={commentsTheme} lang={{

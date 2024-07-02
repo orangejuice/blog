@@ -4,7 +4,7 @@ import {cn} from "@/lib/utils"
 import {Icons} from "@/components/icons"
 import React, {ComponentPropsWithoutRef} from "react"
 import {useTranslation} from "react-i18next"
-import {useMounted} from "@/lib/hooks"
+import {useMounted} from "@/lib/use-mounted"
 import {Button} from "@/components/ui/button"
 
 export function LangSelect(props: ComponentPropsWithoutRef<"button">) {

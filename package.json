@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@giscus/react": "^3.0.0",
+    "@headlessui/react": "^2.1.1",
     "@octokit/auth-app": "^7.1.0",
     "@octokit/graphql": "^8.1.1",
     "@phosphor-icons/react": "^2.1.7",
