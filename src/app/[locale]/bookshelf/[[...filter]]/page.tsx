@@ -27,7 +27,7 @@ export default async function Page({params: {locale, filter}}: {params: {locale:
 
   return (<>
     <Suspense fallback={<CalendarPlaceholder/>}>
-      <ActivityCalendar calendarData={calendarData} filter={{start, end, ...appliedFilter}}/>
+      <ActivityCalendar calendarData={calendarData} filter={{start: start.toISOString(), end: end.toISOString(), ...appliedFilter}}/>
     </Suspense>
     <div className="grid md:grid-cols-[2fr,1fr] items-start gap-10 min-h-screen">
       <div className="flex flex-col gap-5">
@@ -42,7 +42,7 @@ export default async function Page({params: {locale, filter}}: {params: {locale:
         </section>
       </div>
       <aside className="flex flex-col gap-6 row-start-1 md:col-start-2">
-        <ActivityFilter filter={appliedFilter} filterData={filterData} style={cssIndexCounter({mobile:1})}/>
+        <ActivityFilter filter={appliedFilter} filterData={filterData} style={cssIndexCounter({mobile: 1})}/>
       </aside>
     </div>
   </>)
