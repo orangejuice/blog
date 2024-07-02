@@ -19,7 +19,7 @@ export function PostFilter({locales, tags, filter: appliedFilter, style}: {local
   return (<>
     <section className="animate-delay-in" style={cssIndexCounter()}>
       <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">{t("post.filter.languages")}</h5>
-      <div className="flex flex-wrap text-stone-600">
+      <div className="flex flex-wrap text-stone-600 dark:text-stone-400">
         {Object.entries(locales).map(([lang, num], index) => (
           <Link key={index} href={`/all/${lang}`}
             className={cn("flex items-center group m-2 text-sm font-medium underline-fade",
@@ -31,7 +31,7 @@ export function PostFilter({locales, tags, filter: appliedFilter, style}: {local
     </section>
     <section className="animate-delay-in" style={cssIndexCounter()}>
       <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">{t("post.filter.tags")}</h5>
-      <div className="flex flex-wrap text-stone-600">
+      <div className="flex flex-wrap text-stone-600 dark:text-stone-400">
         {Object.entries(tags).map(([tag, num], index) => (
           <Link key={index} href={`/all/${appliedFilter?.[0] ?? locale}/${tag}`}
             className={cn("flex items-center group m-2 text-sm font-medium underline-fade",

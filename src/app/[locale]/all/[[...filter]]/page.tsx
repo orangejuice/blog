@@ -24,7 +24,7 @@ export default async function AllPost({params: {locale, filter}}: {params: {loca
       <div className="flex flex-col gap-5">
         <section>
           <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter()}>{t("post.all")}</h1>
-          <p className="text-stone-600 animate-delay-in" style={cssIndexCounter()}>
+          <p className="text-stone-600 dark:text-stone-400 animate-delay-in" style={cssIndexCounter()}>
             {t("post.all-sub", {year: new Date().getFullYear()})}
           </p>
         </section>

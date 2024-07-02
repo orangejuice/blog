@@ -96,16 +96,16 @@ function PostItemCompact({post}: {post: PostWithMetadata}) {
 
   return (<>
     <li className="py-2.5 group flex items-baseline flex-col md:flex-row gap-1 md:gap-9">
-      <div className="flex w-full md:w-fit items-center justify-between">
+      <div className="flex w-full md:w-fit text-stone-600 dark:text-stone-400 items-center justify-between">
         <time className={cn("md:w-28 text-secondary text-sm shrink-0")}>{format(post.date, {locale, localizeDate: true})}</time>
-        <div className="gap-4 text-xs w-fit text-stone-600 flex md:hidden">
+        <div className="gap-4 text-xs w-fit flex md:hidden">
           <span className="flex items-center gap-1"><Icons.post.view/>{shortenNumber(post.view)}</span>
           <span className="flex items-center gap-1"><Icons.post.reactComment/>{shortenNumber(post.discussion.reactions.totalCount + post.discussion.comments.totalCount)}</span>
         </div>
       </div>
       <div className="flex w-full justify-between gap-4">
         <Link href={`/${post.slug}`} className="font-medium w-full md:w-fit line-clamp-2 md:line-clamp-1 underline-fade">{post.title}</Link>
-        <div className="gap-4 text-xs text-stone-600 hidden md:flex">
+        <div className="gap-4 text-xs text-stone-600 dark:text-stone-400 hidden md:flex">
           <span className="flex items-center gap-1 cursor-default"><Icons.post.view/>{shortenNumber(post.view)}</span>
           <span className="flex items-center gap-1 cursor-default"><Icons.post.reactComment/>{shortenNumber(post.discussion.reactions.totalCount + post.discussion.comments.totalCount)}</span>
         </div>

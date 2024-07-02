@@ -33,7 +33,7 @@ export default async function Page({params: {locale, filter}}: {params: {locale:
       <div className="flex flex-col gap-5">
         <section>
           <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter()}>{t("bookshelf.title")}</h1>
-          <p className="text-stone-600 animate-delay-in" style={cssIndexCounter()}>
+          <p className="text-stone-600 dark:text-stone-400 animate-delay-in" style={cssIndexCounter()}>
             {t("bookshelf.description")}
           </p>
           <Suspense fallback={<ActivitiesPlaceholder/>}>

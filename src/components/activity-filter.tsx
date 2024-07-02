@@ -23,7 +23,7 @@ export function ActivityFilter({filter: applied, style, filterData}: {filter: Fi
   return (<>
     <section className="animate-delay-in" style={cssIndexCounter()}>
       <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">{t("bookshelf.filter.year")}</h5>
-      <div className="flex flex-wrap text-stone-600">
+      <div className="flex flex-wrap text-stone-600 dark:text-stone-400">
         {Object.entries(filter.all.year).map(([year, num], index) => (
           <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({year})}`}
             className={cn("flex items-center gap-1 group m-2 text-sm font-medium underline-fade",
@@ -36,7 +36,7 @@ export function ActivityFilter({filter: applied, style, filterData}: {filter: Fi
     </section>
     <section className="animate-delay-in" style={cssIndexCounter()}>
       <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">{t("bookshelf.filter.category")}</h5>
-      <div className="flex flex-wrap text-stone-600">
+      <div className="flex flex-wrap text-stone-600 dark:text-stone-400">
         {Object.entries(filter).map(([category, {total}], index) => (
           <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({year: applied.year, category})}`}
             className={cn("flex items-center gap-1 group m-2 text-sm font-medium underline-fade",
@@ -49,7 +49,7 @@ export function ActivityFilter({filter: applied, style, filterData}: {filter: Fi
     </section>
     <section className="animate-delay-in" style={cssIndexCounter()}>
       <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">{t("bookshelf.filter.status")}</h5>
-      <div className="flex flex-wrap text-stone-600">
+      <div className="flex flex-wrap text-stone-600 dark:text-stone-400">
         {Object.entries(filter[selectedCate].status).map(([status, num], index) => (
           <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({...applied, status})}`}
             className={cn("flex items-center gap-1 group m-2 text-sm font-medium underline-fade",
