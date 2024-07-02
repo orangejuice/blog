@@ -11,8 +11,7 @@ import {SpeedInsights} from "@vercel/speed-insights/next"
 import {Analytics} from "@vercel/analytics/next"
 import Script from "next/script"
 
-
-export function Context({children, locale, resources}: {children: ReactNode; locale: string; resources: Resource}) {
+export function Context({children, locale, resources}: {children: ReactNode; locale?: string; resources: Resource}) {
   const i18n = createInstance()
   void initTranslation(locale, i18n, resources)
 
@@ -22,7 +21,7 @@ export function Context({children, locale, resources}: {children: ReactNode; loc
 
   return (<>
     <I18nextProvider i18n={i18n}>
-      <ThemeProvider attribute="class" enableSystem={true} defaultTheme="system">
+      <ThemeProvider disableTransitionOnChange attribute="class" enableSystem={true} defaultTheme="system">
         <TooltipProvider>
           {children}
           <ProgressBar height="2px" color="#888" options={{showSpinner: false}} shallowRouting/>

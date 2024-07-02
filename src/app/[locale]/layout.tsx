@@ -52,9 +52,9 @@ export default async function RootLayout({children, params: {locale}}:
 
   return (<>
     <html lang={resolved} suppressHydrationWarning>
-      <body className={cn("flex flex-col font-sans no-transition", fontSans.variable, fontMono.variable)}>
-        <Context locale={resolved!} resources={resources}>
-          <div className="flex w-full flex-col max-w-5xl px-6 mx-auto xl:px-0 py-6 min-h-screen">
+      <body className={cn("no-transition", fontSans.variable, fontMono.variable)}>
+        <Context locale={resolved} resources={resources}>
+          <div className="flex w-full flex-col max-w-5xl mix-blend-overlay p-6 mx-auto xl:px-0 min-h-screen">
             <Header/>
             {children}
             <Footer/>

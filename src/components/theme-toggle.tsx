@@ -19,8 +19,8 @@ export function ThemeToggle({className, small, ...props}: ComponentPropsWithoutR
     <Button variant="noStyle" className={cn("group h-fit w-fit gap-2 px-2 py-1.5 -mx-2",
       "hover:bg-stone-200 active:bg-stone-300 dark:hover:bg-stone-700 dark:active:bg-stone-800", className)}
       onClick={() => setTheme(theme === "light" ? "dark" : theme === "dark" ? "system" : "light")} {...props}>
-      {theme === "dark" && <Icons.theme.dark/>}
-      {theme === "light" && <Icons.theme.light/>}
+      {theme === "dark" && <Icons.theme.dark className={small ? "w-4 h-4" : "w-5 h-5"}/>}
+      {theme === "light" && <Icons.theme.light className={small ? "w-4 h-4" : "w-5 h-5"}/>}
       {theme === "system" && (<>
         <Tooltip delayDuration={0}>
           <TooltipTrigger asChild>

@@ -12,7 +12,7 @@ const localeResources = {
   en: {lang: enLang, translation: enTrans}, zh: {lang: zhLang, translation: zhTrans}
 }
 
-export default async function initTranslation(locale: string, i18nInstance?: i18n, resources?: Resource) {
+export default async function initTranslation(locale?: string, i18nInstance?: i18n, resources?: Resource) {
   i18nInstance ??= createInstance()
   i18nInstance.use(initReactI18next)
 

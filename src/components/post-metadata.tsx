@@ -31,7 +31,7 @@ export const InteractionBar = ({slug}: {slug: string}) => {
         {mounted && interactions[slug]?.view != undefined &&
           <motion.span key={interactions[slug].view} animate={{opacity: 1}} exit={{opacity: 0}}>{interactions[slug].view}</motion.span>}
         {(!mounted || interactions[slug]?.view == undefined) &&
-          <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.grid/></motion.span>}
+          <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.loadingGrid/></motion.span>}
       </AnimatePresence>
     </span>
     <Link href={"#comments"} className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-sm -mx-1",
@@ -41,7 +41,7 @@ export const InteractionBar = ({slug}: {slug: string}) => {
         {mounted && interactions[slug]?.discussion != undefined &&
           <motion.span key={interactions[slug].discussion.reaction} animate={{opacity: 1}} exit={{opacity: 0}}>{interactions[slug].discussion.reaction}</motion.span>}
         {(!mounted || interactions[slug]?.discussion == undefined) &&
-          <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.grid/></motion.span>}
+          <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.loadingGrid/></motion.span>}
       </AnimatePresence>
     </Link>
     <Link href={"#comments"} className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-sm -mx-1",
@@ -51,7 +51,7 @@ export const InteractionBar = ({slug}: {slug: string}) => {
         {mounted && interactions[slug]?.discussion != undefined &&
           <motion.span key={interactions[slug].discussion.comment} animate={{opacity: 1}} exit={{opacity: 0}}>{interactions[slug].discussion.comment}</motion.span>}
         {(!mounted || interactions[slug]?.discussion == undefined) &&
-          <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.grid/></motion.span>}
+          <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.loadingGrid/></motion.span>}
       </AnimatePresence>
     </Link>
   </>)
