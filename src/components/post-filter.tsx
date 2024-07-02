@@ -1,29 +1,32 @@
 "use client"
 import {GetLocalesResponse, GetTagsResponse} from "@/lib/fetch"
-import {cn, useCssIndexCounter} from "@/lib/utils"
+import {cn, objectToUrlPart, useCssIndexCounter} from "@/lib/utils"
 import {Icons} from "@/components/icons"
-import React, {useEffect} from "react"
+import React, {use, useEffect} from "react"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {useTranslation} from "react-i18next"
 import Link from "next/link"
-import {SiteLocale} from "@/site"
+import {menu, SiteLocale} from "@/site"
 
-export type FilterOption = [SiteLocale | "all-lang", string]
 
-export function PostFilter({locales, tags, filter: appliedFilter, style}: {locales: GetLocalesResponse, tags: GetTagsResponse, filter: FilterOption, style?: React.CSSProperties}) {
+export type FilterOption = {lang?: SiteLocale | "all-lang", tag?: string}
+
+export function PostFilter({locales: localesData, tags: tagsData, filter: applied, style}: {locales: GetLocalesResponse, tags: GetTagsResponse, filter: FilterOption, style?: React.CSSProperties}) {
+  const locales = use(localesData)
+  const tags = use(tagsData)
   const cssIndexCounter = useCssIndexCounter(style)
   const {t, i18n: {language: locale}} = useTranslation("lang")
-  const [, setFilter] = useLocalStorage<FilterOption | "">("post-filter", appliedFilter ?? "")
-  useEffect(() => {appliedFilter && setFilter(appliedFilter) }, [appliedFilter, setFilter])
+  const [, setFilter] = useLocalStorage<FilterOption>("post-filter", applied)
+  useEffect(() => {applied && setFilter(applied)}, [applied, setFilter])
 
   return (<>
     <section className="animate-delay-in" style={cssIndexCounter()}>
       <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">{t("post.filter.languages")}</h5>
       <div className="flex flex-wrap text-stone-600 dark:text-stone-400">
         {Object.entries(locales).map(([lang, num], index) => (
-          <Link key={index} href={`/all/${lang}`}
+          <Link key={index} href={`/${menu.post}/${objectToUrlPart({lang})}`}
             className={cn("flex items-center group m-2 text-sm font-medium underline-fade",
-              lang == (appliedFilter?.[0] ?? locale) && "underline-fade-selected font-bold")}>
+              lang == applied.lang && "underline-fade-selected font-bold")}>
             <Icons.symbol.hash/>{t(lang)} ({num})
           </Link>
         ))}
@@ -33,9 +36,9 @@ export function PostFilter({locales, tags, filter: appliedFilter, style}: {local
       <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">{t("post.filter.tags")}</h5>
       <div className="flex flex-wrap text-stone-600 dark:text-stone-400">
         {Object.entries(tags).map(([tag, num], index) => (
-          <Link key={index} href={`/all/${appliedFilter?.[0] ?? locale}/${tag}`}
+          <Link key={index} href={`/${menu.post}/${objectToUrlPart({...applied, tag})}`}
             className={cn("flex items-center group m-2 text-sm font-medium underline-fade",
-              tag == (appliedFilter?.[1] ? decodeURI(appliedFilter?.[1]) : undefined) && "underline-fade-selected font-bold")}>
+              tag == applied.tag && "underline-fade-selected font-bold")}>
             <Icons.symbol.hash/>{tag} ({num})
           </Link>
         ))}

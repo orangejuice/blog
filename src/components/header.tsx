@@ -20,7 +20,7 @@ import {AnimatePresence, motion} from "framer-motion"
 export function Header() {
   const pathname = useSelectedLayoutSegment()
   const mounted = useMounted()
-  const [postFilter] = useLocalStorage<PostFilterOption | "">("post-filter", "")
+  const [postFilter] = useLocalStorage<PostFilterOption>("post-filter", {})
   const [activityFilter] = useLocalStorage<ActivityFilterOption>("activity-filter", {})
   const {t} = useTranslation()
 
@@ -30,7 +30,7 @@ export function Header() {
       <div className="flex items-center gap-2">
         <nav className="hidden md:flex items-center gap-4 text-sm font-medium">
           {Object.entries(menu).map(([key, path]) => (
-            <Link key={key} href={mounted ? ((path == menu.post && postFilter) ? `/${path}/${postFilter.join("/")}` :
+            <Link key={key} href={mounted ? ((path == menu.post && postFilter) ? `/${path}/${objectToUrlPart(postFilter)}` :
               path == menu.bookshelf ? `/${path}/${objectToUrlPart(activityFilter)}` : `/${path}`) : ""}
               className={cn(buttonVariants({variant: "ghost", size: "icon"}),
                 "h-fit w-fit gap-2 whitespace-nowrap rounded-lg px-3 py-1.5 transition-all",
@@ -51,7 +51,7 @@ export function Header() {
 export function MobileNav() {
   const [open, setOpen] = React.useState(false)
   const {t} = useTranslation()
-  const [postFilter] = useLocalStorage<PostFilterOption | "">("post-filter", "")
+  const [postFilter] = useLocalStorage<PostFilterOption>("post-filter", {})
   const [activityFilter] = useLocalStorage<ActivityFilterOption>("activity-filter", {})
   const mounted = useMounted()
 
@@ -69,10 +69,9 @@ export function MobileNav() {
       <DropdownMenuContent align="end" className="w-fit shadow-xl p-4 min-w-40">
         <div className="flex flex-col gap-6 p-2">
           {Object.entries(menu).map(([key, path]) => (
-            <Link key={key} onClick={() => setOpen(false)}
-              href={mounted ? ((path == menu.post && postFilter) ? `/${path}/${postFilter.join("/")}` :
-                path == menu.bookshelf ? `/${path}/${objectToUrlPart(activityFilter)}` : `/${path}`) : ""}
-              className="font-medium">
+            <Link key={key} href={mounted ? ((path == menu.post && postFilter) ? `/${path}/${objectToUrlPart(postFilter)}` :
+              path == menu.bookshelf ? `/${path}/${objectToUrlPart(activityFilter)}` : `/${path}`) : ""}
+              onClick={() => setOpen(false)} className="font-medium">
               {t(`nav.${key}`)}
             </Link>
           ))}

@@ -1,18 +1,20 @@
+"use server"
 import {allPosts, Post} from "contentlayer/generated"
 import {giscusConfig, site, SiteLocale} from "@/site"
 import {Activity, Discussion, fetchDiscussions, fetchLatestActivities} from "@/lib/fetch-github"
 import {getPostMetadata, GetPostMetadataResponse} from "@/lib/fetch-db"
+import {unstable_cache as cache} from "next/cache"
 
 /**
  * The function to get the list of post
  * @param locale user's language preference
- * @param filterLang filtering results by including the specified lang only
- * @param filterTag filtering results by a tag
+ * @param lang filtering results by including the specified lang only
+ * @param tag filtering results by a tag
  * @param count how many posts needed
  * @param getDiscussion do we want to fetch discussion data for this post list
  */
-export const getPosts = async ({locale, filterLang, filterTag, count, getDiscussion = true}: Options) => {
-  filterLang ??= locale
+export const getPosts = cache(async ({locale, lang, tag, count, getDiscussion = true}: Options) => {
+  lang ??= locale
 
   const slugLangPost: {[slug: string]: {[locale: string]: Post}} = {}
   allPosts.forEach((cur) => {
@@ -20,15 +22,15 @@ export const getPosts = async ({locale, filterLang, filterTag, count, getDiscuss
     else slugLangPost[cur.slug][cur.locale] = cur
   })
 
-  const tagCheck = (post: Post) => filterTag ? post.tags.includes(filterTag) : true
+  const tagCheck = (post: Post) => tag ? post.tags.includes(tag) : true
 
   let postList: Post[] = []
   loop: for (const langPost of Object.values(slugLangPost)) {
-    if (langPost[filterLang]) {
-      tagCheck(langPost[filterLang]) && postList.push(langPost[filterLang])
+    if (langPost[lang]) {
+      tagCheck(langPost[lang]) && postList.push(langPost[lang])
       continue
     }
-    if (filterLang !== "all-lang") continue
+    if (lang !== "all-lang") continue
     for (const siteLocale of site.locales) {
       if (!langPost[siteLocale] || !tagCheck(langPost[siteLocale])) continue
       if (langPost[locale]) { postList.push(langPost[locale]) } else postList.push(langPost[siteLocale])
@@ -58,12 +60,12 @@ export const getPosts = async ({locale, filterLang, filterTag, count, getDiscuss
 
     return (post as unknown as PostWithMetadata)
   })
-}
+})
 export type PostWithDiscussion = Post & {discussion: Discussion}
 export type PostWithMetadata = Post & {discussion: Discussion} & {view: number}
 export type GetPostsResponse = ReturnType<typeof getPosts>
 
-export const getLatestActivitiesPost = async ({locale, count}: {locale: SiteLocale, count: number}) => {
+export const getLatestActivitiesPost = cache(async ({locale, count}: {locale: SiteLocale, count: number}) => {
   const latestActivities = await fetchLatestActivities({
     repo: giscusConfig.repo,
     category: giscusConfig.category!,
@@ -71,7 +73,7 @@ export const getLatestActivitiesPost = async ({locale, count}: {locale: SiteLoca
   })
   const postsWithActivity: PostWithActivity[] = []
 
-  const posts = (await getPosts({locale, filterLang: "all-lang", getDiscussion: false}))
+  const posts = (await getPosts({locale, getDiscussion: false}))
   const slugPosts: {[slug: string]: PostWithDiscussion} = {}
   posts.forEach(post => slugPosts[post.slug] = post)
 
@@ -81,13 +83,13 @@ export const getLatestActivitiesPost = async ({locale, count}: {locale: SiteLoca
     }
   })
   return postsWithActivity
-}
+})
 export type PostWithActivity = Post & {discussion: Activity}
 export type GetLatestActivitiesResponse = ReturnType<typeof getLatestActivitiesPost>
 
-export const getTags = ({filterLang}: Options) => {
+export const getTags = cache(async ({lang}: Options) => {
   const tagCount: {[tag: string]: number} = {}
-  if (filterLang == "all-lang") {
+  if (lang == "all-lang") {
     const slugTags: {[slug: string]: Set<string>} = {}
     allPosts.forEach(post => {
       if (slugTags.hasOwnProperty(post.slug)) post.tags.forEach(tag => slugTags[post.slug].add(tag))
@@ -97,14 +99,14 @@ export const getTags = ({filterLang}: Options) => {
       tagCount[tag] ? tagCount[tag]++ : tagCount[tag] = 1
     )
   } else {
-    allPosts.filter(post => post.locale == filterLang).flatMap(post => post.tags).forEach(tag =>
+    allPosts.filter(post => post.locale == lang).flatMap(post => post.tags).forEach(tag =>
       tagCount[tag] ? tagCount[tag]++ : tagCount[tag] = 1)
   }
   return Object.fromEntries(Object.entries(tagCount).sort(([, n1], [, n2]) => n2 - n1))
-}
+})
 export type GetTagsResponse = ReturnType<typeof getTags>
 
-export const getLocales = () => {
+export const getLocales = cache(async () => {
   const group: {[locale: string]: Set<string>} = {"all-lang": new Set()}
   allPosts.forEach(post => {
     if (!group[post.locale]) group[post.locale] = new Set()
@@ -118,13 +120,13 @@ export const getLocales = () => {
       return counter
     }, {})
   return Object.fromEntries(Object.entries(localeCount).sort(([, n1], [, n2]) => n2 - n1))
-}
+})
 export type GetLocalesResponse = ReturnType<typeof getLocales>
 
 type Options = {
   locale: SiteLocale
-  filterLang?: SiteLocale | "all-lang"
-  filterTag?: string
+  lang?: SiteLocale | "all-lang"
+  tag?: string
   count?: number
   getDiscussion?: boolean
 }

@@ -46,7 +46,7 @@ interface DiscussionNode {
   }
 }
 
-export const fetchDiscussions = cache(async ({repo, category, titles}: {repo: string, category: string, titles: string[]}): Promise<{[slug: string]: DiscussionNode}> => {
+export const fetchDiscussions = async ({repo, category, titles}: {repo: string, category: string, titles: string[]}): Promise<{[slug: string]: DiscussionNode}> => {
   console.log(format(new Date(), {datetime: true}), "[github]fetchDiscussions")
   const buildQueryWithAliases = () =>
     titles.map((title, index) => {
@@ -86,7 +86,7 @@ export const fetchDiscussions = cache(async ({repo, category, titles}: {repo: st
     console.error("Error fetching discussion details:", error)
     throw error
   }
-})
+}
 
 interface ActivityNode {
   number: number;
@@ -116,7 +116,7 @@ interface ActivityNode {
   };
 }
 
-export const fetchLatestActivities = cache(async ({repo, category, count}: {repo: string, category: string, count: number}) => {
+export const fetchLatestActivities = async ({repo, category, count}: {repo: string, category: string, count: number}) => {
   console.log(format(new Date(), {datetime: true}), "[github]fetchLatestActivities")
   const query = `
     query {
@@ -166,7 +166,7 @@ export const fetchLatestActivities = cache(async ({repo, category, count}: {repo
     console.error("Error fetching latest discussions:", error)
     throw error
   }
-})
+}
 
 export type Discussion = PartialBy<DiscussionNode, "number" | "title">
 export type Activity = ActivityNode

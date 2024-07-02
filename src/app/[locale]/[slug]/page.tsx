@@ -16,7 +16,7 @@ import {InteractionBar} from "@/components/post-metadata"
 export async function generateMetadata({params}: {params: {slug: string, locale: SiteLocale}}): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug)
 
-  const post = (await getPosts({locale: params.locale, filterLang: "all-lang", getDiscussion: false})).find((post) => post.slug === slug)
+  const post = (await getPosts({locale: params.locale, lang: "all-lang", getDiscussion: false})).find((post) => post.slug === slug)
   if (!post) return
 
   return {
@@ -41,14 +41,14 @@ export async function generateMetadata({params}: {params: {slug: string, locale:
 }
 
 export const generateStaticParams = async () => {
-  const posts = await getPosts({locale: site.locales[0], filterLang: "all-lang", getDiscussion: false})
+  const posts = await getPosts({locale: site.locales[0], lang: "all-lang", getDiscussion: false})
   return posts.map(post => ({slug: post.slug}))
 }
 
 export default async function Page({params}: {params: {slug: string, locale: SiteLocale}}) {
   const slug = decodeURI(params.slug)
   const cssIndexCounter = useCssIndexCounter()
-  const posts = await getPosts({locale: params.locale, filterLang: "all-lang", getDiscussion: false})
+  const posts = await getPosts({locale: params.locale, lang: "all-lang", getDiscussion: false})
   const post = posts.find((post) => post.slug === slug)
   if (!post) return notFound()
 

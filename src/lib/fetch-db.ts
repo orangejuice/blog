@@ -1,3 +1,4 @@
+"use server"
 import axios from "axios"
 
 export const getPostMetadata = async (slugs: string[]) => {

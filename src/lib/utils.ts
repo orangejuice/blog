@@ -111,8 +111,8 @@ export function parseCatchAll(filter: string[] | undefined): Record<string, stri
   if (!filter || filter.length === 0) return {}
   const result: Record<string, string> = {}
   for (let i = 0; i < filter.length; i += 2) {
-    const key = filter[i]
-    const value = filter[i + 1]
+    const key = decodeURIComponent(filter[i])
+    const value = decodeURIComponent(filter[i + 1])
     if (key && value) result[key] = value
   }
   return result

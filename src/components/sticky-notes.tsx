@@ -1,7 +1,7 @@
 "use client"
 import React, {ComponentProps, RefObject, use, useEffect, useRef, useState} from "react"
 import {cn, format, getRandomLightHexColor, invertColor, randomInRange} from "@/lib/utils"
-import {Comment, fetchGuestbookCommentsResponse} from "@/lib/fetch-github"
+import type {Comment, fetchGuestbookCommentsResponse} from "@/lib/fetch-github"
 import {useTranslation} from "react-i18next"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {useMounted} from "@/lib/hooks"

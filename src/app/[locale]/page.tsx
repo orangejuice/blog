@@ -15,7 +15,7 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
   const cssIndexCounter = useCssIndexCounter()
   if (!site.locales.includes(locale)) return notFound()
   const postsOneLang = getPosts({locale, count: 4})
-  const postsAllLang = getPosts({locale, count: 4, filterLang: "all-lang"})
+  const postsAllLang = getPosts({locale, count: 4, lang: "all-lang"})
   const latestPostActivities = getLatestActivitiesPost({locale, count: 4})
   const latestActivities = getActivities(1, {})
   const {t} = await initTranslation(locale)

@@ -30,6 +30,32 @@ export function PostMainListPlaceholder() {
   </>)
 }
 
+
+export function PostCompactListPlaceholder() {
+  return (<>
+    <ul className="animate-pulse">
+      {Array.from({length: 10}, (_, index) =>
+        <li key={index} className="py-2.5 group flex items-baseline flex-col md:flex-row gap-1 md:gap-9">
+          <div className="flex w-full md:w-fit items-center justify-between">
+            <div className="md:w-28 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+            <div className="gap-4 text-xs w-fit flex md:hidden">
+              <div className="w-8 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+              <div className="w-8 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+            </div>
+          </div>
+          <div className="flex w-full justify-between gap-4">
+            <div className="w-full md:w-1/2 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+            <div className="gap-4 text-xs hidden md:flex">
+              <div className="w-8 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+              <div className="w-8 h-4 bg-stone-100 dark:bg-stone-900 rounded"></div>
+            </div>
+          </div>
+        </li>)}
+    </ul>
+  </>)
+}
+
+
 export function LatestActivityListPlaceholder() {
   return (<>
     <ul className="animate-pulse">
@@ -101,5 +127,5 @@ export const ActivitiesPlaceholder = () => {
         </li>
       ))}
     </ul>
-  );
-};
+  )
+}
