@@ -16,10 +16,9 @@ export function Footer() {
       <div className="flex gap-2 text-sm">
         <div>{`Copyright © ${new Date().getFullYear()}`}</div>
         <span>{` • `}</span>
-        <span className="inline-flex items-center gap-1 underline-fade">
-          <Icons.github/>
-          <Link href="https://github.com/orangejuice/blog" target="_blank">{site.title}</Link>
-        </span>
+        <Link href="https://github.com/orangejuice/blog" target="_blank" className="inline-flex items-center gap-1 underline-fade">
+          <Icons.github/> {site.title}
+        </Link>
       </div>
     </footer>
   </>)
