@@ -18,7 +18,7 @@ export function Footer() {
         <span>{` • `}</span>
         <span className="inline-flex items-center gap-1 underline-fade">
           <Icons.github/>
-          <Link href="https://github.com/orangejuice" target="_blank">{site.title}</Link>
+          <Link href="https://github.com/orangejuice/blog" target="_blank">{site.title}</Link>
         </span>
       </div>
     </footer>
