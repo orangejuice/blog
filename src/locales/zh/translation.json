@@ -27,12 +27,13 @@
     "toc": "目录",
     "toc-empty": "没有找到",
     "update": "{{date}}更新",
-    "latest-activities": "最新动态",
+    "latest-comments": "最新评论",
     "view-more": "查看更多"
   },
   "bookshelf": {
     "title": "我的书架",
     "description": "与我一起在废墟中寻找鲜花",
+    "latest": "最新动态",
     "calendar": "活动日历 ({{start}} - {{end}})",
     "category": {
       "book": "图书",

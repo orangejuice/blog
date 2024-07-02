@@ -10,7 +10,7 @@
   body {
     /*padding-left: calc(100vw - 100%); it centralize the content but does not work with react-remove-scroll*/
     min-height: 100vh;
-    @apply font-sans overflow-y-scroll antialiased
+    @apply font-sans antialiased
   }
 
   * {
