@@ -27,7 +27,7 @@ export function ActivityFilter({filter: applied, style, filterData}: {filter: Fi
         {Object.entries(filter.all.year).map(([year, num], index) => (
           <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({year})}`}
             className={cn("flex items-center gap-1 group m-2 text-sm font-medium underline-fade",
-              year == selectedYear && "font-bold")}>
+              year == selectedYear && "underline-fade-selected font-bold")}>
             {year == selectedYear ? <Icons.symbol.squareChecked/> : <Icons.symbol.square/>}
             {year == "all" ? t(`bookshelf.category.all`) : year} ({num})
           </Link>
@@ -40,7 +40,7 @@ export function ActivityFilter({filter: applied, style, filterData}: {filter: Fi
         {Object.entries(filter).map(([category, {total}], index) => (
           <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({year: applied.year, category})}`}
             className={cn("flex items-center gap-1 group m-2 text-sm font-medium underline-fade",
-              category == selectedCate && "font-bold")}>
+              category == selectedCate && "underline-fade-selected font-bold")}>
             {category == selectedCate ? <Icons.symbol.squareChecked/> : <Icons.symbol.square/>}
             {t(`bookshelf.category.${category}`)} ({total})
           </Link>
