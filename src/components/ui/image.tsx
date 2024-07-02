@@ -5,7 +5,7 @@ import {cn} from "@/lib/utils"
 
 const ExoticImage = motion(forwardRef<HTMLImageElement, ImageProps>(
   function ExoticImageWrapper({className, ...props}, ref) {
-    return <NextImage fill className={cn("object-cover", className)} {...props} ref={ref}/>
+    return <NextImage fill sizes="(max-width: 768px) 100vw, 50vw" className={cn("object-cover", className)} {...props} ref={ref}/>
   }
 ))
 
