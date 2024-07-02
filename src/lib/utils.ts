@@ -62,10 +62,14 @@ export function eachDayInRange(start: string | Date | Dayjs, end?: string | Date
   return range
 }
 
-export function useCssIndexCounter(style?: React.CSSProperties) {
-  const cssIndexCounter: {(): React.CSSProperties, n?: number} = () => {
-    cssIndexCounter.n = cssIndexCounter.n || ((style as {"--index": number})?.["--index"] ?? 0)
-    return {"--index": cssIndexCounter.n++} as React.CSSProperties
+export function useCssIndexCounter(style?: React.CSSProperties & {"--index"?: number, "--index-mobile"?: number}) {
+  const cssIndexCounter: {(options?: {mobile?: number}): React.CSSProperties, n?: number, nm?: number} = ({mobile} = {}) => {
+    cssIndexCounter.n = cssIndexCounter.n || (style?.["--index"] ?? 0)
+    cssIndexCounter.nm = mobile ?? (cssIndexCounter.nm || (style?.["--index-mobile"] ?? 0))
+    return {
+      "--index-mobile": cssIndexCounter.nm++,
+      "--index": cssIndexCounter.n++
+    } as React.CSSProperties
   }
   return cssIndexCounter
 }

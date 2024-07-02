@@ -23,7 +23,7 @@ export default async function AllPost({params: {locale, filter}}: {params: {loca
     <div className="grid md:grid-cols-[2fr,1fr] items-start gap-10 min-h-screen">
       <div className="flex flex-col gap-5">
         <section>
-          <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter()}>{t("post.all")}</h1>
+          <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter({mobile: 3})}>{t("post.all")}</h1>
           <p className="text-stone-600 dark:text-stone-400 animate-delay-in" style={cssIndexCounter()}>
             {t("post.all-sub", {year: new Date().getFullYear()})}
           </p>
@@ -34,7 +34,7 @@ export default async function AllPost({params: {locale, filter}}: {params: {loca
       </div>
       <aside className="flex flex-col gap-6 row-start-1 md:col-start-2">
         <Suspense fallback={<></>}>
-          <PostFilter locales={locales} tags={tags} filter={filter} style={cssIndexCounter()}/>
+          <PostFilter locales={locales} tags={tags} filter={filter} style={cssIndexCounter({mobile: 0})}/>
         </Suspense>
       </aside>
     </div>

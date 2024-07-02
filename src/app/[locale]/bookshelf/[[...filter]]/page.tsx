@@ -32,7 +32,7 @@ export default async function Page({params: {locale, filter}}: {params: {locale:
     <div className="grid md:grid-cols-[2fr,1fr] items-start gap-10 min-h-screen">
       <div className="flex flex-col gap-5">
         <section>
-          <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter()}>{t("bookshelf.title")}</h1>
+          <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter({mobile: 4})}>{t("bookshelf.title")}</h1>
           <p className="text-stone-600 dark:text-stone-400 animate-delay-in" style={cssIndexCounter()}>
             {t("bookshelf.description")}
           </p>
@@ -42,7 +42,7 @@ export default async function Page({params: {locale, filter}}: {params: {locale:
         </section>
       </div>
       <aside className="flex flex-col gap-6 row-start-1 md:col-start-2">
-        <ActivityFilter filter={appliedFilter} filterData={filterData} style={cssIndexCounter()}/>
+        <ActivityFilter filter={appliedFilter} filterData={filterData} style={cssIndexCounter({mobile:1})}/>
       </aside>
     </div>
   </>)
