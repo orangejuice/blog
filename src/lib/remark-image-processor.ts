@@ -4,7 +4,6 @@ import sharp from "sharp"
 import path from "path"
 import crypto from "crypto"
 import * as fs from "node:fs"
-import lockfile from "proper-lockfile"
 
 interface ImageNode extends Node {
   type: string;
@@ -31,7 +30,7 @@ export default function remarkImageProcessor(options: Options) {
       const promises: Promise<ImageUpdate | null>[] = []
       const imageUpdates: ImageUpdate[] = []
       const docFilePath = path.join(path.dirname(file.history[0]), file.data.rawDocumentData.sourceFileName)
-      const release = lockfile.lockSync(docFilePath)
+      if (!fs.existsSync(options.publicDir)) fs.mkdirSync(options.publicDir, {recursive: true})
 
       visit(tree, "image", (node: ImageNode) => {
         if (node.url) {
@@ -77,12 +76,9 @@ export default function remarkImageProcessor(options: Options) {
           parent.children.splice(index, 1, mdxNode)
         }
       })
-      release()
-    } catch (e: any) {
-      if ("code" in e && e.code != "ELOCKED") {
-        console.error(e)
-        throw e
-      }
+    } catch (e) {
+      console.error(e)
+      throw e
     }
   }
 }
@@ -107,11 +103,6 @@ async function processImage(node: ImageNode, filePath: string, publicDir: string
     const {width, height} = metadata
     if (width == undefined || height == undefined) return null
 
-    // Ensure the public directory exists
-    if (!fs.existsSync(publicDir)) {
-      fs.mkdirSync(publicDir, {recursive: true})
-    }
-
     // Resize the image if it's larger than the maximum width
     const maxWidth = 1200
     const resizedImage = width > maxWidth
@@ -134,7 +125,6 @@ async function processImage(node: ImageNode, filePath: string, publicDir: string
     const resizedMetadata = await resizedImage.metadata()
     const {width: resizedWidth, height: resizedHeight} = resizedMetadata
 
-    console.log("Markdown Image", originalPath, newPath)
     node.url = "/" + path.relative(path.join(process.cwd(), "public"), newPath)
     node.width = resizedWidth
     node.height = resizedHeight
@@ -198,7 +188,6 @@ async function serveCoverImages(dir: string, publicDir: string) {
     const newFileName = `${fileNameHash}${fileExt}`
     const newPath = path.join(publicDir, newFileName)
     if (!fs.existsSync(newPath)) {
-      console.log("Activity Cover", originalPath, newPath)
       await sharp(originalPath).resize({width: 500}).jpeg({quality: 80}).toFile(newPath)
     }
   }
