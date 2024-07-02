@@ -82,12 +82,12 @@ export function Notes({data, className, ...props}: {data: fetchGuestbookComments
   const [isDragging, setIsDragging] = useState(false)
 
   return (<>
-    <div className={cn("w-full relative aspect-square md:aspect-[3/1] z-10 border-dashed border-4 rounded notes",
+    <div className={cn("w-full relative aspect-square md:aspect-[3/1] border-dashed border-4 rounded",
       "transition-colors duration-500", className, !isDragging && "border-transparent")} ref={ref} {...props}>
       {notes.map((note, i) => <Note key={i} note={note} constraintRef={ref} delay={0.5 + 0.1 * i}
         handleDragStart={() => setIsDragging(true)} handleDragEnd={() => setIsDragging(false)}/>
       )}
     </div>
-    {isDragging && <div className="absolute top-0 bottom-0 left-0 right-0 cursor-move"/>}
+    {isDragging && <div className="absolute inset-0 cursor-move"/>}
   </>)
 }

@@ -60,7 +60,7 @@ export function MobileNav() {
   }
   return (<>
     <Menu>{({open}) => (<>
-      <MenuButton className={cn(buttonVariants({variant: "noStyle"}), "block w-fit h-fit p-2 md:hidden outline-none")}>
+      <MenuButton className={cn(buttonVariants({variant: "noStyle"}), "block w-fit h-fit p-2 md:hidden outline-none focus-visible:ring-0")}>
         <Icons.nav.menu className="h-7 w-7"/>
       </MenuButton>
       <Overlay isOpen={open}/>

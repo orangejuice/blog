@@ -8,10 +8,9 @@ import {useTheme} from "next-themes"
 import {useTranslation} from "react-i18next"
 import "@/components/activity-calendar.css"
 import {FilterOption} from "@/components/activity-filter"
-import {Dayjs} from "dayjs"
 import {CalendarPlaceholder} from "@/components/loading"
 
-export function ActivityCalendar({calendarData, style, filter}: {calendarData: GetActivityCalendarDataResponse, filter: FilterOption & {start: Dayjs, end: Dayjs}} & ComponentPropsWithoutRef<"section">) {
+export function ActivityCalendar({calendarData, style, filter}: {calendarData: GetActivityCalendarDataResponse, filter: FilterOption & {start: string, end: string}} & ComponentPropsWithoutRef<"section">) {
   const data = use(calendarData)
   const {resolvedTheme} = useTheme()
   const {t, i18n: {language: locale}} = useTranslation()
