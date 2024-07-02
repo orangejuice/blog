@@ -69,8 +69,10 @@ export function MobileNav() {
           anchor="bottom end" className="z-50 overflow-hidden rounded-md border bg-white dark:bg-black outline-none shadow-xl origin-top-right p-4 min-w-40">
           <div className="flex flex-col gap-6 p-2">
             {Object.entries(menu).map(([key, path]) => (
-              <MenuItem key={key} as={Link} href={mounted ? ((path == menu.post && postFilter) ? `/${path}/${objectToUrlPart(postFilter)}` :
-                path == menu.bookshelf ? `/${path}/${objectToUrlPart(activityFilter)}` : `/${path}`) : ""} className="font-medium">
+              <MenuItem key={key} as={Link} href={mounted ? (
+                path == menu.post ? `/${path}/${objectToUrlPart(postFilter)}` :
+                path == menu.bookshelf ? `/${path}/${objectToUrlPart(activityFilter)}` : `/${path}`
+              ) : ""} className="font-medium">
                 {t(`nav.${key}`)}
               </MenuItem>
             ))}
@@ -92,7 +94,7 @@ const Overlay = ({isOpen}: {isOpen: boolean}) => {
 
   return createPortal(<>
     <AnimatePresence>{isOpen && (
-      <motion.div initial={{opacity: 0}} animate={{opacity: 0.1}} exit={{opacity: 0}} transition={{duration: 0.1}}
+      <motion.div initial={{opacity: 0}} animate={{opacity: 0.05}} exit={{opacity: 0}} transition={{duration: 0.1}}
         className="fixed inset-0 bg-black z-20"/>)}
     </AnimatePresence>
   </>, document.body)

@@ -7,11 +7,16 @@ import {menu} from "@/site"
 import {cn, objectToUrlPart} from "@/lib/utils"
 import {Icons} from "@/components/icons"
 import {FilterOption} from "@/components/post-filter"
+import {useMounted} from "@/lib/use-mounted"
 
 export function ViewMore(props: ComponentPropsWithoutRef<"a">) {
   const {t, i18n: {language: locale}} = useTranslation()
   const [lang] = useLocalStorage<"one" | "all">("latest-lang", "one")
   const filterOption = {lang: lang == "all" ? "all-lang" : locale} as FilterOption
+
+  const mounted = useMounted()
+  if (!mounted) return null
+
   return (<>
     <Link {...props} href={`/${menu.post}/${objectToUrlPart(filterOption)}`}
       className={cn("w-fit mx-auto flex items-center px-4 py-2 text-xs font-semibold duration-300 ease-out border rounded-full bg-neutral-900",
