@@ -7,6 +7,9 @@ import {useLocalStorage} from "@/lib/use-local-storage"
 import {useMounted} from "@/lib/use-mounted"
 import {motion, useMotionValue} from "framer-motion"
 import {useTheme} from "next-themes"
+import localFont from "next/font/local"
+
+const fontHandwriting = localFont({src: "../../public/handwriting.ttf"})
 
 function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {note: Comment, constraintRef: RefObject<HTMLDivElement>, handleDragStart: () => void, handleDragEnd: () => void, delay: number}) {
   const ref = useRef<HTMLDivElement>(null)
@@ -73,7 +76,7 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
       className={cn("absolute cursor-move flex w-52 h-52 flex-col shadow-md transition-[box-shadow,color,background-color]", isDragging && "shadow-xl")}
       onDragStart={onDragStart} onDragEnd={onDragEnd} drag dragConstraints={constraintRef} onDragTransitionEnd={onDragTransitionEnd} dragMomentum={false}>
       <div className="grow flex overflow-hidden px-4 py-3">
-        <p className="scrollbar-0 h-fit max-h-full overflow-auto text-ellipsis select-text cursor-text" onPointerDownCapture={e => e.stopPropagation()}>
+        <p className={cn("scrollbar-0 h-fit max-h-full overflow-auto text-ellipsis select-text cursor-text", fontHandwriting.className)} onPointerDownCapture={e => e.stopPropagation()}>
           {note.bodyText}
         </p>
       </div>
