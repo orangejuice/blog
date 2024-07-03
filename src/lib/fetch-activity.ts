@@ -53,7 +53,7 @@ export const getActivityCalendarData = cache(async (startDate: Dayjs, endDate: D
   const activityMap = new Map<string, {total: number, book: number, movie: number}>()
   eachDayInRange(startDate, endDate).forEach(date => activityMap.set(format(date, {date: true}), {total: 0, book: 0, movie: 0}))
 
-  for (const activity of allActivities.filter(act => act.status == "done")) {
+  for (const activity of allActivities) {
     const activityDate = dayjs(activity.date)
     if (filter.category && activity.category != filter.category) continue
     if (filter.status && activity.status != filter.status) continue
