@@ -26,9 +26,9 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
     handleDragStart()
     // @ts-ignore
     setLocalNotes(localNotes => {
-      const order = localNotes.order
-      order?.splice(order?.indexOf(note.id), 1)
-      order?.push(note.id)
+      const order = localNotes.order ?? []
+      order.indexOf(note.id) != -1 && order.splice(order.indexOf(note.id), 1)
+      order.push(note.id)
       return {...localNotes, order}
     })
   }
@@ -45,7 +45,7 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
 
   useEffect(() => {
     if (!mounted) return
-    localNotes.order && zIndex.set(localNotes.order.indexOf(note.id))
+    localNotes.order && localNotes.order.indexOf(note.id) != -1 && zIndex.set(localNotes.order.indexOf(note.id))
     if (localNotes.hasOwnProperty(note.id)) {
       x.set(localNotes[note.id].position.x)
       y.set(localNotes[note.id].position.y)
@@ -89,17 +89,6 @@ export function Notes({data, className, ...props}: {data: fetchGuestbookComments
   const notes = use(data)
   const ref = useRef<HTMLDivElement>(null)
   const [isDragging, setIsDragging] = useState(false)
-  const [localNotes, setLocalNotes] = useLocalStorage<StickyNotes>("sticky-notes", {})
-
-  useEffect(() => {
-    if (!localNotes.order) {
-      // @ts-ignore
-      setLocalNotes(() => ({
-        ...localNotes,
-        order: notes.map(note => note.id)
-      }))
-    }
-  }, [localNotes, notes, setLocalNotes])
 
   return (<>
     <div className={cn("w-full relative aspect-square md:aspect-[3/1] border-dashed border-4 rounded",
