@@ -29,10 +29,11 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
     handleDragStart()
     // @ts-ignore
     setLocalNotes(localNotes => {
+      console.log(localNotes.order)
       const order = localNotes.order ?? []
       order.indexOf(note.id) != -1 && order.splice(order.indexOf(note.id), 1)
       order.push(note.id)
-      return {...localNotes, order}
+      return {...localNotes, order: [...order]}
     })
   }
   const onDragEnd = () => {
