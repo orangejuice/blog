@@ -39,7 +39,7 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
           <ViewMore style={cssIndexCounter()}/>
         </Suspense>
       </main>
-      <aside className="sticky top-8 flex flex-col gap-8">
+      <aside className="flex flex-col gap-8">
         <section>
           <h5 className="text-slate-900 font-semibold mb-2 text-sm leading-6 dark:text-slate-100 animate-delay-in" style={cssIndexCounter()}>
             {t("bookshelf.latest")}
