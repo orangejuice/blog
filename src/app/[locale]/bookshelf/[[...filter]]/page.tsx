@@ -29,7 +29,7 @@ export default async function Page({params: {locale, filter}}: {params: {locale:
     <Suspense fallback={<CalendarPlaceholder/>}>
       <ActivityCalendar calendarData={calendarData} filter={{start: start.toISOString(), end: end.toISOString(), ...appliedFilter}}/>
     </Suspense>
-    <div className="grid md:grid-cols-[2fr,1fr] items-start gap-10 min-h-screen">
+    <div className="grid md:grid-cols-[2fr,1fr] items-start gap-10 min-h-screen mt-5">
       <div className="flex flex-col gap-5">
         <section>
           <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter({mobile: 4})}>{t("bookshelf.title")}</h1>

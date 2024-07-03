@@ -3,7 +3,7 @@ import React, {cloneElement, ComponentPropsWithoutRef, forwardRef, use} from "re
 import {BlockElement, default as RawActivityCalendar} from "react-activity-calendar"
 import {CalendarActivity, GetActivityCalendarDataResponse} from "@/lib/fetch-activity"
 import {Tooltip, TooltipContent, TooltipTrigger} from "@/components/ui/tooltip"
-import {format, useCssIndexCounter} from "@/lib/utils"
+import {cn, format, useCssIndexCounter} from "@/lib/utils"
 import {useTheme} from "next-themes"
 import {useTranslation} from "react-i18next"
 import "@/components/activity-calendar.css"
@@ -16,8 +16,9 @@ export function ActivityCalendar({calendarData, style, filter}: {calendarData: G
   const {t, i18n: {language: locale}} = useTranslation()
   const cssIndexCounter = useCssIndexCounter(style)
   return (<>
-    <section className="flex flex-col gap-2 min-h-52 animate-delay-in" style={cssIndexCounter()}>
-      <h5 className="text-center text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">
+    <section className={cn("flex flex-col items-center gap-2 animate-delay-in",
+      "[&_.react-activity-calendar]:animate-delay-in")} style={cssIndexCounter()}>
+      <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">
         {t("bookshelf.calendar", {
           start: format(filter.start, {locale, localizeDate: true}),
           end: format(filter.end, {locale, localizeDate: true})
@@ -25,7 +26,7 @@ export function ActivityCalendar({calendarData, style, filter}: {calendarData: G
       </h5>
       <CalendarPlaceholder className="[&:has(~_article)]:hidden"/>
       <RawActivityCalendar data={data} showWeekdayLabels hideTotalCount hideColorLegend maxLevel={3}
-        colorScheme={resolvedTheme as "light" | "dark"} style={{marginLeft: "auto", marginRight: "auto"}}
+        colorScheme={resolvedTheme as "light" | "dark"} style={cssIndexCounter()}
         // @ts-ignore
         renderBlock={(block, activity: CalendarActivity) => (<>
           <Tooltip delayDuration={300} disableHoverableContent>
@@ -38,7 +39,28 @@ export function ActivityCalendar({calendarData, style, filter}: {calendarData: G
             </TooltipContent>
           </Tooltip>
         </>)}/>
+      <ColorLegend/>
     </section>
+  </>)
+}
+
+const ColorLegend = () => {
+  const {t} = useTranslation()
+
+  const unit = (category: "Book" | "Movie", level: number) => (<>
+    <svg width="12" height="12" className="shrink-0">
+      <DrawRect block={<rect x="0" y="0" width="12" height="12" rx="2" ry="2"/>}
+        activity={{[`count${category}`]: level} as unknown as CalendarActivity}/>
+    </svg>
+  </>)
+
+  return (<>
+    <div className="flex items-center gap-2 text-xs self-end">
+      {t(`bookshelf.category.book`)}
+      {([["Book", 1], ["Book", 2], ["Book", 3]] as const).map(([category, level]) => unit(category, level))}
+      {t(`bookshelf.category.movie`)}
+      {([["Movie", 1], ["Movie", 2], ["Movie", 3]] as const).map(([category, level]) => unit(category, level))}
+    </div>
   </>)
 }
 
@@ -50,10 +72,10 @@ const DrawRect = forwardRef(function DrawRect({block, activity, ...props}: {bloc
     return (<>
       <defs>
         <linearGradient id={id} x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="46%" stopColor={`var(--color-book-${bookLevel})`}/>
-          <stop offset="46%" stopColor={`var(--color-book-movie-sep)`}/>
-          <stop offset="54%" stopColor={`var(--color-book-movie-sep)`}/>
-          <stop offset="54%" stopColor={`var(--color-movie-${movieLevel})`}/>
+          <stop offset="48%" stopColor={`var(--color-book-${bookLevel})`}/>
+          <stop offset="48%" stopColor={`var(--color-book-movie-sep)`}/>
+          <stop offset="52%" stopColor={`var(--color-book-movie-sep)`}/>
+          <stop offset="52%" stopColor={`var(--color-movie-${movieLevel})`}/>
         </linearGradient>
       </defs>
       {/* @ts-ignore*/}

@@ -8,6 +8,7 @@ import {site} from "@/site"
 import React from "react"
 import {Footer} from "@/components/footer"
 import initTranslation from "@/lib/i18n"
+import {Background} from "@/components/background"
 
 const fontSans = FontSans({subsets: ["latin"], variable: "--font-sans"})
 const fontMono = FontMono({subsets: ["latin"], variable: "--font-mono"})
@@ -53,6 +54,7 @@ export default async function RootLayout({children, params: {locale}}:
     <html lang={resolved} suppressHydrationWarning>
       <body className={cn("no-transition", fontSans.variable, fontMono.variable)}>
         <Context locale={resolved} resources={resources}>
+          <Background/>
           <div className="flex w-full flex-col max-w-5xl p-6 mx-auto mix-blend-multiply xl:px-0">
             <Header/>
             {children}
