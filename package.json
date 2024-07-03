@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "contentlayer2 build && next dev --turbo",
     "build": "contentlayer2 build && next build",
+    "doufen": "bun ./tool/import-doufen.ts",
     "start": "next start",
     "lint": "next lint"
   },
