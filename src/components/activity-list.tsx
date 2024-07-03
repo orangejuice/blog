@@ -24,7 +24,6 @@ export default function ActivityInfiniteScrollList({data, style}: {data: Promise
 
   useEffect(() => {
     const bottom = bottomRef.current
-    const option = {root: null, rootMargin: "20px", threshold: 0}
     const observer = new IntersectionObserver((entries) => {
       entries[0].isIntersecting && hasMore && !isPending && startTransition(async () => {
         const newPages = pages.concat(pages.slice(-1)[0] + 1)
@@ -33,7 +32,7 @@ export default function ActivityInfiniteScrollList({data, style}: {data: Promise
         setHasMore(newActivities.length === newPages.length * 10)
         setPages(newPages)
       })
-    }, option)
+    })
     if (bottom) observer.observe(bottom)
     return () => {if (bottom) observer.unobserve(bottom)}
   }, [isPending, filter])

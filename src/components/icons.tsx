@@ -40,6 +40,6 @@ export const Icons = {
 function cns<T extends ComponentType<any>>(Component: T, predefined?: string) {
   return forwardRef(function Icon({className, ...props}: ComponentProps<T>, ref) {
     // @ts-ignore
-    return <Component className={cn("h-4 w-4 shrink-0 transition-colors", predefined, className)} {...props} ref={ref}/>
+    return <Component className={cn("h-4 w-4 shrink-0", predefined, className)} {...props} ref={ref}/>
   })
 }

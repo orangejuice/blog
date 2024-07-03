@@ -7,6 +7,8 @@ import Link from "next/link"
 import {Icons} from "@/components/icons"
 import {useTranslation} from "react-i18next"
 import {cn} from "@/lib/utils"
+import "./mdx.css"
+
 
 export function MDX({code, ...props}: ComponentPropsWithoutRef<"div"> & {code: string}) {
   const MDXContent = useMDXComponent(code)

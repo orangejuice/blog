@@ -8,6 +8,7 @@ import {cn, objectToUrlPart} from "@/lib/utils"
 import {Icons} from "@/components/icons"
 import {FilterOption} from "@/components/post-filter"
 import {useMounted} from "@/lib/use-mounted"
+import {buttonVariants} from "@/components/ui/button"
 
 export function ViewMore(props: ComponentPropsWithoutRef<"a">) {
   const {t, i18n: {language: locale}} = useTranslation()
@@ -19,11 +20,10 @@ export function ViewMore(props: ComponentPropsWithoutRef<"a">) {
 
   return (<>
     <Link {...props} href={`/${menu.post}/${objectToUrlPart(filterOption)}`}
-      className={cn("w-fit mx-auto flex items-center px-4 py-2 text-xs font-semibold duration-300 ease-out border rounded-full bg-neutral-900",
-        "text-neutral-100 hover:border-neutral-700 border-neutral-900 hover:bg-white hover:text-neutral-900 animate-delay-in",
-        "dark:bg-white dark:text-neutral-900 dark:hover:border-neutral-300 dark:hover:bg-black dark:hover:text-white")}>
+      className={cn(buttonVariants(), "w-fit h-fit mx-auto flex items-center px-5 py-2.5 text-xs font-semibold border rounded-full",
+        "bg-stone-900 text-stone-100 hover:border-stone-700 border-stone-900 hover:bg-white hover:text-stone-900")}>
       {t("post.view-more")}
-      <Icons.link.chevron className="stroke-[.15rem]"/>
+      <Icons.link.chevron className="stroke-[.15rem] -mr-2"/>
     </Link>
   </>)
 }
