@@ -16,19 +16,17 @@ export function LangSelect(props: ComponentPropsWithoutRef<"button">) {
 
   return (<>
     <Button variant="noStyle" onClick={() => setLang(prev => prev == "one" ? "all" : "one")}
-      {...props} className="p-0 h-fit gap-1 animate-delay-in group">
+      {...props} className="p-0 h-fit gap-1 animate-delay-in">
       <Icons.filter/>
       <span className={cn("tracking-tight text-sm transition-all text-stone-600",
         "dark:text-stone-400 dark:hover:text-stone-300 dark:active:text-stone-200",
-        lang == "all" && "underline-fade underline-fade-with-group",
-        lang == "one" ? "font-semibold" : "text-xs")}>
+        lang == "all" && "underline-fade", lang == "one" ? "font-semibold" : "text-xs")}>
         {t(locale)}
       </span>
       <Icons.symbol.slash className="-rotate-[30deg] w-3 h-3 -mx-1 stroke-2"/>
       <span className={cn("tracking-tight text-sm transition-all text-stone-600",
         "dark:text-stone-400 dark:hover:text-stone-300 dark:active:text-stone-200",
-        lang == "one" && "underline-fade underline-fade-with-group",
-        lang == "all" ? "font-semibold" : "text-xs")}>
+        lang == "one" && "underline-fade", lang == "all" ? "font-semibold" : "text-xs")}>
         {t("all")}
       </span>
     </Button>
