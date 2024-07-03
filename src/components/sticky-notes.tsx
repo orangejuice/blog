@@ -13,12 +13,24 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
   const {i18n: {language: locale}} = useTranslation()
   const x = useMotionValue<number | undefined>(undefined)
   const y = useMotionValue<number | undefined>(undefined)
+  const zIndex = useMotionValue<number | undefined>(undefined)
   const backgroundColor = useMotionValue<string | undefined>(undefined)
   const rotate = useMotionValue<string | undefined>(undefined)
   const [isDragging, setIsDragging] = useState(false)
+  const {resolvedTheme} = useTheme()
+  const [localNotes, setLocalNotes] = useLocalStorage<StickyNotes>("sticky-notes", {})
+  const mounted = useMounted()
+
   const onDragStart = () => {
     setIsDragging(true)
     handleDragStart()
+    // @ts-ignore
+    setLocalNotes(localNotes => {
+      const order = localNotes.order
+      order?.splice(order?.indexOf(note.id), 1)
+      order?.push(note.id)
+      return {...localNotes, order}
+    })
   }
   const onDragEnd = () => {
     setIsDragging(false)
@@ -30,13 +42,10 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
       [note.id]: {...localNotes[note.id], position: {x: x.get(), y: y.get()}}
     }))
   }
-  const {resolvedTheme} = useTheme()
-  const [localNotes, setLocalNotes] = useLocalStorage<StickyNotes>("sticky-notes", {})
-  const mounted = useMounted()
 
   useEffect(() => {
     if (!mounted) return
-
+    localNotes.order && zIndex.set(localNotes.order.indexOf(note.id))
     if (localNotes.hasOwnProperty(note.id)) {
       x.set(localNotes[note.id].position.x)
       y.set(localNotes[note.id].position.y)
@@ -58,7 +67,7 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
   }, [mounted, localNotes])
 
   return (<>
-    <motion.div style={{x, y, rotate, backgroundColor: resolvedTheme == "dark" ? invertColor(backgroundColor.get()) : backgroundColor}}
+    <motion.div style={{x, y, rotate, zIndex, backgroundColor: resolvedTheme == "dark" ? invertColor(backgroundColor.get()) : backgroundColor}}
       ref={ref} whileDrag={{scale: 1.05, rotateZ: -10}} transition={{opacity: {delay, type: "just"}, translateY: {delay, type: "just"}}}
       initial={{opacity: 0, translateY: 18}} animate={{opacity: 1, translateY: 0}} exit={{opacity: 0}}
       className={cn("absolute cursor-move flex w-52 h-52 flex-col shadow-md transition-[box-shadow,color,background-color]", isDragging && "shadow-xl")}
@@ -80,6 +89,17 @@ export function Notes({data, className, ...props}: {data: fetchGuestbookComments
   const notes = use(data)
   const ref = useRef<HTMLDivElement>(null)
   const [isDragging, setIsDragging] = useState(false)
+  const [localNotes, setLocalNotes] = useLocalStorage<StickyNotes>("sticky-notes", {})
+
+  useEffect(() => {
+    if (!localNotes.order) {
+      // @ts-ignore
+      setLocalNotes(() => ({
+        ...localNotes,
+        order: notes.map(note => note.id)
+      }))
+    }
+  }, [localNotes, notes, setLocalNotes])
 
   return (<>
     <div className={cn("w-full relative aspect-square md:aspect-[3/1] border-dashed border-4 rounded",

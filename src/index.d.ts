@@ -23,6 +23,7 @@ type Interactions = {
 }
 
 type StickyNotes = {
+  order?: string[]
   [id: string]: {
     position: { [key in "x" | "y"]: number }
     color: string
