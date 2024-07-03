@@ -21,7 +21,7 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
   const {t} = await initTranslation(locale)
 
   return (<>
-    <div className="grid md:grid-cols-[2fr,1fr] items-start gap-10 min-h-screen">
+    <div className="grid md:grid-cols-[2fr,1fr] items-start gap-20 min-h-screen">
       <main className="flex flex-col gap-5">
         <div className="flex items-center justify-between">
           <section>
