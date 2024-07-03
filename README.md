@@ -40,17 +40,20 @@
 * **🕰️ Activity Calendar** `src/components/activity-calendar.tsx`  
   An elegant calendar component intuitively displays yearly reading and watching activities.
 
+* **🧭 Mobile Menu** `src/components/header.tsx`  
+  Mobile menu with slightly darken overlay, built with headless-ui and framer motion.
+
 * **🎨 Immersive 3D Background** `src/components/background.tsx`  
   A dynamic, peaceful three-dimensional backdrop.
 
 * **🔊 White Noise Toggle** `src/components/background-toggle.tsx`  
-  Creative ambient sound control turn on the white noise that enhance focus.
+  Animated ambient sound control built with framer motion.
 
 * **💡 Theme Toggle** `src/components/theme-toggle.tsx`  
   A simple and creative theme preference control.
 
 * **💾 Cross-Tab State Sync** `src/lib/use-local-storage.ts`  
-  A well encapsulated react hook that maintains state across tabs, use it right out of the box just like `useState`.
+  A handy encapsulated react hook that maintains state across tabs, use in the same way of using `useState`.
 
 * **📝 Skeuomorphic Sticky Notes** `src/components/sticky-notes.tsx`  
   A sleek implementation of skeuomorphic sticky notes, drag enabled.
