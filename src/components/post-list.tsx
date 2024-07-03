@@ -46,42 +46,24 @@ function PostCard({post}: {post: PostWithMetadata}) {
 }
 
 function ActivityCard({post}: {post: PostWithActivity}) {
-  const activities = [...post.discussion.comments.nodes, ...post.discussion.reactions.nodes]
-  activities.sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt))
-  const activity = activities[0]
+  const activity = post.discussion.comments.nodes[0]
   const {t, i18n: {language: locale}} = useTranslation()
-
-  const update = "author" in activity ? (<>
-    <div className="flex items-center gap-2">
-      <Image src={activity.author.avatarUrl} alt="" width={20} height={20} className="h-8 w-8 rounded-full"/>
-      <div className="flex flex-col items-start text-stone-600 dark:text-stone-400">
-        <span className="font-medium text-sm">{activity.author.login}</span>
-        <time className="text-xs line-clamp-1">{format(activity.createdAt, {locale, relative: true})}</time>
-      </div>
-    </div>
-    <span className="flex gap-1 text-sm">
-      <span>{t("post.replied")}</span>
-      <span className="font-medium line-clamp-1">{activity.bodyText}</span>
-    </span>
-  </>) : (<>
-    <div className="flex items-center gap-2">
-      <Image src={activity.user.avatarUrl} alt="" width={20} height={20} className="h-8 w-8 rounded-full"/>
-      <div className="flex flex-col items-start text-stone-600 dark:text-stone-400">
-        <span className="font-medium text-sm">{activity.user.login}</span>
-        <time className="text-xs line-clamp-1">{format(activity.createdAt, {locale, relative: true})}</time>
-      </div>
-    </div>
-    <span className="flex gap-2 text-sm">
-      <span>{t("post.reacted")}</span>
-      <span className="line-clamp-1">{{"THUMBS_UP": "👍", "THUMBS_DOWN": "👎", "LAUGH": "😀", "HOORAY": "🎉", "CONFUSED": "🤔", "HEART": "❤️", "ROCKET": "🚀", "EYES": "👀"}[activity.content]}</span>
-    </span>
-  </>)
 
   return (<>
     <li>
       <Link href={`/${post.slug}`} className={cn("flex flex-col items-start px-4 py-2 rounded-md -mx-4 transition-colors gap-2",
         "hover:bg-stone-100 group dark:hover:bg-stone-800")}>
-        {update}
+        <div className="flex items-center gap-2">
+          <Image src={activity.author.avatarUrl} alt="" width={20} height={20} className="h-8 w-8 rounded-full"/>
+          <div className="flex flex-col items-start text-stone-600 dark:text-stone-400">
+            <span className="font-medium text-sm">{activity.author.login}</span>
+            <time className="text-xs line-clamp-1">{format(activity.createdAt, {locale, relative: true})}</time>
+          </div>
+        </div>
+        <span className="flex gap-1 text-sm">
+      <span>{t("post.replied")}</span>
+      <span className="font-medium line-clamp-1">{activity.bodyText}</span>
+    </span>
         <p className={cn("w-full px-3 py-1 text-sm rounded-md font-medium text-stone-700 tracking-tight line-clamp-1",
           "group-hover:bg-stone-200 bg-stone-100 dark:bg-stone-800 dark:group-hover:bg-stone-700 dark:text-stone-400 transition-colors")}>
           {post.title}
@@ -114,7 +96,7 @@ function PostItemCompact({post}: {post: PostWithMetadata}) {
   </>)
 }
 
-function useUpdateInteractionState(posts: (PostWithMetadata | PostWithActivity)[]) {
+function useUpdateInteractionState(posts: (PostWithMetadata)[]) {
   const [interactions, setInteractions] = useLocalStorage<Interactions>("interaction", {})
   const mounted = useMounted()
 
@@ -123,7 +105,10 @@ function useUpdateInteractionState(posts: (PostWithMetadata | PostWithActivity)[
     const newInteractions = posts.reduce((prev, post) => {
       prev[post.slug] = {
         ...prev[post.slug],
-        discussion: {comment: post.discussion.comments.totalCount, reaction: post.discussion.reactions.totalCount}
+        discussion: {
+          comment: post.discussion.comments.totalCount,
+          reaction: post.discussion.reactions.totalCount
+        }
       }
       "view" in post && (prev[post.slug].view = post.view)
       return prev
@@ -156,12 +141,8 @@ export function PostCompactList({posts: data, ...props}: {posts: GetPostsRespons
   </>)
 }
 
-export function LatestPostActivityList({posts: data, ...props}:
-  {posts: GetLatestActivitiesResponse} & ComponentPropsWithoutRef<"ul">) {
-
+export function LatestPostActivityList({posts: data, ...props}: {posts: GetLatestActivitiesResponse} & ComponentPropsWithoutRef<"ul">) {
   const posts = use(data)
-  useUpdateInteractionState(posts)
-
   return (<>
     <ul className="flex flex-col gap-2" {...props}>
       {posts.map(post => <ActivityCard post={post} key={post.slug}/>)}

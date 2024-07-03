@@ -88,36 +88,9 @@ export const fetchDiscussions = async ({repo, category, titles}: {repo: string, 
   }
 }
 
-interface ActivityNode {
-  number: number;
-  title: string;
-  comments: {
-    totalCount: number;
-    nodes: Array<{
-      author: {
-        login: string;
-        avatarUrl: string;
-      };
-      body: string;
-      bodyText: string;
-      createdAt: string;
-    }>;
-  };
-  reactions: {
-    totalCount: number;
-    nodes: Array<{
-      content: string;
-      user: {
-        login: string;
-        avatarUrl: string;
-      };
-      createdAt: string;
-    }>;
-  };
-}
 
-export const fetchLatestActivities = async ({repo, category, count}: {repo: string, category: string, count: number}) => {
-  console.log(format(new Date(), {datetime: true}), "[github]fetchLatestActivities")
+export const fetchLatestComments = async ({repo, category, count}: {repo: string, category: string, count: number}) => {
+  console.log(format(new Date(), {datetime: true}), "[github]fetchLatestComments")
   const query = `
     query {
       discussion: search(type: DISCUSSION, first: ${count}, query: "repo:${repo} category:${category}") {
@@ -132,6 +105,7 @@ export const fetchLatestActivities = async ({repo, category, count}: {repo: stri
       comments(last: 1) {
         totalCount
         nodes {
+          id
           author {
             login
             avatarUrl
@@ -141,22 +115,11 @@ export const fetchLatestActivities = async ({repo, category, count}: {repo: stri
           createdAt
         }
       }
-      reactions(last: 1) {
-        totalCount
-        nodes {
-          content
-          user {
-            login
-            avatarUrl
-          }
-          createdAt
-        }
-      }
     }`
 
   try {
-    const data: {discussion: {nodes: ActivityNode[]}} = await graphqlWithAuth(query)
-    const slugActivity: {[slug: string]: ActivityNode} = {}
+    const data: {discussion: {nodes: CommentNode[]}} = await graphqlWithAuth(query)
+    const slugActivity: {[slug: string]: CommentNode} = {}
 
     data.discussion.nodes.forEach((queryResult) => {
       if (queryResult) slugActivity[queryResult.title.slice(3)] = queryResult  //remove 'zh/' locale part
@@ -169,7 +132,7 @@ export const fetchLatestActivities = async ({repo, category, count}: {repo: stri
 }
 
 export type Discussion = PartialBy<DiscussionNode, "number" | "title">
-export type Activity = ActivityNode
+export type DiscussionWithComments = CommentNode
 
 
 interface CommentNode {
