@@ -49,14 +49,14 @@
       "status.done": "Finished"
     },
     "book.status": {
-      "todo": "Want to read on {{date}}",
-      "doing": "Reading on {{date}}",
-      "done": "Read on {{date}}"
+      "todo": "Want to read {{date}}",
+      "doing": "Reading {{date}}",
+      "done": "Read {{date}}"
     },
     "movie.status": {
-      "todo": "Want to watch on {{date}}",
-      "doing": "Watching on {{date}}",
-      "done": "Watched on {{date}}"
+      "todo": "Want to watch {{date}}",
+      "doing": "Watching {{date}}",
+      "done": "Watched {{date}}"
     },
     "rating": {"0": "N/A", "1": "Poor", "2": "Below Average", "3": "Average", "4": "Good", "5": "Excellent"}
   },
