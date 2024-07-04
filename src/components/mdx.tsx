@@ -10,7 +10,7 @@ import {cn} from "@/lib/utils"
 import "./mdx.css"
 
 
-export function MDX({code, ...props}: ComponentPropsWithoutRef<"div"> & {code: string}) {
+export function MDX({code, className, ...props}: ComponentPropsWithoutRef<"div"> & {code: string}) {
   const MDXContent = useMDXComponent(code)
   const {resolvedTheme} = useTheme()
   useEffect(() => {
@@ -26,7 +26,7 @@ export function MDX({code, ...props}: ComponentPropsWithoutRef<"div"> & {code: s
   }, [resolvedTheme])
 
   return (<>
-    <div className="prose-lg md:prose toc-content max-w-none dark:prose-invert animate-delay-in" {...props}>
+    <div className={cn("prose toc-content max-w-none dark:prose-invert animate-delay-in", className)} {...props}>
       <MDXContent components={{
         // @ts-ignore
         img: Image,
