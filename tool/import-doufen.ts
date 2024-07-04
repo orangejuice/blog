@@ -12,7 +12,7 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 }
 
 const sanitizeFilename = (title: string): string => {
-  return title.replace(/[\/\\?%*:|' "<>]/g, "-")
+  return title.replace(/[\/\\?%*:|' "<>]/g, "-").replace(/-+/g, "-")
 }
 
 const sanitizeContent = (content: string): string => {
@@ -44,7 +44,7 @@ for (const interest of (tofu as Record<any, any>).interest) {
       history.push({date: create_time, comment, rating: rating?.value, status: status == "mark" ? "todo" : status})
     })
 
-    const dict = `${category}-${sanitizeFilename(title + (year ? `-${year.match(/\d{4}/)[0]}` : "")).toLowerCase()}`
+    const dict = `${category}-${sanitizeFilename(title + (year ? `-${year.match(/\d{4}/)[0]}` : ""))}`
     if (!fs.existsSync(path.join(OUTPUT_DIR, dict))) {
       fs.mkdirSync(path.join(OUTPUT_DIR, dict))
     }
