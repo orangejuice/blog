@@ -29,7 +29,6 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
     handleDragStart()
     // @ts-ignore
     setLocalNotes(localNotes => {
-      console.log(localNotes.order)
       const order = localNotes.order ?? []
       order.indexOf(note.id) != -1 && order.splice(order.indexOf(note.id), 1)
       order.push(note.id)
@@ -77,13 +76,14 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
       className={cn("absolute cursor-move flex w-52 h-52 flex-col shadow-md transition-[box-shadow,color,background-color]", isDragging && "shadow-xl")}
       onDragStart={onDragStart} onDragEnd={onDragEnd} drag dragConstraints={constraintRef} onDragTransitionEnd={onDragTransitionEnd} dragMomentum={false}>
       <div className="grow flex overflow-hidden px-4 py-3">
-        <p className={cn("scrollbar-0 h-fit max-h-full overflow-auto text-ellipsis select-text cursor-text", fontHandwriting.className)} onPointerDownCapture={e => e.stopPropagation()}>
-          {note.bodyText}
-        </p>
+        <p className={cn("scrollbar-0 h-fit max-h-full whitespace-pre-wrap overflow-x-hidden overflow-y-auto",
+          "select-text cursor-text text-stone-700 dark:text-stone-300", fontHandwriting.className)}
+          onPointerDownCapture={e => e.stopPropagation()}
+          dangerouslySetInnerHTML={{__html: note.body}}/>
       </div>
       <div className="bottom-1 flex w-full gap-2 justify-between px-4 pb-2 text-xs text-stone-500">
         <div className="line-clamp-1">@{note.author.login}</div>
-        <div className="line-clamp-1">{format(note.createdAt, {locale, relative: true})}</div>
+        <div className="line-clamp-1">{format(note.createdAt, {locale, relativeWithDate: true})}</div>
       </div>
     </motion.div>
   </>)
