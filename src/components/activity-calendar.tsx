@@ -9,6 +9,7 @@ import {useTranslation} from "react-i18next"
 import "@/components/activity-calendar.css"
 import {FilterOption} from "@/components/activity-filter"
 import {CalendarPlaceholder} from "@/components/loading"
+import {Icons} from "@/components/icons"
 
 export function ActivityCalendar({calendarData, style, filter}: {calendarData: GetActivityCalendarDataResponse, filter: FilterOption & {start: string, end: string}} & ComponentPropsWithoutRef<"section">) {
   const data = use(calendarData)
@@ -31,11 +32,13 @@ export function ActivityCalendar({calendarData, style, filter}: {calendarData: G
         renderBlock={(block, activity: CalendarActivity) => (<>
           <Tooltip delayDuration={300} disableHoverableContent>
             <TooltipTrigger asChild><DrawRect block={block} activity={activity}/></TooltipTrigger>
-            <TooltipContent>
-              {format(activity.date, {locale, localizeDate: true})}
-              {!!activity.countBook && <p>{t("bookshelf.category.book")}: {activity.countBook}</p>}
-              {!!activity.countMovie && <p>{t("bookshelf.category.movie")}: {activity.countMovie}</p>}
-              {/*<TooltipArrow className="fill-white"/>*/}
+            <TooltipContent className="space-y-1 px-3 py-2">
+              <p className="text-xs">{format(activity.date, {locale, localizeDate: true})}</p>
+              {(!!activity.countBook || !!activity.countMovie) &&
+                <p className="flex items-center gap-1 font-medium text-stone-800 dark:text-stone-200">
+                  {!!activity.countBook && <><Icons.type.book/> {activity.countBook}</>}
+                  {!!activity.countMovie && <><Icons.type.movie/> {activity.countMovie}</>}
+                </p>}
             </TooltipContent>
           </Tooltip>
         </>)}/>
@@ -47,7 +50,7 @@ export function ActivityCalendar({calendarData, style, filter}: {calendarData: G
 const ColorLegend = () => {
   const {t} = useTranslation()
 
-  const unit = (category: "Book" | "Movie", level: number) => (<>
+  const unit = ([category, level]: readonly ["Book" | "Movie", number]) => (<>
     <svg width="12" height="12" className="shrink-0">
       <DrawRect block={<rect x="0" y="0" width="12" height="12" rx="2" ry="2"/>}
         activity={{[`count${category}`]: level} as unknown as CalendarActivity}/>
@@ -57,9 +60,10 @@ const ColorLegend = () => {
   return (<>
     <div className="flex items-center gap-2 text-xs self-end">
       {t(`bookshelf.category.book`)}
-      {([["Book", 1], ["Book", 2], ["Book", 3]] as const).map(([category, level]) => unit(category, level))}
+      {([["Book", 1], ["Book", 2], ["Book", 3]] as const).map(unit)}
+      <span className="px-2"/>
       {t(`bookshelf.category.movie`)}
-      {([["Movie", 1], ["Movie", 2], ["Movie", 3]] as const).map(([category, level]) => unit(category, level))}
+      {([["Movie", 1], ["Movie", 2], ["Movie", 3]] as const).map(unit)}
     </div>
   </>)
 }
@@ -72,10 +76,8 @@ const DrawRect = forwardRef(function DrawRect({block, activity, ...props}: {bloc
     return (<>
       <defs>
         <linearGradient id={id} x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="48%" stopColor={`var(--color-book-${bookLevel})`}/>
-          <stop offset="48%" stopColor={`var(--color-book-movie-sep)`}/>
-          <stop offset="52%" stopColor={`var(--color-book-movie-sep)`}/>
-          <stop offset="52%" stopColor={`var(--color-movie-${movieLevel})`}/>
+          <stop offset="50%" stopColor={`var(--color-book-${bookLevel})`}/>
+          <stop offset="50%" stopColor={`var(--color-movie-${movieLevel})`}/>
         </linearGradient>
       </defs>
       {/* @ts-ignore*/}
