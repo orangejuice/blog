@@ -1,14 +1,14 @@
 ---
-title: 干涸的河
+title: 干涸的河：中国留守儿童的悲鸣
 category: movie
 status: done
 rating: 5
 date: 2021-02-26 05:26:31
 douban:
   id: "30200965"
-  title: 干涸的河
-  subtitle: ""
-  rating: 0
+  title: 干涸的河：中国留守儿童的悲鸣
+  subtitle: "2018 / NHK"
+  rating: 8.4
   cover: https://img2.doubanio.com/f/frodo/753fa1e93c945e533e52dddab73b2b55a1083083/pics/subject/movie_large.jpg
   link: https://movie.douban.com/subject/30200965/
 ---
