@@ -1,6 +1,5 @@
 import * as fs from "fs"
 import * as path from "path"
-import {format} from "@/lib/utils"
 import PQueue from "p-queue"
 import yaml from "yaml"
 // @ts-ignore
@@ -33,6 +32,7 @@ for (const interest of (tofu as Record<any, any>).interest) {
     const doubanIntro = interest.interest.subject.intro
     const doubanRating = interest.interest.subject.rating.value ?? ""
     const doubanLink = interest.interest.subject.url
+    const year = interest.interest.subject.year || interest.interest.subject.pubdate[0]
     const doubanID = interest.interest.subject.id ?? ""
     const createdDate = interest.interest.create_time
     const rating = interest.interest.rating?.value ?? 0
@@ -44,22 +44,20 @@ for (const interest of (tofu as Record<any, any>).interest) {
       history.push({date: create_time, comment, rating: rating?.value, status: status == "mark" ? "todo" : status})
     })
 
-    const formattedDate = format(createdDate, {date: true})
-    const dict = `${formattedDate}-${sanitizeFilename(title)}`
+    const dict = `${category}-${sanitizeFilename(title + (year ? `-${year.match(/\d{4}/)[0]}` : "")).toLowerCase()}`
     if (!fs.existsSync(path.join(OUTPUT_DIR, dict))) {
       fs.mkdirSync(path.join(OUTPUT_DIR, dict))
     }
-    const filePath = path.join(OUTPUT_DIR, dict, "record.md")
 
     if (title == "未知电影") {
-      console.log(dict)
+      console.log(dict, doubanID)
       continue
     }
 
     cover && queue.add(() => downloadImage(cover, path.join(OUTPUT_DIR, dict)))
 
     const frontmatter = {
-      title, category, status, rating, date: createdDate,
+      title, category, status, rating, year, date: createdDate,
       douban: {
         id: doubanID, title, subtitle: doubanSubtitle, intro: doubanIntro, rating: doubanRating, cover,
         link: doubanLink, history
@@ -68,7 +66,7 @@ for (const interest of (tofu as Record<any, any>).interest) {
     const content = "---\n".concat(yaml.stringify(frontmatter)).concat("---\n\n")
       .concat(sanitizeContent(comment ?? ""))
 
-    fs.writeFileSync(filePath, content, "utf8")
+    fs.writeFileSync(path.join(OUTPUT_DIR, dict, "record.md"), content, "utf8")
 
   } catch (err) {
     console.log(interest)

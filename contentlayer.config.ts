@@ -53,6 +53,7 @@ export const Activity = defineDocumentType(() => ({
           id: {type: "string"},
           title: {type: "string"},
           subtitle: {type: "string"},
+          year: {type: "string"},
           intro: {type: "string"},
           rating: {type: "number"},
           cover: {type: "string"},
