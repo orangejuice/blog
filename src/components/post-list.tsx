@@ -61,9 +61,9 @@ function ActivityCard({post}: {post: PostWithActivity}) {
           </div>
         </div>
         <span className="flex gap-1 text-sm">
-      <span>{t("post.replied")}</span>
-      <span className="font-medium line-clamp-1">{activity.bodyText}</span>
-    </span>
+          <span>{t("post.replied")}</span>
+          <span className="font-medium line-clamp-1">{activity.bodyText}</span>
+        </span>
         <p className={cn("w-full px-3 py-1 text-sm rounded-md font-medium text-stone-700 tracking-tight line-clamp-1",
           "group-hover:bg-stone-200 bg-stone-100 dark:bg-stone-800 dark:group-hover:bg-stone-700 dark:text-stone-400 transition-colors")}>
           {post.title}

@@ -56,30 +56,32 @@ const Activities = ({activities, style, className}: {activities: Activity[]} & C
       {activities.map((activity) => {
         const Icon = Icons.type[`${activity.category}`]
         return (
-          <li key={activity._id} className="flex flex-col gap-2 rounded-lg">
-            <div className="flex flex-row items-start">
-              <div className="relative w-28 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
-                <Image src={activity.cover} alt="cover"/>
-              </div>
-              <div className="flex flex-col grow text-stone-600 text-sm px-4 md:px-6">
-                <div className="flex justify-between">
-                  <h2 className="text-xl font-bold text-stone-800 dark:text-stone-200">{activity.title}</h2>
-                  <div className="relative flex items-center gap-1 text-xs rounded-full font-medium text-stone-500">
-                    <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
-                  </div>
+          <li key={activity._id}>
+            <Link href={`/${activity.slug}`} className="flex flex-col gap-2 rounded-lg">
+              <div className="flex flex-row items-start">
+                <div className="relative w-28 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
+                  <Image src={activity.cover} alt="cover"/>
                 </div>
-                <StarRating rating={activity.douban?.rating}>
-                  {!!activity.douban?.rating ? <>
+                <div className="flex flex-col grow text-stone-600 text-sm px-4 md:px-6">
+                  <div className="flex justify-between">
+                    <h2 className="text-xl font-bold text-stone-800 dark:text-stone-200">{activity.title}</h2>
+                    <div className="relative flex items-center gap-1 text-xs rounded-full font-medium text-stone-500">
+                      <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
+                    </div>
+                  </div>
+                  <StarRating rating={activity.douban?.rating}>
+                    {!!activity.douban?.rating ? <>
                     <span className="ml-1 font-medium text-yellow-600 font-mono tracking-[-0.15em]">
                       {activity.douban?.rating?.toFixed(1)}
                     </span>
-                  </> : <span className="ml-1 font-mono text-xs">{t("bookshelf.rating.0")}</span>}
-                </StarRating>
-                <p className="text-xs mt-0.5 mb-2">{activity.douban?.subtitle}</p>
-                <MyComment activity={activity} className="hidden md:block"/>
+                    </> : <span className="ml-1 font-mono text-xs">{t("bookshelf.rating.0")}</span>}
+                  </StarRating>
+                  <p className="text-xs mt-0.5 mb-2">{activity.douban?.subtitle}</p>
+                  <MyComment activity={activity} className="hidden md:block"/>
+                </div>
               </div>
-            </div>
-            <MyComment activity={activity} className="block md:hidden"/>
+              <MyComment activity={activity} className="block md:hidden"/>
+            </Link>
           </li>
         )
       })}
@@ -87,7 +89,7 @@ const Activities = ({activities, style, className}: {activities: Activity[]} & C
   </>)
 }
 
-const MyComment = ({activity, className}: {activity: Activity} & ComponentPropsWithoutRef<"div">) => {
+export const MyComment = ({activity, className}: {activity: Activity} & ComponentPropsWithoutRef<"div">) => {
   const {t, i18n: {language: locale}} = useTranslation()
 
   return (<>
@@ -104,7 +106,7 @@ const MyComment = ({activity, className}: {activity: Activity} & ComponentPropsW
   </>)
 }
 
-const StarRating = ({rating, max = 10, description = false, children}: {rating: number | undefined, max?: number, description?: boolean} & ComponentPropsWithoutRef<"div">) => {
+export const StarRating = ({rating, max = 10, description = false, children}: {rating: number | undefined, max?: number, description?: boolean} & ComponentPropsWithoutRef<"div">) => {
   const {t} = useTranslation()
   rating ??= 0
   const ratingVal = rating * 10 / max

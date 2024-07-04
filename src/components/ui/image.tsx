@@ -1,3 +1,4 @@
+"use client"
 import {forwardRef} from "react"
 import {default as NextImage, ImageProps} from "next/image"
 import {motion, MotionProps} from "framer-motion"

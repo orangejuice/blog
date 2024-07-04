@@ -24,6 +24,10 @@ export const getActivities = cache(async (page: number, filter: FilterOption) =>
   return sortedActivities.slice(start, end)
 })
 
+export const getActivity = cache(async (slug: string) => {
+  return allActivities.find(activity => activity.slug == slug)
+})
+
 export const getActivitiesFilter = cache(async ({date, year}: {date?: string, year?: string} | undefined = {}) => {
   const counter = {
     book: {status: {todo: 0, doing: 0, done: 0}, total: 0},
