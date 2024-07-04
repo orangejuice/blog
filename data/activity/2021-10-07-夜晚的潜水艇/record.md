@@ -61,6 +61,10 @@ douban:
   rating: 8.3
   cover: https://img1.doubanio.com/view/subject/l/public/s33718940.jpg
   link: https://book.douban.com/subject/35005045/
+  history:
+    - date: 2021-10-07 06:35:46
+      comment: "Via Twitter "
+      status: todo
 ---
 
 Via Twitter  / via tw wu man nan Shan 这是陈春成的首部短篇小说，由九个小故事构成。我最喜欢《裁云记》这篇。云彩可以被裁剪成任意形状，甚至还能用云彩来打广告，佩服作者的想象力。

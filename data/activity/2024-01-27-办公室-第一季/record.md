@@ -11,6 +11,10 @@ douban:
   rating: 8.6
   cover: https://img9.doubanio.com/view/photo/m_ratio_poster/public/p2463104744.jpg
   link: https://movie.douban.com/subject/10529476/
+  history:
+    - date: 2022-06-29 10:25:14
+      comment: "Via friends recommendation "
+      status: todo
 ---
 
 办公室成为永远无可代替的经典 2023年看完了一遍 补标

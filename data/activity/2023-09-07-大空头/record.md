@@ -11,6 +11,10 @@ douban:
   rating: 8.5
   cover: https://img2.doubanio.com/view/photo/m_ratio_poster/public/p2283531871.jpg
   link: https://movie.douban.com/subject/26303622/
+  history:
+    - date: 2022-04-07 14:54:01
+      comment: "Via tw Baye reply "
+      status: todo
 ---
 
 喜欢Steve Carell

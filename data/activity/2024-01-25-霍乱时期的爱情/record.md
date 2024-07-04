@@ -19,6 +19,10 @@ douban:
   rating: 9
   cover: https://img3.doubanio.com/view/subject/l/public/s11284102.jpg
   link: https://book.douban.com/subject/10594787/
+  history:
+    - date: 2024-01-25 04:38:18
+      comment: ""
+      status: todo
 ---
 
 Via tw 豆小豆 你还年轻，还不懂得内心的记忆会把不好的东西抹掉，而把美好的东西更加美化。正是因为这样功能，我们才对过去记忆犹新。——马尔克斯《霍乱时期的爱情》

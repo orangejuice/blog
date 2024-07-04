@@ -15,6 +15,10 @@ douban:
   rating: 8.9
   cover: https://img9.doubanio.com/view/subject/l/public/s2857294.jpg
   link: https://book.douban.com/subject/2359052/
+  history:
+    - date: 2021-11-29 18:38:00
+      comment: via tw threads
+      status: todo
 ---
 
 via tw threads / via tw 章工 在世人中间不愿渴死的人，必须学会从一切杯子里痛饮；

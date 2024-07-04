@@ -29,6 +29,10 @@ douban:
   rating: 8.5
   cover: https://img3.doubanio.com/view/subject/l/public/s33758847.jpg
   link: https://book.douban.com/subject/35015980/
+  history:
+    - date: 2022-01-02 04:51:45
+      comment: Via tw Mia
+      status: todo
 ---
 
 Via tw Mia / via tw 豆小豆 人类之所以想要一个家，想要一个温暖的地方，或者舒适的地方，首先是为了获得身体的温暖，然后才是情感的温暖。 

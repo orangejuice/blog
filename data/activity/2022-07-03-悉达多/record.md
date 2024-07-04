@@ -12,6 +12,10 @@ douban:
   rating: 9
   cover: https://img1.doubanio.com/view/subject/l/public/s6790238.jpg
   link: https://book.douban.com/subject/3406401/
+  history:
+    - date: 2022-07-03 00:02:06
+      comment: via friend's recommendation
+      status: todo
 ---
 
 via friend's recommendation / via 豆瓣 豆小豆 你眼中的自己不是你，别人眼中的你，也不是你。你眼中的别人，才是真实的你自己。

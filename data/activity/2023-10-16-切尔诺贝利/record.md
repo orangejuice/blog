@@ -11,6 +11,11 @@ douban:
   rating: 9.6
   cover: https://img9.doubanio.com/view/photo/m_ratio_poster/public/p2555445285.jpg
   link: https://movie.douban.com/subject/27098632/
+  history:
+    - date: 2019-05-24 02:04:33
+      comment: ""
+      rating: 5
+      status: doing
 ---
 
 补

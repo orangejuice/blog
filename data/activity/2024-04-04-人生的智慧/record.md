@@ -12,6 +12,10 @@ douban:
   rating: 9.2
   cover: https://img9.doubanio.com/view/subject/l/public/s4619775.jpg
   link: https://book.douban.com/subject/3261600/
+  history:
+    - date: 2021-01-11 06:44:39
+      comment: ""
+      status: done
 ---
 
 想再读 via tw 黄浦记忆 独处的时候，一个可怜虫就会感受到自己的全部可怜之处，而一个具有丰富思想的人只会感觉到自己丰富的思想。——叔本华《人生的智慧》

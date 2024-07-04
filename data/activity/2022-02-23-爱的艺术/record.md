@@ -19,6 +19,10 @@ douban:
   rating: 8.8
   cover: https://img9.doubanio.com/view/subject/l/public/s2990934.jpg
   link: https://book.douban.com/subject/3026879/
+  history:
+    - date: 2022-02-23 02:24:59
+      comment: "Via friends reading list  "
+      status: todo
 ---
 
 Via friends reading list / via tw 豆小豆 最重要的是学会一个人单独待着，而且不看书，不听广播，不抽烟和不喝酒。有没有集中的能力表现在能不能单独地待着——而这种能力又是学会爱的一个条件。正因为我们不能自力更生，所以只能把自己同另一个人联在一起，这个人也许就是我的生命的拯救者，但是这种关系同爱情无关。——弗洛姆《爱的艺术》

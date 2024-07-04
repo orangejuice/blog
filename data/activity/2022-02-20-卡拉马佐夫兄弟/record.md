@@ -12,6 +12,10 @@ douban:
   rating: 9.6
   cover: https://img9.doubanio.com/view/subject/l/public/s27996884.jpg
   link: https://book.douban.com/subject/25887924/
+  history:
+    - date: 2022-02-20 22:28:55
+      comment: Via tw Mier “最要紧的是，我们首先应该善良，其次要诚实，再其次是以后永远不要互相遗忘。”
+      status: todo
 ---
 
 Via tw Mier “最要紧的是，我们首先应该善良，其次要诚实，再其次是以后永远不要互相遗忘。” 2022-2-10 / via tw 章工 爱具体的人，不要爱抽象的人，要爱生活，不要爱生活的意义。 2024-2-3

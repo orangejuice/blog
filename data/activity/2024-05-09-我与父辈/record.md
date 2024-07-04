@@ -33,6 +33,10 @@ douban:
   rating: 8.6
   cover: https://img1.doubanio.com/view/subject/l/public/s33841258.jpg
   link: https://book.douban.com/subject/35380288/
+  history:
+    - date: 2022-03-07 01:18:34
+      comment: Via tw meng sheng 沉默与喘息
+      status: todo
 ---
 
 一部具体的河南文学，书中的人物让人亲切，是无数勤恳中国长辈的缩影。厚重踏实的生命感，真实有力的亲情，长辈的担当和坚韧造就毕生的影响。这些东西如此珍贵，在纸上看来虽自然而然尚且苦涩难熬，想来有多少家庭能始终如一做到如此这般。这个世界上，存在数不清的诱惑和障碍，没有一群人的努力，一个有良知的人跨越阶级如水中捞月。阎连科浸泡在家人、乡土和部队中的文学成长，体验独特而幸运。

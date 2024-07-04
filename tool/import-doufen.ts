@@ -38,6 +38,11 @@ for (const interest of (tofu as Record<any, any>).interest) {
     const rating = interest.interest.rating?.value ?? 0
     const comment = interest.interest.comment
     const cover = interest.interest.subject.cover_url
+    const history: any[] | undefined = interest.history ? [] : undefined
+
+    history && Object.entries(interest.history).forEach(([_, {comment, rating, status, create_time}]: any) => {
+      history.push({date: create_time, comment, rating: rating?.value, status: status == "mark" ? "todo" : status})
+    })
 
     const formattedDate = format(createdDate, {date: true})
     const dict = `${formattedDate}-${sanitizeFilename(title)}`
@@ -55,7 +60,10 @@ for (const interest of (tofu as Record<any, any>).interest) {
 
     const frontmatter = {
       title, category, status, rating, date: createdDate,
-      douban: {id: doubanID, title, subtitle: doubanSubtitle, intro: doubanIntro, rating: doubanRating, cover, link: doubanLink}
+      douban: {
+        id: doubanID, title, subtitle: doubanSubtitle, intro: doubanIntro, rating: doubanRating, cover,
+        link: doubanLink, history
+      }
     }
     const content = "---\n".concat(yaml.stringify(frontmatter)).concat("---\n\n")
       .concat(sanitizeContent(comment ?? ""))

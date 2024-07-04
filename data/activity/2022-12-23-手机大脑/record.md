@@ -45,6 +45,10 @@ douban:
   rating: 7.2
   cover: https://img2.doubanio.com/view/subject/l/public/s34308663.jpg
   link: https://book.douban.com/subject/36091480/
+  history:
+    - date: 2022-12-23 01:44:15
+      comment: via douban homepage
+      status: todo
 ---
 
 via tw 枫影 来自瑞典的精神科医生Anders Hansen的作品《手机大脑》。以“进化心理学”的角度，指出人类的大脑与身体仍处于适应原始部落生活的状态，而如今我们每天花费4小时以上刷手机的生活方式给大脑带来极大的负担。提出的注意力稀缺、大脑未适应现代生活、社交网络利用人性弱点等理论均不算新颖，但提供的信息仍有些参考价值。书本不厚，可以轻松阅读。

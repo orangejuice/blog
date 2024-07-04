@@ -17,6 +17,23 @@ douban:
   rating: 8.4
   cover: https://img9.doubanio.com/view/subject/l/public/s34241855.jpg
   link: https://book.douban.com/subject/35876121/
+  history:
+    - date: 2022-12-30 23:12:29
+      comment: |-
+        Via tw jiayuan 2022 年重读了很多书，其中《纳瓦尔宝典》是我最推荐的一本。
+
+        2021 年初的时候就已经读过英文版，最近又重读了一遍。其中的很多箴言初读起来会觉得很有道理，但只有真的实践了之后才会知道其中的深意。
+
+        Naval 的两大人生哲学：进化论 + 理性佛教，前者是基因，后者是通过内观来对抗基因。
+      status: todo
+    - date: 2022-12-30 23:12:29
+      comment: |-
+        Via tw bitwu.eth / Via tw jiayuan 2022 年重读了很多书，其中《纳瓦尔宝典》是我最推荐的一本。
+
+        2021 年初的时候就已经读过英文版，最近又重读了一遍。其中的很多箴言初读起来会觉得很有道理，但只有真的实践了之后才会知道其中的深意。
+
+        Naval 的两大人生哲学：进化论 + 理性佛教，前者是基因，后者是通过内观来对抗基因。
+      status: todo
 ---
 
 Via tw bitwu.eth / Via tw jiayuan 2022 年重读了很多书，其中《纳瓦尔宝典》是我最推荐的一本。

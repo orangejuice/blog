@@ -16,6 +16,10 @@ douban:
   rating: 8.9
   cover: https://img3.doubanio.com/view/subject/l/public/s10205753.jpg
   link: https://book.douban.com/subject/10757940/
+  history:
+    - date: 2024-03-27 06:55:16
+      comment: Via tw 黄浦记忆 旧人不知我近况，新人不知我过往。近况不该旧人知，过往不与新人讲。纵你阅人何其多，再无一人恰似我。
+      status: todo
 ---
 
 Via tw 黄浦记忆 旧人不知我近况，新人不知我过往。近况不该旧人知，过往不与新人讲。纵你阅人何其多，再无一人恰似我。 / via tw 豆小豆 我最常常想起的，认为最悲哀的几句话：“肉体的愉快是短暂的；心的愉快是要变为哀愁；只有理智的愉快永远与我们同在，直到最后。”

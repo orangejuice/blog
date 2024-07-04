@@ -21,6 +21,10 @@ douban:
   rating: 8.8
   cover: https://img1.doubanio.com/view/subject/l/public/s29634528.jpg
   link: https://book.douban.com/subject/26954760/
+  history:
+    - date: 2021-12-06 19:27:11
+      comment: Via tw 停云
+      status: todo
 ---
 
 史特利克兰过分独特了，独特到活生生就是一个小说里的人物。行文糅合进了作者的敏感性和‘心神不宁’，以及作者内心的忧郁、对人性的剖析和一吐为快的哲学思考，具有强烈的自主性。一些对人性的理解，确实有点吸引到我。

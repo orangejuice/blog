@@ -12,6 +12,10 @@ douban:
   rating: 7
   cover: https://img9.doubanio.com/view/subject/l/public/s28522456.jpg
   link: https://book.douban.com/subject/25839589/
+  history:
+    - date: 2022-04-04 02:35:53
+      comment: Via douban 蒋能杰
+      status: todo
 ---
 
 Via douban 蒋能杰 / via tw 停云 1911年清王朝覆灭，中国第一次彻底打开国门，而此时的西方文明恰好陷入混乱：民族主义猖獗，乌托邦主义盛行，就连艺术审美都非常劣质。因此，我们学习西方的时机非常不幸。

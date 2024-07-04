@@ -15,6 +15,13 @@ douban:
   rating: 9.1
   cover: https://img1.doubanio.com/view/subject/l/public/s3983958.jpg
   link: https://book.douban.com/subject/2035171/
+  history:
+    - date: 2024-03-13 14:23:14
+      comment: |-
+        Via tw dr.wang 千万不要相信，压力可以转化为动力，你的压力只会转化成病历，人真正的动力，源自于内心深处，对于快乐和兴趣的追求。
+
+        毛姆《人生的枷锁》
+      status: todo
 ---
 
 2024-3-13 Via tw dr.wang 千万不要相信，压力可以转化为动力，你的压力只会转化成病历，人真正的动力，源自于内心深处，对于快乐和兴趣的追求。 / 2024.5.4 via tw 豆小豆 人们要为年轻时对未来的美好憧憬，付出饱尝幻灭之苦的惨痛代价。

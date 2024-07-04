@@ -57,6 +57,13 @@ douban:
   rating: 8.7
   cover: https://img2.doubanio.com/view/subject/l/public/s33792851.jpg
   link: https://book.douban.com/subject/35301514/
+  history:
+    - date: 2023-07-29 18:39:48
+      comment: |-
+        Via tw fenng 中美关系前传 
+
+        我认为这本书很精彩
+      status: todo
 ---
 
 绝佳近代史读物，围绕着几个中心问题展开，思路流畅，逻辑清晰，语言通俗易懂，触及不少细节，足见作者对于这段历史了熟于心。

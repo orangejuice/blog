@@ -11,6 +11,10 @@ douban:
   rating: 9
   cover: https://img3.doubanio.com/view/photo/m_ratio_poster/public/p2791150317.jpg
   link: https://movie.douban.com/subject/1297795/
+  history:
+    - date: 2022-04-04 03:50:18
+      comment: via youtube qiang zai shuo dian ying
+      status: todo
 ---
 
 via youtube qiang zai shuo dian ying / via tw  瞎玩菌

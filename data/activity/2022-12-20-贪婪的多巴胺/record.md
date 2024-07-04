@@ -22,6 +22,10 @@ douban:
   rating: 7.8
   cover: https://img1.doubanio.com/view/subject/l/public/s33973820.jpg
   link: https://book.douban.com/subject/35545272/
+  history:
+    - date: 2022-12-20 16:41:01
+      comment: Via tg 硬核小卒
+      status: todo
 ---
 
 Via tg 硬核小卒 / via tw domo 精神荒芜的人无可救药的走进了带货直播间，很不幸的是，这是一个精神荒芜,麻木颓丧的时代，于是直播间爆满了……

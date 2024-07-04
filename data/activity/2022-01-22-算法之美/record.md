@@ -15,6 +15,10 @@ douban:
   rating: 7.4
   cover: https://img9.doubanio.com/view/subject/l/public/s29762735.jpg
   link: https://book.douban.com/subject/30155731/
+  history:
+    - date: 2022-01-22 17:28:35
+      comment: Via tw 倪爽
+      status: todo
 ---
 
 Via tw Kirk borne "#Algorithms to Live By: The Computer Science of Human Decisions" / Via tw 倪爽 

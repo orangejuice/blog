@@ -12,6 +12,15 @@ douban:
   rating: 8.6
   cover: https://img1.doubanio.com/view/subject/l/public/s4494379.jpg
   link: https://book.douban.com/subject/4842446/
+  history:
+    - date: 2022-07-15 21:33:53
+      comment: Via tw 停云 每一位为人师者，都应该认真读一读《巨流河》，特别是第三章“中国不亡有我——南开中学”。阅读此著时，眼睛一直湿润着。
+      status: todo
+    - date: 2022-07-15 21:33:53
+      comment: "2022-07-15 Via tw 停云
+        每一位为人师者，都应该认真读一读《巨流河》，特别是第三章“中国不亡有我——南开中学”。阅读此著时，眼睛一直湿润着。/ 2023-12-19
+        via tw wuyagege "
+      status: todo
 ---
 
 2022-07-15 Via tw 停云 每一位为人师者，都应该认真读一读《巨流河》，特别是第三章“中国不亡有我——南开中学”。阅读此著时，眼睛一直湿润着。/ 2023-12-19 via tw wuyagege / via tw dr.wang 3月28日凌晨1时，台湾知名作家、学者齐邦媛去世，享年100岁～

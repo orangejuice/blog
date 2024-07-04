@@ -11,6 +11,10 @@ douban:
   rating: 7.7
   cover: https://img1.doubanio.com/view/photo/m_ratio_poster/public/p2404553168.jpg
   link: https://movie.douban.com/subject/24751763/
+  history:
+    - date: 2023-04-29 07:57:49
+      comment: ""
+      status: todo
 ---
 
 奔着葛优而来，但这片实在是没什么意思。

@@ -16,6 +16,10 @@ douban:
   rating: 8.8
   cover: https://img1.doubanio.com/view/subject/l/public/s27232429.jpg
   link: https://book.douban.com/subject/25774961/
+  history:
+    - date: 2024-04-22 17:37:26
+      comment: Via tw 正派流氓 在十八世纪的小说《红楼梦》里，众多的主要人物对自身的命运一无所知，这种茫然无知具有一种魅力。
+      status: todo
 ---
 
 (Via tw 正派流氓 在十八世纪的小说《红楼梦》里，众多的主要人物对自身的命运一无所知，这种茫然无知具有一种魅力。) 学术性强，探讨中国文学重视过去和历史的现象

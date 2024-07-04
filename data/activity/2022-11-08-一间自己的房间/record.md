@@ -17,6 +17,10 @@ douban:
   rating: 9.3
   cover: https://img1.doubanio.com/view/subject/l/public/s32343000.jpg
   link: https://book.douban.com/subject/30477653/
+  history:
+    - date: 2022-11-08 22:31:05
+      comment: Via tw 停云
+      status: todo
 ---
 
 Via tw 停云 / via tw 豆小豆 我希望，大家无论通过什么方法，都能挣到足够的钱，去旅行，去闲着，去思考世界的过去和未来，去看书做梦，去街角闲逛，让思绪的钓线深深沉入街流之中。

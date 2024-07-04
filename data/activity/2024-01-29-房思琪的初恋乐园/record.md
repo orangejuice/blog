@@ -36,6 +36,10 @@ douban:
   rating: 9.2
   cover: https://img2.doubanio.com/view/subject/l/public/s29651121.jpg
   link: https://book.douban.com/subject/27614904/
+  history:
+    - date: 2022-04-29 07:28:43
+      comment: 竟然没有标注。要看这本书。
+      status: todo
 ---
 
 在从窗台映射进来的光线里读了第一章。同样从窗闯进来的还有马路上的胎噪声，和一些不同类鸟的尖叫。

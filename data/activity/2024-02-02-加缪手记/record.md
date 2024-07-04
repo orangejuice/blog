@@ -12,6 +12,10 @@ douban:
   rating: 9.4
   cover: https://img2.doubanio.com/view/subject/l/public/s33736361.jpg
   link: https://book.douban.com/subject/34802764/
+  history:
+    - date: 2024-02-02 16:20:40
+      comment: Via tw 豆小豆 只要我还一直读书，我就能够一直理解自己的痛苦，一直与自己的无知、狭隘、偏见、阴暗，见招拆招。——加缪
+      status: todo
 ---
 
 Via tw 豆小豆 只要我还一直读书，我就能够一直理解自己的痛苦，一直与自己的无知、狭隘、偏见、阴暗，见招拆招。——加缪 / via tw 豆小豆 人生的一半，是在欲語还休、扭头不看和沉默寡言中度过的。

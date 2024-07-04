@@ -56,7 +56,18 @@ export const Activity = defineDocumentType(() => ({
           intro: {type: "string"},
           rating: {type: "number"},
           cover: {type: "string"},
-          link: {type: "string"}
+          link: {type: "string"},
+          history: {
+            type: "list", of: defineNestedType(() => ({
+              name: "History",
+              fields: {
+                comment: {type: "string", required: true},
+                rating: {type: "number"},
+                status: {type:"enum", options: ["todo", "doing", "done"], required: true},
+                date: {type: "date", required: true},
+              }
+            }))
+          }
         }
       }))
     }

@@ -11,6 +11,10 @@ douban:
   rating: 8.6
   cover: https://img9.doubanio.com/view/photo/m_ratio_poster/public/p2221426906.jpg
   link: https://movie.douban.com/subject/1307971/
+  history:
+    - date: 2023-01-06 14:06:06
+      comment: Via tw douban ezu 推荐一部很有意思的电影，堪称华语版钦差大臣，竟然还是谭校长演的。
+      status: todo
 ---
 
 Via tw douban ezu 推荐一部很有意思的电影，堪称华语版钦差大臣，竟然还是谭校长演的。 2023-01–06 / via tw Beijing Kanye 

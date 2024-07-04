@@ -11,6 +11,10 @@ douban:
   rating: 7.4
   cover: https://img9.doubanio.com/view/photo/m_ratio_poster/public/p2157654546.jpg
   link: https://movie.douban.com/subject/1308567/
+  history:
+    - date: 2022-03-27 19:41:47
+      comment: Via tw 去追一只鹿
+      status: todo
 ---
 
 Via tw 去追一只鹿 / via tw luckylab_vicky 渡边淳一的情爱小说，常带着末世的颓废感和强烈的日本式官能之美。他曾说 “几乎每一部作品里都有我的亲身经历，作家要勇敢地表达出自己的好恶，才能与读者产生共鸣。”

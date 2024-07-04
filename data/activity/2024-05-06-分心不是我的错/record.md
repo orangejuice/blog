@@ -17,6 +17,10 @@ douban:
   rating: 7.7
   cover: https://img1.doubanio.com/view/subject/l/public/s10345438.jpg
   link: https://book.douban.com/subject/6516304/
+  history:
+    - date: 2024-04-09 21:02:00
+      comment: via search adhd
+      status: todo
 ---
 
 ADHD入门，自我发现旅途中新的一程，使用诸多案例帮助理解问题
