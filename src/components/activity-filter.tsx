@@ -25,7 +25,7 @@ export function ActivityFilter({filter: applied, style, filterData}: {filter: Fi
       <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">{t("bookshelf.filter.year")}</h5>
       <div className="flex flex-wrap text-stone-600 dark:text-stone-400">
         {Object.entries(filter.all.year).map(([year, num], index) => (
-          <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({year})}`}
+          <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({year, category: applied.category, status: applied.status})}`}
             className={cn("flex items-center gap-1 group m-2 text-sm font-medium underline-fade",
               year == selectedYear && "underline-fade-selected font-bold")}>
             {year == selectedYear ? <Icons.symbol.squareChecked/> : <Icons.symbol.square/>}
@@ -37,8 +37,8 @@ export function ActivityFilter({filter: applied, style, filterData}: {filter: Fi
     <section className="animate-delay-in" style={cssIndexCounter()}>
       <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">{t("bookshelf.filter.category")}</h5>
       <div className="flex flex-wrap text-stone-600 dark:text-stone-400">
-        {Object.entries(filter).map(([category, {total}], index) => (
-          <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({year: applied.year, category})}`}
+        {Object.entries(filter).filter(([category]) => category != "all").map(([category, {total}], index) => (
+          <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({year: applied.year, category: category == selectedCate ? undefined : category, status: applied.status})}`}
             className={cn("flex items-center gap-1 group m-2 text-sm font-medium underline-fade",
               category == selectedCate && "underline-fade-selected font-bold")}>
             {category == selectedCate ? <Icons.symbol.squareChecked/> : <Icons.symbol.square/>}
@@ -51,7 +51,7 @@ export function ActivityFilter({filter: applied, style, filterData}: {filter: Fi
       <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">{t("bookshelf.filter.status")}</h5>
       <div className="flex flex-wrap text-stone-600 dark:text-stone-400">
         {Object.entries(filter[selectedCate].status).map(([status, num], index) => (
-          <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({...applied, status})}`}
+          <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({year: applied.year, category: applied.category, status: status == applied.status ? undefined : status})}`}
             className={cn("flex items-center gap-1 group m-2 text-sm font-medium underline-fade",
               status == applied.status && "underline-fade-selected font-bold")}>
             {status == applied.status ? <Icons.symbol.squareChecked/> : <Icons.symbol.square/>}

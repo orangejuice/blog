@@ -32,7 +32,7 @@ export const getActivitiesFilter = cache(async ({date, year}: {date?: string, ye
   }
   allActivities.forEach(activity => {
     const curYear = dayjs(activity.date).year()
-    if (!year || year == "all" || +year == curYear) {
+    if (!year || +year == curYear) {
       counter[activity.category].status[activity.status] += 1
       counter[activity.category].total += 1
       counter.all.status[activity.status] += 1

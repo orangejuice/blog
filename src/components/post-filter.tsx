@@ -36,7 +36,7 @@ export function PostFilter({locales: localesData, tags: tagsData, filter: applie
       <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">{t("post.filter.tags")}</h5>
       <div className="flex flex-wrap text-stone-600 dark:text-stone-400">
         {Object.entries(tags).map(([tag, num], index) => (
-          <Link key={index} href={`/${menu.post}/${objectToUrlPart({...applied, tag})}`}
+          <Link key={index} href={`/${menu.post}/${objectToUrlPart({lang: applied.lang, tag: tag == applied.tag ? undefined : tag})}`}
             className={cn("flex items-center group m-2 text-sm font-medium underline-fade",
               tag == applied.tag && "underline-fade-selected font-bold")}>
             <Icons.symbol.hash/>{tag} ({num})
