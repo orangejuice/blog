@@ -1,5 +1,5 @@
 "use client"
-import React, {ComponentPropsWithoutRef, use, useEffect, useRef, useState, useTransition} from "react"
+import React, {ComponentPropsWithoutRef, use, useEffect, useRef, useTransition} from "react"
 import type {Activity} from "contentlayer/generated"
 import {cn, format, useCssIndexCounter} from "@/lib/utils"
 import {useTranslation} from "react-i18next"
@@ -12,12 +12,13 @@ import {FilterOption} from "@/components/activity-filter"
 import {menu, site} from "@/site"
 import Link from "next/link"
 import {Divider} from "@/components/ui/divider"
+import {useGlobalState} from "@/lib/use-global-state"
 
 
 export default function ActivityInfiniteScrollList({data, style}: {data: Promise<Activity[]>} & ComponentPropsWithoutRef<"div">) {
-  const [pages, setPages] = useState([1])
-  const [activities, setActivities] = useState(use(data))
-  const [hasMore, setHasMore] = useState(use(data).length == 10)
+  const [pages, setPages] = useGlobalState("activity-pages", [1])
+  const [activities, setActivities] = useGlobalState("activity-data", use(data))
+  const [hasMore, setHasMore] = useGlobalState("activity-has-more", use(data).length == 10)
   const bottomRef = useRef(null)
   const [isPending, startTransition] = useTransition()
   const cssIndexCounter = useCssIndexCounter(style)

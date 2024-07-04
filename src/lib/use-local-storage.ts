@@ -3,15 +3,10 @@ import {create} from "zustand"
 import {persist} from "zustand/middleware"
 import {useEffect} from "react"
 
-type StorageState<T> = {
-  value: T
-  setValue: (update: T | ((val: T) => T)) => void
-}
-
 const storeDict = new Map<string, any>()
 
 const getLocalStorageStore = <T>(key: string, initialValue: T) => {
-  !storeDict.has(key) && storeDict.set(key, create(persist<StorageState<T>>((set, get) => ({
+  !storeDict.has(key) && storeDict.set(key, create(persist<UseState<T>>((set, get) => ({
     value: initialValue,
     setValue: (update) => {
       const newValue = typeof update === "function" ? (update as (prev: T) => T)(get().value) : update

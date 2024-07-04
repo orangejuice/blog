@@ -1,5 +1,10 @@
 type PartialBy<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>
 
+type UseState<T> = {
+  value: T
+  setValue: (update: T | ((val: T) => T)) => void
+}
+
 // https://github.com/giscus/giscus/blob/main/lib/types/giscus.ts
 type IDiscussionData = {
   id: string
