@@ -4,7 +4,7 @@ import {Icons} from "@/components/icons"
 import initTranslation from "@/lib/i18n"
 import {Image} from "@/components/ui/image"
 import {StarRating} from "@/components/activity-list"
-import {format} from "@/lib/utils"
+import {format, useCssIndexCounter} from "@/lib/utils"
 import {MDX} from "@/components/mdx"
 import {Comment} from "@/components/comment"
 import React from "react"
@@ -12,10 +12,11 @@ import React from "react"
 export const Activity = async ({activity, locale}: {activity: ActivityType, locale: SiteLocale}) => {
   const Icon = Icons.type[`${activity.category}`]
   const {t} = await initTranslation(locale)
+  const cssIndexCounter = useCssIndexCounter()
 
   return (<>
     <div className="grid md:grid-cols-[3fr,2fr] grid-rows-[min-content] items-start gap-10 min-h-screen">
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 animate-delay-in" style={cssIndexCounter()}>
         <div className="flex flex-row items-start gap-4 md:gap-6">
           <div className="relative w-28 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
             <Image src={activity.cover} alt="cover"/>
@@ -41,7 +42,7 @@ export const Activity = async ({activity, locale}: {activity: ActivityType, loca
       <ul className="row-start-2 md:row-start-1 md:col-start-2 md:row-span-2">
         {[{status: activity.status, rating: activity.rating, date: activity.date, comment: undefined} as PartialBy<HistoryType, "status" | "rating" | "comment"> & {date: string}].concat(
           ...(activity.douban?.history ?? [])).sort((a, b) => Date.parse(b.date) - Date.parse(a.date)).map((history, index) => (
-          <li key={index} className="relative [&:not(:last-child)]:pb-8">
+          <li key={index} className="relative [&:not(:last-child)]:pb-8 animate-delay-in" style={cssIndexCounter()}>
             <span className="absolute top-5 left-5 -ml-[0.5px] h-[calc(100%-1rem)] w-px bg-stone-300" aria-hidden="true"></span>
             <div className="relative flex items-start space-x-3 text-stone-300">
               <div className="flex items-center w-6 h-6">
