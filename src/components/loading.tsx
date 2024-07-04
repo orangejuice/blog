@@ -109,12 +109,12 @@ export const ActivitiesPlaceholder = () => {
             <div className="relative w-28 shrink-0 aspect-[0.7] rounded-lg bg-stone-200 dark:bg-stone-700"/>
             <div className="flex flex-col grow px-4 md:px-6 w-full">
               <div className="flex justify-between items-center">
-                <div className="h-6 bg-stone-200 dark:bg-stone-700 rounded w-3/4"/>
-                <div className="h-4 bg-stone-200 dark:bg-stone-700 rounded w-1/4"/>
+                <div className="h-6 bg-stone-200 dark:bg-stone-700 rounded w-1/3"/>
+                <div className="h-4 bg-stone-200 dark:bg-stone-700 rounded w-1/6"/>
               </div>
               <div className="h-4 bg-stone-200 dark:bg-stone-700 rounded w-1/2 mt-2"/>
-              <div className="h-3 bg-stone-200 dark:bg-stone-700 rounded w-full mt-2"/>
-              <div className="h-16 bg-stone-200 dark:bg-stone-700 rounded w-full mt-2 hidden md:block"/>
+              <div className="h-3 bg-stone-200 dark:bg-stone-700 rounded w-2/3 mt-2"/>
+              <div className="h-20 bg-stone-200 dark:bg-stone-700 rounded w-full mt-2 hidden md:block"/>
             </div>
           </div>
           <div className="h-16 bg-stone-200 dark:bg-stone-700 rounded w-full mt-2 md:hidden"/>
