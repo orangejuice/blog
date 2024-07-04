@@ -3,6 +3,7 @@ title: 再见列宁
 category: movie
 status: todo
 rating: 0
+year: "2003"
 date: 2023-09-23 02:09:16
 douban:
   id: "1292055"

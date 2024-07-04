@@ -3,6 +3,7 @@ title: 杜甫传
 category: book
 status: todo
 rating: 0
+year: 2019-5
 date: 2022-03-30 22:22:06
 douban:
   id: "34872557"

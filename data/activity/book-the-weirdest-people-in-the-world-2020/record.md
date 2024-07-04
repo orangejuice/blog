@@ -3,6 +3,7 @@ title: The WEIRDest People in the World
 category: book
 status: todo
 rating: 0
+year: 2020-9-1
 date: 2024-01-21 00:31:03
 douban:
   id: "34981871"

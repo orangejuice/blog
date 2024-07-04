@@ -3,6 +3,7 @@ title: 大路
 category: movie
 status: done
 rating: 5
+year: "1954"
 date: 2021-04-15 03:31:23
 douban:
   id: "1292719"

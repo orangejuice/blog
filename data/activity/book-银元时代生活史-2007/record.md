@@ -3,6 +3,7 @@ title: 银元时代生活史
 category: book
 status: todo
 rating: 0
+year: 2007-5
 date: 2023-05-14 10:16:52
 douban:
   id: "2118743"

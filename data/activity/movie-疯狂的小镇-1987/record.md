@@ -3,6 +3,7 @@ title: 疯狂的小镇
 category: movie
 status: todo
 rating: 0
+year: "1987"
 date: 2022-04-04 03:50:18
 douban:
   id: "1297795"

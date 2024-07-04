@@ -3,6 +3,7 @@ title: 顾此失彼
 category: movie
 status: todo
 rating: 0
+year: "1981"
 date: 2023-09-08 00:47:36
 douban:
   id: "1303853"

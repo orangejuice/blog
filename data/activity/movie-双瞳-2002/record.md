@@ -3,6 +3,7 @@ title: 双瞳
 category: movie
 status: todo
 rating: 0
+year: "2002"
 date: 2022-10-26 01:37:45
 douban:
   id: "1305046"

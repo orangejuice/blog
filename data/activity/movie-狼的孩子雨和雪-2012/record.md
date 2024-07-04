@@ -3,6 +3,7 @@ title: 狼的孩子雨和雪
 category: movie
 status: todo
 rating: 0
+year: "2012"
 date: 2024-04-27 04:14:28
 douban:
   id: "7064681"

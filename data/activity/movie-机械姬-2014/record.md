@@ -3,6 +3,7 @@ title: 机械姬
 category: movie
 status: done
 rating: 3
+year: "2014"
 date: 2024-01-28 06:33:44
 douban:
   id: "4160540"

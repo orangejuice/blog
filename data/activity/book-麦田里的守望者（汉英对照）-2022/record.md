@@ -3,6 +3,7 @@ title: 麦田里的守望者（汉英对照）
 category: book
 status: todo
 rating: 0
+year: 2022-2
 date: 2024-03-26 04:52:08
 douban:
   id: "35764768"

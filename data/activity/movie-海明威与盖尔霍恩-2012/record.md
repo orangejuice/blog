@@ -3,6 +3,7 @@ title: 海明威与盖尔霍恩
 category: movie
 status: todo
 rating: 0
+year: "2012"
 date: 2023-09-17 22:29:02
 douban:
   id: "2127789"

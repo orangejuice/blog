@@ -3,6 +3,7 @@ title: 来自星星的你
 category: movie
 status: done
 rating: 0
+year: "2013"
 date: 2024-05-04 16:39:23
 douban:
   id: "25698722"

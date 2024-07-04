@@ -3,6 +3,7 @@ title: 春天的故事
 category: movie
 status: todo
 rating: 0
+year: "1990"
 date: 2022-03-26 15:49:53
 douban:
   id: "1293632"

@@ -3,6 +3,7 @@ title: 少林寺
 category: movie
 status: todo
 rating: 0
+year: "1982"
 date: 2024-05-09 00:19:55
 douban:
   id: "1301198"

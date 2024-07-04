@@ -3,6 +3,7 @@ title: 愉悦法则
 category: movie
 status: todo
 rating: 0
+year: "2022"
 date: 2022-03-27 15:07:43
 douban:
   id: "35785455"

@@ -3,6 +3,7 @@ title: 八国联军目击记
 category: book
 status: todo
 rating: 0
+year: 1983-8
 date: 2024-01-19 20:15:57
 douban:
   id: "3054560"

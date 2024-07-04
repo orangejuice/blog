@@ -3,6 +3,7 @@ title: 人民英雄
 category: movie
 status: todo
 rating: 0
+year: "1987"
 date: 2022-06-14 20:52:33
 douban:
   id: "1304753"

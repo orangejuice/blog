@@ -3,6 +3,7 @@ title: 红高粱
 category: movie
 status: done
 rating: 2
+year: "1988"
 date: 2020-12-20 04:52:53
 douban:
   id: "1306505"

@@ -3,6 +3,7 @@ title: 长安三万里
 category: movie
 status: todo
 rating: 0
+year: "2023"
 date: 2023-10-08 19:31:50
 douban:
   id: "36035676"

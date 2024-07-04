@@ -3,6 +3,7 @@ title: 蝴蝶
 category: movie
 status: done
 rating: 5
+year: "2002"
 date: 2019-12-01 06:40:51
 douban:
   id: "1292056"

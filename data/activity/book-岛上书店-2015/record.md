@@ -3,6 +3,7 @@ title: 岛上书店
 category: book
 status: todo
 rating: 0
+year: 2015-5-1
 date: 2024-04-01 23:33:42
 douban:
   id: "26340138"

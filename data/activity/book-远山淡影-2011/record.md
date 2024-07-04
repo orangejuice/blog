@@ -3,6 +3,7 @@ title: 远山淡影
 category: book
 status: todo
 rating: 0
+year: 2011-5
 date: 2023-02-11 03:10:11
 douban:
   id: "5988624"

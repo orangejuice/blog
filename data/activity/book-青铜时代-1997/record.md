@@ -3,6 +3,7 @@ title: 青铜时代
 category: book
 status: done
 rating: 4
+year: 1997-5
 date: 2023-08-14 01:18:14
 douban:
   id: "1085883"

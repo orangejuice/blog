@@ -3,6 +3,7 @@ title: 红楼梦脂评汇校本
 category: book
 status: done
 rating: 5
+year: 2013-10
 date: 2021-10-09 06:29:34
 douban:
   id: "25757313"

@@ -3,6 +3,7 @@ title: 老友记  第八季
 category: movie
 status: done
 rating: 5
+year: "2001"
 date: 2024-05-03 14:45:08
 douban:
   id: "3286548"

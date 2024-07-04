@@ -3,6 +3,7 @@ title: 坡道上的家
 category: movie
 status: done
 rating: 3
+year: "2019"
 date: 2020-02-16 01:18:50
 douban:
   id: "30390532"

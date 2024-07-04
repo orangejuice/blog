@@ -3,6 +3,7 @@ title: 这才是心理学
 category: book
 status: done
 rating: 5
+year: 2015-10-1
 date: 2019-09-23 03:33:38
 douban:
   id: "26686251"

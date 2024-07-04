@@ -3,6 +3,7 @@ title: 中国现代文学新讲
 category: book
 status: todo
 rating: 0
+year: 2023-4
 date: 2024-02-04 03:17:02
 douban:
   id: "36361500"

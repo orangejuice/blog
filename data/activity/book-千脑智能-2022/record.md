@@ -3,6 +3,7 @@ title: 千脑智能
 category: book
 status: todo
 rating: 0
+year: 2022-9
 date: 2023-03-30 19:57:13
 douban:
   id: "36080515"

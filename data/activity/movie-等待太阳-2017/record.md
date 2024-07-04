@@ -3,6 +3,7 @@ title: 等待太阳
 category: movie
 status: todo
 rating: 0
+year: "2017"
 date: 2023-05-22 15:12:06
 douban:
   id: "27596972"

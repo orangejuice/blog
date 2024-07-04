@@ -3,6 +3,7 @@ title: 异星灾变 第一季
 category: movie
 status: done
 rating: 3
+year: "2020"
 date: 2023-10-16 04:30:17
 douban:
   id: "30345691"

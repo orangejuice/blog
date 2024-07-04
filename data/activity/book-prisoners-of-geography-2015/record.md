@@ -3,6 +3,7 @@ title: Prisoners of Geography
 category: book
 status: done
 rating: 5
+year: 2015-7-9
 date: 2020-11-23 06:57:52
 douban:
   id: "26608960"

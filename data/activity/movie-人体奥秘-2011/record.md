@@ -3,6 +3,7 @@ title: 人体奥秘
 category: movie
 status: done
 rating: 5
+year: "2011"
 date: 2020-09-28 01:37:25
 douban:
   id: "6558363"

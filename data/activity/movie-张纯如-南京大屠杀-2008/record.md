@@ -3,6 +3,7 @@ title: 张纯如 南京大屠杀
 category: movie
 status: todo
 rating: 0
+year: "2008"
 date: 2021-10-17 22:49:53
 douban:
   id: "2305280"

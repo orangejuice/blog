@@ -3,6 +3,7 @@ title: 诗经译注（彩图珍藏本）
 category: book
 status: todo
 rating: 0
+year: 2021-6
 date: 2021-08-16 19:05:19
 douban:
   id: "35515816"

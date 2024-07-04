@@ -3,6 +3,7 @@ title: 不安之书
 category: book
 status: todo
 rating: 0
+year: 2014-1-1
 date: 2024-04-12 10:29:52
 douban:
   id: "25847717"

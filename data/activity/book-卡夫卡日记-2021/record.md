@@ -3,6 +3,7 @@ title: 卡夫卡日记
 category: book
 status: todo
 rating: 0
+year: 2021-3
 date: 2024-05-10 17:15:18
 douban:
   id: "34919003"

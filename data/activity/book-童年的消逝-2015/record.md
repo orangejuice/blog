@@ -3,6 +3,7 @@ title: 童年的消逝
 category: book
 status: todo
 rating: 0
+year: 2015-5
 date: 2024-06-07 16:17:09
 douban:
   id: "26319794"

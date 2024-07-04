@@ -3,6 +3,7 @@ title: 十八岁出门远行
 category: book
 status: done
 rating: 5
+year: "1989"
 date: 2022-12-21 05:16:06
 douban:
   id: "2237621"

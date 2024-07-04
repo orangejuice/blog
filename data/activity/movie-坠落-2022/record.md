@@ -3,6 +3,7 @@ title: 坠落
 category: movie
 status: todo
 rating: 0
+year: "2022"
 date: 2022-11-24 08:04:25
 douban:
   id: "35700395"

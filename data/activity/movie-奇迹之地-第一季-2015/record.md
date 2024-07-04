@@ -3,6 +3,7 @@ title: 奇迹之地 第一季
 category: movie
 status: todo
 rating: 0
+year: "2015"
 date: 2021-10-08 22:32:45
 douban:
   id: "26566434"

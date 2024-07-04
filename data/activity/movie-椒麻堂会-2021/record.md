@@ -3,6 +3,7 @@ title: 椒麻堂会
 category: movie
 status: todo
 rating: 0
+year: "2021"
 date: 2023-01-20 17:02:16
 douban:
   id: "27305997"

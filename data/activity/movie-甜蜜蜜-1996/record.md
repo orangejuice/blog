@@ -3,6 +3,7 @@ title: 甜蜜蜜
 category: movie
 status: done
 rating: 5
+year: "1996"
 date: 2020-07-11 04:17:17
 douban:
   id: "1305164"

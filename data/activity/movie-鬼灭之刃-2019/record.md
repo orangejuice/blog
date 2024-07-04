@@ -3,6 +3,7 @@ title: 鬼灭之刃
 category: movie
 status: todo
 rating: 0
+year: "2019"
 date: 2022-02-12 01:43:46
 douban:
   id: "30210221"

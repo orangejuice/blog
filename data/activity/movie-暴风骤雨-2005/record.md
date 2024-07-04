@@ -3,6 +3,7 @@ title: 暴风骤雨
 category: movie
 status: done
 rating: 5
+year: "2005"
 date: 2021-04-20 04:01:27
 douban:
   id: "3586732"

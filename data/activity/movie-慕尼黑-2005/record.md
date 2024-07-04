@@ -3,6 +3,7 @@ title: 慕尼黑
 category: movie
 status: todo
 rating: 0
+year: "2005"
 date: 2023-10-11 15:52:53
 douban:
   id: "1438338"

@@ -3,6 +3,7 @@ title: 伪善的医疗
 category: book
 status: todo
 rating: 0
+year: 2022-8
 date: 2024-01-17 00:55:58
 douban:
   id: "35998173"

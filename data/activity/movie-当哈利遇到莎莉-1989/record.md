@@ -3,6 +3,7 @@ title: 当哈利遇到莎莉
 category: movie
 status: todo
 rating: 0
+year: "1989"
 date: 2022-01-27 17:51:49
 douban:
   id: "1291842"

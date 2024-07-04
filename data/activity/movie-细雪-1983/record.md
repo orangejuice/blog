@@ -3,6 +3,7 @@ title: 细雪
 category: movie
 status: done
 rating: 3
+year: "1983"
 date: 2023-12-25 04:52:44
 douban:
   id: "1299777"

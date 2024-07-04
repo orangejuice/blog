@@ -3,6 +3,7 @@ title: 阳光小美女
 category: movie
 status: done
 rating: 4
+year: "2006"
 date: 2020-07-03 03:28:17
 douban:
   id: "1777612"

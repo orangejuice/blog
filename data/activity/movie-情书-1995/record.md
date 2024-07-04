@@ -3,6 +3,7 @@ title: 情书
 category: movie
 status: done
 rating: 4
+year: "1995"
 date: 2019-10-14 01:10:20
 douban:
   id: "1292220"

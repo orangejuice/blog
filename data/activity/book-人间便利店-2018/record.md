@@ -3,6 +3,7 @@ title: 人间便利店
 category: book
 status: todo
 rating: 0
+year: 2018-4
 date: 2024-01-10 23:00:09
 douban:
   id: "28171580"

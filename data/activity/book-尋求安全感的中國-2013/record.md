@@ -3,6 +3,7 @@ title: 尋求安全感的中國
 category: book
 status: todo
 rating: 0
+year: 2013-4
 date: 2023-11-24 18:57:42
 douban:
   id: "23780854"

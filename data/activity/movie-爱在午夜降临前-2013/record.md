@@ -3,6 +3,7 @@ title: 爱在午夜降临前
 category: movie
 status: done
 rating: 5
+year: "2013"
 date: 2019-10-06 02:53:20
 douban:
   id: "10808442"

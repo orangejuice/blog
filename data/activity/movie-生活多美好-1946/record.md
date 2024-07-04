@@ -3,6 +3,7 @@ title: 生活多美好
 category: movie
 status: done
 rating: 5
+year: "1946"
 date: 2019-07-24 03:26:49
 douban:
   id: "1293749"

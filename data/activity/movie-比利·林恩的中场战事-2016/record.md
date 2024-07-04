@@ -3,6 +3,7 @@ title: 比利·林恩的中场战事
 category: movie
 status: done
 rating: 5
+year: "2016"
 date: 2021-01-25 04:26:21
 douban:
   id: "25983044"

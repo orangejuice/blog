@@ -3,6 +3,7 @@ title: 中国经济增长的真实逻辑
 category: book
 status: todo
 rating: 0
+year: 2017-7
 date: 2023-10-18 21:25:10
 douban:
   id: "27096026"

@@ -3,6 +3,7 @@ title: 触不可及
 category: movie
 status: done
 rating: 5
+year: "2011"
 date: 2019-11-02 06:20:26
 douban:
   id: "6786002"

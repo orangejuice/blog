@@ -3,6 +3,7 @@ title: 北京55日
 category: movie
 status: done
 rating: 3
+year: "1963"
 date: 2020-10-03 06:10:16
 douban:
   id: "1477284"

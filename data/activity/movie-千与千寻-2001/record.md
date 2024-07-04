@@ -3,6 +3,7 @@ title: 千与千寻
 category: movie
 status: done
 rating: 5
+year: "2001"
 date: 2019-10-24 05:14:13
 douban:
   id: "1291561"

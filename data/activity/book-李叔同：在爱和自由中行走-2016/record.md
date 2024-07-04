@@ -3,6 +3,7 @@ title: 李叔同：在爱和自由中行走
 category: book
 status: todo
 rating: 0
+year: 2016-6-1
 date: 2024-06-17 14:58:47
 douban:
   id: "27594074"

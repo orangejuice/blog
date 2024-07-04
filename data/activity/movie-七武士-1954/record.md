@@ -3,6 +3,7 @@ title: 七武士
 category: movie
 status: todo
 rating: 0
+year: "1954"
 date: 2022-04-11 18:32:03
 douban:
   id: "1295399"

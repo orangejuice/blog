@@ -3,6 +3,7 @@ title: 海边的曼彻斯特
 category: movie
 status: done
 rating: 5
+year: "2016"
 date: 2024-04-26 06:34:12
 douban:
   id: "25980443"

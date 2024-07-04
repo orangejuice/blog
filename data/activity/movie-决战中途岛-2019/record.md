@@ -3,6 +3,7 @@ title: 决战中途岛
 category: movie
 status: done
 rating: 4
+year: "2019"
 date: 2020-12-18 06:18:00
 douban:
   id: "26786669"

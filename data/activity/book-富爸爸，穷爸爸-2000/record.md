@@ -3,6 +3,7 @@ title: 富爸爸，穷爸爸
 category: book
 status: todo
 rating: 0
+year: 2000-09
 date: 2023-12-09 11:04:28
 douban:
   id: "1033778"

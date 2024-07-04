@@ -3,6 +3,7 @@ title: 坐在你身边看云
 category: book
 status: todo
 rating: 0
+year: 2017-8
 date: 2022-06-14 17:14:54
 douban:
   id: "27079096"

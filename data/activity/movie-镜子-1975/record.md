@@ -3,6 +3,7 @@ title: 镜子
 category: movie
 status: todo
 rating: 0
+year: "1975"
 date: 2022-12-20 07:50:31
 douban:
   id: "1299248"

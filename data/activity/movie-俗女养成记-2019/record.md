@@ -3,6 +3,7 @@ title: 俗女养成记
 category: movie
 status: todo
 rating: 0
+year: "2019"
 date: 2023-03-13 01:44:32
 douban:
   id: "34785763"

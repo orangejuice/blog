@@ -3,6 +3,7 @@ title: 弥留之国的爱丽丝 第一季
 category: movie
 status: done
 rating: 4
+year: "2020"
 date: 2022-12-28 08:50:58
 douban:
   id: "34477588"

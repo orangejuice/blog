@@ -3,6 +3,7 @@ title: 宫女谈往录
 category: book
 status: todo
 rating: 0
+year: 2010-7
 date: 2023-09-20 23:01:26
 douban:
   id: "5277994"

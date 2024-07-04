@@ -3,6 +3,7 @@ title: 春妇传
 category: movie
 status: todo
 rating: 0
+year: "1965"
 date: 2024-01-01 18:59:21
 douban:
   id: "1429146"

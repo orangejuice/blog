@@ -3,6 +3,7 @@ title: 凯尔特的薄暮
 category: book
 status: todo
 rating: 0
+year: 2007-8
 date: 2023-01-03 21:22:09
 douban:
   id: "2267630"

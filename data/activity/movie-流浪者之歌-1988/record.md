@@ -3,6 +3,7 @@ title: 流浪者之歌
 category: movie
 status: todo
 rating: 0
+year: "1988"
 date: 2022-12-20 07:50:47
 douban:
   id: "1303525"

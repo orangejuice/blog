@@ -3,6 +3,7 @@ title: 爱尔兰人
 category: movie
 status: done
 rating: 5
+year: "2019"
 date: 2020-08-24 05:56:48
 douban:
   id: "6981153"

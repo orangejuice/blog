@@ -3,6 +3,7 @@ title: 迷雾中的孩子
 category: movie
 status: todo
 rating: 0
+year: "2021"
 date: 2023-01-10 05:11:05
 douban:
   id: "35652404"

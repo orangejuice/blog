@@ -3,6 +3,7 @@ title: 一个陌生女人的来信
 category: book
 status: todo
 rating: 0
+year: 2007-7
 date: 2024-01-10 22:51:07
 douban:
   id: "2154960"

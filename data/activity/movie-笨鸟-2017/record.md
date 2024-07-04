@@ -3,6 +3,7 @@ title: 笨鸟
 category: movie
 status: done
 rating: 2
+year: "2017"
 date: 2021-05-15 03:42:40
 douban:
   id: "26969821"

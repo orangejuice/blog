@@ -3,6 +3,7 @@ title: 红楼梦
 category: movie
 status: done
 rating: 5
+year: "1987"
 date: 2020-07-18 06:37:46
 douban:
   id: "1864810"

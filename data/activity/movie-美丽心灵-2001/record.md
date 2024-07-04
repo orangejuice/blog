@@ -3,6 +3,7 @@ title: 美丽心灵
 category: movie
 status: done
 rating: 3
+year: "2001"
 date: 2024-05-06 08:42:48
 douban:
   id: "1306029"

@@ -3,6 +3,7 @@ title: 朝云暮雨
 category: movie
 status: todo
 rating: 0
+year: "2024"
 date: 2024-04-25 05:48:38
 douban:
   id: "35359715"

@@ -3,6 +3,7 @@ title: 呼兰河传
 category: book
 status: todo
 rating: 0
+year: 2005-01
 date: 2021-06-16 02:33:25
 douban:
   id: "1060852"

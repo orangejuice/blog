@@ -3,6 +3,7 @@ title: 他乡的童年
 category: movie
 status: done
 rating: 5
+year: "2019"
 date: 2021-03-25 21:30:06
 douban:
   id: "34807388"

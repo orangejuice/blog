@@ -3,6 +3,7 @@ title: 南明史
 category: book
 status: todo
 rating: 0
+year: 2022-3-20
 date: 2023-10-01 15:39:48
 douban:
   id: "35771873"

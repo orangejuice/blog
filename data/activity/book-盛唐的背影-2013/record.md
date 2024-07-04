@@ -3,6 +3,7 @@ title: 盛唐的背影
 category: book
 status: todo
 rating: 0
+year: 2013-5
 date: 2021-11-17 19:10:02
 douban:
   id: "24701832"

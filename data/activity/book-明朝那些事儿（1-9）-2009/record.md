@@ -3,6 +3,7 @@ title: 明朝那些事儿（1-9）
 category: book
 status: todo
 rating: 0
+year: 2009-4
 date: 2024-01-18 04:00:14
 douban:
   id: "3674537"

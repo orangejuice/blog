@@ -3,6 +3,7 @@ title: 安妮·弗兰克的视频日记 第一季
 category: movie
 status: done
 rating: 5
+year: "2020"
 date: 2020-10-24 22:27:55
 douban:
   id: "35064603"

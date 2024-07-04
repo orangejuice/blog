@@ -3,6 +3,7 @@ title: 别动
 category: movie
 status: todo
 rating: 0
+year: "2004"
 date: 2022-10-04 17:29:43
 douban:
   id: "1309026"

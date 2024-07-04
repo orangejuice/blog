@@ -3,6 +3,7 @@ title: 话说长江
 category: movie
 status: todo
 rating: 0
+year: "1983"
 date: 2022-04-29 07:14:31
 douban:
   id: "1870407"

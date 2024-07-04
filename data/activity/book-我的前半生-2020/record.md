@@ -3,6 +3,7 @@ title: 我的前半生
 category: book
 status: todo
 rating: 0
+year: 2020-7
 date: 2024-02-04 17:36:36
 douban:
   id: "35124261"

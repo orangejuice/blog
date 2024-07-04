@@ -3,6 +3,7 @@ title: 天堂电影院
 category: movie
 status: todo
 rating: 0
+year: "1988"
 date: 2022-12-23 07:17:09
 douban:
   id: "1291828"

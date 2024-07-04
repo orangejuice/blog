@@ -3,6 +3,7 @@ title: 隐秘的生活
 category: movie
 status: todo
 rating: 0
+year: "2019"
 date: 2024-02-18 23:49:44
 douban:
   id: "26823502"

@@ -3,6 +3,7 @@ title: 大变局
 category: book
 status: todo
 rating: 0
+year: 2023-11-1
 date: 2024-01-05 19:09:48
 douban:
   id: "36574408"

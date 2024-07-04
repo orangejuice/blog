@@ -3,6 +3,7 @@ title: 中国历代政治得失
 category: book
 status: done
 rating: 5
+year: "2001"
 date: 2020-10-28 23:35:55
 douban:
   id: "1003479"

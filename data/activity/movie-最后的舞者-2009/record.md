@@ -3,6 +3,7 @@ title: 最后的舞者
 category: movie
 status: todo
 rating: 0
+year: "2009"
 date: 2023-12-30 02:15:16
 douban:
   id: "2998425"

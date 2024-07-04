@@ -3,6 +3,7 @@ title: 无耻之徒(美版) 第九季
 category: movie
 status: done
 rating: 5
+year: "2018"
 date: 2019-03-17 06:09:07
 douban:
   id: "27194302"

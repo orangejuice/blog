@@ -3,6 +3,7 @@ title: 关于我家的一切
 category: movie
 status: todo
 rating: 0
+year: "2022"
 date: 2024-06-02 14:11:39
 douban:
   id: "34953755"

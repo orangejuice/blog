@@ -3,6 +3,7 @@ title: 背靠背，脸对脸
 category: movie
 status: done
 rating: 5
+year: "1994"
 date: 2022-12-15 07:11:50
 douban:
   id: "1307856"

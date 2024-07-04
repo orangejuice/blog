@@ -3,6 +3,7 @@ title: 伯恩斯焦虑自助疗法
 category: book
 status: todo
 rating: 0
+year: 2020-1
 date: 2021-10-27 01:54:53
 douban:
   id: "35022055"

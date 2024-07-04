@@ -3,6 +3,7 @@ title: 新金瓶梅
 category: movie
 status: done
 rating: 5
+year: "1996"
 date: 2020-02-16 05:10:19
 douban:
   id: "1300200"

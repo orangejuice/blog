@@ -3,6 +3,7 @@ title: 杨贵妃
 category: movie
 status: todo
 rating: 0
+year: "1992"
 date: 2022-10-08 01:28:41
 douban:
   id: "2080809"

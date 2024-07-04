@@ -3,6 +3,7 @@ title: 何以为家
 category: movie
 status: done
 rating: 5
+year: "2018"
 date: 2019-11-03 23:59:48
 douban:
   id: "30170448"

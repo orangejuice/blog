@@ -3,6 +3,7 @@ title: 流浪地球
 category: movie
 status: done
 rating: 3
+year: "2019"
 date: 2019-02-07 08:13:34
 douban:
   id: "26266893"

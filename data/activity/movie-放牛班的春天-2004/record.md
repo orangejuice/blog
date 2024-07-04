@@ -3,6 +3,7 @@ title: 放牛班的春天
 category: movie
 status: todo
 rating: 0
+year: "2004"
 date: 2022-12-02 06:44:35
 douban:
   id: "1291549"

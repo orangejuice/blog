@@ -3,6 +3,7 @@ title: 我爱我家
 category: movie
 status: done
 rating: 5
+year: "1993"
 date: 2023-12-02 00:58:21
 douban:
   id: "3901388"

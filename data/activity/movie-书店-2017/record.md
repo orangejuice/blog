@@ -3,6 +3,7 @@ title: 书店
 category: movie
 status: todo
 rating: 0
+year: "2017"
 date: 2024-01-03 06:28:31
 douban:
   id: "25728612"

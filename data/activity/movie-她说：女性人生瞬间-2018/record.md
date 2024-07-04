@@ -3,6 +3,7 @@ title: 她说：女性人生瞬间
 category: movie
 status: todo
 rating: 0
+year: "2018"
 date: 2022-02-22 19:38:44
 douban:
   id: "30244576"

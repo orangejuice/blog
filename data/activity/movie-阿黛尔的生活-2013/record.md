@@ -3,6 +3,7 @@ title: 阿黛尔的生活
 category: movie
 status: todo
 rating: 0
+year: "2013"
 date: 2022-02-06 01:22:44
 douban:
   id: "10535568"

@@ -3,6 +3,7 @@ title: 海仙女的馈赠
 category: book
 status: todo
 rating: 0
+year: 2021-11
 date: 2021-12-13 17:54:53
 douban:
   id: "35637711"

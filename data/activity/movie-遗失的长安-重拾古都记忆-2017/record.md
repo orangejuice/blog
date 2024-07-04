@@ -3,6 +3,7 @@ title: 遗失的长安 重拾古都记忆
 category: movie
 status: done
 rating: 5
+year: "2017"
 date: 2021-06-15 22:08:02
 douban:
   id: "30192031"

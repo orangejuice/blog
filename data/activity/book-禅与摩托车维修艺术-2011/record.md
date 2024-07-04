@@ -3,6 +3,7 @@ title: 禅与摩托车维修艺术
 category: book
 status: done
 rating: 2
+year: 2011-9-1
 date: 2021-01-21 06:12:46
 douban:
   id: "6811366"

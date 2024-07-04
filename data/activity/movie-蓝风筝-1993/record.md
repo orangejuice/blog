@@ -3,6 +3,7 @@ title: 蓝风筝
 category: movie
 status: done
 rating: 4
+year: "1993"
 date: 2024-01-31 08:08:59
 douban:
   id: "1303967"

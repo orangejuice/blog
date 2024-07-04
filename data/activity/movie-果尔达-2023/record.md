@@ -3,6 +3,7 @@ title: 果尔达
 category: movie
 status: todo
 rating: 0
+year: "2023"
 date: 2023-10-11 15:58:33
 douban:
   id: "35525524"

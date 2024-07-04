@@ -3,6 +3,7 @@ title: 莫斯科不相信眼泪
 category: movie
 status: todo
 rating: 0
+year: "1980"
 date: 2023-09-09 18:40:10
 douban:
   id: "1303066"

@@ -3,6 +3,7 @@ title: 中国觉醒
 category: book
 status: todo
 rating: 0
+year: 2010-1
 date: 2024-01-27 20:02:46
 douban:
   id: "3493857"

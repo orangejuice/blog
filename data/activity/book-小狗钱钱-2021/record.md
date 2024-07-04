@@ -3,6 +3,7 @@ title: 小狗钱钱
 category: book
 status: todo
 rating: 0
+year: 2021-2
 date: 2023-09-20 17:22:32
 douban:
   id: "35295592"

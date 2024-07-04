@@ -3,6 +3,7 @@ title: 重启人生
 category: movie
 status: todo
 rating: 0
+year: "2023"
 date: 2023-08-30 06:08:41
 douban:
   id: "36156235"

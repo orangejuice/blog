@@ -3,6 +3,7 @@ title: 死亡诗社
 category: movie
 status: done
 rating: 4
+year: "1989"
 date: 2019-08-11 04:09:35
 douban:
   id: "1291548"

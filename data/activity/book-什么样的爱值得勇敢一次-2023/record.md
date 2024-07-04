@@ -3,6 +3,7 @@ title: 什么样的爱值得勇敢一次
 category: book
 status: todo
 rating: 0
+year: 2023-1-5
 date: 2023-01-26 08:14:22
 douban:
   id: "35719470"

@@ -3,6 +3,7 @@ title: 不平等的童年
 category: book
 status: todo
 rating: 0
+year: 2018-6
 date: 2023-09-13 18:06:30
 douban:
   id: "27664289"

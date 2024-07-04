@@ -3,6 +3,7 @@ title: 看得见的黑暗
 category: book
 status: todo
 rating: 0
+year: 2022-1
 date: 2022-02-21 19:54:50
 douban:
   id: "35710418"

@@ -3,6 +3,7 @@ title: 第8个秀
 category: movie
 status: done
 rating: 2
+year: "2024"
 date: 2024-05-23 05:57:11
 douban:
   id: "35712803"

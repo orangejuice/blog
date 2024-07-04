@@ -3,6 +3,7 @@ title: 世界尽头与冷酷仙境
 category: book
 status: todo
 rating: 0
+year: 2002-12
 date: 2022-12-24 16:53:06
 douban:
   id: "1291809"

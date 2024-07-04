@@ -3,6 +3,7 @@ title: 弥留之国的爱丽丝 第二季
 category: movie
 status: done
 rating: 1
+year: "2022"
 date: 2022-12-29 08:49:30
 douban:
   id: "35300122"

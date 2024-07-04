@@ -3,6 +3,7 @@ title: 存在与虚无
 category: book
 status: todo
 rating: 0
+year: 2014-9-1
 date: 2022-02-06 05:19:33
 douban:
   id: "26107897"

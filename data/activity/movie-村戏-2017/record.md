@@ -3,6 +3,7 @@ title: 村戏
 category: movie
 status: done
 rating: 3
+year: "2017"
 date: 2021-07-01 03:56:08
 douban:
   id: "26738204"

@@ -3,6 +3,7 @@ title: 硫磺岛的来信
 category: movie
 status: done
 rating: 2
+year: "2006"
 date: 2021-08-16 03:51:37
 douban:
   id: "1917171"

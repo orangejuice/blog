@@ -3,6 +3,7 @@ title: 珍珠港
 category: movie
 status: done
 rating: 5
+year: "2001"
 date: 2020-12-18 03:40:09
 douban:
   id: "1302987"

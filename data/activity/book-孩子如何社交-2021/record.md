@@ -3,6 +3,7 @@ title: 孩子如何社交
 category: book
 status: todo
 rating: 0
+year: 2021-12-20
 date: 2023-10-08 19:29:55
 douban:
   id: "35694067"

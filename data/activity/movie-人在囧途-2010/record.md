@@ -3,6 +3,7 @@ title: 人在囧途
 category: movie
 status: done
 rating: 5
+year: "2010"
 date: 2021-09-16 02:18:32
 douban:
   id: "4237879"

@@ -3,6 +3,7 @@ title: 祝福
 category: movie
 status: done
 rating: 5
+year: "1956"
 date: 2024-01-04 06:51:57
 douban:
   id: "1465450"

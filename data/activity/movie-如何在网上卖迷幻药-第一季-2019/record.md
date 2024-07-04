@@ -3,6 +3,7 @@ title: 如何在网上卖迷幻药 第一季
 category: movie
 status: todo
 rating: 0
+year: "2019"
 date: 2023-12-04 09:13:02
 douban:
   id: "33400547"

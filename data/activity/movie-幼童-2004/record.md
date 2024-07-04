@@ -3,6 +3,7 @@ title: 幼童
 category: movie
 status: done
 rating: 5
+year: "2004"
 date: 2021-03-16 03:37:12
 douban:
   id: "3711690"

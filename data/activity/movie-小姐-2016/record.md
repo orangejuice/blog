@@ -3,6 +3,7 @@ title: 小姐
 category: movie
 status: done
 rating: 4
+year: "2016"
 date: 2020-11-08 06:31:04
 douban:
   id: "25977027"

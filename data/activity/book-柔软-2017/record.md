@@ -3,6 +3,7 @@ title: 柔软
 category: book
 status: todo
 rating: 0
+year: 2017-8
 date: 2024-06-16 17:59:52
 douban:
   id: "27103798"

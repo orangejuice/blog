@@ -3,6 +3,7 @@ title: 暗黑 第二季
 category: movie
 status: done
 rating: 3
+year: "2019"
 date: 2023-08-24 23:01:07
 douban:
   id: "27611018"

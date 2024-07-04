@@ -3,6 +3,7 @@ title: 国王排名
 category: movie
 status: todo
 rating: 0
+year: "2021"
 date: 2021-10-30 05:56:21
 douban:
   id: "34927946"

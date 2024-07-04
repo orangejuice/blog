@@ -3,6 +3,7 @@ title: 涉外大饭店
 category: movie
 status: done
 rating: 2
+year: "2011"
 date: 2020-12-25 23:09:06
 douban:
   id: "5320600"

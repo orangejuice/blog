@@ -3,6 +3,7 @@ title: 白夜行
 category: book
 status: todo
 rating: 0
+year: 2013-1-1
 date: 2024-02-20 05:40:48
 douban:
   id: "10554308"

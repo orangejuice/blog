@@ -3,6 +3,7 @@ title: 杀戮
 category: movie
 status: done
 rating: 5
+year: "2011"
 date: 2020-09-26 03:39:04
 douban:
   id: "4913185"

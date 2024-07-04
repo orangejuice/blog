@@ -3,6 +3,7 @@ title: 讲给大家的中国历史01
 category: book
 status: todo
 rating: 0
+year: 2018-10
 date: 2021-11-18 17:54:17
 douban:
   id: "30132713"

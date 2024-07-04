@@ -3,6 +3,7 @@ title: 如何改变你的心智
 category: movie
 status: done
 rating: 4
+year: "2022"
 date: 2023-10-17 23:18:04
 douban:
   id: "35933117"

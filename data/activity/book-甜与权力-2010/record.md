@@ -3,6 +3,7 @@ title: 甜与权力
 category: book
 status: todo
 rating: 0
+year: 2010-5
 date: 2023-12-26 16:22:40
 douban:
   id: "4891219"

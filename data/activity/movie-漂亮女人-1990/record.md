@@ -3,6 +3,7 @@ title: 漂亮女人
 category: movie
 status: todo
 rating: 0
+year: "1990"
 date: 2024-06-14 05:54:40
 douban:
   id: "1293825"

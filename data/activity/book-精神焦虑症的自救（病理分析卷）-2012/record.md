@@ -3,6 +3,7 @@ title: 精神焦虑症的自救（病理分析卷）
 category: book
 status: todo
 rating: 0
+year: 2012-11
 date: 2021-12-14 04:45:54
 douban:
   id: "1908685"

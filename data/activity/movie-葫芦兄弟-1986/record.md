@@ -3,6 +3,7 @@ title: 葫芦兄弟
 category: movie
 status: done
 rating: 5
+year: "1986"
 date: 2021-01-03 07:38:00
 douban:
   id: "1428576"

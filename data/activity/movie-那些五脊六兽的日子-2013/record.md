@@ -3,6 +3,7 @@ title: 那些五脊六兽的日子
 category: movie
 status: todo
 rating: 0
+year: "2013"
 date: 2022-03-26 16:38:54
 douban:
   id: "24849703"

@@ -3,6 +3,7 @@ title: 我在慈禧身边的两年
 category: book
 status: todo
 rating: 0
+year: 2018-1
 date: 2023-09-20 23:00:53
 douban:
   id: "30701371"

@@ -3,6 +3,7 @@ title: 西厢记
 category: book
 status: done
 rating: 5
+year: 2005-6
 date: 2020-08-02 18:48:20
 douban:
   id: "1446449"

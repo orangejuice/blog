@@ -3,6 +3,7 @@ title: 失明症漫记
 category: book
 status: todo
 rating: 0
+year: 2014-2
 date: 2022-04-07 14:32:26
 douban:
   id: "20428302"

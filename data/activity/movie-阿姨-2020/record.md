@@ -3,6 +3,7 @@ title: 阿姨
 category: movie
 status: todo
 rating: 0
+year: "2020"
 date: 2023-10-16 00:56:58
 douban:
   id: "35168515"

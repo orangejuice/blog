@@ -3,6 +3,7 @@ title: 利率史
 category: book
 status: todo
 rating: 0
+year: "2010"
 date: 2022-02-21 01:25:17
 douban:
   id: "4139254"

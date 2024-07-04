@@ -3,6 +3,7 @@ title: 永恒和一日
 category: movie
 status: todo
 rating: 0
+year: "1998"
 date: 2022-12-23 19:41:57
 douban:
   id: "1293455"

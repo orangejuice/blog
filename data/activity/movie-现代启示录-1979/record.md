@@ -3,6 +3,7 @@ title: 现代启示录
 category: movie
 status: todo
 rating: 0
+year: "1979"
 date: 2022-12-23 07:16:20
 douban:
   id: "1292260"

@@ -3,6 +3,7 @@ title: 天堂之日
 category: movie
 status: todo
 rating: 0
+year: "1978"
 date: 2023-10-20 20:56:26
 douban:
   id: "1293232"

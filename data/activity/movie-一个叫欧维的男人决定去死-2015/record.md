@@ -3,6 +3,7 @@ title: 一个叫欧维的男人决定去死
 category: movie
 status: done
 rating: 5
+year: "2015"
 date: 2020-02-10 01:49:08
 douban:
   id: "26628357"

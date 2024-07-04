@@ -3,6 +3,7 @@ title: 逐梦大海
 category: movie
 status: todo
 rating: 0
+year: "2023"
 date: 2023-02-26 09:10:02
 douban:
   id: "36151166"

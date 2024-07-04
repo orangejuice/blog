@@ -3,6 +3,7 @@ title: 澄沙之味
 category: movie
 status: todo
 rating: 0
+year: "2015"
 date: 2024-02-04 20:28:33
 douban:
   id: "25905124"

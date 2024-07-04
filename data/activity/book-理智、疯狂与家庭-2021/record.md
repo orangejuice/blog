@@ -3,6 +3,7 @@ title: 理智、疯狂与家庭
 category: book
 status: todo
 rating: 0
+year: 2021-7
 date: 2021-11-08 19:39:28
 douban:
   id: "35519606"

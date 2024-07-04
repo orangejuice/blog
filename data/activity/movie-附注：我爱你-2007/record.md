@@ -3,6 +3,7 @@ title: 附注：我爱你
 category: movie
 status: todo
 rating: 0
+year: "2007"
 date: 2023-09-14 07:56:33
 douban:
   id: "1920796"

@@ -3,6 +3,7 @@ title: 十七岁不哭
 category: movie
 status: todo
 rating: 0
+year: "1997"
 date: 2023-12-23 05:41:24
 douban:
   id: "2155335"

@@ -3,6 +3,7 @@ title: 归途列车
 category: movie
 status: done
 rating: 5
+year: "2009"
 date: 2020-08-26 03:11:12
 douban:
   id: "4102971"

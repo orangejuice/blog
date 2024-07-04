@@ -3,6 +3,7 @@ title: 我与父辈
 category: book
 status: done
 rating: 5
+year: 2021-2-1
 date: 2024-05-09 23:35:43
 douban:
   id: "35380288"

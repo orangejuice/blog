@@ -3,6 +3,7 @@ title: 梁思成 林徽因
 category: movie
 status: done
 rating: 5
+year: "2010"
 date: 2021-03-19 04:26:42
 douban:
   id: "5332630"

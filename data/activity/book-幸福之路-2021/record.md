@@ -3,6 +3,7 @@ title: 幸福之路
 category: book
 status: todo
 rating: 0
+year: 2021-5-1
 date: 2023-11-05 18:12:13
 douban:
   id: "35417039"

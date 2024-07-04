@@ -3,6 +3,7 @@ title: 朝鲜战争
 category: movie
 status: done
 rating: 4
+year: "2010"
 date: 2021-03-13 04:33:48
 douban:
   id: "20391222"

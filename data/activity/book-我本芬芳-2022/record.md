@@ -3,6 +3,7 @@ title: 我本芬芳
 category: book
 status: todo
 rating: 0
+year: 2022-2-1
 date: 2022-06-21 21:46:17
 douban:
   id: "35695541"

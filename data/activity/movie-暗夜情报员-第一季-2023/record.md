@@ -3,6 +3,7 @@ title: 暗夜情报员 第一季
 category: movie
 status: done
 rating: 3
+year: "2023"
 date: 2023-04-11 04:28:36
 douban:
   id: "35558659"

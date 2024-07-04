@@ -3,6 +3,7 @@ title: 天使爱美丽
 category: movie
 status: done
 rating: 3
+year: "2001"
 date: 2022-12-23 04:54:18
 douban:
   id: "1292215"

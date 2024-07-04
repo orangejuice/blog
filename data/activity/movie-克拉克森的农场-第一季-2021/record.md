@@ -3,6 +3,7 @@ title: 克拉克森的农场 第一季
 category: movie
 status: done
 rating: 4
+year: "2021"
 date: 2021-08-29 04:28:20
 douban:
   id: "34839005"

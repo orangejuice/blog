@@ -3,6 +3,7 @@ title: 星际旅行：原初 第一季
 category: movie
 status: doing
 rating: 0
+year: "1966"
 date: 2023-09-08 22:41:02
 douban:
   id: "2353922"

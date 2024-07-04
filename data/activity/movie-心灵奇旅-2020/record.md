@@ -3,6 +3,7 @@ title: 心灵奇旅
 category: movie
 status: done
 rating: 3
+year: "2020"
 date: 2020-12-31 23:10:31
 douban:
   id: "24733428"

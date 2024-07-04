@@ -3,6 +3,7 @@ title: 唐开国
 category: book
 status: todo
 rating: 0
+year: 2018-9
 date: 2021-11-17 19:10:08
 douban:
   id: "30272477"

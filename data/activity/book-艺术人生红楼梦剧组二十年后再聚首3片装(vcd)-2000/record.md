@@ -3,6 +3,7 @@ title: 艺术人生红楼梦剧组二十年后再聚首3片装(VCD)
 category: book
 status: done
 rating: 5
+year: 2000-1-1
 date: 2020-07-18 06:45:14
 douban:
   id: "1655108"

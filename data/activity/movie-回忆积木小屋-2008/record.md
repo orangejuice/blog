@@ -3,6 +3,7 @@ title: 回忆积木小屋
 category: movie
 status: done
 rating: 0
+year: "2008"
 date: 2021-08-20 04:46:14
 douban:
   id: "3560787"

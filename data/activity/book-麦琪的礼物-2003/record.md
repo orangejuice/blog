@@ -3,6 +3,7 @@ title: 麦琪的礼物
 category: book
 status: todo
 rating: 0
+year: 2003-7
 date: 2023-02-16 08:38:24
 douban:
   id: "1051193"

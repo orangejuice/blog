@@ -3,6 +3,7 @@ title: 像罗马皇帝一样思考
 category: book
 status: todo
 rating: 0
+year: 2023-5
 date: 2024-04-02 23:00:43
 douban:
   id: "36170517"

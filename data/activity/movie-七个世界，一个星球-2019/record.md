@@ -3,6 +3,7 @@ title: 七个世界，一个星球
 category: movie
 status: done
 rating: 5
+year: "2019"
 date: 2019-12-22 06:20:38
 douban:
   id: "33387353"

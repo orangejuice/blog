@@ -3,6 +3,7 @@ title: 现代性与现代中国
 category: book
 status: todo
 rating: 0
+year: 2018-7
 date: 2024-03-18 16:04:02
 douban:
   id: "10438219"

@@ -3,6 +3,7 @@ title: 上班記
 category: book
 status: todo
 rating: 0
+year: 2022-3
 date: 2022-07-03 10:50:43
 douban:
   id: "35852631"

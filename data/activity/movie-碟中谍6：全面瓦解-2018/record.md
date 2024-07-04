@@ -3,6 +3,7 @@ title: 碟中谍6：全面瓦解
 category: movie
 status: todo
 rating: 0
+year: "2018"
 date: 2022-02-18 23:43:17
 douban:
   id: "26336252"

@@ -3,6 +3,7 @@ title: 货币金融学 (第十二版)
 category: book
 status: todo
 rating: 0
+year: 2021-4-1
 date: 2023-11-26 18:54:34
 douban:
   id: "35527221"

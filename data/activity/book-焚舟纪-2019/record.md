@@ -3,6 +3,7 @@ title: 焚舟纪
 category: book
 status: todo
 rating: 0
+year: 2019-6
 date: 2022-04-23 07:40:40
 douban:
   id: "30259677"

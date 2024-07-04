@@ -3,6 +3,7 @@ title: The UltraMind Solution
 category: book
 status: todo
 rating: 0
+year: 2010-6
 date: 2024-02-02 17:38:30
 douban:
   id: "5476085"

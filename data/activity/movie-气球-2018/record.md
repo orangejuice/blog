@@ -3,6 +3,7 @@ title: 气球
 category: movie
 status: done
 rating: 5
+year: "2018"
 date: 2019-04-20 06:15:56
 douban:
   id: "30192401"

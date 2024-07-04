@@ -3,6 +3,7 @@ title: 老友记 第一季
 category: movie
 status: done
 rating: 5
+year: "1994"
 date: 2024-04-14 22:08:26
 douban:
   id: "1393859"

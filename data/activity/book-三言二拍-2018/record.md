@@ -3,6 +3,7 @@ title: 三言二拍
 category: book
 status: todo
 rating: 0
+year: 2018-10-1
 date: 2024-02-02 00:57:52
 douban:
   id: "30359044"

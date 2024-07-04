@@ -3,6 +3,7 @@ title: 恐怖直播
 category: movie
 status: done
 rating: 4
+year: "2013"
 date: 2020-11-19 05:30:54
 douban:
   id: "21360417"

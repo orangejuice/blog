@@ -3,6 +3,7 @@ title: 两个人的车站
 category: movie
 status: todo
 rating: 0
+year: "1983"
 date: 2023-09-09 18:39:53
 douban:
   id: "1297585"

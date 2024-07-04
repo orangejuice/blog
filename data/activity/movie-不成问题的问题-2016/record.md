@@ -3,6 +3,7 @@ title: 不成问题的问题
 category: movie
 status: done
 rating: 0
+year: "2016"
 date: 2022-01-13 04:35:26
 douban:
   id: "26657126"

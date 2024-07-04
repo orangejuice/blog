@@ -3,6 +3,7 @@ title: 毫无意义
 category: book
 status: todo
 rating: 0
+year: 2022-12-1
 date: 2022-11-27 04:42:08
 douban:
   id: "36028322"

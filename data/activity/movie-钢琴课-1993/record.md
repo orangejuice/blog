@@ -3,6 +3,7 @@ title: 钢琴课
 category: movie
 status: done
 rating: 5
+year: "1993"
 date: 2022-12-22 06:01:36
 douban:
   id: "1293818"

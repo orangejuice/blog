@@ -3,6 +3,7 @@ title: Both Ways Is the Only Way I Want It
 category: book
 status: doing
 rating: 0
+year: 2009-7-9
 date: 2022-01-29 23:08:27
 douban:
   id: "3678669"

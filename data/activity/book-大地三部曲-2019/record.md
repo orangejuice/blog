@@ -3,6 +3,7 @@ title: 大地三部曲
 category: book
 status: todo
 rating: 0
+year: 2019-10
 date: 2023-09-05 07:15:42
 douban:
   id: "34438695"

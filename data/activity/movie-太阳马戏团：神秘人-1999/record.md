@@ -3,6 +3,7 @@ title: 太阳马戏团：神秘人
 category: movie
 status: done
 rating: 5
+year: "1999"
 date: 2019-01-29 06:08:36
 douban:
   id: "1308175"

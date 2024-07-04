@@ -3,6 +3,7 @@ title: 技术陷阱
 category: book
 status: todo
 rating: 0
+year: 2021-12
 date: 2024-02-01 20:50:45
 douban:
   id: "35668363"

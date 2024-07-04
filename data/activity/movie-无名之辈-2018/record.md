@@ -3,6 +3,7 @@ title: 无名之辈
 category: movie
 status: done
 rating: 4
+year: "2018"
 date: 2022-06-19 22:24:25
 douban:
   id: "27110296"

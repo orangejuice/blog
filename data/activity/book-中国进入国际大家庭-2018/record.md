@@ -3,6 +3,7 @@ title: 中国进入国际大家庭
 category: book
 status: todo
 rating: 0
+year: 2018-6
 date: 2024-01-21 08:17:32
 douban:
   id: "30156806"

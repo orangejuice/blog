@@ -3,6 +3,7 @@ title: Outlive
 category: book
 status: todo
 rating: 0
+year: 2023-3-28
 date: 2024-02-02 17:40:21
 douban:
   id: "36333209"

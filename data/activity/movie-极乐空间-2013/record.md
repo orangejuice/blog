@@ -3,6 +3,7 @@ title: 极乐空间
 category: movie
 status: todo
 rating: 0
+year: "2013"
 date: 2022-12-22 03:23:36
 douban:
   id: "4116481"

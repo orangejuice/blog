@@ -3,6 +3,7 @@ title: 苏州夜曲
 category: movie
 status: todo
 rating: 0
+year: "1940"
 date: 2021-08-27 05:05:32
 douban:
   id: "2263032"

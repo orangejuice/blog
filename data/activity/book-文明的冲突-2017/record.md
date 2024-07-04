@@ -3,6 +3,7 @@ title: 文明的冲突
 category: book
 status: todo
 rating: 0
+year: 2017-10
 date: 2023-12-10 22:05:02
 douban:
   id: "27203334"

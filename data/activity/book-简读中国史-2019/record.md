@@ -3,6 +3,7 @@ title: 简读中国史
 category: book
 status: done
 rating: 5
+year: 2019-8
 date: 2021-03-09 06:36:07
 douban:
   id: "34501169"

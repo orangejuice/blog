@@ -3,6 +3,7 @@ title: 美利坚：我们的故事
 category: movie
 status: done
 rating: 5
+year: "2010"
 date: 2021-01-11 22:17:14
 douban:
   id: "4822098"

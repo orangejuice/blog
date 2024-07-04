@@ -3,6 +3,7 @@ title: 我们的星球 第一季
 category: movie
 status: done
 rating: 5
+year: "2019"
 date: 2019-04-20 06:21:14
 douban:
   id: "30374707"

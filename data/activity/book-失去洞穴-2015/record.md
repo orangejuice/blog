@@ -3,6 +3,7 @@ title: 失去洞穴
 category: book
 status: todo
 rating: 0
+year: 2015-5
 date: 2023-08-15 19:11:45
 douban:
   id: "26310539"

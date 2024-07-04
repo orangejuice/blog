@@ -3,6 +3,7 @@ title: 晚菊
 category: book
 status: todo
 rating: 0
+year: 2023-5
 date: 2023-08-16 23:44:50
 douban:
   id: "36361928"

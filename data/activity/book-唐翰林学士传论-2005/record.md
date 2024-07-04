@@ -3,6 +3,7 @@ title: 唐翰林学士传论
 category: book
 status: todo
 rating: 0
+year: 2005-12
 date: 2023-09-04 02:12:06
 douban:
   id: "1895048"

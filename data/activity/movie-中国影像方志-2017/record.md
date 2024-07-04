@@ -3,6 +3,7 @@ title: 中国影像方志
 category: movie
 status: done
 rating: 1
+year: "2017"
 date: 2021-06-25 18:49:33
 douban:
   id: "27059227"

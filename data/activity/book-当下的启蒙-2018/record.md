@@ -3,6 +3,7 @@ title: 当下的启蒙
 category: book
 status: done
 rating: 5
+year: 2018-12
 date: 2020-12-27 02:12:36
 douban:
   id: "30376593"

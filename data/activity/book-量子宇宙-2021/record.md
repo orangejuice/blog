@@ -3,6 +3,7 @@ title: 量子宇宙
 category: book
 status: todo
 rating: 0
+year: 2021-9-5
 date: 2023-11-24 07:31:52
 douban:
   id: "35582672"

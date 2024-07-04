@@ -3,6 +3,7 @@ title: 编辑部的故事
 category: movie
 status: done
 rating: 4
+year: "1992"
 date: 2024-01-19 07:21:04
 douban:
   id: "2154390"

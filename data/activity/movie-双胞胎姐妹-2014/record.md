@@ -3,6 +3,7 @@ title: 双胞胎姐妹
 category: movie
 status: done
 rating: 5
+year: "2014"
 date: 2019-12-02 05:01:16
 douban:
   id: "25792840"

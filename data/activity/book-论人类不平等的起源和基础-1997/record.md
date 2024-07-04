@@ -3,6 +3,7 @@ title: 论人类不平等的起源和基础
 category: book
 status: todo
 rating: 0
+year: 1997-02-01
 date: 2023-09-13 18:07:08
 douban:
   id: "1657455"

@@ -3,6 +3,7 @@ title: 养家之人
 category: movie
 status: done
 rating: 5
+year: "2017"
 date: 2019-01-25 05:57:15
 douban:
   id: "26346327"

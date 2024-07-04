@@ -3,6 +3,7 @@ title: 百年孤独
 category: book
 status: doing
 rating: 0
+year: 2011-6
 date: 2024-01-29 01:24:00
 douban:
   id: "6082808"

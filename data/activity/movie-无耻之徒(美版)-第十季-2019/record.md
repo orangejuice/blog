@@ -3,6 +3,7 @@ title: 无耻之徒(美版) 第十季
 category: movie
 status: done
 rating: 5
+year: "2019"
 date: 2020-02-02 04:58:35
 douban:
   id: "30450209"

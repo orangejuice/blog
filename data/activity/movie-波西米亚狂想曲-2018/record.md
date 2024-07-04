@@ -3,6 +3,7 @@ title: 波西米亚狂想曲
 category: movie
 status: done
 rating: 4
+year: "2018"
 date: 2019-01-24 06:05:11
 douban:
   id: "5300054"

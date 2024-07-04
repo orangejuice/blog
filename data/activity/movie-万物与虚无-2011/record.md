@@ -3,6 +3,7 @@ title: 万物与虚无
 category: movie
 status: todo
 rating: 0
+year: "2011"
 date: 2022-05-03 03:13:04
 douban:
   id: "6872214"

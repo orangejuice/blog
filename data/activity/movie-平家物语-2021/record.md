@@ -3,6 +3,7 @@ title: 平家物语
 category: movie
 status: done
 rating: 0
+year: "2021"
 date: 2022-12-26 21:40:20
 douban:
   id: "35590029"

@@ -3,6 +3,7 @@ title: 苦干：中国不可战胜的秘密
 category: movie
 status: todo
 rating: 0
+year: "1941"
 date: 2021-10-17 22:41:46
 douban:
   id: "5342771"

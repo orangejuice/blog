@@ -3,6 +3,7 @@ title: 走出戈壁
 category: book
 status: done
 rating: 5
+year: 2021-6-16
 date: 2023-10-04 05:01:29
 douban:
   id: "35520540"

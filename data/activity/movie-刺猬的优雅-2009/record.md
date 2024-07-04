@@ -3,6 +3,7 @@ title: 刺猬的优雅
 category: movie
 status: todo
 rating: 0
+year: "2009"
 date: 2023-08-26 03:43:35
 douban:
   id: "3824274"

@@ -3,6 +3,7 @@ title: 阳光姐妹淘
 category: movie
 status: done
 rating: 2
+year: "2011"
 date: 2019-03-26 05:07:40
 douban:
   id: "4917726"

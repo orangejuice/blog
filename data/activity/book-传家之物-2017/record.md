@@ -3,6 +3,7 @@ title: 传家之物
 category: book
 status: todo
 rating: 0
+year: 2017-10
 date: 2024-05-15 21:08:12
 douban:
   id: "27130210"

@@ -3,6 +3,7 @@ title: 龙： 一种未明的动物（增订本）
 category: book
 status: todo
 rating: 0
+year: 2018-8-1
 date: 2022-06-21 21:48:56
 douban:
   id: "30289543"

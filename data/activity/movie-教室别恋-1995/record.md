@@ -3,6 +3,7 @@ title: 教室别恋
 category: movie
 status: todo
 rating: 0
+year: "1995"
 date: 2024-02-20 07:45:48
 douban:
   id: "1303031"

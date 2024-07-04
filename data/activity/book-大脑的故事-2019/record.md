@@ -3,6 +3,7 @@ title: 大脑的故事
 category: book
 status: todo
 rating: 0
+year: 2019-4-1
 date: 2024-04-23 19:18:18
 douban:
   id: "33383607"

@@ -3,6 +3,7 @@ title: 房间
 category: movie
 status: done
 rating: 5
+year: "2015"
 date: 2020-01-26 23:40:26
 douban:
   id: "25724855"

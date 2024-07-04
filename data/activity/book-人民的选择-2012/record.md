@@ -3,6 +3,7 @@ title: 人民的选择
 category: book
 status: todo
 rating: 0
+year: 2012-6
 date: 2022-04-24 02:29:01
 douban:
   id: "11501634"

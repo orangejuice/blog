@@ -3,6 +3,7 @@ title: 摄影机不要停！
 category: movie
 status: done
 rating: 4
+year: "2017"
 date: 2022-09-15 04:33:13
 douban:
   id: "30234315"

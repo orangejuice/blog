@@ -3,6 +3,7 @@ title: 北上
 category: book
 status: todo
 rating: 0
+year: 2016-9
 date: 2022-12-23 23:59:47
 douban:
   id: "26855717"

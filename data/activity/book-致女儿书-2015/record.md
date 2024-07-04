@@ -3,6 +3,7 @@ title: 致女儿书
 category: book
 status: todo
 rating: 0
+year: 2015-3-1
 date: 2021-11-12 01:18:08
 douban:
   id: "26288877"

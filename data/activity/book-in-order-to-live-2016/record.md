@@ -3,6 +3,7 @@ title: In Order To Live
 category: book
 status: todo
 rating: 0
+year: 2016-7-7
 date: 2022-12-09 09:17:33
 douban:
   id: "26872336"

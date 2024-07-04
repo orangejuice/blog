@@ -3,6 +3,7 @@ title: 我身体里的人造星星
 category: book
 status: todo
 rating: 0
+year: 2021-11
 date: 2021-12-11 04:10:15
 douban:
   id: "35611125"

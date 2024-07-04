@@ -3,6 +3,7 @@ title: 狩猎
 category: movie
 status: todo
 rating: 0
+year: "2020"
 date: 2022-01-02 18:06:54
 douban:
   id: "30182726"

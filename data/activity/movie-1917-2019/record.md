@@ -3,6 +3,7 @@ title: "1917"
 category: movie
 status: done
 rating: 5
+year: "2019"
 date: 2020-01-27 02:23:25
 douban:
   id: "30252495"

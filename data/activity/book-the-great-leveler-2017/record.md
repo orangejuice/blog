@@ -3,6 +3,7 @@ title: The Great Leveler
 category: book
 status: todo
 rating: 0
+year: 2017-1-24
 date: 2021-11-08 22:00:56
 douban:
   id: "26882605"

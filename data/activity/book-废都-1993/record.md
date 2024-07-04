@@ -3,6 +3,7 @@ title: 废都
 category: book
 status: done
 rating: 5
+year: "1993"
 date: 2019-09-30 04:28:50
 douban:
   id: "1417905"

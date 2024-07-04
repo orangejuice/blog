@@ -3,6 +3,7 @@ title: 黄泥街
 category: book
 status: todo
 rating: 0
+year: 2021-3-1
 date: 2023-09-23 20:57:45
 douban:
   id: "35403077"

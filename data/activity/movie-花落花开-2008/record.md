@@ -3,6 +3,7 @@ title: 花落花开
 category: movie
 status: todo
 rating: 0
+year: "2008"
 date: 2024-03-08 06:30:16
 douban:
   id: "3173635"

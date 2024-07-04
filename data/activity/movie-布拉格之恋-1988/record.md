@@ -3,6 +3,7 @@ title: 布拉格之恋
 category: movie
 status: done
 rating: 5
+year: "1988"
 date: 2022-12-16 08:04:07
 douban:
   id: "1291859"

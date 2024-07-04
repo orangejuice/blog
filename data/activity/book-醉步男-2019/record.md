@@ -3,6 +3,7 @@ title: 醉步男
 category: book
 status: todo
 rating: 0
+year: 2019-10-1
 date: 2023-09-19 08:21:17
 douban:
   id: "30359030"

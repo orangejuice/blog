@@ -3,6 +3,7 @@ title: 李希霍芬中国旅行日记
 category: book
 status: todo
 rating: 0
+year: 2016-6
 date: 2024-06-13 13:43:26
 douban:
   id: "26836487"

@@ -3,6 +3,7 @@ title: 乌鸦与麻雀
 category: movie
 status: done
 rating: 5
+year: "1949"
 date: 2022-12-07 04:50:39
 douban:
   id: "1424627"

@@ -3,6 +3,7 @@ title: 慈禧全传
 category: book
 status: todo
 rating: 0
+year: 2015-6
 date: 2023-09-20 23:00:35
 douban:
   id: "26305373"

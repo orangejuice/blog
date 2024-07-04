@@ -3,6 +3,7 @@ title: 中国，革命的世纪
 category: movie
 status: done
 rating: 5
+year: "1997"
 date: 2019-08-25 01:37:22
 douban:
   id: "26966710"

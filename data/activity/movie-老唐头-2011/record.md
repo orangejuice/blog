@@ -3,6 +3,7 @@ title: 老唐头
 category: movie
 status: done
 rating: 4
+year: "2011"
 date: 2020-08-07 03:48:39
 douban:
   id: "4824969"

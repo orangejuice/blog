@@ -3,6 +3,7 @@ title: 新仙鹤神针
 category: movie
 status: todo
 rating: 0
+year: "1993"
 date: 2022-04-28 23:24:32
 douban:
   id: "1298761"

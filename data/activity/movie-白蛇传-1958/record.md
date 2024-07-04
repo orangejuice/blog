@@ -3,6 +3,7 @@ title: 白蛇传
 category: movie
 status: done
 rating: 5
+year: "1958"
 date: 2021-09-04 22:10:46
 douban:
   id: "2051929"

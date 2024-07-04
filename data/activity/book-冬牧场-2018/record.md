@@ -3,6 +3,7 @@ title: 冬牧场
 category: book
 status: todo
 rating: 0
+year: 2018-11
 date: 2023-12-06 08:17:49
 douban:
   id: "30353124"

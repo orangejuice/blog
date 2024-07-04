@@ -3,6 +3,7 @@ title: 走过一座海
 category: book
 status: todo
 rating: 0
+year: 2024-3
 date: 2024-04-29 00:47:18
 douban:
   id: "36809165"

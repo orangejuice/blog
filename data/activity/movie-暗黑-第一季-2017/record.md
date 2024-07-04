@@ -3,6 +3,7 @@ title: 暗黑 第一季
 category: movie
 status: done
 rating: 3
+year: "2017"
 date: 2023-08-24 23:00:19
 douban:
   id: "26992330"

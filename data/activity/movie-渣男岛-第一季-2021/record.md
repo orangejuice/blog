@@ -3,6 +3,7 @@ title: 渣男岛 第一季
 category: movie
 status: done
 rating: 4
+year: "2021"
 date: 2022-12-02 04:19:19
 douban:
   id: "35546141"

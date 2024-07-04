@@ -3,6 +3,7 @@ title: 青木瓜之味
 category: movie
 status: todo
 rating: 0
+year: "1993"
 date: 2022-10-02 22:08:08
 douban:
   id: "1291553"

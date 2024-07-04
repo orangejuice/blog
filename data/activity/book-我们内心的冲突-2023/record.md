@@ -3,6 +3,7 @@ title: 我们内心的冲突
 category: book
 status: todo
 rating: 0
+year: 2023-4
 date: 2023-10-19 04:56:43
 douban:
   id: "36316691"

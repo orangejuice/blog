@@ -3,6 +3,7 @@ title: 河畔须臾
 category: movie
 status: done
 rating: 3
+year: "2021"
 date: 2024-06-12 04:00:49
 douban:
   id: "35230630"

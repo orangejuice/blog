@@ -3,6 +3,7 @@ title: 还有明天
 category: movie
 status: done
 rating: 5
+year: "2023"
 date: 2024-07-03 07:28:49
 douban:
   id: "36445098"

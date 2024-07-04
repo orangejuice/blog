@@ -3,6 +3,7 @@ title: 阁楼上的疯女人
 category: book
 status: todo
 rating: 0
+year: 2015-2
 date: 2021-11-08 16:33:33
 douban:
   id: "25986620"

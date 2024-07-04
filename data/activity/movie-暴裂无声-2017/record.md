@@ -3,6 +3,7 @@ title: 暴裂无声
 category: movie
 status: done
 rating: 0
+year: "2017"
 date: 2022-09-18 02:08:34
 douban:
   id: "26647117"

@@ -3,6 +3,7 @@ title: 金翼
 category: book
 status: todo
 rating: 0
+year: 2022-10
 date: 2023-09-26 11:22:22
 douban:
   id: "35694416"

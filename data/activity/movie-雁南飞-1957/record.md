@@ -3,6 +3,7 @@ title: 雁南飞
 category: movie
 status: done
 rating: 5
+year: "1957"
 date: 2023-09-15 06:11:09
 douban:
   id: "1302077"

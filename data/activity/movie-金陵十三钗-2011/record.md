@@ -3,6 +3,7 @@ title: 金陵十三钗
 category: movie
 status: done
 rating: 5
+year: "2011"
 date: 2020-08-23 04:35:33
 douban:
   id: "3649049"

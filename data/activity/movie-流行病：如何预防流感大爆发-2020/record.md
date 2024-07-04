@@ -3,6 +3,7 @@ title: 流行病：如何预防流感大爆发
 category: movie
 status: todo
 rating: 0
+year: "2020"
 date: 2020-02-03 03:15:09
 douban:
   id: "34935806"

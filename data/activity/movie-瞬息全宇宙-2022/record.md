@@ -3,6 +3,7 @@ title: 瞬息全宇宙
 category: movie
 status: done
 rating: 2
+year: "2022"
 date: 2022-05-21 22:16:49
 douban:
   id: "30314848"

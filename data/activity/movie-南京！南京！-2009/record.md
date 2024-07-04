@@ -3,6 +3,7 @@ title: 南京！南京！
 category: movie
 status: done
 rating: 5
+year: "2009"
 date: 2020-08-02 18:33:58
 douban:
   id: "2294568"

@@ -3,6 +3,7 @@ title: 地球的夜晚
 category: movie
 status: done
 rating: 5
+year: "2020"
 date: 2020-02-09 23:39:00
 douban:
   id: "34935799"

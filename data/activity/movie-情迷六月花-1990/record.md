@@ -3,6 +3,7 @@ title: 情迷六月花
 category: movie
 status: todo
 rating: 0
+year: "1990"
 date: 2023-02-25 09:26:56
 douban:
   id: "1300161"

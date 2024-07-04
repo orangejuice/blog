@@ -3,6 +3,7 @@ title: 孩子王
 category: movie
 status: todo
 rating: 0
+year: "1987"
 date: 2022-01-13 04:36:07
 douban:
   id: "1293391"

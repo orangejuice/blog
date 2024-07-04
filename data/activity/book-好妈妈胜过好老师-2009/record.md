@@ -3,6 +3,7 @@ title: 好妈妈胜过好老师
 category: book
 status: todo
 rating: 0
+year: 2009-1-1
 date: 2023-12-12 00:51:12
 douban:
   id: "3465080"

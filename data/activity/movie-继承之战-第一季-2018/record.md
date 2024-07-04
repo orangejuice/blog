@@ -3,6 +3,7 @@ title: 继承之战 第一季
 category: movie
 status: todo
 rating: 0
+year: "2018"
 date: 2023-11-18 17:20:02
 douban:
   id: "26813224"

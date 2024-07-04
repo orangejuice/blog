@@ -3,6 +3,7 @@ title: 给我的孩子讲述系列（第1辑）
 category: book
 status: todo
 rating: 0
+year: 2013-3
 date: 2021-11-17 19:43:02
 douban:
   id: "24697716"

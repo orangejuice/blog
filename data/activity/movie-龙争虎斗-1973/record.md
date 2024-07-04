@@ -3,6 +3,7 @@ title: 龙争虎斗
 category: movie
 status: done
 rating: 2
+year: "1973"
 date: 2024-02-01 02:46:59
 douban:
   id: "1293118"

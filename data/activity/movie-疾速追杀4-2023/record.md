@@ -3,6 +3,7 @@ title: 疾速追杀4
 category: movie
 status: done
 rating: 2
+year: "2023"
 date: 2023-04-02 04:41:01
 douban:
   id: "33455421"

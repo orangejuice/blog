@@ -3,6 +3,7 @@ title: 白蛇：缘起
 category: movie
 status: done
 rating: 4
+year: "2019"
 date: 2019-01-15 05:18:48
 douban:
   id: "30331149"

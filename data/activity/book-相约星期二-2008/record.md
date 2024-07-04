@@ -3,6 +3,7 @@ title: 相约星期二
 category: book
 status: todo
 rating: 0
+year: 2008-1
 date: 2023-09-20 17:19:38
 douban:
   id: "2991664"

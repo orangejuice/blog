@@ -3,6 +3,7 @@ title: 中国总论（上下）
 category: book
 status: todo
 rating: 0
+year: 2005-12
 date: 2023-09-06 00:52:25
 douban:
   id: "1734322"

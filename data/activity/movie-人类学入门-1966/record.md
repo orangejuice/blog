@@ -3,6 +3,7 @@ title: 人类学入门
 category: movie
 status: todo
 rating: 0
+year: "1966"
 date: 2022-10-18 23:29:51
 douban:
   id: "1299038"

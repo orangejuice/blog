@@ -3,6 +3,7 @@ title: 影响力
 category: book
 status: todo
 rating: 0
+year: 2021-11-1
 date: 2023-11-20 04:28:11
 douban:
   id: "35637771"

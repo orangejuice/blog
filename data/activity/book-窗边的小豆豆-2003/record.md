@@ -3,6 +3,7 @@ title: 窗边的小豆豆
 category: book
 status: todo
 rating: 0
+year: 2003-1
 date: 2024-02-25 21:51:57
 douban:
   id: "1007914"

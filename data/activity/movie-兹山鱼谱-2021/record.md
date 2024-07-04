@@ -3,6 +3,7 @@ title: 兹山鱼谱
 category: movie
 status: done
 rating: 4
+year: "2021"
 date: 2021-06-28 04:07:39
 douban:
   id: "30409439"

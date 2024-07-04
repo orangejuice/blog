@@ -3,6 +3,7 @@ title: 红灯停，绿灯行
 category: movie
 status: todo
 rating: 0
+year: "1996"
 date: 2021-11-14 21:27:10
 douban:
   id: "1298467"

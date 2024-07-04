@@ -3,6 +3,7 @@ title: 爱在别乡的季节
 category: movie
 status: todo
 rating: 0
+year: "1990"
 date: 2022-11-05 06:40:43
 douban:
   id: "1295453"

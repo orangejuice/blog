@@ -3,6 +3,7 @@ title: 往事并不如烟
 category: book
 status: todo
 rating: 0
+year: 2004-1
 date: 2022-01-11 15:02:53
 douban:
   id: "1059336"

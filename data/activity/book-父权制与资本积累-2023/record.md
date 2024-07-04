@@ -3,6 +3,7 @@ title: 父权制与资本积累
 category: book
 status: todo
 rating: 0
+year: 2023-8
 date: 2023-08-19 07:21:35
 douban:
   id: "36402158"

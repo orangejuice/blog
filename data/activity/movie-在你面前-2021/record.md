@@ -3,6 +3,7 @@ title: 在你面前
 category: movie
 status: todo
 rating: 0
+year: "2021"
 date: 2022-01-19 04:17:48
 douban:
   id: "35465742"

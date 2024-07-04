@@ -3,6 +3,7 @@ title: 生生长流
 category: movie
 status: todo
 rating: 0
+year: "1992"
 date: 2024-04-26 10:35:04
 douban:
   id: "1303471"

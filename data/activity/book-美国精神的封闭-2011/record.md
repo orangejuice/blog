@@ -3,6 +3,7 @@ title: 美国精神的封闭
 category: book
 status: todo
 rating: 0
+year: 2011-3
 date: 2024-01-25 17:45:32
 douban:
   id: "5980592"

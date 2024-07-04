@@ -3,6 +3,7 @@ title: 唐伯虎点秋香
 category: movie
 status: done
 rating: 1
+year: "1993"
 date: 2021-09-08 03:13:32
 douban:
   id: "1306249"

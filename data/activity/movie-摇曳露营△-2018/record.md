@@ -3,6 +3,7 @@ title: 摇曳露营△
 category: movie
 status: done
 rating: 5
+year: "2018"
 date: 2021-01-14 07:17:59
 douban:
   id: "27077082"

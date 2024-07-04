@@ -3,6 +3,7 @@ title: 集结号
 category: movie
 status: done
 rating: 2
+year: "2007"
 date: 2021-01-28 03:37:33
 douban:
   id: "1907464"

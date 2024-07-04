@@ -3,6 +3,7 @@ title: 自驱型成长
 category: book
 status: todo
 rating: 0
+year: 2020-5
 date: 2024-04-05 15:03:43
 douban:
   id: "35048510"

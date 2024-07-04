@@ -3,6 +3,7 @@ title: 天道
 category: movie
 status: todo
 rating: 0
+year: "2008"
 date: 2023-10-13 09:54:09
 douban:
   id: "2347485"

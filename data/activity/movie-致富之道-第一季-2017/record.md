@@ -3,6 +3,7 @@ title: 致富之道 第一季
 category: movie
 status: done
 rating: 4
+year: "2017"
 date: 2023-12-18 05:16:40
 douban:
   id: "34454618"

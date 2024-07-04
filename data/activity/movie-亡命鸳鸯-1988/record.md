@@ -3,6 +3,7 @@ title: 亡命鸳鸯
 category: movie
 status: todo
 rating: 0
+year: "1988"
 date: 2023-10-19 03:15:30
 douban:
   id: "3060284"

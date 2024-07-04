@@ -3,6 +3,7 @@ title: 青春
 category: movie
 status: todo
 rating: 0
+year: "2023"
 date: 2023-11-26 18:34:29
 douban:
   id: "27042464"

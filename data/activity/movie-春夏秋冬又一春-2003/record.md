@@ -3,6 +3,7 @@ title: 春夏秋冬又一春
 category: movie
 status: done
 rating: 5
+year: "2003"
 date: 2022-03-19 20:38:17
 douban:
   id: "1316580"

@@ -3,6 +3,7 @@ title: 初吻
 category: movie
 status: todo
 rating: 0
+year: "1980"
 date: 2022-02-20 23:30:41
 douban:
   id: "1340517"

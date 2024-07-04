@@ -3,6 +3,7 @@ title: 交响情人梦
 category: movie
 status: todo
 rating: 0
+year: "2006"
 date: 2022-02-14 18:10:17
 douban:
   id: "1997685"

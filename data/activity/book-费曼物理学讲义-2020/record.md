@@ -3,6 +3,7 @@ title: 费曼物理学讲义
 category: book
 status: todo
 rating: 0
+year: 2020-4-1
 date: 2022-01-21 18:13:05
 douban:
   id: "34984198"

@@ -3,6 +3,7 @@ title: 小武
 category: movie
 status: todo
 rating: 0
+year: "1998"
 date: 2022-01-13 04:36:28
 douban:
   id: "1291851"

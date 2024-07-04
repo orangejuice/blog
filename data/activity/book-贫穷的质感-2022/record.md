@@ -3,6 +3,7 @@ title: 贫穷的质感
 category: book
 status: todo
 rating: 0
+year: 2022-4
 date: 2023-04-07 20:01:43
 douban:
   id: "35720365"

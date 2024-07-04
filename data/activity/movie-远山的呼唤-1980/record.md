@@ -3,6 +3,7 @@ title: 远山的呼唤
 category: movie
 status: todo
 rating: 0
+year: "1980"
 date: 2024-01-28 23:14:02
 douban:
   id: "1302605"

@@ -3,6 +3,7 @@ title: 爱情麻辣烫
 category: movie
 status: done
 rating: 3
+year: "1997"
 date: 2021-09-14 03:45:58
 douban:
   id: "1306130"

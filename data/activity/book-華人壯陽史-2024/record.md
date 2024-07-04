@@ -3,6 +3,7 @@ title: 華人壯陽史
 category: book
 status: todo
 rating: 0
+year: 2024-1-1
 date: 2024-01-09 04:58:53
 douban:
   id: "36698082"

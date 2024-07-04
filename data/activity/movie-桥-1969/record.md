@@ -3,6 +3,7 @@ title: 桥
 category: movie
 status: todo
 rating: 0
+year: "1969"
 date: 2022-10-15 15:45:35
 douban:
   id: "1305697"

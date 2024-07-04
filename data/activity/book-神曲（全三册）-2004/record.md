@@ -3,6 +3,7 @@ title: 神曲（全三册）
 category: book
 status: todo
 rating: 0
+year: 2004-05
 date: 2021-11-26 05:20:57
 douban:
   id: "1055234"

@@ -3,6 +3,7 @@ title: 长江
 category: movie
 status: todo
 rating: 0
+year: "1981"
 date: 2022-04-29 07:26:34
 douban:
   id: "25971044"

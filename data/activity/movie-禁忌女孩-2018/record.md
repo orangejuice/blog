@@ -3,6 +3,7 @@ title: 禁忌女孩
 category: movie
 status: done
 rating: 1
+year: "2018"
 date: 2021-09-05 21:36:09
 douban:
   id: "30327894"

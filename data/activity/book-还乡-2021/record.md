@@ -3,6 +3,7 @@ title: 还乡
 category: book
 status: todo
 rating: 0
+year: 2021-3
 date: 2024-04-22 18:33:23
 douban:
   id: "35100850"

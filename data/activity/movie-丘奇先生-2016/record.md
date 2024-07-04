@@ -3,6 +3,7 @@ title: 丘奇先生
 category: movie
 status: todo
 rating: 0
+year: "2016"
 date: 2022-10-27 00:48:33
 douban:
   id: "26414979"

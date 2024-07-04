@@ -3,6 +3,7 @@ title: 七宝奇谋
 category: movie
 status: done
 rating: 3
+year: "1985"
 date: 2019-10-20 05:55:36
 douban:
   id: "1298273"

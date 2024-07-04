@@ -3,6 +3,7 @@ title: 黑镜 第六季
 category: movie
 status: done
 rating: 0
+year: "2023"
 date: 2023-08-10 05:43:11
 douban:
   id: "35901863"

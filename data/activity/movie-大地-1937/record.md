@@ -3,6 +3,7 @@ title: 大地
 category: movie
 status: done
 rating: 5
+year: "1937"
 date: 2019-11-12 04:10:07
 douban:
   id: "1292968"

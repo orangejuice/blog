@@ -3,6 +3,7 @@ title: 中国西部刑侦大案纪实
 category: movie
 status: todo
 rating: 0
+year: "2001"
 date: 2022-12-27 10:40:23
 douban:
   id: "25707531"

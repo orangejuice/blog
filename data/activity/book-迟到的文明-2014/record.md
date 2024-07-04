@@ -3,6 +3,7 @@ title: 迟到的文明
 category: book
 status: todo
 rating: 0
+year: 2014-3-1
 date: 2022-04-04 02:35:53
 douban:
   id: "25839589"

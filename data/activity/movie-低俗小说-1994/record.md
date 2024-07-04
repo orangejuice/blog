@@ -3,6 +3,7 @@ title: 低俗小说
 category: movie
 status: done
 rating: 5
+year: "1994"
 date: 2019-11-10 23:30:44
 douban:
   id: "1291832"

@@ -3,6 +3,7 @@ title: 我愿你是你所是
 category: book
 status: todo
 rating: 0
+year: 2023-7-30
 date: 2023-08-27 02:33:29
 douban:
   id: "36361968"

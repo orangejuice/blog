@@ -3,6 +3,7 @@ title: 战马
 category: movie
 status: done
 rating: 5
+year: "2011"
 date: 2021-01-08 05:32:31
 douban:
   id: "4206436"

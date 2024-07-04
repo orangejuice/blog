@@ -3,6 +3,7 @@ title: 隐入尘烟
 category: movie
 status: done
 rating: 4
+year: "2022"
 date: 2022-09-18 16:55:29
 douban:
   id: "35131346"

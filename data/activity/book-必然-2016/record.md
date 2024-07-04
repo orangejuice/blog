@@ -3,6 +3,7 @@ title: 必然
 category: book
 status: todo
 rating: 0
+year: 2016-1
 date: 2023-03-26 10:21:46
 douban:
   id: "26658379"

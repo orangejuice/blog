@@ -3,6 +3,7 @@ title: 大时代
 category: movie
 status: todo
 rating: 0
+year: "1992"
 date: 2024-01-04 21:32:57
 douban:
   id: "1878605"

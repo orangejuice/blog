@@ -3,6 +3,7 @@ title: 世界上最糟糕的人
 category: movie
 status: todo
 rating: 0
+year: "2021"
 date: 2022-01-30 20:57:30
 douban:
   id: "34447553"

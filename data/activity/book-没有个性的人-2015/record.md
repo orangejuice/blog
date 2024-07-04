@@ -3,6 +3,7 @@ title: 没有个性的人
 category: book
 status: todo
 rating: 0
+year: 2015-4
 date: 2022-07-03 00:05:00
 douban:
   id: "25970429"

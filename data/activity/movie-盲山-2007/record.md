@@ -3,6 +3,7 @@ title: 盲山
 category: movie
 status: done
 rating: 0
+year: "2007"
 date: 2022-01-30 02:49:22
 douban:
   id: "2063528"

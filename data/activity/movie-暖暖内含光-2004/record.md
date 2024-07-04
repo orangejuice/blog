@@ -3,6 +3,7 @@ title: 暖暖内含光
 category: movie
 status: todo
 rating: 0
+year: "2004"
 date: 2022-03-23 16:39:56
 douban:
   id: "1308777"

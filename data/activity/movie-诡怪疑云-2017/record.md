@@ -3,6 +3,7 @@ title: 诡怪疑云
 category: movie
 status: todo
 rating: 0
+year: "2017"
 date: 2021-10-25 07:59:57
 douban:
   id: "27188152"

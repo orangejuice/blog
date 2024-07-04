@@ -3,6 +3,7 @@ title: 传奇中的大唐
 category: book
 status: todo
 rating: 0
+year: 2018-10
 date: 2022-01-08 00:46:31
 douban:
   id: "30356987"

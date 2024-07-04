@@ -3,6 +3,7 @@ title: 专制主义统治下的臣民心理
 category: book
 status: todo
 rating: 0
+year: 2021-5-31
 date: 2021-11-15 22:20:15
 douban:
   id: "35413833"

@@ -3,6 +3,7 @@ title: 托斯卡纳艳阳下
 category: movie
 status: todo
 rating: 0
+year: "2003"
 date: 2022-02-11 01:54:28
 douban:
   id: "1307052"

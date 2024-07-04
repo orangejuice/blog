@@ -3,6 +3,7 @@ title: 瀑布
 category: movie
 status: todo
 rating: 0
+year: "2021"
 date: 2022-02-04 00:26:53
 douban:
   id: "35242938"

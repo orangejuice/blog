@@ -3,6 +3,7 @@ title: 切尔诺贝利
 category: movie
 status: done
 rating: 5
+year: "2019"
 date: 2023-10-16 04:29:51
 douban:
   id: "27098632"

@@ -3,6 +3,7 @@ title: 尼伯龙根的指环
 category: book
 status: todo
 rating: 0
+year: 2010-10
 date: 2022-04-24 02:26:20
 douban:
   id: "5350834"

@@ -3,6 +3,7 @@ title: 任逍遥
 category: movie
 status: todo
 rating: 0
+year: "2002"
 date: 2024-05-25 16:23:27
 douban:
   id: "1291848"

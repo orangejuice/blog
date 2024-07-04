@@ -3,6 +3,7 @@ title: 共犯者们
 category: movie
 status: todo
 rating: 0
+year: "2017"
 date: 2022-11-29 05:24:35
 douban:
   id: "27101775"

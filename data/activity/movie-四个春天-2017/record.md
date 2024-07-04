@@ -3,6 +3,7 @@ title: 四个春天
 category: movie
 status: done
 rating: 5
+year: "2017"
 date: 2019-01-19 06:37:06
 douban:
   id: "27191492"

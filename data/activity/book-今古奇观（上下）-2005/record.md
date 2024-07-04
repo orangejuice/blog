@@ -3,6 +3,7 @@ title: 今古奇观（上下）
 category: book
 status: todo
 rating: 0
+year: 2005-08
 date: 2024-01-07 20:35:07
 douban:
   id: "1427481"

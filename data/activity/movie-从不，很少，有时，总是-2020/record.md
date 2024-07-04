@@ -3,6 +3,7 @@ title: 从不，很少，有时，总是
 category: movie
 status: todo
 rating: 0
+year: "2020"
 date: 2022-02-22 19:30:34
 douban:
   id: "33411505"

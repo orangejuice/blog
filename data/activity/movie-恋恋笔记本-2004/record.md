@@ -3,6 +3,7 @@ title: 恋恋笔记本
 category: movie
 status: done
 rating: 5
+year: "2004"
 date: 2020-01-01 04:25:36
 douban:
   id: "1309163"

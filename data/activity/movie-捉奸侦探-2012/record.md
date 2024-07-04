@@ -3,6 +3,7 @@ title: 捉奸侦探
 category: movie
 status: todo
 rating: 0
+year: "2012"
 date: 2023-06-28 04:46:42
 douban:
   id: "10851241"

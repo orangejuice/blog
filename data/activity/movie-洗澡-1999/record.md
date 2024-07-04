@@ -3,6 +3,7 @@ title: 洗澡
 category: movie
 status: done
 rating: 5
+year: "1999"
 date: 2020-09-17 05:04:55
 douban:
   id: "1303485"

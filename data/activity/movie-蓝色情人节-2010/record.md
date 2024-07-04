@@ -3,6 +3,7 @@ title: 蓝色情人节
 category: movie
 status: todo
 rating: 0
+year: "2010"
 date: 2023-02-26 19:47:53
 douban:
   id: "2974278"

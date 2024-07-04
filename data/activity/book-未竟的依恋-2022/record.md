@@ -3,6 +3,7 @@ title: 未竟的依恋
 category: book
 status: todo
 rating: 0
+year: 2022-5-1
 date: 2023-10-20 05:53:18
 douban:
   id: "35803163"

@@ -3,6 +3,7 @@ title: 傳教士的詛咒
 category: book
 status: todo
 rating: 0
+year: 2021-6
 date: 2024-05-08 13:42:25
 douban:
   id: "35479551"

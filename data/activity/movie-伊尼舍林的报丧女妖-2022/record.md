@@ -3,6 +3,7 @@ title: 伊尼舍林的报丧女妖
 category: movie
 status: todo
 rating: 0
+year: "2022"
 date: 2022-12-17 15:01:55
 douban:
   id: "34969348"

@@ -3,6 +3,7 @@ title: 绿皮书
 category: movie
 status: done
 rating: 5
+year: "2018"
 date: 2019-01-25 05:56:39
 douban:
   id: "27060077"

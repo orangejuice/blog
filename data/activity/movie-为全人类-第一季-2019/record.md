@@ -3,6 +3,7 @@ title: 为全人类 第一季
 category: movie
 status: todo
 rating: 0
+year: "2019"
 date: 2023-11-04 06:16:16
 douban:
   id: "27663962"

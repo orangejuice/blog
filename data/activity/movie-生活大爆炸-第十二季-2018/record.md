@@ -3,6 +3,7 @@ title: 生活大爆炸 第十二季
 category: movie
 status: done
 rating: 5
+year: "2018"
 date: 2023-10-16 04:29:26
 douban:
   id: "27001001"

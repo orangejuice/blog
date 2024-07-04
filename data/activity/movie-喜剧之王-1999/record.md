@@ -3,6 +3,7 @@ title: 喜剧之王
 category: movie
 status: done
 rating: 4
+year: "1999"
 date: 2019-02-08 06:52:09
 douban:
   id: "1302425"

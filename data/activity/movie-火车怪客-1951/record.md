@@ -3,6 +3,7 @@ title: 火车怪客
 category: movie
 status: todo
 rating: 0
+year: "1951"
 date: 2023-04-03 16:04:38
 douban:
   id: "1298505"

@@ -3,6 +3,7 @@ title: 活着
 category: movie
 status: done
 rating: 5
+year: "1994"
 date: 2019-11-12 06:50:58
 douban:
   id: "1292365"

@@ -3,6 +3,7 @@ title: 夏日香气
 category: movie
 status: todo
 rating: 0
+year: "2003"
 date: 2020-02-02 21:55:18
 douban:
   id: "1762813"

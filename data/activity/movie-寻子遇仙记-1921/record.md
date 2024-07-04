@@ -3,6 +3,7 @@ title: 寻子遇仙记
 category: movie
 status: done
 rating: 4
+year: "1921"
 date: 2021-09-11 03:29:38
 douban:
   id: "1293270"

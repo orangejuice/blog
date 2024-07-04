@@ -3,6 +3,7 @@ title: 异形
 category: movie
 status: done
 rating: 3
+year: "1979"
 date: 2022-11-20 08:59:47
 douban:
   id: "1300868"

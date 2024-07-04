@@ -3,6 +3,7 @@ title: 东京梦华录
 category: book
 status: todo
 rating: 0
+year: 2021-5-6
 date: 2022-12-03 09:38:35
 douban:
   id: "35436867"

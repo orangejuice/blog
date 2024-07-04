@@ -3,6 +3,7 @@ title: 顾城哲思录
 category: book
 status: todo
 rating: 0
+year: 2015-8
 date: 2023-12-13 01:12:49
 douban:
   id: "26594075"

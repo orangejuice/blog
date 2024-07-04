@@ -3,6 +3,7 @@ title: 老友记 第十季
 category: movie
 status: done
 rating: 5
+year: "2003"
 date: 2024-05-11 03:44:25
 douban:
   id: "3286552"

@@ -3,6 +3,7 @@ title: 酒精计划
 category: movie
 status: todo
 rating: 0
+year: "2020"
 date: 2021-10-30 06:05:20
 douban:
   id: "30323120"

@@ -3,6 +3,7 @@ title: 从文自传
 category: book
 status: todo
 rating: 0
+year: 2008-11
 date: 2022-06-01 20:19:40
 douban:
   id: "3323311"

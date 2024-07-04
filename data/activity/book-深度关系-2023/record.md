@@ -3,6 +3,7 @@ title: 深度关系
 category: book
 status: todo
 rating: 0
+year: 2023-10-30
 date: 2024-05-04 16:43:16
 douban:
   id: "36593611"

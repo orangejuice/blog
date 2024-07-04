@@ -3,6 +3,7 @@ title: 城市梦
 category: movie
 status: todo
 rating: 0
+year: "2019"
 date: 2024-01-22 01:17:27
 douban:
   id: "34802165"

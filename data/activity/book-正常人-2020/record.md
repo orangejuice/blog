@@ -3,6 +3,7 @@ title: 正常人
 category: book
 status: todo
 rating: 0
+year: 2020-7
 date: 2022-12-22 06:24:17
 douban:
   id: "35081921"

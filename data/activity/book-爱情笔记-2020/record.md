@@ -3,6 +3,7 @@ title: 爱情笔记
 category: book
 status: todo
 rating: 0
+year: 2020-8
 date: 2024-06-01 08:57:28
 douban:
   id: "35170991"

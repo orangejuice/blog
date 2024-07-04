@@ -3,6 +3,7 @@ title: 绿光
 category: movie
 status: done
 rating: 5
+year: "1986"
 date: 2020-09-05 04:26:14
 douban:
   id: "1294039"

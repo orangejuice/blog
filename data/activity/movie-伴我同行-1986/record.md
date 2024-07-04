@@ -3,6 +3,7 @@ title: 伴我同行
 category: movie
 status: done
 rating: 5
+year: "1986"
 date: 2021-01-15 04:34:50
 douban:
   id: "1292925"

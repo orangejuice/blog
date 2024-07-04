@@ -3,6 +3,7 @@ title: 快乐的死
 category: book
 status: todo
 rating: 0
+year: 2023-6-30
 date: 2024-05-14 15:29:55
 douban:
   id: "36344441"

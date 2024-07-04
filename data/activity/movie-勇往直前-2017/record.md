@@ -3,6 +3,7 @@ title: 勇往直前
 category: movie
 status: todo
 rating: 0
+year: "2017"
 date: 2023-08-16 09:10:19
 douban:
   id: "26718828"

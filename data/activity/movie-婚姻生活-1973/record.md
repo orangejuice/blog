@@ -3,6 +3,7 @@ title: 婚姻生活
 category: movie
 status: todo
 rating: 0
+year: "1973"
 date: 2022-12-20 07:50:56
 douban:
   id: "1292981"

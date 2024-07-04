@@ -3,6 +3,7 @@ title: 鞋带
 category: book
 status: todo
 rating: 0
+year: 2020-5
 date: 2023-10-05 19:04:58
 douban:
   id: "34970385"

@@ -3,6 +3,7 @@ title: 开国大典
 category: movie
 status: todo
 rating: 0
+year: "1989"
 date: 2023-11-03 21:51:33
 douban:
   id: "3147497"

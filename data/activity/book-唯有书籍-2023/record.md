@@ -3,6 +3,7 @@ title: 唯有书籍
 category: book
 status: todo
 rating: 0
+year: 2023-4
 date: 2023-05-04 22:03:25
 douban:
   id: "36318087"

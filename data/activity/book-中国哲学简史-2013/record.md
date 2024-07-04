@@ -3,6 +3,7 @@ title: 中国哲学简史
 category: book
 status: todo
 rating: 0
+year: 2013-1-1
 date: 2022-04-01 06:37:21
 douban:
   id: "20501147"

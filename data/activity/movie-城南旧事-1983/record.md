@@ -3,6 +3,7 @@ title: 城南旧事
 category: movie
 status: done
 rating: 5
+year: "1983"
 date: 2019-11-25 01:51:30
 douban:
   id: "1300894"

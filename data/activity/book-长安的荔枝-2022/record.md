@@ -3,6 +3,7 @@ title: 长安的荔枝
 category: book
 status: todo
 rating: 0
+year: 2022-10
 date: 2024-03-08 07:31:39
 douban:
   id: "36104107"

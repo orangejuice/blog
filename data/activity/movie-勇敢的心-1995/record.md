@@ -3,6 +3,7 @@ title: 勇敢的心
 category: movie
 status: done
 rating: 4
+year: "1995"
 date: 2020-08-08 05:21:56
 douban:
   id: "1294639"

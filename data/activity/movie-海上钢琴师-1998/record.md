@@ -3,6 +3,7 @@ title: 海上钢琴师
 category: movie
 status: done
 rating: 5
+year: "1998"
 date: 2019-10-28 06:49:38
 douban:
   id: "1292001"

@@ -3,6 +3,7 @@ title: 长大成人
 category: movie
 status: todo
 rating: 0
+year: "1997"
 date: 2021-09-19 19:19:49
 douban:
   id: "1401282"

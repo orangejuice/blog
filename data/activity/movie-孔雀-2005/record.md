@@ -3,6 +3,7 @@ title: 孔雀
 category: movie
 status: done
 rating: 5
+year: "2005"
 date: 2022-12-05 05:24:19
 douban:
   id: "1309004"

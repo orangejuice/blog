@@ -3,6 +3,7 @@ title: 我是古巴
 category: movie
 status: todo
 rating: 0
+year: "1964"
 date: 2023-07-22 05:24:06
 douban:
   id: "1432669"

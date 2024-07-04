@@ -3,6 +3,7 @@ title: 饱食穷民
 category: book
 status: done
 rating: 5
+year: 2020-1
 date: 2021-01-16 05:54:44
 douban:
   id: "34895571"

@@ -3,6 +3,7 @@ title: 难忘的一天
 category: movie
 status: todo
 rating: 0
+year: "1978"
 date: 2022-12-07 06:08:23
 douban:
   id: "4077656"

@@ -3,6 +3,7 @@ title: 鳄鱼手记
 category: book
 status: todo
 rating: 0
+year: 2021-7
 date: 2024-06-28 01:49:23
 douban:
   id: "35512887"

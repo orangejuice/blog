@@ -3,6 +3,7 @@ title: 鼹鼠的故事
 category: movie
 status: done
 rating: 5
+year: "1957"
 date: 2020-08-18 04:44:30
 douban:
   id: "2994961"

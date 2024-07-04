@@ -3,6 +3,7 @@ title: 花木兰
 category: movie
 status: done
 rating: 2
+year: "2020"
 date: 2020-09-09 04:14:09
 douban:
   id: "26357307"

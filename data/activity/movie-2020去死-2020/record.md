@@ -3,6 +3,7 @@ title: 2020去死
 category: movie
 status: done
 rating: 3
+year: "2020"
 date: 2021-01-01 06:50:59
 douban:
   id: "35275115"

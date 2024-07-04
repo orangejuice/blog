@@ -3,6 +3,7 @@ title: 细雨慢煎一壶春
 category: book
 status: todo
 rating: 0
+year: 2015-7
 date: 2022-01-30 22:06:36
 douban:
   id: "26679597"

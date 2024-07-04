@@ -3,6 +3,7 @@ title: 這一生為何而來
 category: book
 status: done
 rating: 0
+year: "2010"
 date: 2019-10-18 03:55:29
 douban:
   id: "4312357"

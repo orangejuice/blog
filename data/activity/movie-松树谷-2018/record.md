@@ -3,6 +3,7 @@ title: 松树谷
 category: movie
 status: done
 rating: 5
+year: "2018"
 date: 2024-01-01 06:32:41
 douban:
   id: "30351599"

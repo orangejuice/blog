@@ -3,6 +3,7 @@ title: 猫鼠游戏
 category: movie
 status: todo
 rating: 0
+year: "2002"
 date: 2023-07-04 19:44:34
 douban:
   id: "1305487"

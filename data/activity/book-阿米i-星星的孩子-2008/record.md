@@ -3,6 +3,7 @@ title: 阿米I-星星的孩子
 category: book
 status: todo
 rating: 0
+year: 2008年
 date: 2022-11-17 04:23:19
 douban:
   id: "3137185"

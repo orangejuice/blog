@@ -3,6 +3,7 @@ title: 燃烧女子的肖像
 category: movie
 status: todo
 rating: 0
+year: "2019"
 date: 2022-02-07 07:18:58
 douban:
   id: "30257175"

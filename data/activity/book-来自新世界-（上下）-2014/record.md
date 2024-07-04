@@ -3,6 +3,7 @@ title: 来自新世界 （上下）
 category: book
 status: todo
 rating: 0
+year: 2014-1
 date: 2023-10-06 16:48:19
 douban:
   id: "25752955"

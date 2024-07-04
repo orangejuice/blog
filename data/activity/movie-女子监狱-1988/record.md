@@ -3,6 +3,7 @@ title: 女子监狱
 category: movie
 status: todo
 rating: 0
+year: "1988"
 date: 2023-06-12 03:25:39
 douban:
   id: "2071525"

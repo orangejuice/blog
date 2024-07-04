@@ -3,6 +3,7 @@ title: 火口的两人
 category: movie
 status: done
 rating: 5
+year: "2019"
 date: 2020-05-05 05:36:07
 douban:
   id: "30405087"

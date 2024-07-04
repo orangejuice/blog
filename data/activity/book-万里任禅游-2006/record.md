@@ -3,6 +3,7 @@ title: 万里任禅游
 category: book
 status: todo
 rating: 0
+year: 2006-8
 date: 2019-01-28 06:38:01
 douban:
   id: "1855097"

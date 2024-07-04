@@ -3,6 +3,7 @@ title: 被禁锢的头脑
 category: book
 status: todo
 rating: 0
+year: 2013-3
 date: 2023-02-22 08:59:58
 douban:
   id: "7916069"

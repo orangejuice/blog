@@ -3,6 +3,7 @@ title: 游金梦
 category: book
 status: todo
 rating: 0
+year: 2013-6
 date: 2021-10-09 07:08:57
 douban:
   id: "25703280"

@@ -3,6 +3,7 @@ title: 霸王别姬
 category: movie
 status: done
 rating: 5
+year: "1993"
 date: 2021-05-10 04:35:30
 douban:
   id: "1291546"

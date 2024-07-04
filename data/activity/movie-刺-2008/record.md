@@ -3,6 +3,7 @@ title: 刺
 category: movie
 status: todo
 rating: 0
+year: "2008"
 date: 2022-05-19 02:32:27
 douban:
   id: "3217669"

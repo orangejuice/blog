@@ -3,6 +3,7 @@ title: 革命见证人
 category: movie
 status: done
 rating: 5
+year: "1989"
 date: 2020-06-30 20:35:21
 douban:
   id: "3022624"

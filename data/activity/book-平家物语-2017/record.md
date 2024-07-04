@@ -3,6 +3,7 @@ title: 平家物语
 category: book
 status: todo
 rating: 0
+year: 2017-2
 date: 2022-12-24 02:13:49
 douban:
   id: "26732330"

@@ -3,6 +3,7 @@ title: 模仿游戏
 category: movie
 status: todo
 rating: 0
+year: "2014"
 date: 2022-05-18 01:03:17
 douban:
   id: "10463953"

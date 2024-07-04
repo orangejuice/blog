@@ -3,6 +3,7 @@ title: 追忆
 category: book
 status: done
 rating: 0
+year: 2014-3
 date: 2024-04-23 01:02:57
 douban:
   id: "25774961"

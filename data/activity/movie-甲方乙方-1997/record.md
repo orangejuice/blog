@@ -3,6 +3,7 @@ title: 甲方乙方
 category: movie
 status: done
 rating: 3
+year: "1997"
 date: 2022-12-03 05:17:21
 douban:
   id: "1303173"

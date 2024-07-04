@@ -3,6 +3,7 @@ title: 来自民间的叛逆
 category: book
 status: todo
 rating: 0
+year: 2018-11-6
 date: 2021-10-02 16:31:47
 douban:
   id: "30294348"

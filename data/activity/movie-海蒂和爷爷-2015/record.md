@@ -3,6 +3,7 @@ title: 海蒂和爷爷
 category: movie
 status: done
 rating: 3
+year: "2015"
 date: 2021-03-14 05:06:01
 douban:
   id: "25958717"

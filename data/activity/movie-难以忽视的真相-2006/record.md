@@ -3,6 +3,7 @@ title: 难以忽视的真相
 category: movie
 status: done
 rating: 5
+year: "2006"
 date: 2020-11-07 23:34:19
 douban:
   id: "1474405"

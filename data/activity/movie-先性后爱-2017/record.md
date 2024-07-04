@@ -3,6 +3,7 @@ title: 先性后爱
 category: movie
 status: done
 rating: 4
+year: "2017"
 date: 2022-10-08 21:09:40
 douban:
   id: "27107596"

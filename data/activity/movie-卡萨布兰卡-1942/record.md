@@ -3,6 +3,7 @@ title: 卡萨布兰卡
 category: movie
 status: done
 rating: 4
+year: "1942"
 date: 2022-06-06 23:59:13
 douban:
   id: "1296753"

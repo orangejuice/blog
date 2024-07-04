@@ -3,6 +3,7 @@ title: 岛夷志略校释
 category: book
 status: todo
 rating: 0
+year: 1981-5
 date: 2023-11-15 23:10:15
 douban:
   id: "1096678"

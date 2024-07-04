@@ -3,6 +3,7 @@ title: 天注定
 category: movie
 status: done
 rating: 0
+year: "2013"
 date: 2022-10-09 16:29:44
 douban:
   id: "21941283"

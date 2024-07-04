@@ -3,6 +3,7 @@ title: 农村少女和中国的6年
 category: movie
 status: done
 rating: 3
+year: "2008"
 date: 2021-03-03 03:34:25
 douban:
   id: "21964945"

@@ -3,6 +3,7 @@ title: 请回答1988
 category: movie
 status: todo
 rating: 0
+year: "2015"
 date: 2023-09-23 09:50:49
 douban:
   id: "26302614"

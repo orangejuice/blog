@@ -3,6 +3,7 @@ title: 秘密花园
 category: movie
 status: done
 rating: 4
+year: "1993"
 date: 2020-09-18 02:46:26
 douban:
   id: "1302133"

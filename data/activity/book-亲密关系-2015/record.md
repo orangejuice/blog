@@ -3,6 +3,7 @@ title: 亲密关系
 category: book
 status: todo
 rating: 0
+year: 2015-6
 date: 2023-09-20 17:11:17
 douban:
   id: "26585065"

@@ -3,6 +3,7 @@ title: 我的阿勒泰
 category: book
 status: todo
 rating: 0
+year: 2018-8
 date: 2024-02-03 20:11:51
 douban:
   id: "30259726"

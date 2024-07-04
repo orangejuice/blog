@@ -3,6 +3,7 @@ title: 江湖丛谈
 category: book
 status: done
 rating: 5
+year: 2011-12
 date: 2023-12-24 06:52:31
 douban:
   id: "7065491"

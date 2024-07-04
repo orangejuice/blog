@@ -3,6 +3,7 @@ title: 妈妈的天空
 category: movie
 status: todo
 rating: 0
+year: "1993"
 date: 2023-09-10 08:32:49
 douban:
   id: "1451866"

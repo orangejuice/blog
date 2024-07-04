@@ -3,6 +3,7 @@ title: 两杆大烟枪
 category: movie
 status: done
 rating: 4
+year: "1998"
 date: 2019-11-09 05:57:12
 douban:
   id: "1293350"

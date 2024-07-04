@@ -3,6 +3,7 @@ title: 黄金时代
 category: book
 status: done
 rating: 3
+year: 1999-3
 date: 2022-12-27 10:10:12
 douban:
   id: "1089243"

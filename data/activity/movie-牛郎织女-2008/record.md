@@ -3,6 +3,7 @@ title: 牛郎织女
 category: movie
 status: todo
 rating: 0
+year: "2008"
 date: 2022-12-06 02:17:54
 douban:
   id: "3060559"

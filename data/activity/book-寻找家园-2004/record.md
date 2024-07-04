@@ -3,6 +3,7 @@ title: 寻找家园
 category: book
 status: done
 rating: 5
+year: 2004-11-03
 date: 2021-04-13 04:43:59
 douban:
   id: "1005358"

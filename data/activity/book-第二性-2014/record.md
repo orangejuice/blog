@@ -3,6 +3,7 @@ title: 第二性
 category: book
 status: todo
 rating: 0
+year: 2014-1
 date: 2021-12-31 07:20:42
 douban:
   id: "25822104"

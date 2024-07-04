@@ -3,6 +3,7 @@ title: 陆上行舟
 category: movie
 status: todo
 rating: 0
+year: "1982"
 date: 2024-01-30 05:11:38
 douban:
   id: "1297105"

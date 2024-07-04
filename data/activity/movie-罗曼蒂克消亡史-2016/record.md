@@ -3,6 +3,7 @@ title: 罗曼蒂克消亡史
 category: movie
 status: done
 rating: 1
+year: "2016"
 date: 2023-09-27 07:15:51
 douban:
   id: "24751763"

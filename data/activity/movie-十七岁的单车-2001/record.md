@@ -3,6 +3,7 @@ title: 十七岁的单车
 category: movie
 status: done
 rating: 5
+year: "2001"
 date: 2020-09-01 03:45:06
 douban:
   id: "1291847"

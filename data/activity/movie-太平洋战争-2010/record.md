@@ -3,6 +3,7 @@ title: 太平洋战争
 category: movie
 status: done
 rating: 5
+year: "2010"
 date: 2021-05-06 21:32:16
 douban:
   id: "1428176"

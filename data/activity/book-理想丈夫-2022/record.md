@@ -3,6 +3,7 @@ title: 理想丈夫
 category: book
 status: todo
 rating: 0
+year: 2022-3
 date: 2024-05-14 22:31:32
 douban:
   id: "35813437"

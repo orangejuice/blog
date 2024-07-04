@@ -3,6 +3,7 @@ title: 包法利夫人
 category: book
 status: todo
 rating: 0
+year: 2003-1-1
 date: 2023-09-19 19:18:20
 douban:
   id: "25897678"

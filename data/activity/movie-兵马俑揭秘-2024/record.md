@@ -3,6 +3,7 @@ title: 兵马俑揭秘
 category: movie
 status: done
 rating: 4
+year: "2024"
 date: 2024-06-16 06:06:57
 douban:
   id: "36801392"

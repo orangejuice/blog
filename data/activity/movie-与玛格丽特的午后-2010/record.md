@@ -3,6 +3,7 @@ title: 与玛格丽特的午后
 category: movie
 status: done
 rating: 5
+year: "2010"
 date: 2023-08-26 03:34:43
 douban:
   id: "3796613"

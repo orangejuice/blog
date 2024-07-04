@@ -3,6 +3,7 @@ title: 加缪手记
 category: book
 status: todo
 rating: 0
+year: 2019-8
 date: 2024-02-02 16:20:40
 douban:
   id: "34802764"

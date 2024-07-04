@@ -3,6 +3,7 @@ title: 伊豆的舞女
 category: movie
 status: done
 rating: 5
+year: "1974"
 date: 2023-12-20 08:02:30
 douban:
   id: "1421733"

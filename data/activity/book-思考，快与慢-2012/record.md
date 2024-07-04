@@ -3,6 +3,7 @@ title: 思考，快与慢
 category: book
 status: done
 rating: 3
+year: 2012-7
 date: 2020-04-12 22:44:24
 douban:
   id: "10785583"

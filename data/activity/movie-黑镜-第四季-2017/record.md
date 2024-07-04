@@ -3,6 +3,7 @@ title: 黑镜 第四季
 category: movie
 status: done
 rating: 0
+year: "2017"
 date: 2023-08-10 05:43:55
 douban:
   id: "26898192"

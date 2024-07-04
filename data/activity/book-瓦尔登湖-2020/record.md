@@ -3,6 +3,7 @@ title: 瓦尔登湖
 category: book
 status: todo
 rating: 0
+year: 2020-10
 date: 2022-01-02 04:51:45
 douban:
   id: "35015980"

@@ -3,6 +3,7 @@ title: 黑炮事件
 category: movie
 status: todo
 rating: 0
+year: "1986"
 date: 2023-06-11 21:17:09
 douban:
   id: "1434269"

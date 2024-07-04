@@ -3,6 +3,7 @@ title: 劳工之爱情
 category: movie
 status: done
 rating: 3
+year: "1922"
 date: 2024-01-05 05:55:39
 douban:
   id: "1466263"

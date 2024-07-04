@@ -3,6 +3,7 @@ title: 呼吸
 category: book
 status: done
 rating: 4
+year: 2019-12
 date: 2023-12-19 23:34:19
 douban:
   id: "34672176"

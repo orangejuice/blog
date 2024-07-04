@@ -3,6 +3,7 @@ title: 卡拉马佐夫兄弟
 category: book
 status: todo
 rating: 0
+year: 2015-2-1
 date: 2022-02-20 22:28:55
 douban:
   id: "25887924"

@@ -3,6 +3,7 @@ title: 菊次郎的夏天
 category: movie
 status: done
 rating: 4
+year: "1999"
 date: 2020-06-23 04:01:49
 douban:
   id: "1293359"

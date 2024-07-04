@@ -3,6 +3,7 @@ title: 才女之累
 category: book
 status: todo
 rating: 0
+year: 2017-3
 date: 2022-02-06 01:39:43
 douban:
   id: "27011516"

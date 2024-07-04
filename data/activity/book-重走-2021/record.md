@@ -3,6 +3,7 @@ title: 重走
 category: book
 status: todo
 rating: 0
+year: 2021-5
 date: 2024-03-18 12:32:00
 douban:
   id: "35436901"

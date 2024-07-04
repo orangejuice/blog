@@ -3,6 +3,7 @@ title: 菊豆
 category: movie
 status: todo
 rating: 0
+year: "1990"
 date: 2022-11-27 04:39:27
 douban:
   id: "1299365"

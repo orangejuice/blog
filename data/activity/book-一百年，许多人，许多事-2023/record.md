@@ -3,6 +3,7 @@ title: 一百年，许多人，许多事
 category: book
 status: todo
 rating: 0
+year: 2023-1
 date: 2023-03-28 03:58:50
 douban:
   id: "36162256"

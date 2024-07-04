@@ -3,6 +3,7 @@ title: 皮胡
 category: movie
 status: done
 rating: 3
+year: "2018"
 date: 2020-09-20 04:45:45
 douban:
   id: "34454589"

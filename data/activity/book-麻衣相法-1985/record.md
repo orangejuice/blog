@@ -3,6 +3,7 @@ title: 麻衣相法
 category: book
 status: todo
 rating: 0
+year: 1985/07
 date: 2021-11-10 06:51:31
 douban:
   id: "4305206"

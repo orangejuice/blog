@@ -3,6 +3,7 @@ title: 历史揭秘：紫禁城的秘密
 category: movie
 status: done
 rating: 4
+year: "2017"
 date: 2021-08-03 17:57:42
 douban:
   id: "27085569"

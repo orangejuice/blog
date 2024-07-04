@@ -3,6 +3,7 @@ title: 中国文化的深层结构
 category: book
 status: todo
 rating: 0
+year: 2011-6
 date: 2023-04-29 08:35:42
 douban:
   id: "1068912"

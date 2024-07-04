@@ -3,6 +3,7 @@ title: 小城之春
 category: movie
 status: todo
 rating: 0
+year: "1948"
 date: 2022-01-21 03:44:03
 douban:
   id: "1323746"

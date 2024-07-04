@@ -3,6 +3,7 @@ title: 青少年心理学
 category: book
 status: todo
 rating: 0
+year: 2013-7-1
 date: 2023-12-26 20:15:17
 douban:
   id: "24838576"

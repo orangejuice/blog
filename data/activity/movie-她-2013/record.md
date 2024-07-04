@@ -3,6 +3,7 @@ title: 她
 category: movie
 status: done
 rating: 5
+year: "2013"
 date: 2024-01-27 05:55:28
 douban:
   id: "6722879"

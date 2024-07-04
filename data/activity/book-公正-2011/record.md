@@ -3,6 +3,7 @@ title: 公正
 category: book
 status: todo
 rating: 0
+year: 2011-1-1
 date: 2020-02-05 05:14:10
 douban:
   id: "5408882"

@@ -3,6 +3,7 @@ title: 战地奇女子
 category: movie
 status: todo
 rating: 0
+year: "1962"
 date: 2024-06-08 15:24:31
 douban:
   id: "3092144"

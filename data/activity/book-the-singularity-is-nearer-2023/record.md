@@ -3,6 +3,7 @@ title: The Singularity Is Nearer
 category: book
 status: todo
 rating: 0
+year: 2023-2-7
 date: 2024-07-02 17:12:06
 douban:
   id: "35611792"

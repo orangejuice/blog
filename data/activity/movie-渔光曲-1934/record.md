@@ -3,6 +3,7 @@ title: 渔光曲
 category: movie
 status: done
 rating: 2
+year: "1934"
 date: 2022-12-06 07:04:38
 douban:
   id: "2138404"

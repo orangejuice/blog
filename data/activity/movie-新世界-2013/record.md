@@ -3,6 +3,7 @@ title: 新世界
 category: movie
 status: done
 rating: 5
+year: "2013"
 date: 2023-12-02 05:19:12
 douban:
   id: "10437779"

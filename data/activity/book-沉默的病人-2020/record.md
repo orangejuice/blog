@@ -3,6 +3,7 @@ title: 沉默的病人
 category: book
 status: todo
 rating: 0
+year: 2020-12-1
 date: 2023-09-20 06:37:32
 douban:
   id: "35249388"

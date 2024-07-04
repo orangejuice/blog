@@ -3,6 +3,7 @@ title: 传奇
 category: book
 status: todo
 rating: 0
+year: 2021-6
 date: 2022-11-06 18:18:51
 douban:
   id: "35498437"

@@ -3,6 +3,7 @@ title: 葬送的芙莉莲
 category: movie
 status: done
 rating: 4
+year: "2023"
 date: 2024-06-13 12:48:07
 douban:
   id: "36093351"

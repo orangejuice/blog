@@ -3,6 +3,7 @@ title: 商文明
 category: book
 status: todo
 rating: 0
+year: 2019-1-1
 date: 2022-11-29 05:23:56
 douban:
   id: "30302913"

@@ -3,6 +3,7 @@ title: 货币背后的秘密
 category: movie
 status: todo
 rating: 0
+year: "2013"
 date: 2024-01-20 19:13:46
 douban:
   id: "26257435"

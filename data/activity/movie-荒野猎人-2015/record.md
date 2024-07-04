@@ -3,6 +3,7 @@ title: 荒野猎人
 category: movie
 status: todo
 rating: 0
+year: "2015"
 date: 2023-09-05 07:28:16
 douban:
   id: "5327268"

@@ -3,6 +3,7 @@ title: 恋恋风尘
 category: movie
 status: done
 rating: 5
+year: "1986"
 date: 2020-07-19 03:56:38
 douban:
   id: "1292330"

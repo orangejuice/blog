@@ -3,6 +3,7 @@ title: 30 Lessons for Living
 category: book
 status: todo
 rating: 0
+year: 2011-11-10
 date: 2023-12-30 06:17:50
 douban:
   id: "6878628"

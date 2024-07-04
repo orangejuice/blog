@@ -3,6 +3,7 @@ title: 孤独的美食家 第一季
 category: movie
 status: todo
 rating: 0
+year: "2012"
 date: 2024-01-05 02:48:38
 douban:
   id: "7065168"

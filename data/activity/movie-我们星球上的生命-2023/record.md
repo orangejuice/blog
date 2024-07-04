@@ -3,6 +3,7 @@ title: 我们星球上的生命
 category: movie
 status: done
 rating: 5
+year: "2023"
 date: 2023-12-06 03:19:09
 douban:
   id: "36141965"

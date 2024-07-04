@@ -3,6 +3,7 @@ title: 山雀儿
 category: movie
 status: done
 rating: 5
+year: "1987"
 date: 2023-12-31 06:21:41
 douban:
   id: "4291391"

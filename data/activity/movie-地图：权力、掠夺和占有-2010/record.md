@@ -3,6 +3,7 @@ title: 地图：权力、掠夺和占有
 category: movie
 status: done
 rating: 4
+year: "2010"
 date: 2021-08-08 00:09:47
 douban:
   id: "4826804"

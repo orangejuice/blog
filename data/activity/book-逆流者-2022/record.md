@@ -3,6 +3,7 @@ title: 逆流者
 category: book
 status: todo
 rating: 0
+year: 2022-2-26
 date: 2022-03-05 00:02:22
 douban:
   id: "35785688"

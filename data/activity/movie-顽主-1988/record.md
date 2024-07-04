@@ -3,6 +3,7 @@ title: 顽主
 category: movie
 status: done
 rating: 2
+year: "1988"
 date: 2021-07-22 03:21:25
 douban:
   id: "1307690"

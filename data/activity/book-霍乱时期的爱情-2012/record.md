@@ -3,6 +3,7 @@ title: 霍乱时期的爱情
 category: book
 status: todo
 rating: 0
+year: 2012-9-1
 date: 2024-01-25 04:38:18
 douban:
   id: "10594787"

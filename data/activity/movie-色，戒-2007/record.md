@@ -3,6 +3,7 @@ title: 色，戒
 category: movie
 status: done
 rating: 5
+year: "2007"
 date: 2019-08-05 05:19:57
 douban:
   id: "1828115"

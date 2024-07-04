@@ -3,6 +3,7 @@ title: 三和人才市场  中国日结1500日元的年轻人们
 category: movie
 status: done
 rating: 5
+year: "2018"
 date: 2021-01-16 23:47:28
 douban:
   id: "30219684"

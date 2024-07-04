@@ -3,6 +3,7 @@ title: 小谢尔顿 第五季
 category: movie
 status: done
 rating: 5
+year: "2021"
 date: 2023-09-01 19:55:07
 douban:
   id: "35420023"

@@ -3,6 +3,7 @@ title: 敦煌
 category: movie
 status: done
 rating: 5
+year: "1988"
 date: 2020-10-20 04:50:52
 douban:
   id: "1303390"

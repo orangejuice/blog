@@ -3,6 +3,7 @@ title: 来自新世界
 category: movie
 status: todo
 rating: 0
+year: "2012"
 date: 2023-12-26 00:55:57
 douban:
   id: "10527275"

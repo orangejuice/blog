@@ -3,6 +3,7 @@ title: 顾随全集
 category: book
 status: todo
 rating: 0
+year: 2014-6-1
 date: 2021-11-26 16:40:14
 douban:
   id: "25926509"

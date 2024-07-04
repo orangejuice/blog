@@ -3,6 +3,7 @@ title: 紫色
 category: movie
 status: todo
 rating: 0
+year: "1985"
 date: 2022-12-18 01:56:50
 douban:
   id: "1294503"

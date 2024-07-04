@@ -3,6 +3,7 @@ title: 人体内旅行
 category: movie
 status: done
 rating: 5
+year: "2007"
 date: 2020-09-07 01:10:13
 douban:
   id: "3442857"

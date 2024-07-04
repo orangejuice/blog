@@ -3,6 +3,7 @@ title: 当下的力量（珍藏版）
 category: book
 status: todo
 rating: 0
+year: 2013-7-1
 date: 2023-07-23 03:44:03
 douban:
   id: "24758481"

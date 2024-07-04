@@ -3,6 +3,7 @@ title: 性格学的基本问题
 category: book
 status: todo
 rating: 0
+year: 2023-12
 date: 2024-01-28 00:49:57
 douban:
   id: "36642207"

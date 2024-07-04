@@ -3,6 +3,7 @@ title: 喜丧
 category: movie
 status: todo
 rating: 0
+year: "2015"
 date: 2024-01-13 12:25:47
 douban:
   id: "26671361"

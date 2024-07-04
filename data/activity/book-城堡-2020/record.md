@@ -3,6 +3,7 @@ title: 城堡
 category: book
 status: todo
 rating: 0
+year: 2020-1
 date: 2022-04-20 23:17:42
 douban:
   id: "34856482"

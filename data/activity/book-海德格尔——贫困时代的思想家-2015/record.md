@@ -3,6 +3,7 @@ title: 海德格尔——贫困时代的思想家
 category: book
 status: todo
 rating: 0
+year: 2015-11-1
 date: 2022-06-11 02:00:09
 douban:
   id: "26673158"

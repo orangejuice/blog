@@ -3,6 +3,7 @@ title: ADHD 2.0
 category: book
 status: todo
 rating: 0
+year: 2021-1-12
 date: 2024-05-06 05:04:25
 douban:
   id: "35364574"

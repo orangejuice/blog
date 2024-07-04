@@ -3,6 +3,7 @@ title: 进化心理学(第4版)
 category: book
 status: todo
 rating: 0
+year: 2015-9
 date: 2023-09-13 08:00:02
 douban:
   id: "26683297"

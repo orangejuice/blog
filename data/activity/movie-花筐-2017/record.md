@@ -3,6 +3,7 @@ title: 花筐
 category: movie
 status: todo
 rating: 0
+year: "2017"
 date: 2021-10-09 06:33:20
 douban:
   id: "26846714"

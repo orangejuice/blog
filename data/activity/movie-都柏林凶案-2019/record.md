@@ -3,6 +3,7 @@ title: 都柏林凶案
 category: movie
 status: todo
 rating: 0
+year: "2019"
 date: 2019-10-15 04:39:16
 douban:
   id: "27157448"

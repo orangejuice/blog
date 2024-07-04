@@ -3,6 +3,7 @@ title: 虎口脱险
 category: movie
 status: done
 rating: 3
+year: "1966"
 date: 2021-05-20 04:05:30
 douban:
   id: "1296909"

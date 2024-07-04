@@ -3,6 +3,7 @@ title: 攻壳机动队
 category: movie
 status: todo
 rating: 0
+year: "1995"
 date: 2024-01-22 21:52:41
 douban:
   id: "1291936"

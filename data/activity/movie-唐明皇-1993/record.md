@@ -3,6 +3,7 @@ title: 唐明皇
 category: movie
 status: todo
 rating: 0
+year: "1993"
 date: 2022-10-08 21:47:31
 douban:
   id: "2154384"

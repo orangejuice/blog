@@ -3,6 +3,7 @@ title: 德米安
 category: book
 status: todo
 rating: 0
+year: 2009-3
 date: 2024-05-22 10:58:53
 douban:
   id: "3578470"

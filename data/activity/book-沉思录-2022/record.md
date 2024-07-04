@@ -3,6 +3,7 @@ title: 沉思录
 category: book
 status: todo
 rating: 0
+year: 2022-9
 date: 2024-01-07 20:36:40
 douban:
   id: "36127512"

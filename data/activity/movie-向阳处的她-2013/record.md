@@ -3,6 +3,7 @@ title: 向阳处的她
 category: movie
 status: done
 rating: 2
+year: "2013"
 date: 2023-05-17 05:29:45
 douban:
   id: "20426995"

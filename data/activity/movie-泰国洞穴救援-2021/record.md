@@ -3,6 +3,7 @@ title: 泰国洞穴救援
 category: movie
 status: todo
 rating: 0
+year: "2021"
 date: 2022-03-16 22:16:05
 douban:
   id: "33413473"

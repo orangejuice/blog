@@ -3,6 +3,7 @@ title: 乱世佳人
 category: movie
 status: done
 rating: 5
+year: "1939"
 date: 2019-11-03 02:54:54
 douban:
   id: "1300267"

@@ -3,6 +3,7 @@ title: 我们一定要再见一见
 category: book
 status: todo
 rating: 0
+year: 2020-1
 date: 2024-01-19 09:02:22
 douban:
   id: "34950450"

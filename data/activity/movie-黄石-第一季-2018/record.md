@@ -3,6 +3,7 @@ title: 黄石 第一季
 category: movie
 status: todo
 rating: 0
+year: "2018"
 date: 2024-05-12 18:24:59
 douban:
   id: "27036727"

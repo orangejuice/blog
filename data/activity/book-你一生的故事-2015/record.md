@@ -3,6 +3,7 @@ title: 你一生的故事
 category: book
 status: todo
 rating: 0
+year: 2015-5
 date: 2022-04-24 02:25:24
 douban:
   id: "26295448"

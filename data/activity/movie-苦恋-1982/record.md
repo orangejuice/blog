@@ -3,6 +3,7 @@ title: 苦恋
 category: movie
 status: done
 rating: 2
+year: "1982"
 date: 2021-09-21 04:25:24
 douban:
   id: "1483992"

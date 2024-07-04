@@ -3,6 +3,7 @@ title: 查拉图斯特拉如是说
 category: book
 status: todo
 rating: 0
+year: 2007-12
 date: 2021-11-29 18:38:00
 douban:
   id: "2359052"

@@ -3,6 +3,7 @@ title: 生存家族
 category: movie
 status: todo
 rating: 0
+year: "2016"
 date: 2021-10-08 22:08:34
 douban:
   id: "26815162"

@@ -3,6 +3,7 @@ title: 被嫌弃的松子的一生
 category: movie
 status: done
 rating: 5
+year: "2006"
 date: 2020-02-02 18:48:01
 douban:
   id: "1787291"

@@ -3,6 +3,7 @@ title: 敦煌莫高窟 美の全貌·上篇
 category: movie
 status: done
 rating: 0
+year: "2008"
 date: 2021-04-07 21:56:05
 douban:
   id: "5679778"

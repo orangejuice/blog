@@ -3,6 +3,7 @@ title: 投奔怒海
 category: movie
 status: todo
 rating: 0
+year: "1982"
 date: 2022-03-11 17:26:20
 douban:
   id: "1296557"

@@ -3,6 +3,7 @@ title: 生活的艺术
 category: book
 status: todo
 rating: 0
+year: 2014-11-1
 date: 2024-01-29 02:50:38
 douban:
   id: "26680340"

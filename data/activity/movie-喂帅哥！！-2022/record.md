@@ -3,6 +3,7 @@ title: 喂帅哥！！
 category: movie
 status: done
 rating: 4
+year: "2022"
 date: 2022-12-14 06:15:43
 douban:
   id: "35679950"

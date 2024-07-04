@@ -3,6 +3,7 @@ title: 存在主义是一种人道主义
 category: book
 status: todo
 rating: 0
+year: 2012-6-1
 date: 2024-01-05 06:58:32
 douban:
   id: "10608319"

@@ -3,6 +3,7 @@ title: 只有读书人才能达到的地方
 category: book
 status: done
 rating: 2
+year: 2021-3
 date: 2021-01-22 06:19:06
 douban:
   id: "35277093"

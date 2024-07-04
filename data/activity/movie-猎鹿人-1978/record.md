@@ -3,6 +3,7 @@ title: 猎鹿人
 category: movie
 status: todo
 rating: 0
+year: "1978"
 date: 2023-05-02 19:41:14
 douban:
   id: "1292403"

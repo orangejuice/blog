@@ -3,6 +3,7 @@ title: 古老的罪恶
 category: book
 status: todo
 rating: 0
+year: 1989-05-01
 date: 2022-02-17 18:08:07
 douban:
   id: "3231658"

@@ -3,6 +3,7 @@ title: 似水流年
 category: movie
 status: todo
 rating: 0
+year: "1984"
 date: 2022-12-20 07:50:34
 douban:
   id: "1294139"

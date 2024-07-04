@@ -3,6 +3,7 @@ title: 后天
 category: movie
 status: done
 rating: 5
+year: "2004"
 date: 2024-05-05 05:52:45
 douban:
   id: "1308779"

@@ -3,6 +3,7 @@ title: 燕尾蝶
 category: movie
 status: done
 rating: 2
+year: "1996"
 date: 2020-09-21 04:45:56
 douban:
   id: "1307793"

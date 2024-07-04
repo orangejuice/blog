@@ -3,6 +3,7 @@ title: 推拿
 category: movie
 status: done
 rating: 5
+year: "2014"
 date: 2020-08-29 03:36:20
 douban:
   id: "20020577"

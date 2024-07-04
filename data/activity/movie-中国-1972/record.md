@@ -3,6 +3,7 @@ title: 中国
 category: movie
 status: done
 rating: 5
+year: "1972"
 date: 2020-07-01 04:53:01
 douban:
   id: "1292327"

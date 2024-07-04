@@ -3,6 +3,7 @@ title: 天生不同
 category: book
 status: todo
 rating: 0
+year: 2016-11
 date: 2024-03-18 10:39:07
 douban:
   id: "26889003"

@@ -3,6 +3,7 @@ title: Lonely Planet 孤独星球：世界
 category: book
 status: todo
 rating: 0
+year: 2016-12
 date: 2023-09-24 00:13:55
 douban:
   id: "26946210"

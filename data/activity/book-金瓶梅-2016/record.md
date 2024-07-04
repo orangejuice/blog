@@ -3,6 +3,7 @@ title: 金瓶梅
 category: book
 status: done
 rating: 5
+year: 2016-1
 date: 2023-08-09 20:27:11
 douban:
   id: "26877943"

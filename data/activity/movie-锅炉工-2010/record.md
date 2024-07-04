@@ -3,6 +3,7 @@ title: 锅炉工
 category: movie
 status: todo
 rating: 0
+year: "2010"
 date: 2022-06-13 15:22:34
 douban:
   id: "5908531"

@@ -3,6 +3,7 @@ title: 山河不足重 重在遇知己【蔡澜交友之道】
 category: book
 status: todo
 rating: 0
+year: 2024-4
 date: 2024-06-09 15:11:06
 douban:
   id: "36824030"

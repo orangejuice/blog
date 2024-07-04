@@ -3,6 +3,7 @@ title: 潘多拉之战
 category: movie
 status: done
 rating: 1
+year: "2022"
 date: 2023-10-20 05:20:41
 douban:
   id: "36183850"

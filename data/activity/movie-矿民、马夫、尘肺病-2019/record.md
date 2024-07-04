@@ -3,6 +3,7 @@ title: 矿民、马夫、尘肺病
 category: movie
 status: done
 rating: 5
+year: "2019"
 date: 2020-05-03 04:09:21
 douban:
   id: "33434927"

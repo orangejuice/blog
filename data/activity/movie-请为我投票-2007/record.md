@@ -3,6 +3,7 @@ title: 请为我投票
 category: movie
 status: done
 rating: 5
+year: "2007"
 date: 2019-01-24 08:09:24
 douban:
   id: "2267155"

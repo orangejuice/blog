@@ -3,6 +3,7 @@ title: 变迁之神
 category: book
 status: todo
 rating: 0
+year: 2016-7
 date: 2023-04-30 17:26:50
 douban:
   id: "26826817"

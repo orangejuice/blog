@@ -3,6 +3,7 @@ title: 改变未来的九大算法
 category: book
 status: todo
 rating: 0
+year: 2019-2
 date: 2022-01-07 19:12:21
 douban:
   id: "30547794"

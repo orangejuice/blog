@@ -3,6 +3,7 @@ title: 奇遇
 category: movie
 status: todo
 rating: 0
+year: "1960"
 date: 2022-03-24 08:53:44
 douban:
   id: "1389923"

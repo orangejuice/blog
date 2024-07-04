@@ -3,6 +3,7 @@ title: 大空头
 category: movie
 status: done
 rating: 5
+year: "2015"
 date: 2023-09-07 05:00:06
 douban:
   id: "26303622"

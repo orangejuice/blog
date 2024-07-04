@@ -3,6 +3,7 @@ title: 各自爱
 category: book
 status: todo
 rating: 0
+year: 2015-3
 date: 2024-02-08 06:53:48
 douban:
   id: "26313575"

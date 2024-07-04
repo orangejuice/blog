@@ -3,6 +3,7 @@ title: 房思琪的初恋乐园
 category: book
 status: doing
 rating: 0
+year: 2018-2
 date: 2024-01-29 19:33:14
 douban:
   id: "27614904"

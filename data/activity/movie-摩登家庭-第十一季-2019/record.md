@@ -3,6 +3,7 @@ title: 摩登家庭 第十一季
 category: movie
 status: done
 rating: 5
+year: "2019"
 date: 2020-03-07 23:26:36
 douban:
   id: "30454227"

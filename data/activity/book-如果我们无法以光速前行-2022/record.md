@@ -3,6 +3,7 @@ title: 如果我们无法以光速前行
 category: book
 status: todo
 rating: 0
+year: 2022-6
 date: 2024-01-04 08:30:20
 douban:
   id: "35802914"

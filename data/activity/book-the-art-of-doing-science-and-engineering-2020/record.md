@@ -3,6 +3,7 @@ title: The Art of Doing Science and Engineering
 category: book
 status: todo
 rating: 0
+year: 2020-5-26
 date: 2023-10-04 00:22:30
 douban:
   id: "35084167"

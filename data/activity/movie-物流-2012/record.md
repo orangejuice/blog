@@ -3,6 +3,7 @@ title: 物流
 category: movie
 status: todo
 rating: 0
+year: "2012"
 date: 2022-11-29 22:34:23
 douban:
   id: "30469443"

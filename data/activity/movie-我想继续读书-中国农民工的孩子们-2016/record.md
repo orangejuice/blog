@@ -3,6 +3,7 @@ title: 我想继续读书 中国农民工的孩子们
 category: movie
 status: done
 rating: 5
+year: "2016"
 date: 2021-03-02 04:07:39
 douban:
   id: "26918742"

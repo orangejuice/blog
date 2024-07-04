@@ -3,6 +3,7 @@ title: 安妮日记
 category: book
 status: done
 rating: 5
+year: 1996-12
 date: 2020-10-20 06:14:30
 douban:
   id: "1042434"

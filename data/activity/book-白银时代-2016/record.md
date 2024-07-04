@@ -3,6 +3,7 @@ title: 白银时代
 category: book
 status: done
 rating: 4
+year: 2016-5-1
 date: 2022-12-28 00:19:14
 douban:
   id: "26928650"

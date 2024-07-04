@@ -3,6 +3,7 @@ title: 渐行渐远
 category: movie
 status: todo
 rating: 0
+year: "2012"
 date: 2022-06-11 04:30:36
 douban:
   id: "11626438"

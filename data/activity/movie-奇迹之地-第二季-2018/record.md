@@ -3,6 +3,7 @@ title: 奇迹之地 第二季
 category: movie
 status: done
 rating: 4
+year: "2018"
 date: 2021-11-17 07:06:49
 douban:
   id: "30148213"

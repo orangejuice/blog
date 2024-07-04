@@ -3,6 +3,7 @@ title: 再见我们的幼儿园
 category: movie
 status: done
 rating: 4
+year: "2011"
 date: 2020-06-25 03:55:33
 douban:
   id: "5960606"

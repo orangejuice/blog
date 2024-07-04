@@ -3,6 +3,7 @@ title: 我的父亲母亲
 category: movie
 status: done
 rating: 4
+year: "1999"
 date: 2021-01-04 04:16:47
 douban:
   id: "1294007"

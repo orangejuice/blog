@@ -3,6 +3,7 @@ title: 原罪
 category: movie
 status: done
 rating: 5
+year: "2001"
 date: 2020-10-01 05:10:35
 douban:
   id: "1302303"

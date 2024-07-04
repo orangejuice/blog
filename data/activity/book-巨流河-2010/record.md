@@ -3,6 +3,7 @@ title: 巨流河
 category: book
 status: todo
 rating: 0
+year: 2010-10
 date: 2022-07-15 21:33:53
 douban:
   id: "4842446"

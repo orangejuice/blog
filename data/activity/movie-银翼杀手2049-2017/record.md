@@ -3,6 +3,7 @@ title: 银翼杀手2049
 category: movie
 status: done
 rating: 3
+year: "2017"
 date: 2024-01-22 09:28:16
 douban:
   id: "10512661"

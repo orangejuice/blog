@@ -3,6 +3,7 @@ title: 在另一个宇宙的1003天
 category: book
 status: done
 rating: 5
+year: 2018-1
 date: 2021-08-26 07:17:14
 douban:
   id: "27611140"

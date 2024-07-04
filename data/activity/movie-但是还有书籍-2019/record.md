@@ -3,6 +3,7 @@ title: 但是还有书籍
 category: movie
 status: done
 rating: 3
+year: "2019"
 date: 2021-08-02 18:26:52
 douban:
   id: "33418361"

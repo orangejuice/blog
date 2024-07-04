@@ -3,6 +3,7 @@ title: Can't Hurt Me
 category: book
 status: todo
 rating: 0
+year: 2018-12-4
 date: 2024-01-24 23:07:47
 douban:
   id: "30400047"

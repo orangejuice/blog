@@ -3,6 +3,7 @@ title: 局外人
 category: book
 status: done
 rating: 5
+year: 2010-8
 date: 2020-01-18 15:50:09
 douban:
   id: "4908885"

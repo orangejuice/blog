@@ -3,6 +3,7 @@ title: 激荡十年，水大鱼大
 category: book
 status: todo
 rating: 0
+year: 2017-11-1
 date: 2024-04-22 14:40:04
 douban:
   id: "27179563"

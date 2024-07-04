@@ -3,6 +3,7 @@ title: 教父
 category: movie
 status: done
 rating: 5
+year: "1972"
 date: 2024-05-19 08:45:32
 douban:
   id: "1291841"

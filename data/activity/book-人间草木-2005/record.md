@@ -3,6 +3,7 @@ title: 人间草木
 category: book
 status: todo
 rating: 0
+year: 2005-01
 date: 2023-09-20 17:21:30
 douban:
   id: "1253310"

@@ -3,6 +3,7 @@ title: 真希望我父母读过这本书
 category: book
 status: todo
 rating: 0
+year: 2020-7
 date: 2023-11-12 20:11:32
 douban:
   id: "35173329"

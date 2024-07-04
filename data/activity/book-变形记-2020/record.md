@@ -3,6 +3,7 @@ title: 变形记
 category: book
 status: todo
 rating: 0
+year: 2020-1-1
 date: 2023-12-22 10:02:27
 douban:
   id: "35218475"

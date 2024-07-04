@@ -3,6 +3,7 @@ title: 黑镜 第三季
 category: movie
 status: done
 rating: 0
+year: "2016"
 date: 2023-08-10 05:43:54
 douban:
   id: "25966044"

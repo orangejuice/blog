@@ -3,6 +3,7 @@ title: 疑惑
 category: book
 status: todo
 rating: 0
+year: 2018-7
 date: 2022-12-20 22:08:18
 douban:
   id: "30159073"

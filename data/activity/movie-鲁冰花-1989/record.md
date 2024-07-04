@@ -3,6 +3,7 @@ title: 鲁冰花
 category: movie
 status: done
 rating: 5
+year: "1989"
 date: 2019-01-14 07:58:52
 douban:
   id: "1308228"

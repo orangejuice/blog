@@ -3,6 +3,7 @@ title: 亿万 第一季
 category: movie
 status: todo
 rating: 0
+year: "2016"
 date: 2024-04-10 18:43:37
 douban:
   id: "26200198"

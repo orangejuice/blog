@@ -3,6 +3,7 @@ title: 跟着唐诗去旅行
 category: movie
 status: todo
 rating: 0
+year: "2021"
 date: 2022-02-10 10:37:48
 douban:
   id: "27182687"

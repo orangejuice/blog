@@ -3,6 +3,7 @@ title: 手机大脑
 category: book
 status: todo
 rating: 0
+year: 2022-9
 date: 2022-12-23 01:44:15
 douban:
   id: "36091480"

@@ -3,6 +3,7 @@ title: 爱在黎明破晓前
 category: movie
 status: done
 rating: 5
+year: "1995"
 date: 2019-10-06 02:53:11
 douban:
   id: "1296339"

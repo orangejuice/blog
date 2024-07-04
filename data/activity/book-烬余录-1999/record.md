@@ -3,6 +3,7 @@ title: 烬余录
 category: book
 status: todo
 rating: 0
+year: 1999-3
 date: 2022-04-24 02:04:11
 douban:
   id: "1459942"

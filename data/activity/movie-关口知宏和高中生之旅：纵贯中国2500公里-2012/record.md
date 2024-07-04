@@ -3,6 +3,7 @@ title: 关口知宏和高中生之旅：纵贯中国2500公里
 category: movie
 status: done
 rating: 0
+year: "2012"
 date: 2020-12-28 07:15:54
 douban:
   id: "20497799"

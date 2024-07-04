@@ -3,6 +3,7 @@ title: 奥本海默
 category: movie
 status: done
 rating: 4
+year: "2023"
 date: 2023-11-14 07:27:18
 douban:
   id: "35593344"

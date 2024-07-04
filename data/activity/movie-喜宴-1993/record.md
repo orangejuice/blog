@@ -3,6 +3,7 @@ title: 喜宴
 category: movie
 status: done
 rating: 5
+year: "1993"
 date: 2021-01-26 04:47:02
 douban:
   id: "1303037"

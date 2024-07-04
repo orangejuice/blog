@@ -3,6 +3,7 @@ title: 为什么伟大不能被计划
 category: book
 status: todo
 rating: 0
+year: 2023-4
 date: 2023-10-17 06:21:59
 douban:
   id: "36357804"

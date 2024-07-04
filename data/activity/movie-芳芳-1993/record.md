@@ -3,6 +3,7 @@ title: 芳芳
 category: movie
 status: done
 rating: 5
+year: "1993"
 date: 2022-12-08 04:57:49
 douban:
   id: "1293377"

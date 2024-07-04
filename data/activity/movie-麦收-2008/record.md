@@ -3,6 +3,7 @@ title: 麦收
 category: movie
 status: done
 rating: 3
+year: "2008"
 date: 2020-08-07 03:45:32
 douban:
   id: "3314878"

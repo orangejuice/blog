@@ -3,6 +3,7 @@ title: 我的章鱼老师
 category: movie
 status: done
 rating: 4
+year: "2020"
 date: 2020-10-16 04:11:37
 douban:
   id: "35185752"

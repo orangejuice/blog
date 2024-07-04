@@ -3,6 +3,7 @@ title: 一生的亲密关系：探索自我，勇敢去爱
 category: book
 status: todo
 rating: 0
+year: 2021-7
 date: 2022-02-14 18:22:26
 douban:
   id: "35549125"

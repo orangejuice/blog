@@ -3,6 +3,7 @@ title: 命运
 category: book
 status: todo
 rating: 0
+year: 2022-9-5
 date: 2024-01-06 06:02:26
 douban:
   id: "36084340"

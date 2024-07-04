@@ -3,6 +3,7 @@ title: 荆轲刺秦王
 category: movie
 status: done
 rating: 4
+year: "1998"
 date: 2020-09-03 05:17:49
 douban:
   id: "1294693"

@@ -3,6 +3,7 @@ title: 第二次世界大战：前线视角
 category: movie
 status: done
 rating: 2
+year: "2023"
 date: 2023-12-30 04:38:37
 douban:
   id: "36529829"

@@ -3,6 +3,7 @@ title: 纳瓦尔宝典
 category: book
 status: todo
 rating: 0
+year: 2022-4
 date: 2022-12-30 23:12:29
 douban:
   id: "35876121"

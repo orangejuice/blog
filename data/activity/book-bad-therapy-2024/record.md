@@ -3,6 +3,7 @@ title: Bad Therapy
 category: book
 status: todo
 rating: 0
+year: 2024-2-27
 date: 2024-03-10 21:41:15
 douban:
   id: "36693053"

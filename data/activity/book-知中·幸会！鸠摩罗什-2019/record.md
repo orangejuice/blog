@@ -3,6 +3,7 @@ title: 知中·幸会！鸠摩罗什
 category: book
 status: todo
 rating: 0
+year: 2019-1
 date: 2023-11-13 10:37:51
 douban:
   id: "30254401"
