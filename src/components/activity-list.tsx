@@ -11,6 +11,7 @@ import {useLocalStorage} from "@/lib/use-local-storage"
 import {FilterOption} from "@/components/activity-filter"
 import {menu, site} from "@/site"
 import Link from "next/link"
+import {Divider} from "@/components/ui/divider"
 
 
 export default function ActivityInfiniteScrollList({data, style}: {data: Promise<Activity[]>} & ComponentPropsWithoutRef<"div">) {
@@ -21,6 +22,7 @@ export default function ActivityInfiniteScrollList({data, style}: {data: Promise
   const [isPending, startTransition] = useTransition()
   const cssIndexCounter = useCssIndexCounter(style)
   const [filter] = useLocalStorage<FilterOption>("activity-filter", {})
+  const {t} = useTranslation()
 
   useEffect(() => {
     const bottom = bottomRef.current
@@ -39,15 +41,15 @@ export default function ActivityInfiniteScrollList({data, style}: {data: Promise
 
   return (<>
     <Activities activities={activities} style={cssIndexCounter()}/>
-    <div ref={bottomRef} className="h-10 flex items-center justify-center animate-delay-in" style={cssIndexCounter()}>
-      {isPending ? <Icons.loading/> : (!hasMore && "No more activities")}
+    <div ref={bottomRef} className="flex items-center">
+      {isPending ? <Icons.loading/> : (!hasMore && <Divider text={t("generic.bottom")}/>)}
     </div>
   </>)
 }
 
 const Activities = ({activities, style, className}: {activities: Activity[]} & ComponentPropsWithoutRef<"div">) => {
   const cssIndexCounter = useCssIndexCounter(style)
-  const {t, i18n: {language: locale}} = useTranslation()
+  const {t} = useTranslation()
 
   return (<>
     <ul className={cn("space-y-6 py-8 animate-delay-in", className)} style={cssIndexCounter()}>
