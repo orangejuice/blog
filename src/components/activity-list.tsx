@@ -29,10 +29,9 @@ export default function ActivityInfiniteScrollList({data: rawData, style}: {data
   const cssIndexCounter = useCssIndexCounter(style)
   const [filter] = useLocalStorage<FilterOption>("activity-filter", {})
   const {t} = useTranslation()
-
   useEffect(() => {
     if (stateKey != pathname) {
-      setStateKey(stateKey)
+      setStateKey(pathname)
       setPages([1])
       setActivities(data)
       setHasMore(data.length == 10)
