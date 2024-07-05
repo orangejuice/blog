@@ -12,7 +12,7 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 }
 
 const sanitizeFilename = (title: string): string => {
-  return title.replace(/[\/\\?%*:|' "<>]/g, "-").replace(/-+/g, "-")
+  return title.replace(/[\/\\?%*:|' "<>，：]/g, "-").replace(/-+/g, "-")
 }
 
 const sanitizeContent = (content: string): string => {
