@@ -12,7 +12,7 @@ export default async function Page({params: {slug: rawSlug, locale}}: {params: {
   const slug = decodeURI(rawSlug)
 
   const activity = await getActivity(slug)
-  if (activity) return <Activity activity={activity} locale={locale}/>
+  if (activity) return <Activity slug={slug} activity={activity} locale={locale}/>
 
   const posts = await getPosts({locale, lang: "all-lang", getDiscussion: false})
   const post = posts.find((post) => post.slug === slug)

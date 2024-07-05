@@ -23,7 +23,6 @@ export const Comment = ({slug}: {slug: string}) => {
     function handleMessage(event: MessageEvent) {
       if (event.origin !== "https://giscus.app") return
       if (!(typeof event.data === "object" && event.data.giscus)) return
-      console.log(event.data.giscus.resizeHeight)
       if (event.data.giscus.resizeHeight > 100) setIsLoaded(true)
       const discussion: IDiscussionData = event.data.giscus.discussion
       if (!discussion) return

@@ -8,8 +8,9 @@ import {format, useCssIndexCounter} from "@/lib/utils"
 import {MDX} from "@/components/mdx"
 import {Comment} from "@/components/comment"
 import React from "react"
+import {InteractionBar} from "@/components/interaction-bar"
 
-export const Activity = async ({activity, locale}: {activity: ActivityType, locale: SiteLocale}) => {
+export const Activity = async ({slug, activity, locale}: {slug: string, activity: ActivityType, locale: SiteLocale}) => {
   const Icon = Icons.type[`${activity.category}`]
   const {t} = await initTranslation(locale)
   const cssIndexCounter = useCssIndexCounter()
@@ -21,12 +22,10 @@ export const Activity = async ({activity, locale}: {activity: ActivityType, loca
           <div className="relative w-28 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
             <Image src={activity.cover} alt="cover"/>
           </div>
-          <div className="flex flex-col grow text-stone-600 text-sm">
+          <div className="flex flex-col grow gap-1 text-stone-600 text-sm">
             <div className="flex justify-between">
               <h2 className="text-xl font-bold text-stone-800 dark:text-stone-200">{activity.title}</h2>
-              <div className="relative flex items-center gap-1 text-xs rounded-full font-medium text-stone-500">
-                <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
-              </div>
+              <InteractionBar slug={slug}/>
             </div>
             <StarRating rating={activity.douban?.rating}>
               {!!activity.douban?.rating ? <>
@@ -35,7 +34,10 @@ export const Activity = async ({activity, locale}: {activity: ActivityType, loca
                 </span>
               </> : <span className="ml-1 font-mono text-xs">{t("bookshelf.rating.0")}</span>}
             </StarRating>
-            <p className="text-xs mt-0.5 mb-2">{activity.douban?.subtitle}</p>
+            <div className="flex items-center gap-1 text-sm font-medium text-stone-500">
+              <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
+            </div>
+            <p className="text-sm mt-0.5 mb-2">{activity.douban?.subtitle}</p>
           </div>
         </div>
       </div>

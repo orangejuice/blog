@@ -4,7 +4,7 @@ import {cn, format, objectToUrlPart, useCssIndexCounter} from "@/lib/utils"
 import initTranslation from "@/lib/i18n"
 import {Icons} from "@/components/icons"
 import Link from "next/link"
-import {InteractionBar} from "@/components/post-metadata"
+import {InteractionBar} from "@/components/interaction-bar"
 import {MDX} from "@/components/mdx"
 import {Comment} from "@/components/comment"
 import Toc from "@/components/toc"
@@ -39,9 +39,7 @@ export const Post = async ({slug, post, locale}: {slug: string, post: PostWithMe
               </div>
             </>)}
             <Icons.symbol.dot className="stroke-[4px] opacity-70"/>
-            <div className="flex items-center gap-2">
-              <InteractionBar slug={slug}/>
-            </div>
+            <InteractionBar slug={slug}/>
           </div>
         </section>
         <MDX code={post.body.code} className="animate-delay-in" style={cssIndexCounter()}/>
