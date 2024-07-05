@@ -99,6 +99,6 @@ export function Notes({data, className, ...props}: {data: fetchGuestbookComments
         handleDragStart={() => setIsDragging(true)} handleDragEnd={() => setIsDragging(false)}/>
       )}
     </div>
-    {isDragging && <div className="absolute inset-0 cursor-move"/>}
+    {isDragging && <div className="absolute z-[1] inset-0 cursor-move"/>}
   </>)
 }
