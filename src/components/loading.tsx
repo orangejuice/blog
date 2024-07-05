@@ -89,14 +89,26 @@ export function NotesPlaceholder() {
   </>)
 }
 
-export function CalendarPlaceholder({className}: ComponentPropsWithoutRef<"div">) {
-  return (<>
+export function CalendarPlaceholder({className, bodyOnly}: ComponentPropsWithoutRef<"div"> & {bodyOnly?: boolean}) {
+  const body = (<>
     <div className={cn("h-[150px] grid grid-cols-12 content-center gap-[3px] animate-pulse", className)}>
       {Array.from({length: 48}, (_, index) => (
         <div key={index} className="w-[12px] h-[12px] bg-stone-100 border rounded-[2px] border-stone-200 dark:border-stone-800 dark:bg-stone-900">
         </div>
       ))}
     </div>
+  </>)
+  if (bodyOnly) return body
+  return (<>
+    <section className="flex flex-col items-center gap-2 animate-pulse">
+      <div className="h-4 bg-stone-200 dark:bg-stone-700 rounded w-1/3"/>
+      {body}
+      <div className="flex self-end">
+        <div className="w-20 h-[12px] bg-stone-200 dark:bg-stone-700 rounded"/>
+        <span className="px-2"/>
+        <div className="w-20 h-[12px] bg-stone-200 dark:bg-stone-700 rounded"/>
+      </div>
+    </section>
   </>)
 }
 
