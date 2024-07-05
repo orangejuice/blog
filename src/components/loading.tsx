@@ -91,9 +91,9 @@ export function NotesPlaceholder() {
 
 export function CalendarPlaceholder({className, bodyOnly}: ComponentPropsWithoutRef<"div"> & {bodyOnly?: boolean}) {
   const body = (<>
-    <div className={cn("h-[150px] grid grid-cols-12 content-center gap-[3px] animate-pulse", className)}>
+    <div className={cn("h-[142px] grid grid-cols-12 content-center gap-[3px] animate-pulse", className)}>
       {Array.from({length: 48}, (_, index) => (
-        <div key={index} className="w-[12px] h-[12px] bg-stone-100 border rounded-[2px] border-stone-200 dark:border-stone-800 dark:bg-stone-900">
+        <div key={index} className="w-3 h-3 bg-stone-100 border rounded-[2px] border-stone-200 dark:border-stone-800 dark:bg-stone-900">
         </div>
       ))}
     </div>
@@ -104,9 +104,9 @@ export function CalendarPlaceholder({className, bodyOnly}: ComponentPropsWithout
       <div className="h-4 bg-stone-200 dark:bg-stone-700 rounded w-1/3"/>
       {body}
       <div className="flex self-end">
-        <div className="w-20 h-[12px] bg-stone-200 dark:bg-stone-700 rounded"/>
+        <div className="w-20 h-3 bg-stone-200 dark:bg-stone-700 rounded"/>
         <span className="px-2"/>
-        <div className="w-20 h-[12px] bg-stone-200 dark:bg-stone-700 rounded"/>
+        <div className="w-20 h-3 bg-stone-200 dark:bg-stone-700 rounded"/>
       </div>
     </section>
   </>)
@@ -134,4 +134,30 @@ export const ActivitiesPlaceholder = () => {
       ))}
     </ul>
   )
+}
+
+
+export const CommentPlaceholder = ({className}: ComponentPropsWithoutRef<"div">) => {
+  return (<>
+    <div className={cn("space-y-4 animate-pulse", className)}>
+      <div className="flex flex-col items-center justify-center gap-2">
+        <div className="h-5 w-20 bg-gray-200 rounded"></div>
+        <div className="h-8 w-8 bg-gray-200 rounded-full"></div>
+      </div>
+
+      <div className="h-6 w-24 bg-gray-200 rounded"></div>
+
+      <div className="border border-gray-200 rounded-lg p-4 space-y-4">
+        <div className="flex space-x-2">
+          <div className="h-8 w-16 bg-gray-200 rounded"></div>
+          <div className="h-8 w-20 bg-gray-200 rounded"></div>
+        </div>
+        <div className="h-24 bg-gray-100 rounded"></div>
+        <div className="flex justify-between items-center">
+          <div className="h-6 w-20 bg-gray-200 rounded"></div>
+          <div className="h-10 w-24 bg-gray-200 rounded"></div>
+        </div>
+      </div>
+    </div>
+  </>)
 }

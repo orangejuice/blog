@@ -22,7 +22,7 @@ export default async function Page({params: {locale}}: {params: {locale: SiteLoc
     title: menu.guestbook
   })
   return (<>
-    <div className="flex flex-col w-full gap-6">
+    <div className="flex flex-col w-full min-h-screen gap-6">
       <section>
         <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter()}>{t("guestbook.title")}</h1>
         <p className="text-stone-600 animate-delay-in" style={cssIndexCounter()}>

@@ -1,11 +1,13 @@
 "use client"
-import React, {useEffect} from "react"
+import React, {useEffect, useState} from "react"
 import GiscusComponent from "@giscus/react"
 import {useTheme} from "next-themes"
 import {giscusConfig} from "@/site"
 import {useTranslation} from "react-i18next"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {revalidator} from "@/lib/actions"
+import {cn} from "@/lib/utils"
+import {CommentPlaceholder} from "@/components/loading"
 
 
 export const Comment = ({slug}: {slug: string}) => {
@@ -14,11 +16,13 @@ export const Comment = ({slug}: {slug: string}) => {
   const {i18n: {language: locale}} = useTranslation()
   const commentsTheme = resolvedTheme === "dark" ? darkTheme : lightTheme
   const [interactions, setInteractions] = useLocalStorage<Interactions>("interaction", {})
+  const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
     function handleMessage(event: MessageEvent) {
       if (event.origin !== "https://giscus.app") return
       if (!(typeof event.data === "object" && event.data.giscus)) return
+      if (event.data.giscus.resizeHeight > 100) setIsLoaded(true)
       const discussion: IDiscussionData = event.data.giscus.discussion
       if (!discussion) return
 
@@ -41,9 +45,12 @@ export const Comment = ({slug}: {slug: string}) => {
   }, [interactions])
 
   return (<>
-    <GiscusComponent id={"comments"} {...props} theme={commentsTheme} lang={{
-      en: "en",
-      zh: "zh-CN"
-    }[locale]}/>
+    <CommentPlaceholder className={cn("h-0", isLoaded && "hidden")}/>
+    <div className={cn(!isLoaded && "h-1 overflow-hidden")}>
+      <GiscusComponent id={"comments"} {...props} theme={commentsTheme} lang={{
+        en: "en",
+        zh: "zh-CN"
+      }[locale]}/>
+    </div>
   </>)
 }
