@@ -1,5 +1,5 @@
 import {type ClassValue, clsx} from "clsx"
-import {twMerge} from "tailwind-merge"
+import {extendTailwindMerge} from "tailwind-merge"
 import React from "react"
 import type {Dayjs} from "dayjs"
 import dayjs from "dayjs"
@@ -11,7 +11,9 @@ dayjs.extend(relativeTime)
 dayjs.extend(localisedFormat)
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return extendTailwindMerge({
+    extend: {classGroups:{"font-size": ["text-xxs"]}}
+  })(clsx(inputs))
 }
 
 export function randomInRange(min: number, max: number, int = false) {
