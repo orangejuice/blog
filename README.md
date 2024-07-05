@@ -52,8 +52,8 @@
 * **💡 Theme Toggle** `src/components/theme-toggle.tsx`  
   A simple and creative theme preference control.
 
-* **💾 Solution to the easiest state management** `src/lib/use-local-storage.ts`, `src/lib/use-global-state.ts`  
-  Handy encapsulated react hooks that maintains persistent state and global state, use just like using `useState`.
+* **💾 Simplified state management** `src/lib/use-local-storage.ts`, `src/lib/use-global-state.ts`  
+  Encapsulated hooks for persistent and global state, with useState-like syntax
 
 * **📝 Skeuomorphic Sticky Notes** `src/components/sticky-notes.tsx`  
   A sleek implementation of skeuomorphic sticky notes, drag enabled.
