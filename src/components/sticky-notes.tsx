@@ -4,7 +4,6 @@ import {cn, format, getRandomLightHexColor, invertColor, randomInRange} from "@/
 import type {Comment, fetchGuestbookCommentsResponse} from "@/lib/fetch-github"
 import {useTranslation} from "react-i18next"
 import {useLocalStorage} from "@/lib/use-local-storage"
-import {useMounted} from "@/lib/use-mounted"
 import {motion, useMotionValue} from "framer-motion"
 import {useTheme} from "next-themes"
 import localFont from "next/font/local"
@@ -22,7 +21,6 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
   const [isDragging, setIsDragging] = useState(false)
   const {resolvedTheme} = useTheme()
   const [localNotes, setLocalNotes] = useLocalStorage<StickyNotes>("sticky-notes", {})
-  const mounted = useMounted()
 
   const onDragStart = () => {
     setIsDragging(true)
@@ -47,7 +45,7 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
   }
 
   useEffect(() => {
-    if (!mounted) return
+    if (!constraintRef.current || !ref.current) return
     localNotes.order && localNotes.order.indexOf(note.id) != -1 && zIndex.set(localNotes.order.indexOf(note.id))
     if (localNotes.hasOwnProperty(note.id)) {
       x.set(localNotes[note.id].position.x)
@@ -55,8 +53,8 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
       backgroundColor.set(localNotes[note.id].color)
       rotate.set(localNotes[note.id].rotate)
     } else {
-      x.set(randomInRange(0, constraintRef.current!.clientWidth - ref.current!.clientWidth))
-      y.set(randomInRange(0, constraintRef.current!.clientHeight - ref.current!.clientHeight))
+      x.set(randomInRange(0, constraintRef.current.clientWidth - ref.current.clientWidth))
+      y.set(randomInRange(0, constraintRef.current.clientHeight - ref.current.clientHeight))
       backgroundColor.set(getRandomLightHexColor())
       rotate.set(`${randomInRange(-15, 15)}deg`)
       setLocalNotes(localNotes => ({
@@ -67,23 +65,23 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
         }
       }))
     }
-  }, [mounted, localNotes])
+  }, [localNotes])
 
   return (<>
     <motion.div style={{x, y, rotate, zIndex, backgroundColor: resolvedTheme == "dark" ? invertColor(backgroundColor.get()) : backgroundColor}}
       ref={ref} whileDrag={{scale: 1.05, rotateZ: -10}} transition={{opacity: {delay, type: "just"}, translateY: {delay, type: "just"}}}
       initial={{opacity: 0, translateY: 18}} animate={{opacity: 1, translateY: 0}} exit={{opacity: 0}}
-      className={cn("absolute cursor-move flex w-52 h-52 flex-col shadow-md transition-[box-shadow,color,background-color]", isDragging && "shadow-xl")}
+      className={cn("absolute cursor-move flex w-32 h-32 text-xs md:w-52 md:h-52 md:text-base flex-col shadow-md transition-[box-shadow,color,background-color]", isDragging && "shadow-xl")}
       onDragStart={onDragStart} onDragEnd={onDragEnd} drag dragConstraints={constraintRef} onDragTransitionEnd={onDragTransitionEnd} dragMomentum={false}>
-      <div className="grow flex overflow-hidden px-4 py-3">
+      <div className="grow flex overflow-hidden px-2 md:px-4 py-3">
         <p className={cn("scrollbar-0 h-fit max-h-full whitespace-pre-wrap overflow-x-hidden overflow-y-auto",
           "select-text cursor-text text-stone-700 dark:text-stone-300", fontHandwriting.className)}
           onPointerDownCapture={e => e.stopPropagation()}
           dangerouslySetInnerHTML={{__html: note.body}}/>
       </div>
-      <div className="bottom-1 flex w-full gap-2 justify-between px-4 pb-2 text-xs text-stone-500">
+      <div className="bottom-1 flex w-full gap-2 justify-between px-2 md:px-4 pb-2 text-xxs md:text-xs text-stone-500 select-none">
         <div className="line-clamp-1">@{note.author.login}</div>
-        <div className="line-clamp-1">{format(note.createdAt, {locale, relativeWithDate: true})}</div>
+        <div className="shrink-0">{format(note.createdAt, {locale, relativeWithDate: true})}</div>
       </div>
     </motion.div>
   </>)
