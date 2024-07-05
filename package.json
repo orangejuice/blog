@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@giscus/react": "^3.0.0",
-    "@headlessui/react": "^2.1.1",
+    "@headlessui/react": "^2.1.2",
     "@octokit/auth-app": "^7.1.0",
     "@octokit/graphql": "^8.1.1",
     "@phosphor-icons/react": "^2.1.7",
@@ -29,7 +29,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.11",
-    "framer-motion": "^11.2.12",
+    "framer-motion": "^11.2.13",
     "i18next": "^23.11.5",
     "i18next-resources-to-backend": "^1.2.1",
     "jose": "^5.6.3",
@@ -51,7 +51,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.13",
     "@types/canvas-confetti": "^1.6.4",
-    "@types/node": "^20.14.9",
+    "@types/node": "^20.14.10",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/remove-markdown": "^0.3.4",
