@@ -141,23 +141,22 @@ export const CommentPlaceholder = ({className}: ComponentPropsWithoutRef<"div">)
   return (<>
     <div className={cn("space-y-4 animate-pulse", className)}>
       <div className="flex flex-col items-center justify-center gap-2">
-        <div className="h-5 w-20 bg-gray-200 rounded"></div>
-        <div className="h-8 w-8 bg-gray-200 rounded-full"></div>
+        <div className="h-5 w-20 bg-stone-200 dark:bg-stone-700 rounded"></div>
+        <div className="h-8 w-8 bg-stone-200 dark:bg-stone-700 rounded-full"></div>
       </div>
-
-      <div className="h-6 w-24 bg-gray-200 rounded"></div>
-
-      <div className="border border-gray-200 rounded-lg p-4 space-y-4">
+      <div className="h-6 w-24 bg-stone-200 dark:bg-stone-700 rounded"></div>
+      <div className="border border-stone-200 dark:border-stone-700 rounded-lg p-4 space-y-4">
         <div className="flex space-x-2">
-          <div className="h-8 w-16 bg-gray-200 rounded"></div>
-          <div className="h-8 w-20 bg-gray-200 rounded"></div>
+          <div className="h-8 w-16 bg-stone-200 dark:bg-stone-700 rounded"></div>
+          <div className="h-8 w-20 bg-stone-200 dark:bg-stone-700 rounded"></div>
         </div>
-        <div className="h-24 bg-gray-100 rounded"></div>
+        <div className="h-24 bg-stone-100 dark:bg-stone-800 rounded"></div>
         <div className="flex justify-between items-center">
-          <div className="h-6 w-20 bg-gray-200 rounded"></div>
-          <div className="h-10 w-24 bg-gray-200 rounded"></div>
+          <div className="h-6 w-20 bg-stone-200 dark:bg-stone-700 rounded"></div>
+          <div className="h-10 w-24 bg-stone-200 dark:bg-stone-700 rounded"></div>
         </div>
       </div>
     </div>
+
   </>)
 }

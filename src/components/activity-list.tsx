@@ -190,7 +190,7 @@ export const LatestActivityList = ({data, style, className}: {data: Promise<Acti
               <div className="relative w-14 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
                 <Image src={activity.cover} alt="cover"/>
               </div>
-              <div className="flex flex-col grow text-stone-600 text-sm px-4">
+              <div className="flex flex-col grow text-stone-600 dark:text-stone-400 text-sm px-4">
                 <h2 className="font-bold text-stone-800 dark:text-stone-400">{activity.title}</h2>
                 <StarRating rating={activity.douban?.rating}>
                   {!!activity.douban?.rating ? <>

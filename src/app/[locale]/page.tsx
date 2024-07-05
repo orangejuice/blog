@@ -26,7 +26,7 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
         <div className="flex items-center justify-between">
           <section>
             <h1 className="text-2xl font-bold animate-delay-in" style={cssIndexCounter()}>{t("post.latest")}</h1>
-            <p className="text-stone-600 animate-delay-in" style={cssIndexCounter()}>
+            <p className="text-stone-600 dark:text-stone-400 animate-delay-in" style={cssIndexCounter()}>
               {t("post.latest-sub")}
             </p>
           </section>

@@ -35,7 +35,7 @@ function PostCard({post}: {post: PostWithMetadata}) {
         </p>
         <div className="flex w-full mt-2.5 text-xs justify-between font-medium text-neutral-800 dark:text-neutral-300">
           <p>{t("post.publish", {date: format(post.date, {locale})})}</p>
-          <div className="flex items-center gap-4 text-stone-600">
+          <div className="flex items-center gap-4 text-stone-600 dark:text-stone-400">
             <span className="flex items-center gap-1"><Icons.post.view/> {post.view}</span>
             <span className="flex items-center gap-1"><Icons.post.reaction/> {post.discussion.reactions.totalCount}</span>
             <span className="flex items-center gap-1"><Icons.post.comment/> {post.discussion.comments.totalCount}</span>
