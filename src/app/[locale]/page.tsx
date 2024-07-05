@@ -1,7 +1,7 @@
 import {getLatestActivitiesPost, getPosts} from "@/lib/fetch"
 import {useCssIndexCounter} from "@/lib/utils"
 import {site, SiteLocale} from "@/site"
-import {LangSelect} from "@/components/lang-select"
+import {PostLangToggle} from "@/components/post-lang-toggle"
 import React, {Suspense} from "react"
 import {LatestPostActivityList, PostMainList} from "@/components/post-list"
 import initTranslation from "@/lib/i18n"
@@ -31,7 +31,7 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
             </p>
           </section>
           <Suspense fallback={<></>}>
-            <LangSelect style={cssIndexCounter()}/>
+            <PostLangToggle style={cssIndexCounter()}/>
           </Suspense>
         </div>
         <Suspense fallback={<PostMainListPlaceholder/>}>

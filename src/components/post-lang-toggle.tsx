@@ -7,7 +7,7 @@ import {useTranslation} from "react-i18next"
 import {useMounted} from "@/lib/use-mounted"
 import {Button} from "@/components/ui/button"
 
-export function LangSelect(props: ComponentPropsWithoutRef<"button">) {
+export function PostLangToggle(props: ComponentPropsWithoutRef<"button">) {
   const [lang, setLang] = useLocalStorage<"one" | "all">("latest-lang", "one")
   const {t, i18n: {language: locale}} = useTranslation("lang")
 

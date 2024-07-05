@@ -7,7 +7,7 @@ import {useTranslation} from "react-i18next"
 import {Icons} from "@/components/icons"
 import {ButtonProps, buttonVariants} from "@/components/ui/button"
 import {AnimatePresence, motion, Variants} from "framer-motion"
-import {Menu, MenuButton, MenuItems, Radio, RadioGroup} from "@headlessui/react"
+import {Menu, MenuButton, MenuItem, MenuItems, Radio, RadioGroup} from "@headlessui/react"
 import {Check} from "lucide-react"
 
 export function LocaleSwitch(props: ButtonProps) {
@@ -42,17 +42,19 @@ export function LocaleSwitch(props: ButtonProps) {
         {t(resolved, {lng: resolved})}
       </MenuButton>
       <AnimatePresence>{open &&
-        <MenuItems static as={motion.div} variants={variant} initial="hidden" animate="show" exit="hidden"
-          anchor="bottom end" className="z-50 overflow-hidden rounded-md border bg-white dark:bg-black outline-none shadow-md origin-top-right p-1 min-w-32">
+        <MenuItems static as={motion.div} variants={variant} initial="hidden" animate="show" exit="hidden" anchor="bottom end"
+          className="z-50 overflow-hidden rounded-md border bg-white dark:bg-black outline-none shadow-md origin-top-right p-1 min-w-32">
           <RadioGroup value={resolved} onChange={onSelectChange}>
             {site.locales.map((locale) => (
-              <Radio key={locale} value={locale} disabled={resolved == locale} className={"relative flex select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors data-[disabled]:pointer-events-none data-[disabled]:opacity-50 cursor-pointer font-medium hover:bg-stone-200 dark:hover:bg-stone-800"}>{({checked}) => (<>
+              <MenuItem key={locale}>
+                <Radio value={locale} disabled={resolved == locale} className={"relative flex select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors data-[disabled]:pointer-events-none data-[disabled]:opacity-50 cursor-pointer font-medium hover:bg-stone-200 dark:hover:bg-stone-800"}>{({checked}) => (<>
                 <span className="absolute left-2">
                   {checked && <Check className="h-4 w-4 stroke-[3px]"/>}
                 </span>
-                <span>{t(locale, {lng: locale})}</span>
-              </>)}
-              </Radio>
+                  <span>{t(locale, {lng: locale})}</span>
+                </>)}
+                </Radio>
+              </MenuItem>
             ))}
           </RadioGroup>
         </MenuItems>}
