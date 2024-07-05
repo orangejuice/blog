@@ -44,7 +44,7 @@
   Mobile menu with slightly darken overlay, built with headless-ui and framer motion.
 
 * **🎨 Immersive 3D Background** `src/components/background.tsx`  
-  A dynamic, peaceful three-dimensional backdrop.
+  Dynamic, peaceful three-dimensional backdrop for day and night.
 
 * **🔊 White Noise Toggle** `src/components/background-toggle.tsx`  
   Animated ambient sound control built with framer motion.
@@ -52,8 +52,8 @@
 * **💡 Theme Toggle** `src/components/theme-toggle.tsx`  
   A simple and creative theme preference control.
 
-* **💾 Cross-Tab State Sync** `src/lib/use-local-storage.ts`  
-  A handy encapsulated react hook that maintains state across tabs, use in the same way of using `useState`.
+* **💾 Solution to the easiest state management** `src/lib/use-local-storage.ts`, `src/lib/use-global-state.ts`  
+  Handy encapsulated react hooks that maintains persistent state and global state, use just like using `useState`.
 
 * **📝 Skeuomorphic Sticky Notes** `src/components/sticky-notes.tsx`  
   A sleek implementation of skeuomorphic sticky notes, drag enabled.
@@ -61,7 +61,8 @@
 * **📄 Markdown Image Support** `src/lib/remark-image-processor.ts`  
   Add support for local/online images through a custom remark plugin
 
-<sup>more to come...</sup>
+  <sub>(and more to come...)</sub>  
+* What else did you find interesting? 
 
 ## 🔖 History
 
