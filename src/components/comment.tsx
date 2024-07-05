@@ -45,26 +45,6 @@ export const Comment = ({slug}: {slug: string}) => {
     return () => window.removeEventListener("message", handleMessage)
   }, [interactions])
 
-  useEffect(() => {
-    const eventSource = new EventSource(`/api/event?slug=${slug}`)
-
-    eventSource.onmessage = (event) => {
-      if (event.data.trim() === "") {
-        console.log("keepalive")
-        return
-      }
-      console.log("Received message:", event.data)
-    }
-
-    eventSource.onerror = (error) => {
-      console.error("SSE error:", error)
-      eventSource.close()
-    }
-
-    return () => eventSource.close()
-  }, [slug])
-
-
   return (<>
     <CommentPlaceholder className={cn("h-0", isLoaded && "hidden")}/>
     <div className={cn(isLoaded ? "animate-delay-in" : "h-px overflow-hidden")} style={cssIndexCounter()}>
