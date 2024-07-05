@@ -184,7 +184,7 @@ export const LatestActivityList = ({data, style, className}: {data: Promise<Acti
               </div>
             </div>
             <span className="flex gap-1 text-sm">
-              <MDX code={activity.body.code} className="prose-sm line-clamp-3 prose-p:mt-0 text-stone-800 dark:text-stone-400"/>
+              <MDX code={activity.body.code} className="prose-sm line-clamp-3 prose-p:mt-0 text-stone-800 dark:text-stone-200"/>
             </span>
             <div className="flex w-full rounded-lg p-3 group-hover:bg-stone-200 bg-stone-100 dark:bg-stone-800 dark:group-hover:bg-stone-700 dark:text-stone-400 transition-colors">
               <div className="relative w-14 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
