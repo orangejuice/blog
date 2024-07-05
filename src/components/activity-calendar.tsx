@@ -49,12 +49,12 @@ export function ActivityCalendar({calendarData, style, filter}: {calendarData: G
 const ColorLegend = () => {
   const {t} = useTranslation()
 
-  const unit = ([category, level]: readonly ["Book" | "Movie", number]) => (<>
-    <svg width="12" height="12" className="shrink-0">
+  const unit = ([category, level]: readonly ["Book" | "Movie", number], index: number) => (
+    <svg width="12" height="12" className="shrink-0" key={index}>
       <DrawRect block={<rect x="0" y="0" width="12" height="12" rx="2" ry="2"/>}
         activity={{[`count${category}`]: level} as unknown as CalendarActivity}/>
     </svg>
-  </>)
+  )
 
   return (<>
     <div className="flex items-center gap-2 text-xs self-end">
