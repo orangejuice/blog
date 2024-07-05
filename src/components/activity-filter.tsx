@@ -25,7 +25,7 @@ export function ActivityFilter({filter: applied, style, filterData}: {filter: Fi
       <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">{t("bookshelf.filter.year")}</h5>
       <div className="flex flex-wrap text-stone-600 dark:text-stone-400">
         {Object.entries(filter.all.year).map(([year, num], index) => (
-          <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({year, category: applied.category, status: applied.status})}`}
+          <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({year, category: year == selectedYear ? undefined : applied.category, status: year == selectedYear ? undefined : applied.status})}`}
             className={cn("flex items-center gap-1 group m-2 text-sm font-medium underline-fade",
               year == selectedYear && "underline-fade-selected font-bold")}>
             {year == selectedYear ? <Icons.symbol.squareChecked/> : <Icons.symbol.square/>}
