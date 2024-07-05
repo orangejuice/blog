@@ -13,17 +13,30 @@ import {menu, site} from "@/site"
 import Link from "next/link"
 import {Divider} from "@/components/ui/divider"
 import {useGlobalState} from "@/lib/use-global-state"
+import {usePathname} from "next/navigation"
 
 
-export default function ActivityInfiniteScrollList({data, style}: {data: Promise<Activity[]>} & ComponentPropsWithoutRef<"div">) {
+export default function ActivityInfiniteScrollList({data: rawData, style}: {data: Promise<Activity[]>} & ComponentPropsWithoutRef<"div">) {
+  const pathname = usePathname()
+  const data = use(rawData)
+  const [stateKey, setStateKey] = useGlobalState("activity", pathname)
   const [pages, setPages] = useGlobalState("activity-pages", [1])
-  const [activities, setActivities] = useGlobalState("activity-data", use(data))
-  const [hasMore, setHasMore] = useGlobalState("activity-has-more", use(data).length == 10)
+  const [activities, setActivities] = useGlobalState("activity-data", data)
+  const [hasMore, setHasMore] = useGlobalState("activity-has-more", data.length == 10)
   const bottomRef = useRef(null)
   const [isPending, startTransition] = useTransition()
   const cssIndexCounter = useCssIndexCounter(style)
   const [filter] = useLocalStorage<FilterOption>("activity-filter", {})
   const {t} = useTranslation()
+
+  useEffect(() => {
+    if (stateKey != pathname) {
+      setStateKey(stateKey)
+      setPages([1])
+      setActivities(data)
+      setHasMore(data.length == 10)
+    }
+  }, [])
 
   useEffect(() => {
     const bottom = bottomRef.current
