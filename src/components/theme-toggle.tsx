@@ -3,7 +3,6 @@ import {useTheme} from "next-themes"
 import {Button} from "@/components/ui/button"
 import {Icons} from "@/components/icons"
 import {cn} from "@/lib/utils"
-import {Tooltip, TooltipContent, TooltipTrigger} from "@/components/ui/tooltip"
 import {useMounted} from "@/lib/use-mounted"
 import {useTranslation} from "react-i18next"
 import {ComponentPropsWithoutRef} from "react"
@@ -22,20 +21,15 @@ export function ThemeToggle({className, small, ...props}: ComponentPropsWithoutR
       {theme === "dark" && <Icons.theme.dark className={small ? "w-4 h-4" : "w-5 h-5"}/>}
       {theme === "light" && <Icons.theme.light className={small ? "w-4 h-4" : "w-5 h-5"}/>}
       {theme === "system" && (<>
-        <Tooltip delayDuration={0}>
-          <TooltipTrigger asChild>
-            <div className={cn("relative", small ? "h-4 w-4" : "h-5 w-5")}>
-              <Icons.theme.system className={cn("absolute animate-delay-hide group-hover:animate-none", small ? "h-4 w-4" : "h-5 w-5")}/>
-              {resolvedTheme === "dark" &&
-                <Icons.theme.dark className={cn("absolute animate-delay-show opacity-0 group-hover:hidden", small ? "h-4 w-4" : "h-5 w-5")}/>}
-              {resolvedTheme === "light" &&
-                <Icons.theme.light className={cn("absolute animate-delay-show opacity-0 group-hover:hidden", small ? "h-4 w-4" : "h-5 w-5")}/>}
-            </div>
-          </TooltipTrigger>
-          <TooltipContent>{t(`theme.${theme}`)}</TooltipContent>
-        </Tooltip>
+        <div className={cn("relative", small ? "h-4 w-4" : "h-5 w-5")}>
+          <Icons.theme.system className={cn("absolute animate-delay-hide group-hover:animate-none", small ? "h-4 w-4" : "h-5 w-5")}/>
+          {resolvedTheme === "dark" &&
+            <Icons.theme.dark className={cn("absolute animate-delay-show opacity-0 group-hover:hidden", small ? "h-4 w-4" : "h-5 w-5")}/>}
+          {resolvedTheme === "light" &&
+            <Icons.theme.light className={cn("absolute animate-delay-show opacity-0 group-hover:hidden", small ? "h-4 w-4" : "h-5 w-5")}/>}
+        </div>
       </>)}
-      <span>{t(`theme.${resolvedTheme}`)}</span>
+      <span>{t(`theme.${theme}`)}</span>
     </Button>
   </>)
 }
