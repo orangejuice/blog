@@ -14,6 +14,7 @@ import Link from "next/link"
 import {Divider} from "@/components/ui/divider"
 import {useGlobalState} from "@/lib/use-global-state"
 import {usePathname} from "next/navigation"
+import {BounceBackground} from "@/components/generic"
 
 
 export default function ActivityInfiniteScrollList({data: rawData, style}: {data: Promise<Activity[]>} & ComponentPropsWithoutRef<"div">) {
@@ -71,12 +72,12 @@ const Activities = ({activities, style, className}: {activities: Activity[]} & C
         const Icon = Icons.type[`${activity.category}`]
         return (
           <li key={activity._id}>
-            <Link href={`/${activity.slug}`} className="flex flex-col gap-2 rounded-lg">
-              <div className="flex flex-row items-start">
+            <Link href={`/${activity.slug}`} className="flex flex-col gap-2 p-4 -m-4 rounded-lg group relative">
+              <div className="flex flex-row items-start gap-4 md:gap-6">
                 <div className="relative w-28 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
                   <Image src={activity.cover} alt="cover"/>
                 </div>
-                <div className="flex flex-col grow text-stone-600 text-sm px-4 md:px-6">
+                <div className="flex flex-col grow text-stone-600 text-sm">
                   <div className="flex justify-between">
                     <h2 className="text-xl font-bold text-stone-800 dark:text-stone-200">{activity.title}</h2>
                     <div className="relative flex items-center gap-1 text-xs rounded-full font-medium text-stone-500">
@@ -95,6 +96,9 @@ const Activities = ({activities, style, className}: {activities: Activity[]} & C
                 </div>
               </div>
               <MyComment activity={activity} className="block md:hidden"/>
+              <span className={cn("absolute inset-1 -z-10 rounded-xl bg-stone-100 opacity-0 transition-all duration-200 ease-bounce",
+                "group-hover:-inset-1 dark:bg-neutral-800 group-hover:opacity-100 group-active:bg-stone-200 group-active:dark:bg-neutral-700")}></span>
+              <BounceBackground/>
             </Link>
           </li>
         )
@@ -107,7 +111,7 @@ export const MyComment = ({activity, className}: {activity: Activity} & Componen
   const {t, i18n: {language: locale}} = useTranslation()
 
   return (<>
-    <div className={cn("bg-stone-50 dark:bg-stone-900 rounded-lg p-3 [&:has(.prose-sm:not(:empty))_>_div:first-child]:mb-2", className)}>
+    <div className={cn("bg-stone-50 dark:bg-stone-900 rounded-lg p-3 [&:has(.prose-sm:not(:empty))_>_div:first-child]:mb-2 transition-colors duration-200 group-hover:bg-stone-200 group-hover:dark:bg-stone-800", className)}>
       <div className="flex items-center text-xs gap-2 text-stone-500">
         <span>{t(`bookshelf.${activity.category}.status.${activity.status}`, {date: format(activity.date, {locale, relativeWithDate: true})})}</span>
         {!!activity.rating && (<>
@@ -161,8 +165,7 @@ export const LatestActivityList = ({data, style, className}: {data: Promise<Acti
     <ul className={cn("space-y-6 animate-delay-in", className)} style={cssIndexCounter()}>
       {activities.map((activity) => (
         <li key={activity._id}>
-          <Link href={`/${menu.bookshelf}`} className={cn("flex flex-col items-start px-4 py-2 rounded-md -mx-4 transition-colors gap-2",
-            "hover:bg-stone-100 group dark:hover:bg-stone-800")}>
+          <Link href={`/${menu.bookshelf}`} className="flex flex-col items-start px-4 py-2 -mx-4 gap-2 group relative">
             <div className="flex items-center gap-2">
               <div className="relative h-8 w-8 rounded-full overflow-hidden">
                 <Image src={site.avatar} alt="Avatar"/>
@@ -201,6 +204,7 @@ export const LatestActivityList = ({data, style, className}: {data: Promise<Acti
                 <p className="text-xxs mt-0.5 mb-2 line-clamp-2">{activity.douban?.subtitle}</p>
               </div>
             </div>
+            <BounceBackground/>
           </Link>
         </li>
       ))}

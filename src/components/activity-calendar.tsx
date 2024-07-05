@@ -24,7 +24,7 @@ export function ActivityCalendar({calendarData, style, filter}: {calendarData: G
           end: format(filter.end, {locale, localizeDate: true})
         })}
       </h5>
-      <CalendarPlaceholder className="[&:has(~_article)]:hidden" bodyOnly/>
+      <CalendarPlaceholder className="h-[130px] [&:has(~_article)]:hidden" bodyOnly/>
       <RawActivityCalendar data={data} showWeekdayLabels hideTotalCount hideColorLegend maxLevel={3}
         colorScheme={resolvedTheme as "light" | "dark"} style={cssIndexCounter()}
         // @ts-ignore

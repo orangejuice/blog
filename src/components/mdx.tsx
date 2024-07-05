@@ -26,7 +26,7 @@ export function MDX({code, className, ...props}: ComponentPropsWithoutRef<"div">
   }, [resolvedTheme])
 
   return (<>
-    <div className={cn("prose toc-content max-w-none dark:prose-invert animate-delay-in", className)} {...props}>
+    <div className={cn("prose toc-content max-w-none dark:prose-invert", className)} {...props}>
       <MDXContent components={{
         // @ts-ignore
         img: Image,

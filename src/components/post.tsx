@@ -44,7 +44,7 @@ export const Post = async ({slug, post, locale}: {slug: string, post: PostWithMe
             </div>
           </div>
         </section>
-        <MDX code={post.body.code} style={cssIndexCounter()}/>
+        <MDX code={post.body.code} className="animate-delay-in" style={cssIndexCounter()}/>
         <Comment slug={slug}/>
       </article>
       <aside className="flex flex-col sticky top-8 gap-4 animate-delay-in" style={cssIndexCounter()}>

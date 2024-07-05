@@ -9,6 +9,7 @@ import Image from "next/image"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {useTranslation} from "react-i18next"
 import {useMounted} from "@/lib/use-mounted"
+import {BounceBackground} from "@/components/generic"
 
 
 function PostCard({post}: {post: PostWithMetadata}) {
@@ -16,7 +17,7 @@ function PostCard({post}: {post: PostWithMetadata}) {
 
   return (<>
     <li>
-      <Link href={`/${post.slug}`} className="group flex flex-col items-start no-underline relative p-4 rounded-xl -mx-4 bg-transparent transition-colors hover:bg-amber-100/80 dark:hover:bg-white/10 gap-1">
+      <Link href={`/${post.slug}`} className="group relative flex flex-col items-start no-underline p-4 -mx-4 gap-1">
         <h2 className={cn("flex items-center gap-2 text-gray-900 dark:text-gray-100 text-xl font-bold tracking-tight",
           "underline-fade underline-fade-with-group")}>
           {post.title}
@@ -25,7 +26,7 @@ function PostCard({post}: {post: PostWithMetadata}) {
         <div className="flex items-center gap-1 flex-wrap">
           {post.tags.map((tag, index) =>
             <Button key={index} variant="secondary" className={cn("h-fit truncate px-1 py-0.5 text-xs text-stone-600",
-              "dark:bg-stone-800 dark:text-stone-400 group-hover:bg-amber-200/80 dark:group-hover:bg-stone-700")}>
+              "dark:bg-stone-800 dark:text-stone-400 group-hover:bg-stone-200 dark:group-hover:bg-stone-700")}>
               {tag}
             </Button>)}
         </div>
@@ -40,19 +41,19 @@ function PostCard({post}: {post: PostWithMetadata}) {
             <span className="flex items-center gap-1"><Icons.post.comment/> {post.discussion.comments.totalCount}</span>
           </div>
         </div>
+        <BounceBackground/>
       </Link>
     </li>
   </>)
 }
 
-function ActivityCard({post}: {post: PostWithActivity}) {
+function LatestPostCommentCard({post}: {post: PostWithActivity}) {
   const activity = post.discussion.comments.nodes[0]
   const {t, i18n: {language: locale}} = useTranslation()
 
   return (<>
     <li>
-      <Link href={`/${post.slug}`} className={cn("flex flex-col items-start px-4 py-2 rounded-md -mx-4 transition-colors gap-2",
-        "hover:bg-stone-100 group dark:hover:bg-stone-800")}>
+      <Link href={`/${post.slug}`} className={cn("flex flex-col relative group items-start px-4 py-2 -mx-4 gap-2")}>
         <div className="flex items-center gap-2">
           <Image src={activity.author.avatarUrl} alt="" width={20} height={20} className="h-8 w-8 rounded-full"/>
           <div className="flex flex-col items-start text-stone-600 dark:text-stone-400">
@@ -68,6 +69,7 @@ function ActivityCard({post}: {post: PostWithActivity}) {
           "group-hover:bg-stone-200 bg-stone-100 dark:bg-stone-800 dark:group-hover:bg-stone-700 dark:text-stone-400 transition-colors")}>
           {post.title}
         </p>
+        <BounceBackground/>
       </Link>
     </li>
   </>)
@@ -145,7 +147,7 @@ export function LatestPostActivityList({posts: data, ...props}: {posts: GetLates
   const posts = use(data)
   return (<>
     <ul className="flex flex-col gap-2" {...props}>
-      {posts.map(post => <ActivityCard post={post} key={post.slug}/>)}
+      {posts.map(post => <LatestPostCommentCard post={post} key={post.slug}/>)}
     </ul>
   </>)
 }
