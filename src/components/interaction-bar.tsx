@@ -52,9 +52,10 @@ export const InteractionBar = ({slug, viewOnly = false}: {slug: string, viewOnly
       const updated = viewed ? await getViews(slug) : await incrementViews(slug)
       setInteractions(interactions => ({
         ...interactions,
-        [slug]: {...interactions[slug], view: updated.view, viewed}
+        [slug]: {...interactions[slug], view: updated.view, viewed: true}
       }))
     }
+    console.log(interactions[slug]?.viewed)
     if (interactions[slug]?.viewed) void updateViews(true)
     else void updateViews(false)
   }, [mounted])
