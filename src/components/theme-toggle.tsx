@@ -5,12 +5,16 @@ import {Icons} from "@/components/icons"
 import {cn} from "@/lib/utils"
 import {useMounted} from "@/lib/use-mounted"
 import {useTranslation} from "react-i18next"
-import {ComponentPropsWithoutRef} from "react"
+import {ComponentPropsWithoutRef, startTransition} from "react"
 
 export function ThemeToggle({className, small, ...props}: ComponentPropsWithoutRef<"button"> & {small?: boolean}) {
   const mounted = useMounted()
   const {theme, resolvedTheme, setTheme} = useTheme()
   const {t} = useTranslation()
+
+  const changeTheme = () => startTransition(() => {
+    setTheme(theme === "light" ? "dark" : theme === "dark" ? "system" : "light")
+  })
 
   return (<>
     {!mounted && (<>
@@ -22,9 +26,8 @@ export function ThemeToggle({className, small, ...props}: ComponentPropsWithoutR
       </Button>
     </>)}
     {mounted && (<>
-      <Button variant="noStyle" className={cn("group h-fit w-fit gap-2 px-2 py-1.5 -mx-2",
-        "hover:bg-stone-200 active:bg-stone-300 dark:hover:bg-stone-700 dark:active:bg-stone-800", className)}
-        onClick={() => setTheme(theme === "light" ? "dark" : theme === "dark" ? "system" : "light")} {...props}>
+      <Button variant="noStyle" onClick={changeTheme} className={cn("group h-fit w-fit gap-2 px-2 py-1.5 -mx-2",
+        "hover:bg-stone-200 active:bg-stone-300 dark:hover:bg-stone-700 dark:active:bg-stone-800", className)} {...props}>
         {theme === "dark" && <Icons.theme.dark className={small ? "w-4 h-4" : "w-5 h-5"}/>}
         {theme === "light" && <Icons.theme.light className={small ? "w-4 h-4" : "w-5 h-5"}/>}
         {theme === "system" && (<>
