@@ -32,9 +32,7 @@ export default async function Page({params: {locale}}: {params: {locale: SiteLoc
       <Suspense fallback={<NotesPlaceholder/>}>
         <Notes data={stickyNotes}/>
       </Suspense>
-      <Suspense fallback={<></>}>
-        <Comment slug={menu.guestbook}/>
-      </Suspense>
+      <Comment slug={menu.guestbook}/>
     </div>
   </>)
 }
