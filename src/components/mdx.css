@@ -39,3 +39,7 @@
 .prose .footnotes {
   @apply text-xs
 }
+
+.prose iframe {
+  @apply rounded overflow-hidden
+}
