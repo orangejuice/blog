@@ -16,6 +16,7 @@ import {useGlobalState} from "@/lib/use-global-state"
 import {usePathname} from "next/navigation"
 import {BounceBackground} from "@/components/generic"
 import {GetActivitiesResponse} from "@/lib/fetch-activity"
+import {StarRating} from "@/components/star-rating"
 
 
 export default function ActivityInfiniteScrollList({data: rawData, style}: {data: GetActivitiesResponse} & ComponentPropsWithoutRef<"div">) {
@@ -108,7 +109,7 @@ const Activities = ({activities, style, className}: {activities: Awaited<GetActi
   </>)
 }
 
-export const MyComment = ({activity, className}: {activity: Activity} & ComponentPropsWithoutRef<"div">) => {
+ const MyComment = ({activity, className}: {activity: Activity} & ComponentPropsWithoutRef<"div">) => {
   const {t, i18n: {language: locale}} = useTranslation()
 
   return (<>
@@ -124,38 +125,6 @@ export const MyComment = ({activity, className}: {activity: Activity} & Componen
     </div>
   </>)
 }
-
-export const StarRating = ({rating, max = 10, description = false, children}: {rating: number | undefined, max?: number, description?: boolean} & ComponentPropsWithoutRef<"div">) => {
-  const {t} = useTranslation()
-  rating ??= 0
-  const ratingVal = rating * 10 / max
-  const fullStars = Math.floor(ratingVal / 2)
-  const hasHalfStar = ratingVal % 2 >= 0.5
-  const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0)
-  const percentage = (ratingVal % 2) * 50
-
-  return (
-    <div className="flex items-center select-none">
-      {description && <span className="mr-2 font-medium">{t(`bookshelf.rating.${rating}`)}</span>}
-      {[...Array(fullStars)].map((_, i) => (
-        <span key={`full-${i}`} className="text-yellow-500 dark:text-yellow-600">★</span>
-      ))}
-      {hasHalfStar && (
-        <span className="relative">
-          <span className="text-stone-300 dark:text-stone-600">★</span>
-          <span className="absolute top-0 left-0 text-yellow-500 dark:text-yellow-600 overflow-hidden" style={{width: `${percentage}%`}}>
-            ★
-          </span>
-        </span>
-      )}
-      {[...Array(emptyStars)].map((_, i) => (
-        <span key={`empty-${i}`} className="text-stone-300 dark:text-stone-600">★</span>
-      ))}
-      {children}
-    </div>
-  )
-}
-
 
 export const LatestActivityList = ({data, style, className}: {data: GetActivitiesResponse} & ComponentPropsWithoutRef<"div">) => {
   const cssIndexCounter = useCssIndexCounter(style)
