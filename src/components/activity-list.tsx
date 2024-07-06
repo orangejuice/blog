@@ -22,7 +22,7 @@ export default function ActivityInfiniteScrollList({data: rawData, style}: {data
   const pathname = usePathname()
   const data = use(rawData)
   const [stateKey, setStateKey] = useGlobalState("activity", pathname)
-  const [page, setPage] = useGlobalState("activity-page", 1)
+  const [pages, setPages] = useGlobalState("activity-pages", [1])
   const [activities, setActivities] = useGlobalState("activity-data", data)
   const [hasMore, setHasMore] = useGlobalState("activity-has-more", data.length == 10)
   const bottomRef = useRef(null)
@@ -32,9 +32,9 @@ export default function ActivityInfiniteScrollList({data: rawData, style}: {data
   const {t} = useTranslation()
 
   useEffect(() => {
-    if (stateKey != pathname) {
+    if (pathname != stateKey) {
       setStateKey(pathname)
-      setPage(1)
+      setPages([1])
       setActivities(data)
       setHasMore(data.length == 10)
     }
@@ -44,10 +44,11 @@ export default function ActivityInfiniteScrollList({data: rawData, style}: {data
     const bottom = bottomRef.current
     const observer = new IntersectionObserver((entries) => {
       entries[0].isIntersecting && hasMore && !isPending && startTransition(async () => {
-        const newActivities = await fetchActivities(page + 1, filter)
-        setActivities([...activities, ...newActivities])
-        setHasMore(newActivities.length == 10)
-        setPage(page + 1)
+        const newPages = pages.concat(pages.slice(-1)[0] + 1)
+        const newActivities = await fetchActivities(newPages, filter)
+        setActivities(newActivities)
+        setHasMore(newActivities.length === newPages.length * 10)
+        setPages(newPages)
       })
     })
     if (bottom) observer.observe(bottom)
