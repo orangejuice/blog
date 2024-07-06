@@ -6,8 +6,8 @@
     "bookshelf": "Bookshelf"
   },
   "theme": {
-    "light": "Light",
-    "dark": "Dark",
+    "light": "Light theme",
+    "dark": "Dark theme",
     "system": "Follow system",
     "white-noise": "White noise",
     "background": "Live background"
@@ -69,6 +69,8 @@
     "redirect": "But don't worry, you can find plenty of other things on our <a>homepage</a>."
   },
   "generic": {
-    "bottom": "You've Reached the End"
+    "bottom": "You've Reached the End",
+    "loading": "Loading",
+    "load-more": "Load More"
   }
 }

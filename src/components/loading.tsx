@@ -157,6 +157,5 @@ export const CommentPlaceholder = ({className}: ComponentPropsWithoutRef<"div">)
         </div>
       </div>
     </div>
-
   </>)
 }

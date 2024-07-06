@@ -16,7 +16,7 @@ export const ActivityPage = async ({slug, activity, locale}: {slug: string, acti
   const cssIndexCounter = useCssIndexCounter()
 
   return (<>
-    <div className="grid md:grid-cols-[3fr,2fr] grid-rows-[min-content] items-start gap-10 min-h-screen">
+    <div className="grid md:grid-cols-[3fr,2fr] grid-rows-[min-content] items-start gap-10">
       <div className="flex flex-col gap-10 animate-delay-in" style={cssIndexCounter()}>
         <div className="flex flex-row items-start gap-4 md:gap-6">
           <div className="relative w-28 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">

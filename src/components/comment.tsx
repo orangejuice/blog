@@ -47,7 +47,7 @@ export const Comment = ({slug}: {slug: string}) => {
   }, [])
 
   return (<>
-    <CommentPlaceholder className={cn("h-0", isLoaded && "hidden")}/>
+    <CommentPlaceholder className={cn("h-0 mb-[350px]", isLoaded && "hidden")}/>
     <div className={cn(isLoaded ? "animate-delay-in" : "h-px w-px fixed overflow-hidden")} style={cssIndexCounter()}>
       <GiscusComponent id={"comments"} {...props} theme={commentsTheme} lang={{
         en: "en",

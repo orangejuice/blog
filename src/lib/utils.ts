@@ -126,3 +126,7 @@ export function objectToUrlPart(obj: Record<string, any>): string {
     .map(([key, value]) => `${encodeURIComponent(key)}/${encodeURIComponent(value)}`)
     .join("/")
 }
+
+export function delay(time: number) {
+  return new Promise(resolve => setTimeout(resolve, time))
+}

@@ -6,8 +6,8 @@
     "bookshelf": "书架"
   },
   "theme": {
-    "light": "明亮",
-    "dark": "黑暗",
+    "light": "明亮主题",
+    "dark": "黑暗主题",
     "system": "跟随系统",
     "white-noise": "白噪声",
     "background": "动态背景"
@@ -69,6 +69,8 @@
     "redirect": "不过别担心，您可以在我们的<a>首页</a>找到很多其他内容。"
   },
   "generic": {
-    "bottom": "到底了"
+    "bottom": "到底了",
+    "loading": "加载中",
+    "load-more": "加载更多"
   }
 }

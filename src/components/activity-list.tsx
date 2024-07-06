@@ -17,6 +17,7 @@ import {usePathname} from "next/navigation"
 import {BounceBackground} from "@/components/generic"
 import {GetActivitiesResponse} from "@/lib/fetch-activity"
 import {StarRating} from "@/components/star-rating"
+import {Button} from "@/components/ui/button"
 
 
 export default function ActivityInfiniteScrollList({data: rawData, style}: {data: GetActivitiesResponse} & ComponentPropsWithoutRef<"div">) {
@@ -41,25 +42,22 @@ export default function ActivityInfiniteScrollList({data: rawData, style}: {data
     }
   }, [])
 
-  useEffect(() => {
-    const bottom = bottomRef.current
-    const observer = new IntersectionObserver((entries) => {
-      entries[0].isIntersecting && hasMore && !isPending && startTransition(async () => {
-        const newPages = pages.concat(pages.slice(-1)[0] + 1)
-        const newActivities = await fetchActivities(newPages, filter)
-        setActivities(newActivities)
-        setHasMore(newActivities.length === newPages.length * 10)
-        setPages(newPages)
-      })
-    })
-    if (bottom) observer.observe(bottom)
-    return () => {if (bottom) observer.unobserve(bottom)}
-  }, [isPending, filter])
+  const loadMore = () => startTransition(async () => {
+    const newPages = pages.concat(pages.slice(-1)[0] + 1)
+    const newActivities = await fetchActivities(newPages, filter)
+    setActivities(newActivities)
+    setHasMore(newActivities.length === newPages.length * 10)
+    setPages(newPages)
+  })
 
   return (<>
     <Activities activities={activities} style={cssIndexCounter()}/>
     <div ref={bottomRef} className="flex items-center">
-      {isPending ? <Icons.loading/> : (!hasMore && <Divider text={t("generic.bottom")}/>)}
+      {hasMore ?
+        <Button disabled={isPending} onClick={loadMore} className={cn("w-fit h-fit gap-1 mx-auto flex items-center px-4 py-2 text-xs font-semibold border rounded-full",
+          "bg-stone-900 text-stone-100 hover:border-stone-700 border-stone-900 hover:bg-white hover:text-stone-900 animate-delay-in disabled:bg-stone-500 disabled:border-stone-500")}>
+          {isPending ? <><Icons.loading className="w-4 h-4"/>{t("generic.loading")}</> : t("generic.load-more")}
+        </Button> : <Divider text={t("generic.bottom")}/>}
     </div>
   </>)
 }
@@ -109,7 +107,7 @@ const Activities = ({activities, style, className}: {activities: Awaited<GetActi
   </>)
 }
 
- const MyComment = ({activity, className}: {activity: Activity} & ComponentPropsWithoutRef<"div">) => {
+const MyComment = ({activity, className}: {activity: Activity} & ComponentPropsWithoutRef<"div">) => {
   const {t, i18n: {language: locale}} = useTranslation()
 
   return (<>

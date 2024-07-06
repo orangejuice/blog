@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    @apply scroll-smooth
-  }
-
   body {
     /*padding-left: calc(100vw - 100%); it centralize the content but does not work with react-remove-scroll*/
     min-height: 101vh;
