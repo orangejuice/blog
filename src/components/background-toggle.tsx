@@ -22,8 +22,6 @@ export function BackgroundMusicToggle({className, small, ...props}: ComponentPro
     isWhiteNoiseOn ? void audioRef.current.play().catch(console.log) : audioRef.current.pause()
   }, [isWhiteNoiseOn, resolvedTheme])
 
-  if (!mounted) return <Button variant="ghost" size="icon" className="h-4 w-4 px-2 py-1.5"/>
-
   return (<>
     <Button variant="noStyle" className={cn("group relative h-fit w-fit gap-2 px-2 py-1.5 -mx-2 hover:bg-stone-200 active:bg-stone-300",
       "dark:hover:bg-stone-700 dark:active:bg-stone-800", className)}
@@ -48,15 +46,13 @@ export function BackgroundCanvasToggle({className, small, ...props}: ComponentPr
   const {t} = useTranslation()
   const [isBackgroundOn, setIsBackgroundOn] = useLocalStorage("background-canvas", true)
 
-  if (!mounted) return <Button variant="ghost" size="icon" className="h-4 w-4 px-2 py-1.5"/>
-
   return (<>
     <Button variant="noStyle" className={cn("group relative h-fit w-fit gap-2 px-2 py-1.5 -mx-2 hover:bg-stone-200 active:bg-stone-300",
       "dark:hover:bg-stone-700 dark:active:bg-stone-800", className)}
       onClick={() => setIsBackgroundOn(!isBackgroundOn)}>
       <Icons.background className={cn(small ? "h-4 w-4" : "h-5 w-5")}/>
       <AnimatePresence>
-        {!isBackgroundOn && (<>
+        {mounted && !isBackgroundOn && (<>
           <motion.span initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} className={cn(
             "absolute w-6 h-1 rotate-45 top-4 left-1.5 bg-red-500 rounded border border-white", small && "w-5",
             "dark:border-black group-hover:border-stone-200 dark:group-hover:border-stone-700 transition-colors")}/>
