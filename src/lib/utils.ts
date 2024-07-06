@@ -12,7 +12,7 @@ dayjs.extend(localisedFormat)
 
 export function cn(...inputs: ClassValue[]) {
   return extendTailwindMerge({
-    extend: {classGroups:{"font-size": ["text-xxs"]}}
+    extend: {classGroups: {"font-size": ["text-xxs"]}}
   })(clsx(inputs))
 }
 

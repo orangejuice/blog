@@ -1,4 +1,3 @@
-import {PostWithMetadata} from "@/lib/fetch"
 import {menu, SiteLocale} from "@/site"
 import {cn, format, objectToUrlPart, useCssIndexCounter} from "@/lib/utils"
 import initTranslation from "@/lib/i18n"
@@ -10,7 +9,7 @@ import {Comment} from "@/components/comment"
 import Toc from "@/components/toc"
 import React from "react"
 
-export const Post = async ({slug, post, locale}: {slug: string, post: PostWithMetadata, locale: SiteLocale}) => {
+export const PostPage = async ({slug, post, locale}: {slug: string, post: Post, locale: SiteLocale}) => {
   const cssIndexCounter = useCssIndexCounter()
   const {t} = await initTranslation(locale)
 

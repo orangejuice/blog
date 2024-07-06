@@ -1,9 +1,9 @@
-import {getLatestActivitiesPost, getPosts} from "@/lib/fetch"
+import {getLatestComment, getPosts} from "@/lib/fetch"
 import {useCssIndexCounter} from "@/lib/utils"
 import {site, SiteLocale} from "@/site"
 import {PostLangToggle} from "@/components/post-lang-toggle"
 import React, {Suspense} from "react"
-import {LatestPostActivityList, PostMainList} from "@/components/post-list"
+import {LatestCommentList, PostMainList} from "@/components/post-list"
 import initTranslation from "@/lib/i18n"
 import {notFound} from "next/navigation"
 import {ViewMore} from "@/components/view-more"
@@ -16,7 +16,7 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
   if (!site.locales.includes(locale)) return notFound()
   const postsOneLang = getPosts({locale, count: 4})
   const postsAllLang = getPosts({locale, count: 4, lang: "all-lang"})
-  const latestPostActivities = getLatestActivitiesPost({locale, count: 2})
+  const latestComments = getLatestComment({locale, count: 2})
   const latestActivities = getActivities(1, {})
   const {t} = await initTranslation(locale)
 
@@ -53,7 +53,7 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
             {t("post.latest-comments")}
           </h5>
           <Suspense fallback={<LatestActivityListPlaceholder/>}>
-            <LatestPostActivityList posts={latestPostActivities} className="animate-delay-in" style={cssIndexCounter()}/>
+            <LatestCommentList data={latestComments} className="animate-delay-in" style={cssIndexCounter()}/>
           </Suspense>
         </section>
       </aside>

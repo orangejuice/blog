@@ -4,7 +4,7 @@ import {NextRequest} from "next/server"
 import {getPosts} from "@/lib/fetch"
 
 export async function GET(req: NextRequest, {params: {locale}}: {params: {locale: SiteLocale}}) {
-  const posts = await getPosts({locale: locale, lang: locale, count: 5, getDiscussion: false})
+  const posts = await getPosts({locale: locale, lang: locale, count: 5, discussion: false})
   const feed = new RSS({
     title: site.title,
     description: site.description,

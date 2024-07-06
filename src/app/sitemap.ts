@@ -3,7 +3,7 @@ import {menu, site} from "@/site"
 import {getPosts} from "@/lib/fetch"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const posts = await getPosts({locale: site.locales[0], lang: "all-lang", getDiscussion: false})
+  const posts = await getPosts({locale: site.locales[0], lang: "all-lang", discussion: false})
 
   const getAllLang = (slug: string) => {
     const langUrl: {[lang: string]: string} = {}

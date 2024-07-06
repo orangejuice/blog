@@ -4,50 +4,51 @@ import GiscusComponent from "@giscus/react"
 import {useTheme} from "next-themes"
 import {giscusConfig} from "@/site"
 import {useTranslation} from "react-i18next"
-import {useLocalStorage} from "@/lib/use-local-storage"
 import {revalidator} from "@/lib/actions"
 import {cn, useCssIndexCounter} from "@/lib/utils"
 import {CommentPlaceholder} from "@/components/loading"
+import {useGlobalState} from "@/lib/use-global-state"
+import {useMounted} from "@/lib/use-mounted"
 
 
 export const Comment = ({slug}: {slug: string}) => {
   const {theme: lightTheme, darkTheme, ...props} = giscusConfig
   const {resolvedTheme} = useTheme()
   const {i18n: {language: locale}} = useTranslation()
-  const commentsTheme = resolvedTheme === "dark" ? darkTheme : lightTheme
-  const [interactions, setInteractions] = useLocalStorage<Interactions>("interaction", {})
+  const commentsTheme = resolvedTheme == "dark" ? darkTheme : lightTheme
   const [isLoaded, setIsLoaded] = useState(false)
   const cssIndexCounter = useCssIndexCounter()
+  const [posts] = useGlobalState<Post[]>("post-data", [])
+  const [discussion, setDiscussion] = useGlobalState<Discussion | undefined>("discussion", undefined)
+  const mounted = useMounted()
 
   useEffect(() => {
-    function handleMessage(event: MessageEvent) {
-      if (event.origin !== "https://giscus.app") return
-      if (!(typeof event.data === "object" && event.data.giscus)) return
-      if (event.data.giscus.resizeHeight > 100) setIsLoaded(true)
-      const discussion: IDiscussionData = event.data.giscus.discussion
-      if (!discussion) return
+    if (!mounted) return
+    const bySlug = (item: {slug: string}) => item.slug == slug
+    const post = posts.find(bySlug)
+    if (post) setDiscussion(post.discussion)
+  }, [mounted])
 
-      if (interactions.hasOwnProperty(slug) && interactions[slug] && (
-        (discussion.totalCommentCount != 0 && discussion.totalCommentCount != interactions[slug].discussion.comment)
-        || (discussion.reactionCount != 0 && discussion.reactionCount != interactions[slug].discussion.reaction))) {
+  useEffect(() => {
+    const handleMessage = (event: MessageEvent) => {
+      if (event.origin != "https://giscus.app" || !event.data?.giscus) return
+      if (event.data.giscus.resizeHeight > 100) setIsLoaded(true)
+      const giscus: IDiscussionData = event.data.giscus.discussion
+      if (!giscus) return
+      setDiscussion({comment: giscus.totalCommentCount, reaction: giscus.reactionCount})
+      if (!discussion) return
+      if ((giscus.totalCommentCount != discussion.comment) || (giscus.reactionCount != discussion.reaction)) {
         void revalidator()
       }
-      setInteractions(interact => ({
-        ...interact,
-        [slug]: {
-          ...interact[slug],
-          discussion: {comment: discussion.totalCommentCount, reaction: discussion.reactionCount}
-        }
-      }))
     }
 
     window.addEventListener("message", handleMessage)
     return () => window.removeEventListener("message", handleMessage)
-  }, [interactions])
+  }, [])
 
   return (<>
     <CommentPlaceholder className={cn("h-0", isLoaded && "hidden")}/>
-    <div className={cn(isLoaded ? "animate-delay-in" : "h-px overflow-hidden")} style={cssIndexCounter()}>
+    <div className={cn(isLoaded ? "animate-delay-in" : "h-px w-px fixed overflow-hidden")} style={cssIndexCounter()}>
       <GiscusComponent id={"comments"} {...props} theme={commentsTheme} lang={{
         en: "en",
         zh: "zh-CN"

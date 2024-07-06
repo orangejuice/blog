@@ -19,9 +19,9 @@ export function ViewMore(props: ComponentPropsWithoutRef<"a">) {
   if (!mounted) return null
 
   return (<>
-    <Link {...props} href={`/${menu.post}/${objectToUrlPart(filterOption)}`}
+    <Link href={`/${menu.post}/${objectToUrlPart(filterOption)}`}
       className={cn(buttonVariants(), "w-fit h-fit mx-auto flex items-center px-4 py-2 text-xs font-semibold border rounded-full",
-        "bg-stone-900 text-stone-100 hover:border-stone-700 border-stone-900 hover:bg-white hover:text-stone-900")}>
+        "bg-stone-900 text-stone-100 hover:border-stone-700 border-stone-900 hover:bg-white hover:text-stone-900 animate-delay-in")} {...props}>
       {t("post.view-more")}
       <Icons.link.chevron className="stroke-[.15rem] -mr-2"/>
     </Link>

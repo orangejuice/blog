@@ -15,13 +15,14 @@ import {Divider} from "@/components/ui/divider"
 import {useGlobalState} from "@/lib/use-global-state"
 import {usePathname} from "next/navigation"
 import {BounceBackground} from "@/components/generic"
+import {GetActivitiesResponse} from "@/lib/fetch-activity"
 
 
-export default function ActivityInfiniteScrollList({data: rawData, style}: {data: Promise<Activity[]>} & ComponentPropsWithoutRef<"div">) {
+export default function ActivityInfiniteScrollList({data: rawData, style}: {data: GetActivitiesResponse} & ComponentPropsWithoutRef<"div">) {
   const pathname = usePathname()
   const data = use(rawData)
   const [stateKey, setStateKey] = useGlobalState("activity", pathname)
-  const [pages, setPages] = useGlobalState("activity-pages", [1])
+  const [page, setPage] = useGlobalState("activity-page", 1)
   const [activities, setActivities] = useGlobalState("activity-data", data)
   const [hasMore, setHasMore] = useGlobalState("activity-has-more", data.length == 10)
   const bottomRef = useRef(null)
@@ -29,10 +30,11 @@ export default function ActivityInfiniteScrollList({data: rawData, style}: {data
   const cssIndexCounter = useCssIndexCounter(style)
   const [filter] = useLocalStorage<FilterOption>("activity-filter", {})
   const {t} = useTranslation()
+
   useEffect(() => {
     if (stateKey != pathname) {
       setStateKey(pathname)
-      setPages([1])
+      setPage(1)
       setActivities(data)
       setHasMore(data.length == 10)
     }
@@ -42,11 +44,10 @@ export default function ActivityInfiniteScrollList({data: rawData, style}: {data
     const bottom = bottomRef.current
     const observer = new IntersectionObserver((entries) => {
       entries[0].isIntersecting && hasMore && !isPending && startTransition(async () => {
-        const newPages = pages.concat(pages.slice(-1)[0] + 1)
-        const newActivities = await fetchActivities(newPages, filter)
-        setActivities(newActivities)
-        setHasMore(newActivities.length === newPages.length * 10)
-        setPages(newPages)
+        const newActivities = await fetchActivities(page + 1, filter)
+        setActivities([...activities, ...newActivities])
+        setHasMore(newActivities.length == 10)
+        setPage(page + 1)
       })
     })
     if (bottom) observer.observe(bottom)
@@ -61,7 +62,7 @@ export default function ActivityInfiniteScrollList({data: rawData, style}: {data
   </>)
 }
 
-const Activities = ({activities, style, className}: {activities: Activity[]} & ComponentPropsWithoutRef<"div">) => {
+const Activities = ({activities, style, className}: {activities: Awaited<GetActivitiesResponse>} & ComponentPropsWithoutRef<"div">) => {
   const cssIndexCounter = useCssIndexCounter(style)
   const {t} = useTranslation()
 
@@ -155,7 +156,7 @@ export const StarRating = ({rating, max = 10, description = false, children}: {r
 }
 
 
-export const LatestActivityList = ({data, style, className}: {data: Promise<Activity[]>} & ComponentPropsWithoutRef<"div">) => {
+export const LatestActivityList = ({data, style, className}: {data: GetActivitiesResponse} & ComponentPropsWithoutRef<"div">) => {
   const cssIndexCounter = useCssIndexCounter(style)
   const {t, i18n: {language: locale}} = useTranslation()
   const activities = use(data).slice(0, 2)

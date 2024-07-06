@@ -1,4 +1,4 @@
-import {Activity as ActivityType, History as HistoryType} from "contentlayer/generated"
+import {History as HistoryType} from "contentlayer/generated"
 import {SiteLocale} from "@/site"
 import {Icons} from "@/components/icons"
 import initTranslation from "@/lib/i18n"
@@ -10,7 +10,7 @@ import {Comment} from "@/components/comment"
 import React from "react"
 import {InteractionBar} from "@/components/interaction-bar"
 
-export const Activity = async ({slug, activity, locale}: {slug: string, activity: ActivityType, locale: SiteLocale}) => {
+export const ActivityPage = async ({slug, activity, locale}: {slug: string, activity: Activity, locale: SiteLocale}) => {
   const Icon = Icons.type[`${activity.category}`]
   const {t} = await initTranslation(locale)
   const cssIndexCounter = useCssIndexCounter()
@@ -23,10 +23,7 @@ export const Activity = async ({slug, activity, locale}: {slug: string, activity
             <Image src={activity.cover} alt="cover"/>
           </div>
           <div className="flex flex-col grow gap-1 text-stone-600 text-sm">
-            <div className="flex justify-between">
-              <h2 className="text-xl font-bold text-stone-800 dark:text-stone-200">{activity.title}</h2>
-              <InteractionBar slug={slug}/>
-            </div>
+            <h2 className="text-xl font-bold text-stone-800 dark:text-stone-200">{activity.title}</h2>
             <StarRating rating={activity.douban?.rating}>
               {!!activity.douban?.rating ? <>
                 <span className="ml-1 font-medium text-yellow-600 font-mono tracking-[-0.15em]">
@@ -36,8 +33,10 @@ export const Activity = async ({slug, activity, locale}: {slug: string, activity
             </StarRating>
             <div className="flex items-center gap-1 text-sm font-medium text-stone-500">
               <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
+              <Icons.symbol.dot className="stroke-[4px] opacity-70"/>
+              <InteractionBar slug={slug} viewOnly/>
             </div>
-            <p className="text-sm mt-0.5 mb-2">{activity.douban?.subtitle}</p>
+            <p className="text-sm mt-0.5">{activity.douban?.subtitle}</p>
           </div>
         </div>
       </div>

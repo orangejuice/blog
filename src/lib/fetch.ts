@@ -1,9 +1,10 @@
 "use server"
-import {allPosts, Post} from "contentlayer/generated"
+import {allPosts} from "contentlayer/generated"
 import {giscusConfig, site, SiteLocale} from "@/site"
-import {Discussion, DiscussionWithComments, fetchDiscussions, fetchLatestComments} from "@/lib/fetch-github"
-import {getPostMetadata, GetPostMetadataResponse} from "@/lib/fetch-db"
+import {DiscussionWithComments, fetchDiscussions, fetchLatestComments} from "@/lib/fetch-github"
+import {getMetadata} from "@/lib/fetch-db"
 import {unstable_cache as cache} from "next/cache"
+import {getActivity} from "@/lib/fetch-activity"
 
 /**
  * The function to get the list of post
@@ -11,13 +12,14 @@ import {unstable_cache as cache} from "next/cache"
  * @param lang filtering results by including the specified lang only
  * @param tag filtering results by a tag
  * @param count how many posts needed
- * @param getDiscussion do we want to fetch discussion data for this post list
+ * @param discussion do we want to fetch discussion data for this post list
  */
-export const getPosts = cache(async ({locale, lang, tag, count, getDiscussion = true}: Options) => {
+export const getPosts = cache(async ({locale, lang, tag, count, discussion = true}: Options) => {
   lang ??= locale
 
-  const slugLangPost: {[slug: string]: {[locale: string]: Post}} = {}
-  allPosts.forEach((cur) => {
+  const slugLangPost: {[slug: string]: {[locale: string]: Post}} = {};
+
+  (allPosts as Post[]).forEach((cur) => {
     if (!slugLangPost[cur.slug]) slugLangPost[cur.slug] = {[cur.locale]: cur}
     else slugLangPost[cur.slug][cur.locale] = cur
   })
@@ -41,51 +43,52 @@ export const getPosts = cache(async ({locale, lang, tag, count, getDiscussion = 
     }
   }
 
-  const discussions = getDiscussion ? await fetchDiscussions({
+  const discussions = discussion ? await fetchDiscussions({
     repo: giscusConfig.repo,
     category: giscusConfig.category!,
     titles: postList.map(post => post.slug)
   }) : {}
 
-  const metadata: GetPostMetadataResponse = await getPostMetadata(postList.map(post => post.slug))
+  const metadata = await getMetadata(postList.map(post => post.slug))
 
   postList.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
   if (count) postList = postList.slice(0, count)
 
   return postList.map((post) => {
-    const postWithMetadata = post as unknown as PostWithMetadata
-    if (discussions[post.slug]) postWithMetadata.discussion = discussions[post.slug]
-    else postWithMetadata.discussion = {comments: {totalCount: 0}, reactions: {totalCount: 0}}
-    if (metadata[post.slug]) postWithMetadata.view = metadata[post.slug].view
+    if (discussions[post.slug]) post.discussion = {comment: discussions[post.slug].comments.totalCount, reaction: discussions[post.slug].reactions.totalCount}
+    else post.discussion = {comment: 0, reaction: 0}
+    post.view = metadata[post.slug].view
     post.body.raw = ""
-
-    return postWithMetadata
+    return post
   })
 })
-export type PostWithMetadata = Post & {discussion: Discussion} & {view: number}
 export type GetPostsResponse = ReturnType<typeof getPosts>
 
-export const getLatestActivitiesPost = cache(async ({locale, count}: {locale: SiteLocale, count: number}) => {
+export const getLatestComment = cache(async ({locale, count}: {locale: SiteLocale, count: number}) => {
   const latestActivities = await fetchLatestComments({
     repo: giscusConfig.repo,
     category: giscusConfig.category!,
     count: count
   })
-  const postsWithActivity: PostWithActivity[] = []
+  const comments: (PostWithComments | ActivityWithComments)[] = []
 
-  const posts = (await getPosts({locale, lang: "all-lang", getDiscussion: false}))
-  const slugPosts: {[slug: string]: PostWithMetadata} = {}
+  const posts = (await getPosts({locale, lang: "all-lang", discussion: false}))
+  const slugPosts: {[slug: string]: Post} = {}
   posts.forEach(post => slugPosts[post.slug] = post)
 
-  Object.keys(latestActivities).forEach(slug => {
+  for (const slug of Object.keys(latestActivities)) {
     if (slugPosts.hasOwnProperty(slug) && latestActivities[slug].comments.nodes.length > 0) {
-      postsWithActivity.push({...slugPosts[slug], discussion: latestActivities[slug]})
+      comments.push({...slugPosts[slug], comments: latestActivities[slug].comments.nodes})
+    } else {
+      const activity = await getActivity(slug)
+      if (activity) comments.push({...activity, comments: latestActivities[slug].comments.nodes})
     }
-  })
-  return postsWithActivity
+  }
+  return comments
 })
-export type PostWithActivity = Post & {discussion: DiscussionWithComments}
-export type GetLatestActivitiesResponse = ReturnType<typeof getLatestActivitiesPost>
+export type PostWithComments = Post & {comments: DiscussionWithComments["comments"]["nodes"]}
+export type ActivityWithComments = Activity & {comments: DiscussionWithComments["comments"]["nodes"]}
+export type GetLatestCommentResponse = ReturnType<typeof getLatestComment>
 
 export const getTags = cache(async ({lang}: Options) => {
   const tagCount: {[tag: string]: number} = {}
@@ -128,5 +131,5 @@ type Options = {
   lang?: SiteLocale | "all-lang"
   tag?: string
   count?: number
-  getDiscussion?: boolean
+  discussion?: boolean
 }

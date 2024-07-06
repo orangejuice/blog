@@ -5,6 +5,7 @@ import dayjs, {Dayjs} from "dayjs"
 import isBetween from "dayjs/plugin/isBetween"
 import {unstable_cache as cache} from "next/cache"
 import {FilterOption} from "@/components/activity-filter"
+import {getMetadata, GetMetadataResponse} from "@/lib/fetch-db"
 
 dayjs.extend(isBetween)
 
@@ -17,16 +18,24 @@ export const getActivities = cache(async (page: number, filter: FilterOption) =>
       (!filter.year || dayjs(act.date).year() == +filter.year)
     )
   }
-  const sortedActivities = activities.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
 
+  let sortedActivities = activities.sort((a, b) => Date.parse(b.date) - Date.parse(a.date)) as Activity[]
   const start = (page - 1) * 10
   const end = start + 10
-  return sortedActivities.slice(start, end)
+  sortedActivities = sortedActivities.slice(start, end)
+
+  const metadata: GetMetadataResponse = await getMetadata(sortedActivities.map(activity => activity.slug))
+  sortedActivities.forEach(activity => activity.view = metadata[activity.slug]?.view ?? 0)
+  return sortedActivities
 })
+export type ActivityWithMetadata = Activity & {view: number}
+export type GetActivitiesResponse = ReturnType<typeof getActivities>
+
 
 export const getActivity = cache(async (slug: string) => {
-  return allActivities.find(activity => activity.slug == slug)
+  return allActivities.find(activity => activity.slug == slug) as Activity
 })
+
 
 export const getActivitiesFilter = cache(async ({date, year}: {date?: string, year?: string} | undefined = {}) => {
   const counter = {
@@ -49,7 +58,6 @@ export const getActivitiesFilter = cache(async ({date, year}: {date?: string, ye
 
   return counter
 })
-
 export type GetActivitiesFilterResponse = ReturnType<typeof getActivitiesFilter>
 
 

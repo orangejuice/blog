@@ -1,12 +1,12 @@
 "use server"
 import axios from "axios"
 
-export const getPostMetadata = async (slugs: string[]) => {
+export const getMetadata = async (slugs: string[]): Promise<GetMetadataResponse> => {
   try {
-    const response = await axios.post(process.env.POST_METADATA_API!, {slugs})
+    const response = await axios.post(process.env.POST_METADATA_API!, {slugs: slugs.map(encodeURI)})
     const {data} = await response.data
-    return data.reduce((acc: GetPostMetadataResponse, {slug, ...item}: {slug: string, view: number}) => {
-      acc[slug] = item
+    return data.reduce((acc: GetMetadataResponse, {slug, ...item}: {slug: string, view: number}) => {
+      acc[decodeURI(slug)] = item
       return acc
     }, {})
   } catch (error) {
@@ -15,7 +15,7 @@ export const getPostMetadata = async (slugs: string[]) => {
   }
 }
 
-export type GetPostMetadataResponse = {
+export type GetMetadataResponse = {
   [slug: string]: {
     view: number
   }

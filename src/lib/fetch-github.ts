@@ -93,7 +93,7 @@ export const fetchLatestComments = async ({repo, category, count}: {repo: string
   console.log(format(new Date(), {datetime: true}), "[github]fetchLatestComments")
   const query = `
     query {
-      discussion: search(type: DISCUSSION, first: ${count}, query: "repo:${repo} category:${category}") {
+      discussion: search(type: DISCUSSION, first: 10, query: "repo:${repo} category:${category}") {
         nodes {
           ...DiscussionDetails
         }
@@ -121,8 +121,9 @@ export const fetchLatestComments = async ({repo, category, count}: {repo: string
     const data: {discussion: {nodes: CommentNode[]}} = await graphqlWithAuth(query)
     const slugActivity: {[slug: string]: CommentNode} = {}
 
-    data.discussion.nodes.forEach((queryResult) => {
-      if (queryResult) slugActivity[queryResult.title.slice(3)] = queryResult  //remove 'zh/' locale part
+    data.discussion.nodes.filter(node => node.comments.totalCount > 0)
+      .slice(0, count).forEach((queryResult) => {
+      if (queryResult) slugActivity[decodeURI(queryResult.title.slice(3))] = queryResult  //remove 'zh/' locale part
     })
     return slugActivity
   } catch (error) {
