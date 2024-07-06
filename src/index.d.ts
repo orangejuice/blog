@@ -1,38 +1,47 @@
-type PartialBy<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>
+declare global {
+  type PartialBy<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>
 
-type UseState<T> = {
-  value: T
-  setValue: (update: T | ((val: T) => T)) => void
-}
-
-// https://github.com/giscus/giscus/blob/main/lib/types/giscus.ts
-type IDiscussionData = {
-  id: string
-  url: string
-  locked: boolean
-  repository: {
-    nameWithOwner: string
+  type UseState<T> = {
+    value: T
+    setValue: (update: T | ((val: T) => T)) => void
   }
-  reactionCount: number
-  totalCommentCount: number
-  totalReplyCount: number
-  reactions: IReactionGroups
-}
 
-type Interactions = {
-  [slug: string]: {
-    view: number
-    viewed: boolean
-    discussion: { [key in "comment" | "reaction"]: number }
+  // https://github.com/giscus/giscus/blob/main/lib/types/giscus.ts
+  type IDiscussionData = {
+    id: string
+    url: string
+    locked: boolean
+    repository: {
+      nameWithOwner: string
+    }
+    reactionCount: number
+    totalCommentCount: number
+    totalReplyCount: number
+    reactions: IReactionGroups
+  }
+
+  type Interactions = {
+    [slug: string]: {
+      view: number
+      viewed: boolean
+    }
+  }
+
+  type Discussion = { [key in "comment" | "reaction"]: number }
+
+  type Post = import("contentlayer/generated").Post & {view: number} & {discussion: Discussion}
+  type Activity = import("contentlayer/generated").Activity & {view: number}
+
+  type StickyNotes = {
+    order?: string[]
+    [id: string]: {
+      position: { [key in "x" | "y"]: number }
+      color: string
+      rotate: string
+    }
   }
 }
 
-type StickyNotes = {
-  order?: string[]
-  [id: string]: {
-    position: { [key in "x" | "y"]: number }
-    color: string
-    rotate: string
-  }
-}
-// import("framer-motion").MotionValue<number | undefined>
+// the only solution that make it possible to work with import smoothly in this index.d.ts for me
+// credits to https://stackoverflow.com/a/70592854!
+export {}
