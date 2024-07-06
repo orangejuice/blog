@@ -55,7 +55,6 @@ export const InteractionBar = ({slug, viewOnly = false}: {slug: string, viewOnly
         [slug]: {...interactions[slug], view: updated.view, viewed: true}
       }))
     }
-    console.log(interactions[slug]?.viewed)
     if (interactions[slug]?.viewed) void updateViews(true)
     else void updateViews(false)
   }, [mounted])
