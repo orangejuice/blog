@@ -7,7 +7,6 @@ import {StarRating} from "@/components/star-rating"
 import {format, useCssIndexCounter} from "@/lib/utils"
 import {MDX} from "@/components/mdx"
 import {Comment} from "@/components/comment"
-import React from "react"
 import {InteractionBar} from "@/components/interaction-bar"
 
 export const ActivityPage = async ({slug, activity, locale}: {slug: string, activity: Activity, locale: SiteLocale}) => {
@@ -34,7 +33,7 @@ export const ActivityPage = async ({slug, activity, locale}: {slug: string, acti
             <div className="flex items-center gap-1 text-sm font-medium text-stone-500">
               <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
               <Icons.symbol.dot className="stroke-[4px] opacity-70"/>
-              <InteractionBar slug={slug} mini/>
+              <InteractionBar slug={slug} mini className="text-sm"/>
             </div>
             <p className="text-sm mt-0.5">{activity.douban?.subtitle}</p>
           </div>

@@ -3,7 +3,7 @@ import Link from "next/link"
 import {cn} from "@/lib/utils"
 import {Icons} from "@/components/icons"
 import {AnimatePresence, motion} from "framer-motion"
-import React, {useEffect} from "react"
+import React, {ComponentPropsWithoutRef, useEffect} from "react"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {useMounted} from "@/lib/use-mounted"
 import {getViews, incrementViews} from "@/lib/actions"
@@ -19,16 +19,16 @@ import {useGlobalState} from "@/lib/use-global-state"
  *   and its data are contained in the list query result, saved in the global state, retrieved while mounting Comment
  *
  * */
-export const InteractionBar = ({slug, mini = false}: {slug: string, mini?: boolean}) => {
-  const [posts] = useGlobalState<Post[]>("post-data", [])
-  const [activities] = useGlobalState<Activity[]>("activity-data", [])
+export const InteractionBar = ({slug, mini = false, className}: {slug: string, mini?: boolean} & ComponentPropsWithoutRef<"div">) => {
+  const [posts, setPosts] = useGlobalState<Post[]>("post-data", [])
+  const [activities, setActivities] = useGlobalState<Activity[]>("activity-data", [])
   const [interactions, setInteractions] = useLocalStorage<Interactions>("interaction", {})
   const [discussion] = useGlobalState<Discussion | undefined>("discussion", undefined)
+  const bySlug = (item: {slug: string}) => item.slug == slug
   const mounted = useMounted()
 
   useEffect(() => {
     if (!mounted) return
-    const bySlug = (item: {slug: string}) => item.slug == slug
     const post = posts.find(bySlug)
     if (post) {
       setInteractions(prev => ({
@@ -54,13 +54,24 @@ export const InteractionBar = ({slug, mini = false}: {slug: string, mini?: boole
         ...interactions,
         [slug]: {...interactions[slug], view: updated.view, viewed: true}
       }))
+      const index = posts.findIndex(bySlug)
+      if (index != -1) {
+        posts[index].view = updated.view
+        setPosts([...posts])
+      } else {
+        const index = activities.findIndex(bySlug)
+        if (index != -1) {
+          activities[index].view = updated.view
+          setActivities([...activities])
+        }
+      }
     }
     if (interactions[slug]?.viewed) void updateViews(true)
     else void updateViews(false)
   }, [mounted])
 
   if (mini) return (<>
-    <span className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-xs -mx-1")}>
+    <span className={cn("flex items-center rounded-md gap-1 transition text-xs", className)}>
       <Icons.post.viewFilled/>
       <AnimatePresence mode="popLayout">
         {mounted && interactions[slug]?.view != undefined &&

@@ -80,8 +80,8 @@ const Activities = ({activities, style, className}: {activities: Awaited<GetActi
                 <div className="flex flex-col grow text-stone-600 text-sm">
                   <div className="flex justify-between">
                     <h2 className="text-xl font-bold text-stone-800 dark:text-stone-200">{activity.title}</h2>
-                    <div className="hidden relative md:flex items-center gap-1 text-xs rounded-full font-medium text-stone-500">
-                      <span className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5")}>
+                    <div className="hidden relative md:flex items-center gap-1 text-xs font-medium text-stone-500">
+                      <span className={cn("flex items-center rounded-md gap-1 transition")}>
                         <Icons.post.viewFilled/>{activity.view}
                       </span>
                       <Icons.symbol.dot className="stroke-[3px] -mx-1 opacity-70"/>
@@ -98,7 +98,7 @@ const Activities = ({activities, style, className}: {activities: Awaited<GetActi
                   <div className="flex md:hidden items-center gap-1 text-sm font-medium text-stone-500">
                     <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
                     <Icons.symbol.dot className="stroke-[4px] -mx-1 opacity-70"/>
-                    <span className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5")}>
+                    <span className={cn("flex items-center rounded-md gap-1 transition")}>
                       <Icons.post.viewFilled/>{activity.view}
                     </span>
                   </div>
