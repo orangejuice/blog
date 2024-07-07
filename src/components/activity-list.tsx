@@ -80,7 +80,11 @@ const Activities = ({activities, style, className}: {activities: Awaited<GetActi
                 <div className="flex flex-col grow text-stone-600 text-sm">
                   <div className="flex justify-between">
                     <h2 className="text-xl font-bold text-stone-800 dark:text-stone-200">{activity.title}</h2>
-                    <div className="relative flex items-center gap-1 text-xs rounded-full font-medium text-stone-500">
+                    <div className="hidden relative md:flex items-center gap-1 text-xs rounded-full font-medium text-stone-500">
+                      <span className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5")}>
+                        <Icons.post.viewFilled/>{activity.view}
+                      </span>
+                      <Icons.symbol.dot className="stroke-[3px] -mx-1 opacity-70"/>
                       <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
                     </div>
                   </div>
@@ -91,6 +95,13 @@ const Activities = ({activities, style, className}: {activities: Awaited<GetActi
                     </span>
                     </> : <span className="ml-1 font-mono text-xs">{t("bookshelf.rating.0")}</span>}
                   </StarRating>
+                  <div className="flex md:hidden items-center gap-1 text-sm font-medium text-stone-500">
+                    <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
+                    <Icons.symbol.dot className="stroke-[4px] -mx-1 opacity-70"/>
+                    <span className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5")}>
+                      <Icons.post.viewFilled/>{activity.view}
+                    </span>
+                  </div>
                   <p className="text-xs mt-0.5 mb-2">{activity.douban?.subtitle}</p>
                   <MyComment activity={activity} className="hidden md:block"/>
                 </div>

@@ -1,9 +1,9 @@
 import * as React from "react"
 import {ComponentProps, ComponentType, forwardRef} from "react"
 import {cn} from "@/lib/utils"
-import {ArrowRight, AudioLines, ChevronRight, Dot, Eye, Filter, Globe, Hash, Loader2, LogIn, LogOut, Menu, MessageCircleHeart, MessageCircleMore, Moon, Pickaxe, Slash, Smile, Square, SquareCheckBig, Sun, SunMoon, Undo2, User} from "lucide-react"
+import {ArrowRight, AudioLines, ChevronRight, Dot, Filter, Globe, Hash, Loader2, LogIn, LogOut, Menu, MessageCircleHeart, MessageCircleMore, Moon, Pickaxe, Slash, Smile, Square, SquareCheckBig, Sun, SunMoon, Undo2, User} from "lucide-react"
 import Image, {ImageProps} from "next/image"
-import {Book, BookmarkSimple, FilmReel, GithubLogo, SelectionBackground} from "@phosphor-icons/react/dist/ssr"
+import {Book, BookmarkSimple, Eye, FilmReel, GithubLogo, SelectionBackground} from "@phosphor-icons/react/dist/ssr"
 
 export const Icons = {
   account: {signIn: cns(LogIn), signOut: cns(LogOut)},
@@ -21,7 +21,12 @@ export const Icons = {
   </>),
   logo: (props: Partial<ImageProps>) => <Image src="/logo.svg" width={140} height={30} alt="Logo" priority {...props}/>,
   nav: {profile: cns(User), lang: cns(Globe), menu: cns(Menu)},
-  post: {view: cns(Eye), reaction: cns(Smile), comment: cns(MessageCircleMore), goBack: cns(Undo2), reactComment: cns(MessageCircleHeart)},
+  post: {
+    view: cns((props) => <Eye weight="bold" {...props}/>),
+    viewFilled: cns((props) => <Eye weight="fill" {...props}/>),
+    reaction: cns(Smile), comment: cns(MessageCircleMore),
+    goBack: cns(Undo2), reactComment: cns(MessageCircleHeart)
+  },
   symbol: {
     hash: cns(Hash), slash: cns(Slash), dot: cns(Dot), building: cns(Pickaxe),
     square: cns(Square), squareChecked: cns(SquareCheckBig, "[&_path:first-child]:stroke-[3px]")

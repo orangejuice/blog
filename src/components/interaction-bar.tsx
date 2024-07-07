@@ -19,7 +19,7 @@ import {useGlobalState} from "@/lib/use-global-state"
  *   and its data are contained in the list query result, saved in the global state, retrieved while mounting Comment
  *
  * */
-export const InteractionBar = ({slug, viewOnly = false}: {slug: string, viewOnly?: boolean}) => {
+export const InteractionBar = ({slug, mini = false}: {slug: string, mini?: boolean}) => {
   const [posts] = useGlobalState<Post[]>("post-data", [])
   const [activities] = useGlobalState<Activity[]>("activity-data", [])
   const [interactions, setInteractions] = useLocalStorage<Interactions>("interaction", {})
@@ -59,6 +59,18 @@ export const InteractionBar = ({slug, viewOnly = false}: {slug: string, viewOnly
     else void updateViews(false)
   }, [mounted])
 
+  if (mini) return (<>
+    <span className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-xs -mx-1")}>
+      <Icons.post.viewFilled/>
+      <AnimatePresence mode="popLayout">
+        {mounted && interactions[slug]?.view != undefined &&
+          <motion.span key={interactions[slug].view} animate={{opacity: 1}} exit={{opacity: 0}}>{interactions[slug].view}</motion.span>}
+        {(!mounted || interactions[slug]?.view == undefined) &&
+          <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.loadingGrid/></motion.span>}
+      </AnimatePresence>
+    </span>
+  </>)
+
   return (<>
     <div className="flex items-center gap-2 shrink-0">
       <span className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-sm -mx-1")}>
@@ -70,28 +82,26 @@ export const InteractionBar = ({slug, viewOnly = false}: {slug: string, viewOnly
             <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.loadingGrid/></motion.span>}
         </AnimatePresence>
       </span>
-      {!viewOnly &&
-        <Link href={"#comments"} className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-sm -mx-1",
-          "hover:bg-stone-200 dark:hover:bg-stone-700")}>
-          <Icons.post.reaction/>
-          <AnimatePresence mode="popLayout">
-            {mounted && discussion != undefined &&
-              <motion.span key={discussion.reaction} animate={{opacity: 1}} exit={{opacity: 0}}>{discussion.reaction}</motion.span>}
-            {(!mounted || discussion == undefined) &&
-              <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.loadingGrid/></motion.span>}
-          </AnimatePresence>
-        </Link>}
-      {!viewOnly &&
-        <Link href={"#comments"} className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-sm -mx-1",
-          "hover:bg-stone-200 dark:hover:bg-stone-700")}>
-          <Icons.post.comment/>
-          <AnimatePresence mode="popLayout">
-            {mounted && discussion != undefined &&
-              <motion.span key={discussion.comment} animate={{opacity: 1}} exit={{opacity: 0}}>{discussion.comment}</motion.span>}
-            {(!mounted || discussion == undefined) &&
-              <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.loadingGrid/></motion.span>}
-          </AnimatePresence>
-        </Link>}
+      <Link href={"#comments"} className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-sm -mx-1",
+        "hover:bg-stone-200 dark:hover:bg-stone-700")}>
+        <Icons.post.reaction/>
+        <AnimatePresence mode="popLayout">
+          {mounted && discussion != undefined &&
+            <motion.span key={discussion.reaction} animate={{opacity: 1}} exit={{opacity: 0}}>{discussion.reaction}</motion.span>}
+          {(!mounted || discussion == undefined) &&
+            <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.loadingGrid/></motion.span>}
+        </AnimatePresence>
+      </Link>
+      <Link href={"#comments"} className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-sm -mx-1",
+        "hover:bg-stone-200 dark:hover:bg-stone-700")}>
+        <Icons.post.comment/>
+        <AnimatePresence mode="popLayout">
+          {mounted && discussion != undefined &&
+            <motion.span key={discussion.comment} animate={{opacity: 1}} exit={{opacity: 0}}>{discussion.comment}</motion.span>}
+          {(!mounted || discussion == undefined) &&
+            <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.loadingGrid/></motion.span>}
+        </AnimatePresence>
+      </Link>
     </div>
   </>)
 }

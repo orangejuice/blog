@@ -34,7 +34,7 @@ export const ActivityPage = async ({slug, activity, locale}: {slug: string, acti
             <div className="flex items-center gap-1 text-sm font-medium text-stone-500">
               <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
               <Icons.symbol.dot className="stroke-[4px] opacity-70"/>
-              <InteractionBar slug={slug} viewOnly/>
+              <InteractionBar slug={slug} mini/>
             </div>
             <p className="text-sm mt-0.5">{activity.douban?.subtitle}</p>
           </div>
