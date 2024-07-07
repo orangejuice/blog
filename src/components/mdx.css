@@ -1,12 +1,14 @@
+.heading-anchor {
+  @apply flex gap-1 items-center
+}
+
 .heading-anchor a {
-  margin-left: -1.25rem;
-  padding-right: .25rem;
-  opacity: 0;
-  transition: opacity .15s ease
+  transition: opacity .15s ease;
+  @apply opacity-0 order-2
 }
 
 .heading-anchor:hover a {
-  opacity: 1;
+  @apply opacity-100
 }
 
 .heading-anchor > a:hover .lucide-hash {
@@ -14,8 +16,7 @@
 }
 
 .heading-anchor .lucide-hash {
-  width: 1rem;
-  height: 1rem;
+  @apply w-5 h-5;
   stroke-width: .15rem;
   display: inline;
   overflow: hidden;
