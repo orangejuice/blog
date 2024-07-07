@@ -10,6 +10,7 @@ import {AppProgressBar as ProgressBar} from "next-nprogress-bar"
 import {SpeedInsights} from "@vercel/speed-insights/next"
 import {Analytics} from "@vercel/analytics/next"
 import Script from "next/script"
+import {AudioProvider} from "@/lib/audio-provider"
 
 export function Context({children, locale, resources}: {children: ReactNode; locale?: string; resources: Resource}) {
   const i18n = createInstance()
@@ -23,8 +24,10 @@ export function Context({children, locale, resources}: {children: ReactNode; loc
     <I18nextProvider i18n={i18n}>
       <ThemeProvider disableTransitionOnChange attribute="class" enableSystem={true} defaultTheme="system">
         <TooltipProvider>
-          {children}
-          <ProgressBar height="2px" color="#888" options={{showSpinner: false}} shallowRouting/>
+          <AudioProvider>
+            {children}
+            <ProgressBar height="2px" color="#888" options={{showSpinner: false}} shallowRouting/>
+          </AudioProvider>
         </TooltipProvider>
       </ThemeProvider>
     </I18nextProvider>

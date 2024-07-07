@@ -65,7 +65,7 @@ export function MobileNav() {
       </MenuButton>
       <Overlay isOpen={open}/>
       <AnimatePresence>{open && (<>
-        <MenuItems static as={motion.div} variants={variant} initial="hidden" animate="show" exit="hidden"
+        <MenuItems as={motion.div} variants={variant} initial="hidden" animate="show" exit="hidden"
           anchor="bottom end" className="z-50 overflow-hidden rounded-md border bg-white dark:bg-black outline-none shadow-xl origin-top-right p-4 min-w-40">
           <div className="flex flex-col gap-6 p-2">
             {Object.entries(menu).map(([key, path]) => (
