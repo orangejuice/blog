@@ -105,9 +105,8 @@
     --color-movie-3: theme("colors.sky.500");
     --color-book-movie-sep: #333;
   }
+}
 
-  .react-activity-calendar__scroll-container {
-    padding: 10px 0;
-  }
-
+.react-activity-calendar__scroll-container {
+  @apply pb-[8px]
 }
