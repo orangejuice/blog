@@ -20,10 +20,11 @@ export default function Toc() {
       orderedList: true,
       scrollSmooth: true,
       scrollSmoothDuration: 400,
+      scrollSmoothOffset: -50,
       collapseDepth: 6
     })
     return () => tocbot.destroy()
-  }, [mounted, resolvedTheme])
+  })
 
   if (!mounted) return null
 
