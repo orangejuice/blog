@@ -114,5 +114,7 @@
 - day.js for date formating https://day.js.org/docs/en/display/format
 - RSS feed generation https://spacejelly.dev/posts/how-to-add-a-sitemap-rss-feed-in-next-js-app-router
 - Zustand cross tab sync https://github.com/pmndrs/zustand/discussions/1614
-- Yozai handwriting Font https://github.com/lxgw/yozai-font
+- handwriting Font
+  - Yozai https://github.com/lxgw/yozai-font
+  - CEF Fonts CJK https://github.com/Partyb0ssishere/cef-fonts-cjk
 - background bounce animation https://www.jussivirtanen.fi/

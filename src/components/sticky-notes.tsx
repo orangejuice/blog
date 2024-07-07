@@ -8,7 +8,7 @@ import {motion, useMotionValue} from "framer-motion"
 import {useTheme} from "next-themes"
 import localFont from "next/font/local"
 
-const fontHandwriting = localFont({src: "../../public/handwriting.ttf"})
+const fontHandwriting = localFont({src: "../../public/handwriting-2.ttf"})
 
 function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {note: Comment, constraintRef: RefObject<HTMLDivElement>, handleDragStart: () => void, handleDragEnd: () => void, delay: number}) {
   const ref = useRef<HTMLDivElement>(null)
@@ -75,7 +75,7 @@ function Note({note, constraintRef, handleDragStart, handleDragEnd, delay}: {not
       onDragStart={onDragStart} onDragEnd={onDragEnd} drag dragConstraints={constraintRef} onDragTransitionEnd={onDragTransitionEnd} dragMomentum={false}>
       <div className="grow flex overflow-hidden px-2 md:px-4 py-3">
         <p className={cn("scrollbar-0 h-fit max-h-full whitespace-pre-wrap overflow-x-hidden overflow-y-auto",
-          "select-text cursor-text text-stone-700 dark:text-stone-300", fontHandwriting.className)}
+          "select-text cursor-text text-stone-700 dark:text-stone-300 font-semibold", fontHandwriting.className)}
           onPointerDownCapture={e => e.stopPropagation()}
           dangerouslySetInnerHTML={{__html: note.body}}/>
       </div>
