@@ -1,5 +1,5 @@
 "use client"
-import React, {ComponentPropsWithoutRef, use, useEffect, useRef, useTransition} from "react"
+import React, {ComponentPropsWithoutRef, use, useEffect, useTransition} from "react"
 import type {Activity} from "contentlayer/generated"
 import {cn, format, useCssIndexCounter} from "@/lib/utils"
 import {useTranslation} from "react-i18next"
@@ -20,44 +20,41 @@ import {StarRating} from "@/components/star-rating"
 import {Button} from "@/components/ui/button"
 
 
-export default function ActivityInfiniteScrollList({data: rawData, style}: {data: GetActivitiesResponse} & ComponentPropsWithoutRef<"div">) {
+export default function ActivityInfiniteScrollList({data: firstPage, style}: {data: GetActivitiesResponse} & ComponentPropsWithoutRef<"div">) {
   const pathname = usePathname()
-  const data = use(rawData)
-  const [stateKey, setStateKey] = useGlobalState("activity", pathname)
-  const [pages, setPages] = useGlobalState("activity-pages", [1])
+  const data = use(firstPage)
+  const [state, setState] = useGlobalState("activity", {
+    key: pathname, page: 1, hasMore: data.length == 10
+  })
   const [activities, setActivities] = useGlobalState("activity-data", data)
-  const [hasMore, setHasMore] = useGlobalState("activity-has-more", data.length == 10)
-  const bottomRef = useRef(null)
   const [isPending, startTransition] = useTransition()
   const cssIndexCounter = useCssIndexCounter(style)
   const [filter] = useLocalStorage<FilterOption>("activity-filter", {})
   const {t} = useTranslation()
 
   useEffect(() => {
-    if (pathname != stateKey) {
-      setStateKey(pathname)
-      setPages([1])
-      setActivities(data)
-      setHasMore(data.length == 10)
-    }
+    if (pathname == state.key) return
+    setState({key: pathname, page: 1, hasMore: data.length == 10})
+    setActivities(data)
   }, [])
 
   const loadMore = () => startTransition(async () => {
-    const newPages = pages.concat(pages.slice(-1)[0] + 1)
-    const newActivities = await fetchActivities(newPages, filter)
-    setActivities(newActivities)
-    setHasMore(newActivities.length === newPages.length * 10)
-    setPages(newPages)
+    const newActivities = await fetchActivities(state.page + 1, filter)
+    setState(({key: state.key, page: state.page + 1, hasMore: newActivities.length == 10}))
+    setActivities(activities.concat(...newActivities))
   })
 
   return (<>
     <Activities activities={activities} style={cssIndexCounter()}/>
-    <div ref={bottomRef} className="flex items-center">
-      {hasMore ?
-        <Button disabled={isPending} onClick={loadMore} className={cn("w-fit h-fit gap-1 mx-auto flex items-center px-4 py-2 text-xs font-semibold border rounded-full",
+    <div className="flex items-center justify-center">
+      {state.hasMore && <>
+        <Button disabled={isPending} onClick={loadMore} className={cn("w-fit h-fit gap-1 flex items-center px-4 py-2 text-xs font-semibold border rounded-full",
           "bg-stone-900 text-stone-100 hover:border-stone-700 border-stone-900 hover:bg-white hover:text-stone-900 animate-delay-in disabled:bg-stone-500 disabled:border-stone-500")}>
-          {isPending ? <><Icons.loading className="w-4 h-4"/>{t("generic.loading")}</> : t("generic.load-more")}
-        </Button> : <Divider text={t("generic.bottom")}/>}
+          {isPending && <><Icons.loading className="w-4 h-4"/>{t("generic.loading")}</>}
+          {!isPending && t("generic.load-more")}
+        </Button>
+      </>}
+      {!state.hasMore && <Divider text={t("generic.bottom")}/>}
     </div>
   </>)
 }

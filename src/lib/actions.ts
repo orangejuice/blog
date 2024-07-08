@@ -20,7 +20,6 @@ export async function getViews(slug: string) {
   return (await getMetadata([slug]))[slug]
 }
 
-export async function fetchActivities(pages: number[], filter: FilterOption) {
-  return await Promise.all(pages.map(page => getActivities(page, filter)))
-    .then(pages => pages.flat())
+export async function fetchActivities(page: number, filter: FilterOption) {
+  return await getActivities(page, filter)
 }
