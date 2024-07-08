@@ -1,6 +1,5 @@
 ---
 title: Wyckoff 2.0
-slug: wyckoff-20
 category: book
 status: todo
 rating: 0

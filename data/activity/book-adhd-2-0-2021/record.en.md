@@ -1,6 +1,5 @@
 ---
 title: ADHD 2.0
-slug: adhd-20
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Edward M. Hallowell John J. Ratey / 2021 / Ballantine Books
 ---
 
-Via version and content update of 'Distraction is Not My Fault' toolbox book
+Via 'Being Distracted is not my fault', a tool book with updated edition and content
