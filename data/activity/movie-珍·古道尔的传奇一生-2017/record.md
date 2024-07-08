@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2017"
-date: 2023-10-28 18:48:57
+date: 2023-10-28 18:48:57+08:00
 douban:
   id: "27115563"
   title: 珍·古道尔的传奇一生

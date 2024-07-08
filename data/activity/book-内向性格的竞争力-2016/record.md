@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 4
 year: 2016-8-1
-date: 2020-11-10 00:49:27
+date: 2020-11-10 00:49:27+08:00
 douban:
   id: "26870352"
   title: 内向性格的竞争力

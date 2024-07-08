@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2020-5
-date: 2024-04-11 18:03:09
+date: 2024-04-11 18:03:09+08:00
 douban:
   id: "35005103"
   title: 经济学原理(第8版)

@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2007"
-date: 2022-08-09 21:42:10
+date: 2022-08-09 21:42:10+08:00
 douban:
   id: "2990737"
   title: 人生访客

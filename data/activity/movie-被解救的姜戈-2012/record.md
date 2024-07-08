@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2012"
-date: 2023-08-15 08:58:32
+date: 2023-08-15 08:58:32+08:00
 douban:
   id: "6307447"
   title: 被解救的姜戈

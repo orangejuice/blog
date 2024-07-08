@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "1999"
-date: 2021-06-06 04:27:48
+date: 2021-06-06 04:27:48+08:00
 douban:
   id: "1303145"
   title: 薄荷糖

@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1948"
-date: 2023-09-15 04:34:21
+date: 2023-09-15 04:34:21+08:00
 douban:
   id: "1439106"
   title: 清宫秘史

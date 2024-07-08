@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2023"
-date: 2024-04-03 16:26:58
+date: 2024-04-03 16:26:58+08:00
 douban:
   id: "36319595"
   title: 窗边的小豆豆

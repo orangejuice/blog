@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2007-3
-date: 2024-03-13 14:23:14
+date: 2024-03-13 14:23:14+08:00
 douban:
   id: "2035171"
   title: 人生的枷锁

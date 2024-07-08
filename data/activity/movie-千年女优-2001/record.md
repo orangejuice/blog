@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2001"
-date: 2024-05-13 17:16:55
+date: 2024-05-13 17:16:55+08:00
 douban:
   id: "1307394"
   title: 千年女优

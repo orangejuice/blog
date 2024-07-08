@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2015-9-29
-date: 2023-09-10 18:50:26
+date: 2023-09-10 18:50:26+08:00
 douban:
   id: "30418154"
   title: 重探抗戰史（一）

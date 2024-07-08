@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2008-10-01
-date: 2024-04-04 06:40:13
+date: 2024-04-04 06:40:13+08:00
 douban:
   id: "3261600"
   title: 人生的智慧

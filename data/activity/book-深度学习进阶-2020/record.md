@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2020-10-14
-date: 2023-10-28 18:47:21
+date: 2023-10-28 18:47:21+08:00
 douban:
   id: "35225413"
   title: 深度学习进阶

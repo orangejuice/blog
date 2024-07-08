@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1987"
-date: 2022-11-02 23:02:32
+date: 2022-11-02 23:02:32+08:00
 douban:
   id: "1292586"
   title: 再见，孩子们

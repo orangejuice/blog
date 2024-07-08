@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1977"
-date: 2022-12-31 17:33:57
+date: 2022-12-31 17:33:57+08:00
 douban:
   id: "3890974"
   title: 请讲普通话 第一季

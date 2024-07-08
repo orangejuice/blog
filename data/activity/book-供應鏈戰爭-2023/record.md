@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2023-11-30
-date: 2024-01-27 00:23:53
+date: 2024-01-27 00:23:53+08:00
 douban:
   id: "36657648"
   title: 供應鏈戰爭

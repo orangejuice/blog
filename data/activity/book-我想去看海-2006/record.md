@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2006-09-01
-date: 2021-10-18 17:00:52
+date: 2021-10-18 17:00:52+08:00
 douban:
   id: "1899006"
   title: 我想去看海

@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2000"
-date: 2023-08-10 01:28:01
+date: 2023-08-10 01:28:01+08:00
 douban:
   id: "1416898"
   title: 鲸鱼马戏团

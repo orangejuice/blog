@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 1982-4
-date: 2023-09-27 19:41:25
+date: 2023-09-27 19:41:25+08:00
 douban:
   id: "1119590"
   title: 老残游记

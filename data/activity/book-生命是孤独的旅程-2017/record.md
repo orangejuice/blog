@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 0
 year: 2017-11
-date: 2020-09-28 03:57:24
+date: 2020-09-28 03:57:24+08:00
 douban:
   id: "27155678"
   title: 生命是孤独的旅程

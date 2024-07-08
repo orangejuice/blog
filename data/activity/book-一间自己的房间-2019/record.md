@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2019-4
-date: 2022-11-08 22:31:05
+date: 2022-11-08 22:31:05+08:00
 douban:
   id: "30477653"
   title: 一间自己的房间

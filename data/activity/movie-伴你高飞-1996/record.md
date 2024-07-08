@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1996"
-date: 2024-05-03 14:44:39
+date: 2024-05-03 14:44:39+08:00
 douban:
   id: "1292642"
   title: 伴你高飞

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2019-5-2
-date: 2022-05-01 07:14:29
+date: 2022-05-01 07:14:29+08:00
 douban:
   id: "32223456"
   title: Girl, Woman, Other

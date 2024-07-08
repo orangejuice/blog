@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2020"
-date: 2020-06-09 03:51:03
+date: 2020-06-09 03:51:03+08:00
 douban:
   id: "35022997"
   title: 杜甫：中国最伟大的诗人

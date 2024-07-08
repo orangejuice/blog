@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1995"
-date: 2023-09-04 09:00:24
+date: 2023-09-04 09:00:24+08:00
 douban:
   id: "1293929"
   title: 廊桥遗梦

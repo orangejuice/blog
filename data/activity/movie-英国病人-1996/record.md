@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1996"
-date: 2023-07-15 16:58:52
+date: 2023-07-15 16:58:52+08:00
 douban:
   id: "1291853"
   title: 英国病人

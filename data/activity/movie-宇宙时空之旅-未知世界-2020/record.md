@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2020"
-date: 2020-07-14 03:22:42
+date: 2020-07-14 03:22:42+08:00
 douban:
   id: "30192448"
   title: 宇宙时空之旅：未知世界

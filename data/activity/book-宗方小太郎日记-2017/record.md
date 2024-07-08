@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2017-1-1
-date: 2020-10-18 05:02:38
+date: 2020-10-18 05:02:38+08:00
 douban:
   id: "26846532"
   title: 宗方小太郎日记

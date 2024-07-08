@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2019"
-date: 2021-04-06 02:50:36
+date: 2021-04-06 02:50:36+08:00
 douban:
   id: "30463765"
   title: 推动中国改革开放的日本人

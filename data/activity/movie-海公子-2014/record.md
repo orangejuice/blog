@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2014"
-date: 2022-04-29 20:25:24
+date: 2022-04-29 20:25:24+08:00
 douban:
   id: "25918694"
   title: 海公子

@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2019"
-date: 2023-09-23 19:26:02
+date: 2023-09-23 19:26:02+08:00
 douban:
   id: "26405572"
   title: 战士 第一季

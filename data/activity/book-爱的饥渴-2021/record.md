@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-1
-date: 2024-01-03 22:51:05
+date: 2024-01-03 22:51:05+08:00
 douban:
   id: "35280420"
   title: 爱的饥渴

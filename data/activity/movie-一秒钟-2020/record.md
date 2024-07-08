@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "2020"
-date: 2021-01-02 04:56:27
+date: 2021-01-02 04:56:27+08:00
 douban:
   id: "30257787"
   title: 一秒钟

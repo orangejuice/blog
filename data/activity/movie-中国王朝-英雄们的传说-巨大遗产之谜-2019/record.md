@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2019"
-date: 2021-06-18 02:44:46
+date: 2021-06-18 02:44:46+08:00
 douban:
   id: "30464626"
   title: 中国王朝 英雄们的传说 巨大遗产之谜

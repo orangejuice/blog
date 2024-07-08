@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2004"
-date: 2022-12-02 02:33:35
+date: 2022-12-02 02:33:35+08:00
 douban:
   id: "1915342"
   title: 看车人的七月

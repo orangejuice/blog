@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 1994-5
-date: 2024-01-01 01:35:05
+date: 2024-01-01 01:35:05+08:00
 douban:
   id: "1559310"
   title: 鹿鼎记

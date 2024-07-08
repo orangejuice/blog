@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-11-15
-date: 2023-09-30 19:38:18
+date: 2023-09-30 19:38:18+08:00
 douban:
   id: "35650456"
   title: 跨越不可能

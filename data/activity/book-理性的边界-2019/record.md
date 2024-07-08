@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 4
 year: 2019-11-1
-date: 2020-03-17 20:01:35
+date: 2020-03-17 20:01:35+08:00
 douban:
   id: "34833898"
   title: 理性的边界

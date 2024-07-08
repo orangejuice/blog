@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2021"
-date: 2021-08-02 02:27:50
+date: 2021-08-02 02:27:50+08:00
 douban:
   id: "34859070"
   title: 致命女人 第二季

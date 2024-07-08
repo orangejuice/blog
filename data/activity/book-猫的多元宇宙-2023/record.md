@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2023-12-15
-date: 2024-02-01 19:26:20
+date: 2024-02-01 19:26:20+08:00
 douban:
   id: "36632043"
   title: 猫的多元宇宙

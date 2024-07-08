@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "2019"
-date: 2019-03-28 07:34:52
+date: 2019-03-28 07:34:52+08:00
 douban:
   id: "30424374"
   title: 爱，死亡和机器人 第一季

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2008"
-date: 2024-07-08 06:38:23
+date: 2024-07-08 06:38:23+08:00
 douban:
   id: "1959877"
   title: 崖上的波妞

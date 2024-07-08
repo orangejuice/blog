@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1993"
-date: 2022-12-22 06:01:36
+date: 2022-12-22 06:01:36+08:00
 douban:
   id: "1293818"
   title: 钢琴课

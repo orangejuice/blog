@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2017"
-date: 2022-02-17 18:18:59
+date: 2022-02-17 18:18:59+08:00
 douban:
   id: "26895171"
   title: 四重奏

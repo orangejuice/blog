@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1980"
-date: 2021-09-19 02:15:53
+date: 2021-09-19 02:15:53+08:00
 douban:
   id: "2200853"
   title: 太阳和人

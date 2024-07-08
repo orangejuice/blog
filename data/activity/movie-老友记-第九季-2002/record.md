@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2002"
-date: 2024-05-07 05:18:04
+date: 2024-05-07 05:18:04+08:00
 douban:
   id: "3286549"
   title: 老友记  第九季

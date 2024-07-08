@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2009-9
-date: 2024-01-24 23:27:10
+date: 2024-01-24 23:27:10+08:00
 douban:
   id: "4011670"
   title: 人间失格

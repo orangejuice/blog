@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1992"
-date: 2022-12-20 05:23:23
+date: 2022-12-20 05:23:23+08:00
 douban:
   id: "1309235"
   title: 大撒把

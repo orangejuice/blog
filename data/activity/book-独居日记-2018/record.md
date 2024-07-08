@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-8
-date: 2022-07-03 18:35:26
+date: 2022-07-03 18:35:26+08:00
 douban:
   id: "30254378"
   title: 独居日记

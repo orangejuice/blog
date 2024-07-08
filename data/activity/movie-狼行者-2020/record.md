@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2020"
-date: 2022-09-04 06:13:10
+date: 2022-09-04 06:13:10+08:00
 douban:
   id: "26694926"
   title: 狼行者

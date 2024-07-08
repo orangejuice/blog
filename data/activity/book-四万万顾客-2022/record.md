@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-4
-date: 2024-01-07 06:52:44
+date: 2024-01-07 06:52:44+08:00
 douban:
   id: "35778341"
   title: 四万万顾客

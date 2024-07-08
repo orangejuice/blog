@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-1
-date: 2022-01-30 07:02:07
+date: 2022-01-30 07:02:07+08:00
 douban:
   id: "35710431"
   title: 感知·理知·自我认知

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2015"
-date: 2020-02-08 23:57:15
+date: 2020-02-08 23:57:15+08:00
 douban:
   id: "26430698"
   title: 聚会的目的

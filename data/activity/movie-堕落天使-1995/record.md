@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "1995"
-date: 2020-02-27 03:35:42
+date: 2020-02-27 03:35:42+08:00
 douban:
   id: "1298112"
   title: 堕落天使

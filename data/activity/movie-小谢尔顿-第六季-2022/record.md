@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2022"
-date: 2023-09-01 19:54:25
+date: 2023-09-01 19:54:25+08:00
 douban:
   id: "35420024"
   title: 小谢尔顿 第六季

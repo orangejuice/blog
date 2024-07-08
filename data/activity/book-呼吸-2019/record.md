@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 4
 year: 2019-12
-date: 2023-12-19 23:34:19
+date: 2023-12-19 23:34:19+08:00
 douban:
   id: "34672176"
   title: 呼吸

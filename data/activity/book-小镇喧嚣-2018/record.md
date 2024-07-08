@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-2
-date: 2024-01-21 16:47:43
+date: 2024-01-21 16:47:43+08:00
 douban:
   id: "30122152"
   title: 小镇喧嚣

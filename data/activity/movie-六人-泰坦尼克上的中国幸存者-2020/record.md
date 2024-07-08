@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2020"
-date: 2021-07-29 03:38:06
+date: 2021-07-29 03:38:06+08:00
 douban:
   id: "27121248"
   title: 六人-泰坦尼克上的中国幸存者

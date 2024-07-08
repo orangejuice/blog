@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2016-2
-date: 2021-01-08 06:59:59
+date: 2021-01-08 06:59:59+08:00
 douban:
   id: "26736122"
   title: 真实世界的脉络

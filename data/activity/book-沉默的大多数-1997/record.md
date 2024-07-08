@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 1997-10
-date: 2022-03-06 05:46:38
+date: 2022-03-06 05:46:38+08:00
 douban:
   id: "1054685"
   title: 沉默的大多数

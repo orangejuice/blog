@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2000"
-date: 2022-03-23 16:40:26
+date: 2022-03-23 16:40:26+08:00
 douban:
   id: "1302109"
   title: 12夜

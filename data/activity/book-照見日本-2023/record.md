@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2023-6-20
-date: 2024-01-09 06:53:31
+date: 2024-01-09 06:53:31+08:00
 douban:
   id: "36435789"
   title: 照見日本

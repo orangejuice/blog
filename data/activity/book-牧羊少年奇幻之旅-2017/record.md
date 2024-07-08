@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2017-11
-date: 2024-04-30 19:45:06
+date: 2024-04-30 19:45:06+08:00
 douban:
   id: "27116268"
   title: 牧羊少年奇幻之旅

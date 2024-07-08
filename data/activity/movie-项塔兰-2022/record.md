@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2022"
-date: 2022-12-03 09:41:24
+date: 2022-12-03 09:41:24+08:00
 douban:
   id: "1765017"
   title: 项塔兰

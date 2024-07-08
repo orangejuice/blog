@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2003"
-date: 2023-09-23 02:09:16
+date: 2023-09-23 02:09:16+08:00
 douban:
   id: "1292055"
   title: 再见列宁

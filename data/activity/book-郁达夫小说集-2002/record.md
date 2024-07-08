@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2002-1-1
-date: 2024-03-25 01:59:10
+date: 2024-03-25 01:59:10+08:00
 douban:
   id: "1117768"
   title: 郁达夫小说集

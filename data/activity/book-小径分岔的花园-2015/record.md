@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2015-7
-date: 2022-12-30 02:13:37
+date: 2022-12-30 02:13:37+08:00
 douban:
   id: "25796120"
   title: 小径分岔的花园

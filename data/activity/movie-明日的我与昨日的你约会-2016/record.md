@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2016"
-date: 2023-07-06 03:14:39
+date: 2023-07-06 03:14:39+08:00
 douban:
   id: "26707472"
   title: 明日的我与昨日的你约会

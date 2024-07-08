@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2021"
-date: 2023-12-16 04:40:22
+date: 2023-12-16 04:40:22+08:00
 douban:
   id: "35358449"
   title: "1883"

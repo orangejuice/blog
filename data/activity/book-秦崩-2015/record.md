@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2015-4-25
-date: 2021-11-17 19:43:19
+date: 2021-11-17 19:43:19+08:00
 douban:
   id: "26368070"
   title: 秦崩

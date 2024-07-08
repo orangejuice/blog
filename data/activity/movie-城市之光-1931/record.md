@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1931"
-date: 2021-09-06 04:06:03
+date: 2021-09-06 04:06:03+08:00
 douban:
   id: "1293908"
   title: 城市之光

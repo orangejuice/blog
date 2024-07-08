@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1999"
-date: 2022-02-18 16:58:21
+date: 2022-02-18 16:58:21+08:00
 douban:
   id: "1300275"
   title: 大开眼戒

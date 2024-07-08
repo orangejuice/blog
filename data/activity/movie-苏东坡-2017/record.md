@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2017"
-date: 2020-12-28 20:44:56
+date: 2020-12-28 20:44:56+08:00
 douban:
   id: "27091593"
   title: 苏东坡

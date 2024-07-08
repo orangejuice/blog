@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2011"
-date: 2021-02-25 22:20:56
+date: 2021-02-25 22:20:56+08:00
 douban:
   id: "6952630"
   title: 玄奘之路

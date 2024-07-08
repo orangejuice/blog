@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2023-11-7
-date: 2024-01-20 16:03:18
+date: 2024-01-20 16:03:18+08:00
 douban:
   id: "36493045"
   title: The Worlds I See

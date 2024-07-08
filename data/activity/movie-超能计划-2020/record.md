@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "2020"
-date: 2023-04-10 11:47:14
+date: 2023-04-10 11:47:14+08:00
 douban:
   id: "30330875"
   title: 超能计划

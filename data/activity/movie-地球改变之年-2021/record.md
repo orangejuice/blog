@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2021"
-date: 2021-05-27 02:51:37
+date: 2021-05-27 02:51:37+08:00
 douban:
   id: "35417202"
   title: 地球改变之年

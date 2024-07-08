@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2023-5
-date: 2023-05-28 23:22:35
+date: 2023-05-28 23:22:35+08:00
 douban:
   id: "36356273"
   title: 早期中国的鬼

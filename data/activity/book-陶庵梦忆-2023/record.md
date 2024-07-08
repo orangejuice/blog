@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2023-1-2
-date: 2024-03-11 08:35:31
+date: 2024-03-11 08:35:31+08:00
 douban:
   id: "34995501"
   title: 陶庵梦忆

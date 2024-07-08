@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2009"
-date: 2023-09-10 05:42:34
+date: 2023-09-10 05:42:34+08:00
 douban:
   id: "4294292"
   title: 哐哐日记

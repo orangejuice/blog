@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2019-7
-date: 2024-05-14 15:16:31
+date: 2024-05-14 15:16:31+08:00
 douban:
   id: "34433981"
   title: 汴京之围

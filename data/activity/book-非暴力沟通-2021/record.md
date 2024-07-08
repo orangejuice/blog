@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-5
-date: 2023-07-30 03:17:57
+date: 2023-07-30 03:17:57+08:00
 douban:
   id: "35519608"
   title: 非暴力沟通

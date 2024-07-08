@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2021"
-date: 2023-11-02 10:03:39
+date: 2023-11-02 10:03:39+08:00
 douban:
   id: "35101436"
   title: 成瘾剂量

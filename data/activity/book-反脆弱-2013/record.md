@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2013-6-28
-date: 2023-12-30 07:56:23
+date: 2023-12-30 07:56:23+08:00
 douban:
   id: "24838618"
   title: 反脆弱

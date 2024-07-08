@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 1978-3
-date: 2020-03-07 20:17:00
+date: 2020-03-07 20:17:00+08:00
 douban:
   id: "1916661"
   title: 堂吉诃德（上下）

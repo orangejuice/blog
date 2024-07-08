@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2002"
-date: 2024-02-05 08:31:37
+date: 2024-02-05 08:31:37+08:00
 douban:
   id: "1296736"
   title: 钢琴家

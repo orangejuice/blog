@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2017-11
-date: 2019-09-22 05:35:01
+date: 2019-09-22 05:35:01+08:00
 douban:
   id: "27186106"
   title: 心流

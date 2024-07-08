@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2020"
-date: 2021-04-29 03:19:07
+date: 2021-04-29 03:19:07+08:00
 douban:
   id: "30458949"
   title: 无依之地

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2014"
-date: 2021-08-20 04:22:42
+date: 2021-08-20 04:22:42+08:00
 douban:
   id: "24741412"
   title: 哪啊哪啊神去村

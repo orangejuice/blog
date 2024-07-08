@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2011-2
-date: 2024-07-07 23:24:18
+date: 2024-07-07 23:24:18+08:00
 douban:
   id: "4747434"
   title: 宅兹中国

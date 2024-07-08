@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2008-12
-date: 2023-01-13 20:59:42
+date: 2023-01-13 20:59:42+08:00
 douban:
   id: "3330696"
   title: 另类美国史

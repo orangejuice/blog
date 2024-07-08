@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2006"
-date: 2020-12-29 23:56:32
+date: 2020-12-29 23:56:32+08:00
 douban:
   id: "1863102"
   title: 圆明园

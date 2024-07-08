@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: "1980"
-date: 2023-04-11 20:24:12
+date: 2023-04-11 20:24:12+08:00
 douban:
   id: "2910134"
   title: A Way of Being

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-11
-date: 2023-12-05 22:36:32
+date: 2023-12-05 22:36:32+08:00
 douban:
   id: "30376404"
   title: 兴隆场

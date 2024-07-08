@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2008-4
-date: 2022-02-23 02:24:59
+date: 2022-02-23 02:24:59+08:00
 douban:
   id: "3026879"
   title: 爱的艺术

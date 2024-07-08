@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2019-10
-date: 2023-09-27 07:23:56
+date: 2023-09-27 07:23:56+08:00
 douban:
   id: "34853188"
   title: 中国文明起源新探

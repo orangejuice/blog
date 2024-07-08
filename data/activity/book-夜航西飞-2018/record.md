@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-9
-date: 2023-06-05 20:21:18
+date: 2023-06-05 20:21:18+08:00
 douban:
   id: "30187222"
   title: 夜航西飞

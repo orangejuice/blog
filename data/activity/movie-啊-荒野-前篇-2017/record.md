@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2017"
-date: 2022-03-18 17:56:17
+date: 2022-03-18 17:56:17+08:00
 douban:
   id: "26842503"
   title: 啊，荒野 前篇

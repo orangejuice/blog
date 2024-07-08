@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-11-14
-date: 2023-12-08 09:44:48
+date: 2023-12-08 09:44:48+08:00
 douban:
   id: "30456791"
   title: 波克夏大學

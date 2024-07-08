@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1982"
-date: 2022-03-01 04:54:12
+date: 2022-03-01 04:54:12+08:00
 douban:
   id: "5294851"
   title: 控方证人

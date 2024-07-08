@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "2020"
-date: 2023-08-24 23:26:53
+date: 2023-08-24 23:26:53+08:00
 douban:
   id: "34442364"
   title: 暗黑 第三季

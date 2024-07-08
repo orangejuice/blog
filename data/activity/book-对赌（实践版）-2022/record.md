@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-1-25
-date: 2023-12-08 05:59:21
+date: 2023-12-08 05:59:21+08:00
 douban:
   id: "35760971"
   title: 对赌（实践版）

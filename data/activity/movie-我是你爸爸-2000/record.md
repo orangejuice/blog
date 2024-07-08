@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "2000"
-date: 2021-10-27 03:57:11
+date: 2021-10-27 03:57:11+08:00
 douban:
   id: "1397550"
   title: 我是你爸爸

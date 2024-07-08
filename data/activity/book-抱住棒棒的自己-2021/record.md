@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-11
-date: 2021-11-06 02:37:38
+date: 2021-11-06 02:37:38+08:00
 douban:
   id: "35641411"
   title: 抱住棒棒的自己

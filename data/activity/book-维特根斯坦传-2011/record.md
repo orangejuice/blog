@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2011-6
-date: 2024-06-15 21:29:23
+date: 2024-06-15 21:29:23+08:00
 douban:
   id: "6152040"
   title: 维特根斯坦传

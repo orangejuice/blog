@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2009"
-date: 2019-12-31 04:29:24
+date: 2019-12-31 04:29:24+08:00
 douban:
   id: "3072086"
   title: 和莎莫的500天

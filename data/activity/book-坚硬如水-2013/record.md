@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2013-4-1
-date: 2024-05-10 05:28:44
+date: 2024-05-10 05:28:44+08:00
 douban:
   id: "24551457"
   title: 坚硬如水

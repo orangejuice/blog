@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2015-6-1
-date: 2022-01-24 22:07:53
+date: 2022-01-24 22:07:53+08:00
 douban:
   id: "26824348"
   title: 汉字王国

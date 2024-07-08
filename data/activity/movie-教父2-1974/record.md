@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "1974"
-date: 2024-05-19 22:48:19
+date: 2024-05-19 22:48:19+08:00
 douban:
   id: "1299131"
   title: 教父2

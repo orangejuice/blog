@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "2004"
-date: 2021-07-28 03:06:08
+date: 2021-07-28 03:06:08+08:00
 douban:
   id: "1308857"
   title: 可可西里

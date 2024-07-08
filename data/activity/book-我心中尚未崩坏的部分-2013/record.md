@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 2
 year: 2013-8
-date: 2021-08-04 06:07:52
+date: 2021-08-04 06:07:52+08:00
 douban:
   id: "24319078"
   title: 我心中尚未崩坏的部分

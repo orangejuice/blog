@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "1995"
-date: 2019-12-30 05:21:23
+date: 2019-12-30 05:21:23+08:00
 douban:
   id: "2033097"
   title: 难以宽慰的农庄

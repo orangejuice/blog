@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2005-01-01
-date: 2023-01-03 21:13:32
+date: 2023-01-03 21:13:32+08:00
 douban:
   id: "1227920"
   title: 日本古典俳句选

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2019"
-date: 2020-08-24 05:56:48
+date: 2020-08-24 05:56:48+08:00
 douban:
   id: "6981153"
   title: 爱尔兰人

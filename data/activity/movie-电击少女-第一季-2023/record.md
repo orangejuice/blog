@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2023"
-date: 2023-07-16 17:36:10
+date: 2023-07-16 17:36:10+08:00
 douban:
   id: "30463492"
   title: 电击少女 第一季

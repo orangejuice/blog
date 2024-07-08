@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2016-11-1
-date: 2021-07-16 16:45:45
+date: 2021-07-16 16:45:45+08:00
 douban:
   id: "26905606"
   title: 墙书·地球通史

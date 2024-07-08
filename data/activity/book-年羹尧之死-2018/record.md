@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-3-31
-date: 2021-12-06 16:38:30
+date: 2021-12-06 16:38:30+08:00
 douban:
   id: "30190228"
   title: 年羹尧之死

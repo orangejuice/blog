@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2022"
-date: 2023-05-01 09:25:29
+date: 2023-05-01 09:25:29+08:00
 douban:
   id: "4811774"
   title: 阿凡达：水之道

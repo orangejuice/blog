@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2007"
-date: 2022-06-15 06:02:45
+date: 2022-06-15 06:02:45+08:00
 douban:
   id: "1947089"
   title: 投名状

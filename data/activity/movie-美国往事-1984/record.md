@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "1984"
-date: 2024-05-17 07:45:25
+date: 2024-05-17 07:45:25+08:00
 douban:
   id: "1292262"
   title: 美国往事

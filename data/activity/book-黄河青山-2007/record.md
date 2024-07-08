@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2007-2
-date: 2023-11-25 19:58:03
+date: 2023-11-25 19:58:03+08:00
 douban:
   id: "1051231"
   title: 黄河青山

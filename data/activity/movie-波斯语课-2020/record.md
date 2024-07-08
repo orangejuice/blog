@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2020"
-date: 2024-05-28 08:34:36
+date: 2024-05-28 08:34:36+08:00
 douban:
   id: "30466931"
   title: 波斯语课

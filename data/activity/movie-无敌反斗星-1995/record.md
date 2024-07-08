@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1995"
-date: 2024-03-26 18:51:47
+date: 2024-03-26 18:51:47+08:00
 douban:
   id: "1304132"
   title: 无敌反斗星

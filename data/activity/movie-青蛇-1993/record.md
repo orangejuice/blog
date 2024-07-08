@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "1993"
-date: 2020-10-11 03:34:21
+date: 2020-10-11 03:34:21+08:00
 douban:
   id: "1303394"
   title: 青蛇

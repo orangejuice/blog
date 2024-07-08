@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2009"
-date: 2020-02-28 04:52:54
+date: 2020-02-28 04:52:54+08:00
 douban:
   id: "5207904"
   title: 浩劫求生

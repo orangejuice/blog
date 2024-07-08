@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2017-8
-date: 2022-02-17 19:50:05
+date: 2022-02-17 19:50:05+08:00
 douban:
   id: "27094706"
   title: 财富自由之路

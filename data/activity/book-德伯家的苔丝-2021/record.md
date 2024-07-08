@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-3
-date: 2024-04-19 14:03:28
+date: 2024-04-19 14:03:28+08:00
 douban:
   id: "35217834"
   title: 德伯家的苔丝

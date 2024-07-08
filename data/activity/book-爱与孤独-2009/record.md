@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2009年5月
-date: 2024-05-08 18:56:15
+date: 2024-05-08 18:56:15+08:00
 douban:
   id: "3773943"
   title: 爱与孤独

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "2012"
-date: 2021-01-07 03:49:16
+date: 2021-01-07 03:49:16+08:00
 douban:
   id: "10508914"
   title: 漫长的丝绸之路铁道～横跨中国2600公里之旅～

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2020-4-1
-date: 2022-01-21 18:13:05
+date: 2022-01-21 18:13:05+08:00
 douban:
   id: "34984198"
   title: 费曼物理学讲义

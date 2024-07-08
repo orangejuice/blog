@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2015-6
-date: 2021-12-28 18:55:52
+date: 2021-12-28 18:55:52+08:00
 douban:
   id: "26387640"
   title: 忧伤的时候，到厨房去

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2018"
-date: 2021-09-02 21:34:33
+date: 2021-09-02 21:34:33+08:00
 douban:
   id: "30300027"
   title: 非凡仪式

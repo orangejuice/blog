@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2011-3
-date: 2020-05-25 04:09:27
+date: 2020-05-25 04:09:27+08:00
 douban:
   id: "5975978"
   title: 正義

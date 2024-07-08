@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2022"
-date: 2022-12-03 09:49:04
+date: 2022-12-03 09:49:04+08:00
 douban:
   id: "35517425"
   title: 天下长河

@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2012-9
-date: 2022-02-05 02:04:06
+date: 2022-02-05 02:04:06+08:00
 douban:
   id: "6781808"
   title: 杀死一只知更鸟

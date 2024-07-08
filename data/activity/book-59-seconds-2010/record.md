@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: "2010"
-date: 2023-09-19 19:14:13
+date: 2023-09-19 19:14:13+08:00
 douban:
   id: "4814087"
   title: 59 Seconds

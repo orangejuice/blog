@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2012-5
-date: 2023-09-20 17:20:44
+date: 2023-09-20 17:20:44+08:00
 douban:
   id: "10747883"
   title: 怦然心动的人生整理魔法

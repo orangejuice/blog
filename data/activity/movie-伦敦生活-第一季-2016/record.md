@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2016"
-date: 2022-02-21 06:58:12
+date: 2022-02-21 06:58:12+08:00
 douban:
   id: "26838164"
   title: 伦敦生活 第一季

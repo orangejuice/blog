@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1990"
-date: 2022-02-06 20:05:49
+date: 2022-02-06 20:05:49+08:00
 douban:
   id: "1869857"
   title: 贩母案考

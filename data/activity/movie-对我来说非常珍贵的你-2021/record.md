@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2021"
-date: 2023-12-28 05:41:29
+date: 2023-12-28 05:41:29+08:00
 douban:
   id: "35203204"
   title: 对我来说非常珍贵的你

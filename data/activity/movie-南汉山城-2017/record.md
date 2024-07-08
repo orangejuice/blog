@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2017"
-date: 2021-07-24 06:07:09
+date: 2021-07-24 06:07:09+08:00
 douban:
   id: "26800978"
   title: 南汉山城

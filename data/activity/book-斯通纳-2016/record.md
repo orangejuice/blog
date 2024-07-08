@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2016-1
-date: 2022-03-28 04:26:03
+date: 2022-03-28 04:26:03+08:00
 douban:
   id: "26425831"
   title: 斯通纳

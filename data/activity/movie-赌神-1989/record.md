@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1989"
-date: 2022-03-13 07:44:52
+date: 2022-03-13 07:44:52+08:00
 douban:
   id: "1300883"
   title: 赌神

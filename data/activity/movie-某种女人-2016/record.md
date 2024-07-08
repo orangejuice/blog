@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2016"
-date: 2019-10-03 05:45:28
+date: 2019-10-03 05:45:28+08:00
 douban:
   id: "26341593"
   title: 某种女人

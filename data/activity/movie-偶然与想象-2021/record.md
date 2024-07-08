@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2021"
-date: 2022-07-03 11:33:18
+date: 2022-07-03 11:33:18+08:00
 douban:
   id: "35360296"
   title: 偶然与想象

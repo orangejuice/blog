@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2000"
-date: 2024-06-13 12:49:59
+date: 2024-06-13 12:49:59+08:00
 douban:
   id: "1293530"
   title: 角斗士

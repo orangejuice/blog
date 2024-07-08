@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2017"
-date: 2023-08-29 06:59:24
+date: 2023-08-29 06:59:24+08:00
 douban:
   id: "27089264"
   title: 东北插班生

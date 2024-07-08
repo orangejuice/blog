@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2014-2
-date: 2022-04-07 14:32:26
+date: 2022-04-07 14:32:26+08:00
 douban:
   id: "20428302"
   title: 失明症漫记

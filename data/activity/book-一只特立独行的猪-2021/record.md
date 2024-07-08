@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-1-1
-date: 2022-04-02 10:30:54
+date: 2022-04-02 10:30:54+08:00
 douban:
   id: "34950797"
   title: 一只特立独行的猪

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2016-11
-date: 2024-04-06 22:43:31
+date: 2024-04-06 22:43:31+08:00
 douban:
   id: "26905650"
   title: 中国在梁庄

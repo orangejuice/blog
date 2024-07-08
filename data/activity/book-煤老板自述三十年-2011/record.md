@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2011-4
-date: 2024-04-22 18:54:52
+date: 2024-04-22 18:54:52+08:00
 douban:
   id: "6105339"
   title: 煤老板自述三十年

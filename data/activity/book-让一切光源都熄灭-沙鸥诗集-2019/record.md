@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2019-3
-date: 2022-04-03 17:51:00
+date: 2022-04-03 17:51:00+08:00
 douban:
   id: "30446292"
   title: 让一切光源都熄灭：沙鸥诗集

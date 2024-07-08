@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-8
-date: 2024-01-21 16:48:18
+date: 2024-01-21 16:48:18+08:00
 douban:
   id: "35546622"
   title: 置身事内

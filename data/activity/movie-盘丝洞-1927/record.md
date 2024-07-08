@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "1927"
-date: 2023-09-12 05:42:06
+date: 2023-09-12 05:42:06+08:00
 douban:
   id: "10558422"
   title: 盘丝洞

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2015-1-1
-date: 2023-01-24 07:41:34
+date: 2023-01-24 07:41:34+08:00
 douban:
   id: "26110579"
   title: 暗店街

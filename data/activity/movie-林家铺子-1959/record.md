@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1959"
-date: 2024-02-01 05:11:42
+date: 2024-02-01 05:11:42+08:00
 douban:
   id: "1424629"
   title: 林家铺子

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-10-19
-date: 2023-04-12 04:01:03
+date: 2023-04-12 04:01:03+08:00
 douban:
   id: "35353301"
   title: The Dawn of Everything

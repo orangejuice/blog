@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2010-12
-date: 2022-05-16 17:22:33
+date: 2022-05-16 17:22:33+08:00
 douban:
   id: "4856930"
   title: 汉语的本质和历史

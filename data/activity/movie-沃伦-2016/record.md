@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2016"
-date: 2022-03-07 01:31:38
+date: 2022-03-07 01:31:38+08:00
 douban:
   id: "26881114"
   title: 沃伦

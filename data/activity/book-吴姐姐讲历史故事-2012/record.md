@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2012-12
-date: 2021-07-19 02:58:33
+date: 2021-07-19 02:58:33+08:00
 douban:
   id: "21363858"
   title: 吴姐姐讲历史故事

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 0
 year: "2011"
-date: 2023-08-10 05:43:24
+date: 2023-08-10 05:43:24+08:00
 douban:
   id: "7054120"
   title: 黑镜 第一季

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-5-15
-date: 2023-12-05 04:46:40
+date: 2023-12-05 04:46:40+08:00
 douban:
   id: "30247688"
   title: Bullshit Jobs

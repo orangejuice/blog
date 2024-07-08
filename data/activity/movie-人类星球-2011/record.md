@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2011"
-date: 2020-07-07 23:38:03
+date: 2020-07-07 23:38:03+08:00
 douban:
   id: "5950117"
   title: 人类星球

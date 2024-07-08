@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-11-1
-date: 2023-06-02 00:06:54
+date: 2023-06-02 00:06:54+08:00
 douban:
   id: "36235239"
   title: 藏在宋画里的两宋史 1

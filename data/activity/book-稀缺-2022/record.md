@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-9
-date: 2023-10-05 10:54:38
+date: 2023-10-05 10:54:38+08:00
 douban:
   id: "36110828"
   title: 稀缺

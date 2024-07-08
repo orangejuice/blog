@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1983"
-date: 2024-06-14 05:52:36
+date: 2024-06-14 05:52:36+08:00
 douban:
   id: "1301553"
   title: 颠倒乾坤

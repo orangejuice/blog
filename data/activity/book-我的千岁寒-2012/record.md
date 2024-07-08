@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2012-12
-date: 2023-12-27 03:06:11
+date: 2023-12-27 03:06:11+08:00
 douban:
   id: "20390249"
   title: 我的千岁寒

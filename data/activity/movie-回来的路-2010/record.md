@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2010"
-date: 2022-11-19 06:46:57
+date: 2022-11-19 06:46:57+08:00
 douban:
   id: "3259973"
   title: 回来的路

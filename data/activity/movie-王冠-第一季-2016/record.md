@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2016"
-date: 2022-12-26 16:59:32
+date: 2022-12-26 16:59:32+08:00
 douban:
   id: "26427152"
   title: 王冠 第一季

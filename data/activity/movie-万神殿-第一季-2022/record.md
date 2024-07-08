@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2022"
-date: 2024-01-23 18:48:13
+date: 2024-01-23 18:48:13+08:00
 douban:
   id: "34990593"
   title: 万神殿 第一季

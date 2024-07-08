@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1998"
-date: 2024-04-26 01:29:51
+date: 2024-04-26 01:29:51+08:00
 douban:
   id: "3286538"
   title: 老友记  第五季

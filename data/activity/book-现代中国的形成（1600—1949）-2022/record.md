@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-2
-date: 2023-04-29 08:36:00
+date: 2023-04-29 08:36:00+08:00
 douban:
   id: "35662692"
   title: 现代中国的形成（1600—1949）

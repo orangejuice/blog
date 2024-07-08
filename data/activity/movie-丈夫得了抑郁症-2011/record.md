@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2011"
-date: 2024-03-18 16:24:12
+date: 2024-03-18 16:24:12+08:00
 douban:
   id: "5968334"
   title: 丈夫得了抑郁症

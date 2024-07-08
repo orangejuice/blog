@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2023-10-1
-date: 2024-01-28 21:25:01
+date: 2024-01-28 21:25:01+08:00
 douban:
   id: "36514708"
   title: 躺不平的千禧一代

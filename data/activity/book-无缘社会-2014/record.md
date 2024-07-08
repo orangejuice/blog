@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2014-3
-date: 2024-05-21 07:36:05
+date: 2024-05-21 07:36:05+08:00
 douban:
   id: "25822105"
   title: 无缘社会

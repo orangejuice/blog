@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2020-1
-date: 2023-05-10 17:28:40
+date: 2023-05-10 17:28:40+08:00
 douban:
   id: "34927924"
   title: 如何搞定难相处的人

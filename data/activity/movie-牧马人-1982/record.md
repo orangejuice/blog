@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1982"
-date: 2020-06-18 03:18:45
+date: 2020-06-18 03:18:45+08:00
 douban:
   id: "1308038"
   title: 牧马人

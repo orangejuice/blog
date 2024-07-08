@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2021"
-date: 2021-12-10 20:41:44
+date: 2021-12-10 20:41:44+08:00
 douban:
   id: "35288606"
   title: 再加把劲！

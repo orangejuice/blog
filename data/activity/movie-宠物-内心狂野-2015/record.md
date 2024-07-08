@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2015"
-date: 2021-09-12 21:27:11
+date: 2021-09-12 21:27:11+08:00
 douban:
   id: "26303563"
   title: 宠物：内心狂野

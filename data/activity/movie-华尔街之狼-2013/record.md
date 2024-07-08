@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2013"
-date: 2019-11-17 23:59:28
+date: 2019-11-17 23:59:28+08:00
 douban:
   id: "2997076"
   title: 华尔街之狼

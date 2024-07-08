@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2010-1-1
-date: 2021-11-08 16:36:25
+date: 2021-11-08 16:36:25+08:00
 douban:
   id: "4162361"
   title: 伊蕾诗选

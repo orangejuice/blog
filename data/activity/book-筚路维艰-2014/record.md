@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2014-10-1
-date: 2022-11-25 15:58:11
+date: 2022-11-25 15:58:11+08:00
 douban:
   id: "26171466"
   title: 筚路维艰

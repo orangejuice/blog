@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2023"
-date: 2023-07-09 19:17:11
+date: 2023-07-09 19:17:11+08:00
 douban:
   id: "35765480"
   title: 八角笼中

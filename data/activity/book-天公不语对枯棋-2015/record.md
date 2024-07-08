@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2015-8-1
-date: 2024-02-10 18:39:39
+date: 2024-02-10 18:39:39+08:00
 douban:
   id: "26593842"
   title: 天公不语对枯棋

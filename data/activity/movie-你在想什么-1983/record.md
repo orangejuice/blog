@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1983"
-date: 2024-03-30 01:47:22
+date: 2024-03-30 01:47:22+08:00
 douban:
   id: "6439445"
   title: 你在想什么

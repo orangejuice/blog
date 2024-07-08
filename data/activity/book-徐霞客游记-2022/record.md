@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-11-3
-date: 2024-06-17 15:07:00
+date: 2024-06-17 15:07:00+08:00
 douban:
   id: "26417288"
   title: 徐霞客游记

@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2011"
-date: 2021-09-19 17:30:20
+date: 2021-09-19 17:30:20+08:00
 douban:
   id: "26636126"
   title: 啊！设计

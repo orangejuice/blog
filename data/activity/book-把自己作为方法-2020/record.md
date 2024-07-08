@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2020-7-1
-date: 2023-11-10 18:59:57
+date: 2023-11-10 18:59:57+08:00
 douban:
   id: "35092383"
   title: 把自己作为方法

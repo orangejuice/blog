@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2011"
-date: 2023-03-26 17:00:23
+date: 2023-03-26 17:00:23+08:00
 douban:
   id: "4839318"
   title: 再见初恋

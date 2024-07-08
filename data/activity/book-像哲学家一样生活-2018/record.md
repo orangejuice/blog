@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-1-1
-date: 2023-11-18 08:42:16
+date: 2023-11-18 08:42:16+08:00
 douban:
   id: "27167270"
   title: 像哲学家一样生活

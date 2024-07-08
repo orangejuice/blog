@@ -3,12 +3,12 @@ import {extendTailwindMerge} from "tailwind-merge"
 import React from "react"
 import type {Dayjs} from "dayjs"
 import dayjs from "dayjs"
-import localisedFormat from "dayjs/plugin/localizedFormat"
+import LocalizedFormat from "dayjs/plugin/localizedFormat"
 import "dayjs/locale/zh"
-import relativeTime from "dayjs/plugin/relativeTime"
+import RelativeTime from "dayjs/plugin/relativeTime"
 
-dayjs.extend(relativeTime)
-dayjs.extend(localisedFormat)
+dayjs.extend(RelativeTime)
+dayjs.extend(LocalizedFormat)
 
 export function cn(...inputs: ClassValue[]) {
   return extendTailwindMerge({

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2019"
-date: 2020-10-18 03:54:26
+date: 2020-10-18 03:54:26+08:00
 douban:
   id: "34806351"
   title: 富豪谷底求翻身 第一季

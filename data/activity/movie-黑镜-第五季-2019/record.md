@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 0
 year: "2019"
-date: 2023-08-10 05:43:43
+date: 2023-08-10 05:43:43+08:00
 douban:
   id: "30161936"
   title: 黑镜 第五季

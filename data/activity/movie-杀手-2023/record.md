@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2023"
-date: 2023-11-12 05:08:40
+date: 2023-11-12 05:08:40+08:00
 douban:
   id: "2998451"
   title: 杀手

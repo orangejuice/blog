@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2010"
-date: 2021-08-06 04:21:34
+date: 2021-08-06 04:21:34+08:00
 douban:
   id: "10464515"
   title: 了解宇宙是如何运行的 第一季

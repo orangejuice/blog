@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2017-6
-date: 2022-03-07 01:04:18
+date: 2022-03-07 01:04:18+08:00
 douban:
   id: "27025767"
   title: 津轻

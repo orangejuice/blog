@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1992"
-date: 2022-12-16 03:20:15
+date: 2022-12-16 03:20:15+08:00
 douban:
   id: "2062564"
   title: 一碗阳春面

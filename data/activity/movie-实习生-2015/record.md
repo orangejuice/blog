@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2015"
-date: 2020-07-05 04:13:39
+date: 2020-07-05 04:13:39+08:00
 douban:
   id: "10594965"
   title: 实习生

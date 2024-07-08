@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2015"
-date: 2023-07-14 09:02:13
+date: 2023-07-14 09:02:13+08:00
 douban:
   id: "25846858"
   title: 破碎人生

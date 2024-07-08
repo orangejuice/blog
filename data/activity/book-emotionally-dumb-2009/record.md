@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2009-4-10
-date: 2024-01-05 02:56:04
+date: 2024-01-05 02:56:04+08:00
 douban:
   id: "36038070"
   title: Emotionally Dumb

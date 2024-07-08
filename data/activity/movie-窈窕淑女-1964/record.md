@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1964"
-date: 2024-06-14 05:56:02
+date: 2024-06-14 05:56:02+08:00
 douban:
   id: "1297965"
   title: 窈窕淑女

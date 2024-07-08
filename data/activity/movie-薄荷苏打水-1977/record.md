@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "1977"
-date: 2020-09-08 03:11:26
+date: 2020-09-08 03:11:26+08:00
 douban:
   id: "1901678"
   title: 薄荷苏打水

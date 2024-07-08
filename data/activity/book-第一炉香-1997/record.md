@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 1997-3
-date: 2022-10-20 06:30:57
+date: 2022-10-20 06:30:57+08:00
 douban:
   id: "1082162"
   title: 第一炉香

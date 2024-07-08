@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2005"
-date: 2022-04-23 05:08:49
+date: 2022-04-23 05:08:49+08:00
 douban:
   id: "1309055"
   title: 哈利·波特与火焰杯

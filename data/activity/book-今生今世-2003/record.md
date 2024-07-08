@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 0
 year: 2003-9
-date: 2023-12-24 08:00:41
+date: 2023-12-24 08:00:41+08:00
 douban:
   id: "1015403"
   title: 今生今世

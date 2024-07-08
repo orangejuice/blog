@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2010"
-date: 2019-10-23 06:07:29
+date: 2019-10-23 06:07:29+08:00
 douban:
   id: "3541415"
   title: 盗梦空间

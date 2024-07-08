@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2014-3
-date: 2024-03-31 01:10:26
+date: 2024-03-31 01:10:26+08:00
 douban:
   id: "25843055"
   title: 花花朵朵 坛坛罐罐

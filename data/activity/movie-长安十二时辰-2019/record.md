@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "2019"
-date: 2021-01-05 02:35:21
+date: 2021-01-05 02:35:21+08:00
 douban:
   id: "26849758"
   title: 长安十二时辰

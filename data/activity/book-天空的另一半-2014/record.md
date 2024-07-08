@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2014-5
-date: 2023-12-13 19:55:09
+date: 2023-12-13 19:55:09+08:00
 douban:
   id: "25845647"
   title: 天空的另一半

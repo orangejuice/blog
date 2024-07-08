@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2018"
-date: 2021-12-28 17:33:32
+date: 2021-12-28 17:33:32+08:00
 douban:
   id: "27097041"
   title: 希尔达 第一季

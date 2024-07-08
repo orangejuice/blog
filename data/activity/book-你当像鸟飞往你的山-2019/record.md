@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2019-10
-date: 2020-01-17 16:42:07
+date: 2020-01-17 16:42:07+08:00
 douban:
   id: "33440205"
   title: 你当像鸟飞往你的山

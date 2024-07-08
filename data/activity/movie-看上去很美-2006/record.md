@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2006"
-date: 2022-01-25 14:49:46
+date: 2022-01-25 14:49:46+08:00
 douban:
   id: "1469441"
   title: 看上去很美

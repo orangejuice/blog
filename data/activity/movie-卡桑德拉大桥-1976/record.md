@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1976"
-date: 2022-04-24 17:34:35
+date: 2022-04-24 17:34:35+08:00
 douban:
   id: "1298917"
   title: 卡桑德拉大桥

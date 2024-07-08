@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 1996-12
-date: 2020-07-30 06:15:52
+date: 2020-07-30 06:15:52+08:00
 douban:
   id: "1007305"
   title: 红楼梦

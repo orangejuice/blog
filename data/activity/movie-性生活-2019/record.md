@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2019"
-date: 2021-11-27 17:00:27
+date: 2021-11-27 17:00:27+08:00
 douban:
   id: "35098437"
   title: 性生活

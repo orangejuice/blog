@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2001"
-date: 2021-01-23 04:45:45
+date: 2021-01-23 04:45:45+08:00
 douban:
   id: "1292286"
   title: 我的野蛮女友

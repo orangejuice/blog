@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2020-11
-date: 2024-04-03 09:26:18
+date: 2024-04-03 09:26:18+08:00
 douban:
   id: "35110160"
   title: 伊藤润二短篇精选集

@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2021"
-date: 2022-04-08 15:30:45
+date: 2022-04-08 15:30:45+08:00
 douban:
   id: "35048413"
   title: 健听女孩

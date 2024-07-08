@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2019"
-date: 2023-11-04 05:55:47
+date: 2023-11-04 05:55:47+08:00
 douban:
   id: "34813597"
   title: 城门几丈高

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2019"
-date: 2020-06-27 22:24:32
+date: 2020-06-27 22:24:32+08:00
 douban:
   id: "34834426"
   title: 中国的重生

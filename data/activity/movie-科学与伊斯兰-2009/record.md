@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2009"
-date: 2023-12-04 03:11:47
+date: 2023-12-04 03:11:47+08:00
 douban:
   id: "4253431"
   title: 科学与伊斯兰

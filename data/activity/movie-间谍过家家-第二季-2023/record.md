@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2023"
-date: 2024-04-09 03:14:50
+date: 2024-04-09 03:14:50+08:00
 douban:
   id: "36190888"
   title: 间谍过家家 第二季

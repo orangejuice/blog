@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2019"
-date: 2021-08-20 21:40:19
+date: 2021-08-20 21:40:19+08:00
 douban:
   id: "35087725"
   title: 金属之路-鲜为人知的古代文明之路

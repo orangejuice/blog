@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1989"
-date: 2023-10-02 09:10:50
+date: 2023-10-02 09:10:50+08:00
 douban:
   id: "1301367"
   title: 潘金莲之前世今生

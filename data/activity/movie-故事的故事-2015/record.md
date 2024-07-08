@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2015"
-date: 2016-02-04 22:53:49
+date: 2016-02-04 22:53:49+08:00
 douban:
   id: "25767747"
   title: 故事的故事

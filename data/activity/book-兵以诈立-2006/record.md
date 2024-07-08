@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2006-8
-date: 2024-07-03 09:11:54
+date: 2024-07-03 09:11:54+08:00
 douban:
   id: "1858458"
   title: 兵以诈立

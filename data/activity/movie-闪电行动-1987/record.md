@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "1987"
-date: 2023-12-23 04:52:49
+date: 2023-12-23 04:52:49+08:00
 douban:
   id: "1915671"
   title: 闪电行动

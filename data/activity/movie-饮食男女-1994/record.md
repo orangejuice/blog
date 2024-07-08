@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "1994"
-date: 2019-08-30 03:26:35
+date: 2019-08-30 03:26:35+08:00
 douban:
   id: "1291818"
   title: 饮食男女

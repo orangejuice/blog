@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2016-3
-date: 2023-11-10 19:01:50
+date: 2023-11-10 19:01:50+08:00
 douban:
   id: "26736805"
   title: 他者中的华人

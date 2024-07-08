@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1999"
-date: 2023-08-06 04:45:51
+date: 2023-08-06 04:45:51+08:00
 douban:
   id: "1297630"
   title: 第六感

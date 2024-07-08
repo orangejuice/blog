@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2017-10
-date: 2022-03-26 16:43:28
+date: 2022-03-26 16:43:28+08:00
 douban:
   id: "27154094"
   title: 海子的诗

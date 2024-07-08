@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2011"
-date: 2021-08-03 02:27:38
+date: 2021-08-03 02:27:38+08:00
 douban:
   id: "4313109"
   title: 登陆之日

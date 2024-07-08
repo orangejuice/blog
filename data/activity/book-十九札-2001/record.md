@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2001-5
-date: 2019-09-18 05:29:28
+date: 2019-09-18 05:29:28+08:00
 douban:
   id: "1070897"
   title: 十九札

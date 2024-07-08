@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "2020"
-date: 2021-07-02 01:57:16
+date: 2021-07-02 01:57:16+08:00
 douban:
   id: "30312909"
   title: 外星也难民 第一季

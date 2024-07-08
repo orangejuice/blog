@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2021"
-date: 2024-05-11 17:16:27
+date: 2024-05-11 17:16:27+08:00
 douban:
   id: "34908189"
   title: 老友记重聚特辑

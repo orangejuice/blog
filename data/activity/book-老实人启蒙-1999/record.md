@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 1999-6-4
-date: 2023-09-14 01:43:11
+date: 2023-09-14 01:43:11+08:00
 douban:
   id: "1094864"
   title: 老实人启蒙

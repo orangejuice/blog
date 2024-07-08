@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2017"
-date: 2021-06-15 22:08:02
+date: 2021-06-15 22:08:02+08:00
 douban:
   id: "30192031"
   title: 遗失的长安 重拾古都记忆

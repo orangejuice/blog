@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 4
 year: 2018-10-22
-date: 2024-01-16 07:55:17
+date: 2024-01-16 07:55:17+08:00
 douban:
   id: "30358363"
   title: 被忽视的孩子

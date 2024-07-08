@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "1977"
-date: 2020-09-07 03:50:32
+date: 2020-09-07 03:50:32+08:00
 douban:
   id: "1301374"
   title: 少女情怀总是诗

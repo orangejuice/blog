@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2004-10-19
-date: 2022-02-20 19:41:29
+date: 2022-02-20 19:41:29+08:00
 douban:
   id: "24876085"
   title: 中国の大盗賊・完全版

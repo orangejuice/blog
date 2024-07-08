@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2009-11
-date: 2022-04-03 17:58:54
+date: 2022-04-03 17:58:54+08:00
 douban:
   id: "4150038"
   title: 海鸥乔纳森

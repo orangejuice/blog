@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2024-4
-date: 2024-05-16 18:01:04
+date: 2024-05-16 18:01:04+08:00
 douban:
   id: "36669709"
   title: 从中国出发的全球史

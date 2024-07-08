@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2001"
-date: 2023-01-28 07:53:16
+date: 2023-01-28 07:53:16+08:00
 douban:
   id: "1304981"
   title: 半梦半醒的人生

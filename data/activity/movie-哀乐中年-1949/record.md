@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1949"
-date: 2022-01-13 04:36:32
+date: 2022-01-13 04:36:32+08:00
 douban:
   id: "4719384"
   title: 哀乐中年

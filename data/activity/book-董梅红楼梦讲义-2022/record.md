@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-4
-date: 2022-07-04 08:11:53
+date: 2022-07-04 08:11:53+08:00
 douban:
   id: "35904717"
   title: 董梅红楼梦讲义

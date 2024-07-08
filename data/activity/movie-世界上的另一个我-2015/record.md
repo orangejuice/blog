@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2015"
-date: 2022-04-02 09:01:47
+date: 2022-04-02 09:01:47+08:00
 douban:
   id: "26330905"
   title: 世界上的另一个我

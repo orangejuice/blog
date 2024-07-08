@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2013"
-date: 2021-07-31 04:10:46
+date: 2021-07-31 04:10:46+08:00
 douban:
   id: "10484041"
   title: 横道世之介

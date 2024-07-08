@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 1998-01
-date: 2023-12-27 08:07:52
+date: 2023-12-27 08:07:52+08:00
 douban:
   id: "2101774"
   title: 金枝

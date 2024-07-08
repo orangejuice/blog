@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2021"
-date: 2023-01-31 01:26:27
+date: 2023-01-31 01:26:27+08:00
 douban:
   id: "35225859"
   title: 小妈妈

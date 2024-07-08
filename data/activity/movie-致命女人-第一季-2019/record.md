@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2019"
-date: 2019-10-18 03:44:56
+date: 2019-10-18 03:44:56+08:00
 douban:
   id: "30401122"
   title: 致命女人 第一季

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2017-12-2
-date: 2021-12-28 18:12:34
+date: 2021-12-28 18:12:34+08:00
 douban:
   id: "30389995"
   title: 黃禍

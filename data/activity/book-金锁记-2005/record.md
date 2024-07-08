@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2005-6
-date: 2022-12-04 18:02:32
+date: 2022-12-04 18:02:32+08:00
 douban:
   id: "3017857"
   title: 金锁记

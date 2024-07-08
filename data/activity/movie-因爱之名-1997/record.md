@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1997"
-date: 2023-09-03 03:19:03
+date: 2023-09-03 03:19:03+08:00
 douban:
   id: "1294454"
   title: 因爱之名

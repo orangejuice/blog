@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2000"
-date: 2024-04-30 05:06:48
+date: 2024-04-30 05:06:48+08:00
 douban:
   id: "3286547"
   title: 老友记  第七季

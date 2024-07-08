@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-10
-date: 2022-01-11 14:44:27
+date: 2022-01-11 14:44:27+08:00
 douban:
   id: "35639333"
   title: 中国历史文化地理

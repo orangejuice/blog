@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2014-4
-date: 2021-08-12 07:04:06
+date: 2021-08-12 07:04:06+08:00
 douban:
   id: "25857963"
   title: 汉字百话

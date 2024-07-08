@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2008"
-date: 2023-02-26 17:57:56
+date: 2023-02-26 17:57:56+08:00
 douban:
   id: "2157504"
   title: 百万元与苦虫女

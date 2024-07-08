@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 1
 year: "1987"
-date: 2024-01-07 06:33:45
+date: 2024-01-07 06:33:45+08:00
 douban:
   id: "1299811"
   title: 太阳帝国

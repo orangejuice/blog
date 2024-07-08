@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "2020"
-date: 2021-05-01 04:25:28
+date: 2021-05-01 04:25:28+08:00
 douban:
   id: "26759908"
   title: 清平乐

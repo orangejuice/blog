@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2019-9
-date: 2022-03-09 17:46:36
+date: 2022-03-09 17:46:36+08:00
 douban:
   id: "33658616"
   title: 克莱因壶

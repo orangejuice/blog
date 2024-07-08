@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-11
-date: 2023-09-03 10:27:29
+date: 2023-09-03 10:27:29+08:00
 douban:
   id: "36200620"
   title: 柏杨白话版资治通鉴（全十八部）

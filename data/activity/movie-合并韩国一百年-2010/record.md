@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2010"
-date: 2021-03-22 04:41:50
+date: 2021-03-22 04:41:50+08:00
 douban:
   id: "10577665"
   title: 合并韩国一百年

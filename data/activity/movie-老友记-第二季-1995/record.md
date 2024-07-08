@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1995"
-date: 2024-04-20 03:59:02
+date: 2024-04-20 03:59:02+08:00
 douban:
   id: "3286528"
   title: 老友记 第二季

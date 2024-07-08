@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-8
-date: 2022-12-20 16:41:01
+date: 2022-12-20 16:41:01+08:00
 douban:
   id: "35545272"
   title: 贪婪的多巴胺

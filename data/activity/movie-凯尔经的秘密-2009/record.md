@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2009"
-date: 2022-03-01 04:52:20
+date: 2022-03-01 04:52:20+08:00
 douban:
   id: "3212221"
   title: 凯尔经的秘密

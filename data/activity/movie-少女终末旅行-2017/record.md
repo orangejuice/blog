@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2017"
-date: 2024-05-18 19:10:57
+date: 2024-05-18 19:10:57+08:00
 douban:
   id: "27081136"
   title: 少女终末旅行

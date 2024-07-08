@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2006"
-date: 2021-05-06 04:01:56
+date: 2021-05-06 04:01:56+08:00
 douban:
   id: "1872133"
   title: 三峡好人

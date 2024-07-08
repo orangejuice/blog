@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2007"
-date: 2021-07-12 03:57:50
+date: 2021-07-12 03:57:50+08:00
 douban:
   id: "1853621"
   title: 落叶归根

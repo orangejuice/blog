@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2019"
-date: 2022-12-21 04:58:44
+date: 2022-12-21 04:58:44+08:00
 douban:
   id: "30209084"
   title: 对不起，我们错过了你

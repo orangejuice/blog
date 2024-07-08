@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2021"
-date: 2023-07-14 09:24:48
+date: 2023-07-14 09:24:48+08:00
 douban:
   id: "35284424"
   title: 冥想指南

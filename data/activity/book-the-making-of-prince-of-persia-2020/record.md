@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2020-4-28
-date: 2023-10-08 16:52:22
+date: 2023-10-08 16:52:22+08:00
 douban:
   id: "35032018"
   title: The Making of Prince of Persia

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2011-5
-date: 2022-02-23 00:46:25
+date: 2022-02-23 00:46:25+08:00
 douban:
   id: "6397275"
   title: 此生未完成

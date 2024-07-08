@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2020-9
-date: 2021-10-07 06:35:46
+date: 2021-10-07 06:35:46+08:00
 douban:
   id: "35005045"
   title: 夜晚的潜水艇

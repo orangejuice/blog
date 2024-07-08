@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2022"
-date: 2022-10-31 06:19:21
+date: 2022-10-31 06:19:21+08:00
 douban:
   id: "3042261"
   title: 西线无战事

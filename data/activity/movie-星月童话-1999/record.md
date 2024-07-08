@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1999"
-date: 2023-10-20 05:48:38
+date: 2023-10-20 05:48:38+08:00
 douban:
   id: "1295284"
   title: 星月童话

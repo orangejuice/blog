@@ -5,7 +5,7 @@ title: "Dark Psychology and Manipulation: Discover 40 Covert Emotional
 category: book
 status: todo
 rating: 0
-date: 2023-12-10 07:58:17
+date: 2023-12-10 07:58:17+08:00
 douban:
   id: "35699121"
   title: "Dark Psychology and Manipulation: Discover 40 Covert Emotional

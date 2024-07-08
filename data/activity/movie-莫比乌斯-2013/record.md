@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2013"
-date: 2022-06-27 11:26:13
+date: 2022-06-27 11:26:13+08:00
 douban:
   id: "24529254"
   title: 莫比乌斯

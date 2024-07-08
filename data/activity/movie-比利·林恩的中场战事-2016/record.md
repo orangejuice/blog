@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2016"
-date: 2021-01-25 04:26:21
+date: 2021-01-25 04:26:21+08:00
 douban:
   id: "25983044"
   title: 比利·林恩的中场战事

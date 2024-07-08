@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2014-12-1
-date: 2023-04-29 08:35:57
+date: 2023-04-29 08:35:57+08:00
 douban:
   id: "26278671"
   title: 中国人的德行

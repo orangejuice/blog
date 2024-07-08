@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-10-15
-date: 2024-04-28 00:15:07
+date: 2024-04-28 00:15:07+08:00
 douban:
   id: "36109174"
   title: 你的夏天还好吗？

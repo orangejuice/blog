@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2008"
-date: 2019-10-22 03:29:58
+date: 2019-10-22 03:29:58+08:00
 douban:
   id: "2131459"
   title: 机器人总动员

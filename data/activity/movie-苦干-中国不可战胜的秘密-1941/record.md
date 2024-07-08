@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1941"
-date: 2024-07-04 03:30:36
+date: 2024-07-04 03:30:36+08:00
 douban:
   id: "5342771"
   title: 苦干：中国不可战胜的秘密

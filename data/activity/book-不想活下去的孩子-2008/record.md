@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2008-8
-date: 2022-02-01 06:01:55
+date: 2022-02-01 06:01:55+08:00
 douban:
   id: "3414769"
   title: 不想活下去的孩子

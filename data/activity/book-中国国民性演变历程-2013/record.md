@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2013-5
-date: 2021-03-01 01:42:31
+date: 2021-03-01 01:42:31+08:00
 douban:
   id: "24371383"
   title: 中国国民性演变历程

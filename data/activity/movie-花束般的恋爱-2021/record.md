@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2021"
-date: 2021-08-15 04:37:20
+date: 2021-08-15 04:37:20+08:00
 douban:
   id: "34874432"
   title: 花束般的恋爱

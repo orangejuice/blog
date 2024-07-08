@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2024-2
-date: 2024-01-12 17:42:54
+date: 2024-01-12 17:42:54+08:00
 douban:
   id: "36651594"
   title: 思考，让人成为人

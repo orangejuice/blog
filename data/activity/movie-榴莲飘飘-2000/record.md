@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2000"
-date: 2021-05-09 04:54:00
+date: 2021-05-09 04:54:00+08:00
 douban:
   id: "1307681"
   title: 榴莲飘飘

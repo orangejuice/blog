@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1991"
-date: 2024-05-17 01:02:25
+date: 2024-05-17 01:02:25+08:00
 douban:
   id: "1295815"
   title: 那年夏天，宁静的海

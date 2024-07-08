@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-11-1
-date: 2022-12-29 21:03:38
+date: 2022-12-29 21:03:38+08:00
 douban:
   id: "35245517"
   title: 义和团运动的起源

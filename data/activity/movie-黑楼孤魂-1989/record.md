@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1989"
-date: 2022-02-04 20:21:11
+date: 2022-02-04 20:21:11+08:00
 douban:
   id: "1830189"
   title: 黑楼孤魂

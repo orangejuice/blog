@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2023"
-date: 2023-10-10 03:11:29
+date: 2023-10-10 03:11:29+08:00
 douban:
   id: "35517450"
   title: 克拉克森的农场 第二季

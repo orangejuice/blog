@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1992"
-date: 2024-01-01 19:01:17
+date: 2024-01-01 19:01:17+08:00
 douban:
   id: "1527271"
   title: 野性的呼唤

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1956"
-date: 2023-08-31 04:37:41
+date: 2023-08-31 04:37:41+08:00
 douban:
   id: "3044847"
   title: 不拘小节的人

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 0
 year: "2019"
-date: 2021-06-16 02:30:13
+date: 2021-06-16 02:30:13+08:00
 douban:
   id: "30442317"
   title: 跋涉者萧红

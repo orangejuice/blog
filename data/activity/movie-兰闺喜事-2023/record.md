@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2023"
-date: 2023-09-22 17:56:17
+date: 2023-09-22 17:56:17+08:00
 douban:
   id: "35682502"
   title: 兰闺喜事

@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2014"
-date: 2021-09-27 17:10:16
+date: 2021-09-27 17:10:16+08:00
 douban:
   id: "25851655"
   title: 四月是你的谎言

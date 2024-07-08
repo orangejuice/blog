@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2011"
-date: 2022-12-17 18:14:24
+date: 2022-12-17 18:14:24+08:00
 douban:
   id: "3071509"
   title: 后裔

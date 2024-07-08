@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2024-4-23
-date: 2024-04-26 22:54:39
+date: 2024-04-26 22:54:39+08:00
 douban:
   id: "36684702"
   title: "The Everything War: Amazon’s Ruthless Quest to Own the World"

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "2005"
-date: 2024-01-30 04:36:24
+date: 2024-01-30 04:36:24+08:00
 douban:
   id: "2239292"
   title: 大宋提刑官

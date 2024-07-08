@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2020-3
-date: 2024-02-04 08:21:20
+date: 2024-02-04 08:21:20+08:00
 douban:
   id: "34950362"
   title: 我将独自前行

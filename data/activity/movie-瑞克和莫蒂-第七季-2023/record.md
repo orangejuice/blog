@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2023"
-date: 2023-12-21 03:57:09
+date: 2023-12-21 03:57:09+08:00
 douban:
   id: "36025639"
   title: 瑞克和莫蒂 第七季

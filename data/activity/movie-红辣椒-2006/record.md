@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2006"
-date: 2020-06-08 03:44:26
+date: 2020-06-08 03:44:26+08:00
 douban:
   id: "1865703"
   title: 红辣椒

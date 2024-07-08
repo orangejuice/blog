@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2010"
-date: 2024-03-27 08:09:58
+date: 2024-03-27 08:09:58+08:00
 douban:
   id: "3268192"
   title: 下女

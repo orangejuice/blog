@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "2017"
-date: 2020-10-13 00:33:04
+date: 2020-10-13 00:33:04+08:00
 douban:
   id: "26989710"
   title: 日本未成年色情交易

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-1
-date: 2023-10-19 02:51:52
+date: 2023-10-19 02:51:52+08:00
 douban:
   id: "35188553"
   title: 变化社会中的政治秩序

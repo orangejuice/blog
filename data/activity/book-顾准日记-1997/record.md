@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 1997-09
-date: 2024-01-23 00:21:10
+date: 2024-01-23 00:21:10+08:00
 douban:
   id: "1011180"
   title: 顾准日记

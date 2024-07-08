@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1992"
-date: 2019-07-18 05:19:22
+date: 2019-07-18 05:19:22+08:00
 douban:
   id: "1291868"
   title: 情人

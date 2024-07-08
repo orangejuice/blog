@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2014"
-date: 2022-03-04 23:55:37
+date: 2022-03-04 23:55:37+08:00
 douban:
   id: "25924025"
   title: 初三

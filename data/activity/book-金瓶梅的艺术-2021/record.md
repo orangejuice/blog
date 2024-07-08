@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-8
-date: 2022-03-15 09:20:37
+date: 2022-03-15 09:20:37+08:00
 douban:
   id: "35502692"
   title: 金瓶梅的艺术

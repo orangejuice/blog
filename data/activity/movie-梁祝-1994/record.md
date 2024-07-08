@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "1994"
-date: 2020-10-10 03:50:47
+date: 2020-10-10 03:50:47+08:00
 douban:
   id: "1310159"
   title: 梁祝

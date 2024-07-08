@@ -34,7 +34,7 @@ for (const interest of (tofu as Record<any, any>).interest) {
     const doubanLink = interest.interest.subject.url
     const year = interest.interest.subject.year || interest.interest.subject.pubdate[0]
     const doubanID = interest.interest.subject.id ?? ""
-    const createdDate = interest.interest.create_time
+    const createdDate = interest.interest.create_time?.concat("+08:00")
     const rating = interest.interest.rating?.value ?? 0
     const comment = interest.interest.comment
     const cover = interest.interest.subject.cover_url

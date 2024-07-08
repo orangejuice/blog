@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2020-7-27
-date: 2021-11-01 18:29:48
+date: 2021-11-01 18:29:48+08:00
 douban:
   id: "35365995"
   title: 歡樂宋：中國歷史上最幸福的朝代，沒去過宋朝，別說你到過人間天堂！

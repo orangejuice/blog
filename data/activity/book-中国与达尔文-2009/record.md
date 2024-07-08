@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2009-5
-date: 2023-11-10 00:50:07
+date: 2023-11-10 00:50:07+08:00
 douban:
   id: "3766744"
   title: 中国与达尔文

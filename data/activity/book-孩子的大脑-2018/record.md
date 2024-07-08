@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-12
-date: 2024-01-10 17:46:50
+date: 2024-01-10 17:46:50+08:00
 douban:
   id: "30431977"
   title: 孩子的大脑

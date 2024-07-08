@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2021"
-date: 2021-10-01 04:06:20
+date: 2021-10-01 04:06:20+08:00
 douban:
   id: "34966169"
   title: 性爱自修室 第三季

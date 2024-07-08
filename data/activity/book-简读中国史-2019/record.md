@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2019-8
-date: 2021-03-09 06:36:07
+date: 2021-03-09 06:36:07+08:00
 douban:
   id: "34501169"
   title: 简读中国史

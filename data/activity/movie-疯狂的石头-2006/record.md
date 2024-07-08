@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2006"
-date: 2021-07-03 22:59:15
+date: 2021-07-03 22:59:15+08:00
 douban:
   id: "1862151"
   title: 疯狂的石头

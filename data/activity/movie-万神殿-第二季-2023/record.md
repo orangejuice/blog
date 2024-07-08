@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2023"
-date: 2024-01-24 06:44:02
+date: 2024-01-24 06:44:02+08:00
 douban:
   id: "36067160"
   title: 万神殿 第二季

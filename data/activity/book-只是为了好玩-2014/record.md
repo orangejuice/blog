@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2014-7
-date: 2024-01-07 20:30:07
+date: 2024-01-07 20:30:07+08:00
 douban:
   id: "25930025"
   title: 只是为了好玩

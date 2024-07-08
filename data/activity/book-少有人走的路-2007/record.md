@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2007-1
-date: 2024-02-04 09:05:16
+date: 2024-02-04 09:05:16+08:00
 douban:
   id: "1775691"
   title: 少有人走的路

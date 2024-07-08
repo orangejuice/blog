@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2022"
-date: 2024-02-20 03:36:40
+date: 2024-02-20 03:36:40+08:00
 douban:
   id: "35136799"
   title: 众神之地

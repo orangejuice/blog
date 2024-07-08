@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 1998-01-01
-date: 2023-09-02 07:51:19
+date: 2023-09-02 07:51:19+08:00
 douban:
   id: "1545906"
   title: 汉唐饮食文化史

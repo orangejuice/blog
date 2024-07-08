@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2015-1
-date: 2022-04-02 11:00:38
+date: 2022-04-02 11:00:38+08:00
 douban:
   id: "25887933"
   title: 白痴

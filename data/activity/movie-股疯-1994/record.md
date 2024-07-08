@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1994"
-date: 2024-01-10 18:02:13
+date: 2024-01-10 18:02:13+08:00
 douban:
   id: "1299441"
   title: 股疯

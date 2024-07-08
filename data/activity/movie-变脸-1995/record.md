@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "1995"
-date: 2021-08-18 04:31:24
+date: 2021-08-18 04:31:24+08:00
 douban:
   id: "1293237"
   title: 变脸

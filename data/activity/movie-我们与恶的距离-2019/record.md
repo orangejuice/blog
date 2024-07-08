@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2019"
-date: 2019-08-07 04:43:37
+date: 2019-08-07 04:43:37+08:00
 douban:
   id: "30181230"
   title: 我们与恶的距离

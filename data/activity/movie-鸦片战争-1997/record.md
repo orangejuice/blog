@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1997"
-date: 2021-01-03 00:25:50
+date: 2021-01-03 00:25:50+08:00
 douban:
   id: "1305366"
   title: 鸦片战争

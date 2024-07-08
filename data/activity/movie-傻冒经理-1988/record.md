@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1988"
-date: 2024-02-11 03:36:12
+date: 2024-02-11 03:36:12+08:00
 douban:
   id: "1299840"
   title: 傻冒经理

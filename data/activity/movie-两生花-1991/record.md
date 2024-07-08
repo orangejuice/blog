@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 1
 year: "1991"
-date: 2022-12-20 05:20:02
+date: 2022-12-20 05:20:02+08:00
 douban:
   id: "1291877"
   title: 两生花

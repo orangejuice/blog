@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2000-9
-date: 2024-03-18 07:21:39
+date: 2024-03-18 07:21:39+08:00
 douban:
   id: "1068920"
   title: 飘

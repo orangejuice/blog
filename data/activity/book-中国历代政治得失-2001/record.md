@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: "2001"
-date: 2020-10-28 23:35:55
+date: 2020-10-28 23:35:55+08:00
 douban:
   id: "1003479"
   title: 中国历代政治得失

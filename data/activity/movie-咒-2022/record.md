@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2022"
-date: 2022-07-17 12:47:19
+date: 2022-07-17 12:47:19+08:00
 douban:
   id: "34850561"
   title: 咒

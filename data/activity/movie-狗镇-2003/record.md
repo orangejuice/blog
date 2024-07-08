@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2003"
-date: 2022-08-09 21:43:22
+date: 2022-08-09 21:43:22+08:00
 douban:
   id: "1298759"
   title: 狗镇

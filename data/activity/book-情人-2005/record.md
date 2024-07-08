@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2005-7
-date: 2022-04-25 02:53:35
+date: 2022-04-25 02:53:35+08:00
 douban:
   id: "1400705"
   title: 情人

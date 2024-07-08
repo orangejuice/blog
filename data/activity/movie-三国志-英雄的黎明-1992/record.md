@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1992"
-date: 2021-01-11 23:04:17
+date: 2021-01-11 23:04:17+08:00
 douban:
   id: "4176665"
   title: 三国志：英雄的黎明

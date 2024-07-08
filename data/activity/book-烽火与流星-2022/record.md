@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-5
-date: 2023-10-09 17:14:33
+date: 2023-10-09 17:14:33+08:00
 douban:
   id: "35771803"
   title: 烽火与流星

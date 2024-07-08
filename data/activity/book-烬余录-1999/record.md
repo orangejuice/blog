@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 1999-3
-date: 2022-04-24 02:04:11
+date: 2022-04-24 02:04:11+08:00
 douban:
   id: "1459942"
   title: 烬余录

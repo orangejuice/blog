@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2019"
-date: 2021-04-10 02:56:47
+date: 2021-04-10 02:56:47+08:00
 douban:
   id: "34906732"
   title: 在京都小住

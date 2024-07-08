@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2008"
-date: 2021-09-04 02:46:08
+date: 2021-09-04 02:46:08+08:00
 douban:
   id: "3567203"
   title: 漫游世界建筑群

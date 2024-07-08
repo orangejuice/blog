@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-5-1
-date: 2022-05-21 22:21:36
+date: 2022-05-21 22:21:36+08:00
 douban:
   id: "5325618"
   title: 高效能人士的七个习惯

@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2014"
-date: 2022-01-24 21:38:47
+date: 2022-01-24 21:38:47+08:00
 douban:
   id: "25738406"
   title: 如晴天，似雨天

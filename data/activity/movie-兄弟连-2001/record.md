@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2001"
-date: 2021-02-20 06:55:33
+date: 2021-02-20 06:55:33+08:00
 douban:
   id: "1307847"
   title: 兄弟连

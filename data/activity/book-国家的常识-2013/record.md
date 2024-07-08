@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2013-4
-date: 2022-04-24 02:28:07
+date: 2022-04-24 02:28:07+08:00
 douban:
   id: "22806583"
   title: 国家的常识

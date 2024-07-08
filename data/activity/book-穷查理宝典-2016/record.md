@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2016-8-1
-date: 2023-11-29 09:48:54
+date: 2023-11-29 09:48:54+08:00
 douban:
   id: "26831789"
   title: 穷查理宝典

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1993"
-date: 2020-05-02 04:10:11
+date: 2020-05-02 04:10:11+08:00
 douban:
   id: "1300613"
   title: 土拨鼠之日

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2013-3
-date: 2023-09-26 11:10:36
+date: 2023-09-26 11:10:36+08:00
 douban:
   id: "24530465"
   title: 旧制度与大革命

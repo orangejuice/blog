@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1999"
-date: 2019-03-15 21:45:40
+date: 2019-03-15 21:45:40+08:00
 douban:
   id: "1295229"
   title: 木乃伊

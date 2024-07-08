@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "1974"
-date: 2020-05-03 02:02:07
+date: 2020-05-03 02:02:07+08:00
 douban:
   id: "1883701"
   title: 解放军在巴黎

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2014-7
-date: 2023-03-03 03:20:41
+date: 2023-03-03 03:20:41+08:00
 douban:
   id: "25968115"
   title: 激荡三十年：中国企业1978~2008. 上

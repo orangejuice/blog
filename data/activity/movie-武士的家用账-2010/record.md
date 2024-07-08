@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2010"
-date: 2021-11-15 17:22:58
+date: 2021-11-15 17:22:58+08:00
 douban:
   id: "4135741"
   title: 武士的家用账

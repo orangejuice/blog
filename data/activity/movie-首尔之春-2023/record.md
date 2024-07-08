@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2023"
-date: 2024-02-14 03:19:08
+date: 2024-02-14 03:19:08+08:00
 douban:
   id: "35712804"
   title: 首尔之春

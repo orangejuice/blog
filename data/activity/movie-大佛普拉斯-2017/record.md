@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 0
 year: "2017"
-date: 2022-01-13 04:35:35
+date: 2022-01-13 04:35:35+08:00
 douban:
   id: "27059130"
   title: 大佛普拉斯

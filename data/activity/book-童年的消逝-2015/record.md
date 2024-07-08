@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2015-5
-date: 2024-06-07 16:17:09
+date: 2024-06-07 16:17:09+08:00
 douban:
   id: "26319794"
   title: 童年的消逝

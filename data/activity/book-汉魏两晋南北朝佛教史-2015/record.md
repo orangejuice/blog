@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2015-12
-date: 2024-01-19 16:52:24
+date: 2024-01-19 16:52:24+08:00
 douban:
   id: "26733116"
   title: 汉魏两晋南北朝佛教史

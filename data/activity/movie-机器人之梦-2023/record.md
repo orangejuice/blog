@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2023"
-date: 2024-06-15 06:04:48
+date: 2024-06-15 06:04:48+08:00
 douban:
   id: "35426925"
   title: 机器人之梦

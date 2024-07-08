@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2008-12
-date: 2024-01-28 23:49:26
+date: 2024-01-28 23:49:26+08:00
 douban:
   id: "3525645"
   title: 蒙元入侵前夜的中国日常生活

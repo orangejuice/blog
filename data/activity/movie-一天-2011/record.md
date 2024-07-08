@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2011"
-date: 2024-01-29 05:47:43
+date: 2024-01-29 05:47:43+08:00
 douban:
   id: "4191644"
   title: 一天

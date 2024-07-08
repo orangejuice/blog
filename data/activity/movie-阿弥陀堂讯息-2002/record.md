@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2002"
-date: 2024-01-03 02:36:08
+date: 2024-01-03 02:36:08+08:00
 douban:
   id: "1937998"
   title: 阿弥陀堂讯息

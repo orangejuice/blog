@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-5
-date: 2024-05-08 04:16:29
+date: 2024-05-08 04:16:29+08:00
 douban:
   id: "27605362"
   title: 愤怒与神秘

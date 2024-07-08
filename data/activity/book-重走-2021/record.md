@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-5
-date: 2024-03-18 12:32:00
+date: 2024-03-18 12:32:00+08:00
 douban:
   id: "35436901"
   title: 重走

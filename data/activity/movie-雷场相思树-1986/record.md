@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1986"
-date: 2023-03-03 00:00:29
+date: 2023-03-03 00:00:29+08:00
 douban:
   id: "3609119"
   title: 雷场相思树

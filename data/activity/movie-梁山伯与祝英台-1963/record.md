@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "1963"
-date: 2021-02-01 04:21:59
+date: 2021-02-01 04:21:59+08:00
 douban:
   id: "1438020"
   title: 梁山伯与祝英台

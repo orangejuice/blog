@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 4
 year: 2017-1-1
-date: 2024-05-03 23:49:40
+date: 2024-05-03 23:49:40+08:00
 douban:
   id: "26954760"
   title: 月亮与六便士

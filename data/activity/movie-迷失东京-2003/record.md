@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2003"
-date: 2021-11-17 18:17:54
+date: 2021-11-17 18:17:54+08:00
 douban:
   id: "1291835"
   title: 迷失东京

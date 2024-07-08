@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "2021"
-date: 2021-09-17 00:46:47
+date: 2021-09-17 00:46:47+08:00
 douban:
   id: "30394797"
   title: 尚气与十环传奇

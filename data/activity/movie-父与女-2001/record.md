@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2001"
-date: 2024-06-16 17:15:31
+date: 2024-06-16 17:15:31+08:00
 douban:
   id: "1300395"
   title: 父与女

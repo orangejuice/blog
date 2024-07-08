@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: "1993"
-date: 2024-02-22 06:14:10
+date: 2024-02-22 06:14:10+08:00
 douban:
   id: "1311575"
   title: 笑林广记

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2008-1
-date: 2023-09-20 17:19:38
+date: 2023-09-20 17:19:38+08:00
 douban:
   id: "2991664"
   title: 相约星期二

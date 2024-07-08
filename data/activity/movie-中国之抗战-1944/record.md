@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "1944"
-date: 2024-06-16 03:35:48
+date: 2024-06-16 03:35:48+08:00
 douban:
   id: "1428230"
   title: 中国之抗战

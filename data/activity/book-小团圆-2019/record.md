@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2019-3
-date: 2024-05-09 21:33:46
+date: 2024-05-09 21:33:46+08:00
 douban:
   id: "30294360"
   title: 小团圆

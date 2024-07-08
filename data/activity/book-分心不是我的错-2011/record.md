@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 4
 year: 2011-6-1
-date: 2024-05-06 04:48:13
+date: 2024-05-06 04:48:13+08:00
 douban:
   id: "6516304"
   title: 分心不是我的错

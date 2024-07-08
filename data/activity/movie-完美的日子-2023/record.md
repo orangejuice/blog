@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2023"
-date: 2024-04-30 01:28:34
+date: 2024-04-30 01:28:34+08:00
 douban:
   id: "35902857"
   title: 完美的日子

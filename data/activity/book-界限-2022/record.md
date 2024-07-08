@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-1-25
-date: 2022-03-16 16:59:59
+date: 2022-03-16 16:59:59+08:00
 douban:
   id: "35749698"
   title: 界限

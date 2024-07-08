@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2006"
-date: 2023-05-13 17:14:50
+date: 2023-05-13 17:14:50+08:00
 douban:
   id: "3765826"
   title: 蒙古草原，天气晴

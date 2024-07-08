@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2012-6-1
-date: 2024-03-27 06:55:16
+date: 2024-03-27 06:55:16+08:00
 douban:
   id: "10757940"
   title: 倾城之恋

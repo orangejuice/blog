@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2016"
-date: 2024-04-25 04:13:36
+date: 2024-04-25 04:13:36+08:00
 douban:
   id: "26823498"
   title: 曲面

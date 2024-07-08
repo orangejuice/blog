@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2023-2
-date: 2023-10-16 17:44:40
+date: 2023-10-16 17:44:40+08:00
 douban:
   id: "35881797"
   title: 汉帝国的建立与刘邦集团

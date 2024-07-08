@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2014-10
-date: 2023-08-26 04:47:49
+date: 2023-08-26 04:47:49+08:00
 douban:
   id: "26142366"
   title: 中国巨债

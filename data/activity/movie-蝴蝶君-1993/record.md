@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "1993"
-date: 2022-10-29 07:48:03
+date: 2022-10-29 07:48:03+08:00
 douban:
   id: "1293643"
   title: 蝴蝶君

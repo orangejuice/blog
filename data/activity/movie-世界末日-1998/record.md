@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "1998"
-date: 2024-05-16 00:14:00
+date: 2024-05-16 00:14:00+08:00
 douban:
   id: "1292769"
   title: 世界末日

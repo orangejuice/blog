@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-1
-date: 2024-05-13 01:04:33
+date: 2024-05-13 01:04:33+08:00
 douban:
   id: "30181152"
   title: 情商（2版）

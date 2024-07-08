@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-5
-date: 2024-01-09 09:48:22
+date: 2024-01-09 09:48:22+08:00
 douban:
   id: "35229300"
   title: Distant Shores

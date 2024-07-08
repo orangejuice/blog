@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-1
-date: 2022-12-14 07:27:18
+date: 2022-12-14 07:27:18+08:00
 douban:
   id: "35653981"
   title: 请你安静些，好吗？

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2020"
-date: 2020-01-26 04:38:22
+date: 2020-01-26 04:38:22+08:00
 douban:
   id: "30438115"
   title: 性爱自修室 第二季

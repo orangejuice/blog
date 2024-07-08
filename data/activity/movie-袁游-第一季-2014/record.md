@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2014"
-date: 2020-12-20 02:08:01
+date: 2020-12-20 02:08:01+08:00
 douban:
   id: "26289092"
   title: 袁游 第一季

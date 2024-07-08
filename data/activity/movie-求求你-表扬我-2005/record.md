@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2005"
-date: 2022-10-26 01:39:11
+date: 2022-10-26 01:39:11+08:00
 douban:
   id: "1438041"
   title: 求求你，表扬我

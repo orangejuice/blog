@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2010-3
-date: 2024-04-02 03:04:06
+date: 2024-04-02 03:04:06+08:00
 douban:
   id: "4252091"
   title: 午夜的沉默

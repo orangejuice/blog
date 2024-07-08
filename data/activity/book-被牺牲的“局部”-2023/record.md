@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2023-2
-date: 2023-10-21 21:05:23
+date: 2023-10-21 21:05:23+08:00
 douban:
   id: "35998414"
   title: 被牺牲的“局部”

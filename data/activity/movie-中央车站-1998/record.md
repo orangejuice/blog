@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1998"
-date: 2020-07-25 03:42:09
+date: 2020-07-25 03:42:09+08:00
 douban:
   id: "1292218"
   title: 中央车站

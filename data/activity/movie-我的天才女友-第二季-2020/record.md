@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2020"
-date: 2020-08-04 03:55:20
+date: 2020-08-04 03:55:20+08:00
 douban:
   id: "30395843"
   title: 我的天才女友 第二季

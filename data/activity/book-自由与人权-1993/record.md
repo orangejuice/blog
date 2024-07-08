@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 1993年
-date: 2023-08-18 01:01:11
+date: 2023-08-18 01:01:11+08:00
 douban:
   id: "2311808"
   title: 自由与人权

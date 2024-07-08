@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1995"
-date: 2022-04-23 04:55:08
+date: 2022-04-23 04:55:08+08:00
 douban:
   id: "1292223"
   title: 七宗罪

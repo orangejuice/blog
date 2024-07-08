@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2008"
-date: 2020-07-01 03:46:20
+date: 2020-07-01 03:46:20+08:00
 douban:
   id: "2222996"
   title: 步履不停

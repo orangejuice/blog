@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2021-1
-date: 2023-09-21 07:29:06
+date: 2023-09-21 07:29:06+08:00
 douban:
   id: "35301514"
   title: 中美相遇

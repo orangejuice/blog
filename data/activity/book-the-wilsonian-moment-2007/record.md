@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2007-7-1
-date: 2023-06-05 21:14:50
+date: 2023-06-05 21:14:50+08:00
 douban:
   id: "2445977"
   title: The Wilsonian Moment

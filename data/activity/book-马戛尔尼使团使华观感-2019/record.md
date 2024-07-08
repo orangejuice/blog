@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2019-2
-date: 2023-11-24 18:42:48
+date: 2023-11-24 18:42:48+08:00
 douban:
   id: "30367974"
   title: 马戛尔尼使团使华观感

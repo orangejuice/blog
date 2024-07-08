@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2019-4-1
-date: 2024-01-13 07:40:27
+date: 2024-01-13 07:40:27+08:00
 douban:
   id: "33406377"
   title: 战胜一切市场的人

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2024-4
-date: 2024-05-19 17:16:24
+date: 2024-05-19 17:16:24+08:00
 douban:
   id: "36580716"
   title: 醉在中国

@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2001"
-date: 2022-04-29 04:18:40
+date: 2022-04-29 04:18:40+08:00
 douban:
   id: "1294853"
   title: 色戒

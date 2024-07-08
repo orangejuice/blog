@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2015"
-date: 2021-07-04 04:40:19
+date: 2021-07-04 04:40:19+08:00
 douban:
   id: "26700520"
   title: 太阳之下

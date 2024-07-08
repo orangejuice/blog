@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2001"
-date: 2023-08-13 06:26:34
+date: 2023-08-13 06:26:34+08:00
 douban:
   id: "1295929"
   title: 安阳婴儿

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2007"
-date: 2020-02-08 22:25:52
+date: 2020-02-08 22:25:52+08:00
 douban:
   id: "2342574"
   title: 天仙配

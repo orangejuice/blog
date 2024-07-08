@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2017"
-date: 2021-06-17 05:12:11
+date: 2021-06-17 05:12:11+08:00
 douban:
   id: "35026099"
   title: 中国王朝 女性传说 恶女的真相

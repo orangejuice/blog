@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "1980"
-date: 2023-09-02 18:28:34
+date: 2023-09-02 18:28:34+08:00
 douban:
   id: "1433579"
   title: 巴山夜雨

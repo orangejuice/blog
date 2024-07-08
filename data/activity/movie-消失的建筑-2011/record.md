@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "2011"
-date: 2021-08-06 23:23:30
+date: 2021-08-06 23:23:30+08:00
 douban:
   id: "5965541"
   title: 消失的建筑

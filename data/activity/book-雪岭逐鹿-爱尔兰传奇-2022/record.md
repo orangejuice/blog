@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-1
-date: 2021-12-19 20:59:40
+date: 2021-12-19 20:59:40+08:00
 douban:
   id: "35701362"
   title: 雪岭逐鹿：爱尔兰传奇

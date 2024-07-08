@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2014"
-date: 2020-05-30 02:59:34
+date: 2020-05-30 02:59:34+08:00
 douban:
   id: "11525673"
   title: 布达佩斯大饭店

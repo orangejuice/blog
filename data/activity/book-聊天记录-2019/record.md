@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2019-7-22
-date: 2022-06-27 10:46:57
+date: 2022-06-27 10:46:57+08:00
 douban:
   id: "33422832"
   title: 聊天记录

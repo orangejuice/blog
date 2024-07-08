@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2011-8
-date: 2023-10-12 16:12:56
+date: 2023-10-12 16:12:56+08:00
 douban:
   id: "6781745"
   title: 民国语文

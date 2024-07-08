@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2023-8
-date: 2023-09-21 04:44:01
+date: 2023-09-21 04:44:01+08:00
 douban:
   id: "36546380"
   title: A Brief History of Ancient China

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2021"
-date: 2021-10-04 05:19:29
+date: 2021-10-04 05:19:29+08:00
 douban:
   id: "30337388"
   title: 失控玩家

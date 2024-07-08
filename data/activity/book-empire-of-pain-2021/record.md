@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-4-13
-date: 2024-02-04 09:33:20
+date: 2024-02-04 09:33:20+08:00
 douban:
   id: "35455076"
   title: Empire of Pain

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2015"
-date: 2020-06-27 22:27:36
+date: 2020-06-27 22:27:36+08:00
 douban:
   id: "26394212"
   title: 腾飞五千年之春秋战国

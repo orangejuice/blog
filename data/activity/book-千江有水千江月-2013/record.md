@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2013-1
-date: 2021-11-18 22:10:14
+date: 2021-11-18 22:10:14+08:00
 douban:
   id: "20428088"
   title: 千江有水千江月

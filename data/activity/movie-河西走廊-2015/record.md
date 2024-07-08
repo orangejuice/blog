@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2015"
-date: 2021-08-11 05:12:15
+date: 2021-08-11 05:12:15+08:00
 douban:
   id: "24736278"
   title: 河西走廊

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-11
-date: 2023-10-04 07:18:33
+date: 2023-10-04 07:18:33+08:00
 douban:
   id: "36136538"
   title: 汉水的身世

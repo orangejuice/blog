@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-9
-date: 2022-12-23 01:44:15
+date: 2022-12-23 01:44:15+08:00
 douban:
   id: "36091480"
   title: 手机大脑

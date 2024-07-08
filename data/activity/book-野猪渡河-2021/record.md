@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-1
-date: 2024-05-04 16:16:58
+date: 2024-05-04 16:16:58+08:00
 douban:
   id: "35197299"
   title: 野猪渡河

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2005"
-date: 2020-11-28 22:35:21
+date: 2020-11-28 22:35:21+08:00
 douban:
   id: "6433913"
   title: 伟大的旅人郑和

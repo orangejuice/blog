@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2004"
-date: 2020-07-19 21:55:57
+date: 2020-07-19 21:55:57+08:00
 douban:
   id: "1291550"
   title: 天下无贼

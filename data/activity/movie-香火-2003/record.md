@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2003"
-date: 2021-07-10 03:31:56
+date: 2021-07-10 03:31:56+08:00
 douban:
   id: "1754628"
   title: 香火

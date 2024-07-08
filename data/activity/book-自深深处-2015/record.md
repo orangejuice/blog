@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2015-10
-date: 2024-01-27 05:58:10
+date: 2024-01-27 05:58:10+08:00
 douban:
   id: "26286299"
   title: 自深深处

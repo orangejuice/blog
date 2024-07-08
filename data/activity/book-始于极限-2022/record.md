@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-9-20
-date: 2023-08-28 08:01:38
+date: 2023-08-28 08:01:38+08:00
 douban:
   id: "35966120"
   title: 始于极限

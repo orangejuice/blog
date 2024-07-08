@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-2-1
-date: 2022-06-21 21:46:17
+date: 2022-06-21 21:46:17+08:00
 douban:
   id: "35695541"
   title: 我本芬芳

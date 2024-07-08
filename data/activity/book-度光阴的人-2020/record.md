@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2020-7
-date: 2024-05-05 15:30:09
+date: 2024-05-05 15:30:09+08:00
 douban:
   id: "35125791"
   title: 度光阴的人

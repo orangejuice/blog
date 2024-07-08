@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-7
-date: 2024-02-17 22:52:50
+date: 2024-02-17 22:52:50+08:00
 douban:
   id: "35478619"
   title: 尤利西斯

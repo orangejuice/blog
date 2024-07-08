@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2020"
-date: 2023-07-15 17:00:29
+date: 2023-07-15 17:00:29+08:00
 douban:
   id: "34439631"
   title: 蓝调天后

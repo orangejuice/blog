@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1992"
-date: 2023-05-28 23:30:41
+date: 2023-05-28 23:30:41+08:00
 douban:
   id: "1293388"
   title: 冬天的故事

@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1994"
-date: 2023-05-10 01:18:46
+date: 2023-05-10 01:18:46+08:00
 douban:
   id: "2264216"
   title: 过把瘾

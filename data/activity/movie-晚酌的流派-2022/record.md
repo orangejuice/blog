@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2022"
-date: 2024-01-01 02:19:24
+date: 2024-01-01 02:19:24+08:00
 douban:
   id: "35911746"
   title: 晚酌的流派

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2023-10
-date: 2023-12-26 07:54:18
+date: 2023-12-26 07:54:18+08:00
 douban:
   id: "36583372"
   title: 威科夫2.0

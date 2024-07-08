@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2016"
-date: 2021-06-14 04:02:20
+date: 2021-06-14 04:02:20+08:00
 douban:
   id: "27034770"
   title: 中国王朝 苏醒的传说 乾隆与香妃

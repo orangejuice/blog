@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2010"
-date: 2021-11-11 06:58:38
+date: 2021-11-11 06:58:38+08:00
 douban:
   id: "4226460"
   title: 苍穹之昴

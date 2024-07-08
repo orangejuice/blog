@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1991"
-date: 2024-02-01 18:56:04
+date: 2024-02-01 18:56:04+08:00
 douban:
   id: "1293323"
   title: 大红灯笼高高挂

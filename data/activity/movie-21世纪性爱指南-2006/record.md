@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2006"
-date: 2022-03-27 15:09:57
+date: 2022-03-27 15:09:57+08:00
 douban:
   id: "3149755"
   title: 21世纪性爱指南

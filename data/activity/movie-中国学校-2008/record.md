@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2008"
-date: 2021-03-01 04:01:32
+date: 2021-03-01 04:01:32+08:00
 douban:
   id: "3013622"
   title: 中国学校

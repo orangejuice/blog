@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2020-7
-date: 2021-10-30 06:02:52
+date: 2021-10-30 06:02:52+08:00
 douban:
   id: "35088406"
   title: 阿尔伯特·卡恩的理想国：黑白时代的彩色世界史

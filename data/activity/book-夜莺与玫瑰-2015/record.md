@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2015-4
-date: 2024-03-18 16:22:30
+date: 2024-03-18 16:22:30+08:00
 douban:
   id: "26344078"
   title: 夜莺与玫瑰

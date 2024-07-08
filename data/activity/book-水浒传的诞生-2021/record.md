@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-11
-date: 2022-03-15 09:21:21
+date: 2022-03-15 09:21:21+08:00
 douban:
   id: "35661453"
   title: 水浒传的诞生

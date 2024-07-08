@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-3
-date: 2023-07-26 17:57:25
+date: 2023-07-26 17:57:25+08:00
 douban:
   id: "30235748"
   title: 艽野尘梦

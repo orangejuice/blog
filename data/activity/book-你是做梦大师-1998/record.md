@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 1998-4
-date: 2019-01-28 04:09:48
+date: 2019-01-28 04:09:48+08:00
 douban:
   id: "2227642"
   title: 你是做梦大师

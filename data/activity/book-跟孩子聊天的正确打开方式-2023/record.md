@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2023-9
-date: 2023-09-29 22:42:38
+date: 2023-09-29 22:42:38+08:00
 douban:
   id: "36515732"
   title: 跟孩子聊天的正确打开方式

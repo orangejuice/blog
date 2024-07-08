@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1997"
-date: 2022-05-02 14:45:27
+date: 2022-05-02 14:45:27+08:00
 douban:
   id: "11758097"
   title: 西厢艳谭

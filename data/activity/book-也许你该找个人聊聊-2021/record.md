@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-7-28
-date: 2022-01-10 10:03:46
+date: 2022-01-10 10:03:46+08:00
 douban:
   id: "35481512"
   title: 也许你该找个人聊聊

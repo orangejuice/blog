@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2016-4
-date: 2023-11-30 03:59:40
+date: 2023-11-30 03:59:40+08:00
 douban:
   id: "26769136"
   title: 为什么长大？

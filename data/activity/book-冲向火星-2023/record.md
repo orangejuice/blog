@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2023-6
-date: 2024-06-27 06:23:19
+date: 2024-06-27 06:23:19+08:00
 douban:
   id: "36429009"
   title: 冲向火星

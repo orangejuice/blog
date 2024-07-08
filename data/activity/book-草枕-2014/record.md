@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2014-6
-date: 2023-05-10 22:27:18
+date: 2023-05-10 22:27:18+08:00
 douban:
   id: "25883054"
   title: 草枕

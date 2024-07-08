@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2006"
-date: 2021-01-24 05:22:36
+date: 2021-01-24 05:22:36+08:00
 douban:
   id: "1450031"
   title: 启示

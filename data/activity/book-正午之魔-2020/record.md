@@ -4,7 +4,7 @@ category: book
 status: doing
 rating: 0
 year: 2020-10
-date: 2021-12-21 00:57:20
+date: 2021-12-21 00:57:20+08:00
 douban:
   id: "35217266"
   title: 正午之魔

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2007"
-date: 2021-01-01 23:13:58
+date: 2021-01-01 23:13:58+08:00
 douban:
   id: "34447335"
   title: 关口知宏之中国铁道大纪行

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2002"
-date: 2021-11-13 22:27:49
+date: 2021-11-13 22:27:49+08:00
 douban:
   id: "1306123"
   title: 英雄

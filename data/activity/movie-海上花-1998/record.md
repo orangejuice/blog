@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1998"
-date: 2022-12-29 09:00:47
+date: 2022-12-29 09:00:47+08:00
 douban:
   id: "1303451"
   title: 海上花

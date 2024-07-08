@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2001"
-date: 2024-07-07 22:25:27
+date: 2024-07-07 22:25:27+08:00
 douban:
   id: "1295038"
   title: 哈利·波特与魔法石

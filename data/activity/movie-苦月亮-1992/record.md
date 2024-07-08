@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1992"
-date: 2022-04-29 04:10:43
+date: 2022-04-29 04:10:43+08:00
 douban:
   id: "1301582"
   title: 苦月亮

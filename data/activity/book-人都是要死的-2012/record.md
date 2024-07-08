@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2012-1
-date: 2024-02-10 08:28:32
+date: 2024-02-10 08:28:32+08:00
 douban:
   id: "6310320"
   title: 人都是要死的

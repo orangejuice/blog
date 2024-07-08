@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2002"
-date: 2022-10-30 22:44:43
+date: 2022-10-30 22:44:43+08:00
 douban:
   id: "1306612"
   title: 蜘蛛侠

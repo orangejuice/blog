@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2019"
-date: 2021-06-08 03:33:11
+date: 2021-06-08 03:33:11+08:00
 douban:
   id: "34784801"
   title: 朝鲜世界2019

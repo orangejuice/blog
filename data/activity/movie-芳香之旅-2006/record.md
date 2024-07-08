@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2006"
-date: 2022-12-04 00:32:12
+date: 2022-12-04 00:32:12+08:00
 douban:
   id: "1463961"
   title: 芳香之旅

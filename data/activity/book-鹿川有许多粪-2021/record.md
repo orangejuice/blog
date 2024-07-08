@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-8
-date: 2022-03-24 08:51:45
+date: 2022-03-24 08:51:45+08:00
 douban:
   id: "35517022"
   title: 鹿川有许多粪

@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1985"
-date: 2022-04-29 04:13:27
+date: 2022-04-29 04:13:27+08:00
 douban:
   id: "1303609"
   title: 夜叉

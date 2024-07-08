@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2018"
-date: 2021-04-11 03:33:15
+date: 2021-04-11 03:33:15+08:00
 douban:
   id: "27185563"
   title: 日日是好日

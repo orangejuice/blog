@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 0
 year: "1962"
-date: 2020-10-27 03:33:23
+date: 2020-10-27 03:33:23+08:00
 douban:
   id: "1294421"
   title: 伊万的童年

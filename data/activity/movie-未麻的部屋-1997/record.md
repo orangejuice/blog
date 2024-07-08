@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1997"
-date: 2023-10-12 16:10:58
+date: 2023-10-12 16:10:58+08:00
 douban:
   id: "1395091"
   title: 未麻的部屋

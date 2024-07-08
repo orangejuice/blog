@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 1989-5
-date: 2024-01-09 08:13:22
+date: 2024-01-09 08:13:22+08:00
 douban:
   id: "2121681"
   title: 洛丽塔

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2017-7
-date: 2022-01-17 19:32:27
+date: 2022-01-17 19:32:27+08:00
 douban:
   id: "27037167"
   title: 冷暴力

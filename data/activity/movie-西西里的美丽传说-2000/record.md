@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2000"
-date: 2020-07-16 03:43:53
+date: 2020-07-16 03:43:53+08:00
 douban:
   id: "1292402"
   title: 西西里的美丽传说

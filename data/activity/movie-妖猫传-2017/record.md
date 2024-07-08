@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "2017"
-date: 2021-06-27 04:33:59
+date: 2021-06-27 04:33:59+08:00
 douban:
   id: "5350027"
   title: 妖猫传

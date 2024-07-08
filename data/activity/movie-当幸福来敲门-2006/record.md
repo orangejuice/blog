@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2006"
-date: 2024-04-28 06:40:41
+date: 2024-04-28 06:40:41+08:00
 douban:
   id: "1849031"
   title: 当幸福来敲门

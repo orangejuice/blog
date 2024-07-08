@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2021"
-date: 2021-10-07 22:38:05
+date: 2021-10-07 22:38:05+08:00
 douban:
   id: "34812928"
   title: 鱿鱼游戏 第一季

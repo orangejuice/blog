@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2009"
-date: 2020-07-09 20:08:19
+date: 2020-07-09 20:08:19+08:00
 douban:
   id: "25823618"
   title: 公正

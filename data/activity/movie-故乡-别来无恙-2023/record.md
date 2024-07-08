@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2023"
-date: 2023-11-26 19:09:37
+date: 2023-11-26 19:09:37+08:00
 douban:
   id: "36059766"
   title: 故乡，别来无恙

@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2016"
-date: 2023-11-29 22:32:10
+date: 2023-11-29 22:32:10+08:00
 douban:
   id: "25835285"
   title: 男与女

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-1
-date: 2024-06-12 06:33:44
+date: 2024-06-12 06:33:44+08:00
 douban:
   id: "30180465"
   title: 中国人的性格

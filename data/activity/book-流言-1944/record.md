@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: "1944"
-date: 2022-03-30 06:58:14
+date: 2022-03-30 06:58:14+08:00
 douban:
   id: "1441279"
   title: 流言

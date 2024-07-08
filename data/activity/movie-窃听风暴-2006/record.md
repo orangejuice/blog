@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2006"
-date: 2019-11-02 19:03:25
+date: 2019-11-02 19:03:25+08:00
 douban:
   id: "1900841"
   title: 窃听风暴

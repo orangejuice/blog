@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2019-4
-date: 2021-12-09 15:41:55
+date: 2021-12-09 15:41:55+08:00
 douban:
   id: "33218302"
   title: IKIGAI:冲绳岛幸福长寿秘诀

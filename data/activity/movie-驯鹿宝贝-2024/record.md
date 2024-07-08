@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2024"
-date: 2024-04-25 19:11:08
+date: 2024-04-25 19:11:08+08:00
 douban:
   id: "36151169"
   title: 驯鹿宝贝

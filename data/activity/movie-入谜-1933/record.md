@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1933"
-date: 2019-03-12 23:36:03
+date: 2019-03-12 23:36:03+08:00
 douban:
   id: "1950010"
   title: 入谜

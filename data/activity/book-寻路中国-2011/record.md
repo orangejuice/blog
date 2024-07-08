@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2011-1
-date: 2024-05-04 21:26:51
+date: 2024-05-04 21:26:51+08:00
 douban:
   id: "5414391"
   title: 寻路中国

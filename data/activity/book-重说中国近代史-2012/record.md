@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2012-2
-date: 2021-06-25 03:58:27
+date: 2021-06-25 03:58:27+08:00
 douban:
   id: "10472702"
   title: 重说中国近代史

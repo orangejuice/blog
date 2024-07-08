@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2005"
-date: 2020-07-24 06:18:30
+date: 2020-07-24 06:18:30+08:00
 douban:
   id: "2328234"
   title: 地球公民

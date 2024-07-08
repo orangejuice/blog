@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2014-12-1
-date: 2024-05-16 18:00:45
+date: 2024-05-16 18:00:45+08:00
 douban:
   id: "26278687"
   title: 皮囊

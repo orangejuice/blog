@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2004"
-date: 2023-04-02 05:03:54
+date: 2023-04-02 05:03:54+08:00
 douban:
   id: "1308807"
   title: 哈尔的移动城堡

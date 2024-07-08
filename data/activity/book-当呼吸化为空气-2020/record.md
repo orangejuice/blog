@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2020-12
-date: 2022-12-30 23:14:14
+date: 2022-12-30 23:14:14+08:00
 douban:
   id: "35182240"
   title: 当呼吸化为空气

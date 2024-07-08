@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2018"
-date: 2019-03-22 05:43:51
+date: 2019-03-22 05:43:51+08:00
 douban:
   id: "28427782"
   title: 我的天才女友 第一季

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2014-9-25
-date: 2023-04-13 06:13:59
+date: 2023-04-13 06:13:59+08:00
 douban:
   id: "26291898"
   title: The Body Keeps the Score

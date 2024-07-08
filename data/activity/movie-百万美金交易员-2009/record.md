@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2009"
-date: 2023-09-18 17:26:15
+date: 2023-09-18 17:26:15+08:00
 douban:
   id: "25814928"
   title: 百万美金交易员

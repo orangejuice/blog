@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2018"
-date: 2019-03-25 07:09:43
+date: 2019-03-25 07:09:43+08:00
 douban:
   id: "30167509"
   title: 徒手攀岩

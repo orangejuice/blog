@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1953"
-date: 2019-01-26 06:40:35
+date: 2019-01-26 06:40:35+08:00
 douban:
   id: "1293839"
   title: 罗马假日

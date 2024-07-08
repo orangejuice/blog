@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2020"
-date: 2020-11-29 05:05:50
+date: 2020-11-29 05:05:50+08:00
 douban:
   id: "35196485"
   title: 星空瞰华夏

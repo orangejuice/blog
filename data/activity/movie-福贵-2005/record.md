@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "2005"
-date: 2021-08-10 20:32:18
+date: 2021-08-10 20:32:18+08:00
 douban:
   id: "2357303"
   title: 福贵

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2020"
-date: 2020-11-07 23:37:00
+date: 2020-11-07 23:37:00+08:00
 douban:
   id: "35202302"
   title: 17.3 关于性

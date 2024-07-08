@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2007"
-date: 2024-06-18 00:09:10
+date: 2024-06-18 00:09:10+08:00
 douban:
   id: "2237378"
   title: 在世界尽头相遇

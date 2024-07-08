@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1993"
-date: 2019-10-26 23:24:46
+date: 2019-10-26 23:24:46+08:00
 douban:
   id: "1295124"
   title: 辛德勒的名单

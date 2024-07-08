@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2017-7
-date: 2022-01-30 20:59:30
+date: 2022-01-30 20:59:30+08:00
 douban:
   id: "27073686"
   title: 梳毛、八卦及语言的进化

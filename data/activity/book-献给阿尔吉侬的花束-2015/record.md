@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 4
 year: 2015-4
-date: 2024-02-02 22:56:53
+date: 2024-02-02 22:56:53+08:00
 douban:
   id: "26362836"
   title: 献给阿尔吉侬的花束

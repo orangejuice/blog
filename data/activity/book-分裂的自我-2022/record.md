@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-5
-date: 2024-03-26 04:23:58
+date: 2024-03-26 04:23:58+08:00
 douban:
   id: "35914028"
   title: 分裂的自我

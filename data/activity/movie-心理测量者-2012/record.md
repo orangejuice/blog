@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 1
 year: "2012"
-date: 2024-05-18 04:49:03
+date: 2024-05-18 04:49:03+08:00
 douban:
   id: "10569144"
   title: 心理测量者

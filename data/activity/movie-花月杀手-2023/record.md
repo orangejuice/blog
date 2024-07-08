@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2023"
-date: 2023-12-29 08:28:47
+date: 2023-12-29 08:28:47+08:00
 douban:
   id: "26745332"
   title: 花月杀手

@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2023"
-date: 2023-02-26 17:54:53
+date: 2023-02-26 17:54:53+08:00
 douban:
   id: "35791966"
   title: 千寻小姐

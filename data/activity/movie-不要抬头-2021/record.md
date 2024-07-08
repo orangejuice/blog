@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2021"
-date: 2022-01-06 23:15:31
+date: 2022-01-06 23:15:31+08:00
 douban:
   id: "34884712"
   title: 不要抬头

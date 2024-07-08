@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2007"
-date: 2019-01-24 08:09:24
+date: 2019-01-24 08:09:24+08:00
 douban:
   id: "2267155"
   title: 请为我投票

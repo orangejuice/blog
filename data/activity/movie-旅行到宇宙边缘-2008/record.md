@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2008"
-date: 2021-11-12 04:52:45
+date: 2021-11-12 04:52:45+08:00
 douban:
   id: "3595323"
   title: 旅行到宇宙边缘

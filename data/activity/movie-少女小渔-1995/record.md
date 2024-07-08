@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1995"
-date: 2020-08-21 04:58:33
+date: 2020-08-21 04:58:33+08:00
 douban:
   id: "1308130"
   title: 少女小渔

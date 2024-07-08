@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2014"
-date: 2022-02-15 07:09:19
+date: 2022-02-15 07:09:19+08:00
 douban:
   id: "25717233"
   title: 心花路放

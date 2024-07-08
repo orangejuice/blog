@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2008"
-date: 2020-03-29 22:43:37
+date: 2020-03-29 22:43:37+08:00
 douban:
   id: "2213597"
   title: 朗读者

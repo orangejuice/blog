@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-4-8
-date: 2024-04-12 10:17:39
+date: 2024-04-12 10:17:39+08:00
 douban:
   id: "35377300"
   title: 自控力：斯坦福大学广受欢迎的心理学课程（400万册纪念版）

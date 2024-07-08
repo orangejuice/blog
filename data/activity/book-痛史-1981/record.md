@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: "1981"
-date: 2022-01-21 01:01:13
+date: 2022-01-21 01:01:13+08:00
 douban:
   id: "2158577"
   title: 痛史

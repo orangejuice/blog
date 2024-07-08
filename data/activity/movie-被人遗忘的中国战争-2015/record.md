@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2015"
-date: 2021-10-17 22:27:25
+date: 2021-10-17 22:27:25+08:00
 douban:
   id: "34676448"
   title: 被人遗忘的中国战争

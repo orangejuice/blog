@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1990"
-date: 2024-04-28 14:10:16
+date: 2024-04-28 14:10:16+08:00
 douban:
   id: "1293034"
   title: 遮蔽的天空

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 1
 year: "1981"
-date: 2023-08-31 00:25:24
+date: 2023-08-31 00:25:24+08:00
 douban:
   id: "1296717"
   title: 夺宝奇兵

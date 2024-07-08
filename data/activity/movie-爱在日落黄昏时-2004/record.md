@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2004"
-date: 2019-10-06 02:53:16
+date: 2019-10-06 02:53:16+08:00
 douban:
   id: "1291990"
   title: 爱在日落黄昏时

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2012-2-1
-date: 2022-01-29 23:06:46
+date: 2022-01-29 23:06:46+08:00
 douban:
   id: "10486418"
   title: 十一种孤独

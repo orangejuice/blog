@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 0
 year: "1989"
-date: 2020-08-25 04:40:30
+date: 2020-08-25 04:40:30+08:00
 douban:
   id: "1294194"
   title: 悲情城市

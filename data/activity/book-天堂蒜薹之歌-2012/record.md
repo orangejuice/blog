@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2012-10-1
-date: 2021-11-05 23:38:01
+date: 2021-11-05 23:38:01+08:00
 douban:
   id: "19977690"
   title: 天堂蒜薹之歌

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2014-11
-date: 2023-11-03 08:19:30
+date: 2023-11-03 08:19:30+08:00
 douban:
   id: "25985021"
   title: 人类简史

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2015"
-date: 2019-08-26 23:05:52
+date: 2019-08-26 23:05:52+08:00
 douban:
   id: "26639128"
   title: 新映像的世纪

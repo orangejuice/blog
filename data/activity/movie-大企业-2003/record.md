@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2003"
-date: 2023-12-03 05:56:56
+date: 2023-12-03 05:56:56+08:00
 douban:
   id: "1401906"
   title: 大企业

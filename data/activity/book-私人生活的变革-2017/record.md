@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2017-3
-date: 2023-10-01 00:20:21
+date: 2023-10-01 00:20:21+08:00
 douban:
   id: "26952345"
   title: 私人生活的变革

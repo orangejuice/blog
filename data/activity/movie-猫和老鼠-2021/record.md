@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 1
 year: "2021"
-date: 2023-09-18 04:32:41
+date: 2023-09-18 04:32:41+08:00
 douban:
   id: "3439312"
   title: 猫和老鼠

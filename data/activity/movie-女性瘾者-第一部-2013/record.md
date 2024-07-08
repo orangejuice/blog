@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2013"
-date: 2021-12-23 12:35:13
+date: 2021-12-23 12:35:13+08:00
 douban:
   id: "6827727"
   title: 女性瘾者：第一部

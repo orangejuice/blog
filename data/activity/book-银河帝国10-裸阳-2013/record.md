@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2013-6-15
-date: 2023-08-31 22:05:31
+date: 2023-08-31 22:05:31+08:00
 douban:
   id: "24531334"
   title: 银河帝国10：裸阳

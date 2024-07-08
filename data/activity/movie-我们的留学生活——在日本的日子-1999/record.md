@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1999"
-date: 2020-11-18 04:06:21
+date: 2020-11-18 04:06:21+08:00
 douban:
   id: "2299372"
   title: 我们的留学生活——在日本的日子

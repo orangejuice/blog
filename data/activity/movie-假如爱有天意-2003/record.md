@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2003"
-date: 2020-09-02 04:47:38
+date: 2020-09-02 04:47:38+08:00
 douban:
   id: "1304073"
   title: 假如爱有天意

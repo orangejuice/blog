@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2011"
-date: 2020-01-20 05:38:56
+date: 2020-01-20 05:38:56+08:00
 douban:
   id: "5322596"
   title: 超脱

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 1
 year: "2013"
-date: 2021-09-01 17:44:05
+date: 2021-09-01 17:44:05+08:00
 douban:
   id: "25785899"
   title: 长城：中国的故事

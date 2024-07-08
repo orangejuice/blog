@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 0
 year: 2003-7
-date: 2020-11-18 04:17:33
+date: 2020-11-18 04:17:33+08:00
 douban:
   id: "1017143"
   title: 不能承受的生命之轻

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-1-19
-date: 2023-10-29 04:58:47
+date: 2023-10-29 04:58:47+08:00
 douban:
   id: "30371236"
   title: The Restless Clock

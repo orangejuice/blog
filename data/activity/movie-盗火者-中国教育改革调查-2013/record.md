@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2013"
-date: 2023-11-06 10:00:02
+date: 2023-11-06 10:00:02+08:00
 douban:
   id: "25830985"
   title: 盗火者：中国教育改革调查

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2014-1
-date: 2021-12-31 07:20:42
+date: 2021-12-31 07:20:42+08:00
 douban:
   id: "25822104"
   title: 第二性

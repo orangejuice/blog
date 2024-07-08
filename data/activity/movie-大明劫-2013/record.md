@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2013"
-date: 2021-01-24 23:30:07
+date: 2021-01-24 23:30:07+08:00
 douban:
   id: "11627068"
   title: 大明劫

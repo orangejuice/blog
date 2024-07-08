@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2015-6
-date: 2022-07-03 00:09:03
+date: 2022-07-03 00:09:03+08:00
 douban:
   id: "26418475"
   title: 逃避自由

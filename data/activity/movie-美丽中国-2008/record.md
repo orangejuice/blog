@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2008"
-date: 2021-08-18 22:12:31
+date: 2021-08-18 22:12:31+08:00
 douban:
   id: "3077948"
   title: 美丽中国

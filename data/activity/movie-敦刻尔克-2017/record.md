@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2017"
-date: 2020-12-19 04:10:00
+date: 2020-12-19 04:10:00+08:00
 douban:
   id: "26607693"
   title: 敦刻尔克

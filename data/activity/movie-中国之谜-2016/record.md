@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2016"
-date: 2021-10-13 06:19:38
+date: 2021-10-13 06:19:38+08:00
 douban:
   id: "27615437"
   title: 中国之谜

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 1991-2-1
-date: 2023-09-20 17:18:31
+date: 2023-09-20 17:18:31+08:00
 douban:
   id: "11524204"
   title: 围城

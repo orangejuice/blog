@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2012"
-date: 2020-02-02 05:11:28
+date: 2020-02-02 05:11:28+08:00
 douban:
   id: "20515275"
   title: 人体奥妙之细胞的暗战

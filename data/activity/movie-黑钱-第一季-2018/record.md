@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2018"
-date: 2023-12-03 05:55:45
+date: 2023-12-03 05:55:45+08:00
 douban:
   id: "27664017"
   title: 黑钱 第一季

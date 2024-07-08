@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2015-12
-date: 2022-03-11 17:25:02
+date: 2022-03-11 17:25:02+08:00
 douban:
   id: "26685994"
   title: 给青年诗人的信

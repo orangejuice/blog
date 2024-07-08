@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-8-1
-date: 2024-01-09 16:08:06
+date: 2024-01-09 16:08:06+08:00
 douban:
   id: "35565875"
   title: 货币金字塔

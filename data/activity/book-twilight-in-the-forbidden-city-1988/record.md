@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 1988-1-28
-date: 2019-08-08 21:35:03
+date: 2019-08-08 21:35:03+08:00
 douban:
   id: "1574113"
   title: Twilight in the Forbidden City

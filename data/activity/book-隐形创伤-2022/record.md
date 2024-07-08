@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-3
-date: 2023-10-20 04:36:24
+date: 2023-10-20 04:36:24+08:00
 douban:
   id: "35749593"
   title: 隐形创伤

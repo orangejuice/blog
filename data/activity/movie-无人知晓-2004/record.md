@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2004"
-date: 2021-02-07 06:01:31
+date: 2021-02-07 06:01:31+08:00
 douban:
   id: "1292337"
   title: 无人知晓

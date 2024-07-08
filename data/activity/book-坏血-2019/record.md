@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2019-4
-date: 2022-01-06 23:24:20
+date: 2022-01-06 23:24:20+08:00
 douban:
   id: "30473907"
   title: 坏血

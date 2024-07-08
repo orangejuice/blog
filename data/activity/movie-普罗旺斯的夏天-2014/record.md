@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2014"
-date: 2022-03-05 08:26:56
+date: 2022-03-05 08:26:56+08:00
 douban:
   id: "25858604"
   title: 普罗旺斯的夏天

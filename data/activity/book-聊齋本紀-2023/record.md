@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 1
 year: 2023-2-2
-date: 2024-05-15 05:48:23
+date: 2024-05-15 05:48:23+08:00
 douban:
   id: "36210159"
   title: 聊齋本紀

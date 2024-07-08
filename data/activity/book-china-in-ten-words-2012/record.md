@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2012-8-21
-date: 2020-12-01 23:53:55
+date: 2020-12-01 23:53:55+08:00
 douban:
   id: "21346514"
   title: China in Ten Words

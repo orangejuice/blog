@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 1992-4-1
-date: 2021-08-04 05:31:12
+date: 2021-08-04 05:31:12+08:00
 douban:
   id: "2134066"
   title: China

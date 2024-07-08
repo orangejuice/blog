@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2007"
-date: 2024-05-09 04:31:14
+date: 2024-05-09 04:31:14+08:00
 douban:
   id: "1920805"
   title: 成为简·奥斯汀

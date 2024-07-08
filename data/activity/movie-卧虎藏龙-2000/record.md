@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2000"
-date: 2019-08-09 01:16:07
+date: 2019-08-09 01:16:07+08:00
 douban:
   id: "1301168"
   title: 卧虎藏龙

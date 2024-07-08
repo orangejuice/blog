@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2021"
-date: 2021-06-30 03:53:46
+date: 2021-06-30 03:53:46+08:00
 douban:
   id: "34841067"
   title: 你好，李焕英

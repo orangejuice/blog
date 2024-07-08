@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2020"
-date: 2021-04-09 22:19:29
+date: 2021-04-09 22:19:29+08:00
 douban:
   id: "34907416"
   title: 刺杀

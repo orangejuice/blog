@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2006"
-date: 2020-04-24 04:07:56
+date: 2020-04-24 04:07:56+08:00
 douban:
   id: "1760622"
   title: 香水

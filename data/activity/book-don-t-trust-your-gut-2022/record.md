@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-5-10
-date: 2023-05-16 19:53:17
+date: 2023-05-16 19:53:17+08:00
 douban:
   id: "35897956"
   title: Don't Trust Your Gut

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2020-1
-date: 2024-05-12 08:29:31
+date: 2024-05-12 08:29:31+08:00
 douban:
   id: "33445309"
   title: 阿特拉斯耸耸肩

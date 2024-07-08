@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1966"
-date: 2021-12-24 22:29:44
+date: 2021-12-24 22:29:44+08:00
 douban:
   id: "1307067"
   title: 战争与和平

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-10
-date: 2024-02-20 03:15:00
+date: 2024-02-20 03:15:00+08:00
 douban:
   id: "30235060"
   title: 情感勒索

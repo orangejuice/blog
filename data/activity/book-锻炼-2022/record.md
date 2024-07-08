@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-7
-date: 2023-11-08 03:45:40
+date: 2023-11-08 03:45:40+08:00
 douban:
   id: "35949849"
   title: 锻炼

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2006"
-date: 2021-04-14 04:24:46
+date: 2021-04-14 04:24:46+08:00
 douban:
   id: "1441238"
   title: 面纱

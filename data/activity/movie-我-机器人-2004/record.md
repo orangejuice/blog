@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2004"
-date: 2024-07-05 06:42:04
+date: 2024-07-05 06:42:04+08:00
 douban:
   id: "1308843"
   title: 我，机器人

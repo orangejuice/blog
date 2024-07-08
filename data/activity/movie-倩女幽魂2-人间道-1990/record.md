@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1990"
-date: 2024-04-01 04:23:21
+date: 2024-04-01 04:23:21+08:00
 douban:
   id: "1296629"
   title: 倩女幽魂2：人间道

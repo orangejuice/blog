@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: "1984"
-date: 2024-02-01 06:17:52
+date: 2024-02-01 06:17:52+08:00
 douban:
   id: "3179270"
   title: 杨贵妃传

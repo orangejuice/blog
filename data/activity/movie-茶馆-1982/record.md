@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1982"
-date: 2020-08-11 04:38:44
+date: 2020-08-11 04:38:44+08:00
 douban:
   id: "1461403"
   title: 茶馆

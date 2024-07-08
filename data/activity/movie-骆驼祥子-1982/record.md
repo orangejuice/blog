@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1982"
-date: 2024-01-03 06:10:30
+date: 2024-01-03 06:10:30+08:00
 douban:
   id: "1307970"
   title: 骆驼祥子

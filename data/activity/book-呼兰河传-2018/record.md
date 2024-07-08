@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2018-5
-date: 2022-05-08 01:52:29
+date: 2022-05-08 01:52:29+08:00
 douban:
   id: "30227138"
   title: 呼兰河传

@@ -3,7 +3,7 @@ title: 一本你希望父母讀過的書（孩子也會慶幸你讀過）
 category: book
 status: todo
 rating: 0
-date: 2022-12-27 11:30:27
+date: 2022-12-27 11:30:27+08:00
 douban:
   id: "35042393"
   title: 一本你希望父母讀過的書（孩子也會慶幸你讀過）

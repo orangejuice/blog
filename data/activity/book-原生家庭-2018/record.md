@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-8
-date: 2024-02-01 03:03:52
+date: 2024-02-01 03:03:52+08:00
 douban:
   id: "30199434"
   title: 原生家庭

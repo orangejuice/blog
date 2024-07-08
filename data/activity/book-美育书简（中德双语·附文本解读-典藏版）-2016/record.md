@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2016-1
-date: 2024-01-19 19:36:03
+date: 2024-01-19 19:36:03+08:00
 douban:
   id: "26759960"
   title: 美育书简（中德双语·附文本解读/典藏版）

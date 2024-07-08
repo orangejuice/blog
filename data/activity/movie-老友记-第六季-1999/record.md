@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1999"
-date: 2024-04-28 04:35:22
+date: 2024-04-28 04:35:22+08:00
 douban:
   id: "3286543"
   title: 老友记  第六季

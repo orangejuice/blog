@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2019"
-date: 2020-12-26 04:47:04
+date: 2020-12-26 04:47:04+08:00
 douban:
   id: "30170546"
   title: 乔乔的异想世界

@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2002"
-date: 2024-05-12 14:43:31
+date: 2024-05-12 14:43:31+08:00
 douban:
   id: "1432013"
   title: 哭泣的女人

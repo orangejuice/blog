@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2020"
-date: 2020-10-09 03:57:04
+date: 2020-10-09 03:57:04+08:00
 douban:
   id: "34960008"
   title: 监视资本主义：智能陷阱

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2015"
-date: 2020-05-04 03:42:30
+date: 2020-05-04 03:42:30+08:00
 douban:
   id: "25766754"
   title: 年轻气盛

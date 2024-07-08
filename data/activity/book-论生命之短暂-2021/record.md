@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-10
-date: 2023-12-20 19:26:16
+date: 2023-12-20 19:26:16+08:00
 douban:
   id: "35619976"
   title: 论生命之短暂

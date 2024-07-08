@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-6
-date: 2023-08-19 07:22:14
+date: 2023-08-19 07:22:14+08:00
 douban:
   id: "27115714"
   title: 大雪将至

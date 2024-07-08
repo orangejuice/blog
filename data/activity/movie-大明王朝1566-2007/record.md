@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2007"
-date: 2024-01-16 20:07:18
+date: 2024-01-16 20:07:18+08:00
 douban:
   id: "2210001"
   title: 大明王朝1566

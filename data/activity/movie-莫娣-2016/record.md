@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2016"
-date: 2020-06-20 03:56:13
+date: 2020-06-20 03:56:13+08:00
 douban:
   id: "25938803"
   title: 莫娣

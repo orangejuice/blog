@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1997"
-date: 2024-04-23 01:56:30
+date: 2024-04-23 01:56:30+08:00
 douban:
   id: "3286536"
   title: 老友记  第四季

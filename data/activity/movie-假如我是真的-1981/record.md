@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1981"
-date: 2023-01-06 14:06:06
+date: 2023-01-06 14:06:06+08:00
 douban:
   id: "1307971"
   title: 假如我是真的

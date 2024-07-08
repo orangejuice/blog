@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2019"
-date: 2022-10-02 22:09:06
+date: 2022-10-02 22:09:06+08:00
 douban:
   id: "30360724"
   title: 全裸导演 第一季

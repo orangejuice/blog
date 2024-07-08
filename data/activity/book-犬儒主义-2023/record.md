@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2023-3
-date: 2024-07-07 08:00:10
+date: 2024-07-07 08:00:10+08:00
 douban:
   id: "36091356"
   title: 犬儒主义

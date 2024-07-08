@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2006"
-date: 2021-08-06 22:30:05
+date: 2021-08-06 22:30:05+08:00
 douban:
   id: "5202225"
   title: 建造帝国

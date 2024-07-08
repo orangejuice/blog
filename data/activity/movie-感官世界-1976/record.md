@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1976"
-date: 2022-01-26 17:40:46
+date: 2022-01-26 17:40:46+08:00
 douban:
   id: "1292790"
   title: 感官世界

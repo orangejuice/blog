@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "1998"
-date: 2022-12-04 04:15:20
+date: 2022-12-04 04:15:20+08:00
 douban:
   id: "1300678"
   title: 没事偷着乐

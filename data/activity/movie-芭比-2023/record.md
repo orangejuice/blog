@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 1
 year: "2023"
-date: 2023-09-05 02:52:51
+date: 2023-09-05 02:52:51+08:00
 douban:
   id: "4058939"
   title: 芭比

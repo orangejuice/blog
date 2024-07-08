@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2017-1-10
-date: 2023-10-14 20:59:07
+date: 2023-10-14 20:59:07+08:00
 douban:
   id: "26954728"
   title: A Really Good Day

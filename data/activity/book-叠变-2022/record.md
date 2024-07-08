@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-9
-date: 2022-12-22 19:30:29
+date: 2022-12-22 19:30:29+08:00
 douban:
   id: "36104112"
   title: 叠变

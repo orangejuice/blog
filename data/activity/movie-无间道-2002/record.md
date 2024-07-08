@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2002"
-date: 2021-06-21 03:08:51
+date: 2021-06-21 03:08:51+08:00
 douban:
   id: "1307914"
   title: 无间道

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2012-9-1
-date: 2024-01-25 04:38:18
+date: 2024-01-25 04:38:18+08:00
 douban:
   id: "10594787"
   title: 霍乱时期的爱情

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2005"
-date: 2024-01-27 06:04:15
+date: 2024-01-27 06:04:15+08:00
 douban:
   id: "10529476"
   title: 办公室 第一季

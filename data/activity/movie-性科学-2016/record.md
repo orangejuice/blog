@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2016"
-date: 2022-06-13 16:01:29
+date: 2022-06-13 16:01:29+08:00
 douban:
   id: "34454164"
   title: 性科学

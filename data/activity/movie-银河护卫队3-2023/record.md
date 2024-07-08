@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 1
 year: "2023"
-date: 2023-05-14 10:37:47
+date: 2023-05-14 10:37:47+08:00
 douban:
   id: "26258779"
   title: 银河护卫队3

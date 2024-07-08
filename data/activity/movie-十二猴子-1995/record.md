@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1995"
-date: 2022-03-24 15:41:27
+date: 2022-03-24 15:41:27+08:00
 douban:
   id: "1298744"
   title: 十二猴子

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-9
-date: 2023-12-17 01:05:55
+date: 2023-12-17 01:05:55+08:00
 douban:
   id: "36076452"
   title: 交易的世界

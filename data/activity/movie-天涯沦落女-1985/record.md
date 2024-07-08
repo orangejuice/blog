@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1985"
-date: 2023-11-20 00:22:28
+date: 2023-11-20 00:22:28+08:00
 douban:
   id: "1292445"
   title: 天涯沦落女

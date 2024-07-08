@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1990"
-date: 2024-01-30 05:10:51
+date: 2024-01-30 05:10:51+08:00
 douban:
   id: "1299112"
   title: 梦

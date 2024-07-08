@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "1991"
-date: 2021-04-09 03:29:44
+date: 2021-04-09 03:29:44+08:00
 douban:
   id: "1888063"
   title: 镜花缘

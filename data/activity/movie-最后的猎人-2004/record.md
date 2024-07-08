@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2004"
-date: 2020-03-21 02:04:43
+date: 2020-03-21 02:04:43+08:00
 douban:
   id: "1464303"
   title: 最后的猎人

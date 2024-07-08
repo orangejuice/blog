@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1980"
-date: 2023-09-28 22:28:52
+date: 2023-09-28 22:28:52+08:00
 douban:
   id: "1431947"
   title: 雪孩子

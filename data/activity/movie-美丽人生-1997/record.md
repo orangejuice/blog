@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1997"
-date: 2019-09-15 05:43:41
+date: 2019-09-15 05:43:41+08:00
 douban:
   id: "1292063"
   title: 美丽人生

@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2019-11
-date: 2024-05-06 05:50:46
+date: 2024-05-06 05:50:46+08:00
 douban:
   id: "34795345"
   title: 山月记

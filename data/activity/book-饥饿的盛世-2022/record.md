@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-8
-date: 2023-07-23 08:14:18
+date: 2023-07-23 08:14:18+08:00
 douban:
   id: "35888701"
   title: 饥饿的盛世

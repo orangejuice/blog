@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2024-1-1
-date: 2024-06-16 14:07:45
+date: 2024-06-16 14:07:45+08:00
 douban:
   id: "36725588"
   title: 何以为父

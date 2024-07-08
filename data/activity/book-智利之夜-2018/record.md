@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-8
-date: 2022-02-11 22:59:55
+date: 2022-02-11 22:59:55+08:00
 douban:
   id: "26434970"
   title: 智利之夜

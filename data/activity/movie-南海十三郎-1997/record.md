@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1997"
-date: 2021-07-26 03:16:33
+date: 2021-07-26 03:16:33+08:00
 douban:
   id: "1303913"
   title: 南海十三郎

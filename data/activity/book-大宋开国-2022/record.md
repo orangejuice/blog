@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-6
-date: 2023-11-23 03:37:30
+date: 2023-11-23 03:37:30+08:00
 douban:
   id: "35813541"
   title: 大宋开国

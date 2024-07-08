@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "2023"
-date: 2023-10-16 01:11:21
+date: 2023-10-16 01:11:21+08:00
 douban:
   id: "36520142"
   title: 邂逅UFO

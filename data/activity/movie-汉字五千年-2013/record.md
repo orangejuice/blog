@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2013"
-date: 2021-08-08 23:15:11
+date: 2021-08-08 23:15:11+08:00
 douban:
   id: "3571540"
   title: 汉字五千年

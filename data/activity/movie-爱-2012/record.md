@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2012"
-date: 2024-06-23 14:10:11
+date: 2024-06-23 14:10:11+08:00
 douban:
   id: "4798707"
   title: 爱

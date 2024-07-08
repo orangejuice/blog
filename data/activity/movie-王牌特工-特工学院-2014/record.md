@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2014"
-date: 2024-06-14 07:51:07
+date: 2024-06-14 07:51:07+08:00
 douban:
   id: "24405378"
   title: 王牌特工：特工学院

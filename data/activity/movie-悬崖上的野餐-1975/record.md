@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 2
 year: "1975"
-date: 2020-09-10 04:03:55
+date: 2020-09-10 04:03:55+08:00
 douban:
   id: "1299539"
   title: 悬崖上的野餐

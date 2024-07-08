@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: "1996"
-date: 2019-01-28 05:22:51
+date: 2019-01-28 05:22:51+08:00
 douban:
   id: "1482894"
   title: 隐藏的和谐

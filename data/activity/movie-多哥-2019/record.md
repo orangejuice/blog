@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2019"
-date: 2024-06-24 21:09:07
+date: 2024-06-24 21:09:07+08:00
 douban:
   id: "30271841"
   title: 多哥

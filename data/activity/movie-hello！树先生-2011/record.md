@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2011"
-date: 2020-12-25 05:02:21
+date: 2020-12-25 05:02:21+08:00
 douban:
   id: "4135710"
   title: Hello！树先生

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2019"
-date: 2019-10-12 21:44:47
+date: 2019-10-12 21:44:47+08:00
 douban:
   id: "30372377"
   title: 续命之徒：绝命毒师电影

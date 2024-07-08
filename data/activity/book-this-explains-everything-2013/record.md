@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2013-1-22
-date: 2024-04-14 17:07:23
+date: 2024-04-14 17:07:23+08:00
 douban:
   id: "11233825"
   title: This Explains Everything

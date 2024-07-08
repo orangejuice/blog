@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2021-7
-date: 2021-12-27 19:46:08
+date: 2021-12-27 19:46:08+08:00
 douban:
   id: "35356472"
   title: 秦制两千年

@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2017"
-date: 2022-01-27 07:20:05
+date: 2022-01-27 07:20:05+08:00
 douban:
   id: "26775115"
   title: 吉普赛人

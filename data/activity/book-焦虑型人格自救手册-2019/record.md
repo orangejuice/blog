@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 4
 year: 2019-8
-date: 2020-10-15 04:31:56
+date: 2020-10-15 04:31:56+08:00
 douban:
   id: "34432245"
   title: 焦虑型人格自救手册

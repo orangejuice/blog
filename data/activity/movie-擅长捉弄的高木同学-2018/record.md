@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2018"
-date: 2024-03-27 16:22:59
+date: 2024-03-27 16:22:59+08:00
 douban:
   id: "27085551"
   title: 擅长捉弄的高木同学

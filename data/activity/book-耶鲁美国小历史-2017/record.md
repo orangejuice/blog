@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2017-7
-date: 2023-01-13 20:57:42
+date: 2023-01-13 20:57:42+08:00
 douban:
   id: "27045325"
   title: 耶鲁美国小历史

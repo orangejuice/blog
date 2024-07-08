@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "1993"
-date: 2022-11-05 17:23:33
+date: 2022-11-05 17:23:33+08:00
 douban:
   id: "1302698"
   title: 蜜桃成熟时

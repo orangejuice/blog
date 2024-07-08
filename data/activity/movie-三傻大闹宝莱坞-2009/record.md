@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2009"
-date: 2019-10-21 05:29:33
+date: 2019-10-21 05:29:33+08:00
 douban:
   id: "3793023"
   title: 三傻大闹宝莱坞

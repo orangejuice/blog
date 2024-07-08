@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2023-6-21
-date: 2024-01-05 04:02:29
+date: 2024-01-05 04:02:29+08:00
 douban:
   id: "36361860"
   title: 我还能看到多少次满月升起

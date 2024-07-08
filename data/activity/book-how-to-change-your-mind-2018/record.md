@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-5-15
-date: 2023-10-14 07:23:13
+date: 2023-10-14 07:23:13+08:00
 douban:
   id: "30210993"
   title: How to Change Your Mind

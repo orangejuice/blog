@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2005"
-date: 2022-02-21 06:03:18
+date: 2022-02-21 06:03:18+08:00
 douban:
   id: "1418070"
   title: 如果·爱

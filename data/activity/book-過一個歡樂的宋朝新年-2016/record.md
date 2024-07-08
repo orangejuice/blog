@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2016-1
-date: 2021-11-17 06:57:46
+date: 2021-11-17 06:57:46+08:00
 douban:
   id: "26708476"
   title: 過一個歡樂的宋朝新年

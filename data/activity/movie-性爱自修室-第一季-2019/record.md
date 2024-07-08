@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2019"
-date: 2019-03-17 06:03:56
+date: 2019-03-17 06:03:56+08:00
 douban:
   id: "27594217"
   title: 性爱自修室 第一季

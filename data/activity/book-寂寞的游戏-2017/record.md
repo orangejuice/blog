@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2017-9
-date: 2021-08-02 17:31:31
+date: 2021-08-02 17:31:31+08:00
 douban:
   id: "27104286"
   title: 寂寞的游戏

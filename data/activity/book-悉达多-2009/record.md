@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2009-3
-date: 2022-07-03 00:02:06
+date: 2022-07-03 00:02:06+08:00
 douban:
   id: "3406401"
   title: 悉达多

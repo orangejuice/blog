@@ -4,7 +4,7 @@ category: book
 status: done
 rating: 5
 year: 2005-6
-date: 2020-08-02 18:48:20
+date: 2020-08-02 18:48:20+08:00
 douban:
   id: "1446449"
   title: 西厢记

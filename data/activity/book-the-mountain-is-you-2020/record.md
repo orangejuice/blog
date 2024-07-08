@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2020-5-29
-date: 2024-05-11 00:29:25
+date: 2024-05-11 00:29:25+08:00
 douban:
   id: "35575885"
   title: The Mountain Is You

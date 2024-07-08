@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2019-4
-date: 2022-01-16 17:55:05
+date: 2022-01-16 17:55:05+08:00
 douban:
   id: "30394971"
   title: 论自由

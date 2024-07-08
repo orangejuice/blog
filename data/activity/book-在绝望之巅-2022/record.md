@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-6
-date: 2024-04-21 02:00:29
+date: 2024-04-21 02:00:29+08:00
 douban:
   id: "35900190"
   title: 在绝望之巅

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2015-4
-date: 2022-03-28 07:31:15
+date: 2022-03-28 07:31:15+08:00
 douban:
   id: "26264154"
   title: 悲伤与理智

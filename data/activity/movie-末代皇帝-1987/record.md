@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1987"
-date: 2019-08-08 18:11:49
+date: 2019-08-08 18:11:49+08:00
 douban:
   id: "1293172"
   title: 末代皇帝

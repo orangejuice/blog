@@ -3,7 +3,7 @@ title: How Life Works
 category: book
 status: todo
 rating: 0
-date: 2023-12-28 06:44:53
+date: 2023-12-28 06:44:53+08:00
 douban:
   id: "20928114"
   title: How Life Works

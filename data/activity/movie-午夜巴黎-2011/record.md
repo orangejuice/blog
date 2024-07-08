@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2011"
-date: 2024-04-03 00:10:22
+date: 2024-04-03 00:10:22+08:00
 douban:
   id: "4319218"
   title: 午夜巴黎

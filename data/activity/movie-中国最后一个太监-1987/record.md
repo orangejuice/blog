@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1987"
-date: 2022-11-27 04:40:30
+date: 2022-11-27 04:40:30+08:00
 douban:
   id: "1300038"
   title: 中国最后一个太监

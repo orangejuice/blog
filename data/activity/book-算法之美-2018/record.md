@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2018-5-18
-date: 2022-01-22 17:28:35
+date: 2022-01-22 17:28:35+08:00
 douban:
   id: "30155731"
   title: 算法之美

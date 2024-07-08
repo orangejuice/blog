@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2019"
-date: 2021-12-28 04:39:30
+date: 2021-12-28 04:39:30+08:00
 douban:
   id: "30181462"
   title: 亢奋 第一季

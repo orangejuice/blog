@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2009"
-date: 2021-02-20 21:49:02
+date: 2021-02-20 21:49:02+08:00
 douban:
   id: "5356803"
   title: 大明宫

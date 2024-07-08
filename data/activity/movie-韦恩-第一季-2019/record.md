@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2019"
-date: 2023-03-26 17:42:25
+date: 2023-03-26 17:42:25+08:00
 douban:
   id: "30204361"
   title: 韦恩 第一季

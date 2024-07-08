@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2019"
-date: 2021-09-13 02:24:25
+date: 2021-09-13 02:24:25+08:00
 douban:
   id: "34679722"
   title: 女人

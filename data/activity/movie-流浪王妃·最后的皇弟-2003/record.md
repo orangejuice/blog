@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 4
 year: "2003"
-date: 2021-01-06 05:50:38
+date: 2021-01-06 05:50:38+08:00
 douban:
   id: "1461812"
   title: 流浪王妃·最后的皇弟

@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2017"
-date: 2023-07-15 17:01:03
+date: 2023-07-15 17:01:03+08:00
 douban:
   id: "26755367"
   title: 泥土之界

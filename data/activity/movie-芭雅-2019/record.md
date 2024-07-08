@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2019"
-date: 2021-12-08 13:29:05
+date: 2021-12-08 13:29:05+08:00
 douban:
   id: "34453078"
   title: 芭雅

@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2009-2
-date: 2023-10-22 17:30:33
+date: 2023-10-22 17:30:33+08:00
 douban:
   id: "3580750"
   title: 潜规则（修订版）

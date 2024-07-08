@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2009"
-date: 2021-08-01 04:45:37
+date: 2021-08-01 04:45:37+08:00
 douban:
   id: "3018123"
   title: 家园

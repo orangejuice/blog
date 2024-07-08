@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1937"
-date: 2022-05-02 14:40:50
+date: 2022-05-02 14:40:50+08:00
 douban:
   id: "1307708"
   title: 马路天使

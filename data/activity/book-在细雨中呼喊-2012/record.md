@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2012-11-1
-date: 2024-01-31 01:04:21
+date: 2024-01-31 01:04:21+08:00
 douban:
   id: "20421947"
   title: 在细雨中呼喊

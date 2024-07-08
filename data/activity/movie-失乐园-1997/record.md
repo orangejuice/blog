@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "1997"
-date: 2022-03-27 19:41:47
+date: 2022-03-27 19:41:47+08:00
 douban:
   id: "1308567"
   title: 失乐园

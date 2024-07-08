@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2019-9
-date: 2024-03-29 01:58:31
+date: 2024-03-29 01:58:31+08:00
 douban:
   id: "34787207"
   title: 两个人的车站

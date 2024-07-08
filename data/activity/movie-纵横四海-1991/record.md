@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1991"
-date: 2022-03-06 03:46:33
+date: 2022-03-06 03:46:33+08:00
 douban:
   id: "1295409"
   title: 纵横四海

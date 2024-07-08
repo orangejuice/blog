@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2022-7
-date: 2024-04-05 19:32:11
+date: 2024-04-05 19:32:11+08:00
 douban:
   id: "35897952"
   title: 津巴多普通心理学（第8版）

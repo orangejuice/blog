@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2015-3-1
-date: 2023-09-20 17:14:05
+date: 2023-09-20 17:14:05+08:00
 douban:
   id: "26369699"
   title: 被讨厌的勇气

@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "2019"
-date: 2020-06-07 05:34:58
+date: 2020-06-07 05:34:58+08:00
 douban:
   id: "27166039"
   title: 瑞克和莫蒂 第四季

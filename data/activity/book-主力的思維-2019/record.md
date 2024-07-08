@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2019-12
-date: 2023-11-17 20:40:50
+date: 2023-11-17 20:40:50+08:00
 douban:
   id: "35171010"
   title: 主力的思維

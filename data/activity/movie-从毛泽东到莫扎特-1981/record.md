@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1981"
-date: 2021-03-06 03:53:54
+date: 2021-03-06 03:53:54+08:00
 douban:
   id: "1307593"
   title: 从毛泽东到莫扎特

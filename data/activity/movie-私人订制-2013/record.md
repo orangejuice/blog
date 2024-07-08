@@ -4,7 +4,7 @@ category: movie
 status: todo
 rating: 0
 year: "2013"
-date: 2023-08-19 20:56:29
+date: 2023-08-19 20:56:29+08:00
 douban:
   id: "10605978"
   title: 私人订制

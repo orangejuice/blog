@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2013"
-date: 2023-12-22 08:42:41
+date: 2023-12-22 08:42:41+08:00
 douban:
   id: "22623816"
   title: 我们的父辈

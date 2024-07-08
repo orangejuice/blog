@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 3
 year: "2004"
-date: 2021-08-09 04:05:34
+date: 2021-08-09 04:05:34+08:00
 douban:
   id: "1304972"
   title: 太极旗飘扬

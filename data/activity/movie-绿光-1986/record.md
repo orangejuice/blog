@@ -4,7 +4,7 @@ category: movie
 status: done
 rating: 5
 year: "1986"
-date: 2020-09-05 04:26:14
+date: 2020-09-05 04:26:14+08:00
 douban:
   id: "1294039"
   title: 绿光

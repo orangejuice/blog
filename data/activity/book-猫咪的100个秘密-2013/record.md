@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2013-8-1
-date: 2022-03-18 17:57:28
+date: 2022-03-18 17:57:28+08:00
 douban:
   id: "24898249"
   title: 猫咪的100个秘密

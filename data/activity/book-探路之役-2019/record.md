@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2019-3
-date: 2023-09-16 22:47:44
+date: 2023-09-16 22:47:44+08:00
 douban:
   id: "30490056"
   title: 探路之役

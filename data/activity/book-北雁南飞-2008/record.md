@@ -4,7 +4,7 @@ category: book
 status: todo
 rating: 0
 year: 2008-5
-date: 2022-01-21 06:41:38
+date: 2022-01-21 06:41:38+08:00
 douban:
   id: "3100438"
   title: 北雁南飞
