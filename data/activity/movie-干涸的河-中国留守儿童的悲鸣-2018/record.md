@@ -3,7 +3,7 @@ title: 干涸的河：中国留守儿童的悲鸣
 category: movie
 status: done
 rating: 5
-date: 2021-02-26 05:26:31
+date: 2021-02-26 05:26:31+08:00
 douban:
   id: "30200965"
   title: 干涸的河：中国留守儿童的悲鸣
