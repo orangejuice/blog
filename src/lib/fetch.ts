@@ -80,7 +80,7 @@ export const getLatestComment = cache(async ({locale, count}: {locale: SiteLocal
     if (slugPosts.hasOwnProperty(slug) && latestActivities[slug].comments.nodes.length > 0) {
       comments.push({...slugPosts[slug], comments: latestActivities[slug].comments.nodes})
     } else {
-      const activity = await getActivity(slug)
+      const activity = await getActivity({slug, locale})
       if (activity) comments.push({...activity, comments: latestActivities[slug].comments.nodes})
     }
   }
