@@ -11,7 +11,7 @@ import {PostPage} from "@/components/post"
 export default async function Page({params: {slug: rawSlug, locale}}: {params: {slug: string, locale: SiteLocale}}) {
   const slug = decodeURI(rawSlug)
 
-  const activity = await getActivity(slug)
+  const activity = await getActivity({slug, locale})
   if (activity) return <ActivityPage slug={slug} activity={activity} locale={locale}/>
 
   const posts = await getPosts({locale, lang: "all-lang", discussion: false})
@@ -22,10 +22,10 @@ export default async function Page({params: {slug: rawSlug, locale}}: {params: {
 }
 
 
-export async function generateMetadata({params}: {params: {slug: string, locale: SiteLocale}}): Promise<Metadata | undefined> {
-  const slug = decodeURI(params.slug)
+export async function generateMetadata({params: {slug: rawSlug, locale}}: {params: {slug: string, locale: SiteLocale}}): Promise<Metadata | undefined> {
+  const slug = decodeURI(rawSlug)
 
-  const activity = await getActivity(slug)
+  const activity = await getActivity({slug, locale})
   if (activity) {
     return {
       title: activity.title,
@@ -34,7 +34,7 @@ export async function generateMetadata({params}: {params: {slug: string, locale:
         title: activity.title,
         description: "",
         siteName: site.title,
-        locale: params.locale,
+        locale,
         type: "article",
         publishedTime: new Date(activity.date).toISOString(),
         url: "./",
@@ -48,7 +48,7 @@ export async function generateMetadata({params}: {params: {slug: string, locale:
     }
   }
 
-  const post = (await getPosts({locale: params.locale, lang: "all-lang"})).find((post) => post.slug === slug)
+  const post = (await getPosts({locale, lang: "all-lang"})).find((post) => post.slug === slug)
   if (post) {
     return {
       title: post.title,
@@ -57,7 +57,7 @@ export async function generateMetadata({params}: {params: {slug: string, locale:
         title: post.title,
         description: post.excerpt,
         siteName: site.title,
-        locale: params.locale,
+        locale,
         type: "article",
         publishedTime: new Date(post.date).toISOString(),
         url: "./",

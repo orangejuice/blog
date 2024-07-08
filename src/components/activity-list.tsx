@@ -9,7 +9,7 @@ import {MDX} from "@/components/mdx"
 import {Icons} from "@/components/icons"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {FilterOption} from "@/components/activity-filter"
-import {menu, site} from "@/site"
+import {menu, site, SiteLocale} from "@/site"
 import Link from "next/link"
 import {Divider} from "@/components/ui/divider"
 import {useGlobalState} from "@/lib/use-global-state"
@@ -30,7 +30,7 @@ export default function ActivityInfiniteScrollList({data: firstPage, style}: {da
   const [isPending, startTransition] = useTransition()
   const cssIndexCounter = useCssIndexCounter(style)
   const [filter] = useLocalStorage<FilterOption>("activity-filter", {})
-  const {t} = useTranslation()
+  const {t, i18n: {language: locale}} = useTranslation()
 
   useEffect(() => {
     if (pathname == state.key) return
@@ -39,7 +39,7 @@ export default function ActivityInfiniteScrollList({data: firstPage, style}: {da
   }, [])
 
   const loadMore = () => startTransition(async () => {
-    const newActivities = await fetchActivities(state.page + 1, filter)
+    const newActivities = await fetchActivities({page: state.page + 1, filter, locale: locale as SiteLocale})
     setState(({key: state.key, page: state.page + 1, hasMore: newActivities.length == 10}))
     setActivities(activities.concat(...newActivities))
   })

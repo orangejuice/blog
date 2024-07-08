@@ -1,7 +1,7 @@
 import * as React from "react"
 import {ComponentProps, ComponentType, forwardRef} from "react"
 import {cn} from "@/lib/utils"
-import {ArrowRight, AudioLines, ChevronRight, Dot, Filter, Globe, Hash, Loader2, LogIn, LogOut, Menu, MessageCircleHeart, MessageCircleMore, Moon, Pickaxe, Slash, Smile, Square, SquareCheckBig, Sun, SunMoon, Undo2, User} from "lucide-react"
+import {ArrowRight, AudioLines, ChevronRight, CircleAlert, Dot, Filter, Globe, Hash, Loader2, LogIn, LogOut, Menu, MessageCircleHeart, MessageCircleMore, Moon, Slash, Smile, Square, SquareCheckBig, Sun, SunMoon, Undo2, User} from "lucide-react"
 import Image, {ImageProps} from "next/image"
 import {Book, BookmarkSimple, Eye, FilmReel, GithubLogo, SelectionBackground} from "@phosphor-icons/react/dist/ssr"
 
@@ -28,7 +28,7 @@ export const Icons = {
     goBack: cns(Undo2), reactComment: cns(MessageCircleHeart)
   },
   symbol: {
-    hash: cns(Hash), slash: cns(Slash), dot: cns(Dot), building: cns(Pickaxe),
+    hash: cns(Hash), slash: cns(Slash), dot: cns(Dot), alert: cns(CircleAlert),
     square: cns(Square), squareChecked: cns(SquareCheckBig, "[&_path:first-child]:stroke-[3px]")
   },
   theme: {light: cns(Sun, "w-5 h-5"), dark: cns(Moon, "w-5 h-5"), system: cns(SunMoon, "w-5 h-5")},

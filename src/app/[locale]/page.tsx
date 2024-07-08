@@ -17,7 +17,7 @@ export default async function Home({params: {locale}}: {params: {locale: SiteLoc
   const postsOneLang = getPosts({locale, count: 4})
   const postsAllLang = getPosts({locale, count: 4, lang: "all-lang"})
   const latestComments = getLatestComment({locale, count: 2})
-  const latestActivities = getActivities(1, {})
+  const latestActivities = getActivities({page: 1, locale, filter: {}})
   const {t} = await initTranslation(locale)
 
   return (<>

@@ -38,7 +38,7 @@ export const Post = defineDocumentType(() => ({
 
 export const Activity = defineDocumentType(() => ({
   name: "Activity",
-  filePathPattern: "activity/**/record.md",
+  filePathPattern: "activity/**/record*.md",
   contentType: "mdx",
   fields: {
     title: {type: "string", required: true},
@@ -64,8 +64,8 @@ export const Activity = defineDocumentType(() => ({
               fields: {
                 comment: {type: "string", required: true},
                 rating: {type: "number"},
-                status: {type:"enum", options: ["todo", "doing", "done"], required: true},
-                date: {type: "date", required: true},
+                status: {type: "enum", options: ["todo", "doing", "done"], required: true},
+                date: {type: "date", required: true}
               }
             }))
           }
@@ -75,6 +75,7 @@ export const Activity = defineDocumentType(() => ({
   },
   computedFields: {
     slug: {type: "string", resolve: (act) => act._raw.sourceFileDir.split("/").pop()},
+    locale: {type: "string", resolve: (post) => post._raw.sourceFileName.split(".")[1]},
     cover: {
       type: "string", resolve: (act) => {
         const dir = path.join("data", act._raw.sourceFileDir)

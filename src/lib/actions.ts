@@ -4,6 +4,7 @@ import axios from "axios"
 import {getActivities} from "@/lib/fetch-activity"
 import {FilterOption} from "@/components/activity-filter"
 import {getMetadata} from "@/lib/fetch-db"
+import {SiteLocale} from "@/site"
 
 export async function revalidator() {
   revalidatePath("/", "layout")
@@ -20,6 +21,6 @@ export async function getViews(slug: string) {
   return (await getMetadata([slug]))[slug]
 }
 
-export async function fetchActivities(page: number, filter: FilterOption) {
-  return await getActivities(page, filter)
+export async function fetchActivities({page, filter, locale}: {page: number, filter: FilterOption, locale: SiteLocale}) {
+  return await getActivities({page, filter, locale})
 }
