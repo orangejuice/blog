@@ -4,6 +4,7 @@ import PQueue from "p-queue"
 import yaml from "yaml"
 // @ts-ignore
 import tofu from "./tofu.json"
+import {translateCreativeWork} from "@/lib/openai-translate"
 
 const OUTPUT_DIR = "data/activity"
 
@@ -20,6 +21,10 @@ const sanitizeContent = (content: string): string => {
 }
 
 const queue = new PQueue({concurrency: 10})
+
+queue.on("completed", result => {
+  console.log(result.join(" | "))
+})
 
 for (const interest of (tofu as Record<any, any>).interest) {
   try {
@@ -38,7 +43,7 @@ for (const interest of (tofu as Record<any, any>).interest) {
     const rating = interest.interest.rating?.value ?? 0
     const comment = interest.interest.comment
     const cover = interest.interest.subject.cover_url
-    const history: any[] | undefined = interest.history ? [] : undefined
+    const history: {date: string, comment: string, rating: number, status: string}[] | undefined = interest.history ? [] : undefined
 
     history && Object.entries(interest.history).forEach(([_, {comment, rating, status, create_time}]: any) => {
       history.push({date: create_time, comment, rating: rating?.value, status: status == "mark" ? "todo" : status})
@@ -63,20 +68,49 @@ for (const interest of (tofu as Record<any, any>).interest) {
         link: doubanLink, history
       }
     }
+
+    if (!fs.existsSync(path.join(OUTPUT_DIR, dict, "record.en.md"))) {
+      const historyToTranslate = (history && history.filter(h => !!h.comment).length > 0) ? history.filter(h => !!h.comment).map(h => h.comment) : undefined
+      const translated = await translateCreativeWork({
+        title, subtitle: doubanSubtitle, category, comment,
+        history: historyToTranslate
+      })
+      let historyTranslated = history
+      if (history && historyToTranslate) {
+        let i = 0
+        historyTranslated = history.map(h => {
+          if (h.comment) {
+            if (!translated.history?.[i]) throw Error("translation failed")
+            return {...h, comment: translated.history[i++]}
+          }
+          return h
+        })
+      }
+      const enFrontmatter = {
+        title: translated.title, category, status, rating, year, date: createdDate,
+        douban: {
+          rating: doubanRating,
+          subtitle: translated.subtitle,
+          history: historyTranslated
+        }
+      }
+      const content = "---\n".concat(yaml.stringify(enFrontmatter), "---\n\n")
+        .concat(sanitizeContent(translated.comment ?? ""), "\n")
+
+      fs.writeFileSync(path.join(OUTPUT_DIR, dict, "record.en.md"), content, "utf8")
+    }
+
     const content = "---\n".concat(yaml.stringify(frontmatter), "---\n\n")
       .concat(sanitizeContent(comment ?? ""), "\n")
 
     fs.writeFileSync(path.join(OUTPUT_DIR, dict, "record.md"), content, "utf8")
-
+    // execSync(`git add "${path.join(OUTPUT_DIR, dict, "record.md")}"`, {stdio: "inherit"})
+    // execSync(`git add "${path.join(OUTPUT_DIR, dict, "record.en.md")}"`, {stdio: "inherit"})
   } catch (err) {
     console.log(interest)
     throw err
   }
 }
-
-queue.on("completed", result => {
-  console.log(result.join(" | "))
-})
 
 async function downloadImage(url: string, destDir: string) {
   const urlPath = new URL(url).pathname
@@ -89,6 +123,7 @@ async function downloadImage(url: string, destDir: string) {
   return await fetch(url).then((async (response) => {
     if (response.ok) {
       fs.writeFileSync(destPath, Buffer.from(await response.arrayBuffer()))
+      // execSync(`git add "${destPath}"`, {stdio: "inherit"})
       return [destPath, "downloaded"]
     } else return [destPath, `HTTP error ${response.status}`]
   }))

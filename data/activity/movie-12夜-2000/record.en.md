@@ -1,0 +1,15 @@
+---
+title: 12 Nights
+slug: 12-nights
+category: movie
+status: todo
+rating: 0
+year: "2000"
+date: 2022-03-23 16:40:26+08:00
+douban:
+  rating: 8.3
+  subtitle: 2000 / Hong Kong, China / Drama Romance / Directed by Aubrey Lam /
+    Starring Cecilia Cheung, Eason Chan
+---
+
+Via friends douban
