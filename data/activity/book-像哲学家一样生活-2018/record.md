@@ -35,3 +35,4 @@ douban:
 via tw ross ulbricht I just finished reading “A Guide to the Good Life.” A practical guide to practicing stoicism. 
 
 In prison, I have very little control over my life, but as the Stoics say, I can still control my attitude.
+

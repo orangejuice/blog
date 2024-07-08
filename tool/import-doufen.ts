@@ -63,8 +63,8 @@ for (const interest of (tofu as Record<any, any>).interest) {
         link: doubanLink, history
       }
     }
-    const content = "---\n".concat(yaml.stringify(frontmatter)).concat("---\n\n")
-      .concat(sanitizeContent(comment ?? ""))
+    const content = "---\n".concat(yaml.stringify(frontmatter), "---\n\n")
+      .concat(sanitizeContent(comment ?? ""), "\n")
 
     fs.writeFileSync(path.join(OUTPUT_DIR, dict, "record.md"), content, "utf8")
 
