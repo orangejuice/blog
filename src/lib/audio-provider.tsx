@@ -50,6 +50,9 @@ export const AudioProvider = ({children, initialSource = "", fadeDuration = 1000
     audioRef.current = new Audio(audioSource)
     const audio = audioRef.current
     audio.loop = true
+
+    if (isPlaying) audio.play().then(() => fadeAudio(0, 1, fadeDuration))
+
     const handleTimeUpdate = () => {
       if (!audio || isFadingRef.current) return
       const timeRemaining = audio.duration - audio.currentTime
@@ -86,11 +89,9 @@ export const AudioProvider = ({children, initialSource = "", fadeDuration = 1000
   const setMusicSource = (src: string) => {
     const audio = audioRef.current
     if (!audio || src == audioSource) return
-    fadeAudio(audio.volume, 0, fadeDuration, () => {
-      audio.pause()
-      setAudioSource(src)
-      setIsPlaying(false)
-    })
+    if (isPlaying) {
+      fadeAudio(audio.volume, 0, fadeDuration, () => setAudioSource(src))
+    } else setAudioSource(src)
   }
 
   return <AudioContext.Provider value={{isPlaying, toggleAudio, setMusicSource}}>{children}</AudioContext.Provider>
