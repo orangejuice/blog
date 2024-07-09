@@ -142,16 +142,21 @@ export const LatestActivityList = ({data, style, className}: {data: GetActivitie
       {activities.map((activity) => (
         <li key={activity._id}>
           <Link href={`/${menu.bookshelf}`} className="flex flex-col items-start px-4 py-2 -mx-4 gap-2 group relative">
-            <div className="flex items-center gap-2">
-              <div className="relative h-8 w-8 rounded-full overflow-hidden">
+            <div className="flex items-center gap-2 w-full">
+              <div className="relative h-8 w-8 rounded-full overflow-hidden shrink-0">
                 <Image src={site.avatar} alt="Avatar"/>
               </div>
-              <div className="flex flex-col items-start text-stone-600 dark:text-stone-400">
-                <span className="font-medium text-sm">{site.author}</span>
-                <div className="flex items-center text-xs gap-2 ">
-                  <span className="line-clamp-1">
-                    {t(`bookshelf.${activity.category}.status.${activity.status}`, {date: format(activity.date, {locale, relativeWithDate: true})})}
+              <div className="flex flex-col w-full text-stone-600 dark:text-stone-400">
+                <div className="flex items-center justify-between w-full">
+                  <span className="font-medium text-sm">{site.author}</span>
+                  <span className="flex items-center rounded-md gap-1 text-xs">
+                    <Icons.post.view/>{activity.view}
                   </span>
+                </div>
+                <div className="flex items-center text-xs gap-2">
+                    <span className="line-clamp-1">
+                      {t(`bookshelf.${activity.category}.status.${activity.status}`, {date: format(activity.date, {locale, relativeWithDate: true})})}
+                    </span>
                   {!!activity.rating && (<>
                     <span className="text-stone-200 dark:text-stone-800 select-none">|</span>
                     <StarRating rating={activity.rating} max={5} description/>
