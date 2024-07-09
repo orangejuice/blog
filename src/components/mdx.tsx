@@ -4,7 +4,7 @@ import {default as NextImage, ImageProps} from "next/image"
 import {ComponentPropsWithoutRef, useEffect} from "react"
 import {useTheme} from "next-themes"
 import Link from "next/link"
-import {Icons} from "@/components/icons"
+import {Icon} from "@/components/ui/icon"
 import {useTranslation} from "react-i18next"
 import {cn} from "@/lib/utils"
 import "./mdx.css"
@@ -46,7 +46,7 @@ function MdxLink({className, ...props}: ComponentPropsWithoutRef<"a"> & {href: s
   if (props.hasOwnProperty("data-footnote-backref")) {
     return (<>
       <Link {...props} className={className}>
-        <Icons.post.goBack className="inline w-3 h-3 mb-0.5"/>
+        <Icon.post.goBack className="inline w-3 h-3 mb-0.5"/>
       </Link>
     </>)
   }

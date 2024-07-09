@@ -5,7 +5,7 @@ import {useLocalStorage} from "@/lib/use-local-storage"
 import Link from "next/link"
 import {menu} from "@/site"
 import {cn, objectToUrlPart} from "@/lib/utils"
-import {Icons} from "@/components/icons"
+import {Icon} from "@/components/ui/icon"
 import {FilterOption} from "@/components/post-filter"
 import {useMounted} from "@/lib/use-mounted"
 import {buttonVariants} from "@/components/ui/button"
@@ -23,7 +23,7 @@ export function ViewMore(props: ComponentPropsWithoutRef<"a">) {
       className={cn(buttonVariants(), "w-fit h-fit mx-auto flex items-center px-4 py-2 text-xs font-semibold border rounded-full",
         "bg-stone-900 text-stone-100 hover:border-stone-700 border-stone-900 hover:bg-white hover:text-stone-900 animate-delay-in")} {...props}>
       {t("post.view-more")}
-      <Icons.link.chevron className="stroke-[.15rem] -mr-2"/>
+      <Icon.link.chevron className="stroke-[.15rem] -mr-2"/>
     </Link>
   </>)
 }

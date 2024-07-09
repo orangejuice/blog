@@ -10,7 +10,7 @@ import {LocaleSwitch} from "@/components/locale-switch"
 import {useMounted} from "@/lib/use-mounted"
 import Link from "next/link"
 import * as React from "react"
-import {Icons} from "@/components/icons"
+import {Icon} from "@/components/ui/icon"
 import {useTranslation} from "react-i18next"
 import {ThemeToggle} from "@/components/theme-toggle"
 import {BackgroundCanvasToggle, BackgroundMusicToggle} from "@/components/background-toggle"
@@ -27,7 +27,7 @@ export function Header() {
 
   return (<>
     <header className="flex mb-8 w-full shrink-0 items-center justify-between">
-      <Link href="/" className="flex items-center shrink-0"><Icons.logo/></Link>
+      <Link href="/" className="flex items-center shrink-0"><Icon.logo/></Link>
       <div className="flex items-center gap-2">
         <nav className="hidden md:flex items-center gap-4 text-sm font-medium">
           {Object.entries(menu).map(([key, path]) => (
@@ -61,7 +61,7 @@ export function MobileNav() {
   return (<>
     <Menu>{({open}) => (<>
       <MenuButton className={cn(buttonVariants({variant: "noStyle"}), "block w-fit h-fit p-2 md:hidden outline-none focus-visible:ring-0")}>
-        <Icons.nav.menu className="h-7 w-7"/>
+        <Icon.nav.menu className="h-7 w-7"/>
       </MenuButton>
       <Overlay isOpen={open}/>
       <AnimatePresence>{open && (<>

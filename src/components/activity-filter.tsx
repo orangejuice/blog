@@ -1,6 +1,6 @@
 "use client"
 import {cn, objectToUrlPart, useCssIndexCounter} from "@/lib/utils"
-import {Icons} from "@/components/icons"
+import {Icon} from "@/components/ui/icon"
 import React, {use, useEffect} from "react"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {useTranslation} from "react-i18next"
@@ -28,7 +28,7 @@ export function ActivityFilter({filter: applied, style, filterData}: {filter: Fi
           <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({year, category: year == selectedYear ? undefined : applied.category, status: year == selectedYear ? undefined : applied.status})}`}
             className={cn("flex items-center gap-1 group m-2 text-sm font-medium underline-fade",
               year == selectedYear && "underline-fade-selected font-bold")}>
-            {year == selectedYear ? <Icons.symbol.squareChecked/> : <Icons.symbol.square/>}
+            {year == selectedYear ? <Icon.symbol.squareChecked/> : <Icon.symbol.square/>}
             {year == "all" ? t(`bookshelf.category.all`) : year} ({num})
           </Link>
         ))}
@@ -41,7 +41,7 @@ export function ActivityFilter({filter: applied, style, filterData}: {filter: Fi
           <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({year: applied.year, category: category == selectedCate ? undefined : category, status: applied.status})}`}
             className={cn("flex items-center gap-1 group m-2 text-sm font-medium underline-fade",
               category == selectedCate && "underline-fade-selected font-bold")}>
-            {category == selectedCate ? <Icons.symbol.squareChecked/> : <Icons.symbol.square/>}
+            {category == selectedCate ? <Icon.symbol.squareChecked/> : <Icon.symbol.square/>}
             {t(`bookshelf.category.${category}`)} ({total})
           </Link>
         ))}
@@ -54,7 +54,7 @@ export function ActivityFilter({filter: applied, style, filterData}: {filter: Fi
           <Link key={index} href={`/${menu.bookshelf}/${objectToUrlPart({year: applied.year, category: applied.category, status: status == applied.status ? undefined : status})}`}
             className={cn("flex items-center gap-1 group m-2 text-sm font-medium underline-fade",
               status == applied.status && "underline-fade-selected font-bold")}>
-            {status == applied.status ? <Icons.symbol.squareChecked/> : <Icons.symbol.square/>}
+            {status == applied.status ? <Icon.symbol.squareChecked/> : <Icon.symbol.square/>}
             {t(`bookshelf.filter.status.${status}`)} ({num})
           </Link>
         ))}

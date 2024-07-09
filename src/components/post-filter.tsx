@@ -1,7 +1,7 @@
 "use client"
 import {GetLocalesResponse, GetTagsResponse} from "@/lib/fetch"
 import {cn, objectToUrlPart, useCssIndexCounter} from "@/lib/utils"
-import {Icons} from "@/components/icons"
+import {Icon} from "@/components/ui/icon"
 import React, {use, useEffect} from "react"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {useTranslation} from "react-i18next"
@@ -27,7 +27,7 @@ export function PostFilter({locales: localesData, tags: tagsData, filter: applie
           <Link key={index} href={`/${menu.post}/${objectToUrlPart({lang})}`}
             className={cn("flex items-center group m-2 text-sm font-medium underline-fade",
               lang == applied.lang && "underline-fade-selected font-bold")}>
-            <Icons.symbol.hash/>{t(lang)} ({num})
+            <Icon.symbol.hash/>{t(lang)} ({num})
           </Link>
         ))}
       </div>
@@ -39,7 +39,7 @@ export function PostFilter({locales: localesData, tags: tagsData, filter: applie
           <Link key={index} href={`/${menu.post}/${objectToUrlPart({lang: applied.lang, tag: tag == applied.tag ? undefined : tag})}`}
             className={cn("flex items-center group m-2 text-sm font-medium underline-fade",
               tag == applied.tag && "underline-fade-selected font-bold")}>
-            <Icons.symbol.hash/>{tag} ({num})
+            <Icon.symbol.hash/>{tag} ({num})
           </Link>
         ))}
       </div>

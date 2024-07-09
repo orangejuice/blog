@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import {Icons} from "@/components/icons"
+import {Icon} from "@/components/ui/icon"
 import {Button} from "@/components/ui/button"
 import {cn, format, shortenNumber} from "@/lib/utils"
 import React, {ComponentPropsWithoutRef, use, useEffect} from "react"
@@ -23,7 +23,7 @@ function PostCard({post}: {post: Post}) {
         <h2 className={cn("flex items-center gap-2 text-gray-900 dark:text-gray-100 text-xl font-bold tracking-tight",
           "underline-fade underline-fade-with-group")}>
           {post.title}
-          <Icons.link.arrow className="opacity-0 group-hover:opacity-100 group-hover:translate-x-0 shrink-0 -translate-x-1.5 stroke-[4px] transition-all ease-in-out duration-200 transform"/>
+          <Icon.link.arrow className="opacity-0 group-hover:opacity-100 group-hover:translate-x-0 shrink-0 -translate-x-1.5 stroke-[4px] transition-all ease-in-out duration-200 transform"/>
         </h2>
         <div className="flex items-center gap-1 flex-wrap">
           {post.tags.map((tag, index) =>
@@ -38,9 +38,9 @@ function PostCard({post}: {post: Post}) {
         <div className="flex w-full mt-2.5 text-xs justify-between font-medium text-neutral-800 dark:text-neutral-300">
           <p>{t("post.publish", {date: format(post.date, {locale})})}</p>
           <div className="flex items-center gap-4 text-stone-600 dark:text-stone-400">
-            <span className="flex items-center gap-1"><Icons.post.view/> {post.view}</span>
-            <span className="flex items-center gap-1"><Icons.post.reaction/> {post.discussion.reaction}</span>
-            <span className="flex items-center gap-1"><Icons.post.comment/> {post.discussion.comment}</span>
+            <span className="flex items-center gap-1"><Icon.post.view/> {post.view}</span>
+            <span className="flex items-center gap-1"><Icon.post.reaction/> {post.discussion.reaction}</span>
+            <span className="flex items-center gap-1"><Icon.post.comment/> {post.discussion.comment}</span>
           </div>
         </div>
         <BounceBackground/>
@@ -85,15 +85,15 @@ function PostItemCompact({post}: {post: Post}) {
       <div className="flex w-full md:w-fit text-stone-600 dark:text-stone-400 items-center justify-between">
         <time className={cn("md:w-28 text-secondary text-sm shrink-0")}>{format(post.date, {locale, localizeDate: true})}</time>
         <div className="gap-4 text-xs w-fit flex md:hidden">
-          <span className="flex items-center gap-1"><Icons.post.view/>{shortenNumber(post.view)}</span>
-          <span className="flex items-center gap-1"><Icons.post.reactComment/>{shortenNumber(post.discussion.reaction + post.discussion.comment)}</span>
+          <span className="flex items-center gap-1"><Icon.post.view/>{shortenNumber(post.view)}</span>
+          <span className="flex items-center gap-1"><Icon.post.reactComment/>{shortenNumber(post.discussion.reaction + post.discussion.comment)}</span>
         </div>
       </div>
       <div className="flex w-full justify-between gap-4">
         <Link href={`/${post.slug}`} className="font-medium w-full md:w-fit line-clamp-2 md:line-clamp-1 underline-fade">{post.title}</Link>
         <div className="gap-4 text-xs text-stone-600 dark:text-stone-400 hidden md:flex">
-          <span className="flex items-center gap-1 cursor-default"><Icons.post.view/>{shortenNumber(post.view)}</span>
-          <span className="flex items-center gap-1 cursor-default"><Icons.post.reactComment/>{shortenNumber(post.discussion.reaction + post.discussion.comment)}</span>
+          <span className="flex items-center gap-1 cursor-default"><Icon.post.view/>{shortenNumber(post.view)}</span>
+          <span className="flex items-center gap-1 cursor-default"><Icon.post.reactComment/>{shortenNumber(post.discussion.reaction + post.discussion.comment)}</span>
         </div>
       </div>
     </li>

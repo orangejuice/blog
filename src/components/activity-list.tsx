@@ -6,7 +6,7 @@ import {useTranslation} from "react-i18next"
 import {Image} from "@/components/ui/image"
 import {fetchActivities} from "@/lib/actions"
 import {MDX} from "@/components/mdx"
-import {Icons} from "@/components/icons"
+import {Icon} from "@/components/ui/icon"
 import {useLocalStorage} from "@/lib/use-local-storage"
 import {FilterOption} from "@/components/activity-filter"
 import {menu, site, SiteLocale} from "@/site"
@@ -50,7 +50,7 @@ export default function ActivityInfiniteScrollList({data: firstPage, style}: {da
       {state.hasMore && <>
         <Button disabled={isPending} onClick={loadMore} className={cn("w-fit h-fit gap-1 flex items-center px-4 py-2 text-xs font-semibold border rounded-full",
           "bg-stone-900 text-stone-100 hover:border-stone-700 border-stone-900 hover:bg-white hover:text-stone-900 animate-delay-in disabled:bg-stone-500 disabled:border-stone-500")}>
-          {isPending && <><Icons.loading className="w-4 h-4"/>{t("generic.loading")}</>}
+          {isPending && <><Icon.loading className="w-4 h-4"/>{t("generic.loading")}</>}
           {!isPending && t("generic.load-more")}
         </Button>
       </>}
@@ -66,7 +66,7 @@ const Activities = ({activities, style, className}: {activities: Awaited<GetActi
   return (<>
     <ul className={cn("space-y-6 py-8 animate-delay-in", className)} style={cssIndexCounter()}>
       {activities.map((activity) => {
-        const Icon = Icons.type[`${activity.category}`]
+        const Icon = Icon.type[`${activity.category}`]
         return (
           <li key={activity._id}>
             <Link href={`/${activity.slug}`} className="flex flex-col gap-2 p-4 -m-4 rounded-lg group relative">
@@ -79,9 +79,9 @@ const Activities = ({activities, style, className}: {activities: Awaited<GetActi
                     <h2 className="text-xl font-bold text-stone-800 dark:text-stone-200">{activity.title}</h2>
                     <div className="hidden relative md:flex items-center gap-1 text-xs font-medium text-stone-500">
                       <span className={cn("flex items-center rounded-md gap-1 transition")}>
-                        <Icons.post.viewFilled/>{activity.view}
+                        <Icon.post.viewFilled/>{activity.view}
                       </span>
-                      <Icons.symbol.dot className="stroke-[3px] -mx-1 opacity-70"/>
+                      <Icon.symbol.dot className="stroke-[3px] -mx-1 opacity-70"/>
                       <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
                     </div>
                   </div>
@@ -94,9 +94,9 @@ const Activities = ({activities, style, className}: {activities: Awaited<GetActi
                   </StarRating>
                   <div className="flex md:hidden items-center gap-1 text-sm font-medium text-stone-500">
                     <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
-                    <Icons.symbol.dot className="stroke-[4px] -mx-1 opacity-70"/>
+                    <Icon.symbol.dot className="stroke-[4px] -mx-1 opacity-70"/>
                     <span className={cn("flex items-center rounded-md gap-1 transition")}>
-                      <Icons.post.viewFilled/>{activity.view}
+                      <Icon.post.viewFilled/>{activity.view}
                     </span>
                   </div>
                   <p className="text-xs mt-0.5 mb-2">{activity.douban?.subtitle}</p>
@@ -150,7 +150,7 @@ export const LatestActivityList = ({data, style, className}: {data: GetActivitie
                 <div className="flex items-center justify-between w-full">
                   <span className="font-medium text-sm">{site.author}</span>
                   <span className="flex items-center rounded-md gap-1 text-xs">
-                    <Icons.post.view/>{activity.view}
+                    <Icon.post.view/>{activity.view}
                   </span>
                 </div>
                 <div className="flex items-center text-xs gap-2">

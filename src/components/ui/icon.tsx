@@ -5,7 +5,7 @@ import {ArrowRight, AudioLines, ChevronRight, CircleAlert, Dot, Filter, Globe, H
 import Image, {ImageProps} from "next/image"
 import {Book, BookmarkSimple, Eye, FilmReel, GithubLogo, SelectionBackground} from "@phosphor-icons/react/dist/ssr"
 
-export const Icons = {
+export const Icon = {
   account: {signIn: cns(LogIn), signOut: cns(LogOut)},
   audio: cns(AudioLines, "w-5 h-5 [&_path]:animate-wave [&_path:nth-child(odd)]:animate-delay-300"),
   background: cns((props) => <SelectionBackground weight="duotone" {...props}/>),
@@ -31,7 +31,7 @@ export const Icons = {
     hash: cns(Hash), slash: cns(Slash), dot: cns(Dot), alert: cns(CircleAlert),
     square: cns(Square), squareChecked: cns(SquareCheckBig, "[&_path:first-child]:stroke-[3px]")
   },
-  theme: {light: cns(Sun, "w-5 h-5"), dark: cns(Moon, "w-5 h-5"), system: cns(SunMoon, "w-5 h-5")},
+  theme: {light: cns(Sun, "w-full h-full"), dark: cns(Moon, "w-full h-full"), system: cns(SunMoon, "w-full h-full")},
   type: {
     book: cns((props) => <Book weight="fill" {...props}/>),
     movie: cns((props) => <FilmReel weight="fill" {...props}/>),

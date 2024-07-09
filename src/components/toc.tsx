@@ -2,7 +2,7 @@
 import {useEffect} from "react"
 import tocbot from "tocbot"
 import "./toc.css"
-import {Icons} from "@/components/icons"
+import {Icon} from "@/components/ui/icon"
 import {useMounted} from "@/lib/use-mounted"
 import {useTheme} from "next-themes"
 import {useTranslation} from "react-i18next"
@@ -35,7 +35,7 @@ export default function Toc() {
       </h5>
       <div className="hidden text-sm text-slate-600">{t("post.toc-empty")}</div>
       <section className="toc py-2 pl-2 text-slate-700 text-sm leading-6">
-        <Icons.loading/>
+        <Icon.loading/>
       </section>
     </div>
   )

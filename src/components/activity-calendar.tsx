@@ -8,7 +8,7 @@ import {useTheme} from "next-themes"
 import {useTranslation} from "react-i18next"
 import {FilterOption} from "@/components/activity-filter"
 import {CalendarPlaceholder} from "@/components/loading"
-import {Icons} from "@/components/icons"
+import {Icon} from "@/components/ui/icon"
 
 export function ActivityCalendar({calendarData, style, filter}: {calendarData: GetActivityCalendarDataResponse, filter: FilterOption & {start: string, end: string}} & ComponentPropsWithoutRef<"section">) {
   const data = use(calendarData)
@@ -35,8 +35,8 @@ export function ActivityCalendar({calendarData, style, filter}: {calendarData: G
               <p className="text-xs">{format(activity.date, {locale, localizeDate: true})}</p>
               {(!!activity.countBook || !!activity.countMovie) &&
                 <p className="flex items-center gap-1 font-medium text-stone-800 dark:text-stone-200">
-                  {!!activity.countBook && <><Icons.type.book/> {activity.countBook}</>}
-                  {!!activity.countMovie && <><Icons.type.movie/> {activity.countMovie}</>}
+                  {!!activity.countBook && <><Icon.type.book/> {activity.countBook}</>}
+                  {!!activity.countMovie && <><Icon.type.movie/> {activity.countMovie}</>}
                 </p>}
             </TooltipContent>
           </Tooltip>

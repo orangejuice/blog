@@ -1,7 +1,7 @@
 "use client"
 import {useTheme} from "next-themes"
 import {Button} from "@/components/ui/button"
-import {Icons} from "@/components/icons"
+import {Icon} from "@/components/ui/icon"
 import {cn} from "@/lib/utils"
 import {useTranslation} from "react-i18next"
 import React, {ComponentPropsWithoutRef, useEffect} from "react"
@@ -25,7 +25,7 @@ export function BackgroundMusicToggle({className, small, ...props}: ComponentPro
     <Button variant="noStyle" className={cn("group relative h-fit w-fit gap-2 px-2 py-1.5 -mx-2 hover:bg-stone-200 active:bg-stone-300",
       "dark:hover:bg-stone-700 dark:active:bg-stone-800", className)}
       onClick={toggleAudio}>
-      <Icons.audio className={cn(!isPlaying && "[&_path]:[animation-play-state:paused]", small ? "h-4 w-4" : "h-5 w-5")}/>
+      <Icon.audio className={cn(!isPlaying && "[&_path]:[animation-play-state:paused]", small ? "h-4 w-4" : "h-5 w-5")}/>
       <AnimatePresence>
         {!isPlaying && (<>
           <motion.span initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} className={cn(
@@ -48,7 +48,7 @@ export function BackgroundCanvasToggle({className, small, ...props}: ComponentPr
     <Button variant="noStyle" className={cn("group relative h-fit w-fit gap-2 px-2 py-1.5 -mx-2 hover:bg-stone-200 active:bg-stone-300",
       "dark:hover:bg-stone-700 dark:active:bg-stone-800", className)}
       onClick={() => setIsBackgroundOn(!isBackgroundOn)}>
-      <Icons.background className={cn(small ? "h-4 w-4" : "h-5 w-5")}/>
+      <Icon.background className={cn(small ? "h-4 w-4" : "h-5 w-5")}/>
       <AnimatePresence>
         {mounted && !isBackgroundOn && (<>
           <motion.span initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} className={cn(

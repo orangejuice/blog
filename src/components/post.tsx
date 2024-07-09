@@ -1,7 +1,7 @@
 import {menu, SiteLocale} from "@/site"
 import {cn, format, objectToUrlPart, useCssIndexCounter} from "@/lib/utils"
 import initTranslation from "@/lib/i18n"
-import {Icons} from "@/components/icons"
+import {Icon} from "@/components/ui/icon"
 import Link from "next/link"
 import {InteractionBar} from "@/components/interaction-bar"
 import {MDX} from "@/components/mdx"
@@ -23,21 +23,21 @@ export const PostPage = async ({slug, post, locale}: {slug: string, post: Post, 
               {t("post.publish", {date: format(post.date, {locale})})}
             </time>
             {post.updated != post.date && (<>
-              <Icons.symbol.dot className="stroke-[4px] opacity-70"/>
+              <Icon.symbol.dot className="stroke-[4px] opacity-70"/>
               {t("post.update", {date: format(post.updated, {locale})})}
             </>)}
             {post.tags?.length > 0 && (<>
-              <Icons.symbol.dot className="stroke-[4px] opacity-70"/>
+              <Icon.symbol.dot className="stroke-[4px] opacity-70"/>
               <div className="flex items-center gap-2 flex-wrap">
                 {post.tags.map((tag, index) =>
                   <Link href={`/${menu.post}/${objectToUrlPart({lang: "all-lang", tag})}`} key={index} className={cn(
                     "flex items-center rounded-md transition px-1 py-0.5 text-sm -mx-1",
                     "hover:bg-stone-200 dark:hover:bg-stone-700")}>
-                    <Icons.symbol.hash className="w-3 h-3 text-inherit"/> {tag}
+                    <Icon.symbol.hash className="w-3 h-3 text-inherit"/> {tag}
                   </Link>)}
               </div>
             </>)}
-            <Icons.symbol.dot className="stroke-[4px] opacity-70"/>
+            <Icon.symbol.dot className="stroke-[4px] opacity-70"/>
             <InteractionBar slug={slug}/>
           </div>
         </section>

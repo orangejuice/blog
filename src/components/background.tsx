@@ -126,7 +126,7 @@ export function Background() {
   const [isBackgroundOn] = useLocalStorage("background-canvas", true)
 
   return (<>
-    <AnimatePresence>
+    <AnimatePresence mode="wait">
       {mounted && isBackgroundOn && resolvedTheme == "light" && <AmbientRead/>}
       {mounted && isBackgroundOn && resolvedTheme == "dark" && <StarrySky/>}
     </AnimatePresence>

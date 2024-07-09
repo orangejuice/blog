@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import {cn} from "@/lib/utils"
-import {Icons} from "@/components/icons"
+import {Icon} from "@/components/ui/icon"
 import {AnimatePresence, motion} from "framer-motion"
 import React, {ComponentPropsWithoutRef, useEffect} from "react"
 import {useLocalStorage} from "@/lib/use-local-storage"
@@ -54,30 +54,32 @@ export const InteractionBar = ({slug, mini = false, className}: {slug: string, m
         ...interactions,
         [slug]: {...interactions[slug], view: updated.view, viewed: true}
       }))
-      const index = posts.findIndex(bySlug)
+      let index
+
+      index = posts.findIndex(bySlug)
       if (index != -1) {
         posts[index].view = updated.view
         setPosts([...posts])
-      } else {
-        const index = activities.findIndex(bySlug)
-        if (index != -1) {
-          activities[index].view = updated.view
-          setActivities([...activities])
-        }
+        return
+      }
+
+      index = activities.findIndex(bySlug)
+      if (index != -1) {
+        activities[index].view = updated.view
+        setActivities([...activities])
       }
     }
-    if (interactions[slug]?.viewed) void updateViews(true)
-    else void updateViews(false)
+    void updateViews(!!interactions[slug]?.viewed)
   }, [mounted])
 
   if (mini) return (<>
     <span className={cn("flex items-center rounded-md gap-1 transition text-xs", className)}>
-      <Icons.post.viewFilled/>
+      <Icon.post.viewFilled/>
       <AnimatePresence mode="popLayout">
         {mounted && interactions[slug]?.view != undefined &&
           <motion.span key={interactions[slug].view} animate={{opacity: 1}} exit={{opacity: 0}}>{interactions[slug].view}</motion.span>}
         {(!mounted || interactions[slug]?.view == undefined) &&
-          <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.loadingGrid/></motion.span>}
+          <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icon.loadingGrid/></motion.span>}
       </AnimatePresence>
     </span>
   </>)
@@ -85,32 +87,32 @@ export const InteractionBar = ({slug, mini = false, className}: {slug: string, m
   return (<>
     <div className="flex items-center gap-2 shrink-0">
       <span className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-sm -mx-1")}>
-        <Icons.post.view/>
+        <Icon.post.view/>
         <AnimatePresence mode="popLayout">
           {mounted && interactions[slug]?.view != undefined &&
             <motion.span key={interactions[slug].view} animate={{opacity: 1}} exit={{opacity: 0}}>{interactions[slug].view}</motion.span>}
           {(!mounted || interactions[slug]?.view == undefined) &&
-            <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.loadingGrid/></motion.span>}
+            <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icon.loadingGrid/></motion.span>}
         </AnimatePresence>
       </span>
       <Link href={"#comments"} className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-sm -mx-1",
         "hover:bg-stone-200 dark:hover:bg-stone-700")}>
-        <Icons.post.reaction/>
+        <Icon.post.reaction/>
         <AnimatePresence mode="popLayout">
           {mounted && discussion != undefined &&
             <motion.span key={discussion.reaction} animate={{opacity: 1}} exit={{opacity: 0}}>{discussion.reaction}</motion.span>}
           {(!mounted || discussion == undefined) &&
-            <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.loadingGrid/></motion.span>}
+            <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icon.loadingGrid/></motion.span>}
         </AnimatePresence>
       </Link>
       <Link href={"#comments"} className={cn("flex items-center rounded-md gap-1 transition px-1 py-0.5 text-sm -mx-1",
         "hover:bg-stone-200 dark:hover:bg-stone-700")}>
-        <Icons.post.comment/>
+        <Icon.post.comment/>
         <AnimatePresence mode="popLayout">
           {mounted && discussion != undefined &&
             <motion.span key={discussion.comment} animate={{opacity: 1}} exit={{opacity: 0}}>{discussion.comment}</motion.span>}
           {(!mounted || discussion == undefined) &&
-            <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icons.loadingGrid/></motion.span>}
+            <motion.span key="load" animate={{opacity: 1}} exit={{opacity: 0}}><Icon.loadingGrid/></motion.span>}
         </AnimatePresence>
       </Link>
     </div>

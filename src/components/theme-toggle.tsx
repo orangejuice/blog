@@ -1,7 +1,7 @@
 "use client"
 import {useTheme} from "next-themes"
 import {Button} from "@/components/ui/button"
-import {Icons} from "@/components/icons"
+import {Icon} from "@/components/ui/icon"
 import {cn} from "@/lib/utils"
 import {useMounted} from "@/lib/use-mounted"
 import {useTranslation} from "react-i18next"
@@ -11,7 +11,7 @@ export function ThemeToggle({className, small, ...props}: ComponentPropsWithoutR
   const mounted = useMounted()
   const {theme, resolvedTheme, setTheme} = useTheme()
   const {t} = useTranslation()
-
+  const size = small ? "h-4 w-4" : "h-5 w-5"
   const changeTheme = () => startTransition(() => {
     setTheme(theme === "light" ? "dark" : theme === "dark" ? "system" : "light")
   })
@@ -19,24 +19,22 @@ export function ThemeToggle({className, small, ...props}: ComponentPropsWithoutR
   return (<>
     {!mounted && (<>
       <Button variant="noStyle" className={cn("group h-fit w-fit gap-2 px-2 py-1.5 -mx-2", className)}>
-        <div className={cn("relative", small ? "h-4 w-4" : "h-5 w-5")}>
-          <Icons.theme.system className={cn("absolute animate-delay-hide group-hover:animate-none", small ? "h-4 w-4" : "h-5 w-5")}/>
-        </div>
-        <span>{t(`theme.system`)}</span>
+        <Icon.theme.system className={size}/>
+        <span>{t("theme.system")}</span>
       </Button>
     </>)}
     {mounted && (<>
       <Button variant="noStyle" onClick={changeTheme} className={cn("group h-fit w-fit gap-2 px-2 py-1.5 -mx-2",
         "hover:bg-stone-200 active:bg-stone-300 dark:hover:bg-stone-700 dark:active:bg-stone-800", className)} {...props}>
-        {theme === "dark" && <Icons.theme.dark className={small ? "w-4 h-4" : "w-5 h-5"}/>}
-        {theme === "light" && <Icons.theme.light className={small ? "w-4 h-4" : "w-5 h-5"}/>}
+        {theme === "dark" && <Icon.theme.dark className={size}/>}
+        {theme === "light" && <Icon.theme.light className={size}/>}
         {theme === "system" && (<>
-          <div className={cn("relative", small ? "h-4 w-4" : "h-5 w-5")}>
-            <Icons.theme.system className={cn("absolute animate-delay-hide group-hover:animate-none", small ? "h-4 w-4" : "h-5 w-5")}/>
+          <div className={cn("relative", size)}>
+            <Icon.theme.system className="absolute animate-delay-hide group-hover:animate-none"/>
             {resolvedTheme === "dark" &&
-              <Icons.theme.dark className={cn("absolute animate-delay-show opacity-0 group-hover:hidden", small ? "h-4 w-4" : "h-5 w-5")}/>}
+              <Icon.theme.dark className="absolute animate-delay-show opacity-0 group-hover:hidden"/>}
             {resolvedTheme === "light" &&
-              <Icons.theme.light className={cn("absolute animate-delay-show opacity-0 group-hover:hidden", small ? "h-4 w-4" : "h-5 w-5")}/>}
+              <Icon.theme.light className="absolute animate-delay-show opacity-0 group-hover:hidden"/>}
           </div>
         </>)}
         <span>{t(`theme.${theme}`)}</span>

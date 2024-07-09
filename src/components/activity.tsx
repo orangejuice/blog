@@ -1,6 +1,6 @@
 import {History as HistoryType} from "contentlayer/generated"
 import {SiteLocale} from "@/site"
-import {Icons} from "@/components/icons"
+import {Icon} from "@/components/ui/icon"
 import initTranslation from "@/lib/i18n"
 import {Image} from "@/components/ui/image"
 import {StarRating} from "@/components/star-rating"
@@ -12,7 +12,7 @@ import React from "react"
 import {TranslationDisclaimer} from "@/components/generic"
 
 export const ActivityPage = async ({slug, activity, locale}: {slug: string, activity: Activity, locale: SiteLocale}) => {
-  const Icon = Icons.type[`${activity.category}`]
+  const Icon = Icon.type[`${activity.category}`]
   const {t} = await initTranslation(locale)
   const cssIndexCounter = useCssIndexCounter()
 
@@ -34,7 +34,7 @@ export const ActivityPage = async ({slug, activity, locale}: {slug: string, acti
             </StarRating>
             <div className="flex items-center gap-1 text-sm font-medium text-stone-500">
               <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
-              <Icons.symbol.dot className="stroke-[4px] opacity-70"/>
+              <Icon.symbol.dot className="stroke-[4px] opacity-70"/>
               <InteractionBar slug={slug} mini className="text-sm"/>
             </div>
             <p className="text-sm mt-0.5">{activity.douban?.subtitle}</p>
@@ -49,7 +49,7 @@ export const ActivityPage = async ({slug, activity, locale}: {slug: string, acti
               <span className="absolute top-5 left-5 -ml-[0.5px] h-[calc(100%-1rem)] w-px bg-stone-300" aria-hidden="true"></span>
               <div className="relative flex items-start space-x-3 text-stone-300">
                 <div className="flex items-center w-6 h-6">
-                  <Icons.symbol.dot style={{color: index == 0 ? `var(--color-${activity.category}-2` : undefined}} className="mx-3 stroke-[5px]"/>
+                  <Icon.symbol.dot style={{color: index == 0 ? `var(--color-${activity.category}-2` : undefined}} className="mx-3 stroke-[5px]"/>
                 </div>
                 <div className="flex flex-col gap-2">
                   <div className="text-md text-stone-500">

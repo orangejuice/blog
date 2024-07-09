@@ -3,7 +3,7 @@ import {site} from "@/site"
 import React from "react"
 import {BackgroundCanvasToggle, BackgroundMusicToggle} from "@/components/background-toggle"
 import Link from "next/link"
-import {Icons} from "@/components/icons"
+import {Icon} from "@/components/ui/icon"
 
 export function Footer() {
   return (<>
@@ -17,7 +17,7 @@ export function Footer() {
         <div>{`Copyright © ${new Date().getFullYear()}`}</div>
         <span>{` • `}</span>
         <Link href="https://github.com/orangejuice/blog" target="_blank" className="inline-flex items-center gap-1 underline-fade">
-          <Icons.github/> {site.title}
+          <Icon.github/> {site.title}
         </Link>
       </div>
     </footer>
