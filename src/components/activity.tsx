@@ -53,7 +53,7 @@ export const ActivityPage = async ({slug, activity, locale}: {slug: string, acti
                 </div>
                 <div className="flex flex-col gap-2">
                   <div className="text-md text-stone-500">
-                    <p className="font-medium text-stone-900">
+                    <p className="font-medium text-stone-800 dark:text-stone-400">
                       {t(`bookshelf.${activity.category}.status.${history.status}`, {date: ""})}
                     </p>
                     <span className="whitespace-nowrap text-xs">
@@ -71,7 +71,7 @@ export const ActivityPage = async ({slug, activity, locale}: {slug: string, acti
             </li>
           ))}
         </ul>
-        {locale == "en" && <TranslationDisclaimer style={cssIndexCounter()}/>}
+        {locale == "en" && <TranslationDisclaimer style={cssIndexCounter()} className="sticky bottom-5"/>}
       </div>
       <Comment slug={activity.slug}/>
     </div>

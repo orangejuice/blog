@@ -42,9 +42,9 @@ export default async function Page({params: {locale, filter}}: {params: {locale:
           </Suspense>
         </section>
       </div>
-      <aside className="flex flex-col gap-6 row-start-1 md:col-start-2">
+      <aside className="md:sticky md:top-2 flex flex-col gap-6 row-start-1 md:col-start-2">
         <ActivityFilter filter={appliedFilter} filterData={filterData} style={cssIndexCounter({mobile: 1})}/>
-        {locale == "en" && <TranslationDisclaimer style={cssIndexCounter()}/>}
+        {locale == "en" && <TranslationDisclaimer style={cssIndexCounter({index: 6, mobile: 4})}/>}
       </aside>
     </div>
   </>)

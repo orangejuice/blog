@@ -1,6 +1,6 @@
 import {cn} from "@/lib/utils"
 import {Icons} from "@/components/icons"
-import {CSSProperties} from "react"
+import {ComponentPropsWithoutRef} from "react"
 
 export const BounceBackground = () => {
   return (<>
@@ -9,9 +9,9 @@ export const BounceBackground = () => {
   </>)
 }
 
-export const TranslationDisclaimer = ({style}: {style?: CSSProperties}) => {
+export const TranslationDisclaimer = ({style, className}: ComponentPropsWithoutRef<"div">) => {
   return (<>
-    <div className="flex items-start gap-1 text-xs animate-delay-in" style={style}>
+    <div className={cn("flex items-start gap-1 text-xs animate-delay-in text-stone-500", className)} style={style}>
       <Icons.symbol.alert/>The content on this page has been automatically translated from Chinese using GPT-4o.
       Please be aware that there may be translation errors or inaccuracies.
     </div>
