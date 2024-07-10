@@ -1,8 +1,8 @@
-import {ChatCompletionMessageParam, ChatCompletionTool} from "openai/resources/chat/completions"
 import {jsonrepair} from "jsonrepair"
-import {OpenAI} from "openai"
+import {Anthropic} from "@anthropic-ai/sdk"
+import {MessageParam, Tool} from "@anthropic-ai/sdk/resources/messages"
 
-const openai = new OpenAI({apiKey: process.env.OPENAI_API_KEY})
+const claude = new Anthropic({apiKey: process.env.OPENAI_API_KEY})
 
 type CreativeWorkInput = {
   title: string
@@ -27,42 +27,35 @@ function generateSlug(title: string): string {
 
 // @ts-ignore
 export async function translateCreativeWork(input: CreativeWorkInput): Promise<CreativeWorkOutput> {
-  const functionDefinition: ChatCompletionTool = {
-    type: "function",
-    function: {
-      name: "translate",
-      description: "Translate Book, Movie or TV Show details from Chinese to English",
-      parameters: {
-        type: "object",
-        properties: {
-          title: {
-            type: "string",
-            description: "Translated title. Use well-known English title if available."
-          },
-          subtitle: {
-            type: "string",
-            description: "Translated subtitle of the Book, Movie or TV Show"
-          },
-          comment: {
-            type: "string",
-            description: "Translated comment of the Book, Movie or TV Show"
-          },
-          history: {
-            type: "array",
-            items: {type: "string"},
-            description: "Array of translated history comments"
-          }
+  const functionDefinition: Tool = {
+    name: "translate",
+    description: "Translate Book, Movie or TV Show details from Chinese to English",
+    input_schema: {
+      type: "object",
+      properties: {
+        title: {
+          type: "string",
+          description: "Translated title. Use well-known English title if available."
         },
-        required: ["title", "subtitle", "comment"]
-      }
+        subtitle: {
+          type: "string",
+          description: "Translated subtitle of the Book, Movie or TV Show"
+        },
+        comment: {
+          type: "string",
+          description: "Translated comment of the Book, Movie or TV Show"
+        },
+        history: {
+          type: "array",
+          items: {type: "string"},
+          description: "Array of translated history comments"
+        }
+      },
+      required: ["title", "subtitle", "comment"]
     }
   }
 
-  const messages: ChatCompletionMessageParam[] = [
-    {
-      role: "system",
-      content: "You are a professional translator from Chinese to English, specializing in creative works."
-    },
+  const messages: MessageParam[] = [
     {
       role: "user",
       content: `Translate the following creative work details from Chinese to English. 
@@ -79,15 +72,16 @@ export async function translateCreativeWork(input: CreativeWorkInput): Promise<C
     }
   ]
 
-  const response = await openai.chat.completions.create({
-    model: "gpt-4o",
+  const response = await claude.messages.create({
+    model: "claude-3-5-sonnet-20240620",
     messages: messages,
+    system: "You are a professional translator from Chinese to English, specializing in creative works.",
+    max_tokens: Infinity,
     tools: [functionDefinition],
-    tool_choice: "required"
+    tool_choice: {name: "translate", type: "tool"}
   })
 
-  const toolCalls = response.choices[0].message.tool_calls
-  const argument = toolCalls && toolCalls[0].function.arguments
+  const argument = response.content[0].type == "tool_use" && response.content[0].input as string
   try {
     if (argument) {
       const result: Omit<CreativeWorkOutput, "slug"> = JSON.parse(jsonrepair(argument))
