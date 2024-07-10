@@ -69,18 +69,25 @@ for (const interest of (tofu as Record<any, any>).interest) {
       }
     }
 
-    if (!fs.existsSync(path.join(OUTPUT_DIR, dict, "record.en.md"))) {
+    let generateEnglishDocument = true
+    if (fs.existsSync(path.join(OUTPUT_DIR, dict, "record.en.md")) && fs.existsSync(path.join(OUTPUT_DIR, dict, "record.zh.md"))) {
+      const file = fs.readFileSync(path.join(OUTPUT_DIR, dict, "record.zh.md"), "utf8")
+      const oldFrontmatter = file.match(/^---\s*\n([\s\S]*?)\n---\s*\n/)?.[1]
+      if (oldFrontmatter == yaml.stringify(frontmatter).trim()) generateEnglishDocument = false
+    }
+    if (generateEnglishDocument) {
       const historyToTranslate = (history && history.filter(h => !!h.comment).length > 0) ? history.filter(h => !!h.comment).map(h => h.comment) : undefined
       const translated = await translateCreativeWork({
-        title, subtitle: doubanSubtitle, category, comment,
-        history: historyToTranslate
+        title, subtitle: doubanSubtitle, category, comment, history: historyToTranslate
       })
       let historyTranslated = history
       if (history && historyToTranslate) {
         let i = 0
         historyTranslated = history.map(h => {
           if (h.comment) {
-            if (!translated.history?.[i]) throw Error("translation failed")
+            if (!translated.history?.[i]) {
+              throw Error("translation output lacks history")
+            }
             return {...h, comment: translated.history[i++]}
           }
           return h
@@ -103,9 +110,7 @@ for (const interest of (tofu as Record<any, any>).interest) {
     const content = "---\n".concat(yaml.stringify(frontmatter), "---\n\n")
       .concat(sanitizeContent(comment ?? ""), "\n")
 
-    fs.writeFileSync(path.join(OUTPUT_DIR, dict, "record.md"), content, "utf8")
-    // execSync(`git add "${path.join(OUTPUT_DIR, dict, "record.md")}"`, {stdio: "inherit"})
-    // execSync(`git add "${path.join(OUTPUT_DIR, dict, "record.en.md")}"`, {stdio: "inherit"})
+    fs.writeFileSync(path.join(OUTPUT_DIR, dict, "record.zh.md"), content, "utf8")
   } catch (err) {
     console.log(interest)
     throw err
@@ -123,8 +128,10 @@ async function downloadImage(url: string, destDir: string) {
   return await fetch(url).then((async (response) => {
     if (response.ok) {
       fs.writeFileSync(destPath, Buffer.from(await response.arrayBuffer()))
-      // execSync(`git add "${destPath}"`, {stdio: "inherit"})
       return [destPath, "downloaded"]
     } else return [destPath, `HTTP error ${response.status}`]
   }))
 }
+
+
+// execSync(`git add "${destPath}"`, {stdio: "inherit"})
