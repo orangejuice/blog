@@ -11,6 +11,28 @@ import {useMounted} from "@/lib/use-mounted"
 import {cn, randomInRange} from "@/lib/utils"
 import {useLocalStorage} from "@/lib/use-local-storage"
 
+
+export function Background() {
+  const {resolvedTheme} = useTheme()
+  const mounted = useMounted()
+  const [isBackgroundOn] = useLocalStorage("background-canvas", true)
+  const [timeToGo, setTimeToGo] = useState(false)
+
+  useEffect(() => {
+    const unload = () => setTimeToGo(true)
+    window.addEventListener("beforeunload", unload)
+    return () => { window.removeEventListener("beforeunload", unload)}
+  }, [])
+
+  return (<>
+    <AnimatePresence mode="wait">
+      {mounted && isBackgroundOn && !timeToGo && resolvedTheme == "light" && <AmbientRead/>}
+      {mounted && isBackgroundOn && !timeToGo && resolvedTheme == "dark" && <StarrySky/>}
+    </AnimatePresence>
+  </>)
+}
+
+
 const easeInOutCubic = (t: number) => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1
 
 function Sphere({position, ...props}: MeshProps & {position: number[]}) {
@@ -91,7 +113,7 @@ function AmbientRead() {
   }, [threeLoaded])
 
   return (<>
-    <motion.div animate={{opacity: threeLoaded ? 1 : 0}} exit={{opacity: 0}} className={cn("fixed top-0 pointer-events-none",
+    <motion.div animate={{opacity: threeLoaded ? 1 : 0}} className={cn("fixed top-0 pointer-events-none",
       "w-[700px] left-[calc(100vw-700px)] h-[500px] md:w-[1200px] md:h-[700px] md:left-[calc(100vw-1200px)]")}>
       <Canvas shadows camera={{fov: 45}} style={{pointerEvents: "none"}} onCreated={() => {setThreeLoaded(true)}}>
         <CameraControls ref={cameraControlRef} makeDefault={true}/>
@@ -120,19 +142,6 @@ function AmbientRead() {
   </>)
 }
 
-export function Background() {
-  const {resolvedTheme} = useTheme()
-  const mounted = useMounted()
-  const [isBackgroundOn] = useLocalStorage("background-canvas", true)
-
-  return (<>
-    <AnimatePresence mode="wait">
-      {mounted && isBackgroundOn && resolvedTheme == "light" && <AmbientRead/>}
-      {mounted && isBackgroundOn && resolvedTheme == "dark" && <StarrySky/>}
-    </AnimatePresence>
-  </>)
-}
-
 function TwinklingStar({position}: {position: Vector3}) {
   const mesh = useRef<Mesh>(null)
   const factor = useMemo(() => randomInRange(0.5, 1.5), [])
@@ -157,7 +166,6 @@ const RotatingSky = ({children}: {children: ReactNode}) => {
 }
 
 const StarrySky = () => {
-  const [show, setShow] = useState(true)
   const stars: Vector3[] = []
   for (let i = 0; i < 50; i++) {
     const x = randomInRange(-100, 700)
@@ -166,27 +174,18 @@ const StarrySky = () => {
     stars.push(new Vector3(x, y, z))
   }
 
-  useEffect(() => {
-    const unload = () => setShow(false)
-    addEventListener("beforeunload", unload)
-    return () => { removeEventListener("beforeunload", unload)}
-  }, [])
-
   return (<>
-    <motion.div animate={{opacity: 1}} exit={{opacity: 0}}
-      className="w-[1200px] h-[700px] fixed top-0 left-[calc(100vw-1200px)] pointer-events-none">
-      {show && <>
-        <Canvas camera={{fov: 75, position: [900, 570, 200], rotation: [-1.5, 1, 1.5]}} style={{pointerEvents: "none"}}>
-          {/*<OrbitControls/>*/}
-          {/*<axesHelper/>*/}
-          {/*<PositionInfo/>*/}
-          <RotatingSky>
-            {stars.map((position, index) => (
-              <TwinklingStar key={index} position={position}/>
-            ))}
-          </RotatingSky>
-        </Canvas>
-      </>}
+    <motion.div animate={{opacity: 1}} className="w-[1200px] h-[700px] fixed top-0 left-[calc(100vw-1200px)] pointer-events-none">
+      <Canvas camera={{fov: 75, position: [900, 570, 200], rotation: [-1.5, 1, 1.5]}} style={{pointerEvents: "none"}}>
+        {/*<OrbitControls/>*/}
+        {/*<axesHelper/>*/}
+        {/*<PositionInfo/>*/}
+        <RotatingSky>
+          {stars.map((position, index) => (
+            <TwinklingStar key={index} position={position}/>
+          ))}
+        </RotatingSky>
+      </Canvas>
     </motion.div>
   </>)
 }
