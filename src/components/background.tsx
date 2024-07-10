@@ -96,7 +96,7 @@ function Plants({number, position}: GroupProps & {number: number}) {
 }
 
 function AmbientRead() {
-  const [threeLoaded, setThreeLoaded] = useState(false)
+  const [isLoaded, setIsLoaded] = useState(false)
   const cameraControlRef = useRef<CameraControls>(null)
   const {spring} = useSpring({
     spring: 0,
@@ -110,12 +110,13 @@ function AmbientRead() {
     cameraControlRef.current?.rotatePolarTo(0)
     cameraControlRef.current?.rotateAzimuthTo(0)
     cameraControlRef.current?.setLookAt(-20, 20, -30, -8, -15, -28)
-  }, [threeLoaded])
+  }, [isLoaded])
 
   return (<>
-    <motion.div animate={{opacity: threeLoaded ? 1 : 0}} className={cn("fixed top-0 pointer-events-none",
+    <motion.div initial={{opacity: 0}} animate={{opacity: isLoaded ? 1 : 0}} transition={{delay: 0.5, duration: 0.5}}
+      className={cn("fixed top-0 pointer-events-none",
       "w-[700px] left-[calc(100vw-700px)] h-[500px] md:w-[1200px] md:h-[700px] md:left-[calc(100vw-1200px)]")}>
-      <Canvas shadows camera={{fov: 45}} style={{pointerEvents: "none"}} onCreated={() => {setThreeLoaded(true)}}>
+      <Canvas shadows camera={{fov: 45}} style={{pointerEvents: "none"}} onCreated={() => {setIsLoaded(true)}}>
         <CameraControls ref={cameraControlRef} makeDefault={true}/>
         <SoftShadows size={25} focus={0.53} samples={10}/>
         <fog attach="fog" args={["black", 0, 40]}/>
@@ -166,6 +167,7 @@ const RotatingSky = ({children}: {children: ReactNode}) => {
 }
 
 const StarrySky = () => {
+  const [isLoaded, setIsLoaded] = useState(false)
   const stars: Vector3[] = []
   for (let i = 0; i < 50; i++) {
     const x = randomInRange(-100, 700)
@@ -175,8 +177,10 @@ const StarrySky = () => {
   }
 
   return (<>
-    <motion.div animate={{opacity: 1}} className="w-[1200px] h-[700px] fixed top-0 left-[calc(100vw-1200px)] pointer-events-none">
-      <Canvas camera={{fov: 75, position: [900, 570, 200], rotation: [-1.5, 1, 1.5]}} style={{pointerEvents: "none"}}>
+    <motion.div initial={{opacity: 0}} animate={{opacity: isLoaded ? 1 : 0}} transition={{delay: 0.5, duration: 0.5}}
+      className="w-[1200px] h-[700px] fixed top-0 left-[calc(100vw-1200px)] pointer-events-none">
+      <Canvas camera={{fov: 75, position: [900, 570, 200], rotation: [-1.5, 1, 1.5]}} style={{pointerEvents: "none"}}
+        onCreated={() => {setIsLoaded(true)}}>
         {/*<OrbitControls/>*/}
         {/*<axesHelper/>*/}
         {/*<PositionInfo/>*/}
