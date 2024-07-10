@@ -55,11 +55,11 @@ export default async function RootLayout({children, params: {locale}}:
       <body className={cn("no-transition", fontSans.variable, fontMono.variable)}>
         <Context locale={resolved} resources={resources}>
           <Background/>
-          <div className="flex w-full flex-col max-w-5xl p-6 mx-auto mix-blend-multiply xl:px-0">
+          <main className="flex w-full flex-col max-w-5xl p-6 mx-auto mix-blend-multiply xl:px-0">
             <Header/>
             {children}
             <Footer/>
-          </div>
+          </main>
         </Context>
       </body>
     </html>

@@ -157,6 +157,7 @@ const RotatingSky = ({children}: {children: ReactNode}) => {
 }
 
 const StarrySky = () => {
+  const [show, setShow] = useState(true)
   const stars: Vector3[] = []
   for (let i = 0; i < 50; i++) {
     const x = randomInRange(-100, 700)
@@ -165,19 +166,27 @@ const StarrySky = () => {
     stars.push(new Vector3(x, y, z))
   }
 
+  useEffect(() => {
+    const unload = () => setShow(false)
+    addEventListener("beforeunload", unload)
+    return () => { removeEventListener("beforeunload", unload)}
+  }, [])
+
   return (<>
     <motion.div animate={{opacity: 1}} exit={{opacity: 0}}
       className="w-[1200px] h-[700px] fixed top-0 left-[calc(100vw-1200px)] pointer-events-none">
-      <Canvas camera={{fov: 75, position: [900, 570, 200], rotation: [-1.5, 1, 1.5]}} style={{pointerEvents: "none"}}>
-        {/*<OrbitControls/>*/}
-        {/*<axesHelper/>*/}
-        {/*<PositionInfo/>*/}
-        <RotatingSky>
-          {stars.map((position, index) => (
-            <TwinklingStar key={index} position={position}/>
-          ))}
-        </RotatingSky>
-      </Canvas>
+      {show && <>
+        <Canvas camera={{fov: 75, position: [900, 570, 200], rotation: [-1.5, 1, 1.5]}} style={{pointerEvents: "none"}}>
+          {/*<OrbitControls/>*/}
+          {/*<axesHelper/>*/}
+          {/*<PositionInfo/>*/}
+          <RotatingSky>
+            {stars.map((position, index) => (
+              <TwinklingStar key={index} position={position}/>
+            ))}
+          </RotatingSky>
+        </Canvas>
+      </>}
     </motion.div>
   </>)
 }
