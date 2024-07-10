@@ -66,7 +66,7 @@ const Activities = ({activities, style, className}: {activities: Awaited<GetActi
   return (<>
     <ul className={cn("space-y-6 py-8 animate-delay-in", className)} style={cssIndexCounter()}>
       {activities.map((activity) => {
-        const Icon = Icon.type[`${activity.category}`]
+        const TypeIcon = Icon.type[`${activity.category}`]
         return (
           <li key={activity._id}>
             <Link href={`/${activity.slug}`} className="flex flex-col gap-2 p-4 -m-4 rounded-lg group relative">
@@ -82,7 +82,7 @@ const Activities = ({activities, style, className}: {activities: Awaited<GetActi
                         <Icon.post.viewFilled/>{activity.view}
                       </span>
                       <Icon.symbol.dot className="stroke-[3px] -mx-1 opacity-70"/>
-                      <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
+                      <TypeIcon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
                     </div>
                   </div>
                   <StarRating rating={activity.douban?.rating}>
@@ -93,7 +93,7 @@ const Activities = ({activities, style, className}: {activities: Awaited<GetActi
                     </> : <span className="ml-1 font-mono text-xs">{t("bookshelf.rating.0")}</span>}
                   </StarRating>
                   <div className="flex md:hidden items-center gap-1 text-sm font-medium text-stone-500">
-                    <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
+                    <TypeIcon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
                     <Icon.symbol.dot className="stroke-[4px] -mx-1 opacity-70"/>
                     <span className={cn("flex items-center rounded-md gap-1 transition")}>
                       <Icon.post.viewFilled/>{activity.view}

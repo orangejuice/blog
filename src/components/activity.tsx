@@ -12,7 +12,7 @@ import React from "react"
 import {TranslationDisclaimer} from "@/components/generic"
 
 export const ActivityPage = async ({slug, activity, locale}: {slug: string, activity: Activity, locale: SiteLocale}) => {
-  const Icon = Icon.type[`${activity.category}`]
+  const TypeIcon = Icon.type[`${activity.category}`]
   const {t} = await initTranslation(locale)
   const cssIndexCounter = useCssIndexCounter()
 
@@ -33,7 +33,7 @@ export const ActivityPage = async ({slug, activity, locale}: {slug: string, acti
               </> : <span className="ml-1 font-mono text-xs">{t("bookshelf.rating.0")}</span>}
             </StarRating>
             <div className="flex items-center gap-1 text-sm font-medium text-stone-500">
-              <Icon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
+              <TypeIcon/><span>{t(`bookshelf.category.${activity.category}`)}</span>
               <Icon.symbol.dot className="stroke-[4px] opacity-70"/>
               <InteractionBar slug={slug} mini className="text-sm"/>
             </div>
