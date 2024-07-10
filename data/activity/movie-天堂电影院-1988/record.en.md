@@ -1,6 +1,5 @@
 ---
 title: Cinema Paradiso
-slug: cinema-paradiso
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,4 @@ douban:
     Starring Philippe Noiret, Salvatore Cascio
 ---
 
-Via tw
+Via Twitter

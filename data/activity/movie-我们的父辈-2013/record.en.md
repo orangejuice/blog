@@ -1,6 +1,5 @@
 ---
 title: Our Forefathers
-slug: our-forefathers
 category: movie
 status: done
 rating: 3
@@ -8,8 +7,8 @@ year: "2013"
 date: 2023-12-22 08:42:41+08:00
 douban:
   rating: 9.6
-  subtitle: 2013 / Germany / Drama, Action, History, War / Philip Kadelbach /
-    Volker Bruch, Tom Schilling
+  subtitle: 2013 / Germany / Drama Action History War / Philipp Kadelbach / Volker
+    Bruch Tom Schilling
 ---
 
-The entertainment and dramatization aspects are quite heavy, where a few people can bump into each other in the vast battlefield. The arrangement of life and death scenes is perplexing. The movie intentionally leads the audience to believe it's a real event, which is slightly irritating. Even if it were real, it would presumably be a meticulously selected extreme case from the battlefield used to piece together a narrative. It involves a star dream female singer who, despite her beautiful face, exists in her own world and is brutally beaten to death by her own lover. A Jew who successfully joins the Polish guerrilla forces by cutting open the bottom of a train carriage with a knife on the go. A solider, who escapes from the battlefield, kills his officer, and survives against all odds. Then there's his brother who, opposed to war, deliberately attracts enemy bombings, doesn't get punished, and transforms into an elite fighter resisting hundreds of enemies before ultimately dying a heroic death. Also, there’s a Jewish spy who turns into a Soviet female officer, executes Soviet nurses without blinking an eye, and yet repeatedly steps up to protect the German nurse who reported her. Although it's a depiction of World War II that consumes the historic incident, with some threads unclear, the story is above average. After watching, it only makes me look forward to seeing Chinese war films of this production quality in my lifetime.
+The entertainment elements are heavily overdone, with a vast battlefield where a few people can meet anywhere, and the arrangements of life and death are confusing. The movie intentionally leads the audience to believe it portrays real events, which is somewhat off-putting. Even if true, it appears to be a combination of extreme cases selectively pieced together from the entire battlefield into one picture. The film features a star dream female singer who lives in her own world and is tragically killed by her secret lover, a Jewish man who slashes through a train's undercarriage with a knife to escape and successfully infiltrates the Polish partisans, and another who avoids execution by escaping from the battlefield and killing his superior officer to survive, along with a brother who intentionally provokes enemy bombing with his anti-war stance, yet escapes punishment and transforms into a combat elite, fighting hundreds alone before ultimately committing a heroic suicide. Additionally, a Jewish spy transforms into a Soviet female officer, executing a Soviet nurse without blinking yet repeatedly emerges at critical moments to protect a German nurse who reported her, allowing her to survive until the end. Although the plot consumes and entertains with WWII themes with some unclear threads, the story is still above average, leaving me eager to see Chinese-language war films reaching this production level in my lifetime.

@@ -1,6 +1,5 @@
 ---
 title: From the Vagina
-slug: from-the-vagina
 category: movie
 status: todo
 rating: 0

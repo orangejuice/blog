@@ -1,6 +1,5 @@
 ---
 title: The Singularity Is Nearer
-slug: the-singularity-is-nearer
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Ray Kurzweil / 2023 / Viking
 ---
 
-Via Silicon Valley's Wang Chuan on Twitter, Kurzweil's new book that just came out last week, 'The Singularity Is Nearer'. The chapter I'm most interested in is about cyborgs and the discussion of self-consciousness. This could be the area for the next paradigm shift and it should happen before 2045. By then, many of today's issues will become irrelevant fallacies.
+Via Twitter, Silicon Valley's Wang Chuan - Kurzweil's new book released last week, 'The Singularity Is Nearer.' The chapter I find most interesting discusses the fusion of humans and machines and the concept of self-consciousness. This could be the domain of the next paradigm shift, expected to occur before 2045. By then, many of today's problems will become irrelevant propositions.

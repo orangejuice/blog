@@ -1,6 +1,5 @@
 ---
-title: Wild South Peninsula Season 1
-slug: wild-south-peninsula-season-1
+title: "Wild Southeast Asia: Season 1"
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 2014 / USA
 ---
 
-The episode about China's Yunnan was great, I will look for other episodes to watch.
+Watched the episode about Yunnan, China; it was great. I'll look for other episodes to watch.

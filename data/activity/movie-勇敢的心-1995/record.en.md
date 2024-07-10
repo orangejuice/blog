@@ -1,6 +1,5 @@
 ---
 title: Braveheart
-slug: braveheart
 category: movie
 status: done
 rating: 4
@@ -12,4 +11,4 @@ douban:
     Gibson, Sophie Marceau
 ---
 
-Unexpectedly moved to tears, heroes and beauties, beauties love heroes, heroes love beauties. It's said to be historically inaccurate, but still a very symbolic hero movie. Compared with such noble, brave and flawless heroes, I really don't think I've lived at all.
+Unexpectedly touching tears were shed. A hero and a beauty, the beauty loves the hero, and the hero loves the beauty. It's said to deviate from historical facts, but still, it's a beautifully crafted hero movie. Compared to such a noble and flawless hero, I truly haven't lived at all.

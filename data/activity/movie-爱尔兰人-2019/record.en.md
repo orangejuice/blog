@@ -1,6 +1,5 @@
 ---
 title: The Irishman
-slug: the-irishman
 category: movie
 status: done
 rating: 5
@@ -12,4 +11,4 @@ douban:
     Al Pacino
 ---
 
-A group of lovable old men with their stories, like savoring a legend left from ancient times, even if they don't know the background. Couldn't watch it all in one go for three and a half hours, but it's good to leave it for later to take another look, maybe it will taste even better.
+A group of endearing old men carrying stories, as if savoring a legend left from ancient times, even without knowing the background. Couldn't finish the 3.5 hours in one go, but it would be nice to look back at it later, perhaps it will taste even better.

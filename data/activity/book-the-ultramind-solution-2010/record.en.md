@@ -1,6 +1,5 @@
 ---
 title: The UltraMind Solution
-slug: the-ultramind-solution
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,8 @@ douban:
   subtitle: Hyman, Mark M.D. / 2010
 ---
 
-Via tw Kenny, recommending a book -&lt;The UltraMind Solution&gt;, by Mark Hyman. It details the following: 1. Why the body gets damaged: external stress + environmental pollution + toxic food 2. How to repair: adjust diet + take vitamin supplements 3. Why to take nutritional supplements: due to environmental pollution, even the nutrition of unprocessed foods is greatly lost and cannot meet the needs of the human body. 4. Nutrients required for various symptoms, as well as recommended intake and frequency.
+Via tw Kenny recommends a book - &lt;The UltraMind Solution&gt;, Mark Hyman. It contains detailed introductions on:
+1. Why the body gets damaged: external pressure + environmental pollution + toxic food
+2. How to repair: adjust diet + take vitamin supplements
+3. Why to take nutritional supplements: Due to environmental pollution, even unprocessed foods suffer from severe nutrient loss, unable to meet the bodily needs
+4. The nutrients required for various symptoms, and recommendations on intake amount and frequency

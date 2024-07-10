@@ -1,6 +1,5 @@
 ---
 title: Xiao Wu
-slug: xiao-wu
 category: movie
 status: todo
 rating: 0

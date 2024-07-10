@@ -1,6 +1,5 @@
 ---
 title: Girl, Woman, Other
-slug: girl-woman-other
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Bernardine Evaristo / 2019 / Hamish Hamilton
 ---
 
-Chase a deer via Twitter
+Chasing a deer via Twitter

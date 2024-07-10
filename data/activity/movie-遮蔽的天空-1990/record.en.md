@@ -1,6 +1,5 @@
 ---
 title: The Sheltering Sky
-slug: the-sheltering-sky
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,6 @@ douban:
     John Malkovich
 ---
 
-In the end of the film, the original novel author Paul Bowles appears, slowly speaking these words: 'Because we do not know when we will die, we take life as an inexhaustible and endless source. However, things that happen in a lifetime may just happen so few times. How many more times can the childhood memories that have affected our lives emerge in our minds? Maybe four or five more times. How many more times can we witness the full moon rising? Maybe at most twenty times. But people always firmly believe that these opportunities will be endless.' / Those who realize the emptiness of life desire to live truly more than anyone else. - Paul Bowles, 'The Sheltering Sky'
+Via Twitter from Wesley: At the end of the movie, the original author, Paul Bowles, appears and slowly utters this passage: 
+Because we do not know when death will come, we still regard life as an inexhaustible and endless source. Yet, the events that truly shape our lives might only happen a few times. How many more times will the childhood memories that once guided our lives come to mind? Perhaps four or five more times. How many more times will we witness the full moon rise? Maybe up to twenty times. But people always believe these opportunities will be endless. / via Twitter from Doudou: Those who realize the emptiness of life desire to live truly more than anyone else.
+—Paul Bowles, 'The Sheltering Sky'

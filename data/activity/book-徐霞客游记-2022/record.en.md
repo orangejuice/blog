@@ -1,6 +1,5 @@
 ---
-title: Travel Notes of Xu Xiake
-slug: travel-notes-of-xu-xiake
+title: Xu Xiake's Travels
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Xu Xiake / 2022 / Zhonghua Book Company
 ---
 
-After reading 'China in the Classics' - 'Travel Notes of Xu Xiake', my daughter said to me, 'It wasn't easy for Xu Xiake's friend, Ji Mengliang, to compile his manuscripts, allowing them to be passed down to the world.' I sigh, unable to tell her it's not as simple as that. Ji Mengliang only compiled a part of the manuscript for Xu Xiake's travels (less than a quarter) The truth of history is that four years after Xu died, his entire family had been massacred by their own servants, a catastrophic event rarely mentioned in history called the 'Jiang-zhe Slave Revolt'. His family’s elimination is known as the 'Massacre of the Xu Family'. Xu's sons and nephews were all killed, and his manuscripts, along with his grand manor, were set on fire. During the transition from Ming to Qing, social chaos occurred. The so-called servants who were dependent on the elite launched a movement to reclaim their slave contracts, which ultimately evolved into violence and looting, resulting in the devastation of the Xu family. Amid this disaster, Xu's illegitimate son, Li Ji (whose mother was a maidservant in Xu's house and was banished after getting pregnant and married into a family surnamed Li), survived and devoted his entire life-e.
+Via Twitter, Xiao Jing Canxue's child Ziyu, after finishing "Classic Books of China" series's 'Xu Xiake's Travels,' told me: 'It's amazing that Xu Xiake’s friend, Ji Mengliang, helped organize the manuscript, allowing it to be preserved.' Alas, I couldn’t tell the child that things weren’t that simple. Ji Mengliang only organized a part of Xu Xiake’s travel notes (not even one-fourth). The harsh truth is that four years after Xu Xiake's death, his entire family was annihilated by their own servants, an incident part of the little-mentioned 'Jiangzhe Servant Rebellion.' This tragedy, known as the 'Xu Family Annihilation,' saw all of Xu Xiake's sons and nephews killed, with Xu Xiake’s manuscripts and large estates burnt to the ground. The transition between the Ming and Qing dynasties brought chaos, during which bonded servants of influential families initiated a movement to reclaim their indentures, eventually escalating to loot, vandalism, arson, and killings, resulting in the Xu family's demise. In this catastrophe, Xu Xiake's illegitimate son, Li Ji (whose mother, a domestic of Xu Xiake's, was expelled after becoming pregnant with his child and later married into the Li family), miraculously survived. Using all his life

@@ -1,6 +1,5 @@
 ---
 title: Life and Fate
-slug: life-and-fate
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: "[Russia] Vasily Grossman / 2020 / Sichuan People's Publishing House"
 ---
 
-Via tw Morgan, 'Life and Fate' and 'Stoner' are the two books that my friend H and I often bring up in our conversations, mentioning them again and again. These books are real reflections of our world and life. They don't provide answers, but instead pose questions waiting to be explored.
+Via tw Morgan, 'Life and Fate' and 'Stoner' are the two books most frequently mentioned when I chat with my classmate H, mentioned time and again. They are the true reflections of our world and life, containing no answers, only questions to be explored.

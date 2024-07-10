@@ -1,6 +1,5 @@
 ---
-title: How Was Your Summer?
-slug: how-was-your-summer
+title: How's Your Summer?
 category: book
 status: todo
 rating: 0
@@ -8,7 +7,7 @@ year: 2022-10-15
 date: 2024-04-28 00:15:07+08:00
 douban:
   rating: 8.8
-  subtitle: "[South Korea] Kim Ae-Ran / 2022 / People's Literature Publishing House"
+  subtitle: "[South Korea] Kim Aeh-ran / 2022 / People's Literature Publishing House"
 ---
 
-Via tw philo I've finished reading 'How Was Your Summer?' (Kim Ae-Ran). A South Korean female writer, very good short stories, excellent writing. But the novel's tone is quite oppressive, depicting all sorts of human suffering. Very East Asian, very real. Each story was difficult to read.
+Via tw philo finished reading 'How's Your Summer?' (Kim Aeh-ran). A South Korean female author, it's a very nice collection of short stories with excellent writing. However, the tone of the stories is quite oppressive, depicting various suffering of humanity, very East Asian and very authentic. Each story is painfully profound to read.

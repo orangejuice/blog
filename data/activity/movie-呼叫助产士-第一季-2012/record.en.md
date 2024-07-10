@@ -1,6 +1,5 @@
 ---
 title: Call the Midwife Season 1
-slug: call-the-midwife-season-1
 category: movie
 status: todo
 rating: 0
@@ -8,8 +7,8 @@ year: "2012"
 date: 2022-03-26 16:46:04+08:00
 douban:
   rating: 9.2
-  subtitle: 2012 / UK / Drama / Directed by Philippa Lowthorpe and Jamie Payne /
-    Starring Jessica Raine and Pam Ferris
+  subtitle: "2012 / UK / Drama / Directors: Philippa Lowthorpe, Jamie Payne /
+    Stars: Jessica Raine, Pam Ferris"
 ---
 
-In such a chaotic world, there are still things that bring peace and hope. The British drama 'Call the Midwife' has recently been one of my favorites, a group of people who are full of love, compassion, and integrity, portraying the brilliance of humanity. The nuns who adhere to their faith, the singing during evening prayers is like a sound from heaven, pure and steadfast, which is very touching.
+In such a tumultuous world, there remains something that offers tranquility and hope. The British series 'Call the Midwife' has recently become a favorite; it's about a group of people whose hearts are filled with love, compassion, integrity, and goodness, spreading the radiance of humanity. The devoted nuns, with their hymn-singing during evening prayers, sound like voices from heaven—sacred and resolute, profoundly moving.

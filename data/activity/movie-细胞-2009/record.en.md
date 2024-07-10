@@ -1,6 +1,5 @@
 ---
-title: Cells
-slug: cells
+title: The Cell
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 2009 / UK / Documentary / Adam Rutherford
 ---
 
-Marvelous! The scientific research path paved by our predecessors is a precious gift to later generations. But what is even more astonishing is nature, life, cells, they are gifts from nature to us.
+Marvelous! The research paths laid by predecessors, dedicating their lifetimes, are precious gifts to future generations. What's even more astonishing is nature itself, life, cells, are gifts from nature to us.

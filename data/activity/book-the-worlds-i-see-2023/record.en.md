@@ -1,6 +1,5 @@
 ---
 title: The Worlds I See
-slug: the-worlds-i-see
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: "Fei-Fei Li / 2023 / Flatiron Books: A Moment of Lift Book"
 ---
 
-A bit curious, no resources available for now
+A bit curious, no resources available yet

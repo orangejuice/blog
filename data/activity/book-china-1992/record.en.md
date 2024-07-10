@@ -1,6 +1,5 @@
 ---
 title: China
-slug: china
 category: book
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: John King Fairbank / 1992 / Harvard University Press
 ---
 
-Today is a special day: I finally finished reading the Chinese version of this book. Its sweeping views, ways of thinking, calm rationality, and vast knowledge are just a few of the many admirable things about it. It is a serious work, but also a good one. I dare say no one studying Chinese history can bypass this book. It's hard to read, not to mention how hard it must have been to write. It took me 2 months to read half in Chinese and half in English, and even 2 years might not be enough to fully grasp the content within.
+Today is a special day: I finally finished reading the Chinese version of this book. Its vision, mindset, and way of thinking, calm and rational with profound knowledge, are admirable in countless ways. A serious work and a good one at that. It is hard to imagine anyone studying Chinese history could skip this book. Reading it is difficult, writing it must have been incredibly challenging. It took me two months to read it half in Chinese and half in English, and even two years may not be enough to fully grasp its content.

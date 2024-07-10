@@ -1,6 +1,5 @@
 ---
-title: Station for Two
-slug: station-for-two
+title: A Station for Two
 category: book
 status: todo
 rating: 0
@@ -8,8 +7,8 @@ year: 2019-9
 date: 2024-03-29 01:58:31+08:00
 douban:
   rating: 8.9
-  subtitle: "[Rus] Evgeniy V. Braginskiy [Rus] Eldar I. Ryazanov, Emil B.
-    Braginskiy, Eldar L. Ryazanov / 2019 / Sichuan People’s Publishing House"
+  subtitle: "[Russia] E.V. Braginsky, [Russia] E.Ya. Lyangzanov, Emil Braginsky,
+    Elidar Lyangzanov / 2019 / Sichuan People's Publishing House"
 ---
 
-Via Twitter, Yun stopped to read 'Station for Two', 'Tricks of Fate', and 'Office Stories'. He hopes these classic stories of joy and sorrow, pleasure and pain, can bring courage and strength to people's hearts. Their screenwriter/director Ryazanov once said in the autobiographical film 'Andersen': 'You have paid for the sins committed in life, because though you have suffered, you have never become vicious. Your creation has spread kindness in people's hearts, and in return, people have given you love and respect.'
+Via Twitter, Tingyun watched 'A Station for Two,' 'The Whims of Fate,' and 'Office Stories.' Hoping these classic stories of the bitter and sweet, the sorrows and joys of life, can bring inspiration and strength to the heart. Their screenwriter/director, Lyangzanov, once had a line in the autobiographical movie 'Andersen': 'You have redeemed the sins committed on Earth, for though you have suffered greatly, you have never become vicious. Your creations have sown kindness in people's hearts, and in return, they have given you love and admiration.'

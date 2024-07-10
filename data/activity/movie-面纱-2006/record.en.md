@@ -1,6 +1,5 @@
 ---
 title: The Painted Veil
-slug: the-painted-veil
 category: movie
 status: done
 rating: 3
@@ -12,4 +11,4 @@ douban:
     Edward Norton Naomi Watts
 ---
 
-The setting is very interesting, and the set design is excellent, presenting a rarely seen China in the 1920s. As long as the Chinese actors in the film don't speak, it feels quite authentic. But the acting quality is disappointing, so much so that it's embarrassing to even show them in close-up. The film is somewhat bland, with the first half of the story lacking tension, and with characters moving around aimlessly. Only towards the end does it become clear that there's a theme to the film - it's about personal growth. I haven't read the original work yet, just discovered it's ranked 122 on Douban, seems like I should give it a read.
+The setting is intriguing, with excellent backdrops of China in the rare 1920s setting. The movie has a sense of the era as long as the Chinese actors don't speak; their acting was so poor that the editing seems embarrassed to give them a full shot. The film feels somewhat bland, with the first half lacking tension, showing characters wandering aimlessly without clear purpose. Later, it vaguely becomes apparent that the movie has a theme, and only at the final line do you realize it aims to illustrate growth. Having not read the original, I just discovered it ranks 122 on Douban, which seems like it's worth a read.

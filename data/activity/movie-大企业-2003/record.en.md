@@ -1,6 +1,5 @@
 ---
 title: The Corporation
-slug: the-corporation
 category: movie
 status: todo
 rating: 0

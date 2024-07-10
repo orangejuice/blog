@@ -1,6 +1,5 @@
 ---
 title: Blue Valentine
-slug: blue-valentine
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,4 @@ douban:
     Williams
 ---
 
-Via tw, 'Blue Valentine' is a rarely seen film that all about love. It's not about fate, the era, the family, or society, but solely about love between two individuals who adore each other but can't change their inherent personalities and rational, emotional selves. A story of love's birth and the eventual fade.
+Via tw 'Blue Valentine' is a rare kind of pure romance film, unrelated to fate, era, family, or society. It's simply about the emergence and disappearance of love between two individuals who are in love but unable to change their personality and balance rationality and sensibility.

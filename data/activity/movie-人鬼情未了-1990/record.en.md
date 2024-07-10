@@ -1,6 +1,5 @@
 ---
 title: Ghost
-slug: ghost
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: 1990 / USA / Drama Romance Fantasy / Jerry Zucker / Patrick Swayze Demi Moore
 ---
 
-Via tw Global Oddities
+Via Twitter Universal Curious

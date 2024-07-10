@@ -1,6 +1,5 @@
 ---
 title: The Death of Nian Gengyao
-slug: the-death-of-nian-gengyao
 category: book
 status: todo
 rating: 0

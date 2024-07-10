@@ -1,6 +1,5 @@
 ---
 title: The Skin
-slug: the-skin
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Cai Chongda / 2014 / Tianjin People's Publishing House
 ---
 
-From Huangpu Memory via Twitter: 'Often, when you can't hold on, you wish to find a mountain to lean on, but as you seek, you'll realize some mountains are covered with thorns, some infested with beasts. Hence, you should be your own mountain.' — Cai Chongda from 'The Skin'
+Via Twitter Huángpǔ Memories When it's often too much to bear, you also want to find a backing, but the more you search, the more you realize some mountains are full of thorns, some are full of wild beasts, so you should be your own mountain. ——Cai Chongda 'The Skin'

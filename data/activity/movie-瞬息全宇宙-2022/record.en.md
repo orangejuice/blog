@@ -1,6 +1,5 @@
 ---
-title: In A Blink Across The Universe
-slug: in-a-blink-across-the-universe
+title: Everything Everywhere All at Once
 category: movie
 status: done
 rating: 2
@@ -8,8 +7,8 @@ year: "2022"
 date: 2022-05-21 22:16:49+08:00
 douban:
   rating: 7.6
-  subtitle: 2022 / USA / Comedy, Fantasy, Adventure / Guan Jiayong, Daniel Schnaet
-    / Yeoh Michelle, Hebron Xu
+  subtitle: 2022 / USA / Comedy Fantasy Adventure / Daniel Scheinert, Daniel Kwan
+    / Michelle Yeoh, Xu Wei Lun
 ---
 
-I watched it yesterday. I am not interested in this absurd and bizarre method of storytelling, the logically lacking stage performance is devoid of realism that allows me to engage emotionally. Many hot topics and concepts have been stuffed into it, including the eye-catching issue of Asian family, but the film itself couldn't move me. Despite all the absurd chaos and dazzling lights, the silent discussion of two stones on a desert cliff calmed me down.
+I watched it yesterday and I’m not a fan of such absurd and bizarre narratives. The artificially constructed, illogical stage performance severely lacks the realism needed to evoke my emotions. They’ve crammed in a bunch of hot topics and ideas, including the striking issues of Asian-American families, but the movie itself did not move me. Amidst the nonsensical noise and dazzling lights, the silent discussion between two rocks on a desert cliff somehow calmed me down.

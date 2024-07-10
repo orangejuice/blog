@@ -1,6 +1,5 @@
 ---
 title: A Touch of Sin
-slug: a-touch-of-sin
 category: movie
 status: done
 rating: 0
@@ -12,4 +11,4 @@ douban:
     Zhao Tao, Jiang Wu
 ---
 
-Supplement tag
+Requires additional labeling

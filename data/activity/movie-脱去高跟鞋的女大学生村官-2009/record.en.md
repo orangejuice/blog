@@ -1,7 +1,5 @@
 ---
-title: The Female University Student Village Official Who Took Off Her
-  High-Heeled Shoes
-slug: the-female-university-student-village-official-who-took-off-her-high-heeled-shoes
+title: The Female College Graduate Village Officer Without High Heels
 category: movie
 status: done
 rating: 0
@@ -12,4 +10,4 @@ douban:
   subtitle: 2009 / Japan / Documentary
 ---
 
-NHK's documentary once again opens up a parallel world. The story is quite romantic, struggling for dreams, and problems are overcome one by one. Unfortunately, without deep exploration of the theme, it appears like a beautiful fairy tale that doesn't stand up to scrutiny and lacks persuasiveness. Out of curiosity, I searched for the heroine Ji Fang after watching, and the resulting text was eye-opening. It's now difficult to rate. It's a pity that there isn't any blogger or YouTuber who represents this group. I'm very curious about their stories. Finally, it's astonishing to see Japan's continued observation of China's social development - they seem eager to understand us more than we ourselves do.
+NHK's documentary once again opens up a parallel world. The story is romantic, fighting for dreams with problems being overcome one by one. The lack of in-depth exploration into this topic makes it resemble a beautiful fairy tale that doesn't stand up to scrutiny, looking unconvincing, which is a pity. Out of curiosity, I searched for the protagonist Ji Fang after watching, and the appearing texts were indeed surprising. It's impossible to rate this. Unfortunately, there's no blog or YouTuber for this group online; I would really like to know their stories. Lastly, the Japanese industry's sustained observation of China's social development is astonishing – they seem more eager to understand us than we ourselves are.

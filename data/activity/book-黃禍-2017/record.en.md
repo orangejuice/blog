@@ -1,6 +1,5 @@
 ---
-title: Yellow Peril
-slug: yellow-peril
+title: The Yellow Peril
 category: book
 status: todo
 rating: 0

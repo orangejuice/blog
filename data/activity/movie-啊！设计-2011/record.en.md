@@ -1,6 +1,5 @@
 ---
 title: Ah! Design
-slug: ah-design
 category: movie
 status: todo
 rating: 0

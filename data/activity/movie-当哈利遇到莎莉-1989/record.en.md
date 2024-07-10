@@ -1,6 +1,5 @@
 ---
 title: When Harry Met Sally
-slug: when-harry-met-sally
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: 1989 / USA / Drama Comedy Romance / Rob Reiner / Billy Crystal Meg Ryan
 ---
 
-Via tw Cloud Stop
+Via Twitter 停云

@@ -1,6 +1,5 @@
 ---
-title: The Journey of Exploration
-slug: the-journey-of-exploration
+title: Trailblazing
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Xiao Donglian / 2019 / Social Sciences Academic Press
 ---
 
-Via Twitter Ink Left Hand
+Via Twitter Left-hand Ink Stain

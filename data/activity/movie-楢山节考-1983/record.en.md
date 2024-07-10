@@ -1,6 +1,5 @@
 ---
 title: The Ballad of Narayama
-slug: the-ballad-of-narayama
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: 1983 / Japan / Drama Family / Shohei Imamura / Ken Ogata, Sumiko Sakamoto
 ---
 
-Via Nengjie Jiang
+Via Jiang Nengjie

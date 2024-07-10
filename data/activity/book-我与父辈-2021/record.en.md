@@ -1,6 +1,5 @@
 ---
-title: Me and the Older Generation
-slug: me-and-the-older-generation
+title: Me and My Forefathers
 category: book
 status: done
 rating: 5
@@ -11,8 +10,8 @@ douban:
   subtitle: Yan Lianke / 2021 / Jiangsu Phoenix Literature and Art Publishing
   history:
     - date: 2022-03-07 01:18:34
-      comment: Via tw meng sheng Silence and Breath
+      comment: Silence and Breath
       status: todo
 ---
 
-A tangible work of literature from Henan, with characters who are relatable and represent countless diligent and earnest Chinese elderly. The rich and real sense of life, the authentic and powerful family affection, and the responsibility and resilience of the elders create a lifelong impact. These elements are so precious, and although they seem natural on paper, they are also bitter and hard to bear. It makes one think about how many families can consistently achieve all of this. There are countless temptations and obstacles in this world, and without a group's effort, a conscientious person crossing social classes is like trying to fish the moon out of the water. Yan Lianke's growth in literature, being immersed in his family, native land, and army, is a unique and fortunate experience.
+A concrete work of Henan literature, the characters in the book feel intimate and represent a microcosm of countless hardworking Chinese elders. The book conveys a profound and realistic sense of life and familial bonds, with the responsibilities and resilience of the elders having a lifelong impact. Such things are precious; though they seem natural on paper, they are still bitterly hard to endure. One wonders how many families can consistently achieve this. In a world filled with countless temptations and obstacles, without the efforts of a group of conscientious people, crossing social classes would be as elusive as fishing the moon from the water. Yan Lianke's literary growth, steeped in family, homeland, and military experiences, is both unique and fortunate.

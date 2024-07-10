@@ -1,6 +1,5 @@
 ---
 title: City Dream
-slug: city-dream
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: 2019 / Mainland China / Documentary / Directed by Wei-Jun Chen
 ---
 
-Released in 2020, 'City Dream' is a documentary directed by Wei-Jun Chen. This is the first-ever Chinese film that features real cases about urban management. The film narrates the story of a 'battle of wits' over the course of a year, between the Urban Management Bureau of Hongshan, Wuhan, and a vendor named Tiancheng Wang and his family, who have been illegally occupying public space for years.
+Via tw tintin, the 2020 film 'City Dream' is directed by Wei-Jun Chen and is China's first documentary film based on real-life cases of urban management. The film narrates the year-long intellectual and strategic battle between the Hongshan District Urban Management Bureau in Wuhan and the vendor Wang Tiancheng's family, who had been occupying the street illegally for many years.

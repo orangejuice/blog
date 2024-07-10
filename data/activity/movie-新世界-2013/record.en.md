@@ -1,6 +1,5 @@
 ---
 title: New World
-slug: new-world
 category: movie
 status: done
 rating: 5
@@ -8,8 +7,8 @@ year: "2013"
 date: 2023-12-02 05:19:12+08:00
 douban:
   rating: 8.9
-  subtitle: 2013 / South Korea / Drama Crime / Hoon-jung Park / Jung-jae Lee,
-    Min-sik Choi
+  subtitle: 2013 / South Korea / Drama Crime / Directed by Hoon-jung Park /
+    Starring Jung-jae Lee, Min-sik Choi
 ---
 
-This is a well-made crime movie soaked in blood, with impeccable performances and a good script. The sequences in the warehouse and the elevator are stunning. The logic that the leakage of information immediately determines the presence of an undercover agent stunned me for two seconds, it turns out, the era of big data without privacy is something that just happened recently. The internet age will cause a group of people to lose their jobs, including spies and undercovers. The love of Ding Qing for Li Zicheng, which transcends the worldly and life itself, has become a ray of sunshine amid bloody violence. It seems that at the end, Li Zicheng, the handsome devil, in fact, came from a gang, became a policeman, and then infiltrated the gang again?
+A well-produced blood-soaked gangster movie with impeccable acting and a great script. Remarkable scenes in the warehouse and elevator. I was stunned for a second by the logic that any data leak immediately signals an undercover presence, showing how the era of big data with no privacy has just begun. The internet era will render some professions obsolete, including spies and undercover agents. Ding Qing's transcendent, life-defying love for Lee Ja-sung shines amid the chaos, a ray of light in the bloodshed... The seemingly final turn to darkness by the handsome Lee Ja-sung, was he actually a gangster-turned-cop who then infiltrated the gang again??

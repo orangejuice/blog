@@ -7,7 +7,7 @@ year: "2019"
 date: 2019-10-12 21:44:47+08:00
 douban:
   rating: 8
-  subtitle: 2019 / USA / Drama Thriller Crime / Vince Gilligan / Aaron Paul,
+  subtitle: 2019 / USA / Drama Thriller Crime / Vince Gilligan / Aaron Paul
     Jonathan Banks
 ---
 

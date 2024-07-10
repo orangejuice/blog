@@ -1,6 +1,5 @@
 ---
 title: Jojo Rabbit
-slug: jojo-rabbit
 category: movie
 status: done
 rating: 5
@@ -12,4 +11,4 @@ douban:
     Waititi / Roman Griffin Davis Thomasin McKenzie
 ---
 
-An amazing perspective from a child, such a superb acting from this kid. A successful comedy that does not lose touch with reality. Admirable mother and officer coping with danger through humor and wit, a film filled with hope. The ending does not shy away from the human nature—the scene where he lied to Elsa that Germany won, fearing her departure, is too real.
+A wonderful child’s perspective, how can this kid act so brilliantly? A successful comedy that maintains realism. Admirable mother and officer handling danger with humor and wit, making it a hopeful and great film. The ending does not shy away from humanity—the scene where he lies about Germany winning, fearing she would leave, was too realistic.

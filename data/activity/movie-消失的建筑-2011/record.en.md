@@ -1,6 +1,5 @@
 ---
-title: The Disappearing Architecture
-slug: the-disappearing-architecture
+title: The Vanishing Architecture
 category: movie
 status: done
 rating: 2
@@ -11,4 +10,4 @@ douban:
   subtitle: 2011 / Mainland China / Documentary / CCTV / Su Yang
 ---
 
-A standard documentary, devoid of any interesting elements. The production is rigid, the shots lackluster, and the animations are too abstract and weakly connected to the content. Despite the numerous grandiose animations that bring ancient architecture to life, it's hard to tell how much of it is authentic or simply for show. The viewing experience is rushed, with scenes whizzing by as if we aren't allowed a closer look. There is no discernable vision or enthusiasm, making the viewing experience quite dull. If the people behind the production lacked interest, how can the audience be expected to find it interesting? After sticking it out to the end, it felt more like a high school lecture than a documentary. On Douban, domestic documentaries like this typically receive an extra 1-2 points out of sympathy.
+A standard documentary work with no entertaining value. It comes across as constrained in its creativity, static in its cinematography, and the animations are mystical yet poorly related to the content. It includes some grand animations of ancient architectural reconstructions which merit a closer look based on their realism and extent of display. However, viewers aren't given enough time to appreciate these, as the camera quickly moves on. The lack of visible creative goals and passion makes it a dull affair. The lack of engagement from the creators reflects in the viewing experience, making it uninspiring. Watching it felt like sitting through a class in high school. The ratings on Douban for domestic documentaries are generally inflated by 1 to 2 points due to leniency.

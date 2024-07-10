@@ -1,6 +1,5 @@
 ---
-title: Love Notes
-slug: love-notes
+title: Notes on Love
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: "[UK] Alain de Botton / 2020 / Shanghai Translation Publishing House"
 ---
 
-As described by tw moonangel, mature love is a kind of friendship with sexual relations, harmonious, enjoyable, and responsive to each other.
+As articulated by tw moonangel, mature love is a kind of friendship with a sexual relationship, where the interaction is harmonious, delightful, and reciprocative.

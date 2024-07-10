@@ -1,6 +1,5 @@
 ---
-title: Hot and Spicy Love
-slug: hot-and-spicy-love
+title: Spicy Love Soup
 category: movie
 status: done
 rating: 3
@@ -9,7 +8,7 @@ date: 2021-09-14 03:45:58+08:00
 douban:
   rating: 7.5
   subtitle: 1997 / Mainland China / Drama Romance / Directed by Zhang Yang /
-    Starring Gao Yuanyuan and Xu Jinglei
+    Starring Gao Yuanyuan, Xu Jinglei
 ---
 
-The film attempts to depict the raw hue of life, a cast of notable figures, and a bevy of beauties. Affection, ideals, friction, pure love and hate, a sense of lost emptiness are all manifested. The story is told calmly, with a simple sense of the times. However, the sense of reality and contrivance are interwoven. On the one hand, it focuses on the contradictions of 'ordinary people's' lives. On the other hand, there are some seemingly ordinary yet bizarre behavior of uncommon characters—a daughter arranging three blind dates for herself, a boy genius who loves recording and editing sounds, a son who can cook eight large bowls of food in one go, a couple maintaining their relationship by playing with toys, and a woman offering her wrist to passing men on the street for perfume testing. The storytelling ability is not quite there, making it hard to resonate with the audience. If this was a longer film, it would be full of cliches. However, the film does evoke a slight heartache—a clumsy exploration of the soul and essence in these times.
+Attempts to paint a true color of life with famous stars and beautiful women. Warmth, ideals, friction, simple love and hatred, and a sense of emptiness are all depicted. The story is told calmly with a straightforward sense of the era. Yet, there is an interweaving of realism and a sense of compilation, highlighting the contradictions in the lives of 'ordinary people' yet featuring unlikely characters - a daughter arranging three suitors for herself, a young genius who loves recording and editing sounds, a son who casually cooks eight large bowls of food, a couple who use toys to maintain their relationship, and a woman standing on the street offering wrist for perfume testing to passing men. The storytelling ability is insufficient, making it hard to resonate, and it turns into melodrama if stretched longer. Despite this, there remains a hint of poignancy - a clumsy exploration of the soul and essence of the era.

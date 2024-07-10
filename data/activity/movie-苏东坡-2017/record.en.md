@@ -1,6 +1,5 @@
 ---
 title: Su Dongpo
-slug: su-dongpo
 category: movie
 status: done
 rating: 3
@@ -8,8 +7,8 @@ year: "2017"
 date: 2020-12-28 20:44:56+08:00
 douban:
   rating: 8.7
-  subtitle: 2017 / Mainland China / Documentary / Directed by Yang Guangzhao &
+  subtitle: 2017 / Mainland China / Documentary / Directed by Yang Guangzhao and
     Zhang Xiaomin
 ---
 
-Watching it, I didn't remember much. It's like a long-winded lecture, handing out time, place, personality, evaluation in a routine manner that makes one distracted. The pursuit of exquisite frames leaves a deep impression, every frame has been meticulously crafted. They've invited numerous experts to speak and went to various locations to capture a multitude of scenes – they've clearly spent a lot! The quest for visual effects is emphasized, but its core is disproportionate in comparison. With its plain and straightforward narrative, it lacks a human touch, deprives viewers from experiencing authenticity and the warmth of humanity, and feels more like distant pavilions. I wonder how many children find it fascinating and develop a liking for Su Shi – shouldn't this be something the producers consider? All these touching stories, yet none of them moves the tender parts of the heart when heard in the film. It feels like watching a supplementary DVD for a high school textbook. If you're hoping to get a vivid impression of Su Shi, this might not satisfy your appetite. Abandoning it feels wasteful – it can't be wasted like this. Fortunately, it’s not too long, so I'll jot down some notes when I revisit.
+After watching it, I didn't remember much. It felt like a lecture, stiff and monotonous, carefully listing time, place, characters, and reviews in order, causing the mind to wander. The film's pursuit of exquisite visuals, on the other hand, was impressive; every frame was crafted with effort, and countless experts and scholars were invited to speak. Extensive shooting locations across various places—truly a well-funded endeavor. While there's a focus on visual effects, it lacks a corresponding depth of content. The narrative is flat and devoid of a human touch, making the whole experience feel unreal, more like distant pavilions and towers than human warmth and reality. It’s puzzling whether this film would captivate children or endear them to Su Shi—a consideration that should have been in the translators' minds. Despite many touching stories, they came across as unaffected and sterile, reminiscent of watching a high school textbook's companion DVD. To get a vivid impression of Su Shi, unfortunately, this film might not satisfy. It's a shame to discard it—shouldn't waste it altogether, thankfully it's not too long. I might revisit it, jotting down key points.

@@ -1,5 +1,5 @@
 ---
-title: Century of New Images
+title: The New Vision of the Century
 category: movie
 status: done
 rating: 5
@@ -10,4 +10,4 @@ douban:
   subtitle: 2015 / Japan / Documentary / NHK / Takayuki Yamada, Toshie Ito
 ---
 
-Supplement to memory
+Complementing Memory

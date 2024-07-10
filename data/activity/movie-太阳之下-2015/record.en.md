@@ -1,6 +1,5 @@
 ---
 title: Under the Sun
-slug: under-the-sun
 category: movie
 status: done
 rating: 5
@@ -12,4 +11,4 @@ douban:
     Documentary / Vitaly Mansky
 ---
 
-They have no choice but to comply, methodically performing the tasks assigned to them to secure their basic needs, knowing that their benefactor can take everything away if they displease him. For the performers, the harsh reality is softened in the act of performing, where they get a glimpse of easy and gentle living. The film also reflects a common aspiration among human beings: to care for the weak, to enjoy a sense of equality, to be treated kindly, to lead a light and happy life, to be educated with tolerance and respect. But once the camera turns away, life goes on as before, enduring silently the dangerous thoughts kept hidden within. Watching this film, I am reminded of a great cruelty in the world, and it points to a deep-seated evil that modern and future civilizations are striving to correct. Often times, even a beautiful face does not belong to one’s self.
+They have no choice but to be manipulated, earnestly completing the tasks given to them in order to obtain shelter, food, and clothing, as everything can be taken away in an instant to the displeasure of those above, because it is all granted by the mercy of the Marshal. For the performers, it seems relentless; they glimpse a gentle and easy life through the performance. It also confirms that all vulnerable human individuals have the same hopes and expectations: to care for the vulnerable, equality in status, to be treated gently, to live a happy and easy life, and to be educated with tolerance and respect. However, once the camera turns away, life continues as usual, stifling dangerous thoughts and silently enduring. Watching this film also makes me acutely aware of a great cruelty in humanity, which is the malice in human nature that modern and future civilizations try to amend. Often, a pretty face no longer belongs to oneself.

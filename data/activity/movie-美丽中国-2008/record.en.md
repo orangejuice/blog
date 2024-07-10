@@ -1,6 +1,5 @@
 ---
 title: Beautiful China
-slug: beautiful-china
 category: movie
 status: done
 rating: 4
@@ -11,4 +10,4 @@ douban:
   subtitle: 2008 / UK China / Documentary / Phil Chapman Gavin Maxwell
 ---
 
-Finally watched this film. It was not fully satisfying. It mentioned a lot of topics but mostly just glossed over them without any in-depth exploration attempting to touch the essence. There was not much of a deep impression left after watching. However, if you want to see China's landscape, this film probably can do a good job. But some shots and narratives did not achieve the best matching effect, and there was a feeling of insufficient shooting time and scenes being put together forcefully. During the screening, this could be immediately felt. The last episode did present an intriguing fact: the rise in carbon dioxide levels leads to more typhoons, which bring plankton from the ocean floor to the surface, thus absorbing more carbon dioxide. Quite astonishing and interesting.
+Finally watched this movie. It didn't quite satisfy my appetite, mentioning many topics but merely skimming over them without any in-depth discussion or attempt to touch the essence of anything. Almost no lasting impression after watching. However, if one is looking to enjoy the scenery of China, this movie might still be a good choice. But some shots and narratives didn't achieve the best combination, giving a feeling of rushed compilation due to insufficient shooting time, which is immediately noticeable while watching. The last episode did teach me an intriguing bit of trivia: rising CO2 levels cause more typhoons, which bring marine plankton to the surface where they can absorb CO2. Quite astonishing and fun.

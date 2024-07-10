@@ -1,6 +1,5 @@
 ---
-title: Mongolian Prairie, Sunny Weather
-slug: mongolian-prairie-sunny-weather
+title: Mongolian Prairie, Clear Skies
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: 2006 / Japan / Documentary / Kazuya Yamada / Yoshiharu Sekino
 ---
 
-Via tw morgan, after watching the documentary, tears were shed multiple times. I don't know what to say. This proud Thursday-born girl is so adorable and unrestrained. Kid, life doesn't necessarily have to go all the way. Go reunite with your mom first. #MongolianPrairieSunnyWeather
+After watching the TW Morgan documentary, I broke down in tears several times, not knowing what to say. This proud and untamed girl born on a Thursday, so adorable yet so defiant. Child, life doesn't necessarily have to be lived out fully; go reunite with your mother first.

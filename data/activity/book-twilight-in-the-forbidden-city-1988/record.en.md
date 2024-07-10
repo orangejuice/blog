@@ -1,6 +1,5 @@
 ---
 title: Twilight in the Forbidden City
-slug: twilight-in-the-forbidden-city
 category: book
 status: todo
 rating: 0

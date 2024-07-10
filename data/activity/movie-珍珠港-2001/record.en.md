@@ -1,6 +1,5 @@
 ---
 title: Pearl Harbor
-slug: pearl-harbor
 category: movie
 status: done
 rating: 5
@@ -12,4 +11,4 @@ douban:
     Josh Hartnett
 ---
 
-The war scenes are very grand and spectacular, I'm surprised this is a movie released in 2001. The emotional setup at the beginning was very boring in comparison, focusing on the narrative style of individual heroes which is very characteristic of Western culture. There aren't any issues with the entire movie, very touching.
+The war scenes are incredibly grand and spectacular; it's surprising that this movie premiered in 2001. The emotional setup at the beginning was quite boring in comparison, focusing on a narrative style centered on the heroic individual, which is very characteristic of Western culture. Overall, the film is flawless and very moving.

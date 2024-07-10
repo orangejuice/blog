@@ -1,6 +1,5 @@
 ---
 title: Madame Bovary
-slug: madame-bovary
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,5 @@ douban:
   subtitle: Gustave Flaubert / 2003 / People's Literature Publishing House
 ---
 
-Via tw Dou Xiao Dou: Humanity lacks precise measures for its own needs, its own understanding, and its own suffering. Human language is like a broken pot, which we strike in the hope of creating resonant sound. We hope to touch the stars, yet only Dancing Bears respond to our noise. - Gustave Flaubert, Madame Bovary
+Via Twitter user @DouXiaoDou: Because humans always lack precise measures for their own needs, their own understanding, and their own suffering. Moreover, human language is like a broken pot, we bang on it hoping for a resonant sound. We wish to move the stars, yet it’s only the bears that hear the sound and begin to dance.
+— Gustave Flaubard, Madame Bovary

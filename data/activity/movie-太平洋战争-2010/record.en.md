@@ -1,6 +1,5 @@
 ---
-title: Pacific War
-slug: pacific-war
+title: The Pacific War
 category: movie
 status: done
 rating: 5
@@ -9,8 +8,8 @@ date: 2021-05-06 21:32:16+08:00
 douban:
   rating: 9
   subtitle: 2010 / USA Australia / Drama Action History War Adventure / Jeremy
-    Podeswa Timothy Van Patten David Nutter Carl Franklin Tony To Graham Yost /
-    Joseph Mazzello Toby Leonard Moore
+    Boudreau, Timothy Van Patten, David Nuttall, Karl Franklin, Tony Du, Graham
+    Yost / Joseph Mazzello, Toby Leonard Moore
 ---
 
-A work of art with a war theme, overall high quality. The emotional impact of the Okinawa episode is so powerful, full of tension, exceptionally well performed. The presence of two familiar actors is a bit amusing..
+A work of art with a war theme, overall high standard. The emotional impact of the Okinawa episode is very powerful, with strong tension and a particularly vigorous performance. The familiar faces of two actors are somewhat amusing.

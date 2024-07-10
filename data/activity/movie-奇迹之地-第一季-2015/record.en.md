@@ -1,6 +1,5 @@
 ---
 title: Land of Miracles Season 1
-slug: land-of-miracles-season-1
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,4 @@ douban:
     James Aldred / Olivia Colman
 ---
 
-via Rui Ge
+via rui ge

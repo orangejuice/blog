@@ -1,6 +1,5 @@
 ---
 title: Enlightenment Now
-slug: enlightenment-now
 category: book
 status: done
 rating: 5
@@ -8,7 +7,7 @@ year: 2018-12
 date: 2020-12-27 02:12:36+08:00
 douban:
   rating: 8
-  subtitle: "[USA] Steven Pinker / 2018 / Zhejiang People's Publishing House"
+  subtitle: Stephen Pinker / 2018 / Zhejiang People's Publishing House
 ---
 
-Some parts are not translated well enough, and some parts have been cut off. The book is a good one. Its points summarize the noisy world of today very well, and some of its accents are very necessary even though they seem common sense at first sight. Unfortunately, I have been reading it for half a month and haven’t finished it yet, eventually running out of patience, and I've skipped a lot of content. This book should be read by the public, but its cumbersome nature deters the general audience. It's dry to read, but the main reason for that is me. I am too impatient. Why does it feel like a luxury to sit down and read a book, adds to the biggest sorrow of the present times.
+Some parts were not translated well, and some sections were cut. The book is good, and its arguments effectively summarize the noisy world today, emphasizing what seems like common sense is very necessary. Unfortunately, after reading for a month and a half, I still hadn't finished, no longer having enough patience to continue and skipping many parts. This book should be read by the general public, but its sheer size has already alienated them. Reading it was tedious, but this is mainly my fault for being too impatient. Why settling down to read this book has become a luxury, represents the greatest sadness of our times.

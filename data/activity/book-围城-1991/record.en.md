@@ -1,6 +1,5 @@
 ---
 title: Fortress Besieged
-slug: fortress-besieged
 category: book
 status: todo
 rating: 0
@@ -11,10 +10,4 @@ douban:
   subtitle: Qian Zhongshu / 1991 / People's Literature Publishing House
 ---
 
-Via tw Lao Bai, the book, although filled with sharp and satirical comments, exudes a sense of humaneness and encapsulates life. It effortlessly drags the reader into its world, enabling them to empathize with its characters. 
-
-There's a classic line in the book: 'People outside the city want to rush in, people inside want to escape, be it marriage or career, such are the desires of life.' Such profound insight requires a rich accumulation of knowledge and life experience to articulate. 
-
-In Qian's 'Fortress Besieged', the plot technique is secondary to the witty dialogue, life experiences, and the profound humor. 
-
-Through the replay of life experiences of the protagonists, one could get a glimpse of the bitterness, sorrow, pain, and spice of life, as if they've lived an additional life, causing one to sigh incessantly. 
+Via Twitter user Lao Bai: Although the book is filled with piercing satire at every turn, it exudes a sense of humanity, encapsulating life so vividly that one feels as though they are living within it, experiencing it firsthand. There is a classic line in the book: 'Those outside the city want to rush in, and those inside want to escape, be it marriage or a career, such are the general desires in life.' Such a line could not have been written without a rich accumulation of knowledge and life experiences. Mr. Qian’s 'Fortress Besieged,' while the plot technique is secondary, it is the witty dialogue, life lessons, and profound humor that take center stage. Through the life retrospectives of several principal characters, one can prematurely taste the bitterness, sourness, and spiciness of life, as if walking through life oneself, leaving one utterly moved.

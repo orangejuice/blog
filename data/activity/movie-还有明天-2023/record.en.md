@@ -1,6 +1,5 @@
 ---
-title: There is Tomorrow
-slug: there-is-tomorrow
+title: There's Always Tomorrow
 category: movie
 status: done
 rating: 5
@@ -16,4 +15,4 @@ douban:
       status: todo
 ---
 
-Very Italian. The entertaining conversations, apartment neighbors, cultural characteristics, and story themes all originate from Italy, dedicated to Italy. The ending was incredibly powerful. Before knowing the context, one could never guess that a precious piece of paper symbolizing freedom was actually a political ballot! The whole film is a calm and clever buildup, shining a light straight to the audience's heart at the end. I admit that I was shallow this time, I guessed it was a ticket to America.
+Very Italian in essence. The conversations are witty, the neighborhood settings, cultural character, and thematic storytelling all stem from Italy and are dedicated to Italy. The ending is powerful and unexpected without prior knowledge of the context; a precious piece of paper symbolizing freedom turns out to be a political ballot! The whole film is a clever setup that directs a beam of light right into the audience's heart at the end. I must admit I was superficial, having guessed it was a boat ticket to America.

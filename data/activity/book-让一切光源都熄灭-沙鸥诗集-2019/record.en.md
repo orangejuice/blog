@@ -1,6 +1,5 @@
 ---
-title: "Let All Lights Go Out: Shao's Poetry Collection"
-slug: let-all-lights-go-out-shaos-poetry-collection
+title: "Let All Lights Be Extinguished: Sha Ou's Poetry Collection"
 category: book
 status: todo
 rating: 0
@@ -8,8 +7,7 @@ year: 2019-3
 date: 2022-04-03 17:51:00+08:00
 douban:
   rating: 7.1
-  subtitle: Written by Shāōu, Compiled by Zhǐ ān and Yà fēi / 2019 / Nova
-    Publishing House
+  subtitle: Authored by Sha Ou, Edited by Zhi An and Ya Fei / 2019 / New Star Press
 ---
 
-Via tw, on his one-hundred-year death anniversary, we remember poet Shāōu. Shāōu's short poems are among the most exotic and emotionally engaging works in the history of modern poetry.
+Via Twitter Tingyun, commemorating the 100th anniversary of the birth of poet Sha Ou. Sha Ou's short poems are among the most uniquely touching works in the history of modern poetry.

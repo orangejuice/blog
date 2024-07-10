@@ -1,6 +1,5 @@
 ---
 title: Five Thousand Years of Chinese Characters
-slug: five-thousand-years-of-chinese-characters
 category: movie
 status: done
 rating: 3
@@ -8,8 +7,7 @@ year: "2013"
 date: 2021-08-08 23:15:11+08:00
 douban:
   rating: 8.5
-  subtitle: 2013 / Mainland China / Documentary / Directed by Liu Junwei / Written
-    by Li Yemo
+  subtitle: 2013 / Mainland China / Documentary / Directed by Junwei Liu / Li Yemo
 ---
 
-What I love most are the lively animations filled with ancient charm and imagination. The content cannot compare, although there are some unique insights supported by historical facts. However, the continuous and unreserved revelation of points of view throughout the film, along with too much idle talk, overshadows the effort put into using animation to interpret characters and trace history, which could have been more functional. I am not sure if there are similar works out there. The major drawback is this underlying stance, giving off an inflated sense of self-importance, expressed in an impassioned and arrogant tone, full of subjective presumptions. Perhaps this is a reflection of the mentality from the Confucius Institute and the Han Affairs Office. Viewers can discern for themselves. A minor flaw, the quality of the circulated versions is too poor, with grey and gloomy visuals. This documentary is very representative, subtly revealing some information about the screenwriter, and also the mentality of this nation and what it is thinking.
+What I liked most was the lively, ancient-flavored, imaginative animation. Surprisingly, the content can hardly compare to it; though there are some unique insights supported by historical data, the views are expressed too straightforwardly throughout, leaving no room for subtlety—too much banal chatter. It would have been better to spend more effort on using animation to explain characters and trace history, making it more useful. I’m unsure if there are similar works. The major flaw is this basic stance, being too self-important, with an impassioned and arrogant tone, presumptuously subjective—this might also reflect the official mindset of institutions like the “Confucius Institute” and the “Hanban”. Viewers should discern for themselves. A minor flaw is the poor clarity of the widely distributed versions, resulting in dull and gloomy visuals. This documentary is very representative, subtly revealing some information about the screenwriters, as well as about the mentality of this nation and what it might be contemplating.

@@ -1,6 +1,5 @@
 ---
 title: Chinese History for Everyone 01
-slug: chinese-history-for-everyone-01
 category: book
 status: todo
 rating: 0

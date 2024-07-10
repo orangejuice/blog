@@ -1,6 +1,5 @@
 ---
-title: The Chronicle of a Tang Dynasty Scholar
-slug: the-chronicle-of-a-tang-dynasty-scholar
+title: The Chronicles of the Hanlin Scholars
 category: book
 status: todo
 rating: 0

@@ -1,6 +1,5 @@
 ---
 title: Unspoken Rules (Revised Edition)
-slug: unspoken-rules-revised-edition
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Wu Si / 2009 / Fudan University Press
 ---
 
-Via tw Munie This year I read these two books in total. The first one I should probably read twice or three times because it's so real and eye-opening (truly exciting). If I had read it ten years ago or even earlier, it could have saved me from many detours. All the rules you think of, whether overt or covert, are simply continuations from the ancient times. Which gave me my deepest impression, it made me think, if we go by the current education system, these 'obsolete rules' will continue to exist, so long as you live on this land.
+Via Twitter Munie: This year I have read these two books only. The first one I will probably reread two or three times; it's so real and an eye-opener (truly fascinating). If I had read this ten or more years earlier, it could have saved me from many detours. All the rules you think of, whether overt or covert, have been handed down from ancient times. It left a profound impression on me, reminding me of how 'bad practices' will continue under the current educational system as long as you live in this land.

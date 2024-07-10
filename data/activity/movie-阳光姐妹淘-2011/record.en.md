@@ -11,4 +11,4 @@ douban:
     Eun-kyung, Min Hyo-rin
 ---
 
-To be honest, it is excessively exaggerated to the point of breaking immersion. Although it's in the TOP250, it really can't get people immersed in the plot. I dropped it after 50 minutes.
+Honestly, it's overly exaggerated to the point of breaking immersion. Although it's in the TOP 250, it really doesn't draw you into the story. I stopped watching after 50 minutes.

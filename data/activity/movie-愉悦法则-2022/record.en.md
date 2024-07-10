@@ -1,6 +1,5 @@
 ---
-title: The Rule of Joy
-slug: the-rule-of-joy
+title: The Pleasure Principle
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: 2022 / USA / Documentary / Michelle Berto
 ---
 
-Via tw recommendation
+Via Twitter recommendation

@@ -1,6 +1,5 @@
 ---
 title: The Chorus
-slug: the-chorus
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,4 @@ douban:
     / Jean-Baptiste Maunier, Gérard Jugnot
 ---
 
-Watched it, but don't remember, want to rewatch
+Saw it but forgot, want to rewatch it

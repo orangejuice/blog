@@ -1,6 +1,5 @@
 ---
-title: Gu Zhun's Diaries
-slug: gu-zhuns-diaries
+title: Gu Zhun's Diary
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Gu Zhun / 1997 / Economic Daily Publishing House
 ---
 
-Via tw StopCloud, upon reading 'Gu Zhun's Diaries', my heart leapt and my back felt as if it was doused with cold water. (I had the same feeling when reading 'The Gulag Archipelago'). Such characters are indeed illuminating for a millennium. In any era, Mr. Gu Zhun's disdain for the world is undoubted. What is such integrity, and it even surpasses his unparalleled talent.
+Via Twitter Tingyun, reading 'Gu Zhun's Diary', my heart skipped a beat, and my back felt as if cold water was poured over it. (I felt the same when reading 'The Gulag Archipelago'). Such a character truly shines through the ages. In any era, Mr. Gu Zhun's disdain for the world is unquestionable, as is the nobility of his character, which surpasses even his rare talents.

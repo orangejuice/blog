@@ -1,6 +1,5 @@
 ---
-title: Traveling Far at Eighteen
-slug: traveling-far-at-eighteen
+title: Leaving Home at Eighteen
 category: book
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: Yu Hua / 1989 / Writers Publishing House
 ---
 
-Read the short story Traveling Far at Eighteen.
+Read the short story 'Leaving Home at Eighteen'.

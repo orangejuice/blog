@@ -1,6 +1,5 @@
 ---
-title: Complex
-slug: complex
+title: Complexity
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Melanie Mitchell / 2011 / Hunan Science and Technology Press
 ---
 
-Via tw Tumotuo
+Via Twitter Tumotor

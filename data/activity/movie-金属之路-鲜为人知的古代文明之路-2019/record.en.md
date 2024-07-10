@@ -1,6 +1,5 @@
 ---
-title: The Road of Metal - The Less Known Ancient Civilization
-slug: the-road-of-metal-the-less-known-ancient-civilization
+title: The Metal Road - The Lesser-Known Ancient Civilizations' Path
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 2019 / Japan / Documentary
 ---
 
-An exciting story of iron tool development history.
+An exciting story about the history of iron development.

@@ -1,6 +1,5 @@
 ---
-title: My Altay
-slug: my-altay
+title: My Altai
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Li Juan / 2018 / Changjiang Literature and Art Publishing House
 ---
 
-Via tw Stop Cloud, Li Juan's words can always bring me a little comfort at any time, just like when I am sad, there is a friend by my side, who occasionally gently shakes your arm. Walking in the cold night, thinking about a bowl of milk tea made from brick tea in her writing, a nan bread taken out of the earth stove, a tree root that temporarily serves as a dining table, they all feel warm.
+Via Twitter, Tingyun: Li Juan’s words can always bring me a little comfort, as if when you’re feeling down, there’s a friend by your side, who occasionally gently shakes your arm. Walking in the chilly night, thinking of the milk tea made with brick tea, a nang taken out from a clay oven, and a tree root improvised as a dining table under her pen, feels warm.

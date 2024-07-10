@@ -1,6 +1,5 @@
 ---
-title: The Psychology of Subjects Under Autocracy
-slug: the-psychology-of-subjects-under-autocracy
+title: Psychology of the Subjects under Authoritarian Rule
 category: book
 status: todo
 rating: 0

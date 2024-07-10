@@ -8,7 +8,7 @@ date: 2019-09-01 04:55:05+08:00
 douban:
   rating: 8.4
   subtitle: 2019 / USA / Documentary / Directed by Steven Bognar and Julia
-    Reichert / Starring Cao Dewang and Wang He
+    Reichert / Featuring Cao Dewang and Wang He
 ---
 
 

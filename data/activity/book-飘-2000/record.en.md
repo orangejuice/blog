@@ -1,6 +1,5 @@
 ---
 title: Gone with the Wind
-slug: gone-with-the-wind
 category: book
 status: todo
 rating: 0
@@ -8,7 +7,7 @@ year: 2000-9
 date: 2024-03-18 07:21:39+08:00
 douban:
   rating: 9.3
-  subtitle: "[United States] Margaret Mitchell / 2000 / Yilin Press"
+  subtitle: "[USA] Margaret Mitchell / 2000 / Yilin Press"
 ---
 
-Via Weibo, reflecting on 昨日世界 (Yesterday's World) by Cizweige who passed away, I revisited 'Gone with the Wind'. The narrative reached Scarlett marrying Rhett and she lay lazily in Rhett's arms in the moonlight, pondering about how great it would be if the arm she was lying on was Ashley's arm, if it was Ashley whose hand tousled her black hair, entwined around his neck. On one occasion, she sighed at these thoughts and turned to gaze at the window. After a while, she felt Rhett's arm underneath her neck stiffen like iron and his voice echoed in the silence: 'May God damn you, you little fraud,'. It suddenly struck me that this entire character was how Qiong Yao's 'Dream Behind the Curtain' was setup, Fraction Yufan is Rhett butler!
+Via Weibo From Stefan Zweig's death in the world of yesterday, I reread 'Gone with the Wind'. Reaching the part where Scarlett O'Hara marries Rhett Butler, 'When she lazily lay in Rhett's arms, bathed in moonlight that washed over the bed, she would think how wonderful it would be if she were so close to Ashley's arms instead, if it was Ashley's hand scattering her black hair across his face, winding around his neck. Once, recalling this brought a sigh, and she turned to look out the window. After a while, she felt the strong arm beneath her neck stiffen like iron, and in the silence Rhett's voice came: 'May God damn you to hell, you little cheat!' Suddenly, I realized that the entire character setup in Qiong Yao's 'A Dream in Red Mansions' came from here, that Fei Yunfan is indeed Rhett Butler!

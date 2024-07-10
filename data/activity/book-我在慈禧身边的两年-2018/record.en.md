@@ -1,6 +1,5 @@
 ---
-title: Two Years at the Court of Empress Dowager Cixi
-slug: two-years-at-the-court-of-empress-dowager-cixi
+title: Two Years Beside Empress Dowager Cixi
 category: book
 status: todo
 rating: 0

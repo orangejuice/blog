@@ -1,6 +1,5 @@
 ---
 title: The Great Navigator Zheng He
-slug: the-great-navigator-zheng-he
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 2005 / Japan / Documentary / Chen Kaige / Zhao Ningyu
 ---
 
-One of NHK's best works, it's hard to imagine how much effort and cost were planned and coordinated to create two condensed and complete historical stories, showing the seriousness and meticulousness of the production attitude. The production team must have a unique understanding, feelings and regret for this part of history. The transnational feelings integrated into the film are especially touching. Many of the reproduced scenes are just right, and overall it is full of respect and a romantic atmosphere of humanities, which is really wonderful. It's a must-watch.
+One of NHK's finest works, it's hard to imagine the amount of effort and budget that was planned to create two refined and complete historical episodes. The production attitude is evident in its seriousness and meticulousness. The production team must have a unique understanding and feeling of regret for this period of history. The cross-border emotions incorporated in the film are especially moving. Many of the recreated scenes are just right, and the overall respect and humanistic romance is truly spectacular. A must-watch.

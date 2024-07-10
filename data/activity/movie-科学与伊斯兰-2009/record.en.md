@@ -1,6 +1,5 @@
 ---
 title: Science and Islam
-slug: science-and-islam
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: 2009 / UK / Documentary / Tim Usborne / Professor Jim Al-Khalili
 ---
 
-via tw
+via Twitter

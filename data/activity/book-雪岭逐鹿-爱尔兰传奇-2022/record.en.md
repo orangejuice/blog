@@ -1,6 +1,5 @@
 ---
-title: "Deer Hunting in the Snow Mountains: The Legends of Ireland"
-slug: deer-hunting-in-the-snow-mountains-the-legends-of-ireland
+title: "Snow Ridge Pursuit: Irish Legend"
 category: book
 status: todo
 rating: 0
@@ -8,7 +7,7 @@ year: 2022-1
 date: 2021-12-19 20:59:40+08:00
 douban:
   rating: 8
-  subtitle: Fangzhe Qiu / 2022 / Lijiang Publishing House
+  subtitle: Qiu Fangzhe / 2022 / Li River Publishing House
 ---
 
-via tg. The description seems very intriguing.
+via tg. This description is very interesting

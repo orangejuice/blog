@@ -1,6 +1,5 @@
 ---
-title: "Chinese Dynasty: The Awakening Legend of Qianlong and Fragrant Concubine"
-slug: chinese-dynasty-the-awakening-legend-of-qianlong-and-fragrant-concubine
+title: "The Chinese Dynasty: The Awakening Legends of Qianlong and Fragrant Concubine"
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 2016 / Japan / Documentary
 ---
 
-Such an adorable and gentle little historical story. This ability to tell stories patiently touches me. With such a solid foundation, my intuitive feeling is, considering the general acceptance, choosing a positive single perspective to elaborate, which arouses the audience's interest and curiosity, this purpose has been achieved, so there is no regret of only positive publicity. When I am old, will I be lucky enough to have such a small expectation every day after dinner, turn on the TV by the fireplace, and watch a new episode of Chinese History program with such gentleness and soft-spokenness.
+Such a lovely and gentle little historical story, the ability to tell stories with such patience really moves me. With such a solid foundation, my direct feeling is that by choosing a positive and singular perspective to explain in consideration of universal acceptance, it engages the audience's interest and curiosity, achieving its purpose—thus there is no regret of mere flattery. In my old age, I hope to have the small anticipation each day after meals, to turn on the TV by the fireplace, watching a new episode of Chinese historical programs, spoken with such gentle tones.

@@ -1,6 +1,5 @@
 ---
-title: "History Unveiling: Secrets of the Forbidden City"
-slug: history-unveiling-secrets-of-the-forbidden-city
+title: "History Unveiled: The Secrets of the Forbidden City"
 category: movie
 status: done
 rating: 4
@@ -8,7 +7,7 @@ year: "2017"
 date: 2021-08-03 17:57:42+08:00
 douban:
   rating: 7.2
-  subtitle: 2017 / United Kingdom / Documentary / Ian Bremner / Jonathan Dugdale
+  subtitle: 2017 / UK / Documentary / Ian Bremner / Jonathan Dugdale
 ---
 
-A good documentary that isn't dry. The use of animation and palace location markers is impressive. Especially eye-opening was the earthquake test I saw for the first time in this film. Even a small building was fully enshrouded in traditional Chinese worldviews and philosophical concepts, vividly illustrating the fascinating relationship between softness and hardness, leaving endless room for imagination.
+A fine documentary that isn’t dull, making good use of animation and well-marked palace locations. Especially eye-opening is the seismic test footage seen for the first time, depicting a small structure entirely enveloped in traditional Chinese worldviews and philosophical thoughts, vividly portraying the intriguing relationship between softness and rigidity, sparking endless imagination.

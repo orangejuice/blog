@@ -1,6 +1,5 @@
 ---
-title: Wild Boar Crossing the River
-slug: wild-boar-crossing-the-river
+title: Wild Boar Crossing
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Zhang Guixing / 2021 / Sichuan People's Publishing House
 ---
 
-Via Twitter yihong0618, some parts are omitted in the mainland edition
+Via Twitter yihong0618 mainland edition has cuts

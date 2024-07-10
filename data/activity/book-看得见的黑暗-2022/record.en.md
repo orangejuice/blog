@@ -1,6 +1,5 @@
 ---
 title: Visible Darkness
-slug: visible-darkness
 category: book
 status: todo
 rating: 0

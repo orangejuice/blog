@@ -1,6 +1,5 @@
 ---
-title: Journey Inside The Human Body
-slug: journey-inside-the-human-body
+title: Journey Inside the Human Body
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 2007 / USA / Documentary / Martin Williams / Howard Ward
 ---
 
-With a sigh towards the sky, I wish to become a soul without a body, silently observing the world. Yet, a perennial spirit, isn't it also bound to relinquish eternal life, and become a life that touches the transient human world?
+Looking up to the sky, one longs to become a disembodied soul, silently watching the world. Yet a soul without a body might also yearn to abandon endless life and become mortal, to briefly experience human life.

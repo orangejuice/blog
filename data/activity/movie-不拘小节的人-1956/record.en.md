@@ -1,6 +1,5 @@
 ---
-title: The Unfussy Man
-slug: the-unfussy-man
+title: The Unfussy
 category: movie
 status: done
 rating: 5
@@ -8,7 +7,8 @@ year: "1956"
 date: 2023-08-31 04:37:41+08:00
 douban:
   rating: 7.6
-  subtitle: 1956 / Mainland China / Drama Comedy / Lu Ban / Bai Mu, Huang Wan Su
+  subtitle: 1956 / Mainland China / Drama Comedy / Directed by Lü Ban / Starring
+    Bai Mu, Huang Wansu
 ---
 
-Highly creative and satirical, this film aims at public morality and virtues. It is a well-structured work that was made with sincerity, and it causes one to sigh at the changes that have taken place. The actors are also excellent. It features the West Lake in Hangzhou in the early days after the founding of the People's Republic of China.
+Highly creative and sharply satirical, this film aims its sights at public morals and good customs. It's a work with a complete structure, earnest sincerity, and evokes a nostalgic sigh for how the world has changed. The acting is also excellent, featuring early post-revolutionary Hangzhou's West Lake.

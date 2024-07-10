@@ -1,6 +1,5 @@
 ---
 title: Sorry We Missed You
-slug: sorry-we-missed-you
 category: movie
 status: done
 rating: 5
@@ -12,4 +11,4 @@ douban:
     Debbie Honeywood
 ---
 
-It's so hard to watch. Any words feel so worthless in front of this heart-breaking and ruthless life. Life and existence here seem heavier than ever. Is there a way out? Where is the way out? Thankfully the film abruptly ended, I really couldn’t imagine what the next days would be like. But in reality, where do abrupt endings that relieve one's burden occur? The future seems bleak with no end in sight, troublesome children who can't seem to do well at school, ruthless bosses who exploit and calculate for their own interests yet always claim it's for your own good. And yet one must continue to get up and work. Life is like walking step by step to the execution ground. One must comfort oneself before arriving at the execution ground, everything will get better.
+It's so distressing to watch that any language seems demeaning in the face of such merciless and miserable lives. Life and living here seem heavier than ever. Is there a way out? Where is it? Fortunately, the film cuts abruptly, sparing us the dread of imagining what comes next. But in reality, is there such a timely relief? The future looks bleak, undisciplined children adding to the trouble, manipulative, selfish bosses who say it's all for your good. Yet, we continue to get up and work. Life feels like a march towards the gallows. And before reaching the gallows, we comfort ourselves that everything will get better.

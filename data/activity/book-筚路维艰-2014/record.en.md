@@ -1,6 +1,5 @@
 ---
-title: A Hard Road To Travel
-slug: a-hard-road-to-travel
+title: A Hard Road Ahead
 category: book
 status: todo
 rating: 0

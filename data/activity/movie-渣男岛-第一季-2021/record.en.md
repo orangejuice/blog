@@ -1,6 +1,5 @@
 ---
-title: Scum Island Season 1
-slug: scum-island-season-1
+title: Jerk Island Season 1
 category: movie
 status: done
 rating: 4
@@ -8,7 +7,7 @@ year: "2021"
 date: 2022-12-02 04:19:19+08:00
 douban:
   rating: 6.1
-  subtitle: 2021 / USA / Reality Show / Paul Keating Nikki Glaser
+  subtitle: 2021 / USA / Reality TV / Paul Keating, Nikki Glaser
 ---
 
-The show itself is directly a product of commercialization; its numerous labels are overwhelming to count. Eye-catching, consumerism, glitz, revelry, indulgence, insinuation, manipulation. The balance between rules and enjoyment is acceptable, which allows the reality show to go on, and under guidance, the true feelings of the participants are revealed, which also moved me. It's worth a watch. In terms of status, manipulation, security, strength, and weakness in male-female relationships, there are new insights and gains.
+The show itself is a direct product of commercialization, with a plethora of labels that makes one want to steer clear. Attractions include consumption, glamour, revelry, indulgence, insinuation, and manipulation. The balance between rules and watchability is decent, allowing the reality TV genre to thrive. Under certain guidance, the participants' true feelings are revealed, which also touched me emotionally. It’s worth watching, offering new insights into the roles, manipulation, security, and dynamics of power in male-female relationships, making it enlightening.

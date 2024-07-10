@@ -1,6 +1,5 @@
 ---
-title: Art of Deception in Warfare
-slug: art-of-deception-in-warfare
+title: Warfare Established by Deception
 category: book
 status: todo
 rating: 0
@@ -11,6 +10,6 @@ douban:
   subtitle: Li Ling / 2006 / Zhonghua Book Company
 ---
 
-Via tw Su_liang discovered an extraordinary book, that explains 'The Art of War' by Sun Tzu in a splendid and refined manner. Previously, whenever I tried to comprehend the original version of 'The Art of War', I was left confused as the notes were too brief and I would easily lose interest in reading further. 
+Via Twitter, Su Liang discovered a fascinating book that interprets Sun Tzu's "Art of War" in an incredibly vivid and insightful manner. Previously, delving into the original "Art of War" was always confusing; its annotations are too brief and easily sap the interest of the reader.
 
-The author of 'Art of Deception in Warfare' quotes numerous references, elaborating Sun Tzu's thoughts from various different perspectives with a wealth of information.
+The author of "Warfare Established by Deception" supports his explanations with an abundance of materials, thoroughly elucidating Sun Tzu's thoughts from various perspectives.

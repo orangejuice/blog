@@ -1,6 +1,5 @@
 ---
-title: All About My Family
-slug: all-about-my-family
+title: Everything About My Family
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,4 @@ douban:
     Ariane Ascaride Alain Ughetto
 ---
 
-Via tw anqirocks Do you understand? Where a person comes from is not a certain country, but their childhood
+Via Twitter @anqirocks Do you understand? People don't come from a country, but from their childhood

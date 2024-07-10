@@ -1,6 +1,5 @@
 ---
 title: In Search of Lost Time
-slug: in-search-of-lost-time
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: "[France] Marcel Proust / 2012 / Yilin Press"
 ---
 
-We always think we are special, but in others' eyes, we are just ordinary people. ——Proust 'In Search of Lost Time'. For the world, you are just one of the masses; but for your loved ones, you are their entire world.
+Via tw 435hz We always think we are special, but in fact, we are just ordinary people in the eyes of others. -Proust 'In Search of Lost Time' For the world, you are just one of many; but for your relatives, you are the whole world.

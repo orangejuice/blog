@@ -1,6 +1,5 @@
 ---
 title: Bullshit Jobs
-slug: bullshit-jobs
 category: book
 status: todo
 rating: 0
@@ -11,6 +10,8 @@ douban:
   subtitle: David Graeber / 2018 / Simon & Schuster
 ---
 
-via tw viking, I was previously very fond of the book 'Bullshit Jobs: A Theory'. It's a perennial frontrunner on Amazon and has been translated into over a dozen languages, having fundamentally changed my life in many ways. It was one of the motivators for me shifting to freelance work.
-The entire book came like a wakeup call to me. I also noticed many people around me stuck in bullshit jobs: paid employment that is entirely pointless, unnecessary, or even harmful, and even the employees themselves can't justify the existence of their work. I am left wondering what they are busy with every day.
-There's a category of jobs that apparently have nothing to do in the eyes of outsiders, yet are familiar to everyone: HR consultants, communication coordinators, PR researchers, financial strategists, business lawyers, or those who spend their time filling out committees– committees specifically designed to review whether there are too many committee members... At that point, I wondered whether these jobs were indeed useless and whether the people doing these jobs were well aware of it.
+I used to really like the book 'Bullshit Jobs: A Theory'. It has been a perennial bestseller on Amazon and has been translated into more than a dozen languages. It changed my life to some extent and was one of the motivations for me to start freelancing.
+
+The entire book was a revelation for me, and I feel that many people around me are also stuck in 'bullshit jobs': a type of paid employment that is completely meaningless, unnecessary, and even harmful, where even the employees themselves cannot justify the existence of their work. I don't even know what I am busy with every day. 
+
+“There are some jobs that, in the eyes of outsiders, seem idle and familiar to everyone: human resources consultants, communication coordinators, public relations researchers, financial strategists, business lawyers, or those spending time filling committee seats for review committees that address redundancy... That was when I wondered whether these jobs are truly useless and whether the people doing them are fully aware of it.”

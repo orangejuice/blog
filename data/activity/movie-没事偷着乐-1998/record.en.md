@@ -1,6 +1,5 @@
 ---
-title: Stealing Happiness When Unoccupied
-slug: stealing-happiness-when-unoccupied
+title: Steal Happiness on the Sly
 category: movie
 status: done
 rating: 4
@@ -8,7 +7,7 @@ year: "1998"
 date: 2022-12-04 04:15:20+08:00
 douban:
   rating: 7.9
-  subtitle: 1998 / Mainland China / Comedy / Yang Ya-zhou / Feng Gong Ding Jia-li
+  subtitle: 1998 / Mainland China / Comedy / Yang Yazhou / Feng Gong, Ding Jiali
 ---
 
-A cast of famous characters appear, Feng Gong has a profound foundation in comedy and plays his part really well, depicting a reliable and humane elder brother who takes care of his siblings in all aspects. The film has a strong sense of the reality from the turn of the century, rooted in the lower class and reality, touching on the bitterness of poverty, the separations and reunions of the world, and the trifles of the family. The fading in and out of scenes adds a touch of drama elegance. A bit bewildering though is that, as a movie from 1998, it seems a decade ahead in terms of family changes and development progress from the perspective of a child growing up in a small city.
+A host of famous actors appear, with Feng Gong showing his deep comedic skills from his roots in crosstalk, also proving to be quite an actor, a responsible and empathetic elder brother accommodating to all his younger siblings. The film has a cross-century realism, rooted in the grassroots and reality, touching on the bitterness of poverty, the separations and reunions of life, and the mundane intricacies of family life. The subtle transitions in scenes add a touch of dramatic refinement. What's a bit bewildering is that this 1998 movie, from the perspective of a child who grew up in a small tenth-tier city, seems to portray family changes and progressions that are a decade ahead of its time.

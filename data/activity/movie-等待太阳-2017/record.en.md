@@ -1,6 +1,5 @@
 ---
 title: Waiting for the Sun
-slug: waiting-for-the-sun
 category: movie
 status: todo
 rating: 0
@@ -8,17 +7,17 @@ year: "2017"
 date: 2023-05-22 15:12:06+08:00
 douban:
   rating: 0
-  subtitle: 2017 / Mainland China Denmark / Documentary / Kaspar Astrup Schröder
+  subtitle: 2017 / Mainland China & Denmark / Documentary / Kaspar Astrup Schröder
 ---
 
-Via tw jess: There is a 'Sun Village' in the suburbs of Beijing, a place dedicated to receiving minor children of convicted people.
+Via tw jess In the suburbs of Beijing, there's a place called Sun Village, specifically for the children of incarcerated individuals.
 
-Before I left for abroad, I wanted to donate everything I had. I thought, if I was going to donate, I would donate it to them, to those children that the sun truly doesn't reach.
+Before I went abroad, I intended to donate all my belongings. I thought if I were to donate, it should be to them, as they are truly the children who the sun doesn't shine on.
 
-I couldn't get in touch. I asked a friend who works in the district government, she said, don't even think about it. That was in October 22 years ago, the city was closed off and there were meetings.
+Couldn't get in touch. I asked a friend at the district government, and she told me not to think about it. That was in October 2022, during the lockdown + meetings.
 
 I hope they are still there.
 
-They have a Danish documentary: 'Waiting for the Sun'.
+There's a Danish documentary about them: 'Waiting for the Sun'.
 
-In the film, there are two families, both with mothers who killed their fathers because of domestic violence.
+The film features two families, both where the mother killed the father due to domestic violence.

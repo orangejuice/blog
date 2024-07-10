@@ -1,6 +1,5 @@
 ---
-title: Journey of Fragrance
-slug: journey-of-fragrance
+title: The Fragrance Journey
 category: movie
 status: done
 rating: 3
@@ -8,7 +7,7 @@ year: "2006"
 date: 2022-12-04 00:32:12+08:00
 douban:
   rating: 7.2
-  subtitle: 2006 / Mainland China / Drama / Jiarui Zhang / Jingchu Zhang Fan Wei
+  subtitle: 2006 / Mainland China / Drama / Zhang Jiarui / Zhang Jingchu, Fan Wei
 ---
 
-This movie is patient without ambition, a methodically rounded long story that triumphs in capturing history and life, focusing on the sense of authenticity, as well as the passionate spirit and innocent, radiant eyes of the female protagonist prior to the 70s. Against the overwhelming backdrop of the Mao era, three people come together only to ultimately part ways. The fervor of the revolutionary era is overwhelming and suffocating. For an individual, birth is the first chapter, death is the final chapter, and several choices in between, along with several internal struggles, constitute the entirety of their fleeting journey.
+This movie is patient without ambition, presenting a standard long tale that triumphs by capturing history and life. It emphasizes realism, along with the fiery spirit and naive yet expressive eyes of the female lead before the 1970s. Set against the massive and overwhelming backdrop of Mao's era, three people come together only to eventually go their separate ways. The bustling atmosphere of the revolutionary times, the helplessness, and the suffocating environment. For a person, birth is the first chapter and death the final; the few decisions and internal struggles in between shape all the hustle and bustle of life.

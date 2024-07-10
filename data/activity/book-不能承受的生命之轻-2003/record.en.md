@@ -1,6 +1,5 @@
 ---
 title: The Unbearable Lightness of Being
-slug: the-unbearable-lightness-of-being
 category: book
 status: done
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: "[Czech] Milan Kundera / 2003 / Shanghai Translation Publishing House"
 ---
 
-It's a difficult read, to be honest. This famous work and its title are quite different from what one might imagine. Even though, as many people say, it's full of philosophical discussions, it isn't an easy read—perhaps not even a moderate one. Gaining pleasure from reading it may not be something a newbie can accomplish. Maybe it would be better to revisit it in the future.
+It’s hard to read, honestly. For a work and title as well-known as this, it’s quite different from what one might expect. Despite the philosophical discussions it's reputed to contain, it’s not light reading—at least not even moderately so. Getting enjoyment out of reading it might not be something a novice can achieve. Perhaps it might be better to revisit it later.

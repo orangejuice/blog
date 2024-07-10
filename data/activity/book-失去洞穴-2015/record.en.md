@@ -1,6 +1,5 @@
 ---
 title: Lost Cave
-slug: lost-cave
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Han Lizhu / 2015 / INK Literature
 ---
 
-Via tw Ding Bu'er, after all, most of the love in the world is misjudged. Either love is mistaken for the universe, or pets are confused with children, or the difference between kindness and harm is unclear. Either marriage is misunderstood as love, or work is mistaken for life, or the house is mistaken for the future. And your pain is, she misidentified the window, but did not misjudge you.
+Via tw Ding Buyi: Love in this world is often mistaken, like calling a deer a horse—either mistaking a lover for the universe or confusing pets with children, or muddling kindness with harm. It’s either misunderstanding that marriage is love, thinking a job is life itself, or mistakenly believing a house represents the future. And your pain lies in her mistaking the window but never mistaking you. 📖 | Han Lizhu "Lost Cave"

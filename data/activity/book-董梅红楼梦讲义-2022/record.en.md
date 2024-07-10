@@ -1,6 +1,5 @@
 ---
-title: Lecture Notes on Dream of the Red Chamber by Dong Mei
-slug: lecture-notes-on-dream-of-the-red-chamber-by-dong-mei
+title: Dong Mei's Lectures on Dream of the Red Chamber
 category: book
 status: todo
 rating: 0
@@ -8,7 +7,7 @@ year: 2022-4
 date: 2022-07-04 08:11:53+08:00
 douban:
   rating: 8.3
-  subtitle: Dong Mei / 2022 / New Star Press
+  subtitle: Dong Mei / 2022 / Xinxing Publishing House
 ---
 
-Via tw Stopping Clouds, I read the new book by Professor Dong Mei from the Central Academy of Fine Arts, and the first page attracted me, "'Dream of the Red Chamber' itself is a fragrant wine fermented from Chinese characters. It is brewed with thousands of years of Chinese culture as the yeast, intertwined with the spring, summer, autumn, and winter of the Chinese people and their joy, anger, sorrow, and joy. All behind the various media is the art of language and people. Through a dream, we see the coming and going yet genuine heaven, earth, and people.
+Via Twitter user Tingyun - I read Professor Dong Mei's new book from CAFA. From the first page, I was captivated, 'The Dream of the Red Chamber itself is as though brewed from a cask of Chinese characters into a rich and fragrant wine. It is crafted using the yeast of millennia of Chinese culture, mixed with the seasons of the Chinese people's lives—spring, summer, autumn, winter—along with their joys, anger, sorrows, and contemplations, to produce something exquisitely refined.' Yes indeed, behind all mediums lies the art of language and humanity. Through a dream, one sees heaven, earth, and the human world coming and going so vividly.

@@ -1,6 +1,5 @@
 ---
 title: Alice in Borderland Season 2
-slug: alice-in-borderland-season-2
 category: movie
 status: done
 rating: 1
@@ -8,8 +7,8 @@ year: "2022"
 date: 2022-12-29 08:49:30+08:00
 douban:
   rating: 6.3
-  subtitle: "2022 / Japan / Action Science-Fiction Suspense Thriller Fantasy /
-    Directed by Shinsuke Sato / Starring: Kento Yamazaki, Tao Tsuchiya"
+  subtitle: 2022 / Japan / Action Sci-Fi Mystery Thriller Fantasy / Directed by
+    Shinsuke Sato / Starring Kento Yamazaki, Tao Tsuchiya
 ---
 
-I couldn't make it past the first episode. What on earth did they film? Overly shocking and exaggerated expressions, aside from the main characters everyone else just dies randomly. The invincible halo is exploded, the car flips and they climb out and walk away, Madonna complex always on. The male is too cool even when running away with hands in pockets, the female is pristine with a bikini top, smooth skin and soft hair. Apart from the final answer being the only temptation left, there is no suspense left, the screenwriters were too lazy to write plot details, and the production team indulged themselves. The setting is arbitrary, with blatant display of violent element, sexual element, and touching element to harvest income.
+Couldn't even continue after the first episode. What on earth did they make? Exaggerated expressions at every turn, only the protagonist survives as everyone else dies randomly. The invincibility aura is on full blast, people flip cars, crawl out and walk away, with a savior complex popping up frequently alongside vacant flashbacks. Guys stuff hands in pockets even when running away, girls are in pristine tank tops and bikinis, with smooth skin and silky hair. While the ultimate question remains intriguing, the mystery is gone, the screenwriters became lazy with the details. The crew let loose, carelessly arranging scenes, blatantly showcasing elements of violence, sex, and sentimentality to harvest revenue.

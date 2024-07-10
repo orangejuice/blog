@@ -1,6 +1,5 @@
 ---
-title: Distant Mountains, Light Shadows
-slug: distant-mountains-light-shadows
+title: Distant Mountain, Faint Shadows
 category: book
 status: todo
 rating: 0

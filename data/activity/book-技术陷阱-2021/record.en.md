@@ -1,6 +1,5 @@
 ---
 title: The Technology Trap
-slug: the-technology-trap
 category: book
 status: todo
 rating: 0
@@ -12,4 +11,4 @@ douban:
     Publishing House"
 ---
 
-Via tw laisky January book list, The Technology Trap and Rework are highly recommended with five stars.
+Via tw laisky January reading list, 'The Technology Trap' and 'Rework' highly recommended with five stars.

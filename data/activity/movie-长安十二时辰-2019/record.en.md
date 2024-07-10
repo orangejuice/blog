@@ -1,6 +1,5 @@
 ---
 title: The Longest Day in Chang'an
-slug: the-longest-day-in-changan
 category: movie
 status: done
 rating: 2
@@ -8,8 +7,8 @@ year: "2019"
 date: 2021-01-05 02:35:21+08:00
 douban:
   rating: 8.1
-  subtitle: 2019 / Mainland China / Drama Mystery Costume / Cao Dun / Lei Jiayin,
-    Yi Yang Qianxi
+  subtitle: 2019 / Mainland China / Drama Mystery Historical / Directed by Cao Dun
+    / Starring Lei Jiayin, Jackson Yee
 ---
 
-The effeminate voice of this pretty boy actor... he rasps his lines with a frowned brow and his explosive 's' sounds are simply grating to the ears, making it unbearable to watch. He shouldn't be in this plot at all, the watchability of this show might significantly increase without him. This also shows what the production team is aiming for: how fortunate are the modern young boys and girls for the exquisite set design lets their idols freely role-play for them to see. I watched the 30-episode condensed version of the plot and it still dragged on and was filled with filler content, I gave up after one and a half episodes. The uniqueness in the design of the street scenes and costumes is notable, and the screen processing is very pleasing, the surface work is done very well. The props and post-production teams deserve some praise, but the same lacking substance remains. Ratings above 8 don't seem to be universal, it seems that many people are quite astute, even with all the good public relations work done, they did not waste their time watching.
+The cream-faced actor’s whiny voice... recites lines with a furrowed brow and an irritating sibilant 's', making it unbearable to listen to, and he really shouldn’t have been in this plot; the watchability would likely increase without him. This also reveals the directorial pursuits, showing how fortunate the modern young men and women are, living in delicately designed sets, watching their idols indulge in role-playing. Watching the condensed 30-episode version is still drawn-out and diluted; I gave up after one and a half episodes. The street scenes and costumes are uniquely impressive, and the visuals are comfortably processed, which shows surface-level efforts; or, perhaps the props and post-production teams deserve some praise, but the core content is still lackluster. A rating over 8 does not reflect the general opinion, suggesting that many people are quite astute, despite the well-executed media campaign that still didn't tempt them to waste time watching it.

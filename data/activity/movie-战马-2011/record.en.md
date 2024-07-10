@@ -1,6 +1,5 @@
 ---
 title: War Horse
-slug: war-horse
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 2011 / USA / Drama War / Steven Spielberg / Jeremy Irvine Peter Mullan
 ---
 
-A genuine fairy tale, a wonderful longing. Touching and thought-provoking, what a beautiful work.
+A true fairy tale, a wonderful aspiration. It's touching and thought-provoking, such a beautiful work.

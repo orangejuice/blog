@@ -7,8 +7,8 @@ year: "2018"
 date: 2019-03-22 05:43:51+08:00
 douban:
   rating: 9.3
-  subtitle: 2018 / Italy United States / Drama / Saverio Costanzo / Elisa Del
-    Genio Ludovica Nasti
+  subtitle: 2018 / Italy USA / Drama / Directed by Saverio Costanzo / Starring
+    Elisa Del Genio, Ludovica Nasti
 ---
 
 

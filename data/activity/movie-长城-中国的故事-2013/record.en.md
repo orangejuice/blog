@@ -1,6 +1,5 @@
 ---
-title: "The Great Wall: A Story of China"
-slug: the-great-wall-a-story-of-china
+title: "The Great Wall: A Chinese Story"
 category: movie
 status: done
 rating: 1
@@ -8,7 +7,7 @@ year: "2013"
 date: 2021-09-01 17:44:05+08:00
 douban:
   rating: 8.6
-  subtitle: 2013 / Mainland China / Documentary / Directed by Liang Renhong
+  subtitle: 2013 / Mainland China / Documentary / Renhong Liang
 ---
 
-I watched half of the first episode, and it is full of intense local flavor with colorful vocals and a barrage of photographic material. The modeling, mapping, and material textures are stuck in a decade ago. The camera movements and scores are whimsical, the color grading is surreal and exaggerated. The constant use of fast and slow motion techniques seems messy and displays a lack of skill. It's all very overwhelming, making it impossible to focus on the content. Looking at it from another perspective, it actually highlights some harsh realities - anxiety, eagerness for quick success, formalism, lack of artistic cultivation and ideal pursuits, and inadequate expressive ability. It is a representation of the times - 'existence is reasonable.' Remembering the lessons learned, I should stop blindly exploring unpopular documentaries and believe in the saying, 'good wine needs no bush.'
+I watched half of the first episode. It pursues a rustic form with splendid vocal clamor while piling up cinematographic materials. The modeling textures and materials are stuck a decade ago. The cinematography and music follow no rules; the color grading is exaggerated and unnatural, with constant use of fast and slow motions, making it seem messy and desperate. It's dazzling and utterly distracts from the content. On the other hand, it accidentally highlights some side truths, depicting anxiety, haste for success, formalism, lack of artistic culture and aspiration, and inadequate expression skills—all very reflective of our era. Existence is reasonable, and it is highly representative of our times. Remember the lesson: stop blindly exploring unpopular documentaries. Believe in the notion that a good wine does not fear a deep alley.

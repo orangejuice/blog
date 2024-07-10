@@ -1,6 +1,5 @@
 ---
-title: Blooms and Vases
-slug: blooms-and-vases
+title: Blossoms Abound, Pots and Jars
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,6 @@ douban:
   subtitle: Shen Congwen / 2014 / Chongqing University Press
 ---
 
-I read Shen Congwen's "Blooms and Vases" in the evening, in which there is an article talking about Jia Baoyu tasting tea at Rongcui Nunnery, the "split-left-right-gourd" flask Ban Pao Jia that Miaoyu gave to Baochai, and the Rhinoceros Horm Dipper she gave to Daiyu. Mr. Shen Congwen believes that Cao Xueqin is satirizing Miaoyu's affectation and falseness here. The "split-left-right-gourd" flask is a Shang Dynasty liquor container imitated by gourds, which puns the slang terms "class, pack, fake".
+Via Twitter Shengyi Wang: Reading Shen Congwen's "Blossoms Abound, Pots and Jars" this evening, there is an article discussing when Jia Baoyu tasted tea at Lingchui An. Miaoyu presented Baoyu's sister, Xue Baochai, with a 'left separated right melon' Ban Pao Jia, and to Lin Daiyu a Dian Xi Qiao.
+
+Mr. Shen Congwen believes that Cao Xueqin was satirizing Miaoyu's affectation and falsehood here. The 'left separated right melon' Ban Pao is a gourd simulated Shang dynasty liquor vessel, phonetically resembling the slang 'fake packing.'

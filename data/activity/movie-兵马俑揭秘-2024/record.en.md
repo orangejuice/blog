@@ -1,6 +1,5 @@
 ---
-title: Unveiling the Terracotta Army
-slug: unveiling-the-terracotta-army
+title: The Secrets of the Terracotta Warriors
 category: movie
 status: done
 rating: 4
@@ -11,4 +10,4 @@ douban:
   subtitle: 2024 / UK / Documentary History / James Tovell
 ---
 
-A unique storytelling style, this is indeed the craftsmanship of Netflix, the genius of mass production. It can be considered as an update report on the excavation of the Qin Mausoleum. It also portrays the profiles of Chinese archaeologists and their working environment.
+A rare storytelling style that captures the essence, a hallmark of the efficient production line of Netflix. It serves as an updated report on the excavation of Qin's Mausoleum. It also showcases portraits and work environments of Chinese archaeological staff.

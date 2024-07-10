@@ -1,6 +1,5 @@
 ---
-title: Afu Visits the Tiger Father-In-Law
-slug: afu-visits-the-tiger-father-in-law
+title: Afu Visits His Tiger Father-in-Law
 category: book
 status: todo
 rating: 0

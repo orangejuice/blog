@@ -1,5 +1,5 @@
 ---
-title: Our Planet Season 1
+title: "Our Planet: Season One"
 category: movie
 status: done
 rating: 5

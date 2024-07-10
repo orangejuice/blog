@@ -1,6 +1,5 @@
 ---
-title: Telling My Child Series (Vol. 1)
-slug: telling-my-child-series-vol-1
+title: Telling Stories to My Child Series (Volume 1)
 category: book
 status: todo
 rating: 0

@@ -1,6 +1,5 @@
 ---
 title: The Color Purple
-slug: the-color-purple
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: 1985 / USA / Drama / Steven Spielberg / Danny Glover Whoopi Goldberg
 ---
 
-As per Douban banner, everything needs love. We sing, dance, and complain, all just in hopes of being loved.
+From the douban banner: Everything needs love, we sing, dance, and complain, just to be loved.

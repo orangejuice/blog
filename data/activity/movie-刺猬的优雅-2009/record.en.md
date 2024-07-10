@@ -1,6 +1,5 @@
 ---
 title: The Elegance of the Hedgehog
-slug: the-elegance-of-the-hedgehog
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,4 @@ douban:
     Le Guillermic
 ---
 
-via The Afternoon with Marguerite
+via Afternoon with Marguerite

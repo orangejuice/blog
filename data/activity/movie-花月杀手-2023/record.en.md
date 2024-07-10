@@ -1,6 +1,5 @@
 ---
-title: Killers of the Flower Moon
-slug: killers-of-the-flower-moon
+title: Killer of the Flower Moon
 category: movie
 status: done
 rating: 5
@@ -8,8 +7,8 @@ year: "2023"
 date: 2023-12-29 08:28:47+08:00
 douban:
   rating: 7.3
-  subtitle: 2023 / USA / Drama, Romance, Mystery, History, Crime, Western / Martin
-    Scorsese / Leonardo DiCaprio, Robert De Niro
+  subtitle: 2023 / USA / Drama Romance Mystery History Crime Western / Martin
+    Scorsese / Leonardo DiCaprio Robert De Niro
 ---
 
-It's long, but remarkably good to the point it doesn't feel boring. The movie vividly presents a society that existed before the advent of modern civilization, with underlying self-interests, survival of the fittest and pure, unblemished love. People by nature are risk-taking animals in pursuit of maximum benefits, with virtue and other noble qualities coming afterwards. When the benefits of doing something outweigh the risks, there is always someone willing to have a go. The uncle epitomizes pure evil, the nephew is torn between right and wrong, and Molly represents absolute purity. Molly's innocent demeanor and her expansive heart signify a type of beautification and light in the movie, offering some comfort to the audience.
+Lengthy, yet surprisingly good, it never feels dull throughout. It vividly portrays the dark and jungle-like society before modern civilization, revealing the calculative human nature, the survival of the fittest among groups, and the ever-relevant theme of pure, unblemished love. People are creatures willing to take risks and maximize self-interest, where so-called morals and other noble virtues come secondary. When the benefits of an action outweigh the risks, there will always be someone willing to attempt it. The uncle represents pure darkness, the nephew sways between dark and light, and Molly is pure innocence. Ms. Molly's harmless nature and broad generosity serve as an embellishment, a beam of light in the film, offering some solace to the audience.

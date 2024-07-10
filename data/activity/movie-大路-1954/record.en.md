@@ -1,6 +1,5 @@
 ---
 title: La Strada
-slug: la-strada
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 1954 / Italy / Drama / Federico Fellini / Anthony Quinn, Giulietta Masina
 ---
 
-The cruelty and suffering of life, the disappearance without a trace in death, that is the true face of the world. An outstanding performance. The year 1954. It makes me wonder, what kind of films would people in BC make, what about people in AD 1000, and what about those in AD 3000? Suffering is eternal, if one day people forget about suffering, they will definitely not be happy.
+The cruelty of life and the traceless disappearance of death, this is the true face of the world. A brilliant performance. 1954. It inevitably makes me wonder, what kind of movies would people in the BC era make? What about the people in the year 1000? What about in the year 3000? Pain is eternal. If one day people forget pain, they certainly won't be happy.

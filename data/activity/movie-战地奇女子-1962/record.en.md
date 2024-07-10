@@ -1,6 +1,5 @@
 ---
-title: Women of War
-slug: women-of-war
+title: Warrior Woman of the Battlefield
 category: movie
 status: todo
 rating: 0

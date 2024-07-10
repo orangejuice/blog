@@ -1,6 +1,5 @@
 ---
 title: Harry Potter and the Goblet of Fire
-slug: harry-potter-and-the-goblet-of-fire
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,4 @@ douban:
     Radcliffe Emma Watson
 ---
 
-"When rewatching 'Harry Potter and the Goblet of Fire' for possibly the tenth time two years ago, Dumbledore's speech after Cedric's death was deafeningly impactful," via tw the kid comment.
+Via Twitter, a kid revisited 'Harry Potter and the Goblet of Fire' for perhaps the tenth time two years ago. The speech Dumbledore gave after Cedric's death was profoundly stirring.

@@ -11,4 +11,4 @@ douban:
     Serrault, Claire Bouanich
 ---
 
-I have heard this lovely ending song a long time ago, and encountered it in the movie today. The movie is also very cute.
+I've heard the lovely ending song of this movie long ago, and encountered it today in the movie. The movie itself is also very lovely.

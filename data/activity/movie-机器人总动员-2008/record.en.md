@@ -11,4 +11,4 @@ douban:
     Elissa Knight
 ---
 
-This is too romantic. It's infuriating, it's heartbreaking. Humans are such strange creatures, the more you love them, the more you hate them, and the more you hate them, the more you love them.
+This is just too romantic. Infuriating. Crying. Humanity is such a strange creature, causing as much love as hatred, and as much hatred as love.

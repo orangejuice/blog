@@ -1,5 +1,5 @@
 ---
-title: Don Quixote (Part I and II)
+title: Don Quixote (Volume I & II)
 category: book
 status: done
 rating: 5
@@ -10,4 +10,4 @@ douban:
   subtitle: Miguel de Cervantes / 1978 / People's Literature Publishing House
 ---
 
-How do a masterpiece becomes a masterpiece, it contains an enormous amount of emotions and rationale, maybe the author himself does not even realize. This innovative, purely textual creation is all of the author's effort, then the author's shadow is cast upon the words. The human species is interesting, and so is the written words. The real world is the most powerful to create humans, and to create the adventures under human's pen. Yang Jiang's translation is also breathtaking. Reading is a wonderful thing.
+How does a great work become a masterpiece? It contains such a rich blend of emotion and reason that perhaps even the author himself is unaware. This new, purely textual creation, all born from the author's diligent efforts, casts the author’s shadow over the text. Humans are an interesting species, intriguing both on paper and in reality, and reality is most formidable, shaping humans and the adventures that lie beneath the pen. Yang Jiang's translation is also admirably impeccable. Reading is indeed a beautiful thing.

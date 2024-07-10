@@ -1,6 +1,5 @@
 ---
 title: Young Sheldon Season 5
-slug: young-sheldon-season-5
 category: movie
 status: done
 rating: 5

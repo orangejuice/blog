@@ -1,6 +1,5 @@
 ---
 title: The Lonely Game
-slug: the-lonely-game
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Yuan Zhe Sheng / 2017 / Beijing United Publishing Co., Ltd.
 ---
 
-(Via. But there are books)
+(Via. But there are still books)

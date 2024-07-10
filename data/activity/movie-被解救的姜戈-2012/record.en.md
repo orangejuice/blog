@@ -1,6 +1,5 @@
 ---
 title: Django Unchained
-slug: django-unchained
 category: movie
 status: done
 rating: 4
@@ -9,7 +8,7 @@ date: 2023-08-15 08:58:32+08:00
 douban:
   rating: 8.8
   subtitle: 2012 / USA / Drama Action Western Adventure / Quentin Tarantino /
-    Jamie Foxx, Leonardo DiCaprio
+    Jamie Foxx Leonardo DiCaprio
 ---
 
-The fearless white protagonist is truly magnificent, humorous and kind, truly a role born for the silver screen. DiCaprio's crazed performance is very stylized, like watching a drugged wolf of Wall Street. A historical romance full of beautiful aspects.
+The fearless and noble white male protagonist is truly magnificent, humorous, and kind-hearted, seemingly born for the silver screen. Leonardo's manic performance is highly stylized, reminiscent of watching 'The Wolf of Wall Street' on drugs. It's a historical romance filled with beauty and positivity.

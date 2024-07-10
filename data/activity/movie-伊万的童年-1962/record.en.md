@@ -1,6 +1,5 @@
 ---
 title: Ivan's Childhood
-slug: ivans-childhood
 category: movie
 status: done
 rating: 0

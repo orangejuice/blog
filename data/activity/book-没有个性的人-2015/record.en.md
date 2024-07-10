@@ -1,6 +1,5 @@
 ---
-title: The Man Without Qualities
-slug: the-man-without-qualities
+title: Person Without Character
 category: book
 status: todo
 rating: 0

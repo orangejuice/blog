@@ -1,6 +1,5 @@
 ---
-title: The Taste of Green Papaya
-slug: the-taste-of-green-papaya
+title: The Scent of Green Papaya
 category: movie
 status: todo
 rating: 0
@@ -9,7 +8,7 @@ date: 2022-10-02 22:08:08+08:00
 douban:
   rating: 7.8
   subtitle: 1993 / Vietnam France / Drama Romance Music / Tran Anh Hung / Tran Nu
-    Yen Khe, Luong Manh Hai
+    Yên-Khê, Luong Hoang
 ---
 
-via Movie Talks by Vietnamese
+via Viet's Movie Talk

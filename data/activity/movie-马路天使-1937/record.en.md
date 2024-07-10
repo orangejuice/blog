@@ -1,6 +1,5 @@
 ---
-title: Street Angel
-slug: street-angel
+title: Street Angels
 category: movie
 status: todo
 rating: 0
@@ -8,7 +7,8 @@ year: "1937"
 date: 2022-05-02 14:40:50+08:00
 douban:
   rating: 8.6
-  subtitle: 1937 / Mainland China / Drama Comedy / Yuan Muzhi / Zhou Xuan Zhao Dan
+  subtitle: 1937 / Mainland China / Drama Comedy / Directed by Yuan Mu-chi /
+    Starring Zhou Xuan, Zhao Dan
 ---
 
-Via douban, Algernon's bouquet seems to have a bit of Charlie Chaplin's comedy vibe, the character performance has a touch of humor. However, the core of the comedy is actually a tragedy. The cinematographic language depicts the rebellion and awakening consciousness of the lower-class people, especially women's struggle for their own destiny, which was rare in that era.
+From douban Algernon's Bouquet: Slightly reminiscent of a Charlie Chaplin comedy, the performances also have a touch of humor; however, the core of the comedy is actually tragic. The cinematography captures the rebellion and awakening consciousness of the lower classes, particularly the struggles women undertake for their own destinies in that era, which was rarely seen.

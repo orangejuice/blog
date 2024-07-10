@@ -1,6 +1,5 @@
 ---
-title: M. Butterfly
-slug: m-butterfly
+title: Butterfly Lord
 category: movie
 status: done
 rating: 2
@@ -8,8 +7,8 @@ year: "1993"
 date: 2022-10-29 07:48:03+08:00
 douban:
   rating: 8.5
-  subtitle: 1993 / United States, Canada / Drama, Romance, LGBTQ / David
-    Cronenberg / Jeremy Irons, John Lone
+  subtitle: 1993 / USA Canada / Drama Romance Gay / David Cronenberg / Jeremy
+    Irons John Lone
 ---
 
-John Lone's performance is pretty good, but the story and plot tension fall a bit short. The dialogue is too formal, and it feels off when Chinese characters are speaking to each other in English.
+John Lone's acting is commendable, but the narrative and dramatic tension are lacking a bit. The dialogue is too formal, and it's distracting when the Chinese characters converse in English with each other.

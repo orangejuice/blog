@@ -1,6 +1,5 @@
 ---
 title: The Forgotten War of China
-slug: the-forgotten-war-of-china
 category: movie
 status: done
 rating: 3
@@ -8,7 +7,7 @@ year: "2015"
 date: 2021-10-17 22:27:25+08:00
 douban:
   rating: 7.7
-  subtitle: 2015 / U.S.A / Documentary History War
+  subtitle: 2015 / USA / Documentary, History, War
 ---
 
-A superficial introduction, the development logic is not clearly reflective, too busy stirring emotions without properly telling the story, repeated scene use makes me question how much film and television footage corresponds to the historical events described. Overall it comes off as a bit cheap, it's hard to say how much effort was put into making this film, it's hard to say how much interest this film could rouse in the audience.
+A superficial introduction with unclear logical development. Instead of telling the story well, it focuses too much on sensationalism. The repeated use of scenes made me question how many of the film segments truly correspond to the historical events discussed. Overall, it appears somewhat cheap, and it's hard to say how much effort was put into making this film. It's also hard to say how much interest this film could arouse among viewers.

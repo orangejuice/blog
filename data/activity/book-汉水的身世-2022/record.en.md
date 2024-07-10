@@ -1,6 +1,5 @@
 ---
-title: The Life of the Han River
-slug: the-life-of-the-han-river
+title: The Origins of the Han River
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Yuan Ling / 2022 / CITIC Publishing Group
 ---
 
-From the perspective of relying on existing resources, the book discusses the Three Gorges Project's impact on tributaries like the Han River. The construction has harshly interrupted the migratory fish paths leading to their extinction. The significant reduction in fish catch has forced fishers to fish for immature species released by fisheries. Amid this grim ecological background, a ten-year fishing ban started in 2020 on the Yangtze River and its tributaries. In this grand scheme, generations of fishermen on the Yangtze have become those footing the bill for the cacophony in the resplendent symphony of this huge project.
+On Twitter, under the construction of the Three Gorges Dam project, tributaries like the Han River were heavily dissected, blocking migratory fish passages and leading to species extinction. The drastic reduction in fish catches forced fishermen to catch immature fish stocked by fisheries management. In the unsustainable ecological backdrop, a ten-year fishing ban was initiated in 2020 for the Yangtze River and its tributaries. Meanwhile, the fishermen of the Yangtze have become the unwitting payers of minor dissonances within the grand symphonic project.

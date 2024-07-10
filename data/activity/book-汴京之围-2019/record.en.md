@@ -1,6 +1,5 @@
 ---
 title: Siege of Bianjing
-slug: siege-of-bianjing
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Guo Jianlong / 2019 / Tiandi Publishing House
 ---
 
-Via tw hank zhao, I finished reading 'The Collapse of the Prosperous Era' in the middle of the night. I was surprised to find out that the author Guo Jianlong is actually a programmer. However, I did find that many programmers like to read history on Twitter. This book is as enjoyable to read as 'Siege of Bianjing', recommended for those interested in Tang Dynasty history.
+Finished reading 'The Collapse of a Prosperous Age' in the middle of the night. In the epilogue, I discovered that the author Guo Jianlong is actually a programmer. However, I found on Twitter that indeed many programmers enjoy reading history. This book is as engaging as 'Siege of Bianjing' and is recommended for those interested in the history of the Tang Dynasty.

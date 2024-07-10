@@ -1,6 +1,5 @@
 ---
 title: Artificial Intelligence
-slug: artificial-intelligence
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Melanie Mitchell / 2019 / Pelican
 ---
 
-Via tw kevinzhow
+Via Twitter kevinzhow

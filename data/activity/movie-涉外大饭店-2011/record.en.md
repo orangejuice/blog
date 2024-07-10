@@ -1,6 +1,5 @@
 ---
 title: The Best Exotic Marigold Hotel
-slug: the-best-exotic-marigold-hotel
 category: movie
 status: done
 rating: 2
@@ -11,4 +10,4 @@ douban:
   subtitle: 2011 / UK USA UAE / Drama Comedy / John Madden / Maggie Smith Judi Dench
 ---
 
-Unacquainted with the actors, unable to grasp the finer points of praise. The solemn title perhaps sets the expectations too high. A grand showcase of Indian scenery, and a light-hearted, whimsical, inspirational movie might be more suitable for fans to watch.
+Didn’t recognize the cast, couldn't see why it was well-reviewed. The serious title might have set expectations too high. A delightful revel in Indian scenery, a light-hearted, nonsensical, motivational film better suited for fans.

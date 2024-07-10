@@ -1,6 +1,5 @@
 ---
 title: The Art of Doing Science and Engineering
-slug: the-art-of-doing-science-and-engineering
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Richard W. Hamming Bret Victor / 2020 / Stripe Press
 ---
 
-Via tw Sand Mogican flipped through the beginning of 'The Art of Doing Science and Engineering: Learning to Learn,' and found it is also a strange book. The taste of Stripe Press is really good.
+Via Twitter, Sand Mogican briefly flipped through the beginning of 'The Art of Doing Science and Engineering: Learning to Learn' and discovered it is also a remarkable book. Stripe Press really has great taste.

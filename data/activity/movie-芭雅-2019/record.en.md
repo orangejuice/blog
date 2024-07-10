@@ -1,6 +1,5 @@
 ---
-title: Baya
-slug: baya
+title: Reverie
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: 2019 / Mainland China / Documentary / Ji Dan
 ---
 
-Via tw Bai Kui
+Via Twitter Bai Kui

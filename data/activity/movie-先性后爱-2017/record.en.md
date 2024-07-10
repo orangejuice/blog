@@ -1,6 +1,5 @@
 ---
-title: Love after Lust
-slug: love-after-lust
+title: Sex First, Love Later
 category: movie
 status: done
 rating: 4
@@ -8,7 +7,7 @@ year: "2017"
 date: 2022-10-08 21:09:40+08:00
 douban:
   rating: 5.4
-  subtitle: 2017 / South Korea / Erotica
+  subtitle: 2017 / South Korea / Erotic
 ---
 
-The acting is quite commendable. Ignore the logical loopholes and the movie comes off as relaxed and fun. It's about an underwear design company, a handsome male department head, and a beautiful female colleague with sexual innuendos galore. The male lead uses a magical weapon to win over his desired female co-worker. This aspect is quite intriguing. Actually, this magic weapon is just a packaged aphrodisiac which only allowed him to sleep with his female colleague, but didn't make her fall for him. Only after satisfying his physical desires and thus gaining some confidence, he starts expressing his love through his actions, eventually winning over his female colleague's heart.
+The acting is quite engaging; if you don't fuss over the logic, the movie is quite relaxing and fun to watch. Set in a lingerie design company, featuring a handsome male department head and a beautiful female colleague, the sexual innuendos are plentiful. The male lead uses a "magical weapon" to win over his desired female colleague, which is quite an interesting point. This "magical weapon" is essentially just repackaged aphrodisiac, used to sleep with his colleague rather than make her fall in love with him. Only after fulfilling his physical desires and gaining some confidence, he begins to take actions towards love, eventually winning his colleague's heart.

@@ -1,6 +1,5 @@
 ---
 title: Dream of the Red Chamber
-slug: dream-of-the-red-chamber
 category: book
 status: done
 rating: 5
@@ -8,8 +7,8 @@ year: 1996-12
 date: 2020-07-30 06:15:52+08:00
 douban:
   rating: 9.6
-  subtitle: "[Qing Dynasty] Written by Cao Xueqin, Continued by Gao E / 1996 /
-    People's Literature Publishing House"
+  subtitle: "[Qing] Cao Xueqin; Completed by Gao E / 1996 / People's Literature
+    Publishing House"
 ---
 
-I have finally experienced this wonderful dream of the Red Mansion, which is ineffable. How admirable is the old Cao from hundreds of years ago! The abundance of his emotions, literature, talent, knowledge, insight, thought, and his astounding foresight, with a few words, he is able to express countless details. It genuinely makes me feel like I have lived my twenty-odd years in vain. How can I continue to live like a corpse, sunken in modern life? Whenever I have a bit of thought, I feel as if I have become refreshingly unconventional, but even with my wisdom, I am not equal to a maid.
+Having finally experienced the dreamlike beauty of Dream of the Red Chamber, it's indescribably wonderful. How did the old Cao from over a century ago manage to so impress? His rich emotions, writing skill, talent, knowledge, insight, thinking, and forward-thinking perspective are conveyed in just a few words yet express so much. It really makes me feel like I've lived these twenty-some years in vain. How shall I face living like a dead soul lost in modern life? Merely harboring thoughts makes me feel refreshed and detached from worldly concerns, realizing that my intelligence and nature pale in comparison to even a maid's.

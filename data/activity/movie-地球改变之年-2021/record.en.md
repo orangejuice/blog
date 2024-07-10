@@ -1,6 +1,5 @@
 ---
-title: The Year Earth Changed
-slug: the-year-earth-changed
+title: The Year the Earth Changed
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 2021 / UK / Documentary / Tom Beard / David Attenborough Bhashkar Bara
 ---
 
-Tears welling up in eyes.
+Tears brimming with emotion.

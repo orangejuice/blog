@@ -1,6 +1,5 @@
 ---
 title: Friends Season 4
-slug: friends-season-4
 category: movie
 status: done
 rating: 5

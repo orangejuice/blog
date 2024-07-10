@@ -1,6 +1,5 @@
 ---
 title: The Establishment of the Han Empire and the Liu Bang Group
-slug: the-establishment-of-the-han-empire-and-the-liu-bang-group
 category: book
 status: todo
 rating: 0
@@ -8,7 +7,9 @@ year: 2023-2
 date: 2023-10-16 17:44:40+08:00
 douban:
   rating: 8.7
-  subtitle: Li Kaiyuan / 2023 / Life, Reading, New Knowledge Joint Publishing
+  subtitle: Li Kaiyuan / 2023 / Sanlian Bookstore
 ---
 
-Via tw xone recommends a book by Li Kaiyuan, 'The Establishment of the Han Empire and the Liu Bang Group'. Read it many years ago, two points were striking back then: 1) Japan's research into Chinese history is truly meticulous. 2) The phasing out of military merit beneficiaries, while not completely attainable in the Han Dynasty, is nevertheless orderly and quite effective.
+Via Twitter xone recommendation of Li Kaiyuan's "The Establishment of the Han Empire and the Liu Bang Group." Read many years ago, it was shocking at the time:
+1) Japan's research into Chinese history is extremely meticulous.
+2) The fading of the military merit class, although the Han dynasty could not be completely thorough, was still methodical and quite effective.

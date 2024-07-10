@@ -1,6 +1,5 @@
 ---
 title: The First Incense
-slug: the-first-incense
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Eileen Chang / 1997 / Huacheng Publishing House
 ---
 
-Via tw Stop Cloud rereads 'The First Incense'. A story about degeneration, what's terrifying is that the female protagonist's degeneration is her carefully deliberated optimal solution, a exceptionally lucid downfall.
+Via Twitter user Ting Yun, re-reading 'The First Incense'. It tells a story about degeneration. The horrifying part is that the heroine's decline is her well-considered optimal solution, a profoundly conscious descent.

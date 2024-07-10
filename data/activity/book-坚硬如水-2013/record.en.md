@@ -1,6 +1,5 @@
 ---
 title: Hard as Water
-slug: hard-as-water
 category: book
 status: todo
 rating: 0

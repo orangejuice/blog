@@ -1,6 +1,5 @@
 ---
 title: Paprika
-slug: paprika
 category: movie
 status: done
 rating: 5
@@ -9,7 +8,7 @@ date: 2020-06-08 03:44:26+08:00
 douban:
   rating: 9.1
   subtitle: 2006 / Japan / Sci-Fi Animation Mystery Thriller / Satoshi Kon /
-    Megumi Hayashibara, Toru Furuya
+    Megumi Hayashibara, Toru Emori
 ---
 
-What an amazing anime! Such a wonderfully unique story packed within a shell of light triumphing over darkness. Moreover, I discovered that I'm really timid, those absurdly creepy scenes frightened me extremely.
+What an impressive anime! The story is so wonderful and wrapped in a shell where light triumphs over darkness. Also, I realize how faint-hearted I am; those bizarre and eerie scenes totally freaked me out.

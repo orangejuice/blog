@@ -1,6 +1,5 @@
 ---
-title: Demystification
-slug: demystification
+title: Dispelling Enchantment
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Zhang Hongbin / 2023 / Shanghai Ancient Books Publishing House
 ---
 
-Via douban Heidegger
+Via Douban Heidegger

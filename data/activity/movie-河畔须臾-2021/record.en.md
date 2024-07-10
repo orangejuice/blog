@@ -1,6 +1,5 @@
 ---
-title: Moment by the Riverside
-slug: moment-by-the-riverside
+title: Moments by the River
 category: movie
 status: done
 rating: 3
@@ -8,7 +7,7 @@ year: "2021"
 date: 2024-06-12 04:00:49+08:00
 douban:
   rating: 8.1
-  subtitle: 2021 / Japan / Drama Family / Naoko Ogigami / Kenichi Matsuyama Kei Shi
+  subtitle: 2021 / Japan / Drama Family / Naoko Ogigami / Kenichi Matsuyama Takeshi Muro
 ---
 
-The storytelling is smooth. Very Japanese. Scar literature series. Beyond the familiar bustling city life, it's a story about the ordinary lives of ordinary people hidden in the crowd, plain yet full of scars. The pretty and sweet female landlord, using her deceased husband's ashes for self-comfort, stirred one of the few ripples in this 2-hour film.
+Flows smoothly and has a distinct Japanese flavor, representing scar literature. It tells the subtle yet scar-filled stories of ordinary people hidden among the masses, outside of the bustling city life. Featuring a delicate and sweet landlady who uses her deceased husband's ashes for solace, creating a few ripples in a film that lasts precisely two hours.

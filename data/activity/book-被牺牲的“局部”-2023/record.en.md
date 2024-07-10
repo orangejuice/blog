@@ -1,6 +1,5 @@
 ---
-title: The Sacrificed 'Partial'
-slug: the-sacrificed-partial
+title: The Sacrificed 'Local'
 category: book
 status: todo
 rating: 0
@@ -11,10 +10,9 @@ douban:
   subtitle: Ma Junya / 2023 / Sichuan People's Publishing House
 ---
 
-Via tw Left Hand Ink, here's what 'The Sacrificed Partial' says about the right to the first night:
+Via Twitter, from Left Hand Ink about the right of the first night, 'The Sacrificed 'Local'' describes it as follows:
 
-In many regions, there's a legend about the Mongols enforcing the right to the first night on the Han people during the Yuan Dynasty. Although there's considerable controversy over whether this has historical factual basis. Regardless, the Yuan Dynasty aristocracy valued the right to the first night greatly. In the early Yuan period, 'Northern people were fond of skillful people from the South, who were called 'Qiaoer', and their value was very high. As for women, they were even more precious, each priced at two to three hundred taels of silver, especially loved were young boys and girls, there were markets for people everywhere, all classes were represented, all were Southern men and women.'
+In many regions, there are legends from the Yuan dynasty about the Mongols imposing the right of the first night on the Han people. Although there is considerable controversy over whether there are historical facts to support this, the Yuan dynasty nobility highly regarded the right of the first night regardless. At the beginning of the Yuan dynasty, 'northerners were very fond of people skilled from the south, called 'skilled children', and they were very expensive. Women, in particular, were even more valuable, with each one exchanged for two to three hundred taels of silver, especially cherishing young boys and girls. There were people markets everywhere, with different classes and prices, all southerners.'
 
-The most common vulgar language in China (similar to 'F*ck your mother') was widely used in the Yuan Dynasty, which could be related to the right of the first night. When arguments occur, if one side reveals that they had the first night with the other's mother, it implies that the other party could be their own offspring, fully revealing their genetic and power superiority.
-
-Therefore, whether it's a person maintaining dignity in reality or a god with supernatural powers, the right to the first night holds an important place in their lives.
+The most common curse words in China (similar to 'Fuck your mother') were widely popular in the Yuan dynasty and might be related to the right of the first night. When parties argue, if one exposes having owned the other's mother's first night, it also implies that the other might be their offspring, showcasing their superior genetic and power status.
+Therefore, whether it is people maintaining dignity in reality or gods with supernatural abilities, the right of the first night holds an important place in their lives.

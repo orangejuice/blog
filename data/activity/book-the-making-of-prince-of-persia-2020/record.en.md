@@ -1,6 +1,5 @@
 ---
 title: The Making of Prince of Persia
-slug: the-making-of-prince-of-persia
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Jordan Mechner / 2020
 ---
 
-Via tw Shu, the best book I read this year / justzht, I finished reading it on the plane to Japan, wow, it feels like I've lived another person's life
+Via tw Shu best book I read this year / justzht Finished this book on the plane to Japan. Wow, it felt like living someone else's life.

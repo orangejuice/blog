@@ -1,6 +1,5 @@
 ---
-title: Camus's Notebook
-slug: camuss-notebook
+title: Camus' Notebook
 category: book
 status: todo
 rating: 0
@@ -8,13 +7,13 @@ year: 2019-8
 date: 2024-02-02 16:20:40+08:00
 douban:
   rating: 9.4
-  subtitle: (French) Albert Camus / 2019 / Zhejiang University Press
+  subtitle: Albert Camus / 2019 / Zhejiang University Press
   history:
     - date: 2024-02-02 16:20:40
-      comment: Via tw Dou Xiao Dou As long as I keep reading, I can always understand
-        my own pain, always confront my own ignorance, narrow-mindedness,
-        prejudice, and darkness. ——Camus
+      comment: "Via Twitter user DouxiaoDou: As long as I keep reading, I can continue
+        to understand my own suffering and counter my ignorance,
+        narrow-mindedness, prejudices, and darkness. — Camus"
       status: todo
 ---
 
-Via tw Douxiao Dou As long as I keep reading, I can always understand my own pain, always confront my own ignorance, narrow-mindedness, prejudice, and darkness. ——Camus / via tw Dou Xiao Dou Half of life is spent in withholding words, turning away, and being silent. True life appears when tearing internally. If you feel life is beautiful and simple, then you've never truly owned it.
+Via Twitter user DouxiaoDou: As long as I keep reading, I can continue to understand my own suffering and counter my ignorance, narrow-mindedness, prejudices, and darkness. — Camus / Via Twitter user DouxiaoDou: Half of life is spent in hesitating to speak, turning away, and remaining silent. True life emerges from the tearing within. If you think life is beautiful and simple, you've never truly owned it.

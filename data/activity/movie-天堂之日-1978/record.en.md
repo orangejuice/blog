@@ -1,6 +1,5 @@
 ---
 title: Days of Heaven
-slug: days-of-heaven
 category: movie
 status: todo
 rating: 0

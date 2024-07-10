@@ -7,8 +7,8 @@ year: "2015"
 date: 2020-05-04 03:42:30+08:00
 douban:
   rating: 8.2
-  subtitle: 2015 / Italy France Switzerland UK / Drama Comedy / Paolo Sorrentino /
-    Michael Caine Paul Dano
+  subtitle: 2015 / Italy France Switzerland United Kingdom / Drama Comedy / Paolo
+    Sorrentino / Michael Caine Paul Dano
 ---
 
-The calm and long narrative rhythm is just like life. What's different is that some shots have been carefully selected, and content irrelevant to the theme has been removed. The youthful faces in this film are so beautiful, well done, director. I know you want people to lust for youth. I knew he was going to fly when I saw the mocking that the lama couldn’t fly. There's nothing particularly outstanding, it's just a pretty good storybook.
+The narrative pace is leisurely and long, just like life. However, it carefully selects certain shots and removes content unrelated to the theme. The young faces in this movie are so beautiful, well done director. I know you want to make people yearn for youth. Seeing the mockery of lamas not being able to fly, I knew he was going to fly soon after. There’s nothing particularly outstanding, just a decent storybook.

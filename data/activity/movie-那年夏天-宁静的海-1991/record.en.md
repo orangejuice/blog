@@ -15,4 +15,4 @@ douban:
       status: todo
 ---
 
-The film has a magic that spreads me out from the anxiety of sitting in the afternoon room. The music is beautifully soothing, with surging waves and Japanese interactions. The female protagonist is always colorful, and the gaze ahead is charming. Her small oval face and broken bangs are never monotonous. Quiet and delicate, it's trivial but not boring. It's about life on the margin of the world, about life, pure love and companionship, about the life force that we don't know, in a story of a deaf-mute surfing.
+The film has a kind of magic that unfolds me from the agitation of sitting in my room in the afternoon. The music is beautifully soothing, with surging waves, and Japanese interaction. The female lead is always vividly colored, with a mesmerizing gaze, and her small, oval face with broken bangs is endlessly charming. Quiet and delicate, trivial but not boring. It tells a story of a deaf-mute surfer, a life on the edge of the world, writing about life, pure love and companionship, and the unknown force of life.

@@ -1,6 +1,5 @@
 ---
 title: Eleven Kinds of Loneliness
-slug: eleven-kinds-of-loneliness
 category: book
 status: todo
 rating: 0

@@ -1,6 +1,5 @@
 ---
 title: A Brief History of Ancient China
-slug: a-brief-history-of-ancient-china
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Edward L Shaughnessy / 2023 / Bloomsbury Publishing
 ---
 
-Via tw John f Sullivan What is most interesting about this newly published history of ancient China is that it is not organized like a traditional western history, but instead adopts the unique organizational format invented by China's first ancient historian, Sima Qian ...
+Via Twitter, John F. Sullivan: What is most interesting about this newly published history of ancient China is that it is not organized like a traditional western history, but instead adopts the unique organizational format invented by China's first ancient historian, Sima Qian.

@@ -1,6 +1,5 @@
 ---
 title: Witness of the Revolution
-slug: witness-of-the-revolution
 category: movie
 status: done
 rating: 5

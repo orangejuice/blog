@@ -1,6 +1,5 @@
 ---
-title: "She Said: Moments in Women's Life"
-slug: she-said-moments-in-womens-life
+title: "She Said: Moments in a Woman's Life"
 category: movie
 status: todo
 rating: 0
@@ -8,8 +7,8 @@ year: "2018"
 date: 2022-02-22 19:38:44+08:00
 douban:
   rating: 9.4
-  subtitle: 2018 / UK / Drama, LGBT / Vanessa Caswill, Rachna Suri, Vicky
-    Featherstone / Romola Garai, Jodie Comer
+  subtitle: 2018 / UK / Drama Lesbian / Vanessa Kirby, Lashana Lynch, Vicky Krieps
+    / Romola Garai, Jodie Comer
 ---
 
-I remember I've downloaded it before
+To bookmark, I remember I have downloaded it.

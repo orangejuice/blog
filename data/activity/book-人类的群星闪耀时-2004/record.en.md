@@ -1,5 +1,5 @@
 ---
-title: When the Stars of Mankind Shine
+title: The Shooting Stars of Humanity
 category: book
 status: done
 rating: 5

@@ -1,6 +1,5 @@
 ---
-title: Good Bye, Lenin!
-slug: good-bye-lenin
+title: Good Bye Lenin!
 category: movie
 status: todo
 rating: 0

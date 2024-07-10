@@ -1,6 +1,5 @@
 ---
 title: Hi, Mom
-slug: hi-mom
 category: movie
 status: done
 rating: 5
@@ -8,8 +7,8 @@ year: "2021"
 date: 2021-06-30 03:53:46+08:00
 douban:
   rating: 7.7
-  subtitle: 2021 / Mainland China / Drama Comedy Fantasy / Jia Ling / Jia Ling,
-    Zhang Xiaofei
+  subtitle: 2021 / Mainland China / Drama Comedy Fantasy / Directed by Jia Ling /
+    Starring Jia Ling, Zhang Xiaofei
 ---
 
-It's a refreshingly unique tribute to the mother in the form of a memorial film. The work is impressively beyond expectation, featuring lighter performance, focusing on family and mother-child relationship. It's filled with tenderness and sentiment. In my view, this work is quite remarkable, with performances from the northeastern troupe being far from mundane and aiming to revive the dormant sense of filial piety in the hearts of the audience, giving it youthful vitality in modern society. (The screen time of Leng Te made me fully realize Jia Ling's confidence, the cultivation of the mother on this point couldn't be more laudable)
+A refreshingly dedicated tribute to mothers. Unexpectedly brilliant, it offers a lighter depiction, focusing on family and mother-son relationships, filled with tenderness and emotion. In my view, this is a phenomenal work with a distinctly unconventional performance by the Northeastern style, which attempts to awaken the dormant filial piety in the audience's hearts, rejuvenating it with youthful vigor in modern society. (I devoted all my attention to Jia Ling's confidence thanks to the scenes with Leng Te, and the way this mother nurtured that aspect is beyond commendable.)

@@ -1,6 +1,5 @@
 ---
-title: The Road Home
-slug: the-road-home
+title: The Way Back
 category: movie
 status: todo
 rating: 0

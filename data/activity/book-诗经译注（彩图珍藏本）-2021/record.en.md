@@ -1,6 +1,5 @@
 ---
-title: The Book of Songs with Annotations (Illustrated Collector's Edition)
-slug: the-book-of-songs-with-annotations-illustrated-collectors-edition
+title: "The Book of Songs: Annotated & Illustrated Edition"
 category: book
 status: todo
 rating: 0
@@ -8,8 +7,8 @@ year: 2021-6
 date: 2021-08-16 19:05:19+08:00
 douban:
   rating: 8.4
-  subtitle: Cheng Junying, Translated & Annotated [Japan] Hosoi Jun and others,
-    Illustrations / 2021 / Shanghai Ancient Book Publishing House
+  subtitle: Translated and annotated by Cheng Junying; Illustrated by Hosoi Sunao
+    et al.; 2021; Shanghai Classics Publishing House
 ---
 
-Hope to see someone who bought it share their experience
+Hoping to see someone buy and share their experience

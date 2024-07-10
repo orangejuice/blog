@@ -1,6 +1,5 @@
 ---
 title: Apocalypse Now
-slug: apocalypse-now
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: 1979 / USA / Drama War / Francis Ford Coppola / Martin Sheen Marlon Brando
 ---
 
-Have seen, plan to watch again
+Watched and planning to watch again

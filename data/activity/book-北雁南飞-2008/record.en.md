@@ -1,6 +1,5 @@
 ---
-title: North Goose South Fly
-slug: north-goose-south-fly
+title: Geese Flying South
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Zhang Henshui / 2008 / People's Literature Publishing House
 ---
 
-Via tw Stop cloud
+Via Twitter @Tingyun

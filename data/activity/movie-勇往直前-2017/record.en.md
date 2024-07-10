@@ -1,6 +1,5 @@
 ---
 title: Only the Brave
-slug: only-the-brave
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,4 @@ douban:
     Miles Teller
 ---
 
-Adapted from a true story, via tw keke
+Via Twitter keke, based on a true story

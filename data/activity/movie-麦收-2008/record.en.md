@@ -1,6 +1,5 @@
 ---
-title: Harvest
-slug: harvest
+title: Harvest of Wheat
 category: movie
 status: done
 rating: 3
@@ -11,4 +10,4 @@ douban:
   subtitle: 2008 / Mainland China / Documentary / Xu Tong
 ---
 
-The film offers a unique perspective, Beijing in 2008.
+The film offers a unique perspective of Beijing in 2008.

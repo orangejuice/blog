@@ -7,8 +7,8 @@ year: "1985"
 date: 2019-10-20 05:55:36+08:00
 douban:
   rating: 7.5
-  subtitle: 1985 / USA / Comedy Family Adventure / Richard Donner / Sean Astin
-    Josh Brolin
+  subtitle: 1985 / USA / Comedy Family Adventure / Directed by Richard Donner /
+    Starring Sean Astin, Josh Brolin
 ---
 
-A childish and innocent story, contrived but enough to attract a child. This is a part of many people's childhood memories, as expected, I've watched it before. But I can only remember that I've watched it, not where, and with whom I watched it. It feels like I've lost something.
+A childish yet innocent story, it's contrived but enough to captivate a child. It appears to be a part of many people's childhood memories, and indeed I have seen it too. But I only remember that I've seen it, not where or with whom. It feels like something's lost.

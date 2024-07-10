@@ -1,6 +1,5 @@
 ---
 title: Human Planet
-slug: human-planet
 category: movie
 status: done
 rating: 4
@@ -8,8 +7,8 @@ year: "2011"
 date: 2020-07-07 23:38:03+08:00
 douban:
   rating: 9.7
-  subtitle: 2011 / UK / Documentary / Tom Hugh-Jones Tuppence Stone Nicolas Brown
-    Mark Flowers / John Hurt
+  subtitle: 2011 / UK / Documentary / Tom Hugh-Jones, Tuppence Stone, Nicolas
+    Brown, Mark Flowers / John Hurt
 ---
 
-Deducting a point for the script. The overly dramatic narrative tends to focus on the perilous moments, often almost failing to capture them. The 'what ifs' and 'thanks tos' disrupt the immersion and sense of realism. Despite the camera's pursuit of beauty and completeness, even the multi-angle switching is a bit... But the visuals and story-telling are indeed excellent, can be considered a treasure.
+Deducting points for script language, the narration overly dramatizes the difficulties, always highlighting perilous moments that nearly ended in failure. Phrases like 'if not for this and that, it couldn't be so and so,' and 'thanks to so and so, we accomplished such and such,' detract from the immersive and lifelike experience. The camera work, while seeking grandeur and cohesion with perfect multi-angle transitions, can sometimes be distracting. However, the visuals and the story are genuinely excellent and can be considered a treasure.

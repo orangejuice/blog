@@ -1,6 +1,5 @@
 ---
-title: The Unbearable Lightness of Being
-slug: the-unbearable-lightness-of-being
+title: Love in Prague
 category: movie
 status: done
 rating: 5
@@ -12,4 +11,4 @@ douban:
     Juliette Binoche
 ---
 
-An epic novel on film. Understanding of sexuality and changes in the social context form the foundation for the characters and their destinies. The reactions to this film taught me about the light and heavy in my eyes. A happy life of love is beautiful, desirable, and worthwhile. An unhappy, unloved life is dark, meaningless, and not worth living. The female lead's painful despair is almost suffocating, but it gradually improves after she moves to a secluded manor. In the finale, I so wished they had kept driving or even fled the country, and the so-called death notice was nothing but smoke and mirrors.
+An epic cinematic novel. Understanding of sexuality and changing social backgrounds form the basis of the characters' personalities and fates. Watching this movie made me understand the light and heavy in my eyes. The life of being loved and happy is beautiful, desirable, and worth it. Life unloved and unhappy is dark, meaningless, and not worth it. The protagonist's pain was almost suffocating in its despair, but gradually improved after moving to an estate in the countryside. At the ending, I really wished they kept driving or even ran out of the country, with the so-called death notice merely a distraction as part of a plan.

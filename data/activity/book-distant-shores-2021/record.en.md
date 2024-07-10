@@ -1,6 +1,5 @@
 ---
 title: Distant Shores
-slug: distant-shores
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Melissa Macauley / 2021 / Princeton University Press
 ---
 
-Via tw Zoe Zoe finished reading the first book of the New Year. The colonization of Southeast Asia by the Chaoshan people was not a traditional territorial expansion supported by military force, but a purely collective economic activity. However, this type of 'colonization' both economically and socially represented the spatial expansion and mobility of the native country. This mobility is greatly influenced by the native country's economy and politics. The development of Southeast Asia cannot be separated from the early relentless efforts of these Chinese. The Chaoshan people are indeed tenacious and united.
+Via tw Zoe Zoe read the first book of the New Year. The 'colonization' of Southeast Asia by the Teochew people was not about territorial expansion supported by military power in the traditional sense, but purely a collective economic endeavor. However, this type of 'colonization' significantly influenced the socio-economic landscape, involving spatial expansions and movements deeply impacted by the host country’s economic and political climate. Southeast Asia's development owes much to the early hard work of these Chinese immigrants. The Teochew people indeed epitomize resilience and unity.

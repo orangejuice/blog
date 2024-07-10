@@ -1,6 +1,5 @@
 ---
-title: Dreams of Wild Grasses and Dust
-slug: dreams-of-wild-grasses-and-dust
+title: Wilderness Dust Dreams
 category: book
 status: todo
 rating: 0
@@ -8,7 +7,7 @@ year: 2018-3
 date: 2023-07-26 17:57:25+08:00
 douban:
   rating: 9.4
-  subtitle: Chen Quzhen / 2018 / Northern Literature and Art Publishing House
+  subtitle: Chen Quzhen / 2018 / Northern Literature and Arts Publishing House
 ---
 
-Via Twitter user 'Second Uncle': Among the books I've read, there are many good ones, but there are not many that can be described as extraordinary. 'Dreams of Wild Grasses and Dust' is one of them. This book was recommended to me by a fellow traveler I ran into during my first backpacking trip along the Yunnan-Tibet route. It's really engaging. The author is Chen Quzhen, a military officer and warlord from Western Hunan during the late Qing Dynasty and early Republic of China era. This man was truly adept in both literary and martial arts. He graduated from Hunan Military Academy and followed Zhao Erfeng, the governor of Sichuan, into Tibet to suppress a rebellion. However, in the midst of this, the Xinhai Revolution broke out and Zhao Erfeng was recalled to Sichuan, where he died in Chengdu. The Sichuan Army left in Tibet was leaderless and instigated by the Gelaohui to rebel. Chen Quzhen had no choice but to lead his troops of 115 men, trek through the uninhabited Qiangtang region, cross the Tanggula Mountains, and return to the mainland. They struggled for more than seven months, ran out of food, suffered countless casualties, and finally reached Xining, Qinghai in June 1912 with only seven soldiers left alive. 'Dreams of Wild Grasses and Dust' documents this painful journey.
+Via tw Uncle Li, among the books I have read, there are many good ones, but only a few can be called extraordinary. 'Wilderness Dust Dreams' is one of them. I first came across this book when a fellow traveler recommended it to me during my first backpacking trip along the Yunnan-Tibet route. It's very captivating. The author is Chen Quzhen, a military and literary figure from western Hunan during the late Qing and early Republican era. He graduated from the Hunan Military Academy and followed Zhao Erfeng, the governor of Sichuan, into Tibet to suppress a rebellion. However, with the outbreak of the Xinhai Revolution, Zhao was called back to Sichuan and met his demise in Chengdu. Left leaderless in Tibet, the Sichuan army mutinied under the influence of the Elder Brothers Society. Left with no choice, Chen Quzhen led 115 soldiers through the uninhabited region of Qiangtang, over the Tanggula Mountains back to the mainland, a harrowing seven-month journey which saw them out of food and with countless deaths and injuries, finally arriving in Xining, Qinghai in June 1912 with only seven soldiers surviving. 'Wilderness Dust Dreams' chronicles this painful experience.

@@ -1,6 +1,5 @@
 ---
-title: Extraordinary Ceremony
-slug: extraordinary-ceremony
+title: Extraordinary Rituals
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 2018 / UK / Documentary / Simon Reeve
 ---
 
-The successive appearances of various ceremonial celebrations are truly awe-inspiring. Each of human civilization and culture has developed unique rituals and celebrations tightly associated with its own tribe and culture, carrying a great intrinsic power connecting to the ancestors in the course of the activities. It guides individuals to form their own understanding of the meaning of life, suffering, death and birth, unifies the trivial human beings, and grants value, safety and sense of belonging. In this age where even the annual flavor has faded away, there lingers the hope for the rebirth of ceremonies and celebrations belonging to our nation.
+The series of ritual ceremonies that take place one after another are truly awe-inspiring. Each human civilization has developed its own unique festivals and rituals tightly connected to their culture and tribe. Embedded within these events is a profound essence of connection to ancestors, guiding individuals to forge their own understanding of life, pain, and the significance of death and existence. It binds the frailty of humans together, endowing them with value, security, and belonging. In an era where even traditional flavors have faded, there's a longing for the phoenix-like rebirth of our national rituals and celebrations.

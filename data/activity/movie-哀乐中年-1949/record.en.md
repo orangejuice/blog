@@ -1,6 +1,5 @@
 ---
-title: Sorrow and Joy in Midlife
-slug: sorrow-and-joy-in-midlife
+title: The Mournful Middle Age
 category: movie
 status: todo
 rating: 0
@@ -8,8 +7,9 @@ year: "1949"
 date: 2022-01-13 04:36:32+08:00
 douban:
   rating: 9.3
-  subtitle: 1949 / Mainland China / Drama, Romance, Family / Sang Hu / Shi Hui,
-    Zhu Jia Chen
+  subtitle: 1949 / Mainland China / Drama Romance Family / Directed by Sang Hu /
+    Starring Shi Hui, Zhu Jiachen
 ---
 
-Via tw gretadino just watched this 1949 movie 'Sorrow and Joy in Midlife' the other day, rated 9.3 on Douban. The words of the female lead are more wakeful and insightful than many people nowadays. She said things like, 'Chinese people are a strange race, they care so much about death, but do not care how to live well when they are alive' and 'Chinese people only have youth and old age, no middle age'. The highest praised comment in the film's comment section is, 'The advancement of technology makes us mistakenly believe that the times are also progressing.'
+Via tw gretadino, I watched this movie from 1949, 'The Mournful Middle Age', which has a 9.3 rating on Douban. The female protagonist says things clearer and more sensibly than many people today, such as 'Chinese are a strange nation, treating death as so significant yet not caring how to live well during their lifetime', 'Chinese only have youth and old age, there is no middle age'…
+The highest upvoted comment in the review section states, 'The advancement of technology has misled us into thinking that the era is also progressing.'

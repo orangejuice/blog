@@ -1,6 +1,5 @@
 ---
-title: Deep Relationships
-slug: deep-relationships
+title: Deep Connections
 category: book
 status: todo
 rating: 0
@@ -8,7 +7,7 @@ year: 2023-10-30
 date: 2024-05-04 16:43:16+08:00
 douban:
   rating: 8.5
-  subtitle: Zhihong Wu / 2023 / Jiuzhou Publishing House
+  subtitle: Wu Zhihong / 2023 / Jiuzhou Press
 ---
 
-Recommended by balconychy, take a look at Zhihong Wu's 'Deep Relationships'. Having read it, you will find that in Chinese-style relationships (spouses, filial relationships), there are various subtle and unknowingly PUA instances. Although Professor Wu has a bit of a tendency to see all relationships as abnormal due to his career as a psychologist, the descriptions in the book indeed reflect the current state of Chinese family relationships. Handle relationships well, starting from becoming an independent person, love yourself enough before loving others.
+Recommended by balconychy to check out Wu Zhihong's 'Deep Connections'. After reading it, you will realize that in Chinese-style dyadic relationships (spouses, personal relations), there exist various subtle and unconscious Pickup Artist tactics. Although Professor Wu sometimes sees every relationship as abnormal due to his occupational habits as a psychologist, the descriptions in the book truly reflect the current state of Chinese family relations. Managing relationships well starts with being an independent individual, loving oneself sufficiently before loving others.

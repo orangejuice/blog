@@ -1,6 +1,5 @@
 ---
 title: The Pianist
-slug: the-pianist
 category: movie
 status: done
 rating: 5
@@ -12,4 +11,4 @@ douban:
     Polanski / Adrien Brody Thomas Kretschmann
 ---
 
-Facing destiny with melancholy and no resistance, struggling to survive amid the ruins. Fortunately, having some talent, was repeatedly favored and rescued by those who value it. Witnessing so many horrific moments and still being able to survive is extremely lucky. A wonderful war autobiographical film with a steady and powerful rhythm.
+Facing fate with a melancholic peace, struggling to survive amid ruins. Fortunately, blessed with talent, he repeatedly receives help from those who appreciate his gifts. Surviving so many terrifying moments and still living to tell the tale, he is indeed incredibly lucky. An extraordinary war autobiography film with a steady and strong pace.

@@ -1,5 +1,5 @@
 ---
-title: "China: A Century of Revolution"
+title: China, the Century of Revolution
 category: movie
 status: done
 rating: 5
@@ -10,4 +10,4 @@ douban:
   subtitle: 1997 / USA / Documentary / Sue Williams
 ---
 
-This is a missing memory that belongs to everyone living in today's society
+This belongs to a missing memory that every individual in today's society carries.

@@ -1,6 +1,5 @@
 ---
 title: Crossing a Sea
-slug: crossing-a-sea
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Wang Liuyun / 2024 / Hunan Fine Arts Publishing House
 ---
 
-This is a book sent by the editor Via tw Morgan. At first, I didn't hold out hope, but the more I read, the more I want to slap my thigh! Grassroots writers are just so vigorous and strong. My colleague, Auntie Wang, is also a vigorous person - she's someone who, if not given an opportunity, will create one herself.
+A book sent by the editor tw Morgan, I didn't have much hope at first, but the more I read it, the more I wanted to slap my thigh! Grassroots writers are just so fierce, and so is my colleague, Aunt Wang. She is someone who, without any opportunities, creates her own.

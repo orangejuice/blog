@@ -10,4 +10,4 @@ douban:
   subtitle: "[US] Daniel Kahneman / 2012 / CITIC Press"
 ---
 
-Regarding the translation, can the translator understand what it means? How could it pass through various checks and get published? This is a bit of a pity. The topics are all good, had a quick look, quickly skipped the poorly translated parts, but still found it interesting :) Saw someone saying there are too many words, that's right, really admire the author, he can really write.
+This translation, can the translator even understand what they wrote? How did it pass through so many checks and get published? That's a bit of a shame. The topics are good, and I skimmed through it; I quickly skipped the poorly translated parts, but it's still somewhat interesting :) I saw some say it's too wordy, and they're right, I really admire the author, such a prolific writer.

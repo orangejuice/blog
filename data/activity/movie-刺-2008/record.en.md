@@ -1,6 +1,5 @@
 ---
-title: Stab
-slug: stab
+title: Thorn
 category: movie
 status: todo
 rating: 0
@@ -9,7 +8,7 @@ date: 2022-05-19 02:32:27+08:00
 douban:
   rating: 6.2
   subtitle: 2008 / USA / Drama Sci-Fi Thriller Horror / Toby Wilkinson / Paul
-    Castanzo Gill Wagner
+    Castanzo Jill Wagner
 ---
 
-The movie I watched halfway as a child because it was interrupted by a power outage and internet blackout! A friend found it, didn't expect it only scored 6.1, will watch it when free.
+A movie I half-watched as a child because a power outage cut off the internet! A friend found it, surprisingly it has only a 6.1 rating, I'll watch it when I have time

@@ -1,6 +1,5 @@
 ---
 title: In the Realm of the Senses
-slug: in-the-realm-of-the-senses
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,4 @@ douban:
     Tatsuya Fuji Eiko Matsuda
 ---
 
-Via Suddenly remember
+Suddenly remembered

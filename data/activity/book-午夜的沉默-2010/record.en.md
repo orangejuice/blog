@@ -1,6 +1,5 @@
 ---
-title: Midnight Silence
-slug: midnight-silence
+title: Silence of the Midnight
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,5 @@ douban:
   subtitle: (Austrian) Kafka / 2010 / Shanghai Sanlian Bookstore
 ---
 
-via tw Doudou: To live, one must have faith. Faith in what? In the rational inner connection of all things and moments, in the belief that life as a whole will continue forever, and in the nearest and farthest things. - Kafka's "Midnight Silence"
+Via Twitter by Dou Xiao Dou - To live, one must have beliefs. What to believe in? Believe in the reasonable internal connections of all things and all moments, trust that life as a whole will forever go on, trust in the closest things and the farthest things.
+— Kafka, "Silence of the Midnight"

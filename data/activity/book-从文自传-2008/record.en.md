@@ -1,6 +1,5 @@
 ---
-title: From Text to Self
-slug: from-text-to-self
+title: Congwen's Autobiography
 category: book
 status: todo
 rating: 0
@@ -8,7 +7,7 @@ year: 2008-11
 date: 2022-06-01 20:19:40+08:00
 douban:
   rating: 9
-  subtitle: Shen Congwen / 2008 / October Literature Publishing House, Beijing
+  subtitle: Shen Congwen / 2008 / October Literature and Arts Publishing House, Beijing
 ---
 
-Via tw Stopping Clouds, he likes 'The Man from the Storm Cabinet.' Hou Hsiao-hsien said that he learned how to make films after reading 'From Text to Self.' Shen Congwen was a person with positive feelings towards the world. The last sentence he left was: 'I have nothing good to say about the world.'
+Via Twitter, Tingyun expressed fondness for 'The People from Fengkuei'. Hou Hsiao-hsien said he learned how to make films after reading 'Congwen's Autobiography'. Shen Congwen was someone who held beautiful sentiments towards the world, and his last words were: "I have nothing to say about this world."

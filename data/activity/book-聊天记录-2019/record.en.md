@@ -1,6 +1,5 @@
 ---
-title: Conversations with Friends
-slug: conversations-with-friends
+title: Chatting Records
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: "[Ireland] Sally Rooney / 2019 / Shanghai Translation Publishing House"
 ---
 
-Via hayami Irish writer
+By Irish author Sally Rooney

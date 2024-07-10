@@ -1,6 +1,5 @@
 ---
-title: The Chronicle of Liaozhai
-slug: the-chronicle-of-liaozhai
+title: Strange Stories from a Chinese Studio
 category: book
 status: done
 rating: 1
@@ -11,4 +10,4 @@ douban:
   subtitle: Yan Lianke / 2023 / Linking Publishing Company
 ---
 
-It's impressive how clever Yan can absorb and master the storytelling style of traditional, impoverished scholars imagining romances. After reading three chapters, I really didn't want to continue. The characters are thin and simple, their actions template-driven and mindless. With just this kind of story, he has produced so many pieces; changing the name and location results in a ten-thousand-word story, which is truly tasteless when read. It appears mastering padding is a basic skill for authors.
+It’s tough for the bright-minded Yan to adapt and master the storytelling methods of these traditional societal tales fantasized by impoverished scholars. After three chapters, I really didn’t want to continue reading. The characters are thin, simplistic, their behaviors stereotypical and thoughtless. Just changing names and places turns them into ten-thousand-word stories, which are frankly bland to read. It seems that learning to 'skim' has become a basic skill for the writer.

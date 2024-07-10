@@ -1,6 +1,5 @@
 ---
 title: Emotionally Dumb
-slug: emotionally-dumb
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Jason Thompson / 2009
 ---
 
-Via Twitter new term: emotional disorder
+Via Twitter new term: Emotional Expression Disorder

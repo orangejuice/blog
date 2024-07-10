@@ -1,6 +1,5 @@
 ---
 title: Tales of Hulan River
-slug: tales-of-hulan-river
 category: book
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: Xiao Hong / 2018 / People's Literature Publishing House
 ---
 
-Finished reading on May 3, the text is very comfortable. Restrained and interesting childhood perspective, innocently recording the bleak reality. The influence of family elders on the values and vision of the next generation emerges in casual words. These ordinary people living in the extremely poor and closed imperial China are vivid and are vaguely echoed with the fragments glimpsed in the 90s of my childhood memories. Found the fulcrum linking the past and the present of society in the book.
+Finished reading on May 3, the text is very comfortable. A restrained and interesting childhood perspective innocently records the bleak reality. The influence of family elders on the next generation's values and perspectives emerges in the careless text, vividly presenting the lives of the common people during the extremely impoverished and closed period of Imperial China, remotely echoing the blurry snippets of childhood from the 1990s. In this book, I found a fulcrum linking the past and present of society.

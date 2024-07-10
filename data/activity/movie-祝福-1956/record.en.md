@@ -1,6 +1,5 @@
 ---
 title: Blessing
-slug: blessing
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 1956 / Mainland China / Drama / Sang Hu / Bai Yang Di Li
 ---
 
-Poverty and ignorance are diseases, one strips the body, the other the soul. We need not only economic prosperity but also ideological enlightenment. The character Xianglin's sister-in-law embodies countless anonymous mothers who are powerless over their own fate and regard their children as the center of the world. But destiny has no understanding of human sentiment. No matter how competent and diligent, if born in peaceful times, one can muddle through life; if born in troubled times, countless sorrows and hardships are inevitable. The one-child policy has harmed helpless only children as well as mothers whose only spiritual support is confined to a single child.
+Diseases of poverty and ignorance take over the body and soul, snatching from the left and the right. While a prosperous economy is needed, so too is the enlightenment of minds. Sister Xianglin's character represents countless unknown mothers, who, though helpless, see their children as the center of their worlds. Yet fate knows no kindness—what does hard work count for, if born in an era of peace, one merely survives, but if born in turmoil, countless miseries undulate through life? The one-child policy has harmed not only the lonely, only child but also the mothers for whom this only child was their sole emotional support.

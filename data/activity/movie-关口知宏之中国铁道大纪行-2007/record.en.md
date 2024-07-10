@@ -1,6 +1,5 @@
 ---
-title: Tomoharu Kankou's Grand Railway Adventure in China
-slug: tomoharu-kankous-grand-railway-adventure-in-china
+title: Norimichi Kamoguchi's China Railway Journey
 category: movie
 status: done
 rating: 5
@@ -8,7 +7,7 @@ year: "2007"
 date: 2021-01-01 23:13:58+08:00
 douban:
   rating: 9.6
-  subtitle: 2007 / Japan / Documentary / Tomoharu Kankou / Tomoharu Kankou
+  subtitle: 2007 / Japan / Documentary / Norimichi Kamoguchi / Norimichi Kamoguchi
 ---
 
-The simplicity of communication is really touching. Without realizing it, 14 years have passed between 2007 and 2021. Some parts of China shown in the camera have disappeared or faded, while others remain the same. Those children in the scenes have now grown up, which is truly sigh-inducing. Only after watching did I realize that each episode was as long as two hours, but every episode was interesting to watch. Reluctantly, I say goodbye to this wonderful railway journey.
+Simple interactions can be very touching. From 2007 to 2021, 14 years have passed without notice. The China shown through the lens has partly faded away, while some of it remains. The children in those scenes have now grown up, which is truly poignant. After watching, I realized each episode is two hours long, yet I found every episode captivating and was reluctant to say goodbye to this wonderful railway journey.

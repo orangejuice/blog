@@ -1,6 +1,5 @@
 ---
-title: Gold Travel Dream
-slug: gold-travel-dream
+title: Wanderings in a Golden Dream
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Luo Yuming / 2013 / Fudan University Press
 ---
 
-Via Dream Review
+Via Meng Ping

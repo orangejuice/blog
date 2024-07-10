@@ -1,6 +1,5 @@
 ---
-title: Problemless Problems
-slug: problemless-problems
+title: No Problem with the Problem
 category: movie
 status: done
 rating: 0

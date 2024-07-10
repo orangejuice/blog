@@ -1,6 +1,5 @@
 ---
 title: The Silent Patient
-slug: the-silent-patient
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: "[UK] Alex Michaelides / 2020 / Henan Literature and Art Publishing House"
 ---
 
-Freud said, emotions that have not been expressed will never disappear. They are just buried alive and will explode in an uglier way one day.
+Via Twitter, to be or not to be, Freud said that unexpressed emotions will never disappear; they are just buried alive and will one day erupt in a more hideous form.

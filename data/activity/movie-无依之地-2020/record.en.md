@@ -1,6 +1,5 @@
 ---
 title: Nomadland
-slug: nomadland
 category: movie
 status: done
 rating: 3
@@ -11,4 +10,4 @@ douban:
   subtitle: 2020 / USA / Drama / Chloé Zhao / Frances McDormand, David Strathairn
 ---
 
-This film fell slightly short of a recommendation, perhaps because the fervent promotion raised expectations too high. It wasn't as moving as expected, leaving a sense of unsatisfied disappointment. Maybe it’s because the film focuses on the life of a corner of the USA that is too distant for me to resonate with. However, the film is very close to the essence of life, prompting the question of what life really is. There was a moment when I found myself hating the city when the story shifted from the wilderness to urban life. I despise the narrow-mindedness, blind naiveté and mediocrity of urban living. The style is calm and delicate, but completely different from Japanese restraint and healing. It’s very American - tough, individualistic, and flamboyant.
+Almost recommended, but perhaps overhyped; it left me not quite satisfied, with a feeling of loss. Maybe because it focuses on a niche aspect of American life that feels too distant for me to resonate with. It closely mirrors the essence of real life, raising questions about what life is. There were moments when the transition from the wilderness to urban life made me intensely despise the narrow-mindedness, naivety, and petty lives of people both on and off the screen - a disdain for both cities and their inhabitants. The style is calm and delicate, distinctly American and boldly individualistic, unlike the subdued healing characteristic of Japanese styles.

@@ -1,6 +1,5 @@
 ---
 title: The Texture of Poverty
-slug: the-texture-of-poverty
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Wang Bang / 2022 / Shanghai Literature and Art Publishing House
 ---
 
-Via tw Stop Cloud, this is the best observation note of foreigners by a Chinese in these two years, about the economic, political and cultural writing of a country could be quite dry, however, Wang Bang with her abundant knowledge and exceptional sense of words filled this book with fresh textures. It feels like a talk show that talks about serious topics but makes people laugh again and again, and also contains sober reflections on here and there, asking why our environment doesn't breed the same mechanism?
+Via Twitter by Tingyun - This is the best Chinese observation notes I've read on a foreign country in recent years. Discussing a nation's economic, political, and cultural issues could be dry, but Wang Bang, with her abundant intelligence and exceptional literary empathy, infuses the book with a vivid texture. It feels like a stand-up comedy that deals with serious topics yet frequently makes you laugh, and it also offers sober reflections on why our circumstances fail to foster the same mechanisms.

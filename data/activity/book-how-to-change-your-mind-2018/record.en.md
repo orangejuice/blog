@@ -1,6 +1,5 @@
 ---
 title: How to Change Your Mind
-slug: how-to-change-your-mind
 category: book
 status: todo
 rating: 0

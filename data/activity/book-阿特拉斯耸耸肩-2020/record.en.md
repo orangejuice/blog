@@ -1,6 +1,5 @@
 ---
 title: Atlas Shrugged
-slug: atlas-shrugged
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: "[US] Ayn Rand / 2020 / Chongqing Publishing House"
 ---
 
-Like Sun Yuchen, I was influenced by the American capitalist philosopher Ayn Rand. I read 'Atlas Shrugged' during my teenage years, and after reading this book, I became completely obsessed with money. The only time I showed any emotion was when I was counting money. After reading it, I became a snob throughout my teenage years. Everyone I dealt with was either rich or noble. At the core, I believed that money is the purest trading tool invented by humans. I prioritized benefits over all else and was extremely indifferent and selfish.
+Via Twitter liberalism, like Justin Sun, I was influenced by the American capitalist philosopher Ayn Rand. During my teenage years at fourteen or fifteen, I read 'Atlas Shrugged'. After finishing this book, I became solely focused on money, only serious about gold and silver, and showed emotions only when counting money. Following that, my entire teenage years turned into a materialistic phase, interacting only with the rich and powerful, and deeply believing that money is the purest tool of trade invented by mankind. Self-interest above all, with ultimate indifference and selfishness.

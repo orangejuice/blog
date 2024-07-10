@@ -1,6 +1,5 @@
 ---
 title: The Mountain Is You
-slug: the-mountain-is-you
 category: book
 status: todo
 rating: 0
@@ -11,14 +10,14 @@ douban:
   subtitle: Brianna Wiest / 2020 / Thought Catalog Books
 ---
 
-Via tw indigo - Don't always feel the need to do things perfectly; doing them is enough; don't think too much about 'want or not to do', just start doing it;
+Via tw indigo - Don't always think that you have to do it well, just do it; don't think too much about whether you want to do it or not, just start doing it;
 
-- The motivations hidden in your subconscious are basically what you most desire;
+- The motives hidden in your subconscious are essentially what you desire the most;
 
-- You don't need to wait until the day 'feels right' to start changing, what you need is to change a little bit at a time and let energy accumulate gradually;
+- You don't need to wait for the day when it 'feels right' to begin changing, you just need to change a little at a time, and then let the energy gradually accumulate;
 
-- Unlike physical healing, after emotional healing, you won't return to your previous state, you will transform into a new person;
+- Unlike physical healing, after emotional healing, you will not return to your previous state, you will transform into a completely new person;
 
-- Quitting gives you a new life! You need to give up your comfort zone and sense of direction, abandon your current friends and relationships, give up the thought of being liked and understood; the cost of a new life is to give up your current life.
+- To be reborn, you must give up! You need to give up your comfort zone and sense of direction, abandon your current friends and relationships, give up the idea of being liked and understood; the cost of rebirth is giving up your current life.
 
-In the end, what you must succeed in overcoming is not the mountain, but yourself!
+In the end, what you must truly surpass is not the mountain, but yourself!

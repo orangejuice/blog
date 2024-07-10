@@ -1,6 +1,5 @@
 ---
-title: The Road to Wealth Freedom
-slug: the-road-to-wealth-freedom
+title: The Path to Financial Freedom
 category: book
 status: todo
 rating: 0
@@ -8,7 +7,7 @@ year: 2017-8
 date: 2022-02-17 19:50:05+08:00
 douban:
   rating: 8.6
-  subtitle: Xiaolai Li / 2017 / Electronic Industry Press
+  subtitle: Li Xiaolai / 2017 / Publishing House of Electronics Industry
 ---
 
 Via tw baye

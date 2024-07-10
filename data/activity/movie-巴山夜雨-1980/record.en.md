@@ -1,6 +1,5 @@
 ---
-title: Night Rain on Mount Ba
-slug: night-rain-on-mount-ba
+title: Night Rain in Bashan
 category: movie
 status: done
 rating: 4
@@ -8,7 +7,8 @@ year: "1980"
 date: 2023-09-02 18:28:34+08:00
 douban:
   rating: 7.9
-  subtitle: 1980 / Mainland China / Drama / Wu Yonggang, Wu Yigong / Li Zhiyu, Zhang Yu
+  subtitle: 1980 / Mainland China / Drama / Directed by Yonggang Wu and Yi Gong Wu
+    / Starring Zhiyu Li, Yu Zhang
 ---
 
-Watched the edit. Tearful. Silent, gentle, sincere, realistic, hope and sunshine after suffering, precious yet regrettable.
+Viewed the edited version. Teary-eyed. Silent, tender, sincere, realistic, precious yet regrettable hope and sunshine after suffering.

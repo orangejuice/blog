@@ -1,6 +1,5 @@
 ---
 title: I Am Your Father
-slug: i-am-your-father
 category: movie
 status: done
 rating: 2
@@ -11,4 +10,4 @@ douban:
   subtitle: 2000 / Mainland China / Drama Comedy / Wang Shuo / Feng Xiaogang Hu Xiaopei
 ---
 
-The expression and narrative ability of the characters and plot within the film is inferior. A clear contradiction between father and son is shown, with each setting up a defensive wall against the other. The acting of the father and son is passable, but they seem to be posturing more within and outside the play, lacking human soul. The audience cannot empathize, and do not produce emotions. The plot is disjointed, incomprehensible, and the viewing experience continuously diverts attention.
+The expression and narrative ability inside the play (character) and outside the play (plot) are poor. There's a clear portrayal of father-son conflict and the defensive walls they build against each other. The acting skills of the father and son are commendable, but it still feels like there's too much artificiality in and out of the play, lacking the soul of the characters. It's hard to empathize, doesn't evoke emotions, the storyline is disjointed and confusing, leading to a wandering mind throughout the viewing process.

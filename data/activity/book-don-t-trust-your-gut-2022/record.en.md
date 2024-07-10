@@ -1,6 +1,5 @@
 ---
 title: Don't Trust Your Gut
-slug: dont-trust-your-gut
 category: book
 status: todo
 rating: 0
@@ -11,34 +10,25 @@ douban:
   subtitle: Seth Stephens-Davidowitz / 2022
 ---
 
-Via Twitter user Yangyang Qiaomu, I continued to read 'Don't Trust Your Gut' today, and the following are excerpts from my notes: 
+Via Twitter with Xiangyang Qiaomu: Continued reading 'Don't Trust Your Gut' today with some notes summarized below:
 
-On happiness and joy: 
+About Happiness and Joy
 
-① The biggest enemy of happiness: the brain cannot focus on the present. 
+1. The great enemy of happiness: The brain can't focus on the present moment.
+2. Scientific studies show that meditation can enhance happiness, possibly by curbing aimless thoughts.
+3. The least happy things: work, household chores, commuting, etc.
+4. Smoking makes people unhappy.
+5. Being with a lover or friends significantly increases happiness.
+6. Being near water, such as the seaside or lakeside, brings a noticeable sense of happiness.
+7. Temperatures reaching 24 degrees Celsius or higher can add to one’s happiness.
 
-② Scientific studies show that meditation can increase happiness, possibly by inhibiting aimless thoughts. 
+How to Make Work Joyful?
 
-③ The most unhappy things: work, housework, commuting, etc. 
+1. Listen to music while working
+2. Work from home
+3. Work with those you consider friends; it greatly enhances happiness and makes work enjoyable
 
-④ Smoking makes people unhappy. 
+How to Succeed in the Arts?
 
-⑤ Being with a lover or friend can significantly enhance happiness. 
-
-⑥ Being near water bodies can bring tangible happiness, like seaside and lakeside. 
-
-⑦ When the temperature reaches 24 degrees Celsius or higher, additional happiness can be felt. 
-
-How to make work happy? 
-
-① Listen to music while working 
-
-② Work from home 
-
-③ Working with people you consider friends greatly enhances happiness, and work becomes enjoyable 
-
-How to succeed in the art field? 
-
-① In areas where quality is difficult to measure, produce more works, and exposure in different places can increase the success rate. 
-
+1. In fields where quality is hard to quantify, producing more works and exposing them in different places can increase the chances of success.
 ...

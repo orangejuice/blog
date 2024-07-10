@@ -1,6 +1,5 @@
 ---
-title: Matteo Ricci's China Letters
-slug: matteo-riccis-china-letters
+title: Matteo Ricci's Letters from China
 category: book
 status: todo
 rating: 0

@@ -1,6 +1,5 @@
 ---
-title: Chinese Schools
-slug: chinese-schools
+title: Chinese School
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 2008 / UK / Documentary
 ---
 
-Unexpected unfolding if you haven't seen it, it couldn't be better if you have. Seeing the world through the characters' eyes, barring the deliberately arranged multi-angle dialogue shots that are extremely abrupt, you wouldn't feel like you are watching a film at other times. Cultural barriers have not affected the key captures at all. The texture of that era, high-quality contemporary records. In over a decade, some things have already changed drastically but some things have not changed at all.
+I never expected it to unfold like this before watching, but after seeing it, I can't imagine a better development. It captures the world through the eyes of its characters. Apart from some deliberately arranged multi-angle dialogue shots, which are quite jarring, the rest of the time I didn't even feel like I was watching a film. Cultural barriers did not affect the capture of the essence at all. It embodies the texture of that era, a high-standard contemporary documentary. Over a decade, some things have completely changed, yet some remain exactly the same.

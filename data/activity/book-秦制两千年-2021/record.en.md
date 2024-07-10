@@ -1,6 +1,5 @@
 ---
 title: Two Thousand Years of the Qin System
-slug: two-thousand-years-of-the-qin-system
 category: book
 status: todo
 rating: 0

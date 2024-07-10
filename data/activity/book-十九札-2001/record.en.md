@@ -1,5 +1,5 @@
 ---
-title: Nineteen Letters
+title: Nineteen Notes
 category: book
 status: todo
 rating: 0

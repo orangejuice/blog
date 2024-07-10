@@ -1,6 +1,5 @@
 ---
 title: Another Round
-slug: another-round
 category: movie
 status: todo
 rating: 0
@@ -9,7 +8,7 @@ date: 2021-10-30 06:05:20+08:00
 douban:
   rating: 7.9
   subtitle: 2020 / Denmark Sweden Netherlands / Drama Comedy / Thomas Vinterberg /
-    Mads Mikkelsen, Thomas Bo Larsen
+    Mads Mikkelsen Thomas Bo Larsen
 ---
 
 Via tg recommendation

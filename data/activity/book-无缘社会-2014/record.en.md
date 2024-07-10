@@ -1,6 +1,5 @@
 ---
-title: Disconnected Society
-slug: disconnected-society
+title: Society without Connections
 category: book
 status: todo
 rating: 0
@@ -8,8 +7,9 @@ year: 2014-3
 date: 2024-05-21 07:36:05+08:00
 douban:
   rating: 8.3
-  subtitle: Japan NHK Special Program Recording Group / 2014 / Shanghai
+  subtitle: Japanese NHK Special Program Recording Team / 2014 / Shanghai
     Translation Publishing House
 ---
 
-Via tw Bean Bean, losing connection with others is like a living lonely death. No one cares about you, and you can't play any role. In this case, is there a difference between being alive and dead? Does it not differ from having disappeared as a person? So, I think verifying whether we are connected to others is confirming our existence. -- 'Disconnected Society'
+Via Twitter user Dou Xiaodou, losing connection with others feels like a living solitary death. No one cares about you, nor can you play any role. In that case, whether alive or dead, isn't it all the same? Isn't this the same as having already disappeared? Therefore, I believe that verifying whether you have connections with others is the same as confirming your own existence.
+— From “Society without Connections”

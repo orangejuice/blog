@@ -1,6 +1,5 @@
 ---
 title: Modernity and Modern China
-slug: modernity-and-modern-china
 category: book
 status: todo
 rating: 0

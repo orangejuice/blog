@@ -1,6 +1,5 @@
 ---
 title: When Breath Becomes Air
-slug: when-breath-becomes-air
 category: book
 status: todo
 rating: 0
@@ -8,7 +7,7 @@ year: 2020-12
 date: 2022-12-30 23:14:14+08:00
 douban:
   rating: 9.1
-  subtitle: (US) Paul Kalanithi / 2020 / Zhejiang Education Publishing House
+  subtitle: Paul Kalanithi / 2020 / Zhejiang Education Press
 ---
 
-Having seen the pinnacle of life nearing in 2013, Paul was suddenly diagnosed with Stage IV lung cancer. Since then, he began to record his remaining life from the dual identities of a doctor and a patient, reflecting on healthcare and human nature. His articles have been published in media such as The New York Times and The Washington Post, gaining worldwide attention. The book is beautifully written and sincere. It deeply contemplates human nature, life and death, and healthcare. It has moved countless readers around the world.
+Previously noted as 'supplementary mark' in 2013, Paul, who was on the verge of reaching the peak of his life, was suddenly diagnosed with stage four lung cancer. From that moment, he began to document the remainder of his life from both the perspectives of a doctor and a patient, reflecting on medicine and humanity. His articles were published in 'The New York Times', 'The Washington Post', and other media, captivating a global audience. The writing in this book is beautifully crafted and deeply sincere, containing profound contemplations on humanity, life and death, and medicine that have deeply moved countless readers worldwide.

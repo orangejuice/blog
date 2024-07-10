@@ -1,6 +1,5 @@
 ---
-title: Submarine at Night
-slug: submarine-at-night
+title: The Night Submarine
 category: book
 status: todo
 rating: 0
@@ -15,4 +14,4 @@ douban:
       status: todo
 ---
 
-This is Chen Chuncheng's debut short story collection, comprised of nine short stories. My favorite is 'Tailoring Clouds'. Clouds can be tailored into any shape, and you can even use them for advertising. I admire the author's imagination.
+Via Twitter / This is Chen Chuncheng's first collection of short stories, consisting of nine short stories. My favorite is 'The Cloud Tailor.' Clouds can be tailored into any shape, and can even be used for advertising. I admire the author's imagination.

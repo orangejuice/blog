@@ -1,6 +1,5 @@
 ---
 title: Ponyo on the Cliff by the Sea
-slug: ponyo-on-the-cliff-by-the-sea
 category: movie
 status: done
 rating: 5
@@ -12,4 +11,4 @@ douban:
     Nara, Hiroki Doi
 ---
 
-What an adorable story! The melting bubbles also melt my heart. The innocence overflows the screen and also constantly overflows from my eyes. The boy's voice, clear and firm; the girl's fearless determination; they both exhibit a rare charm of independently crafted individuality, not relying on attractive appearances to easily capture the viewer's heart. In the world created by Hayao Miyazaki, there is always profound human culture and friction with nature. There is always a world setting that children can understand yet is not child's play. The view is expansive, and it is fascinating. In the jungle of film and TV filled with all kinds of flashy entertainment, this pure feeling is truly unique.
+Such a cute story, hearts melting like bubbles, also melting my own heart. Innocence spills from the screen and frequently from my eyes too. The boy's voice is clear and firm, the girl's headstrong bravery and decisiveness embody a rarely seen patience in crafting an individual's inherent charisma, never relying on just a pleasing appearance to easily capture the audience's heart. In the world created by Hayao Miyazaki, there is always a profound connection and friction between human culture and nature, always a setting that even children can understand yet is never trivial. In a landscape crowded with dazzling, competitive entertainment, this pure feeling truly stands alone.

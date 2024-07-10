@@ -1,6 +1,5 @@
 ---
-title: July of the Car Watcher
-slug: july-of-the-car-watcher
+title: Watcher of the Cars in July
 category: movie
 status: done
 rating: 3
@@ -11,4 +10,4 @@ douban:
   subtitle: 2004 / Mainland China / Drama / An Zhanjun / Fan Wei, Chen Xiaoyi
 ---
 
-The setting is acceptable, but the storyline could be better, only Fan Wei's performance is mesmerizing.
+The setting is acceptable, but the storytelling is poor. Only Fan Wei's performance is captivating.

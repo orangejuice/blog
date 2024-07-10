@@ -1,5 +1,5 @@
 ---
-title: The Last Trapper
+title: The Last Hunter
 category: movie
 status: done
 rating: 4
@@ -11,4 +11,4 @@ douban:
     / Nicolas Vanier / Norman Winther May Loo
 ---
 
-The plot feels a bit cobbled together and clichéd, lacking smoothness.
+The plot feels a bit pieced together and clichéd, not so naturally flowing.

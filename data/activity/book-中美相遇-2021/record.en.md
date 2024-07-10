@@ -1,6 +1,5 @@
 ---
-title: Meeting Between China and America
-slug: meeting-between-china-and-america
+title: Encounter Between China and America
 category: book
 status: done
 rating: 5
@@ -12,10 +11,10 @@ douban:
   history:
     - date: 2023-07-29 18:39:48
       comment: |-
-        Via tw fenng A prequel to the China-US relations
+        Via tw fenng Prequel to Sino-American Relations
 
-        I think this book is wonderful
+        I think this book is fascinating
       status: todo
 ---
 
-This is an excellent modern history reading material that revolves around several core issues. The thought process is smooth, the logic is clear, and the language is easy to understand. The book touches on many details, which proves that the author is well acquainted with this period of history.
+An excellent modern history read, revolving around several central issues. It features fluent thoughts, clear logic, and easy-to-understand language, touching upon many details, reflecting the author's deep familiarity with this history.

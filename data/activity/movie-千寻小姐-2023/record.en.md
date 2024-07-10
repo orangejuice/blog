@@ -1,6 +1,5 @@
 ---
 title: Miss Chihiro
-slug: miss-chihiro
 category: movie
 status: todo
 rating: 0
@@ -8,7 +7,9 @@ year: "2023"
 date: 2023-02-26 17:54:53+08:00
 douban:
   rating: 7.7
-  subtitle: 2023 / Japan / Drama / Rikiya Imaizumi / Kasumi Arimura, Hana Toshima
+  subtitle: 2023 / Japan / Drama / Kazuya Imaizumi / Kasumi Arimura, Hana Toshima
 ---
 
-Via tw Otaku Osaka, the best and most realistic Japanese movie of the year. A hostess comes to work in a small town bento shop with ample cash in her pocket. She picks up her modest paycheck from Weibo, rents a small room, and lives a very free life. She does not conceal her past jobs. She handles certain matters as casually as drinking water - when you're thirsty, you should drink. She doesn't want to be someone's belonging, leading a very free life, even when her own parents pass away. This story is actually more about how she interacts with other people, influences them, and fights loneliness together. A single mother's young boy, a girl who can't taste the delicate dishes made by her chef mother, the husband and wife owners of the bento shop, each character leaves a deep impression. Also, her attitudes towards different kinds of death, views on love and sex... The script and filming are excellent. A very Japanese movie full of details.
+Via Twitter @OsakaOtaku This year's best and most realistic Japanese movie.
+
+A sex worker arrives at a small town's bento shop to work, with a decent amount of cash in her pocket, earning a salary from Weibo and renting a small room, leading a very free life. She doesn't hide her past job; dealing with such matters as naturally as drinking water—drink when thirsty, very casual. She also doesn't want to be someone's possession, living very freely. Even when her own parents passed away, the story actually revolves more around how she interacts with others, affects them, and together confronts loneliness. A boy raised by a single mother who cannot appreciate his chef mother's gourmet meals, a girl who runs a bento shop with her husband—each character leaves a deep impression. There's also her attitude towards different deaths, views on love and sex... A very good script and production, a detailed Japanese movie filled with nuances.

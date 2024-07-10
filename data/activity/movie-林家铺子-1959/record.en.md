@@ -1,6 +1,5 @@
 ---
 title: Lin's Shop
-slug: lins-shop
 category: movie
 status: done
 rating: 5
@@ -11,15 +10,14 @@ douban:
   subtitle: 1959 / Mainland China / Drama / Shuihua / Xie Tian, Lin Bin
   history:
     - date: 2022-05-03 03:00:59
-      comment: Via douban, Bouquet of Algernon, a splash of dirty water pollutes the
-        clear river of the small Jiangnan town, as if it's a metaphor. The
-        ensuing conflicts in Lin's Shop grow increasingly intense, and the lives
-        of the lower classes are made more difficult in this basin of 'dirty
-        water'. Whether it's the boss, Lin, who can't repay his debts and
-        abandons his family, or the widow who can't get back her principal and
-        whose child dies a tragic death, they are all tragic figures shaped by
-        the times.
+      comment: Via douban, Algernon's Bouquet - A splash of dirty water pollutes the
+        clear rivers of the Jiangnan town, as if it is a metaphor. Following
+        this, the contradictions at Lin Yuanji continually escalate, making the
+        lives of the lower class even more difficult amid this "dirty water".
+        Whether it's Boss Lin who can't pay off debts and abandons his family,
+        or the widow who can't recover her principal and whose child tragically
+        dies, both are tragic characters shaped by the era.
       status: todo
 ---
 
-The film shows its power, with a taut ending. Life, struggling below the poverty line, is so helpless and terrifying amidst the pervasive corruption and unrest of the authorities and business. Begging yields no pity, selfish calculations become the norm, everyone strives for self-protection, and everyone is unable to protect themselves. This game of survival on this land is especially terrifying under failed state governance.
+The film exerts its power, with a tension-filled ending. Under the corrupt and unstable situation of the wealthy and influential, the life of the lower class struggling on the poverty line is so helpless and terrifying. Tragedy becomes a commonplace as no amount of misery buys sympathy, and selfish scheming becomes the norm, with everyone trying to protect themselves, yet no one can truly secure themselves. In this land, the perilous game of survival, especially under the failure of state governance, is particularly fearsome.

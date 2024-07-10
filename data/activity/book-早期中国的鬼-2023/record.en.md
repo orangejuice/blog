@@ -1,6 +1,5 @@
 ---
 title: Ghosts in Early China
-slug: ghosts-in-early-china
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Pu Muzhou / 2023 / New Star Press
 ---
 
-via the center for the study of Chinese religions' 'Ghosts in Early China' by Pu Muzhou and New Star Press in 2023. Pu Muzhou, a professor in the Department of History at the Chinese University of Hong Kong, adopts an interdisciplinary approach that spans religion, history, social theory, and cognitive psychology, tracing the concept of ghosts from antiquity through the Wei, Jin, Northern and Southern dynasties. He also compares Chinese ghosts with those of ancient Egypt, ancient Greece, ancient Rome, and Mesopotamia, revealing the unique characteristics of each culture.
+via the Center for the Study of Chinese Religious 'Ghosts in Early China' by Pu Muzhou, published by New Star Press in May 2023. Pu Muzhou, a professor at the Department of History at the Chinese University of Hong Kong, uses an interdisciplinary approach to trace the concept of ghosts from ancient times through the Wei, Jin, Southern and Northern Dynasties period. The study compares the ghost beliefs of ancient China with those of Ancient Egypt, Greece, Rome, and Mesopotamian cultures, highlighting the unique characteristics of each culture.

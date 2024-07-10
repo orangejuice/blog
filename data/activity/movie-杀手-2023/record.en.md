@@ -1,6 +1,5 @@
 ---
-title: Assassin
-slug: assassin
+title: The Killer
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,4 @@ douban:
     Fincher / Michael Fassbender Tilda Swinton
 ---
 
-via tw Idol Craftsmanship, this new David Fincher film, 'Assassin', is recommended for everyone in trading, it will provide you insights. / via tw indigo, this movie can be seen as a new century assassin's guide, scouting locations with Airbnb, buying electronic key duplicators on Amazon, how to evade cameras, create accidents, destroy bodies, etc...And only David Fincher can turn such an uninspiring story into something utterly captivating, with clean edits and top-notch audio-visual effects. Watching an OCD actor portray an OCD assassin is an absolutely immersive viewing experience🫰 'Stick to the plan, prepare in advance, don't improvise, trust no one.'
+via Twitter: Idol-style scripter - This new David Fincher's 'The Killer' is recommended for everyone involved in trading, you'll gain something after watching. / via Twitter: Indigo - This film can serve as a guide for the new millennium killer: scouting locations using Airbnb, buying electronic key duplicators on Amazon, how to evade cameras, staging accidents, destroying evidence, etc. And only David Fincher could make such a clichéd narrative mesmerizing to watch, with clean editing and top-notch audiovisuals. Watching an actor with OCD play a killer with OCD offers a truly immersive cinematic experience. 🫰 "Stick to the plan, be well-prepared, don't improvise, and trust no one."

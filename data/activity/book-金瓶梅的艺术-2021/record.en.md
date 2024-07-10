@@ -1,6 +1,5 @@
 ---
-title: The Art of Golden Lotus
-slug: the-art-of-golden-lotus
+title: The Art of Jin Ping Mei
 category: book
 status: todo
 rating: 0

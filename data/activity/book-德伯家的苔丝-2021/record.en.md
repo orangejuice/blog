@@ -1,6 +1,5 @@
 ---
 title: Tess of the d'Urbervilles
-slug: tess-of-the-durbervilles
 category: book
 status: todo
 rating: 0
@@ -8,7 +7,9 @@ year: 2021-3
 date: 2024-04-19 14:03:28+08:00
 douban:
   rating: 9.1
-  subtitle: "[UK] Thomas Hardy / 2021 / Guangxi Normal University Press"
+  subtitle: "[English] Thomas Hardy / 2021 / Guangxi Normal University Press"
 ---
 
-Via tw Stopping Cloud, I've finally finished reading 'Tess of the d'Urbervilles.' The classic written a century ago still beats all kinds of popular novels today. Tess is a tragic story, but Hardy doesn't make the reader feel sad or depressed, his tone is soothing. When describing the characters' mood, he uses the changes in the natural scenery to project their inner feelings. The lush and fertile summer farms, the cold and desolate plateaus in winter, all correspond to Tess's state of mind. A nearly perfect girl, beautiful, hardworking, kind, and independently bearing everything from her poor family, struggles in despair in the hegemonic masculinity of 19th century rural England. She finally chooses an extreme way to prove her pure and faithful love. Many people will blame the libertine d'Urbervilles who engulfed Tess into darkness. However, Tess's emerald 'willing to give her life for love' is also one of those pushing her towards tragedy. Limitations of the time make it impossible for us today to condemn the Victorians' definition of female purity. In contrast, some men in present-day China might still be living in that social era a century ago.
+Via Twitter Tingyun. Finally finished 'Tess of the d'Urbervilles', a classic written a century ago that still surpasses many popular novels of today.
+Tess's story is a tragedy, but Hardy’s writing doesn’t make the reader feel mournful or oppressed. His tone is soothing, using the changing natural scenery to reflect the characters' inner feelings— summer's abundant, lush farms and winter's cold bleak highlands all mirror Tess’s emotional state.
+A nearly perfect girl, beautiful, hardworking, kind, independently bearing the burden of her impoverished family. In 19th century rural England, amidst the male-dominated values, she struggled desperately and eventually chose an extreme way to prove her pure and faithful love. Many blame Alec d'Urberville, the libertine who entangled Tess in darkness, yet Tess’s endurance 'for the love of him she could risk her life' also pushes her toward tragedy. The constraints of the time prevent us from condemning Victorian England's definition of female purity, though some modern Chinese men might still be living in a social epoch a century past.

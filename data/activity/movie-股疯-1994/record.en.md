@@ -1,6 +1,5 @@
 ---
-title: Stock Frenzy
-slug: stock-frenzy
+title: Stock Craze
 category: movie
 status: todo
 rating: 0
@@ -8,8 +7,8 @@ year: "1994"
 date: 2024-01-10 18:02:13+08:00
 douban:
   rating: 7.9
-  subtitle: 1994 / Mainland China Hong Kong / Drama Comedy / by Derek Kok / Bo Han
-    Ut, Quan Yuan
+  subtitle: 1994 / Mainland China Hong Kong / Drama Comedy / Li Guoli / Pan Hong,
+    Lau Ching Wan
 ---
 
-Via Twitter Sister Dai, 'Stock Frenzy' is natural Shanghainese, 'Fanhua' is hard-pressed Shanghainese. That is the Shanghai of the 1990s.
+Via Twitter from Sister Dai, 'Stock Craze' features natural Shanghainese, while 'Prosperous Flowers' feels forced. This is the real Shanghai of the nineties.

@@ -1,6 +1,5 @@
 ---
 title: Casablanca
-slug: casablanca
 category: movie
 status: done
 rating: 4
@@ -12,4 +11,4 @@ douban:
     Ingrid Bergman
 ---
 
-The entanglement of love and career during the war among Rick, Ilsa and Victor on the roads of Morocco is portrayed.
+Watched on a road in Morocco, Rick, Ilsa, and Victor are trapped by love and career during the war.

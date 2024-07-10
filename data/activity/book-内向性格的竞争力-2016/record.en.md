@@ -1,6 +1,5 @@
 ---
-title: The Power of Introverts
-slug: the-power-of-introverts
+title: The Competitive Edge of Introverts
 category: book
 status: done
 rating: 4
@@ -11,4 +10,4 @@ douban:
   subtitle: Susan Cain / 2016 / CITIC Press
 ---
 
-Currently, this is the most comprehensive explanatory book on introversion that I've read. It's worth understanding, with numerous and relatable examples that make me feel less alone and less unique. Regrettably, the translation leaves much to be desired, with sentences that are hard to decipher and an overall strong translation taste - quite a letdown.
+Currently, this is quite a thorough explanation book about introversion I've read, offering valuable insights. The examples are plentiful and many resonate with my experiences, making me feel I'm not alone or unusual. Unfortunately, the translation is mediocre at best; some sentences are awkward and the overall translation feels too literal, which detracts from the experience.

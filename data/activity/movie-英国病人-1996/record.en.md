@@ -1,6 +1,5 @@
 ---
 title: The English Patient
-slug: the-english-patient
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,12 @@ douban:
     Juliette Binoche
 ---
 
-Via tw Xiqiao, this is one of my top three movies: The English Patient, Ma Rainey's Black Bottom, Mudbound. Two were adapted from novels, and one was adapted from a stage play.
+Via Twitter @XiQiao, 'The English Patient' ranks in my top three movies
+
+The English Patient
+
+Ma Rainey's Black Bottom
+
+Mudbound
+
+Two adapted from novels, one from a play.

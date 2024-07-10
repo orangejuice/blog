@@ -1,6 +1,5 @@
 ---
-title: "Maps: Power, Plunder and Possession"
-slug: maps-power-plunder-and-possession
+title: "The Map: Power, Plunder, and Possession"
 category: movie
 status: done
 rating: 4
@@ -11,4 +10,4 @@ douban:
   subtitle: 2010 / UK / Documentary / Rosie Schellenberg / Jerry Brotton
 ---
 
-Only watched the first episode, it offers insightful arguments, deciphering the possible nuances the maps might embody. Oriental examples also came up in the narratives.
+I only watched the first episode, but the argument was very enlightening. It interprets the potential meanings that might lie behind maps. The narrative also includes examples from the East.

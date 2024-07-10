@@ -1,6 +1,5 @@
 ---
 title: The Dream Factory
-slug: the-dream-factory
 category: movie
 status: done
 rating: 3
@@ -12,4 +11,4 @@ douban:
     Ge You, Liu Bei
 ---
 
-A group of famous actors are unbridled and imaginative, while the extras' acting skills are awkwardly embarrassing, the smoking scene never stops. The plot is absurd but also delicate, we can feel that the creators are seriously expressing themselves in their own way. Although it has a very humanistic aura, despite the fact that they are genuinely trying to act, despite the fact that the plot progresses calmly, the story is too unrealistic to hold much appeal. Not until the last shot, after ages of buildup, does it finally reveal its guts, intending to express the dilemmas and sorrows in the hearts of cultured people.
+A group of famous actors delivering authentically fantastical performances, alongside average passersby with awkwardly painful acting. The smoke never stops. The plot is nonsensically delicate, revealing a sense of meticulousness and serious self-expression from the creators. While it has the breath of real life and the actors genuinely strive in their performances, pushing the plot forward calmly, the story remains too unrealistic and lacks compelling views. It is only in the final shot that the long buildup finally unfolds, illuminating the inner conflicts and sadness of the cultured individuals.

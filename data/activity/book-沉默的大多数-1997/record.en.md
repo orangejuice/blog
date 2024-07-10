@@ -1,6 +1,5 @@
 ---
-title: Silent Majority
-slug: silent-majority
+title: The Silent Majority
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Wang Xiaobo / 1997 / China Youth Press
 ---
 
-Via tw reply
+Via Twitter reply

@@ -11,4 +11,4 @@ douban:
     O'Neill, Sofia Vergara
 ---
 
-Such an ordinary day, and the drama that I have watched for many years has come to an end. How touched I was in college, and the new understanding of family and love. Four years passed in the blink of an eye, accompanied by Modern Family all the way. What a beautiful drama, I love this family so much. In the end, they embrace each other, how I wish they could never let go!
+On just an ordinary day, after many years of watching, the series came to an end. College gave me so many touching moments and a whole new understanding of family and love. Four years passed in the blink of an eye, never without the company of Modern Family. Such a beautiful series, I love this family so much. In the end, hugging each other, how I wish we could never let go!

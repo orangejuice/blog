@@ -1,6 +1,5 @@
 ---
 title: The Grand Budapest Hotel
-slug: the-grand-budapest-hotel
 category: movie
 status: done
 rating: 4
@@ -12,4 +11,4 @@ douban:
     Fiennes, Tony Revolori
 ---
 
-This is not a movie that can be understood right away. It's very artistic, a bit absurd and exaggerated, and has its own unique style. I couldn't immerse myself into the plot, as if that was not the purpose of this movie, but to let you just sit and listen to its story, in its own style. The rhythm is very relaxed.
+This is not a movie that you can understand from the start. It's artistic, a bit absurd and exaggerated, and has a very unique style. I couldn't immerse myself in the plot, which seems not to be the purpose of the movie. Instead, it just lets you sit tight and listen to the story being told in its own style. The pace is relaxed.

@@ -1,6 +1,5 @@
 ---
-title: Korean War
-slug: korean-war
+title: The Korean War
 category: movie
 status: done
 rating: 4
@@ -11,4 +10,4 @@ douban:
   subtitle: 2010 / South Korea / Documentary War / Kim Il-sung, Syngman Rhee
 ---
 
-The narration is verbose, and the content is not tightly packed or concise, giving a feeling of padding the word count in composition writing, which affects the viewing experience, especially in the last episode. It might be that I haven't come to understand this period of history yet. I will revisit it in the future. But, it is helpful in understanding this history.
+The narrative is verbose, and the content arrangement is not compact or concise, giving a sense of padding the word count like a school essay, which significantly affects the viewing experience, particularly in the final episode. It might be due to my lack of understanding of this history, and I may revisit it later. However, it is still very helpful for understanding this period.

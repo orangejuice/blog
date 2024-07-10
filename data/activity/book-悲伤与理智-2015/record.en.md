@@ -1,6 +1,5 @@
 ---
-title: Sadness and Reason
-slug: sadness-and-reason
+title: Sadness and Sense
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: "[US] Joseph Brodsky / 2015 / Shanghai Translation Publishing House"
 ---
 
-Via tw Stop Cloud
+Via tw 停云

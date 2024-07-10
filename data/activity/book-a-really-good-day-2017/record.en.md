@@ -1,6 +1,5 @@
 ---
 title: A Really Good Day
-slug: a-really-good-day
 category: book
 status: todo
 rating: 0

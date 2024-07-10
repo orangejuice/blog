@@ -1,6 +1,5 @@
 ---
 title: Cold Violence
-slug: cold-violence
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: "[France] Marie-France Hirigoyen / 2017 / Jiangxi People's Publishing House"
 ---
 
-Via tw Philo who remarked: It can exist in various relationships such as friends, spouses, families, workplaces, etc. The abuser gradually undermines the victim's personality through verbal or non-verbal hints, causing them to plunge into self-doubt, gradually lose their sense of self, and live in fear and pain. The abuser can kill without being seen, can present a respectable appearance, and can even pretend to be the victim to win sympathy.
+Via tw Philo who remarked: It can exist among friends, spouses, families, workplaces, etc., where the abuser uses verbal or non-verbal hints to gradually dissolve the victim's personality, leading them into self-doubt, gradually losing themselves, and living in fear and pain. The abuser can kill people invisibly, yet appear as a person of integrity, and even disguise themselves as a victim to gain sympathy.

@@ -1,6 +1,5 @@
 ---
-title: Golden Lock Diary
-slug: golden-lock-diary
+title: The Golden Cangue
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Eileen Chang / 2005 / Harbin Publishing House
 ---
 
-Via tw Stopping Clouds, the garden basked in the autumn sun for an entire morning and afternoon, sinking down like a ripe fruit, sinking and sinking and emitting a fragrant aroma. —— Eileen Chang “Golden Lock Diary”
+Wispy clouds linger in the autumn sunshine, basking all morning and afternoon, hanging heavily like overripe fruit, dropping, dropping, and exuding fragrance. — Eileen Chang, 'The Golden Cangue'

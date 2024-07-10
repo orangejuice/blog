@@ -1,6 +1,5 @@
 ---
 title: 59 Seconds
-slug: 59-seconds
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Richard Wiseman / 2010 / Pan
 ---
 
-In a study at the University of California, students were asked to spend a few minutes each day imagining they had achieved high scores and how good this made them feel. Another group of students was not asked to do anything. After recording the time students studied every day, the results showed - the students who imagined studied less than the other group, and their test scores were also lower, even though the imagination exercise only took a few minutes. Researchers speculate that those who fantasize about a good life are not prepared for setbacks, so they lack the courage needed to achieve their goals. - via '59 Seconds'.
+A study at the University of California asked students to spend a few minutes each day imagining that they had scored high and how good it made them feel. Another group of students was not asked to do anything. After recording the amount of time students studied each day, results showed that the students who imagined studied less and scored lower than the other group, despite the fantasy exercise taking only a few minutes. Researchers speculate that those who fantasized about a better life were not prepared for setbacks and thus lacked the courage needed to achieve their goals. — from '59 Seconds'

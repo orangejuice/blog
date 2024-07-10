@@ -1,6 +1,5 @@
 ---
 title: The Garden of Forking Paths
-slug: the-garden-of-forking-paths
 category: book
 status: todo
 rating: 0

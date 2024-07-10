@@ -1,6 +1,5 @@
 ---
-title: The Morality of the Chinese
-slug: the-morality-of-the-chinese
+title: The Virtues of the Chinese
 category: book
 status: todo
 rating: 0

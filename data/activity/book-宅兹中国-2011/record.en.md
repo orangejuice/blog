@@ -1,6 +1,5 @@
 ---
 title: Residence in China
-slug: residence-in-china
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Ge Zhaoguang / 2011 / Zhonghua Book Company
 ---
 
-via Forgot, Theme: Rebuilding Historical Discourse about 'China'
+via Forgot Subject: Rebuilding the Historical Discourse on 'China'

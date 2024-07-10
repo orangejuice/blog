@@ -1,6 +1,5 @@
 ---
-title: The Return of the Native
-slug: the-return-of-the-native
+title: Return to the Homeland
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: "[UK] Thomas Hardy / 2021 / Guangxi Normal University Press"
 ---
 
-via tw Tingyun, I really like Hardy's quiet depiction of the Egdon Heath. Mr. Zhang Gu Ruo's translation is quaint and also embodies the simplicity of Shandong plains. Egdon Heath is Hardy's hometown and he is familiar with every plant and tree here. In Hardy’s pen, Egdon Heath has life: the howling north wind is like an old man singing, the birds that fly in are philosophers who spit out fine words, the soft ferns are always accompanied by rigid evergreens, the people on the heath have already become one with the heath, it shapes their character and destiny. The proud and beautiful Eustacia has always wanted to escape from the heath and go to the bustling city, just like the young men in the small town yearned for the first-tier cities years ago. The young Clement who returned from Paris wanted to return to the quiet life of the heath. These two people who have different dreams still fell in love and got married against all odds. Right from the start, it was bound to be a tragedy. Their diametrically opposed life ideals may be the dreams of individuals at different stages of life. They met at an inopportune time, yet were destined to fall in love.
+via Twitter Tingyun I really enjoy Hardy's serene depiction of the Edun Moor. Mr. Zhang Gurus's translation is quaint yet blends the vernacular of the Shandong plains. Edun Moor is Hardy's hometown, and he is familiar with every grass and tree there. Under Hardy's pen, the bleak moor is alive; the howling north wind sings like an old man, and the arriving birds are philosophers with golden sayings. The soft ferns always accompany the tough evergreen thorns, and the people of the moor have become one with it, shaping their characters and fates. The proud and beautiful Tess has always wanted to escape the moor to the bustling big cities, much like the small-town youths yearning for metropolises years ago, while Clinn, a youth who returns from Paris, desires to return to the tranquil life of the moor. These two with differing dreams, nevertheless fall in love and marry recklessly. From the start, their marriage is destined to be a tragedy, their opposite life ideals perhaps representing dreams of different life stages. Inopportune encounters, yet destined to fall in love.

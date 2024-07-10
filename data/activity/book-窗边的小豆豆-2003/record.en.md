@@ -1,6 +1,5 @@
 ---
-title: Beans in the Window
-slug: beans-in-the-window
+title: "Totto-chan: The Little Girl at the Window"
 category: book
 status: todo
 rating: 0
@@ -8,8 +7,8 @@ year: 2003-1
 date: 2024-02-25 21:51:57+08:00
 douban:
   rating: 8.8
-  subtitle: "[Japan] Author: Tetsuko Kuroyanagi, Illustrator: Chiko Iwasaki / 2003
-    / Nanhai Publishing Company"
+  subtitle: by Tetsuko Kuroyanagi, illustrated by Chihiro Iwasaki / 2003 / Nanhai
+    Publishing Company
 ---
 
-Viawa.tw song ma's top rated reading for elementary students, highly recommended!
+Highly recommended as the best reading for elementary students!

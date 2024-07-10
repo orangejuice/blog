@@ -1,6 +1,5 @@
 ---
-title: "Coal Boss: Thirty Years in Retrospect"
-slug: coal-boss-thirty-years-in-retrospect
+title: "Thirty Years: Confessions of a Coal Baron"
 category: book
 status: done
 rating: 5
@@ -8,29 +7,28 @@ year: 2011-4
 date: 2024-04-22 18:54:52+08:00
 douban:
   rating: 7.6
-  subtitle: Laowu, Jingfei / 2011 / Culture and Arts Publishing House
+  subtitle: Lao Wu / Jing Fei / 2011 / Culture and Art Publishing House
   history:
     - date: 2024-04-22 18:54:52
-      comment: The electronic version I read had poor formatting, but that didn’t
-        obstruct the rich content. The short length of the piece limited
-        detailed character stories, yet the clues revealed are enough to evoke
-        feelings of emotion and helplessness. Whatever's shown is only the tip
-        of the iceberg, but it still has shape, being quite three-dimensional.
-        The final turn in the narrative toward Buddhism makes the implications
-        even more profound. The author’s sincerity and self-reflection is indeed
-        not false, but they must have also been ruthless, cunning, and superior,
-        playing the game of life amidst reality and fiction. An undercurrent of
-        oppressive, decisive force that stays hidden offstage is perceptibly
-        present, albeit subtly. The 'masses' are like ceaseless, hard-working
-        ants, out of which emerge big players, looking no different from other
-        ants. Either already equipped or gradually acquiring the mastery, they
-        have the audacity and means to manipulate and dictate groups of people
-        under the push of fate, networking with each other, reaping benefits,
-        and monopolizing power. Standing high and looking afar, viewing the
-        bustle in the dust at the foothill, it feels like seeing actual slaves
-        and subjects creating profits for themselves.
+      comment: The e-book layout is poor, yet the content is rich. The text is short,
+        and the details of the character's stories are limited, but the clues
+        given are often enough to provoke both melancholy and resignation. It
+        shows only a corner, yet it already appears in its formative shape,
+        fairly three-dimensional. Turning towards Buddhism in the end gives a
+        deeper meaning. The author's sincerity and self-reflection are indeed
+        genuine, yet must also embody a tough, cunning temperament, expertly
+        navigating the illusions of life. Subtly, it makes one feel the
+        overbearing, decisive force of the secret currents that move without
+        showing, not appearing overtly. "The masses" are like a continuously
+        laboring swarm of ants, unceasingly proliferating—among them, some
+        emerge who seem like any other yet, driven by fate, possess the audacity
+        and methods to control and manage the group, networking among themselves
+        to harvest benefits and monopolize power. Looking far from a higher
+        vantage, the seeing of busy dust at the mountain's base feels like
+        observing actual slaves and subjects working for their own benefit.
       rating: 5
       status: done
 ---
 
-The electronic version I read had poor formatting, but that didn’t obstruct the rich content. The short length of the piece limited detailed character stories, yet the clues revealed frequently incite emotions and reflections. Only a corner is shown to the world, but it is to a certain extent shaped and dimensional. The final turn to Buddhism makes the implications even more profound. The author’s sincerity and self-reflection is indeed genuine, but they must have also been ruthless, cunning, and superior, playing the game of life with a mix of truth and deception. An undercurrent of oppressive, decisive power that doesn't make itself apparent on the surface is subtly perceived. The 'masses' are like ceaseless, hard-working ants, ever emerging big players who seem to be no different from other ants. With inherent or accumulated capacities, they gain the audacity and means to manipulate and dictate groups of people, networking with each other, reaping benefits, and monopolizing power under the push of fate. Standing high and looking afar, among the dust raised at the foothill, it seems that there are actual slaves and subjects creating profits for their masters. ‘If there really are ghosts, it’s probably uncomfortable to be one. Because it doesn't seem like you have to give anything to be a ghost, so what good treatment can there be?’
+The e-book layout is poor but does not obstruct the rich content. The brevity of the text limits the details of the characters' stories, yet the clues revealed frequently evoke deep sentiments. It only shows a fragment, but it is already visible in its nascent form, considerably three-dimensional. In the end, turning towards Buddhism adds deeper meaning. The author's sincerity and introspection are genuine, yet surely they must also have a tough and cunning temperament, expertly playing the game of life with its inherent illusions. It subtly makes one feel the suffocating, decisive force of the undercurrents that surge unseen, never surfacing overtly. "The masses" resemble a group of tirelessly laboring ants, continuously propagating—among them, some emerge who seem like the others but, whether by nature or nurture, are driven by fate to have the courage and means to manipulate and exploit the group, creating networks among themselves to reap benefits and monopolize power. From a high vantage, looking down at the dust raised at the mountain foot, it seems filled with actual slaves and subjects laboring for their own profit.
+"If there really are ghosts, being one probably isn't very pleasant since being a ghost seems to involve little effort and thus, probably little reward."

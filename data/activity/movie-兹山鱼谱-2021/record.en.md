@@ -1,6 +1,5 @@
 ---
-title: Zi Mountain Fish Chronicles
-slug: zi-mountain-fish-chronicles
+title: Zishan Fish Inventory
 category: movie
 status: done
 rating: 4
@@ -8,8 +7,8 @@ year: "2021"
 date: 2021-06-28 04:07:39+08:00
 douban:
   rating: 8.8
-  subtitle: 2021 / South Korea / Drama History Costume / Jun-Yi Lee / Jing-Qiu Xue
-    Jong-Han Byun
+  subtitle: 2021 / South Korea / Drama History Costume / Lee Joon-ik / Seol
+    Kyung-gu, Byun Yo-han
 ---
 
-The theme is very sad, but the efforts of lovely people to live life brings some consolation. Korean film performances have a Korean characteristic, especially in the climax, the expression of emotions is restrained. The team's foundation in Sinology seems quite good. In 2021, when fast-food culture is prevalent, such a profound movie makes people cherish it more. The discussion appears to be slightly shallow, directly applying modern perspectives and values to the characters. Of course, judging by today's standards also has value. Many people today may indeed be hiding on Heishan Island, living an obscure and unsophisticated life. The social cultural framework is on a long and lengthy path of transformation. Those who expect this day of completion, not just us.
+The theme is quite melancholic, but the earnest lives of endearing people provide some solace. The performance in Korean cinema exhibits Korean-specific qualities, particularly at the climax, where the expression of emotion seems restrained. The depth of Chinese historical knowledge among the cast seems impressive, which makes this substantial film all the more precious in the fast-food culture prevalent in 2021. The exploration feels somewhat shallow, overly applying modern perspectives and values directly onto the characters. Nonetheless, by today's standards, it also holds value as many people today might be hiding on Heishan Island, leading bleak and undistinguished lives. The societal and cultural framework is on a long journey of transformation, and we look forward to the day this transformation is complete, not just for ourselves but for everyone involved.

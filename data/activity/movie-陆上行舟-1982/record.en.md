@@ -1,6 +1,5 @@
 ---
 title: Fitzcarraldo
-slug: fitzcarraldo
 category: movie
 status: todo
 rating: 0
@@ -12,8 +11,8 @@ douban:
     Kinski, José Lewgoy
 ---
 
-Movies like 'Kwaidan', directed by Masaki Kobayashi in 1965, and 'Dreams', directed by Akira Kurosawa in his later years, truly belong to the category of bizarre movies that I can't resist. Even for 'Fitzcarraldo', which is forever number one in my film history, I would not watch it as many times, and it never gets old. 
+In the same regard to movies like 'Kwaidan' by Masaki Kobayashi in 1965 and Akira Kurosawa's later works like 'Dreams', they are amongst the films I find most irresistibly bizarre. Even 'Fitzcarraldo', which I consider the greatest film of all time in my eyes, I wouldn’t watch it as many times, yet I never tire of it.
 
-I can't exactly articulate why I like bizarre things so much. In fact, I neither like horror movies nor surrealistic movies. But Japanese bizarre movies seem to just fulfill all my imagination of East Asian history. 
+I can't quite explain why I love bizarre things so much. Actually, I neither like horror movies nor am I a fan of surrealism. But somehow, Japanese bizarre cinema perfectly satisfies my imagination about East Asian history.
 
-When East Asians tell tales of ghosts and monsters, it’s not merely for sensory stimulation, because they always contain profound friendships and vivid moral ethics. Ghosts and monsters are more humane than humans. Perhaps the ideal state of being a human is to become a ghost or monster.
+East Asians telling ghost and monster stories isn't just for sensory stimulation, because it always involves profound affection and clear moral ethics. Ghosts and monsters seem to have more humanity than humans. Perhaps the ideal state of being for a person is to become a ghost or a monster.

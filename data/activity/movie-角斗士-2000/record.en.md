@@ -1,6 +1,5 @@
 ---
 title: Gladiator
-slug: gladiator
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,4 @@ douban:
     Russell Crowe Joaquin Phoenix
 ---
 
-Via tw figen x.com/thefigen_/status/1800985439769075744 shot of the opening scene
+Via tw figen x.com/thefigen_/page/95952790191330395516496 shot of the opening scene

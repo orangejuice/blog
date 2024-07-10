@@ -1,6 +1,5 @@
 ---
-title: Golden Age
-slug: golden-age
+title: The Golden Age
 category: book
 status: done
 rating: 3
@@ -11,4 +10,4 @@ douban:
   subtitle: Wang Xiaobo / 1999 / Huacheng Publishing House
 ---
 
-An unexpected art style. An explicit, frank depiction of sexuality, largely from a male perspective. Coupled with the unique imprint of the era, it was not easy to get published. The writing flows smoothly, language is crude and colloquial, highlighting a confident personality. The author appears well-read, adept at textual work and storytelling, unconsciously embodying the image of a second-generation youth from a high-ranking official's family, blessed with abundant material and eloquent speech, surrounded by women of all kinds. In the Yin and Yang realms chapter, the story setting is overly male fantasy, where pretty young women don’t mind a basement-dwelling man infamous for impotence, they propose marriage and readily undress themselves, in front of such an author image, it doesn't seem too sudden.
+An unexpectedly raw portrayal, with a copious amount of frank, male-perspective descriptions of sexuality. Coupled with the unique imprint of its era, the fact that it got published is notable. The writing style is sophisticated yet uses vulgar, colloquial language that highlights a confident personality. The writer appears well-read, skilled in the craft of storytelling, creating a vivid image of the author: a privileged second-generation youth raised in a high-ranking official's compound, with affluent family background and surrounded by various women. The story setup in 'The Realm of Yin and Yang' borders on male fantasy, where an attractive young woman doesn't mind the ruined reputation of an impotent man living alone in a basement and goes as far as to strip and propose marriage in front of him, which, in light of the author's persona, doesn't seem so far-fetched.

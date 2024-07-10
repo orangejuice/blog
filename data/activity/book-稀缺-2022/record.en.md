@@ -1,6 +1,5 @@
 ---
 title: Scarcity
-slug: scarcity
 category: book
 status: todo
 rating: 0
@@ -8,16 +7,16 @@ year: 2022-9
 date: 2023-10-05 10:54:38+08:00
 douban:
   rating: 7.9
-  subtitle: "[US] Sendhil Mullainathan [US] Eldar Shafir / 2022 / Zhejiang
-    Education Publishing House"
+  subtitle: by Sendhil Mullainathan & Eldar Shafir / 2022 / Zhejiang Education
+    Publishing House
 ---
 
-Via tw juransir: I used to be in an all-in work state, only to find that my work efficiency during holidays is almost zero. What could have been accomplished in one hour, can't be completed in an afternoon. Any problem encountered in the work is not solved, the only thing that gets resolved is the anxiety in my heart. 
+Via Twitter user juransir: I used to be all in work mode all the time, but later I found that my work efficiency during vacations was almost zero. What I could usually finish in an hour, I couldn't complete in an afternoon. No work-related problem was solved, only my inner anxiety was alleviated.
 
-However, the fact that I spent time but did not solve the problem, only makes me more anxious, and then continues to think about the deadline for this matter, how it should be done, and finally viciously circulate, becoming more anxious. 
+However, spending time without solving any problems only made me more anxious, and then I would continue thinking about the deadlines and how to approach the tasks, resulting in a vicious cycle of increasing anxiety.
 
-Starting from this year, I have thoroughly learned to 'play well when you play, and work well when you work'. 
+Starting this year, I’ve thoroughly learned to 'play well when it's time to play, work well when it's time to work'.
 
-When relaxing, let go of the work, forget about my to-do items, forget about the imminent S-level project. I later discovered that overall efficiency has actually improved. Even after I spent a few days deeply relaxing, I came up with some new ideas and thoughts. 
+When relaxing, I put aside work, forget about pending tasks, and ignore the upcoming major projects about to launch. I found that overall efficiency has actually increased. Even by taking a few days off for deep relaxation, I came up with some new ideas and creativity.
 
-Once again, I strongly recommend the book "Scarcity". We should never have a 'tunnel vision' at any time, and leave ourselves some 'leisure time'.
+I strongly recommend the book "Scarcity" once again, encouraging everyone to avoid tunnel vision and to give ourselves some breathing room.

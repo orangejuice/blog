@@ -1,6 +1,5 @@
 ---
 title: Justice
-slug: justice
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 2009 / USA / Documentary / Michael J. Sandel
 ---
 
-The content is so rich, but having watched it once, it almost feels like I haven't watched it at all. Perhaps someday I'll return to really chew it over. Sigh, there's so much good out there, but life is so quick and fleeting. I must seem too young, having these thoughts. When can I ever calmly savour every second of life's splendour?
+The content is so rich, yet after watching it just once, it feels as if I haven't watched it at all. It's time to come back and chew on it again. Alas, there are too many good things, and life is too brief and rushed. I must be too young to feel this way, longing for the time when I can calmly savor every brilliant second of life.

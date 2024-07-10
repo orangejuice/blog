@@ -1,6 +1,5 @@
 ---
-title: "China: A County Chronicle"
-slug: china-a-county-chronicle
+title: Chinese Gazetteers Documentary
 category: movie
 status: done
 rating: 1
@@ -8,8 +7,7 @@ year: "2017"
 date: 2021-06-25 18:49:33+08:00
 douban:
   rating: 8.2
-  subtitle: 2017 / Mainland China / Documentary / Directed by Luo An / Produced by
-    Jia Xiaojun
+  subtitle: 2017 / Mainland China / Documentary / Luo An / Jia Xiaojun
 ---
 
-I stumbled upon this documentary while looking up local gazetteers. It seems massive, with the ambition to create documentary for each county across the country, including a dedicated website where I quickly found an episode about my hometown. But the more I watched, the more disappointed I became. The content is hollow, filled with ideology and fervent rhetoric, dominated by narratives of red figurines, red history, and everything in red. The camera work is heavily staged, overly formal, and relies entirely on sluggish bombast to sustain an entire episode. It lacks any respect for profound history and professional spirit, falling short of being a local gazetteer documentary. But maybe this is my problem. In such a noisy and impulsive era, what deep historical knowledge or steady excellent work can be expected? Who has the time to watch local gazetteers of small broken country towns, or dig into an unknown piece of local history through interviews? Even if such programs were made, no one would be interested.
+I came across this documentary while searching for local gazetteers. It appeared to be a grand project, aiming to document every county and district in the country, even featuring a dedicated website. I immediately looked up an episode about my hometown. However, the more I watched, the more disappointed I became. The content was empty and ideological, filled with exaggerated patriotism and overwhelmingly focused on red history and figures. The filming was staged, superficial, and relied entirely on slow, pointless rhetoric to pad out the runtime. It lacks any semblance of professionalism or reverence for profound history, hardly qualifying as a gazetteer documentary. Perhaps it is my problem, in an era so noisy and superficial, what else can one expect? A masterpiece filled with historical knowledge, stable and down-to-earth? Who would bother to watch a detailed study of the history of a small, broken-down county town, digging out unknown local tales when such programs, even if produced, attract no interest?

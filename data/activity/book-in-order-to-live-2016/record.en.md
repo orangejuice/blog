@@ -1,6 +1,5 @@
 ---
 title: In Order To Live
-slug: in-order-to-live
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Yeonmi Park / 2016 / Penguin
 ---
 
-Saw it again on Twitter
+Came across it again on Twitter

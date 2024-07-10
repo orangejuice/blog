@@ -1,6 +1,5 @@
 ---
 title: Becoming Jane
-slug: becoming-jane
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,4 @@ douban:
     Hathaway James McAvoy
 ---
 
-There is a quote from 'Becoming Jane' that I really like by tw user Stopcloud, 'Never lose yourself in front of anything, not even dogma, not even the eyes of others, not even love.' I often tell myself this when confused.
+Via Twitter from Tingyun, a line from 'Becoming Jane' I really like says, “Never lose yourself in front of anything, not even doctrines, not even others' gaze, not even in love.” I often remind myself of this when I feel lost.

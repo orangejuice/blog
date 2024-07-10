@@ -1,6 +1,5 @@
 ---
 title: Lost in Translation
-slug: lost-in-translation
 category: movie
 status: todo
 rating: 0

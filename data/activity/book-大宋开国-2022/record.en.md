@@ -1,6 +1,5 @@
 ---
-title: The Founding of the Great Song Dynasty
-slug: the-founding-of-the-great-song-dynasty
+title: The Founding of the Great Song
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Fan Xuehui / 2022 / Shanxi People's Publishing House
 ---
 
-Originally published in 2009 and reprinted last year, 'The Founding of the Great Song Dynasty' is a high-quality, easy-reading historical narrative, where the reader can often sense the author's profound emotions unconsciously. Unfortunately, Professor Fan Xuehui passed away prematurely at the age of 49 in 2019.
+Originally published in 2009 via Twitter AC, and reprinted last year, "The Founding of the Great Song" is a high-quality popular historical book with smooth narration and easy reading. Oftentimes, one can feel the profound emotions of the author effusing from the pages. Unfortunately, Professor Fan Xuehui passed away prematurely in 2019 at the age of 49.

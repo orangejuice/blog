@@ -1,6 +1,5 @@
 ---
-title: "Sanwa Talent Market: Chinese Daily Wage 1500 Yen Youngsters"
-slug: sanwa-talent-market-chinese-daily-wage-1500-yen-youngsters
+title: "Sanhe Talent Market: Chinese Youth Earning 1500 Yen Daily"
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 2018 / Japan / Documentary / NHK / Kenichi Endo
 ---
 
-It turns out to be a film from 2018, which may surprise many. During the viewing, even though I have not experienced such a life, it always feels familiar, as if it was my predestined fate.
+Originally from 2018, this film might surprise many. While watching, even though I have never lived this life, it feels oddly familiar, as if it was my destined fate.

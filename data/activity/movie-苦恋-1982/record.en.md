@@ -1,6 +1,5 @@
 ---
 title: Bitter Love
-slug: bitter-love
 category: movie
 status: done
 rating: 2
@@ -8,8 +7,8 @@ year: "1982"
 date: 2021-09-21 04:25:24+08:00
 douban:
   rating: 7.5
-  subtitle: 1982 / Taiwan, China / Drama Romance / Directed by Wang Tung /
-    Starring Mu Si Cheng, Xu Zhong Fei
+  subtitle: 1982 / Taiwan, China / Drama Romance / Directed by Wang Tong /
+    Starring Mu Sicheng, Xu Zhongfei
 ---
 
-Fell asleep while watching. The acting was stiff, characters were thin, and the story was very poor. Thanks to the music that woke me up at the end. Apart from the absurdity of the historical background itself, there's really nothing else worth watching in the film. Some of the dialogues are not bad, for which I would give 1 point. The lovely Taiwanese accent keeps reminding me of Doraemon. / 9-18 via lecturer recommend
+Fell asleep watching it. The acting was stiff, the characters were thin, and the story was poorly developed—thank God the music finally woke me up. Apart from the absurd historical background, there really isn't much else to see in the film. There were a few good lines, so I'll give it 1 point. The charming Taiwanese accent felt like watching Doraemon. / September 18 via lecturer recommendation

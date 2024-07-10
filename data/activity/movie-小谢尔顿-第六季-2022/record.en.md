@@ -1,6 +1,5 @@
 ---
 title: Young Sheldon Season 6
-slug: young-sheldon-season-6
 category: movie
 status: done
 rating: 5

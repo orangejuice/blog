@@ -1,6 +1,5 @@
 ---
-title: Guide to Bourdieu
-slug: guide-to-bourdieu
+title: Guide to Beauvoir
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: (UK) Ursula Tidd / 2014 / Chongqing University Press
 ---
 
-Via tw Cindy Dingding
+Via Twitter Cindy Ding

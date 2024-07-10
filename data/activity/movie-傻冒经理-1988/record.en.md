@@ -1,6 +1,5 @@
 ---
 title: The Silly Manager
-slug: the-silly-manager
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,4 @@ douban:
     Chen Peisi, Chen Qiang
 ---
 
-Via tw xiaxiangqiang, I watched Chen Peisi's old movie 'The Silly Manager' in just ten minutes. This film is daringly made, offending the leaders and departments one after another.
+Via Twitter from Xiaxiangqiang: Just watched Chen Peisi's old movie 'The Silly Manager' in ten minutes. This movie is too daring, offending both leaders and departments alike.

@@ -1,6 +1,5 @@
 ---
 title: Night in Chile
-slug: night-in-chile
 category: book
 status: todo
 rating: 0

@@ -1,6 +1,5 @@
 ---
 title: Waking Life
-slug: waking-life
 category: movie
 status: todo
 rating: 0
@@ -9,7 +8,7 @@ date: 2023-01-28 07:53:16+08:00
 douban:
   rating: 8.1
   subtitle: 2001 / USA / Drama Animation Mystery Fantasy / Richard Linklater /
-    Ethan Hawke Julie Delpy
+    Ethan Hawke, Julie Delpy
 ---
 
-Via douban banner There are two types of tormented people in the world: those who lack life, and those who are overwhelmed by life.
+In the world, there are two kinds of tormented people: those who lack a life, and those whose lives are too burdensome.

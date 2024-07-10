@@ -1,6 +1,5 @@
 ---
 title: Ulysses
-slug: ulysses
 category: book
 status: todo
 rating: 0

@@ -1,6 +1,5 @@
 ---
 title: Perfect Blue
-slug: perfect-blue
 category: movie
 status: todo
 rating: 0

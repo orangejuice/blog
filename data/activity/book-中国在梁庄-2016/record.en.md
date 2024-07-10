@@ -1,6 +1,5 @@
 ---
 title: China in Liangzhuang
-slug: china-in-liangzhuang
 category: book
 status: todo
 rating: 0
@@ -8,7 +7,7 @@ year: 2016-11
 date: 2024-04-06 22:43:31+08:00
 douban:
   rating: 8.1
-  subtitle: Liang Hong / 2016 / Taiwan Strait Publishing House
+  subtitle: Liang Hong / 2016 / Strait Publishing House
 ---
 
-Via tw Left Hand Ink, we had lunch, which was a hometown dish called 'blurred noodles'. Despite our strong objections, my father insisted on adding spoonfuls of chili into the noodles. You must know, his stomach lining cannot bear such stimulation. Yet, father said: 'If I can't eat chili, what's the point of living? Might as well die early.' During my youth, we had a lack of vegetables and oil at home. We relied on chili to finish our meals. In winter, when the chili ran out, despite how much we tried to economize, the white radishes stored in sand also ran out. Then, my father would grind the chili stalks into powder, sprinkle it in the bowl, and he would still sweat profusely while eating it. Many houses in the village did the same. Sometimes, customs are linked with poverty.
+Via Twitter, Ink of the Left Hand. At lunch, I made hometown’s 'muddled noodles', and despite our strong objections, Dad insisted on adding spoonfuls of chili peppers. You should know that his stomach lining can’t handle this kind of irritation. Yet, Dad said, 'What’s the point of living if I can’t have chili peppers? Might as well die earlier.' In my youth, we barely had enough vegetables or oil, and relied solely on chili peppers for meals. During winter, when the chili peppers were gone, no matter how much we tried to save, the white radishes stored in the sand would also be finished. Then, Dad would grind the chili stems into powder, sprinkle it into our bowls, and we’d eat sweating profusely. Many families in the village did the same. Sometimes, customs are tied to poverty.

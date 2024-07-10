@@ -10,4 +10,4 @@ douban:
   subtitle: Edward M. Hallowell John J. Ratey / 2021 / Ballantine Books
 ---
 
-Via 'Being Distracted is not my fault', a tool book with updated edition and content
+Via the 'Distraction is Not My Fault' edition and content updated reference book

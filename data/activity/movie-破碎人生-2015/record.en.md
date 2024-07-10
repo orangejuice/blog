@@ -1,6 +1,5 @@
 ---
 title: Demolition
-slug: demolition
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,6 @@ douban:
   subtitle: 2015 / USA / Drama / Jean-Marc Vallée / Jake Gyllenhaal, Naomi Watts
 ---
 
-Via Twitter Dr.Wang. Two therapists urged me to watch this film, and I truly found it amazing after watching it tonight after dinner! 'Demolition'. I strongly recommend it to you all~✨ Does it heal? Hmm... but it offers more sincerity and reality... 'Everyone expresses pain in their unique way.'
+Via tw Dr.Wang Two psychologists have been urging me to watch this movie. Just finished it after dinner, and it's really, really, really great! "Demolition." Highly recommend it to everyone! ✨
+Is it healing? Hmm... but it's more about sincerity and authenticity...
+"Everyone shows pain in a unique way."

@@ -1,6 +1,5 @@
 ---
 title: Existentialism is a Humanism
-slug: existentialism-is-a-humanism
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: (France) Jean-Paul Sartre / 2012 / Shanghai Translation Publishing House
 ---
 
-'Existentialism is a Humanism' by Sartre changed the view on freedom; 'The Poverty of Historicism' by Popper changed the view on science; 'The Road to Serfdom' by Hayek changed the view on economics.
+In this work, Liu Ren reflects on how Jean-Paul Sartre's 'Existentialism is a Humanism' reshapes views on freedom; Karl Popper's 'The Poverty of Historicism' transforms views on science; Friedrich Hayek's 'The Road to Serfdom' alters economic perspectives.

@@ -1,6 +1,5 @@
 ---
-title: Re-treading
-slug: re-treading
+title: Retrace
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Yang Xiao / 2021 / Shanghai Literature and Art Publishing House
 ---
 
-via tw Stopping Clouds, after reading 'Re-treading', inspired to go to Changsha, Guiyang, Kunming, to see some of the old sites related to the Southwest United University, to see the sites of those historical events with my own eyes. For that generation, there are a lot of curiosities and nostalgia, remembering the defense of academic freedom by the teachers and students of the United University, remembering their respect for knowledge and education, remembering their idealism. Curious about how they understood and dealt with the crisis of the nation and themselves? What is a good life in uncertain times? What is the relationship between thoughts and actions? What is the meaning of life? Curious about what prompted them to make such choices between staying and leaving? And do they regret their original choices?
+via Twitter by Tingyun: After reading the book 'Retrace', I was inspired to visit Changsha, Guiyang, and Kunming to see some of the old sites related to the National Southwestern Associated University. To witness the places where those historical events occurred. I'm particularly curious and nostalgic about that generation, nostalgic about the university's faculty and students defending academic freedom, respecting knowledge and education, and their idealism. Curious about how they understood and handled the crisis of the nation and self? In an uncertain era, what constitutes a good life? What is the relationship between thought and action? What is the meaning of life? Curious about what prompted them to make the choices they did regarding staying or leaving? And whether they regretted those choices later?

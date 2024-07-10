@@ -1,6 +1,5 @@
 ---
-title: The Fruit is Swelling
-slug: the-fruit-is-swelling
+title: When the Peach Ripens
 category: movie
 status: done
 rating: 3
@@ -8,8 +7,8 @@ year: "1993"
 date: 2022-11-05 17:23:33+08:00
 douban:
   rating: 7.4
-  subtitle: 1993 / Hong Kong, China / Romance Erotica / Directed by Chin Man Kei,
-    Starring Amy Yip and Pan Zhenwei
+  subtitle: 1993 / Hong Kong, China / Romance Erotica / Directed by Cheung Siu-lam
+    / Starring Amy Yip, Loletta Lee
 ---
 
-A self-indulging young lady from a wealthy family living a carefree life, combined with the offbeat and awkard plot development. I have watched some classic clips countless times and finally watched the full movie today. It is vibrant and colorful, and the leading actress demonstrated decent acting skills in this film.
+A rich, pampered, and free-spirited girl who chases self-indulgence, coupled with nonsensical and awkward plot development. Some classic scenes have been watched countless times, and today I finally watched the original film. It’s vivid and the female lead delivers some good acting in this role.

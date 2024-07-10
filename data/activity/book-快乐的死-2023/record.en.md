@@ -1,6 +1,5 @@
 ---
-title: A Happy Death
-slug: a-happy-death
+title: The Happy Death
 category: book
 status: todo
 rating: 0
@@ -11,6 +10,4 @@ douban:
   subtitle: "[France] Albert Camus / 2023 / Hunan Literature and Art Publishing House"
 ---
 
-Via tw Douxiao Dou Believe me, there is no so-called heartache, no regret from the ancient times, no deep memories. Everything will be forgotten, even the great love. This is the part of life that is both sad and exciting.
-
-—— Albert Camus, A Happy Death
+Via Twitter @DouXiaoDou - Trust me, there is no such thing as a heart-wrenching pain, no eternal regrets, no profound memories. Everything will be forgotten, even great love. This is both the sad and exciting part of life. — Albert Camus, 'The Happy Death'

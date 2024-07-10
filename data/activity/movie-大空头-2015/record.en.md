@@ -1,6 +1,5 @@
 ---
 title: The Big Short
-slug: the-big-short
 category: movie
 status: done
 rating: 5
@@ -15,4 +14,4 @@ douban:
       status: todo
 ---
 
-Like Steve Carell
+Likes Steve Carell

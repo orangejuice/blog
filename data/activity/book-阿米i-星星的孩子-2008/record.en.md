@@ -1,6 +1,5 @@
 ---
-title: Ami I - Child of the Stars
-slug: ami-i-child-of-the-stars
+title: Ami, Child of the Stars
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Enrique Barrios / 2008 / Tianjin Education Publishing House
 ---
 
-via youtube Old Gao
+via YouTube by Lao Gao

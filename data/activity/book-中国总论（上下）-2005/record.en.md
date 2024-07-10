@@ -1,6 +1,5 @@
 ---
-title: General Theory of China (Volumes I & II)
-slug: general-theory-of-china-volumes-i-ii
+title: General Discussions on China (Volumes I and II)
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Wei Sanwei / 2005 / Shanghai Ancient Books Publishing House
 ---
 
-Via Encounter of China and America
+Via China-US Encounter

@@ -1,6 +1,5 @@
 ---
-title: Addiction
-slug: addiction
+title: Just for Fun
 category: movie
 status: todo
 rating: 0
@@ -9,17 +8,17 @@ date: 2023-05-10 01:18:46+08:00
 douban:
   rating: 9
   subtitle: 1994 / Mainland China / Drama / Directed by Bao Gang Zhao / Starring
-    Zhiwen Wang and Shan Jiang
+    Zhiwen Wang, Shan Jiang
 ---
 
-Via Tokyo Wenge, in recent years, the best domestic #TV drama I've watched 📺"Addiction" (1994). I unintentionally opened it and watched 10 minutes, and then spent an entire night watching until the end of the drama. Since then, it has become No. 1 in my heart for Chinese TV dramas. Just like the status of "Tokyo Love Story" in Japanese dramas.
+Via tw Tokyo Wenge - In recent years, this is the best domestic TV drama I have seen 📺 "Just for Fun" (1994). I randomly started watching it for 10 minutes and ended up spending the whole night to finish it. Since then, it has become the No. 1 domestic drama in my heart, similar to the status of "Tokyo Love Story" in Japanese dramas.
 
-The TV show and its theme song ("Blurry Love") were popular all over the country. But at that time I didn't understand it. Now when I look back, it's scarily real.
+Back then, this drama and its theme song ("Confused Love") became incredibly popular across the country. But at that time, I couldn't understand it. Watching it now, it feels incredibly realistic.
 
-It has a nostalgic sense of childhood life and sharp discussions that have not been outdated. It makes you feel that in addition to technology, other aspects of Chinese dramas are regressing.
+It evokes a nostalgic feel of childhood while also offering a sharp and timeless discussion. It shows that in many aspects other than technical, Chinese TV dramas have been regressing.
 
-Shan Jiang and Zhiwen Wang are so brilliant, and to this day, they haven’t surpassed their performance in this film.
+Shan Jiang and Zhiwen Wang shine so brightly that even today, no one has surpassed their performances back then.
 
-In today's love stories, you probably won't see a man being asked by a woman holding a knife to his throat:
+In today's romantic dramas, you'll probably never see a scene where a woman holds a knife to a man's neck and asks:
 
-"Do you really love me!?"
+"Do you really love me or not!?"

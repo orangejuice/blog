@@ -1,6 +1,5 @@
 ---
-title: The Great Divergence
-slug: the-great-divergence
+title: The Great Didergence
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Kenneth Pomeranz / 2001 / Princeton University Press
 ---
 
-Recommended by doctor, also relevant to the discussion on Needham's Puzzle
+via doctor recommendation, also from remarks on Needham's puzzle

@@ -1,6 +1,5 @@
 ---
-title: Love Independently
-slug: love-independently
+title: Love Individually
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Li Ge / 2015 / Jiuzhou Press
 ---
 
-Via tw Dou Xiao Dou Regardless of the level of knowledge, a person deeply organizing and tidying up their own hearts, this matter itself is very fascinating. - Li Ge "Love Independently"
+Via Twitter from Dou Xiaodou: No matter the level of insight, a person organizing and tidying their own heart deeply is in itself very fascinating. —— Li Ge 'Love Individually'

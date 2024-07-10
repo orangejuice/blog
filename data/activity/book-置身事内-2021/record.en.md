@@ -1,6 +1,5 @@
 ---
-title: In The Mix
-slug: in-the-mix
+title: Deep Involvement
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Lan Xiaohuan / 2021 / Shanghai People's Publishing House
 ---
 
-via tw, top250
+via Twitter, top250

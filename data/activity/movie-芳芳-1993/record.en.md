@@ -1,6 +1,5 @@
 ---
 title: Fang Fang
-slug: fang-fang
 category: movie
 status: done
 rating: 5
@@ -12,4 +11,4 @@ douban:
     Vincent Perez
 ---
 
-From head to toe, beauty that is breathtakingly beautiful. The beauty of openness, the beauty of restraint, the beauty of indulgence, the beauty of madness. So tempting, so romantic, so heart-wrenching. Can love be like this? Full of imagination. Admiring France, refreshing knowledge.
+Beauty from head to toe, stunningly beautiful. The beauty that is open, restrained, indulgent, and mad. So tempting, so romantic, so heart-stirring. Can love also be like this? Rich in imagination. Admire France, refreshing understanding.

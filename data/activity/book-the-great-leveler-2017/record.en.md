@@ -1,6 +1,5 @@
 ---
 title: The Great Leveler
-slug: the-great-leveler
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Walter Scheidel / 2017 / Princeton University Press
 ---
 
-via tw recommendation History of Violence and Inequality
+via Twitter recommendation / Violence and Inequality throughout the History of Mankind

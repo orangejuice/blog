@@ -1,6 +1,5 @@
 ---
 title: The Piano
-slug: the-piano
 category: movie
 status: done
 rating: 5
@@ -12,4 +11,4 @@ douban:
     Campion / Holly Hunter Harvey Keitel
 ---
 
-Ada stands out from the crowd, building walls surrounding her own world. The eccentric mother and daughter, unwelcome and forced to marry afar. Married to the stingy, dull Stewart, they encounter the robust, gentle, and understanding George. George's tenderness, his use of power to win over women, and the torment of morality, Ada melts her walls and accepts George during the tug of war between compliance and resistance. Her longing triggered by the piano, her relentless betrayal and confession of love, leave a deep impression. When Stewart let his woman stay in the same room with another man for a land deal, he has already lost to his own greed. But in the end, he willingly gave up, making way for the two. The complexity of human nature is fully displayed.
+Ada, who doesn't conform to society, has built walls around her own world. The mother and daughter, both eccentric and aloof, are unpopular and forced to marry off far away. Ada marries Stewart, a stingy and tactless man, but then meets George, a burly, gentle, and understanding man. George's tenderness, his use of power to subdue women, and his moral torment lead Ada through a struggle between obedience and resistance, eventually breaking down her walls and accepting George. Her reminiscent attachment to the piano, her act of defiant betrayal, and declaration of love leave a lasting impression. When Stewart, in pursuit of a land deal, forces her to stay alone with another man, he loses by his own greed. Yet, in the end, he voluntarily gives up, making way for the couple. The complexity of human nature is fully displayed.

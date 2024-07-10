@@ -1,6 +1,5 @@
 ---
 title: Love and Loneliness
-slug: love-and-loneliness
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Zhou Guoping / May 2009 / People's Literature Publishing House
 ---
 
-Via Twitter 'Huangpu Memories' The flower at home has committed suicide, and the suicide note reads as: 'Not lacking in food and clothes all my life, but only lacking in sunlight and love.' — Zhou Guoping "Love and Loneliness"
+Via Twitter "Huangpu Memories", a flower raised at home committed suicide, leaving a suicide note: 'A life free from worries about food and clothing, yet devoid of sunlight and love.' — Zhou Guoping, "Love and Loneliness"

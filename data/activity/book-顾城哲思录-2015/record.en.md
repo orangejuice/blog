@@ -1,6 +1,5 @@
 ---
-title: Philosophical Thoughts of Gu Cheng
-slug: philosophical-thoughts-of-gu-cheng
+title: Gu Cheng's Meditations
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Gu Cheng / 2015 / Chongqing Publishing House
 ---
 
-Have you ever pondered how many profound insights Gu Cheng imparted that turned many youngsters into his devout fans? Maybe flipping through 'Philosophical Thoughts of Gu Cheng' will provide an epiphany; with every line providing insights on China, poetry, culture, life, and thought, each character a pearl, enlightening the heart. Gu Cheng's words are always clean and peaceful, and to read Gu Cheng is also to understand oneself.
+Via Twitter, Tingyun asked what kind of profound wisdom Gu Cheng possessed that garnered him a solid fan base amongst the youth of his time. Flipping through 'Gu Cheng's Meditations' might just offer a revelation—about China, poetry, culture, life, and thought—each word is a gem, clarifying the heart and enlightening the mind. Gu Cheng's words are always clean and serene; reading Gu Cheng is also a process of discovering oneself.

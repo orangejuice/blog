@@ -1,6 +1,5 @@
 ---
 title: A Better Tomorrow
-slug: a-better-tomorrow
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,4 @@ douban:
     Yun-fat, Ti Lung
 ---
 
-Via tw Stop Cloud, planning to revisit. The English translation of '英雄本色' is 'A Better Tomorrow', and the Japanese translation is 'Elegy of Men', both of which have almost opposite meanings, but both are smooth explanations.
+Via Twitter user 停云, planning to rewatch. 'A Better Tomorrow' is translated as 'A Better Tomorrow' in English and 'Elegy of Men' in Japanese, which are almost opposite in meaning, but both interpretations make sense.

@@ -1,6 +1,5 @@
 ---
 title: The Tale of the Heike
-slug: the-tale-of-the-heike
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: "[Japan] Anonymous / 2017 / Yilin Press"
 ---
 
-I've finally finished director Yamada's 'The Tale of the Heike,' and it really is quite sentimental. All who desire will not die well, only those who pray to Buddha. Watching historical dramas interpreted by the Chinese and then watching those interpreted by the Japanese, you can see a big difference in style. I plan to catch up on some of the great series about the Genpei War.
+After completing Director Yamada's 'The Tale of the Heike' via tw mier, I really felt quite emotional. Those who desire always meet a bad end, only through practicing Buddhism and making vows can one find peace. Having watched many historical dramas performed by Chinese actors, the style of Japanese historical dramas feels very different. I plan to catch up on several Taiga dramas about the Genpei War.

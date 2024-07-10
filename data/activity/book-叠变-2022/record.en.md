@@ -1,6 +1,5 @@
 ---
 title: Metamorphosis
-slug: metamorphosis
 category: book
 status: todo
 rating: 0

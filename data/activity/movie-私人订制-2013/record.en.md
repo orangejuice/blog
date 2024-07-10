@@ -1,6 +1,5 @@
 ---
 title: Personal Tailor
-slug: personal-tailor
 category: movie
 status: todo
 rating: 0

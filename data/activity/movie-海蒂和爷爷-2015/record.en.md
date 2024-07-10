@@ -1,6 +1,5 @@
 ---
-title: Heidi
-slug: heidi
+title: Heidi and Grandfather
 category: movie
 status: done
 rating: 3
@@ -8,8 +7,8 @@ year: "2015"
 date: 2021-03-14 05:06:01+08:00
 douban:
   rating: 9.3
-  subtitle: 2015 / Germany Switzerland / Drama Family Adventure / Directed by
-    Alain Gsponer / Starring Anuk Steffen, Bruno Ganz
+  subtitle: 2015 / Germany Switzerland / Drama Family Adventure / Alain Gsponer /
+    Anuk Steffen Bruno Ganz
 ---
 
-Unexpectedly made it to the Top 65. Although it's not bad, it didn't feel as good as expected, perhaps my expectations were too high. It's very sunny, beautiful, happy, and able to embrace everything, but the villains with bad intentions are unintentionally suppressed by the clever and kind protagonist, which feels a bit familiar and cliche. Perhaps it's a children-oriented work, Heidi will become the best and most healing friend of every child. If taken as a children’s film, it scores full marks.
+Surprisingly in the TOP 65. Although not bad, I didn't think it was this good, perhaps my expectations were too high. It is very sunny, beautiful, and blissful, able to embrace everything, but the villains with ill intents are unwittingly suppressed by the clever and kind protagonist, only able to stew in frustration — somewhat familiar and somewhat cliché. Perhaps it's a children's film, after all, Heidi could become every child's best and most healing friend. As a children's movie, it deserves full marks.

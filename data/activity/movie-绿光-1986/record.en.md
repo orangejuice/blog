@@ -1,6 +1,5 @@
 ---
-title: The Green Ray
-slug: the-green-ray
+title: Green Light
 category: movie
 status: done
 rating: 5
@@ -8,7 +7,7 @@ year: "1986"
 date: 2020-09-05 04:26:14+08:00
 douban:
   rating: 8.1
-  subtitle: 1986 / France / Drama Romance / Eric Rohmer / Marie Rivière, Carita
+  subtitle: 1986 / France / Drama Romance / Eric Rohmer / Irène Jacob Marie Rivière
 ---
 
-The flaws in one's character come in all shapes and sizes, and they manifest themselves in various forms. While these flaws do enrich the world, whether they are manifested or not, the inner struggle and agony, the awkwardness and sensitivity in interpersonal relationships have set an internal obstacle for the quality of life and the path to happiness. One can run all the way to exhaustion in life, but they are still alone, constituting part of the people. People who can understand and accept the female lead's character and actions are understandable, so are those who hate her. The only one I cannot understand is myself.
+The defects in personality are diverse, manifesting in various forms. Although they enrich the world, whether displayed or not, the inner turmoil and pain, along with the awkward sensitivities in social interactions, set internal obstacles on the path to quality of life and the pursuit of happiness. One may run through life exhausted only to end up alone, part of the masses. It is understandable for those who dislike or accept the protagonist’s character and actions, but alone, I do not understand myself.

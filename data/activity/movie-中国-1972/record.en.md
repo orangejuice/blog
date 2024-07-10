@@ -1,6 +1,5 @@
 ---
 title: China
-slug: china
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 1972 / Italy / Documentary / Michelangelo Antonioni / Giuseppe Rinaldi
 ---
 
-Such precious footage, I love the feeling from this photographer, capturing your gaze, pondering your soul. I've filled up a lot of the historical distance after watching this not-so-short documentary with mixed feelings. Should it be called history? It doesn't seem so distant. Why has everything changed in appearance, yet when looking closely, there is so much that has not. I can even more delicately imagine the life of my parents at that time. In the end, I also got to watch half a set of acrobatic shows for free.
+Such precious footage! I love the feel of this photographer, capturing your gaze, fathoming your soul. After watching this lengthy documentary full of mixed emotions, it bridges a lot of historical distance. Should it be called history, though? It doesn't seem so far away, yet appearances and everything have changed, yet on closer inspection, much remains the same. It even allows a more delicate imagination of what my parents' lives were like back then. In the end, we even got to watch half a show of acrobatics for free.

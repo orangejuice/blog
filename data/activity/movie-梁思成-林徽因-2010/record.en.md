@@ -1,6 +1,5 @@
 ---
 title: Liang Sicheng and Lin Huiyin
-slug: liang-sicheng-and-lin-huiyin
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 2010 / Mainland China / Romance Documentary Biography / Hu Jingcao
 ---
 
-The content is overly sensational, seductive, long-winded, and lacks rational refinement. The short and sharp 4-episode behind-the-scenes content is even more comfortable to watch than the main film, which ultimately convinced me to give a score of 5. The content of the 8th episode was a bit surprising. This documentary is worth watching both inside and out, with the 19th-century social changes and personal experiences seen from the early 20th century perspective. All in all, it is unexpectedly good.
+The content is overly melodramatic and lengthy, lacking rational refinement and robust simplicity. The short and compelling 4-episode highlights are even more comfortable to watch than the main film, ultimately persuading me to give it a 5-star rating. The content in episode 8 was somewhat surprising. This documentary is worth watching both inside and out, considering the societal changes and personal experiences of the 19th century through the eyes of the early 20th century. Overall, it's unexpectedly good.

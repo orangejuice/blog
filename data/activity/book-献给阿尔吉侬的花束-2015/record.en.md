@@ -1,6 +1,5 @@
 ---
 title: Flowers for Algernon
-slug: flowers-for-algernon
 category: book
 status: done
 rating: 4
@@ -11,8 +10,8 @@ douban:
   subtitle: "[US] Daniel Keyes / 2015 / Guangxi Normal University Press"
   history:
     - date: 2022-01-14 21:12:29
-      comment: Via 24 Billies
+      comment: Via 24 Billy
       status: todo
 ---
 
-Carrying the pain caused by mental suffering, I finished this work very empathetically. A dull and naive soul, desiring to become smart, to be liked by friends, to be loved, becomes irritable, resentful, self-pitying and resistant once gaining wisdom. He exhausts himself in search of who he is, seeking foolish answers to age-old questions. Life is indeed bitter, with its ups and downs. Doesn't everyone arrive like Charlie, ignorant, and leave in confusion? Abrupt birth, driven by adults to learn language and knowledge, once becoming smart, we start to join adults, start being dissatisfied, start struggling, start suffering, we build a sand castle, then watch it blur and collapse right in front of our eyes... Allow me to let out a mournful howl! Deduct one point for the translation, where the fluency, literariness, and the brilliance and depth of the story do not blend well.
+I endured the agony caused by mental strain and finished this work just like being there. A dull, childish soul who wanted to be smart, loved by friends, and loved, became irritable, resentfull, and self-pitying in loneliness and resistance once he gained intelligence. He exhausted himself searching for himself, finding foolish answers to outdated questions! Indeed, life is sorrowful, with its ebb and flow, and isn’t everyone as ignorant as Charlie at his arrival, leaving confusedly? Suddenly born, driven by adults to learn language and knowledge, becoming smart leads to joining adults, dissatisfaction, competition, and pain. He built a sandcastle only to guard and watch it blur and collapse before his eyes... Allow me to issue a mournful wail! Translation minus one point, fluency and literary quality do not quite blend with the story's brilliance and depth.

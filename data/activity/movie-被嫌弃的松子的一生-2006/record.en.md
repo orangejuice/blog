@@ -1,5 +1,5 @@
 ---
-title: The Life of Oharu
+title: Memories of Matsuko
 category: movie
 status: done
 rating: 5
@@ -7,7 +7,8 @@ year: "2006"
 date: 2020-02-02 18:48:01+08:00
 douban:
   rating: 8.9
-  subtitle: 2006 / Japan / Drama Musical / Tetsuya Nakajima / Miki Nakatani Eita Nagayama
+  subtitle: 2006 / Japan / Drama Musical / Tetsuya Nakashima / Miki Nakatani, Eita
+    Nagayama
 ---
 
-A very ingenious narrative style, with the director's personal touch. An incredibly good film, it deserves over 9 points. I watched it last night and it was painful. Extremely painful. The pain of living, and yet she just died like that in the end. It seems like the author openly states in the end: it doesn't matter how she dies, it's not who killed her, but life, society killed her. The kind-hearted Oharu, such people are not uncommon in life. It also makes me lament over the lifestyle of information deprivation, where insignificant individuals live in small worlds, painfully searching for happiness. Nowadays, more and more people live in the larger world, and they are increasingly numb to present experiences, and easily won't have such pure hopes and perseverance. Moreover, society has changed as well. But some things haven't changed. Gender, whether male or female, still has a huge impact on one's life. I particularly loved the bgm まげてのばして.
+The narrative style is very clever, reflecting the director's personal touch. An extraordinary movie, deserving a score above 9. Watched it last night, and it was heartbreaking. The pain of living was immense, and her death at the end was just so. It felt as if the author explicitly said: It doesn't matter how she died; it wasn't about who killed her, but how life, society did. Matsuko, a character not uncommon in real life, also highlights the insular nature of certain lifestyles. It’s sad how 'small people' in their small worlds desperately seek happiness amidst suffering – a stark contrast to today's broader worlds where people are increasingly desensitized, losing that pure hope and persistence. Moreover, society has changed, yet some things remain the same. Gender still significantly impacts lives. I especially liked the background music 'まげてのばして'.

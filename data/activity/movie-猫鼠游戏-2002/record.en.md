@@ -1,6 +1,5 @@
 ---
 title: Catch Me If You Can
-slug: catch-me-if-you-can
 category: movie
 status: todo
 rating: 0

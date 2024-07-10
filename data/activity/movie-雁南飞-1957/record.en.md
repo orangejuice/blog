@@ -1,6 +1,5 @@
 ---
-title: Geese are Flying South
-slug: geese-are-flying-south
+title: Wild Geese Flying South
 category: movie
 status: done
 rating: 5
@@ -8,16 +7,16 @@ year: "1957"
 date: 2023-09-15 06:11:09+08:00
 douban:
   rating: 8.8
-  subtitle: 1957 / Soviet Union / Drama, Romance, War / Mikhail Kalatozov /
-    Tatyana Samoilova, Alexei Batalov
+  subtitle: 1957 / USSR / Drama Romance War / Mikhail Kalatozov / Tatyana
+    Samoylova Aleksey Batalov
   history:
     - date: 2022-01-21 03:44:36
-      comment: Via tw Yun's Stop
+      comment: Via tw Tingyun
       status: todo
     - date: 2022-01-21 03:44:36
-      comment: Via tw Yun's Stop / Inspired by the movie Ivan's Childhood 1962 which
-        inspired The Young Soldier Zhang Ga 1963
+      comment: Via tw Tingyun / Inspired the movie 'Ivan's Childhood' 1962 which
+        inspired the movie 'The Scout Zhang Ga' 1963
       status: todo
 ---
 
-Although there are traces of performances, they couldn't resist the charm of the camera's language, script, and the actress. The powerlessness of personal fate, the challenges of being human, the greater challenges of being a woman, the stunning beauty of love, the sorrow of love, and the dramatic conflicts that tear at the heart. It's heartbreaking and tear-jerking. Pure, honest, adorable, beautiful, hopeful, and lively women aren't just symbols, but represent expectations in everyone's hearts towards themselves, life, and meaning.
+There are traces of acting, but the language of the camera, the screenplay, and the charm of the actress are overwhelmingly compelling. The powerlessness of personal fate, the difficulty of being human, especially being a woman, the sublime beauty of love, the sorrowful tragedy of love, the conflicts are both dramatic and heart-wrenching. It is truly tear-inducing and heartbreaking. The innocent, genuine, lovely, beautiful woman full of hope and vitality is not merely a symbol, but represents everyone’s aspirations for themselves, life, and meaning.

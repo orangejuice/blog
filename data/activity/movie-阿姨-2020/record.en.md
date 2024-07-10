@@ -1,6 +1,5 @@
 ---
 title: Auntie
-slug: auntie
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: 2020 / France / Documentary / Aël Théry Marine Ottogalli
 ---
 
-On a day at the start of 2022, I watched two videos, one is the opening ceremony of the Beijing Winter Olympics, the other is a Chinese documentary 'Auntie'. The former is very fashionable and advanced perfect, the latter shocked me. An auntie from Anhui sells stir-fried rice and noodles on the streets of Shanghai at night. From the opening scene, I thought it was a small town, but later I found out it was in the Yangpu district according to the name of the community.
+Via Twitter Johnna: At the start of 2022, I watched two videos, one of the Beijing Winter Olympics opening ceremony and one Chinese documentary 'Auntie'. The former was very fashionable, advanced, and perfect; the latter shocked me. An auntie from Anhui, doing stir-fried rice and noodles, selling them on the streets of Shanghai at night. Initially, I thought the setting was in a minor eighteenth-tier county, but after searching by the community name, it turned out to be in Yangpu District.

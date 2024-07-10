@@ -1,6 +1,5 @@
 ---
-title: Light Snowfall
-slug: light-snowfall
+title: Tsugaru
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: "[Japan] Osamu Dazai / 2017 / Sichuan Literature and Art Publishing House"
 ---
 
-Through the sound of snowfall
+Via tw ting yun

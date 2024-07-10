@@ -1,6 +1,5 @@
 ---
-title: Money Dog
-slug: money-dog
+title: Money-Smart Kids
 category: book
 status: todo
 rating: 0
@@ -8,7 +7,7 @@ year: 2021-2
 date: 2023-09-20 17:22:32+08:00
 douban:
   rating: 9.2
-  subtitle: "[Germany] Bodo Schäfer / 2021 / CITIC Publishing Group"
+  subtitle: by Bodo Schäfer / 2021 / CITIC Publishing Group
 ---
 
-According to a tweet by User Lao Bai, it's common to see comments like 'I regret not reading this book earlier!' in the book reviews of 'Money Dog' on Douban. If you are the kind who keeps your money in Yu'E Bao merely earning pennies in interest, always owing money to Huabei, spending all your monthly allowance without any savings, then this book is here to give you money. It's full of practical content that overthrows all your misconceptions about financing. It helps you establish a proper view of consumption and finance, teaching you how to make money work for you, how to choose funds, how to allocate assets, etc. After reading this book, I gradually transformed from a 'Huabei addict', who spends money recklessly, into a rational consumer with my own little treasure chest. I later invested in funds, and all my profits were positive. I'm truly thankful for this book.
+Via Twitter user Lao Bai, reviews on Douban frequently express regret for not having read this book earlier. If you're someone whose money is idling in Yu'E Bao earning minimal interest, perpetually owing on Huabei, spending your entire monthly allowance without saving anything, then 'Money-Smart Kids' is like a financial rescue. The book is packed with practical advice. You'll overturn your flawed financial concepts as it helps you develop proper spending and investing attitudes. You'll understand how to make your money work for you, how to choose funds, and how to allocate assets, among other things. After reading this book, I gradually transitioned from a frivolous spender to a sensible consumer with my own savings, and later my investments in funds all showed profitable returns. I'm truly grateful for this book.

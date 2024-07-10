@@ -1,6 +1,5 @@
 ---
-title: "World War II: The Frontline Perspective"
-slug: world-war-ii-the-frontline-perspective
+title: "World War II: A Frontline Perspective"
 category: movie
 status: done
 rating: 2
@@ -11,4 +10,4 @@ douban:
   subtitle: 2023 / UK / Documentary / Rob Coldstream
 ---
 
-The film clips are too fragmented, with a strong sense of patching, reducing documentary value. The post-production is cheap, and gives a cursory view. There is not a single scene of the Asian battlefield. How can it be called a World War?
+The film clips are too fragmented, with a strong sense of patchwork, and low documentary value. The post-production is cheap and rushed through. Not a single scene from the Asian battlefield is shown, making it hard to call it a 'world' war.

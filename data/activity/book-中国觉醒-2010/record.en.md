@@ -1,6 +1,5 @@
 ---
-title: China Wakes
-slug: china-wakes
+title: The Awakening of China
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Ding Weiliang / 2010 / World Book Publishing Company
 ---
 
-American missionary Ding Weiliang described his amazement experiencing Hangzhou for the first time in 1855, in his 1907 book 'China's Awakening'. He wrote: 'The city still retains majestic relics of the Southern Song imperial city. Decorating the West Lake are countless pavilions, lotus flowers, and water lilies, all exuding a royal charm; the long city wall encircles hills and valleys; the entire city is situated high above, overlooking a wide mouth of a river flowing into the sea. All these elements give this city its noble and solemn charm. We preached to a respectful audience in a public square. An elegantly dressed gentleman squeezed in and invited us to tea at his house, expressing that he would be ashamed if any Western scholars were to pass through their city without receiving any courtesies. How humble and hospitable! Could the Hebrews and Arabs be as welcoming?'
+via Twitter, Xu Laomao. American missionary Ding Weiliang described his awe-inspiring visit to Hangzhou in 1855 in his 1907 book 'The Awakening of China.' “This city still retains the magnificent relics of the Southern Song imperial city. Surrounded by the lake, countless pavilions, towers, and lotus ponds add a regal touch; encircled by a long wall, one can see hills and valleys; the city sits high and overlooks the wide mouth of a great river entering the sea. All these endow the city with a dignified and noble charm. We preached in a public square to a large and respectful audience, when a well-dressed gentleman squeezed through and invited us to his home for tea. He said that if those Western scholars passed through their city without showing respect, he would be ashamed. How humble and attentive! Could the Hebrews and Arabs be so warmly hospitable?”

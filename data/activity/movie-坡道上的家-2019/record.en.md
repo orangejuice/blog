@@ -1,5 +1,5 @@
 ---
-title: A Home on the Slope
+title: The House on the Slope
 category: movie
 status: done
 rating: 3
@@ -7,8 +7,8 @@ year: "2019"
 date: 2020-02-16 01:18:50+08:00
 douban:
   rating: 9
-  subtitle: 2019 / Japan / Drama Mystery Family Crime / Yudai Morikawa / Yuki
-    Chizaki Miki Mizuno
+  subtitle: 2019 / Japan / Drama Mystery Family Crime / Yuudai Morigaki / Kousuke
+    Shibasaki, Miki Mizuno
 ---
 
-The story is overly tedious and long-winded, whether it's the characters or the advancement of the plot, everything proceeds at a snail's pace, significantly reducing the emotional impact. There's no suspense, just an anxious wait for the story's climax. I quickly watched from the start of the fifth episode, and the ending was an expected reunion. I might rate this drama 8 out of 10 at best. Of course, it's not to say that the issue the theme wants to reveal is not serious. Looking at the comments, many people have finally found an outlet to vent, there are too few works in this area. The topicality exceeds the enjoyment.
+The story is too verbose and lengthy, with both characters and plot development slowly progressing, which significantly reduces its emotional impact. There's no real suspense, only a tense waiting for the climax of the story. I started to skip through the episodes from the fifth one, and the ending, as expected, was a predictable reunion. I might rate this show at most 8 out of 10. That’s not to say the theme it seeks to reveal isn't severe. Reading the comments, it's clear that many people finally found an outlet for expression, a rarity in such works. The topicality outweighs its watchability.

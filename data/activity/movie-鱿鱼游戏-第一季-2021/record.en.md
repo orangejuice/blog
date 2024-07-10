@@ -1,6 +1,5 @@
 ---
 title: Squid Game Season 1
-slug: squid-game-season-1
 category: movie
 status: done
 rating: 3
@@ -8,8 +7,8 @@ year: "2021"
 date: 2021-10-07 22:38:05+08:00
 douban:
   rating: 7.7
-  subtitle: 2021 / South Korea / Mystery Thriller / Dong-hyuk Hwang / Lee
-    Jung-jae, Park Hae-soo
+  subtitle: 2021 / South Korea / Mystery Thriller / Dong-hyuk Hwang / Jung-jae
+    Lee, Hae-soo Park
 ---
 
-The show targets the psychology of the audience, with adrenaline surging and a test of human nature as a group of people fight for their lives. The scope and imagined space are too small, and as the inside story is revealed bit by bit, it feels more and more out of control, with many parts lacking in logic. The Korean-style performance is strong, and the quirky and secondary characters are particularly nervous, with awkward dialogues. The game scenes are full of tension and fully powered, the glass bridge is a bit meaningless, the show for the VIPs is not much fun, flying all the way to South Korea just to watch a dual fight? A bit of a joke. The ending also lacks meaning. Start preaching the Virgin Mary, the reasons do not seem sufficient. The reason I came to watch this drama is that it sparked a hotspot, basically in line with expectations.
+Targeting the psychology of the audience, adrenaline surges and the test of human nature, a group of people struggle for life and death in an instant. The scope and imagination are still too small; as the secrets are unveiled, it feels increasingly unmanageable, with many parts lacking logic. The Korean style of acting is intense, with peculiar and minor characters especially nerve-wracking, and the dialogue is awkward. The game sequences are very tense, going full throttle. The glass bridge scene was lacking, and the show for the VIPs wasn’t very interesting, flying all the way to Korea just to watch a dual combat? Somewhat humorous. The ending was also lacking, starting to preach, and the reasoning doesn’t feel sufficient. This series exploded into popularity, which is why I watched it, and it mostly met my expectations.

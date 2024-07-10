@@ -1,6 +1,5 @@
 ---
-title: Big Breasts and Wide Hips
-slug: big-breasts-and-wide-hips
+title: Garlic Ballads
 category: book
 status: todo
 rating: 0

@@ -1,6 +1,5 @@
 ---
 title: Pretty Woman
-slug: pretty-woman
 category: movie
 status: todo
 rating: 0

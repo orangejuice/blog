@@ -1,7 +1,5 @@
 ---
-title: "Artistic Life: The Cast of 'A Dream of Red Mansions' Reunites 20 Years
-  Later (3-Disc VCD Set)"
-slug: artistic-life-the-cast-of-a-dream-of-red-mansions-reunites-20-years-later-3-disc-vcd-set
+title: Red Chamber Dream Crew Reunion 20 Years Later, 3-Disc Set (VCD)
 category: book
 status: done
 rating: 5
@@ -13,4 +11,4 @@ douban:
     International Television Corporation
 ---
 
-I'm grateful that the source I downloaded included this program. After watching the drama, I stayed up late to watch the reunion, and I cried more than during the drama itself. It seemed as though the story of this troupe's before and after the television drama became a unique tale.
+Grateful that the download included this program, I stayed up after watching the series to finish 'Reunion,' shedding more tears than the program itself. It's as if the production of the crew, combined with the television drama, forged a unique story.

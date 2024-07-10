@@ -1,6 +1,5 @@
 ---
 title: Eyes Wide Shut
-slug: eyes-wide-shut
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,4 @@ douban:
     Cruise Nicole Kidman
 ---
 
-Via tw 停云, “Kubrick's last film. It mocks the world to the utmost, money, consumption, class, loyalty, marriage... Nicole is beautiful. At the end of the movie, she said: 'Never say forever, it sounds terrifying.'”
+Via Twitter by Tingyun, "Kubrick's last film. A scathing satire of this world, mocking everything from money, consumerism, class, fidelity, to marriage... Nicole is stunning. At the end of the movie, she says: 'Don't say forever, it sounds terrifying.'"

@@ -1,6 +1,5 @@
 ---
 title: Dreams
-slug: dreams
 category: movie
 status: todo
 rating: 0
@@ -8,12 +7,11 @@ year: "1990"
 date: 2024-01-30 05:10:51+08:00
 douban:
   rating: 8.7
-  subtitle: 1990 / Japan USA / Drama Fantasy / Akira Kurosawa / Toshiharu
-    Terajima, Mitsuko Baisho
+  subtitle: 1990 / Japan USA / Drama Fantasy / Akira Kurosawa / Terao Akira, Mieko Harada
 ---
 
-Movies like "Kwaidan", directed by Masaki Kobayashi in 1965, and "Dreams", directed by Akira Kurosawa in his later years, are truly among the most irresistible strange films for me. Even a movie like "A Ship Bound for Land", which I consider the greatest film in history, I wouldn't watch as many times and still never tire of it. 
+Via Twitter, Ignatius Lee mentioned that movies like Kobayashi Masaki's 1965 film 'Kwaidan' and Akira Kurosawa's later film 'Dreams' are among the most irresistibly bizarre films for him. Even for 'A Ship on Land', which he regards as the everlasting number one in film history, he wouldn't watch it as often and still finds 'Dreams' endlessly fascinating.
 
-I can't explain why I like strange things so much. In fact, I don't particularly like horror films, nor do I like surreal films. But Japanese strange films seem to fully satisfy my entire imagination of East Asian history. 
+I can't explain why I love such bizarre things. I neither like horror films nor surrealism ones. But Japanese bizarre films seem to perfectly satisfy my imagination about East Asian history.
 
-When East Asians tell ghost stories, it's not just for sensory stimulation, as these tales always involve deep affection and clear moral ethics. Ghosts and other creatures are more human than humans. Maybe the ideal form of humanity is to become these supernatural beings.
+When Eastern Asians tell ghost and monster tales, it's not just for sensory thrill; it's always embedded with deep emotions and clear moral ethics. Ghosts and monsters seem to have more humanity. Perhaps the ideal state of being is to become one of these supernatural beings.

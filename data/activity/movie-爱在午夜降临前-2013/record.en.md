@@ -7,8 +7,8 @@ year: "2013"
 date: 2019-10-06 02:53:20+08:00
 douban:
   rating: 8.9
-  subtitle: 2013 / USA Greece / Drama Romance / Richard Linklater / Ethan Hawke
-    Julie Delpy
+  subtitle: 2013 / USA Greece / Drama Romance / Directed by Richard Linklater /
+    Starring Ethan Hawke, Julie Delpy
 ---
 
 

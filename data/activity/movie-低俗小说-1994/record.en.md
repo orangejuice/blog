@@ -11,4 +11,4 @@ douban:
     Uma Thurman
 ---
 
-Very cool and joyful little stories, as well as little philosophies about ambiguous affections. We act like they don't, but they do. That's what's so fuck'in cool about them. There is a senseous thing goin' on, where you don't talk about it, but you know it and she knew it.
+Cool and joyful little stories, along with little philosophies about ambiguous affections. We act like they don't, but they do. That's what's so fuck'in cool about them. There is a sensuous thing goin' on, where you don't talk about it, but you know it and she knew it.

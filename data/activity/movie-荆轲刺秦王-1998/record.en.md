@@ -1,6 +1,5 @@
 ---
-title: The Emperor and the Assassin
-slug: the-emperor-and-the-assassin
+title: Jing Ke's Assassination of King Qin
 category: movie
 status: done
 rating: 4
@@ -8,8 +7,8 @@ year: "1998"
 date: 2020-09-03 05:17:49+08:00
 douban:
   rating: 8.2
-  subtitle: 1998 / Mainland China Japan France / Drama Historical Costume /
-    Directed by Chen Kaige / Gong Li, Zhang Fengyi
+  subtitle: 1998 / Mainland China, Japan, France / Drama, History, Costume /
+    Directed by Chen Kaige / Starring Gong Li, Zhang Fengyi
 ---
 
-Surprisingly, there is such a renowned yet obscure movie. The faces of old actors can be seen everywhere, and the style of every character's portrayal has a certain similarity, all insane, cruel. It has a somewhat theatrical taste, but it takes itself very seriously, creating a sense of the ridiculous and absurd.
+It's surprising that such an obscure yet famous film exists, featuring faces of veteran actors everywhere. The style of each character's performance has similarities - frenzied, cruel. There's a flavor of dramatization, yet it's performed with seriousness, creating a sense of the absurd and comical.

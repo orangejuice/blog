@@ -1,6 +1,5 @@
 ---
 title: Prisoners of Geography
-slug: prisoners-of-geography
 category: book
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: Tim Marshall / 2015 / Elliott & Thompson
 ---
 
-It's a general knowledge introduction worth reading, I've only read part 2 so far.
+It's a very worthwhile general knowledge introduction; I have only read Part 2 so far.

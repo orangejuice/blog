@@ -1,6 +1,5 @@
 ---
-title: Child in the Fog
-slug: child-in-the-fog
+title: Children in the Mist
 category: movie
 status: todo
 rating: 0
@@ -11,8 +10,8 @@ douban:
   subtitle: 2021 / Vietnam / Documentary / He Liyan
   history:
     - date: 2023-01-10 05:11:05
-      comment: Via tw Travel to the Apple Orchard
+      comment: Via tw Swimming to the Apple Grove
       status: todo
 ---
 
-Via tw Travel to the Apple Orchard / via tw Cat God Best Documentary 'Child in the Fog': Using customs to cover up the bad practice of forced marriages, a 14-year-old girl was brutally forced into marriage, and one can sense the despair through the lens
+Via tw Swimming to the Apple Grove / via tw Cat God Best Documentary "Children in the Mist": Using customs to cover up the bad practice of bride kidnapping, a 14-year-old girl is brutally kidnapped for marriage, and through the lens, one can feel the despair

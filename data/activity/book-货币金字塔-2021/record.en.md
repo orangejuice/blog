@@ -1,6 +1,5 @@
 ---
-title: The Money Pyramid
-slug: the-money-pyramid
+title: The Currency Pyramid
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Nik Bhatia / 2021 / Social Sciences Academic Press
 ---
 
-Via Foresight News, 'The Money Pyramid.' This book is thin and is a popular science reading material that opens up thoughts and broadens horizons. It gives a prediction of the future. The book is mainly about the evolution of money, and a mental framework of how future cryptocurrencies as a top-level currency will derive credit money. I personally highly agree with this view in the book, I think the future is headed in this direction.
+Via foresight news Shenfish, 'The Currency Pyramid' is a thin book, serving as an introductory text that can open up one’s thinking and broaden horizons, offering foresight into the future. The book mainly discusses the evolution of currency and frames a conceptual model on how cryptocurrencies will serve as a top-tier form of money, deriving credit money in the future. I personally agree with this perspective from the book and believe that it is the direction things are headed towards.

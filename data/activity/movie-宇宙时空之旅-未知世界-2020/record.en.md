@@ -1,6 +1,5 @@
 ---
-title: "Cosmic Time Travel: Unknown Worlds"
-slug: cosmic-time-travel-unknown-worlds
+title: "Journey Through Space-Time: Unknown Worlds"
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 2020 / USA / Documentary / Ann Druyan, Brannon Braga / Neil deGrasse Tyson
 ---
 
-A bit philosophical, a bit techie, a bit past, a bit future, full of scientific romance. The ending is also incredibly romantic! The drama script is organized a bit too romantically, almost like literature, with subtlety, flashbacks, and echoes. Who cares, just watching these unprecedented views is very satisfying.
+A mix of philosophy and technology, a touch of the past and the future, filled with the romance of science. The ending is exceedingly romantic! The script occasionally veers into the excessively romantic, almost literary, with its subtlety, interjections, and resonance. But who cares, just witnessing these unprecedented sights is satisfying enough.

@@ -1,6 +1,5 @@
 ---
 title: Never Ending
-slug: never-ending
 category: movie
 status: done
 rating: 5
@@ -8,8 +7,7 @@ year: "1999"
 date: 2022-10-30 18:07:33+08:00
 douban:
   rating: 7.7
-  subtitle: 1999 / Mainland China / Drama Comedy / Directed by Feng Xiaogang /
-    Starring Ge You and Wu Qianlian
+  subtitle: 1999 / Mainland China / Drama Comedy / Feng Xiaogang / Ge You, Wu Qianlian
 ---
 
-The two leading actors, Ge You and Fu Biao, delivered truly captivating performances. It's humorous, it's poignant, and it's aspirational, demonstrating a high level of maturity. The movie provides audiences with a satisfyingly happy ending. It was precisely 1999, and the 21st century was just around the corner. With the new century, things are bound to get better.
+The two main actors, Ge You and Fu Biao, delivered truly captivating performances. The film, with its light humor, touches of melancholy and aspirations, showcases a mature depth, providing the audience with a satisfyingly rounded conclusion. It was indeed 1999, on the brink of the 21st century, a time when everything was about to change for the better.

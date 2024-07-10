@@ -1,6 +1,5 @@
 ---
 title: "Pets: Wild at Heart"
-slug: pets-wild-at-heart
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 2015 / UK / Documentary / John Downer / David Tennant
 ---
 
-This is a rather relaxing and healing documentary, full of adorable and heartwarming animals. There are a lot of little-known facts. For instance, guinea pig fathers stay to wait for the guinea pig mothers during childbirth... Tamed cats no longer leave their scent to demonstrate their obedience. The camera placement is too perfect, each little story seems to be edited according to the narrative, which takes away some authenticity. Really like the horse, big and strong, its gentle eyes bring great security.
+A rather relaxing and healing documentary, filled with fluffy, adorable, and warm-hearted little animals. It contains many obscure facts, such as how guinea pig fathers wait around for guinea pig mothers to give birth, and post-birth... Domesticated cats no longer leave their own scent to demonstrate their submissiveness. The camera positions are too perfect, and each little story seems like it was edited to follow a narrative, losing a bit of authenticity. I really like the horses, big and robust, with gentle eyes, providing a sense of security.

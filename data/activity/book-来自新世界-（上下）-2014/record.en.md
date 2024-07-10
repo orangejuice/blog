@@ -1,6 +1,5 @@
 ---
-title: From the New World (Volumes 1 & 2)
-slug: from-the-new-world-volumes-1-2
+title: From the New World (Parts 1 & 2)
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: "[Japan] Yusuke Kishi / 2014 / Shanghai Translation Publishing House"
 ---
 
-User 'San Ri Yue' comments 'From the New World' is one of the top three animations in my view. The original work is a contemporary masterpiece with a score of 120, and the animation scores 90. As an archetype of dystopian thought, 'From the New World' is an outstanding animation. But it also serves as a contrast because most of the masterpieces in animation are still child's play. The strongest aspect of 'From the New World' is its settings, which are precise and scientific. First, the settings are extremely self-consistent, so I, someone with obsessive-compulsive logic, can watch it calmly. Second, the political metaphors in the settings are too close to societal realities.
+Via Twitter, Crescent Moon: 'From the New World' is one of the top three animations in my view. It is an original work scoring 120 - a classic of our time. Its adaptation into an animation gets a 90. As a dystopian masterpiece, it obviously excels among animations in terms of ideological depth. However, it also highlights by contrast that most well-known animations are merely pandering to children. The strongest aspect of 'Shinsekai Yori' is its setting - rigorously scientific - firstly, because the setting is incredibly self-consistent which allows someone with a compulsion for logic like me to comfortably engage with it... Secondly, its political allegories are strikingly close to societal realities.

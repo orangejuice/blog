@@ -7,8 +7,8 @@ year: "2015"
 date: 2020-01-26 23:40:26+08:00
 douban:
   rating: 8.8
-  subtitle: 2015 / Ireland Canada UK USA / Drama Family / Lenny Abrahamson / Brie
-    Larson Jacob Tremblay
+  subtitle: 2015 / Ireland Canada UK USA / Drama Family / Directed by Lenny
+    Abrahamson / Starring Brie Larson, Jacob Tremblay
 ---
 
-The world is real, painful. 'Old Nick' somehow breaks the immersion, adding a bit of jest, ridiculousness and gentleness.
+This world, real, painful. Old Nick's performance pulls one out of the immersion, adding a touch of mockery, humor, and tenderness.

@@ -1,6 +1,5 @@
 ---
 title: The Storied Life of A.J. Fikry
-slug: the-storied-life-of-aj-fikry
 category: book
 status: todo
 rating: 0
@@ -8,10 +7,9 @@ year: 2015-5-1
 date: 2024-04-01 23:33:42+08:00
 douban:
   rating: 7.5
-  subtitle: "[US] Gabrielle Zevin / 2015 / Jiangsu Phoenix Literature and Art
-    Publishing House"
+  subtitle: by Gabrielle Zevin / 2015 / Jiangsu Phoenix Literature and Art Publishing
 ---
 
-Via tw Huangpu Memory, there is the most difficult year in everyone's life, making life wonderful and expansive. 
+Via Twitter @HuangpuMemory, everyone has the hardest year in their life that makes life beautiful and expansive.
 
-—Gabrielle Zevin, "The Storied Life of A.J. Fikry"
+—from 'The Storied Life of A.J. Fikry' by Gabrielle Zevin

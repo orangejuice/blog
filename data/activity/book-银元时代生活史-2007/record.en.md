@@ -1,6 +1,5 @@
 ---
-title: "The Silver Dollar Era: A History of Life"
-slug: the-silver-dollar-era-a-history-of-life
+title: History of Life in the Silver Yuan Era
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Chen Cunren / 2007 / Guangxi Normal University Press
 ---
 
-Via tw Xu Laomao, 'The Silver Dollar Era: A History of Life' is a series of texts recalling life in Shanghai in the 1930s, serialized in Hong Kong newspapers in the mid to late last century, written by a doctor named Chen Cunren. I bought a copy of this book when it was published in China more than 20 years ago, and it has become my favorite leisure reading over the years, flipping through it whenever I have time. If you want to understand the real situation of old Shanghai, this book is almost the most vivid and most grounded in daily life I have seen.
+Via Twitter, Mr. Old Cat: 'History of Life in the Silver Yuan Era' consists of serialized remembrances in a Hong Kong newspaper describing life in 1930s Shanghai. The author is a doctor named Chen Cunren. Over 20 years ago, when this book was published in China, I bought a copy and it became one of my favorite leisure reads for several years, always flipping through it whenever I had the chance. If you want to understand the real conditions of old Shanghai, this book is perhaps the most vivid and authentically rooted in everyday life that I have encountered.

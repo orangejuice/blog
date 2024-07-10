@@ -1,6 +1,5 @@
 ---
 title: Lolita
-slug: lolita
 category: book
 status: todo
 rating: 0
@@ -8,7 +7,7 @@ year: 1989-5
 date: 2024-01-09 08:13:22+08:00
 douban:
   rating: 8.8
-  subtitle: Vladimir Nabokov / 1989 / Lijiang Publishing House
+  subtitle: Vladimir Nabokov / 1989 / Li River Publishing
 ---
 
-Via tw 停云, 'Lolita' is a double-edged sword. It is both a truly great masterpiece of genius and a strong poison. On one hand, it possesses the most unique writing style, the most gripping rhythm, and the most powerful allure. On the other hand, it normalizes the sexualization of underage females.
+Tweeted by Ting Yun, 'Lolita' is a double-edged sword; it is both a truly great work of genius and a poison. It boasts a unique style, the most captivating rhythm, and the strongest allure, while simultaneously normalizing the sexualization of underage girls.

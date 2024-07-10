@@ -1,6 +1,5 @@
 ---
 title: Dirty Money Season 1
-slug: dirty-money-season-1
 category: movie
 status: todo
 rating: 0
@@ -8,9 +7,8 @@ year: "2018"
 date: 2023-12-03 05:55:45+08:00
 douban:
   rating: 8.7
-  subtitle: 2018 / USA / Documentary / Directed by Erin Lee Carr, Alex Gibney,
-    Brian McGinn, Fisher Stevens, Jesse Moss, Kristi Jacobson, starring Alberto
-    Ayala, A.J. Banzai
+  subtitle: 2018 / USA / Documentary / Erin Lee Carr, Alex Gibney, Brian McGinn,
+    Fisher Stevens, Jesse Moss, Christy Jacobson / Alberto Ayala, A.J. Bance
 ---
 
-From the heavily victimized payday loans to automobile exhaust emission test frauds, this investigative series exposes the brazenly corrupt practices of corporations.
+From predatory payday loans to the rigged exhaust emissions tests by cars, this investigative series exposes the brazen corruption of corporations.

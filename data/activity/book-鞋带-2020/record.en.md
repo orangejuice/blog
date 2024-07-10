@@ -1,6 +1,5 @@
 ---
 title: Shoelaces
-slug: shoelaces
 category: book
 status: todo
 rating: 0
@@ -11,6 +10,4 @@ douban:
   subtitle: "[Italy] Domenico Starnone / 2020 / Shanghai Translation Publishing House"
 ---
 
-Via tw Doudou, all the new scenes of this era are just dazzling covers over the previous era, and under modern decoration, those old thoughts and psychologies will still resurface. 
-
--Domenico Starnone "Shoelaces"
+Via Twitter by Doudou: Everything new in this age is just a dazzling veil cast over the previous era. Beneath the modern adornment, those obsolete thoughts and psychologies still surge up. —— Domenico Starnone “Shoelaces”

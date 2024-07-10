@@ -1,6 +1,5 @@
 ---
-title: The Almanack of Naval Ravikant
-slug: the-almanack-of-naval-ravikant
+title: The Naval Codex
 category: book
 status: todo
 rating: 0
@@ -8,44 +7,27 @@ year: 2022-4
 date: 2022-12-30 23:12:29+08:00
 douban:
   rating: 8.4
-  subtitle: "[United States] Eric Jorgenson / 2022 / CITIC Press Group"
+  subtitle: "[USA] Eric Jorgenson / 2022 / CITIC Press"
   history:
     - date: 2022-12-30 23:12:29
-      comment: >-
-        Via tw jiayuan. Re-read many books in 2022 and among them, The Almanack
-        of Naval Ravikant is the one I recommend the most.
-
-
-        I have already read the English version at the beginning of 2021 and
-        recently re-read it. Initially, you may find many of the maxims in it
-        meaningful, but only after truly practicing them you will understand
-        their profound implications.
-
-
-        Naval’s two core life philosophies: evolution + rational buddhism, the
-        former refers to genes, the latter is to combat genes through
-        introspection.
+      comment: "Via tw jiayuan Revisited many books in 2022, and 'The Naval Codex' is
+        the one I recommend the most. I had already read the English version in
+        early 2021 and recently re-read it. Many of the maxims initially make
+        sense, but only through true practice can one grasp their deeper
+        meanings. Naval's two key life philosophies: Evolutionary theory +
+        Rational Buddhism; the former pertains to genes, while the latter
+        involves using introspection to combat genetic predispositions."
       status: todo
     - date: 2022-12-30 23:12:29
-      comment: >-
-        Via tw bitwu.eth / Via tw jiayuan. Re-read many books in 2022 and among
-        them, The Almanack of Naval Ravikant is the one I recommend the most.
-
-
-        I have already read the English version at the beginning of 2021 and
-        recently re-read it. Initially, you may find many of the maxims in it
-        meaningful, but only after truly practicing them you will understand
-        their profound implications.
-
-
-        Naval’s two core life philosophies: evolution + rational buddhism, the
-        former refers to genes, the latter is to combat genes through
-        introspection.
+      comment: "Via tw bitwu.eth / Via tw jiayuan Revisited many books in 2022, and
+        'The Naval Codex' is the one I recommend the most. I had already read
+        the English version in early 2021 and recently re-read it. Many of the
+        maxims initially make sense, but only through true practice can one
+        grasp their deeper meanings. Naval's two key life philosophies:
+        Evolutionary theory + Rational Buddhism; the former pertains to genes,
+        while the latter involves using introspection to combat genetic
+        predispositions."
       status: todo
 ---
 
-Via tw bitwu.eth / Via tw jiayuan. Re-read many books in 2022 and among them, The Almanack of Naval Ravikant is the one I recommend the most.
-
-I have already read the English version at the beginning of 2021 and recently re-read it. Initially, you may find many of the maxims in it meaningful, but only after truly practicing them will you understand their profound implications.
-
-Naval’s two core life philosophies: evolution + rational buddhism, the former refers to genes, the latter is to combat genes through introspection. Don't cooperate with those who are cynical and pessimistic, their prophecy will be self-fulfilling.
+Via tw bitwu.eth / Via tw jiayuan Revisited many books in 2022, and 'The Naval Codex' is the one I recommend the most. I had already read the English version in early 2021 and recently re-read it. Many of the maxims initially make sense, but only through true practice can one grasp their deeper meanings. Naval's two key life philosophies: Evolutionary theory + Rational Buddhism; the former pertains to genes, while the latter involves using introspection to combat genetic predispositions. /via tw xiaofeng Never collaborate with those who are resentful, cynical, and pessimistically negative, as their prophecies will fulfill themselves.

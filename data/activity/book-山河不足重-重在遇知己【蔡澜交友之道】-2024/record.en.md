@@ -1,7 +1,6 @@
 ---
-title: Mountains and Rivers are Insignificant, What Matters is Finding a Kindred
-  Spirit【The Way of Making Friends by Cai Lan】
-slug: mountains-and-rivers-are-insignificant-what-matters-is-finding-a-kindred-spiritthe-way-of-making-friends-by-cai-lan
+title: Mountains and Rivers Are Insignificant, What Matters Is Finding True
+  Friends [The Way Choi Lan Mingles]
 category: book
 status: todo
 rating: 0
@@ -9,8 +8,8 @@ year: 2024-4
 date: 2024-06-09 15:11:06+08:00
 douban:
   rating: 8.9
-  subtitle: Written by Cai Lan, Produced by Coolway Culture / 2024 / Jiangsu
-    Phoenix Literature and Art Publishing House
+  subtitle: Written by Choi Lan, produced by Coolway Culture / 2024 / Jiangsu
+    Phoenix Literature and Art Publishing
 ---
 
-Via tw Hide and Seek
+Via Twitter hide and seek

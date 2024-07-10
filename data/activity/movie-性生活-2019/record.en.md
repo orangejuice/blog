@@ -1,6 +1,5 @@
 ---
-title: Sex Life
-slug: sex-life
+title: Sex Lives
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: 2019 / USA / Documentary / Rev Rucifer Barbara Ann Duffy
 ---
 
-Via tw to chase a deer
+Via Twitter to follow a deer

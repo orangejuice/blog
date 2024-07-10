@@ -1,6 +1,5 @@
 ---
-title: Criminal Investigation Chronicles in Western China
-slug: criminal-investigation-chronicles-in-western-china
+title: Major Criminal Investigation Cases in Western China
 category: movie
 status: todo
 rating: 0

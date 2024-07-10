@@ -1,6 +1,5 @@
 ---
 title: Ulysses
-slug: ulysses
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: "[Ireland] James Joyce / 2012 / People's Literature Publishing House"
 ---
 
-via tw Dou Xiaodou, Every life is composed of many days, one after another. We move forward through ourselves, encountering robbers, ghosts, giants, old men, young men, daughters-in-law, widows, loving brothers, but we will always encounter ourselves. - James Joyce "Ulysses"
+via Twitter by Dou Xiaodou - Every life is made up of many days, day after day. We move forward through our own lives, encountering robberg, ghosts, giants, old people, young people, daughters-in-law, widows, and loving brothers, but what we always encounter is ourselves. — James Joyce, "Ulysses"

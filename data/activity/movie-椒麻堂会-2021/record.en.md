@@ -1,6 +1,5 @@
 ---
-title: The Meeting at Pepper and Szechuan Hall
-slug: the-meeting-at-pepper-and-szechuan-hall
+title: Jiao Ma Tang Hui
 category: movie
 status: todo
 rating: 0
@@ -8,8 +7,9 @@ year: "2021"
 date: 2023-01-20 17:02:16+08:00
 douban:
   rating: 8.6
-  subtitle: 2021 / Hong Kong, China, France / Drama / Directed by Jiu Jingjing /
-    Starring Yi Sicheng and Guan Nan
+  subtitle: 2021 / Hong Kong China France / Drama / Qiu Jiongjiong / Yi Sicheng Guan Nan
 ---
 
-After watching 'The Meeting at Pepper and Szechuan Hall' through tw nfcloud, I was left in a state of nothingness. The film is an almost perfect combination of movie and Sichuan opera, with the director's unfettered imagination resulting in a surrealistic blend of reality and fantasy. Spanning over half a century, the movie presents a whirl of life's joys and sorrows as fleeting as smoke. Without a doubt, this film is one of the best Chinese-language films of the decade, with some even comparing it to 'Farewell My Concubine'. Regardless of whether it reaches greatness, 'The Meeting at Pepper and Szechuan Hall' is worth a watch. 9.5 out of 10.
+Watched 'Jiao Ma Tang Hui' via tw nfcloud and was left feeling completely void. The film combines Sichutan Opera and cinema nearly perfectly, showcasing the director's boundless imagination. Reality and fantasy intertwine in the most absurd and extraordinary ways. This 3-hour movie spans over half a century, depicting the changing tides of life and the myriad of human emotions, as ephemeral as clouds and smoke.
+
+Undoubtedly one of the best Chinese-language films of the decade, some even compare it to 'Farewell My Concubine'. Whether it reaches the heights of greatness or not, 'Jiao' is definitely worth watching, 9.5

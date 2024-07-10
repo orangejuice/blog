@@ -10,4 +10,4 @@ douban:
   subtitle: 1995 / Japan / Drama Romance / Shunji Iwai / Miho Nakayama, Etsushi Toyokawa
 ---
 
-The romantic and subtle infatuation disguised as alienation that is unique to student life. In my twenties, I realized that time had already passed. Everyone should have such a memory in their life, because everyone's life should have such a memory. It would be better with fewer regrets.
+The unique romantic subtlety and deliberately distant unrequited love of school days. Now in my twenties, I realize that time has long passed. Everyone has such a memory in their life, because everyone should have such a memory. With fewer regrets, it would be even better.

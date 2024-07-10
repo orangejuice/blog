@@ -1,6 +1,5 @@
 ---
 title: Central Station
-slug: central-station
 category: movie
 status: done
 rating: 5
@@ -12,4 +11,4 @@ douban:
     Marília Pêra
 ---
 
-A great movie with heartfelt friendship, love, intimate relationships, life changes, self-discovery, and the exploration of innate kindness. The leading lady's performance is outstanding, I loved it. She is the soul of the entire movie.
+An amazing movie filled with sincere friendships, familial and romantic love, intimate relationships, life changes, self-discovery, and the uncovering of inherent goodness. The lead actress's performance is phenomenal; she truly embodies the soul of the film.

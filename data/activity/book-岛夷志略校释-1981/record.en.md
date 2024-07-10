@@ -1,6 +1,5 @@
 ---
-title: "Brief Account of Island Barbarians: Annotated version"
-slug: brief-account-of-island-barbarians-annotated-version
+title: A Brief Record of the Barbarian Islands - Annotated Edition
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Wang Dayuan / 1981 / Zhonghua Book Company
 ---
 
-Via Podcast 'Suddenly Left Suddenly Right 281' Private Navigation Zheng He reference book
+From Podcast 'Hū Zuo Hū Yòu 281' Personal Sailing Reference book for Zheng He

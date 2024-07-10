@@ -1,6 +1,5 @@
 ---
 title: Spring in a Small Town
-slug: spring-in-a-small-town
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: 1948 / Mainland China / Drama Romance / Fei Mu / Li Wei Wei Wei
 ---
 
-Via twitter Stopping Cloud
+Via tw 停云

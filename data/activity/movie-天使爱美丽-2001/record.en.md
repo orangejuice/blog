@@ -1,6 +1,5 @@
 ---
 title: Amélie
-slug: amlie
 category: movie
 status: done
 rating: 3
@@ -12,4 +11,4 @@ douban:
     Audrey Tautou Mathieu Kassovitz
 ---
 
-Amélie is sensitive and lives in a richly imaginative world, filled with romanticism. By a twist of fate, the forty-year-old box at the foot of the wall opened up Amélie's altruistic sentiments to uphold justice. The positive feedback received was captured by her, so she continued to pursue righteousness. She fantasized that her loved one would surprise her when she needed him the most, and soon it was delivered by the god of fate. The beautiful aspects that are fragile, precious, fragmented, and lucky can only be realized in film.
+Amélie has a sensitive inner world, breathing life into a rich fantasy realm filled with romanticism. A fortuitous event leads her to discover a box hidden for forty years at the base of a wall, sparking her wonderful spirit of benevolence and justice. The positive feedback she receives inspires her to continue her chivalrous deeds. She fantasizes about her beloved appearing just when she needs him the most, and sure enough, fate delivers him right to her doorstep. The fragile, precious, fragmented, and fortunate beauty that only exists in films is realized.

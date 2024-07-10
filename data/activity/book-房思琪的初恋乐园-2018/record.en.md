@@ -1,6 +1,5 @@
 ---
-title: Fang Si-Chi's First Love Paradise
-slug: fang-si-chis-first-love-paradise
+title: Fang Si-Qi's First Love Paradise
 category: book
 status: doing
 rating: 0
@@ -8,11 +7,11 @@ year: 2018-2
 date: 2024-01-29 19:33:14+08:00
 douban:
   rating: 9.2
-  subtitle: Lin Yi-Han / 2018 / Beijing United Publishing Co., Ltd
+  subtitle: Lin Yihan / 2018 / United Publishing Corporation, Beijing
   history:
     - date: 2022-04-29 07:28:43
-      comment: Unexpectedly no mark. But, need to read this book.
+      comment: Surprisingly unmarked. Must read this book.
       status: todo
 ---
 
-I read the first chapter in the light reflected from the window. Besides, the noise of road tires and the screams of different kinds of birds also broke in through the window.
+Read the first chapter in the light streaming through the window. The noises of the road tires and the screams of various birds also came through the window.

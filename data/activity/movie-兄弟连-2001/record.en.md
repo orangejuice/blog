@@ -1,6 +1,5 @@
 ---
 title: Band of Brothers
-slug: band-of-brothers
 category: movie
 status: done
 rating: 5
@@ -13,4 +12,4 @@ douban:
     Phil Alden Robinson, Tony To / Starring Damian Lewis, Donnie Wahlberg
 ---
 
-Can't quite believe that HBO was this good in '01. Hard to believe that this film is already a 'classic' from 20 years ago. A legendary existence that walks between history and plot, the calm and detailed portrayal of the war is refreshing. Worth collecting.
+HBO was already this impressive in 2001, hard to believe it's already been 20 years since this 'old film'. A legendary existence that moves between history and drama, presenting a completely composed battlefield depiction that's refreshing. Worth collecting.

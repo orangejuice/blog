@@ -1,6 +1,5 @@
 ---
 title: A Different Sky
-slug: a-different-sky
 category: movie
 status: done
 rating: 4
@@ -8,8 +7,8 @@ year: "1993"
 date: 2024-01-21 07:43:28+08:00
 douban:
   rating: 8.6
-  subtitle: 1993 / USA / Drama Love Family / Lasse Hallström / Johnny Depp,
+  subtitle: 1993 / USA / Drama Romance Family / Lasse Hallström / Johnny Depp
     Leonardo DiCaprio
 ---
 
-It's like reading a novel, with a scene by scene, action by action, and some conversations that are incredibly simple. There are no hysterics and no grandeur, just descriptions composed of some words. Life is a word, death is a word, the pain and torment in the middle, even seem to have no words. The American spirit behind the American story is extraordinarily strong and unique. It's all about love and freedom.
+It's like watching a novel. The scenes unfold one by one, each action, every dialogue, all simplistic, without hysterics or glamour, just a narrative made of words. Life is one word, death is another, the pain and torment in between is almost too hard to capture in words. The American spirit behind the story is intense, distinctive, a narrative of love and freedom.

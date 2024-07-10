@@ -1,6 +1,5 @@
 ---
-title: Izu Dancer
-slug: izu-dancer
+title: The Dancing Girl of Izu
 category: movie
 status: done
 rating: 5
@@ -8,7 +7,7 @@ year: "1974"
 date: 2023-12-20 08:02:30+08:00
 douban:
   rating: 8.6
-  subtitle: 1974 / Japan / Drama / Koji Nishikawa / Momoe Yamaguchi, Yujiro Miura
+  subtitle: 1974 / Japan / Drama / Kōji Segawa / Momoe Yamaguchi, Tomokazu Miura
 ---
 
-Love at first sight, and after that, the heart only held endless yearning. Everything was so beautiful, from the on-screen actors to the non-actors, to the vivid and interesting people. The stirring feelings were so beautiful, the innocence was so beautiful, the simplicity was so beautiful, the male lead was so beautiful. The full view of Japanese style coming into sight, the gentle music tickling the ears, the abundant etiquettes, the hierarchical order, each move in the game of Go making a sound. What joy could surpass waiting and seeing the person haunting your dreams appear around the corner. Listening to the tremblingly sorrowful Japanese tunes, one is only left wanting to forget everything else, to become purely gentle, to become incredibly simple, and to lead a life with a heart free from distractions. Saying goodbye to the person in one's heart in this life, solemnly and generously, expressing their feelings without any obscene or disrespectful words or tarnishing a shred of true emotions, is like a textbook, bringing me to tears. It was the most poignant, the most heart-breaking this year.
+Love at first sight, and from then on, my heart only harbors endless yearning. Everything is exceptionally beautiful, with the play's actors not just being actors, but lively and interesting individuals. The excitement is beautiful, innocence is beautiful simplicity is beautiful, Akebono is beautiful, the male lead is beautiful. A strong influx of Japanese culture is evident, with soft music caressing the ears, decorum exalted, and order respected, the placement of every chess piece audible. What joy could surpass waiting by the window for the beloved to turn the corner? Listening to the tremulous sad melodies of Japanese songs makes one wish to forget everything, to become pure and simple, to lead a simple life undistracted. Parting with a loved one in this life with dignity and openness, sharing thoughts silently and without profanity, without tarnishing the truth, this is a textbook case, bringing tears like rain. The most heart-stirring, the most heartbreaking of this year.

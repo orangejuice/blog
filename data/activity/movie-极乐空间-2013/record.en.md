@@ -1,6 +1,5 @@
 ---
 title: Elysium
-slug: elysium
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: 2013 / USA / Drama Action Sci-Fi / Neill Blomkamp / Matt Damon Jodie Foster
 ---
 
-via youtube Lao Gao
+via YouTube Lao Gao

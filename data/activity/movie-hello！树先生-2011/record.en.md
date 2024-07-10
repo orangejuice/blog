@@ -1,6 +1,5 @@
 ---
-title: Hello, Mr. Tree
-slug: hello-mr-tree
+title: Hello! Mr. Tree
 category: movie
 status: done
 rating: 3
@@ -8,7 +7,7 @@ year: "2011"
 date: 2020-12-25 05:02:21+08:00
 douban:
   rating: 8.3
-  subtitle: 2011 / Mainland China / Drama / Han Jie / Wang Baoqiang Tan Zhuo
+  subtitle: 2011 / Mainland China / Drama / Han Jie / Baoqiang Wang, Zhuo Tan
 ---
 
-It's hard to judge. The background is interesting, the story has its charm, the characters are well-drawn, but the quality of the presentation is lacking. The story does not unfold fully. It feels like listening to an intriguing story where the speaker has an expressive barrier and can't articulate clearly. The narrative is misty, disjointed and lacks logic which fails to fully expose the story to the audience. It's quite regrettable.
+It's hard to evaluate. The setting is interesting, the story is flavorful, and the characters are great, but the texture is poorly handled, and the story presentation is not complete. It's like listening to a fascinating tale but the narrator has a communication barrier, always failing to make it clear. It's vague, disjointed, and lacks logic, so it can't fully present the story to the audience, which is a pity.

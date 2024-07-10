@@ -7,8 +7,8 @@ year: "2019"
 date: 2019-12-22 06:20:38+08:00
 douban:
   rating: 9.7
-  subtitle: 2019 / UK / Documentary / Freddy Dewe Mathews, Emma Napper, Chadden
-    Hunter, Giles Badger / David Attenborough
+  subtitle: 2019 / UK / Documentary / Freddie Devas, Emma Napper, Chadden Hunter,
+    Giles Badger / David Attenborough
 ---
 
-We are so lucky to have superbly produced high-level nature documentaries to watch every year. I hope these documentaries will continue to be made forever and will never run out of material. We live on Earth but are becoming increasingly unfamiliar with nature. Lonely people step on the land without a haven, while happy people indulge in laughter in the capitalist world. Looking into the eyes of a young orangutan, I hope nature can give humans another chance. I hope that young and ignorant people, who are greedy for the moment, will return to nature. This documentary is full of art, culture, natural care, and is closely related to others and other lives. Responsible, philanthropic, healthy, mutually beneficial, shared, natural, eternal.
+Every year we are fortunate to see superbly crafted high-standard nature documentaries. I hope these documentaries continue forever, never running out of material. Living on Earth, humans have become increasingly estranged from nature. Lonely people tread the earth unsupported, while joyful people revel and laugh in the world of capital elites. Looking into the eyes of a young orangutan, I hope nature gives humanity another chance. Youthful, short-sighted human beings, greedy for the moment, will return to nature. A lifestyle full of artistic, cultural, natural care, closely connected with others and other life forms, responsible, loving, healthy, mutually beneficial, shared, natural, eternal.

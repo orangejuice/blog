@@ -1,6 +1,5 @@
 ---
-title: Childhood in Other Land
-slug: childhood-in-other-land
+title: Childhood in a Foreign Land
 category: movie
 status: done
 rating: 5
@@ -8,7 +7,7 @@ year: "2019"
 date: 2021-03-25 21:30:06+08:00
 douban:
   rating: 8.8
-  subtitle: 2019 / Mainland China / Documentary / Jun Zhou / Jun Zhou
+  subtitle: 2019 / Mainland China / Documentary / Yi-Jun Zhou / Yi-Jun Zhou
 ---
 
-Touching the surface like a dragonfly skimming across the water. Especially the last episode is particularly confusing in its self-observation, capturing a mixed potpourri of elements like a conjured porridge, somewhat disappointing, causing one to question whether the depiction of other countries in the first four episodes is fair. Yet many scenes are unique, and it doesn't feel like a serious documentary but more like a travel program. As a travel program, it does a great job of considering and exploring educational differences, yielding quite a few insights. We want more works like this, to make audiences think more about the philosophies and practice of education, to understand our shortcomings and areas for improvement, and to break free from constraining traditions and rigidity. How I wish there was a serious program from any country dedicated to creating a series of documentaries on the current state of international education, the world post-COVID would be an excellent starting point.
+Skimming the surface. Especially the final episode, which showed particular confusion in its self-observation. It captured fragments mixed into a jumbled mess, somewhat subpar, which began to cast doubts on whether the portrayal of other countries in the first four episodes was fair. However, many shots remain unique. It's not a serious documentary but more like a travel show. As a travel show, it does well to ponder and seek out educational differences, which is quite commendable and offers substantial insights. More such works would be beneficial, encouraging viewers to reflect on the ideals and practical differences in education, recognizing areas of deficiency and potential improvement to break away from traditional and rigid constraints. I really wish some country would earnestly produce a series on the global state of education, especially post-COVID, as it provides a critical entry point.

@@ -7,7 +7,7 @@ year: "1998"
 date: 2019-11-09 05:57:12+08:00
 douban:
   rating: 9.1
-  subtitle: 1998 / UK / Drama Comedy Crime / Guy Ritchie / Jason Flemyng, Dexter Fletcher
+  subtitle: 1998 / UK / Drama Comedy Crime / Guy Ritchie / Jason Flemyng Dexter Fletcher
 ---
 
-Maybe because the subtitles were out of sync and I had to manually adjust them, I never really got into the plot. Or perhaps it didn't meet my expectations. When things seemed blurry, the story suddenly came to an end. Looking back, it's indeed a decent, laid-back dark comedy that meets basic standards. It's not exactly standout enough to be in the Top 50, though. Seems like I'm biased against comedies.
+Perhaps it was the unsynchronized subtitles that continuously needed manual adjustment, preventing me from getting into the story, or maybe it did not meet my expectations. When I was drowsy, the story abruptly ended. Looking back, it is indeed a decent, light-hearted noir comedy that meets standard expectations. It's not outstanding enough to be in the top 50 though. It seems like I have a bias against comedies.

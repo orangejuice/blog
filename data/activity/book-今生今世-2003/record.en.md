@@ -1,6 +1,5 @@
 ---
 title: This Life, This World
-slug: this-life-this-world
 category: book
 status: done
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Hu Lancheng / 2003 / China Social Sciences Press
 ---
 
-Mark it up, read it again later, and summarize
+To make annotations, then read and summarize again

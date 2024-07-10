@@ -1,6 +1,5 @@
 ---
 title: This Explains Everything
-slug: this-explains-everything
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: John Brockman / 2013 / Harper Perennial
 ---
 
-Via tw Mr. Bear, profound, beautiful, and elegant theories of how the world operates
+Via Twitter Mr. Bear: Profound, beautiful, and elegant theories of how the world functions

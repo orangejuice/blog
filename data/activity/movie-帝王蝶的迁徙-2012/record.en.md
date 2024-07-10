@@ -1,6 +1,5 @@
 ---
-title: The Flight of the Monarchs
-slug: the-flight-of-the-monarchs
+title: The Monarch's Migration
 category: movie
 status: todo
 rating: 0

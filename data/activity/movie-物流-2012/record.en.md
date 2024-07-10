@@ -1,6 +1,5 @@
 ---
 title: Logistics
-slug: logistics
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: 2012 / Sweden / Documentary / Daniel Andersson Erika Magnusson
 ---
 
-via tw Very interesting
+via Twitter, very interesting

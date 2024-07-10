@@ -1,6 +1,5 @@
 ---
-title: The Divine Comedy (Complete Three-Volume Set)
-slug: the-divine-comedy-complete-three-volume-set
+title: The Divine Comedy (Complete Three Volumes)
 category: book
 status: todo
 rating: 0

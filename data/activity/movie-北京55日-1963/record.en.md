@@ -1,6 +1,5 @@
 ---
 title: 55 Days at Peking
-slug: 55-days-at-peking
 category: movie
 status: done
 rating: 3
@@ -11,4 +10,4 @@ douban:
   subtitle: 1963 / USA / Drama History War / Nicholas Ray / Charlton Heston Ava Gardner
 ---
 
-This unique depiction of the late Qing Dynasty narrates an uncommon yet important piece of history and is worth watching. However, the performances of the characters are distractive, making it hard to get into the plot. After watching the film, the storylines between these characters are all muddled.
+Featuring unique late Qing Dynasty scenery, this movie narrates an important yet not so common historical event and is still worth watching. The character portrayals pull the audience out of the immersion, making it hard to engage with the plot, and after watching it once, the storylines between the characters are completely muddled.

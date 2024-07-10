@@ -1,6 +1,5 @@
 ---
 title: Yellowstone Season 1
-slug: yellowstone-season-1
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,5 @@ douban:
   subtitle: 2018 / USA / Drama Western / Taylor Sheridan / Kevin Costner Luke Grimes
 ---
 
-Via tw Financial Wang 【Book and Movie】【Yellowstone】American drama 'Yellowstone' is one of the few good dramas I have seen in recent years. This conversation about fairness with a young man in the drama is worth everyone's careful consideration: 'Let me tell you what fairness is, fairness means one side can get all they want and the other side cannot complain. There is no fairness in this world.'
+Via tw Finance Wang [Books and Movies] [Yellowstone]
+The American drama 'Yellowstone' is one of the few great shows I've watched in recent years. There's a conversation about fairness with a teenager that everyone should ponder: "Let me tell you what fair is. Fair means one side gets everything they want, and the other side can't complain. There is no such thing as fair in this world."

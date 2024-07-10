@@ -10,4 +10,4 @@ douban:
   subtitle: 2015 / Sweden / Drama / Hannes Holm / Rolf Lassgård, Bahar Pars
 ---
 
-Heartwarming. Beautiful storytelling, beautiful cinematography. Tears welling up, but not in pain. Two hours pass dreamily. Love is too precious, it's a gift. As a gift, it's not for everyone. Not everyone willing to spend the time getting close to you. Most people already long gone, no cats, no neighbors, no old friends, no love at first sight on the train, nothing at all.
+Heartwarming. A wonderful story with beautiful cinematography. Eyes moist, yet without pain. A bewildering two hours passed. Love is too precious, it’s a gift. And as a gift, not everyone possesses it. Not everyone is willing to spend the time to draw close to you, many more are already dead, without cats, neighbors, old friends, or a love-at-first-sight seatmate on the train. Nothing at all.

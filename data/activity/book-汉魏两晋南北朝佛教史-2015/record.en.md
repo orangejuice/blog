@@ -1,6 +1,6 @@
 ---
-title: Buddhist History of the Han, Wei, Two Jin, and Northern and Southern Dynasties
-slug: buddhist-history-of-the-han-wei-two-jin-and-northern-and-southern-dynasties
+title: The History of Buddhism from the Han to Wei, Jin, Southern and Northern
+  Dynasties
 category: book
 status: todo
 rating: 0

@@ -1,6 +1,5 @@
 ---
-title: The Other Me in the World
-slug: the-other-me-in-the-world
+title: Another Me in the World
 category: movie
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: 2015 / Mainland China / Documentary / Yang Fan
 ---
 
-Via tw Stopped Cloud
+Via tw Tingyun

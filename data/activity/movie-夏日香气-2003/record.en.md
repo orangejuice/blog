@@ -1,5 +1,5 @@
 ---
-title: Scent of Summer
+title: Summer Scent
 category: movie
 status: todo
 rating: 0
@@ -10,4 +10,4 @@ douban:
   subtitle: 2003 / South Korea / Romance / Yoon Seok-ho / Song Seung-heon, Son Ye-jin
 ---
 
-Just making a note here, I found this drama from a GIF, Son Ye-jin looked exceptionally good in it.
+Marking this because I found the film from a GIF. Son Ye-jin looks especially beautiful in it.

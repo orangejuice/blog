@@ -1,6 +1,5 @@
 ---
 title: City Lights
-slug: city-lights
 category: movie
 status: done
 rating: 5
@@ -12,4 +11,4 @@ douban:
     Virginia Cherrill
 ---
 
-Great works are probably like this. Humorous and optimistic, under a positive shell, everywhere are the struggles of ordinary people, powerless and exhausted. The modern city, the forgetful rich, crowded but irrelevant, spectators who gossip and make fun to comfort themselves. In this desolation, the temporary friendship of the rich and the pure love of the beautiful flower girl shine with faint warmth. The greatness of this comic character is very sympathetic.
+Perhaps a great work is just like this. Humorous and optimistic on the surface, but beneath it lies the struggle and weariness of the common people. In this modern city, a forgetful rich man, and a crowd that’s densely packed yet unrelated, busy gawking and gossiping, comforting themselves. Amidst this desolation, the brief friendship of the wealthy man and the pure love of the beautiful flower girl shine like faint, warm twinkling stars. The greatness of this comical character is deeply sympathetic.

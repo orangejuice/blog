@@ -1,6 +1,5 @@
 ---
-title: London Life Season 1
-slug: london-life-season-1
+title: Life in London Season 1
 category: movie
 status: todo
 rating: 0

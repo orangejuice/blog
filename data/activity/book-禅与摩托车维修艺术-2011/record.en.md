@@ -1,6 +1,5 @@
 ---
 title: Zen and the Art of Motorcycle Maintenance
-slug: zen-and-the-art-of-motorcycle-maintenance
 category: book
 status: done
 rating: 2
@@ -11,4 +10,4 @@ douban:
   subtitle: Robert M. Pirsig / 2011 / Chongqing Publishing House
 ---
 
-The translation is too heavy, it really distracts people, can't read it, turn back to read the original text.
+The translation is overly literal and distracting, making it hard to keep reading; better to go back to the original text instead.

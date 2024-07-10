@@ -1,6 +1,5 @@
 ---
 title: Midway
-slug: midway
 category: movie
 status: done
 rating: 4
@@ -12,4 +11,4 @@ douban:
     History, War / Roland Emmerich / Ed Skrein, Patrick Wilson
 ---
 
-I watched this right after Pearl Harbor, and compared to it, this film is immature or even crude in terms of visuals, sound effects, and set design, relying on high-end post-production effects and deviating from the original intention of depicting reality. The difference in acting skills of the Asian actors is also glaring. Of course, these are secondary, from a historical perspective, it's still quite good, especially for those who know little about this topic.
+After watching 'Pearl Harbor,' I immediately saw this one. In terms of visuals, sound effects, and sets, it is apparent that it's either immature or crudely made, relying on high-end post-production effects and straying from the original intent of realistic portrayal. The acting level of Asian faces also clearly shows a stark contrast in quality. Nevertheless, these are minor issues; as for historical accuracy, it is still commendable, especially for those not very familiar with this subject matter.

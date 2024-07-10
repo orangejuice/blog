@@ -1,6 +1,5 @@
 ---
 title: Delivering Happiness
-slug: delivering-happiness
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: Tony Hsieh / 2010 / Grand Central Publishing
 ---
 
-Via tw Randy Lu
+Via Twitter Randy Lu

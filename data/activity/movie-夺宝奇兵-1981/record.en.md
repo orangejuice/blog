@@ -1,6 +1,5 @@
 ---
 title: Raiders of the Lost Ark
-slug: raiders-of-the-lost-ark
 category: movie
 status: done
 rating: 1
@@ -11,4 +10,4 @@ douban:
   subtitle: 1981 / USA / Action Adventure / Steven Spielberg / Harrison Ford Karen Allen
 ---
 
-So boring, I cried from boredom. It's just a very clichéd story of a hero and a beauty, simply packaged in the notion of American greatness and the fight against evil Nazis. Some visual effects are worth mentioning though. It's so uneventful and mentally undemanding that it's suitable for anyone over the age of one.
+Boring to the point of tears. The storyline is a clichéd and melodramatic tale of a hero and a damsel, wrapped in a simplistic package of American-style grand justice versus evil Nazis. Only some of the visual effects are worth mentioning. It's uneventful and intellectually undemanding, suitable for children over the age of one.

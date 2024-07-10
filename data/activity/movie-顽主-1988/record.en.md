@@ -1,6 +1,5 @@
 ---
-title: Stubborn Master
-slug: stubborn-master
+title: The Maverick
 category: movie
 status: done
 rating: 2
@@ -8,7 +7,8 @@ year: "1988"
 date: 2021-07-22 03:21:25+08:00
 douban:
   rating: 8.4
-  subtitle: 1988 / Mainland China / Drama Comedy / Mi Jiashan / Zhang Guoli Ge You
+  subtitle: 1988 / Mainland China / Drama Comedy / Directed by Mi Jiashan /
+    Starring Zhang Guoli, Ge You
 ---
 
-I don't like this kind of absurd comedic film style, but this one somehow carries more of a taste of real society and the human spirit than seemingly serious works, with its magic, sadness, and contradictions. Society is advancing day by day, brought about by people, but also manipulated by them. Survival or destruction, it's hard to understand.
+I’m not fond of this nonsensical and chaotic style of film, yet this one, seemingly without a coherent theme, brings a more potent taste of social realities and humanistic spirit. It’s magical, sorrowful, contradictory. Society moves forward day by day, driven by people, yet also manipulated by them. Survival or destruction, it's baffling.

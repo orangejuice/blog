@@ -1,6 +1,5 @@
 ---
 title: Morning Clouds, Evening Rain
-slug: morning-clouds-evening-rain
 category: movie
 status: todo
 rating: 0

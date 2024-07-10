@@ -1,6 +1,5 @@
 ---
 title: Don't Look Up
-slug: dont-look-up
 category: movie
 status: done
 rating: 4
@@ -11,4 +10,4 @@ douban:
   subtitle: 2021 / USA / Comedy Sci-Fi / Adam McKay / Leonardo DiCaprio Jennifer Lawrence
 ---
 
-It cannot be considered excellent, quite a bit of drama, market/consumer-orientated, somewhat formulaic, which appears boring and rigid. Giving it three stars seems a bit low. In terms of the plot, the captivating dance and music scenes and the main character’s self-reflection, plus the hysterical moments are not bad. Overall, the story is very complete, provides closure and satisfies curiosity, rather than leaving an awkward cliffhanger. In terms of humanity coming to an end, we have reached an agreement.
+Not exceptional, somewhat dramatic, market/consumer-oriented, and rather formulaic, which makes it dull and stiff. Giving it three stars feels too low. As for the plot, the musical numbers and the male lead's frenzied moments of reflection are notable. Overall, the story is complete, offering an ending that satisfies curiosity rather than leaving an awkward cliffhanger. On the point that humanity is doomed, we agree.

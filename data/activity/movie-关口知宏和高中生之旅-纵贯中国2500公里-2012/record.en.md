@@ -1,6 +1,6 @@
 ---
-title: "Tomohisa Seki and the High Schoolers' Journey: Traversing 2500km Across China"
-slug: tomohisa-seki-and-the-high-schoolers-journey-traversing-2500km-across-china
+title: "Kazuhiko Kankokuchi and the High School Students' Journey: 2500
+  Kilometers Across China"
 category: movie
 status: done
 rating: 0
@@ -8,7 +8,7 @@ year: "2012"
 date: 2020-12-28 07:15:54+08:00
 douban:
   rating: 7.5
-  subtitle: 2012 / Japan / Documentary / Tomohisa Seki
+  subtitle: 2012 / Japan / Documentary / Kazuhiko Kankokuchi
 ---
 
-Couldn't find a high-definition version, only managed to fast-forward through a low-quality one
+Couldn't find a high-definition version, watched the unclear version on fast forward

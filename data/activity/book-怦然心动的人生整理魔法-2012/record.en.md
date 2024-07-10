@@ -1,6 +1,5 @@
 ---
 title: The Life-Changing Magic of Tidying Up
-slug: the-life-changing-magic-of-tidying-up
 category: book
 status: todo
 rating: 0
@@ -11,4 +10,4 @@ douban:
   subtitle: "[Japan] Marie Kondo / 2012 / Yilin Press"
 ---
 
-As shared by an old reader from Taiwan, if your dormitory is always messy, and your bedroom gets cluttered again within a week of tidying, then you must read this book. The book about decluttering that most people might be familiar with is 'Goodbye, Things', which I have read, but I still recommend Kondo's more. The reason for recommending this book is that it introduces a magical method that allows you to tidy up once, and maintain cleanliness without having to tidy up again. I read it two years ago, and after using the method from the book to tidy up once, it has remained clean ever since, never getting messy again. I remember when I tidied up, I threw away nine large bags of garbage. I was really surprised that so many unused items were hidden in my little room. The night after I finished tidying up, I sat at the clean desk, feeling the refreshing evening breeze on my face. The weight on my body seemed to be unloaded, making me feel particularly relaxed and comfortable. This feeling is truly incomparable and worth a try, I look forward to your feedback.
+Via Twitter @oldwhite If your dorm is always a mess, and your bedroom gets cluttered again less than a week after cleaning, then you must check out this book. Books about decluttering are commonly known, such as 'Goodbye, Things,' which I have also read, but I still recommend Marie Kondo's book more. The reason for recommending this book lies in that it includes a magical method that allows you to tidy up once and keep it clean forever, eliminating the need for a second round. I read it two years by and applied its method once, maintaining its cleanliness to this day without it becoming messy again. I still remember when I first decluttered, throwing away nine large bags of trash, and I was really surprised by how much unnecessary stuff a small bedroom can hold. Right after tidying up, I sat in front of a clean desk, feeling the refreshing evening breeze on my face, and felt as if a weight had been lifted off my shoulders, feeling incredibly relaxed and comfortable. This feeling is truly incomparable, and I encourage you all to try it. Looking forward to your feedback.

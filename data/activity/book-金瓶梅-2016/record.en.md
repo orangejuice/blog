@@ -1,6 +1,5 @@
 ---
-title: The Golden Lotus
-slug: the-golden-lotus
+title: The Plum in the Golden Vase
 category: book
 status: done
 rating: 5
@@ -8,7 +7,7 @@ year: 2016-1
 date: 2023-08-09 20:27:11+08:00
 douban:
   rating: 9.5
-  subtitle: By Lanling Xiaoxiaosheng / 2016 / Nanyang Publishing
+  subtitle: Laughing Scholar from Lanling / 2016 / Nanyang Publishing House
 ---
 
-This is a masterpiece that interprets officialdom, the ways of the world, society's fickleness, sycophancy, loyalty, piety, righteousness, Buddhism, Taoism, love, sex, good and evil. It's set in the town of Qinghe County in Chinese society, portraying the life of ordinary people with a God's-eye view, scrutinizing all the details impartially. It's both avant-garde and rebellious. The similarities between it and 'The Dream of the Red Chamber' is the greatest endorsement of this work. One wonders how many passers-by have been enlightened or stunned by this throughout history, and how it has shaped their destinies. A brief experience of God's-eye view, a sudden realization - we are but characters in this play, destined to remain as such. The essence of being a character in a play is irrevocable.
+This work is a grand collection that interprets the life of officials and merchants, human relationships, social indifference, sycophancy, loyalty, filial piety, righteousness, Buddhism, Taoism, love, sex, good, and evil. Set in Qinghe County during the era of Chinese dynasties, it describes the life in the streets from a god-like perspective, observing coldly and capturing details meticulously, truly avant-garde and rebellious. Interestingly, 'Dream of the Red Chamber' is so similar to this work that it stands as the greatest affirmation of it, unknowing how many passers-by in the long river of history it has enlightened and astonished or how it has changed their destinies. A brief experience of the god-like perspective, upon returning to consciousness, realizes one is merely a character in the play, should act as one, is still one, remains trapped as one, unable to escape.

@@ -1,6 +1,5 @@
 ---
-title: The History of Chinese Vigor
-slug: the-history-of-chinese-vigor
+title: The History of Chinese Virility
 category: book
 status: todo
 rating: 0
@@ -8,7 +7,7 @@ year: 2024-1-1
 date: 2024-01-09 04:58:53+08:00
 douban:
   rating: 0
-  subtitle: Pi Guoli / 2024 / Taiwan Business Press
+  subtitle: Pi Guoli / 2024 / Taiwan Commercial Press
 ---
 
-From Taiwan Business Press comes 'The History of Chinese Vigor: From Erotic Interpretation to Medicine Culture, The Pathway of Nourishment in Modern Chinese & Western Medicine (Second Edition)'. Have to say, this blurp is too vivid 🤦🏻‍♀️
+From Taiwan Commercial Press, 'The History of Chinese Virility: From the Interpretation of Desire to the Culture of Medicines, the Nourishing Path of Modern Chinese and Western Medicine (Second Edition).' It has to be said, this blurb is written too vividly! 🤦🏻‍♀️

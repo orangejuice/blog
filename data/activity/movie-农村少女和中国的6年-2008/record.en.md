@@ -1,6 +1,5 @@
 ---
-title: Six Years of a Rural Chinese Girl
-slug: six-years-of-a-rural-chinese-girl
+title: Rural Girl and China's Six Years
 category: movie
 status: done
 rating: 3
@@ -11,4 +10,4 @@ douban:
   subtitle: 2008 / Japan / Documentary
 ---
 
-This piece gives a somewhat cursory glance using a simple juxtaposition of materials. The planning didn't involve much thought, but it serves as a human observation diary. Seeing how these different families under the lens survived in the not too distant past still invokes feelings of reflection.
+The film is somewhat superficial, merely assembling simple materials without much thoughtful planning. It presents as a daily observation diary of humanity. Seeing how these different families have survived in the not-so-distant past is quite moving.

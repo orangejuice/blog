@@ -1,6 +1,5 @@
 ---
 title: Sex Science
-slug: sex-science
 category: movie
 status: todo
 rating: 0

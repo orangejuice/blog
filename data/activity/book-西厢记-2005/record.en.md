@@ -1,6 +1,5 @@
 ---
-title: Romance of West Chamber
-slug: romance-of-west-chamber
+title: The Romance of the Western Chamber
 category: book
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: Wang Shifu / 2005 / Shanxi Ancient Books Publishing House
 ---
 
-Indeed, the original text is quite a charming tale, but a bit hard to chew on. It's such a pity. Thankfully, the translation is fantastic, with a unique flavor. The story of Zhang Sheng and Cui Yingying has been held in the hearts and minds of numerous generations, being dreamt about and savoring its fantasy. Now that it has come into my hands, it feels quite dreamlike. However, this kind of love, as bitter as it is beautiful, contributes greatly to an accomplished life. How many possess the talents, ambitions, luck, and beauty, enjoy the company of silver-tongued and just matchmakers, or have the determination and seriousness of the characters in the play? Most people can likely only sigh in awe of such a poignant and beautiful love story. These passionate characters are likely to have experienced bitterness, probably to be let down in the end. This is also why true love is so precious and why the romance of the West Chamber continues to be passed down.
+Truly a charming tale, the original text is a bit challenging to digest, which is a pity, but fortunate that the translation is also wonderfully flavored. The story of Zhang Sheng and Cui Yingying has been cherished and imagined by many generations, and reaching my hands today, it feels like a dream. Although this love is bitter and beautiful, creating a proud and fulfilling life, few have the talent, ambition, luck, and striking beauty, nor the eloquent and righteous matchmaker or the persistence and seriousness of the characters in the drama. Most people can only look up and sigh at the grand joys and pains of such love. Such passionate characters, perhaps after enduring hardships, are ultimately let down. This is also why beautiful love is rare, and why 'The Romance of the Western Chamber' continues to be treasured today.

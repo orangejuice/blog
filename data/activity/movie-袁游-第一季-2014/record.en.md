@@ -1,6 +1,5 @@
 ---
-title: Yuan's Talk Season 1
-slug: yuans-talk-season-1
+title: Yuan You Season 1
 category: movie
 status: done
 rating: 5
@@ -11,4 +10,4 @@ douban:
   subtitle: 2014 / Mainland China / Talk Show / Yuan Tengfei
 ---
 
-It’s the end of the year, and I accidentally started watching this program and couldn't stop. It's the best show I've watched this year. I haven't finished it yet. The more I watch, the better it gets. It often touches me deep inside. This is the charm of historical storytelling, I guess. The moving stories of heroes reaching their ends. The most important thing is that it's real, something fictional works can't compare to. So many forgotten things are quietly waiting in corners to be remembered. Forgetting history may be the root cause of many problems today. In this sense, Teacher Yuan is a great educator and deserves this title.
+Just at the end of the year, I unexpectedly started watching this work and couldn't stop. It's the best TV show I've seen this year. I haven't finished watching it yet, but the more I watch, the more fascinating it becomes, often touching and emotionally stirring. This is probably the charm of historical stories, the tear-jerking tales of heroes' downfall, and what's crucial is their truthfulness, something fictional works can't compare to. So many forgotten things are quietly waiting in the corners to be remembered again. Forgetting history is probably the root of many current problems, and in this sense, Teacher Yuan deserves the title of a great educator.

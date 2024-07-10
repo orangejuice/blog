@@ -1,6 +1,5 @@
 ---
-title: China in Disarray
-slug: china-in-disarray
+title: Country Driving
 category: book
 status: todo
 rating: 0
@@ -8,7 +7,7 @@ year: 2011-1
 date: 2024-05-04 21:26:51+08:00
 douban:
   rating: 9
-  subtitle: "[US] Peter Hessler / 2011 / Shanghai Translation Publishing House"
+  subtitle: by Peter Hessler / 2019 / Shanghai Translation Publishing House
 ---
 
-From the perspective of a well-educated American (a normal person), the school seems like a huge printing press until your brain is full of negative discourse... good at self-criticism
+Via tw anqirock from the perspective of an educated American (normal person), school seems like a giant printing press, until your 'mind is full of negative speech... skilled at self-criticism.'

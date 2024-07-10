@@ -1,6 +1,5 @@
 ---
 title: The Descendants
-slug: the-descendants
 category: movie
 status: todo
 rating: 0
@@ -12,4 +11,4 @@ douban:
     Shailene Woodley
 ---
 
-Goodbye my love, my best friend, my source of pain, my source of happiness
+Via douban banner Goodbye my love, my friend, my source of pain, my source of happiness
