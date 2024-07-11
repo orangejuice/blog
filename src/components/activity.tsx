@@ -41,7 +41,7 @@ export const ActivityPage = async ({slug, activity, locale}: {slug: string, acti
           </div>
         </div>
       </div>
-      <div className="row-start-2 md:row-start-1 md:col-start-2 md:row-span-2 md:h-full flex flex-col justify-between gap-4">
+      <div className="row-start-2 md:row-start-1 md:col-start-2 md:row-span-2 md:h-full flex flex-col justify-between gap-10">
         <ul>
           {[{status: activity.status, rating: activity.rating, date: activity.date, comment: undefined} as PartialBy<HistoryType, "status" | "rating" | "comment"> & {date: string}].concat(
             ...(activity.douban?.history ?? [])).sort((a, b) => Date.parse(b.date) - Date.parse(a.date)).map((history, index) => (
