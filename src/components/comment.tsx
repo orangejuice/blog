@@ -33,6 +33,7 @@ export const Comment = ({slug}: {slug: string}) => {
     const handleMessage = (event: MessageEvent) => {
       if (event.origin != "https://giscus.app" || !event.data?.giscus) return
       if (event.data.giscus.resizeHeight > 100) setIsLoaded(true)
+      if (event.data.giscus.error == "Discussion not found") setDiscussion({comment: 0, reaction: 0})
       const giscus: IDiscussionData = event.data.giscus.discussion
       if (!giscus) return
       setDiscussion({comment: giscus.totalCommentCount, reaction: giscus.reactionCount})
