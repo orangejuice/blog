@@ -1,8 +1,6 @@
 ---
 title: "易中天中华文明史——三大文明的历史关系 笔记"
-categories:
-  - notes
-tags: [历史]
+tags: [notes, history]
 date: 2019-05-10 18:46:49
 updated: 2019-05-10 18:46:49
 ---

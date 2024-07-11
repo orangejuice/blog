@@ -2,10 +2,7 @@
 title: A Brief Answer to Needham's Grand Question (Forward)
 date: 2019-03-12 15:17:32
 updated: 2019-03-12 15:17:32
-categories:
-  - notes
-tags:
-  - History
+tags: [notes, history]
 ---
 
 Ancient China had glorious technological achievements, and for the application of almost every important invention, the Chinese could proudly claim that the West In particular, the "Four Great Inventions", which were so earth-shattering that they revolutionized Europe and even the world at the end of the Middle Ages. The face of the world: gunpowder blew up the fortresses and armor of the feudal chivalric class, the compass opened up new shipping routes between the 5 continents, and the Paper-making and printing broke the cultural monopoly of the feudal church... However, after the modern era, Chinese science and technology stagnated. Instead, the door was opened by the Newton Faraday's who were originally far behind the Chinese. China, once a leader in the history of science and technology, has since almost disappeared, and science and technology have been dominated by the West. Why is that? --This is the unparalleled answer that Joseph Li, the famous British sinologist who wrote the History of Chinese Science and Technology, was unable to give throughout his life. The Obsession: "The Joseph Lee Conundrum".

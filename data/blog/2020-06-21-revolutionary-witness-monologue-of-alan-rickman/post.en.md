@@ -1,7 +1,7 @@
 ---
 title: "Revolutionary Witness: The Preacher"
 date: 2020-06-21
-tags: [History, Culture]
+tags: [notes, history, culture]
 ---
 
 Written by playwright Peter Barnes, presented by Alan Rickman, celebrating the bicentennial of the French Revolution, aired in 1989.

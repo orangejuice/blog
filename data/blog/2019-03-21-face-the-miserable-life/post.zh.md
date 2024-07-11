@@ -2,8 +2,7 @@
 title: "直面惨淡人生 (转载)"
 date: 2019-03-21 22:17:32
 updated: 2019-03-21 22:17:32
-categories: [notes]
-tags: [存在]
+tags: [notes, existence]
 ---
 
 > 萨特：“在不存在和这种浑身充满快感的存在之间，是没有中立的。如果我们存在，就必须存在到这样的程度。”
@@ -29,4 +28,3 @@ tags: [存在]
 
 
 Source: [李银河](http://blog.sina.com.cn/s/blog_473d53360102enhe.html)
-

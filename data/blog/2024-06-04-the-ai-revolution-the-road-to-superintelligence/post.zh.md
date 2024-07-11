@@ -1,7 +1,7 @@
 ---
 title: "人工智能革命：通往超级智能之路"
 date: 2024-06-04 11:15
-tags: [AI]
+tags: [ai, existence]
 ---
 
 > 本文转载自 [Wait but why](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html)，作者 Tim Urban 于2015年1月22日发表。  
@@ -301,5 +301,3 @@ Kurzweil 认为整个 20 世纪的进步在 2000 年的进步速度下只需要 
 [^11g]: This term was first used by one of history’s great AI thinkers, Irving John Good, in 1965.
     
 [^12g]: Nick Bostrom, [_Superintelligence: Paths, Dangers, Strategies_](https://www.amazon.com/gp/product/0199678111/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0199678111&linkCode=as2&tag=wabuwh00-20&linkId=LBOTX2G2R72P5EUA), loc. 660
-    
-

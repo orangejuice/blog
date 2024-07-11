@@ -2,8 +2,7 @@
 title: "大家讲堂·秦晖-从诸子争鸣到新文化运动 笔记"
 date: 2019-04-14 23:55:41
 updated: 2019-04-26 23:09:22
-categories: [notes]
-tags: [历史]
+tags: [notes, history]
 ---
 
 ## 为什么要回顾

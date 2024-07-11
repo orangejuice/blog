@@ -1,8 +1,6 @@
 ---
 title: 突然想起去年遇到的小女孩
-categories:
-  - diary
-tags: [人生]
+tags: [notes, dairy]
 date: 2019-09-16 20:05:57
 updated: 2019-09-17 22:36:57
 ---

@@ -1,7 +1,7 @@
 ---
 title: 初试香薰蜡烛
 date: 2020-06-13
-tags: [生活]
+tags: [notes, curiosity]
 ---
 
 
@@ -49,4 +49,3 @@ NO 1038414E
 ## 香草蛋糕 Vanilla Cupcake
 
 味道还可以，淡淡的香草味道。比真的香草蛋糕味道要淡一些。（淡点好）
-

@@ -1,10 +1,8 @@
 ---
 title: "Netflix Show: Our Planet Season 01"
-categories:
-  - notes
-tags: [Entertainment]
 date: 2019-04-19 23:25:17
 updated: 2019-04-19 23:25:17
+tags: [notes, entertainment]
 ---
 
 ![A scene of struggling](1555713393372.png)

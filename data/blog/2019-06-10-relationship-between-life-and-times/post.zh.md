@@ -1,8 +1,6 @@
 ---
 title: 易被忽视的生命历程与时代的紧密联系
-categories:
-  - diary
-tags: [存在]
+tags: [notes, existence]
 date: 2019-06-10 15:53:09
 updated: 2019-06-10 15:53:09
 ---

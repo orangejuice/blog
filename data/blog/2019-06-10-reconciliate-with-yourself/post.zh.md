@@ -1,8 +1,6 @@
 ---
 title: "与自己和解太难"
-categories:
-  - diary
-tags: [存在]
+tags: [notes, existence]
 date: 2019-06-10 15:50:23
 updated: 2019-06-10 15:50:23
 ---

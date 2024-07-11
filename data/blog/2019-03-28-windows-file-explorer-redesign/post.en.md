@@ -2,8 +2,7 @@
 title: Microsoft Design Intern's File Explorer mock up
 date: 2019-03-28 09:04:32
 updated: 2019-03-28 09:04:32
-categories: [news]
-tags: [Design]
+tags: [tech, design]
 ---
 
 
@@ -21,4 +20,3 @@ These prototype pictures are very beautiful and practical. It is truly shocking 
 Thanks for [@itsmichaelwest](https://twitter.com/itsmichaelwest) 's nice work!
 
 So great design but can only watch, although no possibility to use it :(. Look at Microsoft, what are you doing?
-

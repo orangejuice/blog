@@ -2,8 +2,7 @@
 title: "Face The Miserable Life (Forward)"
 date: 2019-03-21 22:17:32
 updated: 2019-03-21 22:17:32
-categories: [notes]
-tags: [Existence]
+tags: [notes, existence]
 ---
 
 

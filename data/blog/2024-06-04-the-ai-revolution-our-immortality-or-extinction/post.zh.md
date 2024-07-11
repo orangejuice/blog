@@ -1,7 +1,7 @@
 ---
 title: "人工智能革命：我们永生还是灭绝"
 date: 2024-06-04 11:25
-tags: [AI]
+tags: [ai, existence]
 ---
 
 > 本文转载自 [Wait but why](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-2.html)，作者 Tim Urban 于2015年1月27日发表。  
@@ -681,5 +681,3 @@ Jeremy Howard TED Talk – [The wonderful and terrifying implications of compute
 [^20g]:  Yudkowsky, [_Coherent_](https://intelligence.org/files/CEV.pdf) _[Extrapolated Volition](https://intelligence.org/files/CEV.pdf)._
     
 [^21g]:  Bostrom, [_Superintelligence: Paths, Dangers, Strategies_](https://www.amazon.com/gp/product/0199678111/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0199678111&linkCode=as2&tag=wabuwh00-20&linkId=LBOTX2G2R72P5EUA), loc. 6026.
-    
-

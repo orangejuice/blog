@@ -1,10 +1,8 @@
 ---
 title: 我们的星球第一季
-categories:
-  - notes
-tags: [娱乐]
 date: 2019-04-19 23:25:17
 updated: 2019-04-19 23:25:17
+tags: [notes, entertainment]
 ---
 
 ![1555713393372](1555713393372.png)

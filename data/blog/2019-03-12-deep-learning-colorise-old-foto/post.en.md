@@ -2,8 +2,7 @@
 title: Coloring Old Photos With Deep Learning
 date: 2019-03-12 15:17:32
 updated: 2019-03-12 15:17:32
-categories: [notes]
-tags: [AI, Curiosity]
+tags: [ai, curiosity]
 ---
 
 Recently I found a website which is described to be an advanced coloring tool for black&white photos.

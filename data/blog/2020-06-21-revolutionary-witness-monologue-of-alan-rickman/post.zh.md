@@ -1,7 +1,7 @@
 ---
 title: "革命见证人: 牧师 (译)"
 date: 2020-06-21
-tags: [历史, 文化]
+tags: [notes, history, culture]
 ---
 
 由剧作家彼得·巴恩斯编写，艾伦·瑞克曼演讲，庆祝法国大革命两百周年，于1989年演出。
@@ -47,4 +47,3 @@ tags: [历史, 文化]
 原稿: [豆瓣 Dr.WizardLuna](https://www.douban.com/note/182293489/), [britbitsandclips](http://britbitsandclips.com/The%20Preacher.htm)
 
 翻译/润色：DeepL, Google, Orangejuice
-

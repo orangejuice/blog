@@ -1,7 +1,7 @@
 ---
 title: "The AI Revolution: The Road to Superintelligence"
 date: 2024-06-04 11:15
-tags: [AI]
+tags: [ai, existence]
 ---
 
 > Reposted from [Wait but why](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html), authored by Tim Urban, January 22, 2015

@@ -15,7 +15,7 @@ export function PostFilter({locales: localesData, tags: tagsData, filter: applie
   const locales = use(localesData)
   const tags = use(tagsData)
   const cssIndexCounter = useCssIndexCounter(style)
-  const {t, i18n: {language: locale}} = useTranslation("lang")
+  const {t, i18n: {language: locale}} = useTranslation()
   const [, setFilter] = useLocalStorage<FilterOption>("post-filter", applied)
   useEffect(() => {applied && setFilter(applied)}, [applied, setFilter])
 
@@ -27,7 +27,7 @@ export function PostFilter({locales: localesData, tags: tagsData, filter: applie
           <Link key={index} href={`/${menu.post}/${objectToUrlPart({lang})}`}
             className={cn("flex items-center group m-2 text-sm font-medium underline-fade",
               lang == applied.lang && "underline-fade-selected font-bold")}>
-            <Icon.symbol.hash/>{t(lang)} ({num})
+            <Icon.symbol.hash/>{t(lang, {ns: "lang"})} ({num})
           </Link>
         ))}
       </div>
@@ -39,7 +39,7 @@ export function PostFilter({locales: localesData, tags: tagsData, filter: applie
           <Link key={index} href={`/${menu.post}/${objectToUrlPart({lang: applied.lang, tag: tag == applied.tag ? undefined : tag})}`}
             className={cn("flex items-center group m-2 text-sm font-medium underline-fade",
               tag == applied.tag && "underline-fade-selected font-bold")}>
-            <Icon.symbol.hash/>{tag} ({num})
+            <Icon.symbol.hash/>{t(tag, {ns: "tag"})} ({num})
           </Link>
         ))}
       </div>

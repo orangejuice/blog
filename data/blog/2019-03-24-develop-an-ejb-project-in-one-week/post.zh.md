@@ -2,8 +2,7 @@
 title: 使用 IntelliJ 创建并编写 EJB 项目
 date: 2019-03-24 15:17:32
 updated: 2019-03-29 15:17:32
-categories: [notes]
-tags: [技术]
+tags: [tech, ejb]
 ---
 
 本文撰写前提为无任何EJB开发经验，在一周的时间要求下，快速开发完成了一个基于ejb栈的在线劳务市场，前端借用了一个博客模版。先在未使用maven管理项目的情况下进行了尝试，然后重新创建了新的maven项目以方便开发。文后有对相关概念的简单记录。此文参考价值不大，很散乱。单纯的一个记录。
@@ -478,5 +477,3 @@ persistence-unit节点可以有一个或多个，每个persistence-unit节点定
 16. [https://github.com/eugenp/tutorials](https://github.com/eugenp/tutorials/tree/master/spring-ejb/wildfly/wildfly-mdb)
 17. [A Guide to Message Driven Beans in EJB](<https://www.baeldung.com/ejb-message-driven-beans>)
 18. 还有很多参考地址疏忽遗漏，太感谢丰富的互联网资源拯救了一星期开发JOB-MARKET项目。
-
-

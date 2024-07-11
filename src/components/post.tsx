@@ -33,7 +33,7 @@ export const PostPage = async ({slug, post, locale}: {slug: string, post: Post, 
                   <Link href={`/${menu.post}/${objectToUrlPart({lang: "all-lang", tag})}`} key={index} className={cn(
                     "flex items-center rounded-md transition px-1 py-0.5 text-sm -mx-1",
                     "hover:bg-stone-200 dark:hover:bg-stone-700")}>
-                    <Icon.symbol.hash className="w-3 h-3 text-inherit"/> {tag}
+                    <Icon.symbol.hash className="w-3 h-3 text-inherit"/> {t(tag, {ns: "tag"})}
                   </Link>)}
               </div>
             </>)}

@@ -96,6 +96,7 @@ export const Activity = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: "data",
+  contentDirExclude: ["locales"],
   documentTypes: [Post, Activity],
   onExtraFieldData: "ignore",
   mdx: {

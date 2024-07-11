@@ -1,10 +1,8 @@
 ---
 title: "Why Do Historical Predictions Always Get It Wrong? (Forward)"
-categories:
-  - why
-tags: [History]
 date: 2019-05-20 13:06:00
 updated: 2019-05-20 13:06:00
+tags: [notes, history]
 ---
 
 Outstanding speakers are good at instigating his audience with emotions-even if his theory does not even believe him. The true meaning of speech art is not to persuade others with logic. The only true meaning of speech art is to convey passion.

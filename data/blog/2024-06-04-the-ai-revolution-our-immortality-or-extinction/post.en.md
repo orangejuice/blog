@@ -1,7 +1,7 @@
 ---
 title: "The AI Revolution: Our Immortality or Extinction"
 date: 2024-06-04 11:25
-tags: [AI]
+tags: [ai, existence]
 ---
 
 > Reposted from [Wait but why](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-2.html), authored by Tim Urban, January 27, 2015

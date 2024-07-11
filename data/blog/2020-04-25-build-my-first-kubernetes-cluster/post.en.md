@@ -1,7 +1,7 @@
 ---
 title: Build My First Kubernetes Cluster
 date: 2020-04-25
-tags: [Tech]
+tags: [tech, kubernetes]
 ---
 
 This is a record of simply trying out and exploring the concepts of k8s. Starting from preparing the node environment for k3s lightweight kubernetes, and finally launching several cluster base services such as ingress controller, monitoring, log collection, etc.
