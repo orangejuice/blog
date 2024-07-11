@@ -1,5 +1,5 @@
 "use client"
-import {ReactNode, useEffect, useMemo, useRef, useState} from "react"
+import {memo, ReactNode, useEffect, useMemo, useRef, useState} from "react"
 import {Canvas, GroupProps, MeshProps, useFrame} from "@react-three/fiber"
 import {CameraControls, SoftShadows} from "@react-three/drei"
 import {useSpring} from "@react-spring/core"
@@ -95,7 +95,7 @@ function Plants({number, position}: GroupProps & {number: number}) {
   )
 }
 
-function AmbientRead() {
+const AmbientRead = memo(function AmbientRead() {
   const [isLoaded, setIsLoaded] = useState(false)
   const cameraControlRef = useRef<CameraControls>(null)
   const {spring} = useSpring({
@@ -115,7 +115,7 @@ function AmbientRead() {
   return (<>
     <motion.div initial={{opacity: 0}} animate={{opacity: isLoaded ? 1 : 0}} transition={{delay: 0.5, duration: 0.5}}
       className={cn("fixed top-0 pointer-events-none",
-      "w-[700px] left-[calc(100vw-700px)] h-[500px] md:w-[1200px] md:h-[700px] md:left-[calc(100vw-1200px)]")}>
+        "w-[700px] left-[calc(100vw-700px)] h-[500px] md:w-[1200px] md:h-[700px] md:left-[calc(100vw-1200px)]")}>
       <Canvas shadows camera={{fov: 45}} style={{pointerEvents: "none"}} onCreated={() => {setIsLoaded(true)}}>
         <CameraControls ref={cameraControlRef} makeDefault={true}/>
         <SoftShadows size={25} focus={0.53} samples={10}/>
@@ -141,7 +141,7 @@ function AmbientRead() {
       </Canvas>
     </motion.div>
   </>)
-}
+})
 
 function TwinklingStar({position}: {position: Vector3}) {
   const mesh = useRef<Mesh>(null)
@@ -166,7 +166,7 @@ const RotatingSky = ({children}: {children: ReactNode}) => {
   return <group ref={group}>{children}</group>
 }
 
-const StarrySky = () => {
+const StarrySky = memo(function StarrySky() {
   const [isLoaded, setIsLoaded] = useState(false)
   const stars: Vector3[] = []
   for (let i = 0; i < 50; i++) {
@@ -192,7 +192,7 @@ const StarrySky = () => {
       </Canvas>
     </motion.div>
   </>)
-}
+})
 
 // function PositionInfo() {
 //   const camera = useThree(state => state.camera)
