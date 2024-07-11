@@ -14,6 +14,7 @@ import rehypePrismAll from "rehype-prism-plus"
 import path from "path"
 import fs from "node:fs"
 import * as process from "node:process"
+import {pinyin} from "pinyin-pro"
 
 const ASSETS_DIR = path.join(process.cwd(), "public", "assets")
 
@@ -74,7 +75,7 @@ export const Activity = defineDocumentType(() => ({
     }
   },
   computedFields: {
-    slug: {type: "string", resolve: (act) => act._raw.sourceFileDir.split("/").pop()},
+    slug: {type: "string", resolve: (act) => slug(act._raw.sourceFileDir.split("/").pop()!)},
     locale: {type: "string", resolve: (post) => post._raw.sourceFileName.split(".")[1]},
     cover: {
       type: "string", resolve: (act) => {
@@ -113,8 +114,13 @@ export default makeSource({
   }
 })
 
-export function extractExcerpt(markdown: string, wordLimit: number) {
+function extractExcerpt(markdown: string, wordLimit: number) {
   const str = removeMarkdown(markdown)
   const arr = [...str]
   return arr.slice(0, wordLimit).concat(arr.length > wordLimit ? "..." : "").join("")
+}
+
+function slug(title: string): string {
+  return pinyin(title, {nonZh: "consecutive", toneType: "none"})
+    .replace(/[^\w\s-]/g, "").replace(/[\s_-]+/g, "-")
 }
