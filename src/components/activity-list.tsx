@@ -33,10 +33,10 @@ export default function ActivityInfiniteScrollList({data: firstPage, style}: {da
   const {t, i18n: {language: locale}} = useTranslation()
 
   useEffect(() => {
-    if (pathname == state.key) return
+    if (pathname == state.key && activities.length) return
     setState({key: pathname, page: 1, hasMore: data.length == 10})
     setActivities(data)
-  }, [])
+  }, [data, pathname])
 
   const loadMore = () => startTransition(async () => {
     const newActivities = await fetchActivities({page: state.page + 1, filter, locale: locale as SiteLocale})
