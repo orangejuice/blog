@@ -118,3 +118,4 @@
   - Yozai https://github.com/lxgw/yozai-font
   - CEF Fonts CJK https://github.com/Partyb0ssishere/cef-fonts-cjk
 - background bounce animation https://www.jussivirtanen.fi/
+- start using view-transition https://codepen.io/jh3y/pen/MWzdvwL
