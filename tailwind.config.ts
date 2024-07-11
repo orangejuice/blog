@@ -10,7 +10,8 @@ const config: Config = {
   future: {hoverOnlyWhenSupported: true},
   theme: {
     extend: {
-      fontSize: {"xxs": ["0.625rem", {lineHeight: "1rem"}]},
+      colors: {stone: {"150": "#EEEDEC", "850": "#231F1E"}},
+      fontSize: {xxs: ["0.625rem", {lineHeight: "1rem"}]},
       fontFamily: {
         sans: ["var(--font-sans)", ...defaults.fontFamily.sans],
         mono: ["var(--font-mono)", ...defaults.fontFamily.mono]

@@ -50,11 +50,11 @@ export default function ActivityInfiniteScrollList({data: firstPage, style}: {da
       {state.hasMore && <>
         <Button disabled={isPending} onClick={loadMore} className={cn("w-fit h-fit gap-1 flex items-center px-4 py-2 text-xs font-semibold border rounded-full",
           "bg-stone-900 text-stone-100 hover:border-stone-700 border-stone-900 hover:bg-white hover:text-stone-900 animate-delay-in disabled:bg-stone-500 disabled:border-stone-500")}>
-          {isPending && <><Icon.loading className="w-4 h-4"/>{t("generic.loading")}</>}
-          {!isPending && t("generic.load-more")}
+          {isPending && <><Icon.loading className="w-4 h-4"/>{t("general.loading")}</>}
+          {!isPending && t("general.load-more")}
         </Button>
       </>}
-      {!state.hasMore && <Divider text={t("generic.bottom")}/>}
+      {!state.hasMore && <Divider text={t("general.bottom")}/>}
     </div>
   </>)
 }
@@ -104,8 +104,6 @@ const Activities = ({activities, style, className}: {activities: Awaited<GetActi
                 </div>
               </div>
               <MyComment activity={activity} className="block md:hidden"/>
-              <span className={cn("absolute inset-1 -z-10 rounded-xl bg-stone-100 opacity-0 transition-all duration-200 ease-bounce",
-                "group-hover:-inset-1 dark:bg-neutral-800 group-hover:opacity-100 group-active:bg-stone-200 group-active:dark:bg-neutral-700")}></span>
               <BounceBackground/>
             </Link>
           </li>
@@ -119,7 +117,7 @@ const MyComment = ({activity, className}: {activity: Activity} & ComponentPropsW
   const {t, i18n: {language: locale}} = useTranslation()
 
   return (<>
-    <div className={cn("bg-stone-50 dark:bg-stone-900 rounded-lg p-3 [&:has(.prose-sm:not(:empty))_>_div:first-child]:mb-2 transition-colors duration-200 group-hover:bg-stone-200 group-hover:dark:bg-stone-800", className)}>
+    <div className={cn("bg-stone-50 dark:bg-stone-900 rounded-lg p-3 [&:has(.prose-sm:not(:empty))_>_div:first-child]:mb-2 transition-colors duration-200 group-hover:bg-stone-150 group-hover:dark:bg-stone-850", className)}>
       <div className="flex items-center text-xs gap-2 text-stone-500">
         <span>{t(`bookshelf.${activity.category}.status.${activity.status}`, {date: format(activity.date, {locale, relativeWithDate: true})})}</span>
         {!!activity.rating && (<>

@@ -68,7 +68,7 @@
     "message": "Sorry we couldn't find this page.",
     "redirect": "But don't worry, you can find plenty of other things on our <a>homepage</a>."
   },
-  "generic": {
+  "general": {
     "bottom": "You've Reached the End",
     "loading": "Loading",
     "load-more": "Load More"
