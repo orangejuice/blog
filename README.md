@@ -28,8 +28,8 @@
 
 - `Next.js(App dir/ISR/SSR/CSR)`, `React`, `TailwindCSS`, `Mdx`, `shadcn/ui`, `framer motion`, `contentlayer`
 - Post-it wall available on [Guessbook](https://orangejuice.cc/guestbook)
-- Book/TV/Show tracking available on [Bookshelf](https://orangejuice.cc/bookshelf)
-- Comment/Reaction system based on `Giscus` (work together with [On New Giscus Comment](https://github.com/orangejuice/on-new-giscus-comment))
+- Book/Movie/TV Show tracking available on [Bookshelf](https://orangejuice.cc/bookshelf)
+- Comment/Reaction system based on `Giscus` (work together with [blog-worker](https://github.com/orangejuice/blog-worker))
 - Responsive UI, minimalist design language with a bit of move elements
 - Cached dynamic data and On-demand revalidation
 - In-depth customized for Markdown + i18n writing workflow
@@ -39,9 +39,6 @@
 
 * **🕰️ Activity Calendar** `src/components/activity-calendar.tsx`  
   An elegant calendar component intuitively displays yearly reading and watching activities.
-
-* **🧭 Mobile Menu** `src/components/header.tsx`  
-  Mobile menu with slightly darken overlay, built with headless-ui and framer motion.
 
 * **🎨 Immersive 3D Background** `src/components/background.tsx`  
   Dynamic, peaceful three-dimensional backdrop for day and night.
@@ -66,7 +63,7 @@
 
 ## 🔖 History
 
-- `Jul 01, 2024`  Introducing a new feature - Book/TV/Show tracking.
+- `Jul 01, 2024`  Introducing a new feature - Book/Movie/TV Show tracking.
 - `Jun 18, 2024`  Add Sticky Notes display on Guestbook page.
 - `Jun 17, 2024`  Add Article view count display (powered by Cloudflare D1).
 - `Jun 03, 2024`  Launch of the new blog system based on Next.js (App dir).
