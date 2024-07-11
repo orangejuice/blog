@@ -1,5 +1,5 @@
 import * as React from "react"
-import {ComponentProps, ComponentType, forwardRef} from "react"
+import {ComponentProps, ComponentPropsWithoutRef, ComponentType, forwardRef} from "react"
 import {cn} from "@/lib/utils"
 import {ArrowRight, AudioLines, ChevronRight, CircleAlert, Dot, Filter, Globe, Hash, Loader2, LogIn, LogOut, Menu, MessageCircleHeart, MessageCircleMore, Moon, Slash, Smile, Square, SquareCheckBig, Sun, SunMoon, Undo2, User} from "lucide-react"
 import Image, {ImageProps} from "next/image"
@@ -13,8 +13,8 @@ export const Icon = {
   github: cns((props) => <GithubLogo weight="bold" {...props}/>),
   link: {arrow: cns(ArrowRight), chevron: cns(ChevronRight)},
   loading: cns(Loader2, "w-5 h-5 mx-auto animate-spin"),
-  loadingGrid: () => (<>
-    <span className="grid grid-cols-1 grid-rows-2 gap-px">
+  loadingGrid: ({className, ...props}: ComponentPropsWithoutRef<"span">) => (<>
+    <span className={cn("grid justify-items-center grid-cols-1 grid-rows-2 gap-px", className, "h-fit")} {...props}>
       <span className="animate-fade mx-px h-1 w-1 rounded-full bg-current"></span>
       <span className="animate-fade animate-delay-300 mx-px h-1 w-1 rounded-full bg-current"></span>
     </span>
