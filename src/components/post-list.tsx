@@ -29,7 +29,7 @@ function PostCard({post}: {post: Post}) {
           {post.tags.map((tag, index) =>
             <Button key={index} variant="secondary" className={cn("h-fit truncate px-1 py-0.5 text-xs text-stone-600",
               "dark:bg-stone-800 dark:text-stone-400 group-hover:bg-stone-200 dark:group-hover:bg-stone-700")}>
-              {tag}
+              {t(tag, {ns:"tag"})}
             </Button>)}
         </div>
         <p className="text-sm text-neutral-600 dark:text-neutral-400 line-clamp-2">
