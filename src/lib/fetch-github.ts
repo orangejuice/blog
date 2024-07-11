@@ -47,6 +47,7 @@ interface DiscussionNode {
 }
 
 export const fetchDiscussions = async ({repo, category, titles}: {repo: string, category: string, titles: string[]}): Promise<{[slug: string]: DiscussionNode}> => {
+  if (titles.length == 0) return {}
   console.log(format(new Date(), {datetime: true}), "[github]fetchDiscussions")
   const buildQueryWithAliases = () =>
     titles.map((title, index) => {
@@ -131,8 +132,6 @@ export const fetchLatestComments = async ({repo, category, count}: {repo: string
     throw error
   }
 }
-
-export type Discussion = PartialBy<DiscussionNode, "number" | "title">
 export type DiscussionWithComments = CommentNode
 
 
