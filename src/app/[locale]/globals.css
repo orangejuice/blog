@@ -110,3 +110,39 @@
 .react-activity-calendar__scroll-container {
   @apply pb-[8px]
 }
+
+
+::view-transition-new(root),
+::view-transition-old(root) {
+  mix-blend-mode: normal;
+}
+
+::view-transition-new(root) {
+  animation: reveal-light .75s cubic-bezier(.11,0,1,-0.02);
+}
+
+::view-transition-old(root),
+.dark::view-transition-old(root) {
+  animation: none;
+}
+.dark::view-transition-new(root) {
+  animation: reveal-dark .75s cubic-bezier(.11,0,1,-0.02);
+}
+
+@keyframes reveal-dark {
+  from {
+    clip-path: circle(0% at var(--ripple-x) var(--ripple-y));
+  }
+  to {
+    clip-path: circle(150% at var(--ripple-x) var(--ripple-y));
+  }
+}
+
+@keyframes reveal-light {
+  from {
+    clip-path: circle(0% at var(--ripple-x) var(--ripple-y));
+  }
+  to {
+    clip-path: circle(150% at var(--ripple-x) var(--ripple-y));
+  }
+}

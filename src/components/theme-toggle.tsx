@@ -5,15 +5,21 @@ import {Icon} from "@/components/ui/icon"
 import {cn} from "@/lib/utils"
 import {useMounted} from "@/lib/use-mounted"
 import {useTranslation} from "react-i18next"
-import {ComponentPropsWithoutRef, startTransition} from "react"
+import {ComponentPropsWithoutRef, MouseEventHandler, startTransition} from "react"
 
 export function ThemeToggle({className, small, ...props}: ComponentPropsWithoutRef<"button"> & {small?: boolean}) {
   const mounted = useMounted()
   const {theme, resolvedTheme, setTheme} = useTheme()
   const {t} = useTranslation()
   const size = small ? "h-4 w-4" : "h-5 w-5"
-  const changeTheme = () => startTransition(() => {
-    setTheme(theme === "light" ? "dark" : theme === "dark" ? "system" : "light")
+  const changeTheme: MouseEventHandler<HTMLButtonElement> = (event) => startTransition(() => {
+    const change = () => setTheme(theme === "light" ? "dark" : theme === "dark" ? "system" : "light")
+    if (!document.startViewTransition || theme != resolvedTheme) change()
+    else {
+      document.documentElement.style.setProperty("--ripple-x", `${event.clientX}px`)
+      document.documentElement.style.setProperty("--ripple-y", `${event.clientY}px`)
+      document.startViewTransition(change)
+    }
   })
 
   return (<>

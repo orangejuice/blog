@@ -1,4 +1,8 @@
 declare global {
+  interface Document {
+    startViewTransition?: (callback: Function) => void
+  }
+
   type PartialBy<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>
 
   type UseState<T> = {
