@@ -118,7 +118,7 @@
 }
 
 ::view-transition-new(root) {
-  animation: reveal-light .75s cubic-bezier(.11,0,1,-0.02);
+  animation: reveal-light .5s cubic-bezier(.11,0,1,-0.02);
 }
 
 ::view-transition-old(root),
@@ -126,7 +126,7 @@
   animation: none;
 }
 .dark::view-transition-new(root) {
-  animation: reveal-dark .75s cubic-bezier(.11,0,1,-0.02);
+  animation: reveal-dark .5s cubic-bezier(.11,0,1,-0.02);
 }
 
 @keyframes reveal-dark {
