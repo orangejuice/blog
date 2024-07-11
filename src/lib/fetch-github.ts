@@ -124,7 +124,7 @@ export const fetchLatestComments = async ({repo, category, count}: {repo: string
 
     data.discussion.nodes.filter(node => node.comments.totalCount > 0)
       .slice(0, count).forEach((queryResult) => {
-      if (queryResult) slugActivity[decodeURI(queryResult.title.slice(3))] = queryResult  //remove 'zh/' locale part
+      if (queryResult) slugActivity[queryResult.title.slice(3)] = queryResult  //remove 'zh/' locale part
     })
     return slugActivity
   } catch (error) {

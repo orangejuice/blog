@@ -3,10 +3,10 @@ import axios from "axios"
 
 export const getMetadata = async (slugs: string[]): Promise<GetMetadataResponse> => {
   try {
-    const response = await axios.post(process.env.POST_METADATA_API!, {slugs: slugs.map(encodeURI)})
+    const response = await axios.post(process.env.POST_METADATA_API!, {slugs})
     const {data} = await response.data
     return data.reduce((acc: GetMetadataResponse, {slug, ...item}: {slug: string, view: number}) => {
-      acc[decodeURI(slug)] = item
+      acc[slug] = item
       return acc
     }, {})
   } catch (error) {

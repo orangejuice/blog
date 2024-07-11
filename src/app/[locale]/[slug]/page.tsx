@@ -8,9 +8,7 @@ import {ActivityPage} from "@/components/activity"
 import {PostPage} from "@/components/post"
 
 
-export default async function Page({params: {slug: rawSlug, locale}}: {params: {slug: string, locale: SiteLocale}}) {
-  const slug = decodeURI(rawSlug)
-
+export default async function Page({params: {slug, locale}}: {params: {slug: string, locale: SiteLocale}}) {
   const activity = await getActivity({slug, locale})
   if (activity) return <ActivityPage slug={slug} activity={activity} locale={locale}/>
 
@@ -21,8 +19,7 @@ export default async function Page({params: {slug: rawSlug, locale}}: {params: {
 }
 
 
-export async function generateMetadata({params: {slug: rawSlug, locale}}: {params: {slug: string, locale: SiteLocale}}): Promise<Metadata | undefined> {
-  const slug = decodeURI(rawSlug)
+export async function generateMetadata({params: {slug, locale}}: {params: {slug: string, locale: SiteLocale}}): Promise<Metadata | undefined> {
 
   const activity = await getActivity({slug, locale})
   if (activity) {
