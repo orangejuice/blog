@@ -77,7 +77,7 @@ const Activities = ({activities, style, className}: {activities: Awaited<GetActi
                 <div className="flex flex-col grow text-stone-600 dark:text-stone-400 text-sm">
                   <div className="flex justify-between">
                     <h2 className="text-xl font-bold text-stone-800 dark:text-stone-200">{activity.title}</h2>
-                    <div className="hidden relative md:flex items-center gap-1 text-xs font-medium text-stone-500">
+                    <div className="flex max-md:hidden relative items-center gap-1 text-xs font-medium text-stone-500">
                       <span className={cn("flex items-center rounded-md gap-1 transition")}>
                         <Icon.post.viewFilled/>{activity.view}
                       </span>
@@ -100,10 +100,10 @@ const Activities = ({activities, style, className}: {activities: Awaited<GetActi
                     </span>
                   </div>
                   <p className="text-xs mt-0.5 mb-2">{activity.douban?.subtitle}</p>
-                  <MyComment activity={activity} className="hidden md:block"/>
+                  <MyComment activity={activity} className="max-md:hidden"/>
                 </div>
               </div>
-              <MyComment activity={activity} className="block md:hidden"/>
+              <MyComment activity={activity} className="md:hidden"/>
               <BounceBackground/>
             </Link>
           </li>

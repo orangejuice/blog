@@ -91,7 +91,7 @@ function PostItemCompact({post}: {post: Post}) {
       </div>
       <div className="flex w-full justify-between gap-4">
         <Link href={`/${post.slug}`} className="font-medium w-full md:w-fit line-clamp-2 md:line-clamp-1 underline-fade">{post.title}</Link>
-        <div className="gap-4 text-xs text-stone-600 dark:text-stone-400 hidden md:flex">
+        <div className="gap-4 text-xs text-stone-600 dark:text-stone-400 flex max-md:hidden">
           <span className="flex items-center gap-1 cursor-default"><Icon.post.view/>{shortenNumber(post.view)}</span>
           <span className="flex items-center gap-1 cursor-default"><Icon.post.reactComment/>{shortenNumber(post.discussion.reaction + post.discussion.comment)}</span>
         </div>

@@ -29,7 +29,7 @@ export function Header() {
     <header className="flex mb-8 w-full shrink-0 items-center justify-between">
       <Link href="/" className="flex items-center shrink-0"><Icon.logo/></Link>
       <div className="flex items-center gap-2">
-        <nav className="hidden md:flex items-center gap-4 text-sm font-medium">
+        <nav className="flex max-md:hidden items-center gap-4 text-sm font-medium">
           {Object.entries(menu).map(([key, path]) => (
             <Link key={key} href={mounted ? ((path == menu.post && postFilter) ? `/${path}/${objectToUrlPart(postFilter)}` :
               path == menu.bookshelf ? `/${path}/${objectToUrlPart(activityFilter)}` : `/${path}`) : ""}
@@ -60,7 +60,7 @@ export function MobileNav() {
   }
   return (<>
     <Menu>{({open}) => (<>
-      <MenuButton className={cn(buttonVariants({variant: "noStyle"}), "block w-fit h-fit p-2 md:hidden outline-none focus-visible:ring-0")}>
+      <MenuButton className={cn(buttonVariants({variant: "noStyle"}), "max-md:block hidden w-fit h-fit p-2 outline-none focus-visible:ring-0")}>
         <Icon.nav.menu className="h-7 w-7"/>
       </MenuButton>
       <Overlay isOpen={open}/>

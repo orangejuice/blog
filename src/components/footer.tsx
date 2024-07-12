@@ -8,7 +8,7 @@ import {Icon} from "@/components/ui/icon"
 export function Footer() {
   return (<>
     <footer className="flex mt-16 flex-col font-medium md:flex-row md:items-center gap-4 justify-between text-gray-500 dark:text-gray-400">
-      <div className="hidden md:flex items-center gap-8 ">
+      <div className="flex max-md:hidden items-center gap-8">
         <BackgroundMusicToggle/>
         <BackgroundCanvasToggle/>
         <ThemeToggle/>
