@@ -112,18 +112,12 @@
 }
 
 
-::view-transition-new(root),
-::view-transition-old(root) {
-  mix-blend-mode: normal;
+::view-transition-old(root), .dark::view-transition-old(root) {
+  animation: none;
 }
 
 ::view-transition-new(root) {
   animation: reveal-light .5s cubic-bezier(.11, 0, 1, -0.02);
-}
-
-::view-transition-old(root),
-.dark::view-transition-old(root) {
-  animation: none;
 }
 
 .dark::view-transition-new(root) {
