@@ -22,7 +22,6 @@
     "latest-sub": "耐人寻味的小事和一些反思",
     "no-post": "这里还没有文章。",
     "publish": "{{date}}发布",
-    "reacted": "回应了",
     "replied": "回复了",
     "toc": "目录",
     "toc-empty": "没有找到",
@@ -32,7 +31,7 @@
   },
   "bookshelf": {
     "title": "我的书架",
-    "description": "与我一起在废墟中寻找鲜花",
+    "description": "在废墟中寻找鲜花",
     "latest": "最新动态",
     "calendar": "活动日历 ({{start}} - {{end}})",
     "category": {

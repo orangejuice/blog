@@ -21,8 +21,7 @@
     "latest": "Latest",
     "latest-sub": "intriguing trifles and introspections",
     "no-post": "No posts yet.",
-    "publish": "Publish on {{date}}",
-    "reacted": "Reacted: ",
+    "publish": "Publish {{date}}",
     "replied": "Replied: ",
     "toc": "Table of contents",
     "toc-empty": "Nothing found",
@@ -32,7 +31,7 @@
   },
   "bookshelf": {
     "title": "My bookshelf",
-    "description": "Join me to seek flowers within ruins",
+    "description": "Seek flowers within ruins",
     "latest": "Latest activities",
     "calendar": "Activity Calendar ({{start}} - {{end}})",
     "category": {
