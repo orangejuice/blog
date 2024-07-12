@@ -12,7 +12,7 @@ export const StarRating = ({rating = 0, max = 10, description = false, children}
 
   return (
     <div className="flex items-center select-none">
-      {description && <span className="mr-2 font-medium">{t(`bookshelf.rating.${rating}`)}</span>}
+      {description && <span className="mr-2 font-medium line-clamp-1">{t(`bookshelf.rating.${rating}`)}</span>}
       {[...Array(fullStars)].map((_, i) => (
         <span key={`full-${i}`} className="text-yellow-500 dark:text-yellow-600">★</span>
       ))}

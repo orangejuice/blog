@@ -152,9 +152,9 @@ export const LatestActivityList = ({data, style, className}: {data: GetActivitie
                   </span>
                 </div>
                 <div className="flex items-center text-xs gap-2">
-                    <span className="line-clamp-1">
-                      {t(`bookshelf.${activity.category}.status.${activity.status}`, {date: format(activity.date, {locale, relativeWithDate: true})})}
-                    </span>
+                  <span className="text-nowrap">
+                    {t(`bookshelf.${activity.category}.status.${activity.status}`, {date: format(activity.date, {locale, relativeWithDate: true})})}
+                  </span>
                   {!!activity.rating && (<>
                     <span className="text-stone-200 dark:text-stone-800 select-none">|</span>
                     <StarRating rating={activity.rating} max={5} description/>
