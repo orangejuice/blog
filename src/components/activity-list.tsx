@@ -70,7 +70,7 @@ const Activities = ({activities, style, className}: {activities: Awaited<GetActi
         return (
           <li key={activity._id}>
             <Link href={`/${activity.slug}`} className="flex flex-col gap-2 p-4 -m-4 rounded-lg group relative">
-              <div className="flex flex-row items-start gap-4 md:gap-6">
+              <div className="flex items-start gap-4 md:gap-6">
                 <div className="relative w-28 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
                   <Image src={activity.cover} alt="cover"/>
                 </div>
@@ -165,7 +165,7 @@ export const LatestActivityList = ({data, style, className}: {data: GetActivitie
             <span className="flex gap-1 text-sm">
               <MDX code={activity.body.code} className="prose-sm line-clamp-3 prose-p:mt-0 text-stone-800 dark:text-stone-200"/>
             </span>
-            <div className="flex w-full rounded-lg p-3 group-hover:bg-stone-150 bg-stone-100 dark:bg-stone-900 dark:group-hover:bg-stone-850 dark:text-stone-400 transition-colors">
+            <div className="flex items-start w-full rounded-lg p-3 group-hover:bg-stone-150 bg-stone-100 dark:bg-stone-900 dark:group-hover:bg-stone-850 dark:text-stone-400 transition-colors">
               <div className="relative w-14 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
                 <Image src={activity.cover} alt="cover"/>
               </div>
