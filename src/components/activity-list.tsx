@@ -74,7 +74,7 @@ const Activities = ({activities, style, className}: {activities: Awaited<GetActi
                 <div className="relative w-28 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
                   <Image src={activity.cover} alt="cover"/>
                 </div>
-                <div className="flex flex-col grow text-stone-600 text-sm">
+                <div className="flex flex-col grow text-stone-600 dark:text-stone-400 text-sm">
                   <div className="flex justify-between">
                     <h2 className="text-xl font-bold text-stone-800 dark:text-stone-200">{activity.title}</h2>
                     <div className="hidden relative md:flex items-center gap-1 text-xs font-medium text-stone-500">
@@ -165,7 +165,7 @@ export const LatestActivityList = ({data, style, className}: {data: GetActivitie
             <span className="flex gap-1 text-sm">
               <MDX code={activity.body.code} className="prose-sm line-clamp-3 prose-p:mt-0 text-stone-800 dark:text-stone-200"/>
             </span>
-            <div className="flex w-full rounded-lg p-3 group-hover:bg-stone-200 bg-stone-100 dark:bg-stone-800 dark:group-hover:bg-stone-700 dark:text-stone-400 transition-colors">
+            <div className="flex w-full rounded-lg p-3 group-hover:bg-stone-150 bg-stone-100 dark:bg-stone-900 dark:group-hover:bg-stone-850 dark:text-stone-400 transition-colors">
               <div className="relative w-14 shrink-0 aspect-[0.7] rounded-lg overflow-hidden">
                 <Image src={activity.cover} alt="cover"/>
               </div>
