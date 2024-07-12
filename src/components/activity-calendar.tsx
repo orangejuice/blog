@@ -17,7 +17,8 @@ export function ActivityCalendar({calendarData, style, filter}: {calendarData: G
   const cssIndexCounter = useCssIndexCounter(style)
   return (<>
     <section className={cn("flex flex-col items-center gap-2 animate-delay-in",
-      "[&_.react-activity-calendar]:animate-delay-in")} style={cssIndexCounter()}>
+      "[&_.react-activity-calendar]:animate-delay-in [&_.react-activity-calendar\\_\\_scroll-container]:pb-[8px]")}
+      style={cssIndexCounter()}>
       <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">
         {t("bookshelf.calendar", {
           start: format(filter.start, {locale, localizeDate: true}),

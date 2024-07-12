@@ -1,7 +1,7 @@
 import * as React from "react"
 import {ComponentProps, ComponentPropsWithoutRef, ComponentType, forwardRef} from "react"
 import {cn} from "@/lib/utils"
-import {ArrowRight, AudioLines, ChevronRight, CircleAlert, Dot, Filter, Globe, Hash, Loader2, LogIn, LogOut, Menu, MessageCircleHeart, MessageCircleMore, Moon, Slash, Smile, Square, SquareCheckBig, Sun, SunMoon, Undo2, User} from "lucide-react"
+import {ArrowRight, AudioLines, ChevronRight, CircleAlert, Dot, Filter, Globe, Hash, Loader2, LogIn, LogOut, Menu, MessageCircleHeart, MessageCircleMore, Moon, Slash, Smile, Square, SquareCheckBig, Sun, SunMoon, Undo2, User, X} from "lucide-react"
 import Image, {ImageProps} from "next/image"
 import {Book, BookmarkSimple, Eye, FilmReel, GithubLogo, SelectionBackground} from "@phosphor-icons/react/dist/ssr"
 
@@ -20,7 +20,11 @@ export const Icon = {
     </span>
   </>),
   logo: (props: Partial<ImageProps>) => <Image src="/logo.svg" width={140} height={30} alt="Logo" priority {...props}/>,
-  nav: {profile: cns(User), lang: cns(Globe), menu: cns(Menu)},
+  nav: {
+    profile: cns(User), lang: cns(Globe),
+    menu: cns(Menu, "transition-[opacity] duration-300 ease-in-out"),
+    close: cns(X, "transition-[opacity] duration-300 ease-in-out")
+  },
   post: {
     view: cns((props) => <Eye weight="bold" {...props}/>),
     viewFilled: cns((props) => <Eye weight="fill" {...props}/>),

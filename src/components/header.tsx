@@ -60,8 +60,9 @@ export function MobileNav() {
   }
   return (<>
     <Menu>{({open}) => (<>
-      <MenuButton className={cn(buttonVariants({variant: "noStyle"}), "max-md:block hidden w-fit h-fit p-2 outline-none focus-visible:ring-0")}>
-        <Icon.nav.menu className="h-7 w-7"/>
+      <MenuButton className={cn(buttonVariants({variant: "noStyle"}), "md:hidden relative w-11 h-11 p-2 outline-none focus-visible:ring-0")}>
+        <Icon.nav.menu className={cn("absolute w-7 h-7 inset-2", open ? "opacity-0" : "opacity-100")}/>
+        <Icon.nav.close className={cn("absolute w-7 h-7 inset-2", open ? "opacity-100" : "opacity-0")}/>
       </MenuButton>
       <Overlay isOpen={open}/>
       <AnimatePresence>{open && (<>
@@ -71,7 +72,7 @@ export function MobileNav() {
             {Object.entries(menu).map(([key, path]) => (
               <MenuItem key={key} as={Link} href={mounted ? (
                 path == menu.post ? `/${path}/${objectToUrlPart(postFilter)}` :
-                path == menu.bookshelf ? `/${path}/${objectToUrlPart(activityFilter)}` : `/${path}`
+                  path == menu.bookshelf ? `/${path}/${objectToUrlPart(activityFilter)}` : `/${path}`
               ) : ""} className="font-medium">
                 {t(`nav.${key}`)}
               </MenuItem>
