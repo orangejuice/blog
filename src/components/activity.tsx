@@ -71,7 +71,7 @@ export const ActivityPage = async ({slug, activity, locale}: {slug: string, acti
             </li>
           ))}
         </ul>
-        {locale == "en" && <TranslationDisclaimer style={cssIndexCounter()} className="sticky bottom-5"/>}
+        {locale == "en" && <TranslationDisclaimer style={cssIndexCounter()}/>}
       </div>
       <Comment slug={activity.slug}/>
     </div>

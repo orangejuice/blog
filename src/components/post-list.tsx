@@ -107,7 +107,7 @@ function PostCardList({posts: data, ...props}: {posts: GetPostsResponse} & Compo
 
   return (<>
     <ul className="flex flex-col gap-5 animate-delay-in" {...props}>
-      {Object.values(posts).map(post => <PostCard post={post} key={post.slug}/>)}
+      {posts.map(post => <PostCard post={post} key={post.slug}/>)}
     </ul>
   </>)
 }

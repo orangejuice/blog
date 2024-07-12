@@ -12,7 +12,7 @@ export const BounceBackground = () => {
 export const TranslationDisclaimer = ({style, className}: ComponentPropsWithoutRef<"div">) => {
   return (<>
     <div className={cn("flex items-start gap-1 text-xs animate-delay-in text-stone-500", className)} style={style}>
-      <Icon.symbol.alert/>The content on this page has been automatically translated from Chinese using GPT-4o.
+      <Icon.symbol.alert/>The content on this page has been automatically translated using GPT-4o.
       Please be aware that there may be translation errors or inaccuracies.
     </div>
   </>)
