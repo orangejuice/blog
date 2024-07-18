@@ -50,7 +50,7 @@ export const Comment = ({slug}: {slug: string}) => {
   return (<>
     <div className="min-h-[350px]">
       {!isLoaded && <CommentPlaceholder className="h-0 mb-[350px]"/>}
-      <div className={cn(isLoaded ? " animate-delay-in" : "h-px w-px fixed overflow-hidden")} style={cssIndexCounter()}>
+      <div className={cn(isLoaded ? " animate-delay-in" : "h-px w-px fixed top-0 left-0 overflow-hidden")} style={cssIndexCounter()}>
         <GiscusComponent id={"comments"} {...props} theme={commentsTheme} lang={{en: "en", zh: "zh-CN"}[locale]}/>
       </div>
     </div>
