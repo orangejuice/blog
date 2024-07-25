@@ -4,7 +4,7 @@ import {getActivities, getActivitiesFilter, getActivityCalendarData} from "@/lib
 import {ActivityCalendar} from "@/components/activity-calendar"
 import {parseCatchAll, useCssIndexCounter} from "@/lib/utils"
 import initTranslation from "@/lib/i18n"
-import {SiteLocale} from "@/site"
+import {site, SiteLocale} from "@/site"
 import ActivityInfiniteScrollList from "@/components/activity-list"
 import {ActivityFilter, FilterOption} from "@/components/activity-filter"
 import {Metadata} from "next"
@@ -16,7 +16,9 @@ export async function generateMetadata({params: {locale}}: {params: {locale: str
   return {title: t("bookshelf.title")}
 }
 
-export default async function Page({params: {locale, filter}}: {params: {locale: SiteLocale, filter: string[]}}) {
+type Params = {locale: SiteLocale, filter: string[]}
+
+export default async function Page({params: {locale, filter}}: {params: Params}) {
   const appliedFilter = parseCatchAll(filter) as FilterOption
   const start = appliedFilter.year ? dayjs().year(+appliedFilter.year).startOf("y") : dayjs().subtract(1, "y").startOf("w")
   const end = appliedFilter.year ? dayjs().year(+appliedFilter.year).endOf("y") : dayjs()
@@ -48,4 +50,8 @@ export default async function Page({params: {locale, filter}}: {params: {locale:
       </aside>
     </div>
   </>)
+}
+
+export const generateStaticParams = () => {
+  return site.locales.map((locale) => ({locale, filter: []}))
 }

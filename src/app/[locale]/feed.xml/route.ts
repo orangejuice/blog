@@ -31,7 +31,3 @@ export async function GET(req: NextRequest, {params: {locale}}: {params: {locale
     }
   })
 }
-
-export const generateStaticParams = () => {
-  return site.locales.map((locale) => ({locale}))
-}

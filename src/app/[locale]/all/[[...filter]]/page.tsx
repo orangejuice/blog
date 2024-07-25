@@ -1,7 +1,7 @@
 import React, {Suspense} from "react"
 import {objectToUrlPart, parseCatchAll, useCssIndexCounter} from "@/lib/utils"
 import {getLocales, getPosts, getTags} from "@/lib/fetch"
-import {menu, SiteLocale} from "@/site"
+import {menu, site, SiteLocale} from "@/site"
 import {FilterOption, PostFilter} from "@/components/post-filter"
 import {PostCompactList} from "@/components/post-list"
 import initTranslation from "@/lib/i18n"
@@ -14,7 +14,9 @@ export async function generateMetadata({params: {locale}}: {params: {locale: str
   return {title: t("post.all")}
 }
 
-export default async function AllPost({params: {locale, filter}}: {params: {locale: SiteLocale, filter: string[]}}) {
+type Params = {locale: SiteLocale, filter: string[]}
+
+export default async function AllPost({params: {locale, filter}}: {params: Params}) {
   const appliedFilter = parseCatchAll(filter) as FilterOption
   if (!appliedFilter.lang) redirect(`/${menu.post}/${objectToUrlPart({...appliedFilter, lang: locale})}`)
   const posts = getPosts({locale, ...appliedFilter})
@@ -43,4 +45,14 @@ export default async function AllPost({params: {locale, filter}}: {params: {loca
       </aside>
     </div>
   </>)
+}
+
+export const generateStaticParams = () => {
+  const combinations: Params[] = []
+  site.locales.forEach((locale) => {
+    ["all-lang"].concat(...site.locales).forEach((lang) => {
+      combinations.push({locale, filter: objectToUrlPart({lang: lang}).split("/")})
+    })
+  })
+  return combinations
 }
