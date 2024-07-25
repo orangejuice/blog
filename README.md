@@ -8,15 +8,16 @@
 ![star](https://img.shields.io/github/stars/orangejuice/blog.svg?style=flat&logo=github&color=48bf1f&label=Star)
 ![react](https://img.shields.io/github/package-json/dependency-version/orangejuice/blog/react?label=React&color=61dafb&logo=react&logoColor=fff)
 ![typescript](https://img.shields.io/github/package-json/dependency-version/orangejuice/blog/dev/typescript?label=Typescript&logo=typescript&logoColor=fff&color=3178c6)
-![node](https://img.shields.io/badge/Node.js-^20.2.0-5fa04e?logo=node.js&logoColor=fff)-->
+![node](https://img.shields.io/badge/Node.js-^20.2.0-5fa04e?logo=node.js&logoColor=fff)
+![node](https://img.shields.io/badge/Node.js-5fa04e?logo=node.js&logoColor=fff)
+![shadcn](https://img.shields.io/badge/shadcn%2Fui-000?logo=shadcnui&logoColor=fff)
+![graphql](https://img.shields.io/badge/GraphQL-e10098?logo=graphql&logoColor=fff)-->
 <sub>✅ i18n ✅ Comment ✅ Reaction ✅ View count ✅ Post-it wall ✅ Book/TV/Show tracking ✅ Light/Dark ✅ PC/Mobile</sub>
 
 ![nextjs](https://img.shields.io/github/package-json/dependency-version/orangejuice/blog/next?label=Next.js&logo=next.js&color=222)
 ![react](https://img.shields.io/badge/React-05a3cd?logo=react&logoColor=fff)
 ![typescript](https://img.shields.io/badge/Typescript-3178c6?logo=typescript&logoColor=fff)
-![node](https://img.shields.io/badge/Node.js-5fa04e?logo=node.js&logoColor=fff)
-![graphql](https://img.shields.io/badge/GraphQL-e10098?logo=graphql&logoColor=fff)
-![shadcn](https://img.shields.io/badge/shadcn%2Fui-000?logo=shadcnui&logoColor=fff)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?logo=framer&logoColor=fff)
 ![tailwind](https://img.shields.io/badge/Tailwind%20CSS-06b6d4?logo=tailwindcss&logoColor=fff)
 ![zustand](https://img.shields.io/badge/🐻-Zustand-222?colorA=222)
 ![rss](https://shields.io/badge/RSS-f88900?logo=rss&logoColor=fff)
