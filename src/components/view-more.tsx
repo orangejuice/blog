@@ -6,7 +6,7 @@ import Link from "next/link"
 import {menu} from "@/site"
 import {cn, objectToUrlPart} from "@/lib/utils"
 import {Icon} from "@/components/ui/icon"
-import {FilterOption} from "@/components/post-filter"
+import {FilterOption} from "@/app/[locale]/all/[[...filter]]/filter"
 import {useMounted} from "@/lib/use-mounted"
 import {buttonVariants} from "@/components/ui/button"
 

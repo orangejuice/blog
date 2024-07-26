@@ -6,7 +6,7 @@ import {Tooltip, TooltipContent, TooltipTrigger} from "@/components/ui/tooltip"
 import {cn, format, useCssIndexCounter} from "@/lib/utils"
 import {useTheme} from "next-themes"
 import {useTranslation} from "react-i18next"
-import {FilterOption} from "@/components/activity-filter"
+import {FilterOption} from "@/app/[locale]/bookshelf/[[...filter]]/filter"
 import {CalendarPlaceholder} from "@/components/loading"
 import {Icon} from "@/components/ui/icon"
 
@@ -17,7 +17,7 @@ export function ActivityCalendar({calendarData, style, filter}: {calendarData: G
   const cssIndexCounter = useCssIndexCounter(style)
   return (<>
     <section className={cn("flex flex-col items-center gap-2 animate-delay-in",
-      "[&_.react-activity-calendar]:animate-delay-in [&_.react-activity-calendar\\_\\_scroll-container]:pb-[8px]")}
+      "[&_.react-activity-calendar\\_\\_scroll-container]:pb-[8px]")}
       style={cssIndexCounter()}>
       <h5 className="text-slate-900 font-semibold text-sm leading-6 dark:text-slate-100">
         {t("bookshelf.calendar", {
@@ -27,7 +27,7 @@ export function ActivityCalendar({calendarData, style, filter}: {calendarData: G
       </h5>
       <CalendarPlaceholder className="h-[138px] [&:has(~_article)]:hidden" bodyOnly/>
       <RawActivityCalendar data={data} showWeekdayLabels hideTotalCount hideColorLegend maxLevel={3}
-        colorScheme={resolvedTheme as "light" | "dark"} style={cssIndexCounter()}
+        colorScheme={resolvedTheme as "light" | "dark"}
         // @ts-ignore
         renderBlock={(block, activity: CalendarActivity) => (<>
           <Tooltip delayDuration={300} disableHoverableContent>

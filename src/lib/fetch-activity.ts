@@ -4,7 +4,7 @@ import {eachDayInRange, format} from "@/lib/utils"
 import dayjs, {Dayjs} from "dayjs"
 import isBetween from "dayjs/plugin/isBetween"
 import {unstable_cache as cache} from "next/cache"
-import {FilterOption} from "@/components/activity-filter"
+import {FilterOption} from "@/app/[locale]/bookshelf/[[...filter]]/filter"
 import {getMetadata, GetMetadataResponse} from "@/lib/fetch-db"
 import {SiteLocale} from "@/site"
 

@@ -2,7 +2,7 @@
 import {revalidatePath} from "next/cache"
 import axios from "axios"
 import {getActivities} from "@/lib/fetch-activity"
-import {FilterOption} from "@/components/activity-filter"
+import {FilterOption} from "@/app/[locale]/bookshelf/[[...filter]]/filter"
 import {getMetadata} from "@/lib/fetch-db"
 import {SiteLocale} from "@/site"
 
