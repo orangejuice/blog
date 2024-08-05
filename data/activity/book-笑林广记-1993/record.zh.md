@@ -1,10 +1,10 @@
 ---
 title: 笑林广记
 category: book
-status: todo
-rating: 0
+status: done
+rating: 5
 year: "1993"
-date: 2024-02-22 06:14:10+08:00
+date: 2024-08-05 15:55:43+08:00
 douban:
   id: "1311575"
   title: 笑林广记
@@ -13,6 +13,10 @@ douban:
   rating: 8.2
   cover: https://img1.doubanio.com/view/subject/l/public/s4591329.jpg
   link: https://book.douban.com/subject/1311575/
+  history:
+    - date: 2024-02-22 06:14:10
+      comment: Via tw imnotseafish
+      status: todo
 ---
 
-Via tw imnotseafish
+真是非常独特的表现形式，以笑话为载体，绘出一幅极尽写实的风土人情活画卷。冷笑话，谐音梗，编段子抖包袱，平等地讽刺一切。形体缺陷者、无知狂妄者、出轨乱伦者、酸腐读书人、市井百姓、官府官员、商贾富户、有关性的一切、甚至孔子儒学、神仙道士，无不成为笑柄，被轻轻捏来幽上一默。在一则则短小笑话中清朝市井社会的气息弥漫在鼻尖，涵盖着糟糕人性、无知贫困和它们组合在一个人身上塑成的狡诈，毫不避讳的像吃饭一样重要的男男女女眼中的笨拙的直面的性。读来一种奇妙的感受，五味杂陈，打破迷思，大开眼界。

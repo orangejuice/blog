@@ -34,6 +34,12 @@ douban:
   rating: 8.4
   cover: https://img9.doubanio.com/view/subject/l/public/s29564135.jpg
   link: https://book.douban.com/subject/27116268/
+  history:
+    - date: 2024-04-30 19:45:06
+      comment: "Via tw philo "
+      status: todo
 ---
 
-Via tw philo 
+Via tw philo / via tw cydiar 我们爱他人，也许只是爱他人眼中的自己。 “水仙少年长得漂亮吗？”湖泊问道。
+“还有谁比你更清楚这一点呢？”山林女神惊讶地回答，“他每天都在你身边啊。”
+湖泊沉默了一会儿，最后开口说：“我是为水仙少年流泪，可我从来没注意他的容貌。我为他流泪，是因为每次他面对我的时候，我都能从他眼睛深处看到我自己的美丽映像。”

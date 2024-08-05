@@ -17,8 +17,15 @@ douban:
     - date: 2022-07-03 00:02:06
       comment: via friend's recommendation
       status: todo
+    - date: 2022-07-03 00:02:06
+      comment: >-
+        via friend's recommendation / via 豆瓣 豆小豆
+        你眼中的自己不是你，别人眼中的你，也不是你。你眼中的别人，才是真实的你自己。
+
+
+        ——《悉达多》
+      status: todo
 ---
 
 via friend's recommendation / via 豆瓣 豆小豆 你眼中的自己不是你，别人眼中的你，也不是你。你眼中的别人，才是真实的你自己。
-
-——《悉达多》
+——《悉达多》 / via tw @黄浦记忆 黑塞在《悉达多》中说：我们这一生，要自己上路，路过踌躇满志，路过困顿怀疑，路过傲慢无礼，路过世俗功利，路过爱与不爱，路过幡然醒悟，路过接受理解，路过自己的一生。
