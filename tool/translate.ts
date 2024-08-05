@@ -1,7 +1,7 @@
 import * as fs from "fs"
 import * as path from "path"
 import yaml from "yaml"
-import {translateCreativeWork} from "@/lib/openai-translate"
+import {translateWork} from "@/lib/ai-translate"
 import matter from "gray-matter"
 
 const OUTPUT_DIR = "data/activity"
@@ -22,7 +22,7 @@ async function traverse(dir: string) {
       const fileContents = fs.readFileSync(path.join(dict, "record.md"), "utf8")
       const {data, content} = matter(fileContents)
 
-      const translated = await translateCreativeWork({
+      const translated = await translateWork({
         title: data.title, subtitle: data.douban.subtitle, category: data.category, comment: content
       })
 

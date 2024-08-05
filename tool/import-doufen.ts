@@ -4,7 +4,7 @@ import PQueue from "p-queue"
 import yaml from "yaml"
 // @ts-ignore
 import tofu from "./tofu.json"
-import {translateCreativeWork} from "@/lib/openai-translate"
+import {translateWork} from "@/lib/ai-translate"
 
 const OUTPUT_DIR = "data/activity"
 
@@ -77,7 +77,7 @@ for (const interest of (tofu as Record<any, any>).interest) {
     }
     if (generateEnglishDocument) {
       const historyToTranslate = (history && history.filter(h => !!h.comment).length > 0) ? history.filter(h => !!h.comment).map(h => h.comment) : undefined
-      const translated = await translateCreativeWork({
+      const translated = await translateWork({
         title, subtitle: doubanSubtitle, category, comment, history: historyToTranslate
       })
       let historyTranslated = history
